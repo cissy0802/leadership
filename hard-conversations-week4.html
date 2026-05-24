@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Week 4：难对话的工艺</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.english{background:#eef0e8;padding:14px 18px;border-radius:4px;font-size:0.94rem;color:#3a4a20;border-left:3px solid #5c7a3a}
+.english .label{font-weight:700;color:#4a6a28;font-size:0.82rem;letter-spacing:2px;margin-bottom:8px;display:block}
+.english em{color:#5c8a3a;font-weight:600;font-style:normal}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.template{background:#f5efe0;padding:16px 18px;border-radius:4px;border:1px dashed #c4a878;font-family:"Courier New",monospace;font-size:0.88rem;color:#3a2f1c;white-space:pre-wrap;line-height:1.6;margin-top:10px}
+.template .label-inline{color:#a8702d;font-weight:700}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<a href="https://cissy0802.github.io/" style="position:fixed;top:14px;left:14px;font-size:0.82rem;color:inherit;opacity:0.55;text-decoration:none;padding:6px 12px;border:1px solid currentColor;border-radius:20px;z-index:100;backdrop-filter:blur(6px);transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">← Hub</a>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 04 · 2026.06.10</div>
+<h1>难对话的工艺：把你最想推迟的那 30 分钟做对</h1>
+<div class="meta"><span>主题：Hard Conversations</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"The conversation is the relationship. The conversation you've been avoiding is the relationship you've been losing." — Susan Scott</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>难对话——解雇、拒绝晋升、错误复盘、PIP——是 manager 工作里"做错代价最大、做对回报最小"的那类事件。做对了，没人会感谢你，对方只觉得"这是应该的"；做错了，团队两年内都记得你。多数管理者在难对话里做坏在三件事：(1) **拖延**——把"下周再说"拖成"半年没说"，问题癌变；(2) **缓冲过厚**——三明治反馈、伪共情、绕半小时再切入正题，对方反而记不住核心信息；(3) **没准备心智状态**——自己情绪没整理、自己的内疚没消化，话讲得颠三倒四。这一周拆四件事——从 Stone/Patton/Heen 的"三层对话"理论，到 Ben Horowitz 的解雇五分钟规则，到 Edmondson 的 blameless postmortem。读完你应该能立刻打开日历，把那个你一直在拖的 1:1 排上。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>难对话的三层解剖：你以为你在谈事，其实在谈三件事
+<span class="en">The Three Layers of a Hard Conversation</span></h2>
+<span class="tag">Stone & Heen</span><span class="tag">心智准备</span><span class="tag">Intent vs Impact</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">每一场难对话都同时在三层进行：**What Happened（事实层）/ Feelings（情绪层）/ Identity（身份认同层）**。你以为你只是在讨论"那个项目延期了"，对方听到的是"你在说我不胜任 / 你在说我糟糕"。如果你只准备事实层，那场对话 90% 会失控——不是因为对方不讲理，是因为你打的是第一层，他听到的是第三层。</div>
+</div>
+
+<div class="section">
+<div class="section-label">三层结构（一张图）</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 560 290" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="30" width="480" height="60" fill="#e8dcc0" stroke="#a8702d" stroke-width="1.5" rx="4"/>
+<text x="280" y="55" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">Layer 1 · WHAT HAPPENED（事实层）</text>
+<text x="280" y="78" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">事实是什么？谁的责任？意图是什么？— manager 唯一准备的层</text>
+<rect x="40" y="105" width="480" height="60" fill="#f3e9d2" stroke="#a8702d" stroke-width="1.5" rx="4"/>
+<text x="280" y="130" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">Layer 2 · FEELINGS（情绪层）</text>
+<text x="280" y="153" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">他会感到 什么？羞愧？愤怒？被背叛？我自己感到什么？焦虑？内疚？</text>
+<rect x="40" y="180" width="480" height="80" fill="#f3e8f0" stroke="#8a3a6a" stroke-width="1.5" rx="4"/>
+<text x="280" y="205" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#7a2a5a">Layer 3 · IDENTITY（身份层）</text>
+<text x="280" y="228" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a1f3a">他听到的潜台词："我是不是个糟糕的工程师 / 妈妈 / 人？"</text>
+<text x="280" y="248" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a1f3a">这一层最深、最痛、manager 最少看见——但决定他事后能不能恢复</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The single most important thing you can do is to shift your internal stance from 'I understand' to 'Help me understand.' Everything else follows from that. Done indelicately, we tell others what their story should be. Done well, we help them tell theirs."</span>
+<span class="zh">你能做的最重要的一件事，是把内心姿态从"我懂了"切换到"帮我理解一下"。其他一切由此而生。做得粗糙，我们就是在告诉对方他的故事应该是什么样的；做得好，我们是在帮他讲他自己的故事。</span>
+<span class="source">— Douglas Stone, Bruce Patton, Sheila Heen · Difficult Conversations (Harvard Negotiation Project)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：同一句开场，两种内在姿态</div>
+<div class="scene">
+<div class="setup">你要和 staff engineer X 谈一件事——上周他在 design review 上当众贬低了 junior Y 的方案，Y 来你 1:1 哭了。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（只打第一层）</div>
+<p>"X，我想跟你聊一下上周 design review。你对 Y 的方案的回应不太合适。我希望你以后注意。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 纯事实层。X 听到的是"manager 说我不合适"——身份层警报全开，他立刻防御："我哪里不合适？我只是直说了我的想法。"对话就此进入辩论。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（三层都铺开）</div>
+<p>"X，想跟你聊一件事，可能你会有不同看法，所以我想先听你的版本。上周 design review，你对 Y 方案的回应——'这跟我们三年前丢掉的那个项目一模一样'——结束之后 Y 没再发言。我想先问：你那一刻的意图是什么？<br><br>
+（听完）<br><br>
+我相信你的意图是想保护团队不重蹈覆辙——这是 staff 该做的事。但落到 Y 身上的影响是她现在不敢再 propose。我不是在说你是个 mean person——我知道你不是。我是在说一个具体的 pattern，我需要它换一个表达方式。你愿意一起想想怎么换吗？"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 三层都覆盖了：(1) 事实——具体那句话、具体后果；(2) 情绪——问他的意图、确认你自己的不适；(3) 身份——明确说"你不是 mean person"，把人和行为分开。Stone 把这叫做 "separate intent from impact"。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">进会议室前的检查表</div>
+<ul class="checklist">
+<li>我能用一句话说出这场对话的目的吗？(不是"聊一下"，是"我希望对话结束时，他做出 X 改变 / 知道 Y 事实")</li>
+<li>事实层：我有 2-3 个具体场景作为证据吗？(没有 = 改期，去收集)</li>
+<li>情绪层：我自己现在的情绪是什么？(愤怒？内疚？)如果带着情绪进去，先做 10 分钟独处。</li>
+<li>身份层：他听到的潜台词可能是"我不胜任 / 我不被尊重 / 我不被信任"——我准备好显式拆掉这个潜台词了吗？</li>
+<li>我准备好他可能不同意、可能哭、可能反击吗？我的下一步是什么？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>三明治反馈。</strong>"你最近很棒——但有件事——总体你做得很好。"对方只记得最后一句。Kim Scott 称之为"Manipulative Insincerity"——为你自己舒服设计的话术，不是为他设计的。</li>
+<li><strong>把"意图"当"影响"的辩护。</strong>"我不是那个意思啊。"——你的意图不能消除影响。两件事分开谈。</li>
+<li><strong>反复用 'we' 软化。</strong>"我们最近沟通不太顺。"——你是 manager，"we" 是责任分摊，对方听到的是模糊。该用 "I" 时用 "I"。</li>
+<li><strong>把难对话拖成 1:1 的最后 5 分钟。</strong>没时间处理对方的反应，他带着一肚子情绪离开 office。难对话需要至少 30 分钟独立时间块。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 难对话里的 double bind</span>
+<p>女性 leader 在难对话里面对一个特定陷阱：太软 = 不被认真对待（"她只是建议"），太直 = 被贴 "abrasive / aggressive / cold" 标签。这不是你的失败，是系统的偏见——但你需要工具应对它。</p>
+<p>有用的姿势：<strong>"warm tone + hard content"</strong>。语气放松、姿态前倾、用对方名字、保持眼神——但内容不打折。Sandberg 在《Lean In》里讲过：她在 Facebook 解雇过一个高管，全程语气平和、对方走出会议室后说"她是我见过最 ruthless 也最 kind 的人"。Ruthless 是内容，kind 是传递方式——这两件事不冲突。</p>
+<p>另一个陷阱：女性 manager 倾向在难对话后产生"我是不是过分了"的内疚反刍。这种内疚反刍如果你没意识到，会让你接下来一周对当事人补偿性地软化——结果对方收到混合信号。给自己规则：难对话结束 24 小时内，不要主动找对方"补救"。让信息沉淀。</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref">
+<strong>Douglas Stone, Bruce Patton, Sheila Heen · Difficult Conversations</strong>——Harvard Negotiation Project 出品。这本书的"三层对话"框架是难对话领域被引用最多的模型。读第 1-3 章足够受益终生。<br>
+<strong>Susan Scott · Fierce Conversations</strong>——更激进的姿态："the conversation IS the relationship"。读完会改变你对"延迟难对话"成本的估算。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">English Insight</div>
+<div class="english">
+<span class="label">三层切换的语言模板</span>
+<p>• 事实切入：<em>"I want to share an observation, and I may be missing context — so I'd like to hear your version first."</em></p>
+<p>• 拆分意图/影响：<em>"I believe your intent was X. The impact landed as Y. Both can be true."</em></p>
+<p>• 守住身份层：<em>"This is about a specific pattern, not about who you are. I wouldn't be raising it if I didn't believe you can shift it."</em></p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>解雇对话：把它做完整、做有尊严、不超过 15 分钟
+<span class="en">The Termination Conversation</span></h2>
+<span class="tag">Ben Horowitz</span><span class="tag">Andy Grove</span><span class="tag">尊严</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">解雇不是一次对话，是一个**已经做完的决定**的宣布。如果你在会议室里还在权衡、还在解释、还在希望他理解——你来错了，你应该回去再想三天。决定做好之后，对话的目标只有三件事：(1) 在前 90 秒明确传达"决定已定、今天最后一天"；(2) 给他保留尊严；(3) 把后续逻辑（离职流程、benefits、reference）讲清楚。最不仁慈的是拖泥带水。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The way you fire someone matters as much as the way you hire them. Everybody on the team will be watching. If you fire them with dignity, the team learns 'this place treats people like humans even when things end.' If you don't, the team learns the opposite — and your best people start updating their LinkedIn."</span>
+<span class="zh">你怎么解雇人，跟你怎么招聘人一样重要。整个团队都在看。如果你有尊严地解雇，团队学到的是"这家公司即使事情结束，也把人当人"；如果你做砸了，团队学到的是相反的——然后你最好的人开始更新 LinkedIn。</span>
+<span class="source">— Ben Horowitz, The Hard Thing About Hard Things</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">解雇谈话的 5 段结构（推荐脚本）</div>
+<div class="template">
+<span class="label-inline">[0-30 SEC]</span> 直接切入。不寒暄。不问"周末怎么样"。
+   "X，今天约你是要告诉你一个艰难的消息。公司已经决定结束你
+    在这里的雇佣关系，今天是你最后一天。"
+
+<span class="label-inline">[30-90 SEC]</span> 一句话的理由，不展开。
+   "这个决定是基于过去 6 个月 PIP 期间我们讨论过的几个表现维度
+    没有达到要求 / 这个岗位被裁撤了。我知道这很难。"
+   不要在这里展开 PIP 细节——他已经知道，再讲是补刀。
+
+<span class="label-inline">[90 SEC - 5 MIN]</span> 停下来。让他说话。
+   他可能愤怒、可能沉默、可能哭。你的工作不是反驳，是承认。
+   "我听到了 / 我理解你失望 / 你不需要现在回应。"
+
+<span class="label-inline">[5-10 MIN]</span> 后续逻辑：HR 会接管。
+   • Severance / 离职补偿是 X 周
+   • 健康保险延续到 Y 日
+   • 设备需要在 Z 日前归还
+   • 我们准备的 outplacement / reference 是 W
+   全部已经准备成一份书面文档递给他。
+
+<span class="label-inline">[10-15 MIN]</span> 最后一句，由你说。
+   "我想说一件事。这个决定不代表你不优秀——这代表 fit 不对。
+    我会给你诚实的 reference / 我建议你接下来联系 V。"
+   然后让 HR 接手剩下流程。
+
+总时长目标：12-15 分钟。超过 20 分钟意味着你在反复解释——停。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：第一句话的两种版本</div>
+<div class="scene">
+<div class="setup">你要解雇下属 X。你预约了周一 9am 30 分钟。X 走进来，坐下。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（铺垫太长）</div>
+<p>"嘿 X，早。你周末怎么样？……嗯，我想跟你聊一下，最近这几个月其实我们都在讨论一些表现上的事情，你也知道 PIP 走得不太顺。公司这边也有一些……嗯，怎么说呢，整体的考虑……"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ X 已经听到了：他将被解雇——但你没说。每过一秒都是折磨。Horowitz 称这是 "the worst kind of cruelty disguised as kindness"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（90 秒规则）</div>
+<p>"X，谢谢你过来。我今天约你是要告诉你一个艰难的消息：公司决定结束你的雇佣关系，今天是你的最后一天。<br><br>
+（停 3 秒，看着他）<br><br>
+这个决定基于我们 PIP 期间讨论过的表现维度。我知道你听到这个消息会很难受。HR 会在我们结束后过来跟你过 severance 和后续流程，全部已经写好了在这个文件夹里。你不需要现在做任何决定。<br><br>
+我先暂停，看你有没有想说的。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">解雇前 72 小时的检查表</div>
+<ul class="checklist">
+<li>这个决定是 final 的吗？我会不会因为他今天讲一句话就改变主意？(会 = 决定还没做好，回去再想)</li>
+<li>HR 流程全部就位吗？severance 文档、设备回收、access revoke 时间、benefits 延续——一份纸质或 PDF 包？</li>
+<li>我自己情绪整理好了吗？我不能在会议室里哭、不能道歉到失去权威、也不能冷漠到看起来轻松。</li>
+<li>下一步谁来告诉团队？我的脚本是什么？(团队公告应该在 24 小时内发出，不要让团队从八卦渠道知道)</li>
+<li>如果他问"为什么是我不是 Y"——我不回答（不讨论别人）。如果他问"我能不能再有机会"——我不松口。我准备好这两个答案了吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>道歉过度。</strong>"对不起" 说一次足够。说三次以上，对方会觉得"这是不是你的错？那我可以争取？"——结果谈话越拖越长。</li>
+<li><strong>试图让他"理解"。</strong>他不会在那 15 分钟内理解。这周不会理解。可能一年后才理解。让他离开，不要试图说服。</li>
+<li><strong>给虚假的安慰。</strong>"你会找到更好的工作的 / 这对你也是机会。"——除非你真信，否则别说。Grove 在 HOM 里说："The most damaging thing a manager can do in a termination is to lie to make themselves feel better."</li>
+<li><strong>周五下午解雇。</strong>他要熬过一个周末没有 HR、没有同事、没有支持系统。除非有合规理由，否则不要这么做。周一上午最好——他还有一周可以联系 HR、整理财务。</li>
+<li><strong>没准备团队公告。</strong>他离开后两小时内，你应该已经在 standup / Slack 公告了，措辞已经准备好。否则团队会乱猜，最先猜的总是"下一个是不是我"。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 解雇里的内疚陷阱</span>
+<p>研究反复显示女性 manager 比男性更容易在解雇后陷入长期内疚反刍。这不是"你太软"——是社会化使然，你从小被训练"维系关系是你的责任"。这种内疚有两个具体危害：</p>
+<p><strong>(1) 拖延：</strong>该解雇的人，你比男性同事平均晚 2-3 个月动手。代价是团队其他人在这两个月里承受了一个不胜任成员的负面影响——这才是真正的不仁慈。</p>
+<p><strong>(2) 解雇时过度软化：</strong>把"今天最后一天"包装成"我们看看怎么样安排"。结果对方走出会议室不确定刚才到底发生了什么，第二天还来公司，整件事变成尴尬的拖延。Horowitz 的 90 秒规则不是冷酷，是保护对方的尊严。</p>
+<p>有用的认知重构：你不解雇这个人，意味着你向团队其他 9 个人传递了"我们的标准不重要"。Lara Hogan 说："Firing one is sometimes the most generous act toward the other nine."</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref">
+<strong>Ben Horowitz · The Hard Thing About Hard Things</strong>（"Lead Bullets" 之后 "The Right Way to Lay People Off" 一章）——硅谷 CEO 写解雇写得最直白的一章。<br>
+<strong>Andrew Grove · High Output Management</strong>（关于 "When two people disagree" 和绩效管理的章节）——更老派但更严谨的解雇逻辑：决定与传达分离。<br>
+<strong>Kim Malone Scott · Radical Candor</strong>（"Compassionate Firing" 一节）——把 firing 放在 Care Personally / Challenge Directly 框架里讨论。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">English Insight</div>
+<div class="english">
+<span class="label">解雇对话里的关键句</span>
+<p>• 开场标准句：<em>"I have difficult news to share. The company has decided to end your employment, effective today."</em></p>
+<p>• 当他问"为什么"：<em>"The decision is based on the performance areas we've discussed during your PIP. I'm not going to relitigate those today — what matters now is your transition."</em></p>
+<p>• 收尾尊严句：<em>"This decision isn't a verdict on your worth. It's a fit decision. I wish you well."</em></p>
+<p>• 避免：<em>"I'm sorry" 超过两次、"Maybe in the future..." (虚假希望)、"Don't take it personally" (他当然会 take it personally)。</em></p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>"你这次没升上"：拒绝晋升那场对话
+<span class="en">The Promotion Denial Conversation</span></h2>
+<span class="tag">Camille Fournier</span><span class="tag">Will Larson</span><span class="tag">不留余地的诚实</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">"你没升上"这场对话的失败模式不是太狠，是太软。绝大部分 manager 把这场对话做成"温柔的失望"——结果下属带着一肚子困惑和模糊希望回家，下半年既不知道做什么、也开始怀疑系统是否公平。诚实版本是：(1) 明确告诉他没升的判定；(2) 拆出他差在哪两三个具体维度；(3) 给一个可验证的时间表。如果你做不到这三件——不是因为你不会，是因为他本来就不该被提名。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The kindest thing you can do for someone who didn't get promoted is to tell them, in concrete terms, what's missing. Vague encouragement is the cruelest feedback you can give — it traps them in another year of guessing."</span>
+<span class="zh">对一个没升上的人，你能做的最善良的事是用具体语言告诉他差在哪里。模糊的鼓励是最残忍的反馈——它让他困在又一年的瞎猜里。</span>
+<span class="source">— Camille Fournier, The Manager's Path</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：那场 1:1 的开场</div>
+<div class="scene">
+<div class="setup">校准会刚结束。你提名 X 升 Staff，没过。今天 1:1 你要告诉他。他知道你提名了他，他在等结果。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（保护他 = 伤害他）</div>
+<p>"X，关于 promo 我有点不太好的消息。这次没成。不过你真的非常 close——校准会上很多人都站你这边的，最后是几个 cross-team scope 的细节没撑住。下半年继续保持，下次应该没问题的，我对你有信心。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 三个问题：(1) "几个 cross-team scope 的细节"含糊，他不知道做什么；(2) "下次没问题"是你不能保证的承诺；(3) 暗示"系统差点点不公平"，把责任甩给校准会。他下半年大概率重复同样的 pattern，再次失败。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（清晰 + 路径 + 守住希望但不掺假）</div>
+<p>"X，我有 promo 的消息要告诉你。这次没升。我先说几件事，然后想听你的反应。<br><br>
+**第一**——我提名了你，并且我守住了我的提名。所以这不是我对你失去了信心，这是 calibration 上 staff bar 的具体两条没被房间接受：(1) Scope——你 own 的 payments 重构是 Senior+ 范围，但还没有 own 过一个 ambiguous 的、需要你自己 frame problem 的 staff-sized 项目；(2) Multiplier 的证据范围——你的影响主要在我们组内，对组外的可验证 leverage 还不够。<br><br>
+**第二**——这两件事下半年是可以攻的。我已经在想 search platform 那个项目，那是 ambiguous + cross-team，正好打两条。我下周想跟你过一遍 scoping。<br><br>
+**第三**——我不能保证下半年就成，因为 calibration 总是相对的。但我可以保证：如果你打满这两条，我会再次提名，并且你的 case 会强很多。<br><br>
+现在我先停。你想说什么？"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">对话前的检查表</div>
+<ul class="checklist">
+<li>我能用一句话说出他差在哪个具体维度吗？(不是"差一点"，是"在 Scope 维度上差具体的 X")</li>
+<li>差的那两三件事是他下半年可控的吗？(如果依赖项目机会，那么我作为 manager 的责任是创造那个机会——也写进去)</li>
+<li>我是真心还会再次提名吗？还是其实我心里觉得他没到？(后者 = 这场对话需要的不是 "promo denial"，是 "你不在 promo track 上" 的更难对话)</li>
+<li>我准备好他可能问"那 Y 凭什么升了"吗？(规则：不讨论别人，只讨论 rubric)</li>
+<li>这场对话结束后 24 小时内，我会发一份 written follow-up 总结这两条差距 + 下半年的具体动作吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"系统不公平"当借口。</strong>"calibration 太激烈"、"今年比例紧"——这些可能是事实，但说出来等于告诉他"你的命运在你之外"。下半年他会更躺平、更愤世，因为努力似乎不影响结果。</li>
+<li><strong>许下你不能兑现的承诺。</strong>"下半年一定升。"——你不能保证。一旦你这么说而下次又没升，他对你和系统的信任同时崩盘。</li>
+<li><strong>没有书面 follow-up。</strong>口头对话里他听到的版本和你说的版本一周后差异巨大。24 小时内一封邮件总结：差距 + 下半年 1-2 个具体动作。</li>
+<li><strong>把"差距对话"和"职业生涯对话"混为一谈。</strong>这场对话只解决"为什么没升"。"我应不应该考虑去别的组 / 别的公司"是另一场对话，他可能两周后才会问——别在今天硬塞答案。</li>
+<li><strong>过度共情。</strong>"我知道你很失望，我也很失望。"——一次足够。如果你陪他失望 20 分钟，你在传递的是"这件事真的很糟"，他下半年的心态会带着这场对话的阴影。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 当被拒晋升的是女性下属</span>
+<p>研究反复显示女性在被拒晋升后，比男性更可能：(a) 接受、内化、自责"我应该更努力"；(b) 不再主动 push 升职；(c) 一年内悄悄离职——通常是去别的公司直接拿到那个级别的 offer（这种叫 "the leaky bucket"）。</p>
+<p>作为给女性下属传递这个消息的 manager，你有额外责任去打破这个循环：</p>
+<p><strong>(1) 明确归因外部：</strong>不要让她以为问题在"她不够好"。具体到她少做了哪两件具体的、可执行的事。</p>
+<p><strong>(2) 明确你的提名意愿：</strong>"我下次还会提名你。"女性比男性更倾向假设"如果我没升，是 manager 不再支持我了"——直接打破这个误读。</p>
+<p><strong>(3) 主动谈 retention：</strong>"我猜你可能会想：要不要去别的地方？我希望你留下，但我也理解如果你想 explore。这不会影响我对你的支持。"——给她合法性去考虑，反而提高她留下的概率。装作"她不会想跳"是最快失去她的方式。</p>
+<p>反过来，如果你自己是被拒晋升的女性——Sandberg 的建议是：72 小时内不做任何决定。第一反应通常是 "I should leave / I'm not good enough"。72 小时之后再看 manager 给的差距 + 路径，再做判断。</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref">
+<strong>Camille Fournier · The Manager's Path</strong>（"Managing a Senior Engineer" 和 "Promotions" 相关章节）——给出 promotion denial 的具体话术框架。<br>
+<strong>Will Larson · Staff Engineer: Leadership Beyond the Management Track</strong>——把 Staff 晋升的具体 bar 拆得很清楚，可以直接拿来给下属解释"差在哪"。<br>
+<strong>Lara Hogan · "Managing Up: A Better Way to Get Promoted"</strong>（个人 blog 系列）——也包括 manager 角度怎么传递坏消息。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">English Insight</div>
+<div class="english">
+<span class="label">这场对话里的关键句</span>
+<p>• 开场不绕弯：<em>"I have promotion news. You weren't promoted this cycle. Let me tell you why, and what's next."</em></p>
+<p>• 守住你的角色：<em>"I nominated you and I held the nomination. This isn't a withdrawal of support."</em></p>
+<p>• 拆具体差距：<em>"There are two specific gaps the room didn't accept: X and Y. Both are addressable next half."</em></p>
+<p>• 真诚而非空许：<em>"I can't guarantee the outcome, but I can guarantee I'll nominate again if these two close."</em></p>
+<p>• 避免：<em>"You were so close" / "Next time for sure" / "It was super competitive"</em> — 这三句是 promo denial 的标准废话。</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Blameless Postmortem：当他搞砸了一件大事
+<span class="en">The Blameless Postmortem: When Someone Broke Something Big</span></h2>
+<span class="tag">John Allspaw</span><span class="tag">Edmondson</span><span class="tag">系统 vs 个人</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Blameless 不等于 consequence-less。"无指责"指的是**复盘对话**里不指责个人——目的是榨出系统级学习；**事后**该有的反馈、绩效影响、PIP，仍然该有，只是发生在另一个房间、另一场 1:1。多数管理者把这两件事搞混：要么"为了显得 blameless 而完全不给当事人反馈"（团队学到的是"做错没事"），要么在 postmortem 当众羞辱当事人（团队学到的是"别承认错误，掩盖到底"）。两间房间，两场对话，缺一不可。</div>
+</div>
+
+<div class="section">
+<div class="section-label">两间房间（一张图）</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 560 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="250" height="240" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5" rx="6"/>
+<text x="145" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">ROOM 1 · POSTMORTEM</text>
+<text x="145" y="68" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#4a6a28">(Blameless · 全组在)</text>
+<text x="40" y="98" font-family="Georgia" font-size="11" fill="#3a2f1c">目标：榨出系统学习</text>
+<text x="40" y="118" font-family="Georgia" font-size="11" fill="#3a2f1c">主语："我们的系统..."</text>
+<text x="40" y="138" font-family="Georgia" font-size="11" fill="#3a2f1c">问题："guardrails 在哪缺失？"</text>
+<text x="40" y="158" font-family="Georgia" font-size="11" fill="#3a2f1c">产出：系统改动 + 流程改</text>
+<text x="40" y="185" font-family="Georgia" font-size="11" font-weight="700" fill="#4a6a28">不在这里讨论：</text>
+<text x="40" y="205" font-family="Georgia" font-size="10" fill="#3a2f1c">• 谁应该被惩罚</text>
+<text x="40" y="222" font-family="Georgia" font-size="10" fill="#3a2f1c">• 当事人的绩效</text>
+<text x="40" y="239" font-family="Georgia" font-size="10" fill="#3a2f1c">• 谁的"判断"有问题</text>
+<rect x="290" y="20" width="250" height="240" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5" rx="6"/>
+<text x="415" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">ROOM 2 · 1:1</text>
+<text x="415" y="68" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#a04020">(私下 · 仅 manager + 当事人)</text>
+<text x="310" y="98" font-family="Georgia" font-size="11" fill="#3a2f1c">目标：个人学习与反馈</text>
+<text x="310" y="118" font-family="Georgia" font-size="11" fill="#3a2f1c">主语："你的判断..."</text>
+<text x="310" y="138" font-family="Georgia" font-size="11" fill="#3a2f1c">问题："那一刻你怎么想的？"</text>
+<text x="310" y="158" font-family="Georgia" font-size="11" fill="#3a2f1c">产出：行为改 + 信任修复</text>
+<text x="310" y="185" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">这里才讨论：</text>
+<text x="310" y="205" font-family="Georgia" font-size="10" fill="#3a2f1c">• 绩效影响（如有）</text>
+<text x="310" y="222" font-family="Georgia" font-size="10" fill="#3a2f1c">• 你的判断模式</text>
+<text x="310" y="239" font-family="Georgia" font-size="10" fill="#3a2f1c">• 信任如何修复</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"A blameless postmortem allows engineers to contribute their accounts in a way that doesn't reflect badly on themselves or others — and in doing so, you get the real story. Without it, you get a sanitized story that teaches you nothing. The blame instinct feels like accountability; it is actually the enemy of learning."</span>
+<span class="zh">无指责复盘让工程师可以贡献他们的版本而不会让自己或别人难堪——这样你才能拿到真实的故事。没有这个机制，你拿到的是一个被消毒过的版本，什么也学不到。"指责"的冲动看起来像在追责，其实是学习的敌人。</span>
+<span class="source">— John Allspaw, "Blameless PostMortems and a Just Culture" (Etsy Engineering Blog, 2012)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：开复盘会的第一段</div>
+<div class="scene">
+<div class="setup">下属 X 在没有 review 的情况下推了一个 migration，导致生产 4 小时不可用。你召集 postmortem，X 也在。你是主持人。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（"假 blameless"）</div>
+<p>"大家好。今天我们做这次 incident 的复盘。我先强调：这是 blameless 的。我们不是来追究是谁的错。X，你愿意先讲一下当时的情况吗？"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 三个问题：(1) "不追究是谁的错"——但所有人都知道这是关于 X，于是变成"假装无指责"的尴尬；(2) 让 X 第一个讲——把他放在被审判席上；(3) 没有定义这场会的产出是什么。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（Allspaw 风格）</div>
+<p>"大家好。我们用 60 分钟复盘上周三的 incident。这场会的目的明确：榨出我们的系统让一个 4 小时 outage 成为可能的所有缝隙——guardrails、流程、监控、文档。<br><br>
+有几个 ground rule 我先讲：(1) 这场会不讨论"谁应该被惩罚"——任何关于个人绩效的事，发生在我和当事人的 1:1，不在这间房间；(2) 我们用"the change"、"the deploy"、"the system" 做主语，不用"X 做了"——因为我们在拆系统，不是拆人；(3) 任何人说"那是显而易见应该 catch 的"——我会打断你。Hindsight 在 postmortem 里是禁用的。<br><br>
+我先讲 timeline。然后我们一起回到当时的状态，问：在那一刻、那个人手上有什么信息、为什么那个决定看起来是合理的？"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">复盘前的检查表（主持人用）</div>
+<ul class="checklist">
+<li>我能区分"这场 postmortem"和"我跟 X 的 1:1"两件事吗？我准备好开完一个之后开另一个吗？</li>
+<li>timeline 我自己重建过了吗？有没有人为我准备过 raw 数据（Slack log、commits、metrics）？</li>
+<li>我准备好打断任何 hindsight bias 的发言吗？("应该早点 catch / 这显然有问题"——禁用)</li>
+<li>会议产出是什么？(系统改动列表 + owner + 时限——不是"大家更小心"这种空话)</li>
+<li>当事人 X 我提前打过招呼了吗？告诉他这场会的规则、告诉他 1:1 是另外一场、让他知道这场会不会让他被当众羞辱？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Room 2 的对话：私下那场反馈</div>
+<div class="scene">
+<div class="setup">Postmortem 结束 24-48 小时后。你和 X 1:1。这才是讲个人反馈的地方。</div>
+<div class="dialog good">
+<div class="speaker">私下 1:1 的开场</div>
+<p>"X，postmortem 上我们没有讨论你个人的部分，是设计如此。但今天 1:1 我们要谈。<br><br>
+我看到的事实：你 bypass 了 code review 流程，因为你觉得这是一个 'simple migration'。这个判断错了。我想理解的不是"为什么 review 流程在这件事上很重要"——你知道的——我想理解的是：那一刻，是什么让你判断"这件事可以跳过 review"？是时间压力？是觉得自己有把握？还是别的什么？<br><br>
+我问这个，是因为如果我们不弄清楚那个判断的 pattern，下次类似的压力点出现，你还会做同样的事。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>"假 blameless"。</strong>口头说 blameless，会议室里所有人都知道这是关于谁。结果当事人不发言、其他人也不发言、复盘变成 manager 单口相声。Allspaw 的原话："Blameless is not no-name."—— blameless 是关于**叙事方式**（用"系统"做主语），不是关于隐藏当事人。</li>
+<li><strong>只开 Room 1，不开 Room 2。</strong>对当事人没有任何 1:1 反馈——团队学到的是"搞砸大事没后果"。其他工程师下次会更草率。</li>
+<li><strong>只开 Room 2（当众羞辱），不开 Room 1。</strong>没有系统改动。三个月后同样的事重演，因为系统没变。</li>
+<li><strong>Action items 没有 owner / 没有时限。</strong>"我们要加强 review 流程"——谁加强？什么时候做完？没写下来 = 不存在。</li>
+<li><strong>不发 postmortem 总结给更大圈。</strong>组内学到的东西没有传播。同样的错在公司其他组重演。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref">
+<strong>John Allspaw · "Blameless PostMortems and a Just Culture" (2012)</strong>——Etsy 工程博客那篇文章是这个领域的奠基文，10 年了仍然被引用。<br>
+<strong>Amy Edmondson · The Fearless Organization</strong>——心理安全感的实证基础，解释了为什么 blameless 能让组织学得更快。<br>
+<strong>Sidney Dekker · The Field Guide to Understanding 'Human Error'</strong>——更深的理论基础：从"old view"（找出坏苹果）到"new view"（理解系统如何让好人做坏决策）。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">English Insight</div>
+<div class="english">
+<span class="label">主持 postmortem 的关键句</span>
+<p>• 开场定调：<em>"This is a blameless postmortem. We use 'the system' and 'the change' as subjects, not names. Anyone slipping into hindsight — 'they should have caught this' — I'll interrupt."</em></p>
+<p>• 让当事人安全：<em>"Walk us through what you knew at the time, not what you know now."</em></p>
+<p>• 转向系统：<em>"What would have had to be different in our tooling / process / on-call playbook for this decision to be safer?"</em></p>
+<p>• 划清 Room 1 vs Room 2：<em>"Performance discussions live in 1:1s, not here. Today is about the system."</em></p>
+</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Week 4 Action</h3>
+<p>本周挑一场你正在拖的难对话——做这两件事：</p>
+<div class="action">
+<strong>(1) 命名你在拖的那场对话。</strong>每个 manager 心里都有一个名单：那个该 promo denial 但你拖到下次的 1:1、那个该解雇但你给"再三个月"的下属、那场该开但你借口"团队太忙"的 postmortem。挑那一场，**写下来**：和谁、关于什么、你已经拖了多久。仅仅命名就消除了 30% 的回避能量。<br><br>
+<strong>(2) 用三层框架准备这场对话。</strong>在一张纸上分三栏：<br>
+&nbsp;&nbsp;• **What Happened**：3 个具体场景作为证据。没有 = 还不能开。<br>
+&nbsp;&nbsp;• **Feelings**：他会有什么情绪反应？我自己现在是什么情绪？<br>
+&nbsp;&nbsp;• **Identity**：他听到的潜台词可能是什么？我要怎么显式拆掉它？<br>
+然后写下你的**第一句话**——不超过 30 个字。这一句话就是这场对话的全部。<br><br>
+<strong>(3) 排时间块。</strong>下周内，在你的日历上找一个 30-45 分钟的块，标题写"1:1 with X"。不要写"难对话"——你会自己看到就焦虑得想取消。<br><br>
+诚实地说：你 80% 的难对话会比你预想的好。剩下 20% 会比预想的糟。但**全部都比"不开"那条路径好**。Susan Scott 那句话再读一遍：The conversation you've been avoiding is the relationship you've been losing.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Weekly · Week 04 · 2026.06.10</footer>
+</div>
+
+<script src="https://cissy0802.github.io/comments.js" defer></script>
+<script src="https://cissy0802.github.io/search.js" defer></script>
+<script src="https://cissy0802.github.io/index-button.js" defer></script>
+</body>
+</html>
