@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Week 5：招聘的工艺</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.template{background:#f5efe0;padding:16px 18px;border-radius:4px;border:1px dashed #c4a878;font-family:"Courier New",monospace;font-size:0.88rem;color:#3a2f1c;white-space:pre-wrap;line-height:1.6;margin-top:10px}
+.template .label-inline{color:#a8702d;font-weight:700}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 05 · 2026.06.17</div>
+<h1>招聘的工艺：每一个 hire 都在塑造你下一年的团队</h1>
+<div class="meta"><span>主题：Hiring</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"A players hire A players. B players hire C players. The cost of one bad hire is the next six months of your team." — Steve Jobs / Guy Kawasaki</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>招聘是 manager 杠杆最高也最容易做坏的事。一个错误 hire 浪费的是六个月 onboarding 带宽、污染团队 bar、把 A 玩家逼到考虑离开。多数 manager 犯三件事：稀缺压力下放水、非结构化面试拼感觉、拒绝候选人发模板邮件烧掉未来。这一周拆 Bar Raising、结构化面试、Scorecard / Debrief、拒绝对话——读完你应该可以立刻审视下一场 onsite。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Bar Raising：不是"够格"，是"来了团队更强"
+<span class="en">Bar Raising: Not "Meets the Bar," But "Raises the Bar"</span></h2>
+<span class="tag">Amazon</span><span class="tag">Will Larson</span><span class="tag">长期复利</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">招聘决策不是"他能不能干这份活"，是"他加入之后，团队的平均水平会上升还是下降"。这两个标准在稀缺压力下天差地远——"能干"会让你把空位填满，"拉高 bar"会让你保持空位三个月直到对的人出现。**默认是 No。** No 的代价是已知的（继续招）；Yes 的代价是隐藏的（团队 bar 慢慢漂移、一年后你不知道为什么团队不再 A 级）。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Every person we hire should raise the bar — should be better than 50% of the people currently in their role. If we don't actively raise the bar with every hire, we'll drift downward. Hiring is a one-way door; the cost of a mediocre hire is paid for years."</span>
+<span class="zh">我们招的每个人都应该拉高门槛——应该比目前同岗位 50% 的人更强。如果每一次招聘不主动拉高 bar，我们会缓慢下行漂移。招聘是单向门；一个平庸 hire 的代价你要付好几年。</span>
+<span class="source">— Jeff Bezos · Amazon Bar Raiser program 内部原则（多次在 shareholder letter 引用）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：Debrief 上的决策时刻</div>
+<div class="scene">
+<div class="setup">Onsite 结束。5 个面试官，3 个 Hire / 2 个 No Hire。位置空了 4 个月，你压力很大。你是 Hiring Manager。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（稀缺压力下放水）</div>
+<p>"嗯，3:2 倾向 Hire，两位 No Hire 的具体顾虑是什么？……好，coding 那一轮稍弱但 system design 不错……总体我觉得他可以入职，第一年我们 closely manage。位置空太久了，团队都在加班。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 三个红灯：(1) "closely manage" 在补偿能力缺口——你已在为他承担额外成本；(2) "位置空太久"作决策依据是稀缺压力，不是信号；(3) 没问"他会让团队哪个维度更强"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（默认 No）</div>
+<p>"我们换个问法。先不投票——每个人用一句话回答：**如果他入职，哪一个维度上他会让团队比今天更强？** 具体点，不要说'整体不错'。<br><br>
+（听完一圈）<br><br>
+我听到的：system design 是一个真实的 strength，比我们组现有 senior 中位数高。但 coding 和 ambiguity handling 都在中位数下。我们这个 role 60% 的时间是 coding 和 ambiguous scoping。<br><br>
+这意味着他能不能干？能。他会不会拉高 bar？不会，他会拉低。我倾向 No Hire。我知道位置空 4 个月很痛，但下一个错误 hire 我们要付 18 个月。我去跟 recruiter 谈把 sourcing 漏斗加宽。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">决策框架：每个候选人三问</div>
+<ul class="checklist">
+<li>**Raise 哪一维度？** 他加入后，团队在哪个具体能力上中位数会上升？(说不出具体维度 = No)</li>
+<li>**两年后他在哪？** 他会进步、Plateau、还是退步？我愿不愿意两年后他还在我组？</li>
+<li>**他改变了团队的什么？** 他带来的工作方式、价值观、知识，是我希望传染给其他人的吗？(招聘是文化的最强信号)</li>
+<li>**默认 No 的对称性：** 我现在倾向 Yes 是基于信号还是基于位置空缺？如果位置不急，我还会 Yes 吗？</li>
+<li>**Closely manage 是红灯。** 如果我已经在想"入职后我要 closely manage 他"——他还没入职就成本超标了。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>"他还可以"陷阱。</strong>当一个候选人不是清晰的 Yes，他就是 No。"还可以"=No。强 Yes 是面试官在结束时主动跟你说"我们一定要拿下他"。</li>
+<li><strong>用未来潜力补偿当前缺口。</strong>他在你培养之外几十个人手上都没成长出来，凭什么在你这里就成长？</li>
+<li><strong>"culture fit" 当 vague 拒绝理由。</strong>反向也一样——"他很 nice，应该 hire"。没 specific signal 支撑的 culture fit 就是 bias 的垃圾桶。</li>
+<li><strong>稀缺压力下重新校准 bar。</strong>团队累 ≠ 降低标准。降低标准 = 团队更累（你招了一个还要带的人）。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 当候选人是女性</span>
+<p>Bar raising 听起来 neutral，但研究反复显示女性候选人在 debrief 中被评价时，模糊负面词汇（"not sure"、"something feels off"、"not a culture fit"）出现率显著高于男性。Lara Hogan 称之为 **"vague concern" 模式**——它是 bias 通过 bar raising 语言被合理化的最常见路径。</p>
+<p>作为 Hiring Manager 你的反制：</p>
+<p><strong>(1) 强制 specific signal：</strong>任何"feel"类发言后追问"具体哪句话 / 哪个动作让你这么想？"——通常追到第二层就空了。</p>
+<p><strong>(2) 反向 sanity check：</strong>"如果候选人性别 / 名字换了，你的评价会一样吗？"——不是 PC，是技术性 calibration。</p>
+<p><strong>(3) 警惕 "she's not assertive enough" 和 "she's too aggressive" 同时出现：</strong>这是 Sandberg 和 Tomas Chamorro-Premuzic 反复指出的女性 double bind——两种相反指控都出现，几乎确定是 bias。</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>结构化面试：每个人问同样的题，按同样的尺打分
+<span class="en">Structured Interviews: Same Questions, Same Rubric</span></h2>
+<span class="tag">Laszlo Bock</span><span class="tag">Google</span><span class="tag">信号 vs 噪音</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">非结构化面试（"我们聊聊吧"）的预测力学界估算约 0.14——和扔硬币只好一点点。结构化面试（同样题、同样 rubric、独立评分）能到 0.26 以上。差别不是"问什么"，是**纪律**：每个候选人面同样的题、按预先定义的 rubric 评分、面试官独立写完再讨论。多数公司号称结构化，实际是"我们都问 system design"——但每个人问的 system design 不一样、评分标准不一样、面完直接群聊互相影响——那不是结构化。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Years of research showed that unstructured interviews are essentially worthless. We changed Google to a structured approach: same questions across candidates, behavioral and situational, with a predefined scoring rubric. Hiring quality improved measurably. The gut-feel interview is a comforting ritual that costs you good hires."</span>
+<span class="zh">多年研究表明非结构化面试基本毫无价值。我们把 Google 改成结构化方式：同一批问题给所有候选人，行为题加情景题，加上预定义的评分 rubric。招聘质量可衡量地提升。凭感觉的面试是一种让人舒服的仪式——代价是你失去的好 hire。</span>
+<span class="source">— Laszlo Bock · Work Rules!（前 Google SVP People Operations）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：行为题的两种问法</div>
+<div class="scene">
+<div class="setup">你在面 staff engineer。你想评估"在 ambiguity 下能不能 frame problem"这一维度。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（开放但不可校准）</div>
+<p>"跟我讲讲你在前公司怎么做技术决策的？"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 太宽。候选人会讲他最舒服的故事。两个候选人讲的故事根本不在一个维度，你拿什么比？面试结束你只剩"感觉"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（结构化 STAR + 同题）</div>
+<p>"我想听一个具体例子。请讲一次：你接到一个目标定义模糊的问题，没有明确 spec，需要你自己 frame，并且你最终的 frame 改变了团队的方向。<br><br>
+我会问你这几件：(1) 那个问题最初长什么样？(2) 你做了哪些动作把它 frame 清楚？(3) 你的 framing 和 default 路径的分歧在哪？(4) 别人怎么反应？(5) 半年后回看，那个 framing 是对的吗？"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 这个问题：(a) 每个候选人都问；(b) 五个 sub-question 把 STAR 结构强制出来；(c) "半年后回看"问的是 self-awareness，候选人编不了；(d) rubric 上"frame 改变了方向"是 staff bar，"只是 execute 别人的 frame"是 senior bar——可清晰对照。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">设计一道结构化题的检查表</div>
+<ul class="checklist">
+<li>这道题对应**哪个具体维度**？(scope / ambiguity / influence / depth—不写明 = 你在浪费一轮)</li>
+<li>这道题对**每个 level** 应该长什么样？(senior 答案 vs staff 答案的差别是什么？写下来)</li>
+<li>这道题给**两个不同候选人**问，是否能产出可对比的数据？(如果不能 = 题太开放)</li>
+<li>**Follow-up 已经预先准备**吗？(每个 sub-question 都是为了把虚的故事压实)</li>
+<li>这道题**编不了**吗？(让候选人讲"半年后回看"、"如果再做一次会变什么"——这些不能背)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>"我们聊聊"开场。</strong>10 分钟闲聊浪费 1/5 信号时间。直接进题，候选人也更被尊重。</li>
+<li><strong>每个面试官自由发挥。</strong>5 个面试官问 5 套不同题——你得到的不是 5 个独立信号，是 5 个不可比较的故事。Interview kit 是 hiring manager 的责任。</li>
+<li><strong>面完立刻群聊。</strong>污染独立判断。规则：每个人写完 scorecard 再开 debrief。</li>
+<li><strong>把"沟通能力"当 catch-all 否决项。</strong>除非 role 60% 是对外沟通，否则"表达不清"经常是文化偏见的掩护。拆成具体子能力再评。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 同题是公平的起点</span>
+<p>非结构化面试是 bias 的滋生地——女性和少数族裔候选人更可能被问个人问题（"你打算什么时候要孩子？"——非法但仍在发生）、被打断、被问与 role 无关的"culture fit"试探。结构化面试是反偏见的**结构性**工具，不是"软"措施。</p>
+<p>作为 Hiring Manager，两件具体可做：</p>
+<p><strong>(1) 公开 interview kit：</strong>所有面试官面前一份相同的题库 + rubric。任何 deviation 需要在 scorecard 里解释。这一个动作把"凭感觉问"的成本拉高。</p>
+<p><strong>(2) 自己审 scorecard 的语言：</strong>女性候选人的 scorecard 里 "abrasive"、"emotional"、"not warm enough" 出现频率显著高于男性同等表现者。这些词出现时，写一句反问 comment："具体哪句话？换一个男性候选人说同样话你会用同样词吗？" Joan C. Williams 的 *Bias Interrupted* 是这方面最实证的资源。</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Scorecard 与 Debrief：把"感觉"翻译成"证据"
+<span class="en">Scorecards & Debriefs: Translating Gut into Evidence</span></h2>
+<span class="tag">Geoff Smart</span><span class="tag">独立评分</span><span class="tag">反 anchoring</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Debrief 的目标不是投票，是**把每个面试官的独立信号合成成一份比任何单一信号都准的判断**。这要求三个纪律：(1) 面完 30 分钟内写完 scorecard，写完之前不和任何人讨论；(2) 每个评分必须挂 specific quote / behavior，不是 impression；(3) Debrief 上 Hiring Manager 最后发言，避免 anchoring。多数公司 debrief 像辩论赛——最大声的人定调，最资深的人 anchor，最后大家"达成共识"——这不是合成信号，是社会动力学。</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scorecard 的最小结构</div>
+<div class="template">
+<span class="label-inline">CANDIDATE:</span> 张某  <span class="label-inline">ROLE:</span> Staff Eng  <span class="label-inline">ROUND:</span> System Design
+
+<span class="label-inline">[维度 1 · Scope]</span>  评分: 3/5
+  Signal: 候选人 propose 了 multi-region failover，但
+          没有 frame "我们真正要解的是什么 SLA 问题"
+          这一层。原话："The user said HA so I assume…"
+  Bar: Senior+，未达 Staff（Staff 应主动 frame 上层问题）
+
+<span class="label-inline">[维度 2 · Depth]</span>  评分: 4/5
+  Signal: consistency model 选 RW Quorum 时正确指出
+          tail latency trade-off；并自发提到 "we'd hedge
+          reads to nearest replica"——超出题面。
+
+<span class="label-inline">[维度 3 · Communication]</span>  评分: 4/5
+  Signal: 用 whiteboard 自己组织叙事顺序；被我打断
+          挑战时 graceful 调整、未防御。
+
+<span class="label-inline">RECOMMEND:</span> Hire（弱 yes）
+  关键证据：Depth 维度上 raise bar；Scope 在 senior+
+  范围但他将做 senior IC track，可接受。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：Debrief 上的 anchoring 干预</div>
+<div class="scene">
+<div class="setup">Debrief 开始。最资深的 staff engineer M 第一个发言：「我给 strong hire。他的 system design 比我们组里很多 staff 都好。」其他人开始往这个方向倾斜。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（默认 anchoring）</div>
+<p>"OK，M 给 strong hire。接下来其他人怎么看？……N 给 hire……P 给 hire……Q 也是 weak hire……4:0 hire，我们走吧。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 你拿到的不是 4 个独立信号，是 1 个信号被复述 4 次。M 的 anchor 决定了一切。下次 M 错的时候，整个 loop 一起错。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（合成而非汇总）</div>
+<p>"等一下。在我们听 M 的总评之前，每个人按顺序：你写在 scorecard 里的**具体 quote / behavior** 是什么？只读你写的，不要总评。我从 P 开始（最 junior 先说，反 anchoring）。<br><br>
+（一圈听完之后）<br><br>
+现在我整理一下：四个人都提到他在 Depth 上有超过 bar 的 signal——这是一致信号。但 P 和 Q 都独立观察到 'Scope 一层没有主动 frame'——这也是一致信号。我们要决定的是：Depth 强 + Scope 弱，这个组合是否符合我们这个 role。<br><br>
+M 你的 strong hire 里，Scope 这一条你怎么看？"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 这个流程做了三件事：(1) 反 anchoring（最 junior 先说，HM 最后说）；(2) 强制 evidence-first（不接受总评，先听 specific signal）；(3) 找一致 vs 分歧（不是数票，是看信号 converge 还是 diverge）。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">主持 debrief 的检查表</div>
+<ul class="checklist">
+<li>所有 scorecard 在 debrief 之前**独立**提交了吗？（Calendar / ATS 里能验证时间戳）</li>
+<li>**最 junior 的面试官先发言**——我守住这条了吗？</li>
+<li>每个评分都挂了 specific quote / behavior，不是"feel"——没挂的我**追问**了吗？</li>
+<li>我（Hiring Manager）的发言放在**最后**——我克制住了"我先说一下整体感觉"的冲动吗？</li>
+<li>我们在找**一致信号**和**分歧信号**——不是在投票数。Debrief 的产出是一段叙事，不是一个分数。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>面后 24 小时才写 scorecard。</strong>记忆已被同事八卦污染。30 分钟规则不是教条，是认知科学。</li>
+<li><strong>"gut feeling"被允许进 scorecard。</strong>每个评分要挂 quote / behavior，否则发回重写。</li>
+<li><strong>把 debrief 当投票。</strong>3:2 不是决策，是分裂信号——要么再 round，要么 HM 看深层一致性，但不是数票。</li>
+<li><strong>Hiring Manager 先发言。</strong>你说"我觉得不错"——后面 5 个人的"独立判断"都被你 anchor 了。</li>
+<li><strong>不写"为什么 no"。</strong>No 的理由比 yes 更要写——下次 sourcing 怎么调整？没写 = 团队学不到。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>拒绝候选人：让他下次还想再约你
+<span class="en">Rejecting Candidates: Leave Them Wanting to Apply Again</span></h2>
+<span class="tag">候选人体验</span><span class="tag">长期 pipeline</span><span class="tag">内部候选人</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">每个被你拒绝的候选人都会做三件事：(1) 告诉 5-10 个人她的体验；(2) 在 Glassdoor / LinkedIn / 朋友圈打分；(3) 决定她将来跳槽时要不要再投。一个体面的拒绝可能让她两年后回来——或者推荐三个她朋友过来。一个冷漠的拒绝把这条线烧掉了。绝大部分 manager 把拒绝外包给 recruiter 发模板邮件——这是把一笔关系投资归零。**晚期阶段（onsite 之后）的拒绝，由 hiring manager 亲自做。**</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"How you reject someone says more about your company than how you hire them. Everyone you hire tells the story of getting in. Everyone you reject also tells a story — and there are many more of them. Treat the rejection as a marketing event, not as an admin task."</span>
+<span class="zh">你怎么拒绝一个人，比你怎么招一个人更能说明你公司的样子。每个你招进来的人会讲一个"我进来了"的故事——但你拒绝的人也在讲故事，而且他们多得多。把拒绝当作品牌事件，不是行政任务。</span>
+<span class="source">— Johanna Rothman · Hiring Geeks That Fit（业内长期被引用的招聘工艺书）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：onsite 后的拒绝电话</div>
+<div class="scene">
+<div class="setup">候选人 X 走完 onsite，team 决定 No Hire。她投入了 6 小时 + 一个工作日 + 心理能量。你（hiring manager）该亲自打电话。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（外包给模板）</div>
+<p>(recruiter 发邮件)<br>"Thank you for interviewing with us. After careful consideration, we've decided to move forward with other candidates whose experience more closely aligns with the role. We wish you the best in your search."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 她投入一天，你回 30 字模板。她两年内不会再投，并且告诉她 senior 网络里的所有人。模板邮件的成本不是你看到的那一封邮件，是你看不到的那 10 个未来候选人。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（15 分钟电话）</div>
+<p>"X，我是 Cissy。先谢谢你这一周给我们的时间——onsite 一整天非常 demanding。我今天打电话是想亲自告诉你两件事：<br><br>
+**第一**，我们这次决定不 move forward。我想亲自说，不通过邮件，是因为你走到了 onsite，值得一个真人对话。<br><br>
+**第二**，给你一个我可以分享的层面的反馈：你在 system design 那一轮显示了非常强的 depth，这是真实信号——我们组现有 staff 里你会排前 30%。我们最后的犹豫在 ambiguity / problem framing 这一维度——这个 role 60% 的工作是 frame 一个还没人 frame 过的问题，我们需要更多这方面证据。这**不**意味着你不行——意味着我们这个具体 role 的 shape 和你现在能展示的 shape 不完全对齐。<br><br>
+**第三**，如果你 9-12 个月之后想再约一次，我欢迎。我会给 recruiter 备注'X 是值得重新评估的候选人'。<br><br>
+你有什么想问的？"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 这通 15 分钟电话：(a) 承认对方投入；(b) 亲自传达；(c) 一条**可执行**反馈；(d) 把"被拒"和"你不行"分开；(e) 给未来路径——很多 onsite 完拒绝的人 18 个月后就是你最想要的 senior hire。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">拒绝候选人的检查表</div>
+<ul class="checklist">
+<li>**晚期阶段（onsite+）我亲自做了吗？**——电话 / video，不是邮件。Early stage（phone screen）可以 recruiter 模板，但 onsite 之后不行。</li>
+<li>**反馈是 specific 还是 vague？**——"不够 senior"是 vague；"在 ambiguity framing 这一维度证据不足"是 specific。</li>
+<li>**我没有许诺我不能兑现的事吗？**——"明年一定再约"是承诺。"如果你 9 个月后想再约，我欢迎"是邀请，没承诺。</li>
+<li>**Internal candidate 我特别小心了吗？**——内部被拒的人留在公司，处理不好直接走人。需要单独一场 1:1 + 后续 development plan。</li>
+<li>**24 小时内 follow-up 邮件**——电话讲过的关键反馈写一封简短邮件，她可以回看。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>沉默拒绝。</strong>不回邮件、ATS 永远 "in review"。最 lazy 也最伤品牌。onsite 之后必须电话。</li>
+<li><strong>过度反馈。</strong>你不是她的 coach，给一条核心反馈足够。给太多 = audit 她，会让她屈辱。</li>
+<li><strong>用 "we'll keep your resume on file"。</strong>每个候选人都知道这是空话。要么真给 referral 路径，要么不说。</li>
+<li><strong>对 Internal candidate 应付式处理。</strong>她下周一还要来上班。处理不好接下来 6 个月 disengaged，1 年内悄悄离职。</li>
+<li><strong>把法律谨慎当冷漠借口。</strong>"HR 不让我们给反馈"——红线是不给 protected class 相关判断，**不是**不给任何反馈。Role-relevant feedback 是允许的。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 拒绝 Internal 女性候选人时</span>
+<p>Internal 女性候选人被拒后的离职率（self-reported across multiple Lean In / McKinsey 报告）显著高于男性。原因和 Week 4 讲拒绝晋升时类似：女性更倾向把"被拒"内化成"我不够好 / 没人支持我"，而男性更倾向归因外部（"时机不对 / 比例紧"）然后继续 push。</p>
+<p>作为 Hiring Manager 的额外动作：</p>
+<p><strong>(1) 不要 outsource 给 recruiter：</strong>Internal 被 recruiter 邮件拒是双重信号——"role 没了 + manager 也不在乎我"。亲自谈。</p>
+<p><strong>(2) 显式说"你被认真考虑过"：</strong>"你走到 final round 是有原因的——X 维度是真实 strength。这次不是关于你够不够好，是关于 role 的具体 shape。" 这一段对她接下来 6 个月留下来的概率影响巨大。</p>
+<p><strong>(3) 承接 development 对话：</strong>"我们下周 1:1，聊接下来 6-12 个月怎么 build 那个 missing piece，下次再竞你的 case 强很多。" ——给**继续投资**的信号。Sandberg 在 *Option B* 里讲 resilience 的核心：人需要的不是被拒后的 comfort，是**下一步**。</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>深入资源 · Further Reading</h3>
+<ul>
+<li><strong>Laszlo Bock · Work Rules!</strong> — 前 Google SVP People，关于结构化面试的实证基础。第 4-5 章直接讲招聘机制。</li>
+<li><strong>Geoff Smart & Randy Street · Who: The A Method for Hiring</strong> — Scorecard / Topgrading 方法的最实操化版本。</li>
+<li><strong>Will Larson · Staff Engineer: Leadership Beyond the Management Track</strong> — Staff 级 bar 的具体定义可直接 borrow 进 rubric。</li>
+<li><strong>Camille Fournier · The Manager's Path</strong> — 招聘章节讲 hiring loop 的设计与团队 bar 维护。</li>
+<li><strong>Johanna Rothman · Hiring Geeks That Fit</strong> — 候选人体验 / 拒绝对话的工艺，被 ThoughtWorks / Pivotal 广泛引用。</li>
+<li><strong>Tomas Chamorro-Premuzic · Why Do So Many Incompetent Men Become Leaders?</strong> — 招聘 bias 的实证基础，特别是 confidence 被误读为 competence 的机制。</li>
+<li><strong>Joan C. Williams · Bias Interrupted</strong> — debrief / scorecard 里语言偏见的拆解和反制工具。</li>
+<li><strong>Amazon Bar Raiser Program</strong>（公开讨论的内部机制）— Bar Raiser 角色独立于 hiring manager、有否决权的设计。</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · Open Questions</h3>
+
+<details>
+<summary>"Bar raising" 在团队规模小（5 人以内）时还成立吗？</summary>
+<div>规模越小，单个 hire 对团队 bar 的杠杆越大——更应该坚持。但小团队也最受空缺的痛，焦虑感呈指数级。诚实答案：bar raising 逻辑不变，但 sourcing 强度要倍增——不能用"降 bar"补 sourcing 不足，要用"找 50 个人而不是 10 个"补。Will Larson 在 *An Elegant Puzzle* 里说："The cost of a bad hire scales inversely with team size."</div>
+</details>
+
+<details>
+<summary>结构化面试是否压抑了 candidate 表达个性的空间？是否在筛掉非典型人才？</summary>
+<div>Valid 担忧。结构化面试的设计目标是降低**评估**方差，不是降低**候选人**方差——题目要刻意设计成"开放路径但可校准"。坏的结构化是"读答案"，好的是"同一道开放题、按预先想清楚的多种合格 pattern 评分"。Google 数据显示结构化反而**提升**了非传统背景候选人的通过率——因为把 evaluation 从"像不像我们"换成"能不能展示 X 能力"。担心筛掉非典型人，多元化 rubric 维度比放弃结构化更有效。</div>
+</details>
+
+<details>
+<summary>初创公司能否用大厂的 bar raising 模型？</summary>
+<div>不能直接照搬。早期初创：Brand 弱、资金紧、Role 模糊——结构化面试都设计不出来。Ben Horowitz 在 *The Hard Thing About Hard Things* 里说初创 hiring 核心是 "hire for strength, not lack of weakness"——找 spike 极高的人，容忍很多 weakness。大厂招"全面达 bar 的可靠生产力"，初创招"一个维度上的 outlier 创造非线性价值"。两套逻辑不能混用。</div>
+</details>
+
+<details>
+<summary>接手了一个 B 团队，"bar raising"是 raise 到现有中位数之上，还是 raise 到理想 bar？</summary>
+<div>接手 underperforming 团队最棘手的招聘问题。raise 到现有中位数之上，新人会被低 bar 同事拖累、6 个月内离职。Camille Fournier 的建议：raise 到**12 个月后理想团队**的 bar，同时并行启动对现有低 bar 成员的 performance 管理（PIP / re-leveling / role change）。两件事必须同时做。只做一边都是治标——招聘端 raise 但没动旧人 = 新人走；只动旧人但招聘端没 raise = 补回来还是低 bar。</div>
+</details>
+
+<details>
+<summary>面试官给低分但 hiring manager 想 hire——manager 该 override 吗？</summary>
+<div>两种极端都有问题：永远 override = 面试官学到"我的判断不算数"逐渐应付；从不 override = 面试官实际拥有否决权但没承担整体责任。Amazon 的 Bar Raiser 设计：独立于 HM 的人有否决权，HM 可以在不同维度 weight 信号。原则：**override 必须公开理由 + 写成文档**——成功失败都成为团队 calibration 材料。不写理由的 override 是权力滥用，不是判断。</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Week 5 Action</h3>
+<p>本周做三件事——任挑一件，但要做完：</p>
+<div class="action">
+<strong>(1) 审视下一场 onsite 的 interview kit。</strong>5 个面试官每个 round 对应**哪个具体维度**？能写出每个 round 的 senior bar / staff bar 长什么样吗？写不出 = loop 设计未完成，今天就修。<br><br>
+<strong>(2) 给最近拒绝过的一个 onsite 候选人发 follow-up。</strong>当时只发了模板？现在补一条：specific 反馈一两句、合适的话邀请未来再约。15 分钟，可能买回未来一个 hire。<br><br>
+<strong>(3) 下一次 debrief 强制"最 junior 先发言"。</strong>就这一条规则。anchoring 被打破，hiring loop 的有效信息量会翻倍。<br><br>
+**反思题：**回看过去 12 个月你 hire 的所有人，谁明显 raise 了团队 bar？谁没有？这两组人在面试过程中**信号差异**是什么？复盘出 pattern，下一年招聘准确率会跃升。</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 05 · 2026.06.17</footer>
+</div>
+</body>
+</html>

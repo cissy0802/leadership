@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 5: The Craft of Hiring</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.template{background:#f5efe0;padding:16px 18px;border-radius:4px;border:1px dashed #c4a878;font-family:"Courier New",monospace;font-size:0.88rem;color:#3a2f1c;white-space:pre-wrap;line-height:1.6;margin-top:10px}
+.template .label-inline{color:#a8702d;font-weight:700}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 05 · 2026.06.17</div>
+<h1>The Craft of Hiring: Every Hire Shapes Your Team for the Next Year</h1>
+<div class="meta"><span>Topic: Hiring</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"A players hire A players. B players hire C players. The cost of one bad hire is the next six months of your team." — Steve Jobs / Guy Kawasaki</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Hiring is a manager's highest-leverage activity — and the easiest to do badly. A bad hire doesn't waste base salary; it wastes six months of your onboarding bandwidth, drifts the team's bar downward, and pushes your A players toward the exit. Most managers make three mistakes: caving under scarcity pressure, running unstructured interviews on vibes, and rejecting candidates with template emails that burn the future. This week unpacks the real meaning of Bar Raising, the science of structured interviews, the discipline of scorecards and debriefs, and the dignity of the rejection conversation. By the end you should be able to audit your next onsite immediately.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Bar Raising: Not "Meets the Bar," But "Raises It"
+<span class="en">Hire only when they make the team stronger</span></h2>
+<span class="tag">Amazon</span><span class="tag">Will Larson</span><span class="tag">Compound effect</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">A hiring decision is not "can they do this job?" — it's "after they join, will the team's median rise or fall?" These two standards diverge dramatically under scarcity pressure. "Can do" fills the seat; "raises bar" leaves the seat open three more months until the right person shows up. <strong>The default is No.</strong> The cost of No is known (keep searching). The cost of Yes is hidden — the team's bar drifts down, and a year later you can't explain why your team isn't A-grade anymore.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Every person we hire should raise the bar — should be better than 50% of the people currently in their role. If we don't actively raise the bar with every hire, we'll drift downward. Hiring is a one-way door; the cost of a mediocre hire is paid for years."</span>
+<span class="source">— Jeff Bezos · Amazon Bar Raiser program (referenced repeatedly in shareholder letters)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: The Decision Moment in Debrief</div>
+<div class="scene">
+<div class="setup">Onsite ends. 5 interviewers split 3 Hire / 2 No Hire. The seat has been open 4 months. You're the Hiring Manager.</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (caving under scarcity)</div>
+<p>"OK, 3:2 leaning Hire. What were the specific concerns from the No Hires? … Right, coding was weaker but system design was solid … Overall I think we can take him; we'll closely manage him in year one. The seat's been open too long, the team is burning out."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Three red flags: (1) "closely manage" is compensating for a capability gap — you're already absorbing the cost; (2) "seat open too long" is a scarcity argument, not a signal-quality argument; (3) no one asked "which dimension does he raise?"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (default No)</div>
+<p>"Let me reframe. Before we vote — one sentence each: <strong>If this person joins, on which specific dimension does the team get stronger?</strong> Be specific. Don't say 'solid overall.'<br><br>
+(after a round)<br><br>
+What I'm hearing: system design is a real strength, above our current senior median. But coding and ambiguity handling are below median. This role spends 60% of its time on coding and ambiguous scoping.<br><br>
+So: can he do the job? Yes. Does he raise the bar? No — he lowers it. I'm a No Hire. I know four months hurts, but the next bad hire costs us 18. I'll work with the recruiter to widen the funnel."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Decision Framework: Three Questions per Candidate</div>
+<ul class="checklist">
+<li><strong>Which dimension do they raise?</strong> What specific capability rises in median once they join? (Can't name one = No)</li>
+<li><strong>Where are they in two years?</strong> Will they grow, plateau, or regress? Do I want them on my team in two years?</li>
+<li><strong>What do they change about the team?</strong> The working style, values, knowledge they bring — do I want that to spread? (Hiring is the strongest culture signal.)</li>
+<li><strong>Default-No symmetry:</strong> Am I leaning Yes because of signal — or because the seat is open? Would I still say Yes if the seat weren't urgent?</li>
+<li><strong>"Closely manage" is a red flag.</strong> If I'm already planning to closely manage post-offer, the cost is over budget before day one.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>The "he's OK" trap.</strong> Not-a-clear-Yes is a No. "OK" = No. Strong Yes is when an interviewer proactively tells you "we have to land this person."</li>
+<li><strong>Compensating gaps with future potential.</strong> They haven't grown under dozens of managers before you — why would they grow under you?</li>
+<li><strong>Using "culture fit" as a vague rejection.</strong> Same in reverse — "he's so nice, we should hire" is just as vague. Culture fit without specific signal is the trash chute for bias.</li>
+<li><strong>Recalibrating the bar under scarcity.</strong> Team is tired ≠ lower the standard. Lowering the standard = team gets more tired (you hired someone they have to carry). It's a downward loop.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · When the candidate is a woman</span>
+<p>Bar raising sounds neutral, but research consistently shows female candidates draw vague negative phrasing — "not sure," "something feels off," "not a culture fit" — at noticeably higher rates than men in debrief. Lara Hogan calls this the <strong>"vague concern" pattern</strong>: it's the most common path by which bias gets laundered through bar-raising language.</p>
+<p>Hiring Manager counter-moves:</p>
+<p><strong>(1) Force specific signal:</strong> after any "feel" statement, probe — "what specifically did they say or do that landed that way?" Usually it evaporates at the second probe.</p>
+<p><strong>(2) Reverse sanity check:</strong> "If this candidate's gender or name were different, would your evaluation be the same?" Not PC — technical calibration.</p>
+<p><strong>(3) Watch for "she's not assertive enough" and "she's too aggressive" coexisting:</strong> this is exactly the female double bind that Sandberg and Tomas Chamorro-Premuzic point to — when the same behavior gets coded differently by gender. If both contradictory complaints appear, it's almost certainly bias.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Structured Interviews: Same Questions, Same Rubric
+<span class="en">Discipline beats vibes</span></h2>
+<span class="tag">Laszlo Bock</span><span class="tag">Google</span><span class="tag">Signal vs Noise</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">Unstructured interviews ("let's chat") have a predictive validity around 0.14 — barely above a coin flip. Structured interviews reach 0.26 and above. The difference isn't <em>what</em> you ask — it's the <strong>discipline</strong>: every candidate gets the same questions, scored against a predefined rubric, with interviewers writing independently before they discuss. Many companies claim to be structured but actually just "we all do system design" — different questions, different standards, post-interview gossip — that's not structured.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Years of research showed that unstructured interviews are essentially worthless. We changed Google to a structured approach: same questions across candidates, behavioral and situational, with a predefined scoring rubric. Hiring quality improved measurably. The gut-feel interview is a comforting ritual that costs you good hires."</span>
+<span class="source">— Laszlo Bock · Work Rules! (former SVP People Operations, Google)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Two Ways to Ask a Behavioral Question</div>
+<div class="scene">
+<div class="setup">You're interviewing a staff engineer. You want to assess "framing problems under ambiguity."</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (open but uncalibratable)</div>
+<p>"Tell me how you make technical decisions at your current company."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Too broad. The candidate tells their most comfortable story. Two candidates give stories on entirely different dimensions — what are you comparing? You end up with a "feeling."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (structured STAR + same prompt)</div>
+<p>"Walk me through a specific example. A time when you were handed a fuzzy problem — no clear spec — and you had to frame it yourself, and your framing ended up changing the team's direction.<br><br>
+I'm going to ask: (1) what did the problem look like at the start? (2) what concrete steps did you take to frame it? (3) where did your framing diverge from the default path? (4) how did others react? (5) six months later, looking back — was your framing right?"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ This question: (a) asked of every candidate; (b) five sub-questions force a STAR structure out of the story; (c) "six months later" probes self-awareness and can't be rehearsed; (d) the rubric distinction between "frame changed direction" (staff bar) and "just executed someone else's frame" (senior bar) maps cleanly.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Designing a Structured Question</div>
+<ul class="checklist">
+<li>Which <strong>specific dimension</strong> does this question test? (scope / ambiguity / influence / depth — if you can't name it, the round is wasted)</li>
+<li>What does the answer look like at <strong>each level</strong>? (write down the senior-bar vs staff-bar version)</li>
+<li>If two different candidates answer this, do you get <strong>comparable data</strong>? (no = too open)</li>
+<li>Are <strong>follow-ups pre-written</strong>? (every sub-question exists to compress vague stories into evidence)</li>
+<li>Is this question <strong>un-rehearsable</strong>? ("six months later," "what would you change" — these can't be coached)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>The "let's chat" opener.</strong> 10 minutes of small talk = 1/5 of your signal time wasted. Go straight into the question — candidates feel more respected, not less.</li>
+<li><strong>Free-form interviewers.</strong> 5 interviewers ask 5 different questions — you don't get 5 independent signals, you get 5 incomparable stories. Building the interview kit is the hiring manager's job.</li>
+<li><strong>Instant post-interview gossip.</strong> Cross-contamination destroys independent judgment. Rule: scorecards in before debrief opens.</li>
+<li><strong>"Communication skills" as a catch-all veto.</strong> Unless the role is 60% external communication, "unclear" often masks cultural bias. Decompose communication into specific sub-skills, then evaluate.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · Same questions = fair ground</span>
+<p>Unstructured interviews are bias's natural habitat. Female and underrepresented candidates are more likely to be asked personal questions ("when do you plan to have kids?" — illegal but still happens), to be interrupted, to be probed on "culture fit" in ways unrelated to the role. Structured interviewing is a <strong>structural</strong> anti-bias tool, not a soft measure.</p>
+<p>Two concrete moves for the Hiring Manager:</p>
+<p><strong>(1) Publish the interview kit:</strong> all interviewers see the same questions + rubric. Any deviation requires a written note in the scorecard. This alone raises the cost of vibe-questioning.</p>
+<p><strong>(2) Audit scorecard language yourself:</strong> "abrasive," "emotional," "not warm enough" appear in female candidates' scorecards far more than in equal-performing male candidates'. When you see them, leave a comment: "Which specific behavior? Would you use the same word for a male candidate doing the same?" Joan C. Williams' <em>Bias Interrupted</em> is the most evidence-based resource here.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Scorecards & Debriefs: Translating Gut into Evidence
+<span class="en">Independent signal, not collective vote</span></h2>
+<span class="tag">Geoff Smart</span><span class="tag">Independent scoring</span><span class="tag">Anti-anchoring</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">The goal of a debrief is not to vote — it's to <strong>synthesize independent signals into a judgment sharper than any single signal alone</strong>. That requires three disciplines: (1) scorecards written within 30 minutes of the interview, no discussion before submission; (2) every rating tied to a specific quote or behavior, not an impression; (3) the Hiring Manager speaks last, to prevent anchoring. Most company debriefs run like a debate — loudest voice sets tone, most senior person anchors, "consensus" emerges. That's not signal synthesis. That's social dynamics.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Minimum Scorecard Structure</div>
+<div class="template">
+<span class="label-inline">CANDIDATE:</span> Z. Zhang   <span class="label-inline">ROLE:</span> Staff Eng   <span class="label-inline">ROUND:</span> System Design
+
+<span class="label-inline">[Dimension 1 · Scope]</span>   Rating: 3/5
+  Signal: Proposed multi-region failover, but never framed
+          the upstream question "what SLA problem are we
+          actually solving?" Quote: "The user said HA so I
+          assume…"
+  Bar: Senior+; below Staff (staff should reframe upstream).
+
+<span class="label-inline">[Dimension 2 · Depth]</span>   Rating: 4/5
+  Signal: When choosing RW Quorum, correctly named the tail
+          latency trade-off; volunteered "we'd hedge reads
+          to the nearest replica" beyond what I asked.
+
+<span class="label-inline">[Dimension 3 · Communication]</span>  Rating: 4/5
+  Signal: Self-organized whiteboard narrative; when I
+          pushed back, adjusted gracefully without defense.
+
+<span class="label-inline">RECOMMEND:</span> Hire (weak yes)
+  Key evidence: Depth raises the bar. Scope is senior+,
+  acceptable since he'd land on senior IC track.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Interrupting Anchoring in a Debrief</div>
+<div class="scene">
+<div class="setup">Debrief opens. The most senior staff engineer M goes first: "Strong hire. His system design is better than half of our staff engineers." Others start leaning that direction.</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (default anchoring)</div>
+<p>"OK, M says strong hire. Others? … N says hire … P says hire … Q is weak hire … 4:0 hire, let's wrap."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ You didn't get 4 independent signals. You got one signal echoed 4 times. M's anchor decided everything. The next time M is wrong, the whole loop is wrong with him.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (synthesis, not aggregation)</div>
+<p>"Hold on. Before we hear M's overall, one rule: each person, in order — what's the <strong>specific quote or behavior</strong> you wrote in your scorecard? Read what you wrote, no overall verdict yet. I'll start with P (most junior first, anti-anchoring).<br><br>
+(after the round)<br><br>
+Here's what I'm hearing: four people independently noted above-bar depth signal — that's a converging signal. P and Q both independently observed 'didn't proactively reframe upstream' — also converging. The question we have to decide: strong Depth + weak Scope — does that combination fit the role?<br><br>
+M — on Scope, what's your read?"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ This protocol does three things: (1) anti-anchoring (most junior first, HM last); (2) evidence-first (no overall verdicts until specific signals are aired); (3) reframes the goal as "find converging vs diverging signals," not "count votes."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Facilitating a Debrief</div>
+<ul class="checklist">
+<li>All scorecards submitted <strong>independently</strong> before debrief? (verifiable via timestamp in ATS / calendar)</li>
+<li><strong>Most junior interviewer speaks first</strong> — did I hold the line?</li>
+<li>Every rating tied to a specific quote / behavior — did I push back on "feel" comments?</li>
+<li>My (HM) take goes <strong>last</strong> — did I resist the urge to lead with "overall I think…"?</li>
+<li>We're looking for converging vs diverging signals — not a vote count. Output is a narrative, not a number.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Scorecards written 24 hours later.</strong> Your memory has been polluted by hallway chat. The 30-minute rule isn't dogma — it's cognitive science.</li>
+<li><strong>"Gut feeling" allowed into scorecards.</strong> Every rating must hang on quote/behavior, or send it back for rewrite.</li>
+<li><strong>Treating debrief as voting.</strong> 3:2 isn't a decision — it's a split signal. Either run another round, or the HM reads deeper consistency. Not majority rule.</li>
+<li><strong>Hiring Manager opens.</strong> You say "I thought he was solid" — five "independent" judgments are now anchored to you.</li>
+<li><strong>No written "why no."</strong> The reason for No matters more than for Yes — how does sourcing adjust next time? Without it, the team learns nothing.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Rejecting Candidates: Leave Them Wanting to Apply Again
+<span class="en">Treat the rejection as a marketing event</span></h2>
+<span class="tag">Candidate Experience</span><span class="tag">Long pipeline</span><span class="tag">Internal candidates</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">Every candidate you reject will do three things: (1) tell 5–10 people about the experience; (2) rate you on Glassdoor / LinkedIn / their network; (3) decide whether they'll apply again. A dignified rejection might bring them back in two years — or send three friends your way. A cold rejection burns the line. Most managers outsource rejection to a recruiter's template email — that's a relationship investment marked down to zero. <strong>Late-stage rejections (post-onsite) get done by the hiring manager personally.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"How you reject someone says more about your company than how you hire them. Everyone you hire tells the story of getting in. Everyone you reject also tells a story — and there are many more of them. Treat the rejection as a marketing event, not as an admin task."</span>
+<span class="source">— Johanna Rothman · Hiring Geeks That Fit</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: The Post-Onsite Rejection Call</div>
+<div class="scene">
+<div class="setup">Candidate X completed the onsite. Team says No Hire. She invested 6 hours + a workday + emotional energy. You (the hiring manager) should call personally.</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (outsourced template)</div>
+<p>(recruiter email)<br>"Thank you for interviewing with us. After careful consideration, we've decided to move forward with other candidates whose experience more closely aligns with the role. We wish you the best in your search."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ She invested a day; you returned 30 words of template. She won't apply again for two years, and she'll tell every senior in her network. The real cost isn't this email — it's the ten future candidates you'll never see.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (15-minute call)</div>
+<p>"X, this is Cissy. Thanks again for the week you gave us — a full-day onsite is demanding. I'm calling because I wanted to tell you two things personally:<br><br>
+<strong>First</strong>, we're not moving forward. I wanted to say this myself, not in an email — you made it to onsite, you deserve a real conversation.<br><br>
+<strong>Second</strong>, here's the share-able feedback: your system design round showed real depth — you'd rank in the top 30% of our current staff engineers on that signal. The hesitation was on ambiguity and problem framing. This role spends 60% of its time framing problems no one has framed yet — we needed more evidence there. This <strong>doesn't</strong> mean you can't — it means the shape of this specific role and the shape you could show us didn't fully align.<br><br>
+<strong>Third</strong>, if you'd like to re-engage in 9–12 months, I'd welcome it. I'll flag in the ATS that you're worth re-evaluating.<br><br>
+What questions do you have?"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ This 15-minute call does five things: (a) acknowledges their investment; (b) is delivered personally; (c) gives one <strong>actionable</strong> piece of feedback (not vague encouragement); (d) separates "rejected" from "you're not good enough"; (e) opens a future path — many onsite rejections become your most-wanted senior hire 18 months later.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Rejection Checklist</div>
+<ul class="checklist">
+<li><strong>Late stage (post-onsite) — did I do it personally?</strong> Call or video, not email. Phone-screen rejections can stay with recruiters; onsite cannot.</li>
+<li><strong>Is the feedback specific or vague?</strong> "Not senior enough" is vague; "evidence gap on ambiguity framing" is specific.</li>
+<li><strong>Did I avoid promising what I can't deliver?</strong> "We'll definitely re-engage next year" is a promise. "If you want to re-engage in 9 months, I'd welcome it" is an invitation.</li>
+<li><strong>Internal candidate — extra care?</strong> They're staying at the company. Needs a dedicated 1:1 + development plan.</li>
+<li><strong>24-hour written follow-up?</strong> Send a short email summarizing the key feedback so they can re-read it after the emotional moment fades.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Silent rejection.</strong> No email; ATS stuck on "in review" forever. The laziest and most brand-damaging move. Even a template beats silence — but onsite still requires a call.</li>
+<li><strong>Over-feedback.</strong> You're not their coach. One core piece is enough. More feels like an audit and feels humiliating.</li>
+<li><strong>"We'll keep your resume on file."</strong> Every candidate knows this is hollow. Either give a real referral path or say nothing.</li>
+<li><strong>Phoning it in for internal candidates.</strong> They're at standup on Monday. A bad rejection = 6 months of disengagement, then a quiet exit within a year.</li>
+<li><strong>Hiding behind legal caution.</strong> "HR won't let us give feedback" — most legal lines forbid feedback tied to protected class, <strong>not</strong> all feedback. Role-relevant feedback is allowed.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · When the rejected internal candidate is a woman</span>
+<p>Internal female candidates churn at noticeably higher rates after a rejection than internal male candidates (consistent across Lean In / McKinsey reports). The mechanism is the same as in Week 4 promotion denials: women are more likely to internalize "rejected = I'm not good enough," while men attribute externally ("bad timing, ratio was tight") and keep pushing.</p>
+<p>Hiring Manager extras:</p>
+<p><strong>(1) Don't outsource to the recruiter:</strong> for internal candidates, a recruiter email is a double signal — "the role is gone + the manager doesn't care." Do it yourself.</p>
+<p><strong>(2) Explicitly state "you were seriously considered":</strong> "There's a reason you made final round — your X dimension is a real strength. This decision isn't about your worth; it's about the specific shape of this role." This sentence materially affects whether she's still here in six months.</p>
+<p><strong>(3) Hand off into a development conversation:</strong> "Let's do a 1:1 next week to talk about how you build that missing piece over the next 6–12 months — next time your case will be much stronger." That signals <strong>continued investment</strong>, not a closed door. Sandberg in <em>Option B</em>: people don't need post-rejection comfort — they need a <strong>next step</strong>.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>Further Reading</h3>
+<ul>
+<li><strong>Laszlo Bock · Work Rules!</strong> — Former Google SVP People; empirical case for structured interviewing. Chapters 4–5 cover the hiring machinery directly.</li>
+<li><strong>Geoff Smart & Randy Street · Who: The A Method for Hiring</strong> — The most operational version of the scorecard / Topgrading methodology.</li>
+<li><strong>Will Larson · Staff Engineer: Leadership Beyond the Management Track</strong> — Staff-level bar definitions you can lift straight into your rubric.</li>
+<li><strong>Camille Fournier · The Manager's Path</strong> — The hiring chapter covers loop design and team-bar maintenance.</li>
+<li><strong>Johanna Rothman · Hiring Geeks That Fit</strong> — Candidate experience and rejection craft; cited widely at ThoughtWorks / Pivotal.</li>
+<li><strong>Tomas Chamorro-Premuzic · Why Do So Many Incompetent Men Become Leaders?</strong> — Empirical base for hiring bias, particularly confidence-mistaken-for-competence.</li>
+<li><strong>Joan C. Williams · Bias Interrupted</strong> — Specific tools for surfacing and disrupting biased language in debriefs and scorecards.</li>
+<li><strong>Amazon Bar Raiser Program</strong> (publicly discussed) — The design choice of an independent Bar Raiser with veto authority.</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Open Questions</h3>
+
+<details>
+<summary>Does "bar raising" still hold for very small teams (≤5)?</summary>
+<div>The smaller the team, the larger the leverage of a single hire on the bar — on the surface, you should hold the line harder. But small teams also feel scarcity acutely; an open seat is 20% of capacity. The honest answer: the logic of bar raising doesn't change, but sourcing intensity has to multiply — you can't compensate sourcing weakness with a lower bar; you compensate by searching 50 candidates instead of 10. Will Larson in <em>An Elegant Puzzle</em>: "The cost of a bad hire scales inversely with team size."</div>
+</details>
+
+<details>
+<summary>Do structured interviews suppress personality and filter out non-traditional talent?</summary>
+<div>Valid concern. The design goal is to reduce <strong>evaluator</strong> variance, not <strong>candidate</strong> variance — so questions should be deliberately "open path, but calibratable." Bad structured = reading answers off a sheet. Good structured = a single open question scored against multiple pre-considered passing patterns. Google's data actually shows structure <strong>raises</strong> pass rates for non-traditional backgrounds — because evaluation shifts from "are they like us?" to "can they demonstrate X capability?" Diversifying the rubric dimensions does more for non-typical candidates than abandoning structure.</div>
+</details>
+
+<details>
+<summary>Can startups use the big-company bar-raising model?</summary>
+<div>Not directly. Early-stage startup constraints: weak brand, A players don't apply unprompted; tight budgets, can't outbid big tech; fuzzy roles, you can't even design a structured interview because you don't know what the seat looks like in 12 months. Ben Horowitz in <em>The Hard Thing About Hard Things</em>: startup hiring is "hire for strength, not lack of weakness" — find people with one extreme spike and tolerate many weaknesses. Big companies hire reliable productivity across the board; startups hire outliers on one dimension who create non-linear value. Different logics; don't mix.</div>
+</details>
+
+<details>
+<summary>You inherited a B-team. Do you raise to current median+, or to an ideal bar?</summary>
+<div>The trickiest hiring problem when inheriting an underperforming team. Raising just above the current median means new hires get dragged by low-bar peers and quit within six months — you cycle through high-bar hires who don't stick. Camille Fournier's prescription: raise to the bar of the team you want in 12 months, while simultaneously starting performance management on existing low-bar members (PIP / re-leveling / role change). Both must happen in parallel. Either alone fails — raise the hiring bar without moving incumbents = new hires leave; move incumbents without raising the hiring bar = backfill is still B-grade.</div>
+</details>
+
+<details>
+<summary>Interviewers vote no but the hiring manager wants to hire — should the HM override?</summary>
+<div>Both extremes fail. Always override = interviewers learn "my judgment doesn't count" and disengage. Never override = interviewers wield de facto veto without bearing the HM's accountability. Amazon's Bar Raiser splits this: an independent Bar Raiser holds veto, while the HM weights signals across dimensions. The principle: <strong>any override must be reasoned and written down</strong> — that document becomes calibration material for the team either way (success or failure). Unwritten overrides are abuse of authority, not judgment.</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>Your Week 5 Action</h3>
+<p>Pick one. Finish it.</p>
+<div class="action">
+<strong>(1) Audit your next onsite's interview kit.</strong> Five interviewers, five rounds — which <strong>specific dimension</strong> does each round test? Can you write the senior-bar vs staff-bar answer for each round? If not — the loop isn't designed, fix it today.<br><br>
+<strong>(2) Send a follow-up to a recently rejected onsite candidate.</strong> If they got the template email — send a short note now: one or two specific pieces of feedback, and if appropriate, an invitation to re-engage later. 15 minutes; possibly a future hire.<br><br>
+<strong>(3) Run your next debrief with "most junior first."</strong> That single rule. Notice whether the signals get more dispersed, whether disagreement surfaces earlier. Once anchoring breaks, the effective information your loop produces roughly doubles.<br><br>
+<strong>Reflection:</strong> Looking back at the last 12 months of hires — who clearly raised the bar? Who didn't? What was the <strong>signal difference</strong> between the two groups during their interviews? Pattern-match that, and your hiring accuracy in the next year jumps.</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 05 · 2026.06.17</footer>
+</div>
+</body>
+</html>
