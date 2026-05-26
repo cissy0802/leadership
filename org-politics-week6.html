@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Week 6：组织政治入门 — 权力地图与生存底色</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.05rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.matrix-2x2{display:grid;grid-template-columns:120px 1fr 1fr;grid-template-rows:auto auto auto auto;gap:6px;margin:14px 0;font-size:0.88rem}
+.matrix-2x2 .axis-y{writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:8px;grid-row:2/4;display:flex;align-items:center;justify-content:center}
+.matrix-2x2 .col-header{text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:6px}
+.matrix-2x2 .cell{padding:14px;border-radius:4px;min-height:110px}
+.matrix-2x2 .cell.q1{background:#e6efdc;border:1px solid #8aa86a}
+.matrix-2x2 .cell.q2{background:#f5e6c4;border:1px solid #c4a878}
+.matrix-2x2 .cell.q3{background:#f8f0dd;border:1px solid #d4b888}
+.matrix-2x2 .cell.q4{background:#f0e8d8;border:1px solid #c4b898}
+.matrix-2x2 .cell .label{font-weight:700;color:#5c3a18;display:block;margin-bottom:6px;font-size:0.92rem}
+.matrix-2x2 .cell .desc{color:#3a2f1c;font-size:0.86rem;line-height:1.55}
+.matrix-2x2 .axis-x{grid-column:2/4;text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:6px}
+.typology{margin:14px 0;background:#fcf6e8;border-radius:6px;border:1px solid #e6d9bf;overflow:hidden}
+.typology table{width:100%;border-collapse:collapse;font-size:0.9rem}
+.typology th{background:#e8dcc0;color:#5c3a18;padding:10px 12px;text-align:left;font-weight:700;letter-spacing:1px;font-size:0.82rem;border-bottom:2px solid #c4a878}
+.typology td{padding:10px 12px;border-bottom:1px solid #e6d9bf;color:#3a2f1c;vertical-align:top}
+.typology tr:last-child td{border-bottom:none}
+.typology td:first-child{font-weight:700;color:#5c3a18;white-space:nowrap}
+.decision-graph{background:#fcf6e8;padding:18px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.decision-graph .row{display:flex;gap:12px;margin:8px 0;align-items:flex-start}
+.decision-graph .label-col{flex:0 0 110px;font-weight:700;color:#a8702d;font-size:0.82rem;letter-spacing:1.5px;text-transform:uppercase;padding-top:8px}
+.decision-graph .node{flex:1;background:#fffaf0;padding:8px 12px;border-radius:4px;border:1px solid #c4a878;font-size:0.9rem;color:#3a2f1c}
+.decision-graph .node.formal{border-color:#b8a888;background:#f5efe0;color:#6b4a1f}
+.decision-graph .node.real{border-left:3px solid #5c8a3a;background:#e6efdc}
+.decision-graph .arrow{text-align:center;color:#a8702d;font-size:1rem;margin:4px 0}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.matrix-2x2{grid-template-columns:60px 1fr 1fr;font-size:0.78rem}
+.matrix-2x2 .cell{padding:10px;min-height:auto}
+.matrix-2x2 .cell .desc{font-size:0.8rem}
+.decision-graph .row{flex-direction:column;gap:4px}
+.decision-graph .label-col{flex:none}
+.typology table{font-size:0.82rem}
+.typology th,.typology td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 06 · 2026.06.24</div>
+<h1>组织政治入门：权力地图与生存底色</h1>
+<div class="meta"><span>主题：Org Politics 101</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"You may not be interested in politics, but politics is interested in you." — Pericles / 多次被 Trotsky 引用</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>IC 出身的 tech lead 普遍存在一种天真——"我做好技术，老板自然看得到；玩政治的人不是真正做事的人。" 这句话在 10 人公司是真的，在 10,000 人公司是致命错觉。组织政治不是道德选择题，是大型组织在资源稀缺、信息不对称、激励错配下的必然产物。**不参与不是清白，是把决策权让渡给参与的人。** 本周拆四件事：(1) 真实决策图怎么读，(2) Stakeholder 怎么按 Power × Interest 分类管理，(3) 玩家类型怎么识别（Givers / Takers / Matchers + Predators），(4) 长期联盟靠互惠不靠交易。读完你应该能立刻画出当前最重要项目的"决策图"和"利益相关方矩阵"。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>决策图 ≠ 组织架构图：读懂真实的权力地图
+<span class="en">The Decision Graph Is Not the Org Chart</span></h2>
+<span class="tag">Pfeffer</span><span class="tag">Will Larson</span><span class="tag">权力地图</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Org chart 告诉你"谁向谁汇报"，决策图告诉你"一件事真的怎么发生"。两者经常严重不一致。你的项目要落地，需要识别四类节点：**Authority**（有正式批准权）、**Influence**（影响 Authority 的人）、**Veto**（能让事情卡住的人）、**Broker**（控制信息流的人）。多数事情卡住不是因为 Authority 反对，是因为 Veto 或 Broker 没被处理。把组织架构图当真实决策图来用，是 IC 转 manager 第一年最常见的失败模式。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Power is not granted by titles. Almost everything I know about getting things done in organizations comes from observing that the formal organization is a small subset of how decisions actually get made. The people who advance learn this in their first three years; the people who don't, complain about politics for the rest of their careers."</span>
+<span class="zh">权力不是头衔授予的。我所知道的关于"在组织里把事情做成"的几乎所有东西，都来自一个观察：正式组织结构只是真实决策方式的一个小子集。能上升的人在头三年学会这件事；学不会的人，余生都在抱怨政治。</span>
+<span class="source">— Jeffrey Pfeffer · Power: Why Some People Have It and Others Don't（第 1 章）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">视觉化：同一个项目的两张图</div>
+<div class="decision-graph">
+<div class="row">
+<div class="label-col">Org Chart</div>
+<div class="node formal">VP Eng → Director (你的老板) → 你 → 团队</div>
+</div>
+<div class="arrow">↓ 看起来很简单，但项目真正卡的地方是 ↓</div>
+<div class="row">
+<div class="label-col">Authority</div>
+<div class="node real">VP Eng（最终签字，但她基本只看 Director 的 recommendation）</div>
+</div>
+<div class="row">
+<div class="label-col">Influence</div>
+<div class="node real">Staff Eng X（Director 技术上信任的人，没他同意 Director 不会推）</div>
+</div>
+<div class="row">
+<div class="label-col">Veto</div>
+<div class="node real">Security Lead Y（任何方案她说不安全 = 死）<br>邻组 Director Z（资源冲突，她可以游说 VP 砍）</div>
+</div>
+<div class="row">
+<div class="label-col">Broker</div>
+<div class="node real">VP 的 Chief of Staff（VP 看什么文档、几点开会、议程，她定）</div>
+</div>
+</div>
+<p style="font-size:0.85rem;color:#6b4a1f;margin-top:8px;text-align:center;font-style:italic">→ Org chart 上 4 个节点；真实决策图 7 个。漏掉 Y、Z、Broker 任何一个，项目可能在最后一周翻车。</p>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：reorg 之后第一周</div>
+<div class="scene">
+<div class="setup">公司刚 reorg，你的 platform team 新归属一个你不熟的 VP。你有一个 Q3 要推的迁移项目。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（按 org chart 操作）</div>
+<p>"我已经把 proposal 发给新 VP 了，等他回复。同时跟我直属老板 sync 过。应该可以推动了。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 你只接触了 Authority。新 VP 不熟你不熟项目，他会问别人——他问谁？你不知道。两周后他给你回 "Have you talked to [某人]?"——这就是 Influence/Veto 节点。你应该在发 proposal **之前**就识别出他们。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（先画图再行动）</div>
+<p>第一周不写 proposal。**先做 5 个 30 分钟的 coffee chat**：<br><br>
+**(1) 直属老板 Director：** "新 VP 在我们这个领域信任谁的技术判断？我想确保 proposal 出去之前那个人已经同意。"<br>
+**(2) 邻组的 staff/manager：** "你们组上次跟这位 VP 推大项目的时候，什么样的 proposal 他买单？他最在意 metric / risk / customer story 哪一个？"<br>
+**(3) VP 的 Chief of Staff（或最资深的下属）：** "我想请教 VP 接下来 quarter 优先级是什么——我想确保我的项目和他的 narrative 对齐。"<br>
+**(4) Security 和邻组 Director：** "我有一个想法，想在 formalize 之前听一下你的顾虑。"<br>
+**(5) 一个最近成功推过项目的 peer：** "可以分享一下你当时的 path 吗？"<br><br>
+然后才写 proposal——proposal 里已经预先解决了 Y 的 security 顾虑、引用了 X 同意的技术选型、用 VP 关心的 metric 来 framing。Authority 收到的不是一个 ask，是一个 95% 已经走过 Influence/Veto 节点的方案。</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 同样的事情，差版本要 3 个月、可能死在最后一周；好版本 6 周搞定。差别不是"政治手腕"，是**画图的纪律**。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">画决策图的检查表</div>
+<ul class="checklist">
+<li>**列出 Authority：** 这件事最终谁签字？（一个名字，不是"管理层"）</li>
+<li>**列出 Influence：** Authority 在做这类决策前会问谁？（通常 1-3 个 specific person——你能写出名字吗？写不出 = 没做功课）</li>
+<li>**列出 Veto：** 谁有能力让这件事卡住？（Security / Legal / 邻组 director / 平台 owner — 任何一个 "no" 都意味着重做）</li>
+<li>**列出 Broker：** 谁控制 Authority 看到什么信息？（EA、Chief of Staff、最 close 的 senior IC）</li>
+<li>**每个节点单独的 ask 想清楚了吗？** Authority 要看 narrative；Influence 要看技术细节；Veto 要看 risk mitigation；Broker 要看时机和 framing。一份 doc 不能同时满足四类。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"我老板支持"等同于"事情会成"。</strong>你老板在他自己的决策图里也只是一个节点——他的 ask 也可能被 Veto 掉。</li>
+<li><strong>跳过 Broker。</strong>Chief of Staff / EA / 最资深的下属——他们决定 VP 在哪个会议上看到什么材料。不 invest 在他们身上等于不出现在议程上。</li>
+<li><strong>把 Veto 当 enemy。</strong>Security Lead 不是反对你，是她的 KPI 是 risk。**提前**给她 mitigation 方案，她从 Veto 变成 sponsor。</li>
+<li><strong>误把 informal influencer 当 power play。</strong>有些 staff/principal 没 title 但有 influence，是因为他们历史上判断准确。这是合理权力，不是搞特殊。</li>
+<li><strong>把"我不该需要做这些"当原则。</strong>这是把道德姿态当工程师 ego 的保护伞——代价是项目失败和团队跟着你失败。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 决策图里的"看不见"网络</span>
+<p>大型组织的 informal decision graph 经常通过非正式渠道运转：高尔夫、酒后晚饭、男厕走廊聊天、烟雾室、男性 senior 之间的体育话题铺垫。Sylvia Ann Hewlett 在 *Forget a Mentor, Find a Sponsor* 中的数据：女性 senior 报告"被排除在重要 informal 沟通之外"的比例是男性同级的 2.4 倍。这不是抱怨——是决策图里**一条边你看不到**。</p>
+<p>反制不是"挤进高尔夫局"，那既低效又屈辱。三件具体可做：</p>
+<p><strong>(1) 找一个 Broker 盟友：</strong>VP 的 Chief of Staff、EA、或一个愿意给你 readout 的 peer——他/她能在 informal 之后告诉你"刚刚 VP 在饭桌上说他不喜欢方案 B"。这条信息流买不到，但靠长期 reciprocity 可以建立（见 Card 4）。</p>
+<p><strong>(2) 创建你的 informal 场景：</strong>不是模仿男性 ritual。是 small group lunch、跨组 reading group、新人 onboarding 咖啡——任何**重复的、低门槛、有信息密度的**场景。你不在他们的局，那就建自己的局，让重要的人来你的局。</p>
+<p><strong>(3) Sponsor 不是 Mentor：</strong>Mentor 给你建议，Sponsor 在你不在场的房间为你说话。Hewlett 研究显示：女性比男性平均多 mentor、少 sponsor。Sponsor 是决策图里 Influence 节点对你 specific 项目的发声。识别"谁的发声对我有 leverage"，主动 invest——不是讨好，是给他/她**有用的、可以 cite 的 work**。</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Stakeholder 矩阵：按 Power × Interest 分类管理
+<span class="en">Stakeholder Matrix: Power × Interest</span></h2>
+<span class="tag">Mendelow</span><span class="tag">PM 经典</span><span class="tag">注意力分配</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">不是所有 stakeholder 都该平等对待——这是 tech lead 推大项目最浪费精力的错误。Mendelow（1981）的 Power × Interest 矩阵把所有相关方分四象限，每个象限给一种 specific engagement 策略：High Power × High Interest = **Manage Closely**；High Power × Low Interest = **Keep Satisfied**；Low Power × High Interest = **Keep Informed**；Low Power × Low Interest = **Monitor**。把所有人都 "manage closely" = 你被会议淹死、最该深聊的人反而被冷落。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The most common stakeholder-management error is not too little engagement — it is undifferentiated engagement. Treating every stakeholder identically means under-serving the ones who decide the project's fate and over-spending on ones who only need a status update."</span>
+<span class="zh">stakeholder 管理最常见的错误不是参与不够，而是**无差别参与**。对每个 stakeholder 一视同仁，意味着你怠慢了真正决定项目命运的人、又把精力浪费在只需要一份状态更新的人身上。</span>
+<span class="source">— Aubrey Mendelow · Stakeholder Mapping（1981, Cleveland State University Conference）— PM/MBA 教材标准引用</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">视觉化：Power × Interest 2x2</div>
+<div class="frame-diagram">
+<div class="matrix-2x2">
+<div></div>
+<div class="col-header">Power 低</div>
+<div class="col-header">Power 高</div>
+
+<div class="axis-y">Interest 高</div>
+<div class="cell q3">
+<span class="label">Keep Informed</span>
+<span class="desc">关心但权力小：定期 update、答疑、让她有渠道反馈。她是你的 ally pool。</span>
+</div>
+<div class="cell q1">
+<span class="label">Manage Closely ⭐</span>
+<span class="desc">决定项目生死：高频 1:1、proposal 提前 review、把她的顾虑写进方案。80% 注意力给这里。</span>
+</div>
+
+<div class="axis-y">Interest 低</div>
+<div class="cell q4">
+<span class="label">Monitor</span>
+<span class="desc">不要主动 invest：每月一句更新即可。invest 多了显得 desperate。</span>
+</div>
+<div class="cell q2">
+<span class="label">Keep Satisfied</span>
+<span class="desc">权力大但不太关心：不要烦她，但要确保她**不会被别人 surprise**。一份 1 页 brief 就够。</span>
+</div>
+
+<div></div>
+<div class="axis-x">→ Power（影响项目结果的能力）</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：platform migration 的 stakeholder 清单</div>
+<div class="scene">
+<div class="setup">你要推一个跨 3 个组的 service migration。第一反应是"把所有相关方拉进 weekly sync"。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（无差别拉群）</div>
+<p>"建一个 Slack 频道把 12 个 stakeholder 全拉进来。每周一个 30 分钟 sync 大家都来。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 三个月后：Sync 变成 status report、没人发言、关键决策反而在会外被某个 director 推翻。你"管"了所有人，实际没"manage"任何人。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（分类对待）</div>
+<p>列出 12 个 stakeholder，先做矩阵分类，再设计 cadence：<br><br>
+<strong>Manage Closely（3 人 · 80% 时间）：</strong> 你的 Director + 邻组 Director（资源冲突）+ Platform Owner（迁移 destination）。每人每两周一次 30 分钟 1:1，proposal 在 publish 前给她们 preview，把她们的顾虑写进 doc。<br><br>
+<strong>Keep Satisfied（2 人 · 10% 时间）：</strong> VP + Sec Lead。一页 brief 每月一次。VP 不需要 weekly noise，但她不能在 all-hands 上被别人 surprise——给她信息控制权。<br><br>
+<strong>Keep Informed（5 人 · 8% 时间）：</strong> 邻组 staff eng、内部 customer。一个 internal blog post + 每两周邮件更新。她们在意但权力小——投资在 transparency 而不是 1:1。<br><br>
+<strong>Monitor（2 人 · 2% 时间）：</strong> 远端的 SRE、Finance partner。月底一行邮件。她们既不关心也不影响——更多 invest 是浪费。</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 同样 12 个人，你的精力分配从"每人 1/12"变成"3 人占 80%"。项目成功率显著上升，并且**你的周历从 20 小时 sync 变 6 小时**——剩下的 14 小时回去做真正的工作。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">使用矩阵的检查表</div>
+<ul class="checklist">
+<li>**列出所有 stakeholder 时，名字是 specific 的吗？**（不是"管理层"、不是"业务方"，是具体人名）</li>
+<li>**Power 的判断有依据吗？** 不是 title，是"她说 no，这件事会不会真死？"——能死 = High Power。</li>
+<li>**Interest 是当下还是未来？** 现在不 care 但项目失败她会被问责的人 = High Interest。低估这一类等于埋雷。</li>
+<li>**Manage Closely 不超过 5 人。** 超过 5 人 = 你没在区分，你只是把所有人都标 Manage Closely。重新筛。</li>
+<li>**每季度重画一次。** 人会换、interest 会变、reorg 改 power。半年前的矩阵不能用。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 Power 等同于 title。</strong>一个 staff eng 可能比 Director 更有 power——因为 Director 会问她。看真实影响，不看 org level。</li>
+<li><strong>怕得罪 "Keep Satisfied" 一类就过度 invest。</strong>VP 的注意力是稀缺资源。她不需要你每周更新——她需要你在该出现的时候出现，不该出现的时候别烦她。</li>
+<li><strong>"Monitor" 一类彻底忽略。</strong>Monitor ≠ 消失。一个月一行 update 防止她哪天突然变 High Interest 时对你完全没印象。</li>
+<li><strong>矩阵画完不更新。</strong>reorg / 新项目 / 公司战略变化都会移动位置——一个 stakeholder 从 Q4 升到 Q1 你没察觉，3 个月后才发现项目卡在她那。</li>
+<li><strong>用矩阵作"谁重要"的道德判断。</strong>Low Power × Low Interest 不是"她不重要"——她可能是你的好同事，只是和这个项目无关。矩阵是项目工具，不是人际评价。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>玩家类型识别：Givers / Takers / Matchers + Predators
+<span class="en">Player Archetypes: Identify Before You Engage</span></h2>
+<span class="tag">Adam Grant</span><span class="tag">Robert Sutton</span><span class="tag">反操纵</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Adam Grant《Give and Take》把组织里的人分三类：**Givers**（默认帮别人，不要求即时回报）、**Takers**（默认拿走价值，包装成合作）、**Matchers**（严格按互惠记账）。绝大多数人是 Matcher。另加一类危险类型：**Predators**（零和心态、用伤害你来抬高自己——Robert Sutton 在 *The No Asshole Rule* 里详细描述）。识别错了对方类型 = 用错策略：把 Taker 当 Matcher 一直 invest 是慢性失血；把 Giver 当 Matcher 一直要求回报会失去最珍贵的关系；不识别 Predator 会以为是工作冲突，实际是结构性敌对。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Givers, takers, and matchers all can — and do — achieve success. But when givers succeed, it spreads and cascades. When takers win, there's usually someone else who loses. Research shows that people tend to envy successful takers and find ways to knock them down. In the long run, givers may finish last in any single transaction, but they finish first in the marathon."</span>
+<span class="zh">Giver、Taker、Matcher 都能成功，但 Giver 的成功会扩散、形成 cascade。Taker 赢的时候，通常有人在输。研究显示人们倾向于嫉妒成功的 Taker 并找机会扳倒他们。长跑里，Giver 在每一次单独交易可能殿后，但在马拉松里第一个到。</span>
+<span class="source">— Adam Grant · Give and Take（导论 + 第 1 章）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">视觉化：四类玩家与你的策略</div>
+<div class="typology">
+<table>
+<tr><th>类型</th><th>识别信号</th><th>你的策略</th></tr>
+<tr>
+<td>Giver</td>
+<td>主动帮忙、不记账、引介机会给别人、credit 让给团队、对 junior 投入与回报不成比例</td>
+<td><strong>主动 sponsor。</strong>她们是组织最稀缺的资源。Grant 的研究：纯 Giver 容易被剥削——你的工作是保护她们、为她们的工作 amplify、让她们的 sacrifice 被看到。</td>
+</tr>
+<tr>
+<td>Matcher</td>
+<td>对等回报、记账清楚、对 fair 敏感、不会主动占便宜也不会主动吃亏。组织里 ~70%</td>
+<td><strong>互惠激活。</strong>先 give 一些 specific 价值（信息、引荐、技术帮助），她会回报。这是最稳健的关系类型。</td>
+</tr>
+<tr>
+<td>Taker</td>
+<td>合作中拿多给少、用"team work"包装成果占有、对上殷勤对下苛刻、把别人 idea 复述成自己的、危机来时消失</td>
+<td><strong>限制 surface area。</strong>不 confront（无效），不教化（更无效）。减少与她们的暴露：不单独合作、不分享未公开 idea、邮件留 paper trail、把你的贡献在 director 面前显式化。</td>
+</tr>
+<tr>
+<td>Predator</td>
+<td>零和心态、主动伤害（造谣、scope grab、当众羞辱）、对弱者特别狠、把你的失败当自己的胜利。少数但毒性极高</td>
+<td><strong>升级或隔离。</strong>这不是 office politics，是 structural hostility。文档化 incident、找 HR / 老板备案、不要试图"沟通解决"——Sutton 的核心建议：**don't engage with assholes, escalate or exit.**</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：识别一个 Taker peer</div>
+<div class="scene">
+<div class="setup">你的同级 tech lead P 在过去 6 个月：跟你一起 brainstorm 后在 all-hands 用自己的名字 present；写 doc 把你的 contribution 写成"team effort"；你的 junior 找他帮忙他从不回；但他的 doc 找你 review 你必须当天回。你开始怀疑，但又觉得"也许是我太敏感"。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（不识别、继续 invest）</div>
+<p>"也许他是 Matcher 只是节奏不同。下次他来求帮我还是 invest，长期会回报的。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 6 个月后：他升 staff、你 stagnate；你 review 了他 5 个 doc，他没 review 过你的；他 present 了你 brainstorm 的 idea 拿 visibility。继续 invest 不是 generosity，是被剥削。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（识别 → 限制 surface area）</div>
+<p>三件事，渐进做：<br><br>
+<strong>(1) 数据验证而不是 vibe：</strong>过去 6 个月，**具体**列出：你帮他几次（review、debug、cover for him）vs 他帮你几次（要 specific instance，不是"general support"）。如果是 8:1，那不是感觉问题，是事实。<br><br>
+<strong>(2) 不 confront、改协作模式：</strong>他下次找你 review doc，回 "Sorry 这周满了，建议你 ping [其他人]" ——不要 explanation。下次他要 brainstorm，提议 "我们写下来 async 讨论？" ——逼他留 paper trail。idea 在他用之前已经写在 doc 上有时间戳。<br><br>
+<strong>(3) 主动 surface 你的贡献：</strong>不是 brag。是在你 Director 的 weekly 1:1 里 specific 提："X 项目我做了 frame 和 architecture，P 做了 execution 的 30%。" 之前你怕这听起来像争功——现在你知道：你不说 = Taker 帮你说，而他会说成相反方向。<br><br>
+**注意：你不告诉 P 你在做这些**。Confrontation 给 Taker 提供叙事素材："她变得不合作了。" 你只是悄悄关闭剥削通道。</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 一个季度后：P 找了别的目标（Takers 总在找下一个 Giver）。你的 capital 回到自己手上。你也没有付出名声成本——因为你没 confront、没散布、没"政治"。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">识别玩家类型的检查表</div>
+<ul class="checklist">
+<li>**Reciprocity ratio：** 过去 6 个月，你为这个人做了 N 件事，她为你做了 M 件事。N/M > 3 = warning sign，> 6 = Taker 高概率。</li>
+<li>**对下行为：** 她对 junior / 不能帮她的人怎么样？对上殷勤对下苛刻 = Taker 的最强信号（Grant 反复强调这一条）。</li>
+<li>**Credit 流向：** 项目成功时她的语言是"we did" vs "I led"——一致性比单次更说明问题。</li>
+<li>**危机时刻：** 当你需要她帮忙、对她没即时利益时，她出现还是消失？危机是 X 光机。</li>
+<li>**第三方信号：** 三个独立的人都告诉你 "be careful working with X" = 不是巧合。你的直觉 + 多个独立观察 = pattern。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>太晚识别 Taker。</strong>因为"想信任同事是好的默认"——这没错，但识别后调整策略不是"变 cynical"，是 calibration。</li>
+<li><strong>试图改变 Taker。</strong>不会。Takers 不是没意识到，他们是策略性地 take——你的 confrontation 给他们更多素材。</li>
+<li><strong>把 Matcher 当 Taker。</strong>Matchers 严格记账不是 selfish——是 fair。给她一份 specific 价值，她会回。误判会让你失去 70% 的合作池。</li>
+<li><strong>把 Giver 燃尽。</strong>Givers 不会拒绝你——所以你要替她拒绝。Manager 的责任是保护团队里的 Givers 不被组织剥削（被默认派 office housework、被无限 mentor 请求淹没）。</li>
+<li><strong>把 Predator 当 Taker 处理。</strong>Taker 拿你的价值，Predator 主动伤害你。策略不同——Taker 用"限制 surface area"，Predator 必须升级。混淆 = 持续受害。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · Giver 标签的陷阱与 likability tax</span>
+<p>女性在职场被默认 expected to be Giver——"温暖"、"helpful"、"good team player"。Grant 的研究：women report being asked to do non-promotable tasks (office housework、organizing celebrations、mentoring 新人、笔记) 比男性高 30-50%。被默认 Giver 的代价：(a) 时间被掏空、(b) Taker 把你当首选 target、(c) 当你拒绝时被打"abrasive"标签——同样动作男性被叫 "focused"。</p>
+<p>同时另一面：**女性被 perceived 为 Taker 的成本远高于男性。** 自我倡导（self-advocacy）—— "我做了 X" —— 男性说被认为 confident，女性说被认为 self-serving。这是 likability vs competence 的 double bind（Sandberg 在 *Lean In* 详细拆解，Tomas Chamorro-Premuzic 在 *Why Do So Many Incompetent Men Become Leaders?* 用数据进一步证实）。</p>
+<p>三件具体可做：</p>
+<p><strong>(1) Audit 你的 give：</strong>每月一次问"哪些 give 是 promotable work、哪些是 office housework？" 后者要主动拒绝或轮岗（"我去年做了 onboarding lead，今年建议 [男同事] 接手"）。</p>
+<p><strong>(2) 用"团队"叙事承载 self-advocacy：</strong>"My team shipped X" 比 "I shipped X" 更可接受——这不公平但是现实。Joan C. Williams 的 *Bias Interrupted* 提供了一系列 specific 句式来既 surface 贡献又避免 likability penalty。</p>
+<p><strong>(3) 识别"利用你温暖"的 Taker：</strong>女性 manager 常被 junior（尤其女性 junior）当 emotional dumping ground——这是 Taker 行为的一种 form。区分"真正成长"和"持续抽取你的情感劳动"——后者要边界化。</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>互惠与联盟：长期 capital 不是交易
+<span class="en">Reciprocity & Coalitions: Build Capital Before You Need It</span></h2>
+<span class="tag">Dawkins</span><span class="tag">Axelrod</span><span class="tag">Tit-for-Tat</span><span class="tag">长期博弈</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">组织里的"联盟"是一种 repeated game——你每天和同一批人多次互动，几年甚至十几年。Robert Axelrod 在 *The Evolution of Cooperation* 用计算机锦标赛证明：repeated game 里**最稳定也最成功的策略是 Tit-for-Tat**——开局合作、然后镜像对方上一轮、bias toward forgiveness。Dawkins 在 *The Selfish Gene* 把这扩展为生物学层面：互惠利他是 evolutionarily stable strategy。组织中的现实推论：**capital 在你不需要的时候建立、在你需要的时候支取。** 你危机时才想到联系某人 = 银行只有透支额度没有存款。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The most successful strategy in the iterated Prisoner's Dilemma tournament was the simplest one: TIT FOR TAT. It cooperates on the first move and then does whatever the other player did on the previous move. Its success depended on four properties: it was nice (never first to defect), retaliatory (never let exploitation go unanswered), forgiving (returned to cooperation after one round of punishment), and clear (its strategy was easy for the opponent to read)."</span>
+<span class="zh">在重复囚徒困境锦标赛中最成功的策略是最简单的：Tit-for-Tat。开局合作，然后镜像对方上一轮。它的成功来自四个特性：nice（从不率先 defect）、retaliatory（不让剥削无回应）、forgiving（惩罚一轮后回到合作）、clear（策略可读）。</span>
+<span class="source">— Robert Axelrod · The Evolution of Cooperation（第 2 章 · 1984 经典）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：危机时刻能打电话给谁</div>
+<div class="scene">
+<div class="setup">周五下午 5 点，你的 service 出 incident 影响一个邻组的 critical pipeline。你需要那个组的 staff eng 配合调试——但他下班了。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（临时关系 + 直接 ask）</div>
+<p>"嗨 X，我们出 incident 需要你协助调试，能上线吗？"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 你过去 6 个月跟他互动 2 次都是 ask（他帮你 unblock 过一次、refer 过一个 candidate）。他现在的选择：周五晚上 vs 一个他没什么 capital 关系的人。他理性的选择是"我看到了，明早回复你"。这不是他坏，是 Tit-for-Tat 的输出——你没存款，你支不出钱。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（长期 invest 之后的 cash-in）</div>
+<p>过去 12 个月你和 X 的互动是这样的：<br>
+- 你 review 过他的 RFC 一次（45 分钟，给了认真的反馈）<br>
+- 他 ship 一个 launch 时你发了一封不长但 specific 的祝贺邮件，cc 了他老板<br>
+- 你跨组 brown bag 上 invite 他来讲他的项目<br>
+- 你听说他在 hiring，主动 refer 了一个朋友（没 hire 成，但他感激）<br>
+- 一次月度 lunch（不 talk shop，just 关系）<br><br>
+**这些总成本：大约 6-8 小时分布在一年中。**<br><br>
+现在你 ping："X, 我们有一个 P1 影响你们 pipeline。我知道周五晚上很不该问——但我们 root cause 卡在你们 service 的一个 edge case，如果你能上线 30 分钟我们今晚能解决，否则要拖到周一你们组也会受影响。我欠你一次大的。"<br><br>
+他大概率上线。不是因为他被 obligated（虽然有那个成分），是因为他 trust 你的判断（你不会 over-ask）、trust 你会真的 reciprocate、并且过去一年的关系让 default cooperate 是他自然反应。</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 同样的 ask，差别在于过去 12 个月的"账户余额"。这不是操纵——是 Axelrod 实证里 repeated game 的最优策略。你也对他做了同样的事，他危机时你也会上线。这是组织生存的底色：**长期合作的网络比单次精明的算计更稳定。**</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">建立长期 capital 的检查表</div>
+<ul class="checklist">
+<li>**列出 5-10 个 peer：** 你能在工作出问题时打电话求帮的同级。写不出 5 个 = 你的 capital network 太薄。</li>
+<li>**每月 invest 一次 unsolicited give：** 给一个同事发一篇 relevant 的文章、对她最近 ship 的东西发 specific 祝贺、cc 她老板讲她的好——成本低、信号高。</li>
+<li>**保持 nice + retaliatory 平衡：** Tit-for-Tat 不是"圣母"。被 Taker 占便宜要清晰停掉合作——nice 不等于 doormat。</li>
+<li>**Forgiving：** 一次冲突不要永久绝交。Axelrod 显示永远报复（Grim Trigger 策略）在长期博弈里输——一次 punishment 之后愿意回到合作的策略胜出。</li>
+<li>**Clear：** 你的合作 / 不合作要 predictable。不要 random nice、random distant——对方不知道怎么和你互动 = 不和你互动。</li>
+<li>**Coalition 不是 cabal：** 公开、跨派系、基于互助。Coalition 让你 robust；cabal 让你脆弱——派系一变天你和你的派系一起倒。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 capital 当债务清单。</strong>每次 give 立刻记一笔账，下次 expect 回报——这是 Matcher 的失败模式（过于 transactional）。Givers 在 cap 上长期赢，因为不严格记账反而扩展了网络。</li>
+<li><strong>只在需要时联系。</strong>对方接到你电话第一反应是"她要什么？"——你已经 calibrated 自己作为 Taker。</li>
+<li><strong>过度 invest 在最高层。</strong>你 VP 不缺人讨好。**最高 ROI 的 invest 通常是和你同级 / 高半级的 peer**——5 年后他们是 VP。Sponsor up but invest sideways。</li>
+<li><strong>不 forgive。</strong>组织里冲突频繁、reorg 把对手变同事。Grim Trigger（一次背叛永久敌对）在长期博弈里输得最惨。</li>
+<li><strong>派系化。</strong>"和 X 派别站一起"看起来强，实际是把所有鸡蛋放一个 reorg 风险篮子里。Coalitions 要 cross-cutting——这样任何派系倒台你还在。</li>
+<li><strong>把 reciprocity 当 quid pro quo。</strong>真正的长期关系是 generalized reciprocity——我帮你不是因为你帮我，是因为我在的这个 network 里大家这样做。Quid pro quo 是 transaction，generalized reciprocity 是 culture——后者远更 robust。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · Sponsor gap 与 coalition 的非对称回报</span>
+<p>Hewlett 的数据：男性 senior 主动 sponsor 的对象 71% 是男性。这意味着女性 IC / manager 要建立同样的 capital network 需要付更多 effort、跨更大的距离。Coalition building 对女性不是"加分项"——是结构性必需，因为你的 default network 比同级男性小。</p>
+<p>同时另一个不对称：女性 invest 在男同事身上时回报率更低。Hewlett 数据显示：男性 sponsor 投资在男性 protégé 的频率远高于女性。这不一定是恶意——更多是 in-group bias（你更容易看到 "promising" 在像你的人身上，Aronson《Social Animal》详细讨论）。</p>
+<p>三件具体可做：</p>
+<p><strong>(1) 双轨 invest：</strong>跨性别 + 性别内 coalitions 都要建。完全 invest 在男性网络 = 你成为 token；完全 invest 在女性网络 = 你被边缘化。两边都建，意识到回报率不对称、不灰心。</p>
+<p><strong>(2) 主动找 Sponsor，不要等：</strong>Hewlett 的研究里 successful 女性 leader 的共同 pattern：她们**主动 ask** 资深 leader 当 sponsor、给 specific 的 ask（"我想 push 到 Director，能否在下一轮 promo 校准会上为我说话？"）。男性比女性提这个 ask 的概率高 5x——不是因为他们更有资格，是因为他们不视之为"麻烦人家"。</p>
+<p><strong>(3) Reciprocate 给后来者：</strong>当你的 capital 累积起来，主动 sponsor 后来的女性 / underrepresented。Sandberg：每一代上去的女性 leader 都有责任降低后面那一代的 sponsor gap。这不是道德姿态，是 coalition building 的 long game——你建立的网络在 10 年后是你最大的 capital。</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>深入资源 · Further Reading</h3>
+<ul>
+<li><strong>Jeffrey Pfeffer · Power: Why Some People Have It and Others Don't</strong> — Stanford 商学院的"权力课"教材。第 1-3 章拆 org chart vs real influence 的差距，第 6-7 章讲 build power 的 mechanics。学界对 Pfeffer 评价分裂，但作为去魅化的入门必读。</li>
+<li><strong>Adam Grant · Give and Take</strong> — Givers / Takers / Matchers 的实证基础。重点读第 1 章（定义）和最后两章（如何不当被剥削的 Giver）。</li>
+<li><strong>Robert Axelrod · The Evolution of Cooperation</strong>（1984）— Tit-for-Tat 锦标赛的经典论文集结。读第 1-3 章足够。组织行为学引用次数最高的著作之一。</li>
+<li><strong>Richard Dawkins · The Selfish Gene</strong>（第 12 章 "Nice Guys Finish First"）— 互惠利他在生物学层面的论证。Axelrod 思想的进化论侧翼。</li>
+<li><strong>Robert Sutton · The No Asshole Rule</strong> — 识别 Predator 类型与如何 survive 的实操手册。Stanford 教授，数据扎实。</li>
+<li><strong>Sylvia Ann Hewlett · Forget a Mentor, Find a Sponsor</strong> — Sponsor vs Mentor 区别 + sponsor gap 的实证数据。女性 / 少数族裔 career strategy 必读。</li>
+<li><strong>Joan C. Williams · Bias Interrupted</strong> — 用数据驱动方法 interrupt 组织偏见，包含 self-advocacy 的具体 script。</li>
+<li><strong>Marie G. McIntyre · Secrets to Winning at Office Politics</strong> — 实操手册级别。Power dynamics 章节直接可用。</li>
+<li><strong>Will Larson · Staff Engineer / An Elegant Puzzle</strong> — IC 视角看 org politics，对 tech lead 特别有用。</li>
+<li><strong>Elliot Aronson · The Social Animal</strong> — In-group / out-group, 从众, 认知失调——理解组织行为的社会心理学底座。</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · Open Questions</h3>
+
+<details>
+<summary>"组织政治"是否本身就是一种道德妥协？做技术的人是不是应该拒绝参与？</summary>
+<div>这个问题本身预设了一个二分：高尚 vs 卑鄙。但真实的政治光谱有三层。**底层**是欺骗、scope grab、人身攻击——这一层应该拒绝并积累足够 capital 把这些人挤出去。**中层**是 framing、timing、stakeholder management——这是合法的、不参与等于把你的工作交给愿意做的人去 represent。**顶层**是用你的影响力让组织做对的事——拒绝中层等于自动让出顶层。"拒绝政治"听起来高尚，实际是把决策权让渡给愿意参与的人——他们不一定比你 ethical。Pfeffer 的尖锐版本：technical people 在大组织里痛苦，不是因为政治存在，是因为他们拒绝学习而别人不拒绝。</div>
+</details>
+
+<details>
+<summary>初创公司 vs 大厂的政治差异在哪里？</summary>
+<div>初创：政治量少但密度高——20 个人的团队冲突直接影响 cap table、谁拿 founder 信任决定一切。大厂：政治量大但 dilution——10,000 人的组织里你能影响的范围更小，但同时一个失败不致命。**对应策略不同。** 初创要紧抓 founder 关系（这是唯一真的"决策图"）、对短期 capital 极度敏感。大厂要 invest 在长期 cross-functional 网络、容忍单点失败、用 Tit-for-Tat 的 forgiving 属性（因为人会换岗、reorg 会洗牌）。Ben Horowitz 在 *The Hard Thing About Hard Things* 反复讲初创政治：早期一切都是 founder mode，没有 stakeholder matrix——因为 stakeholder 只有一个。</div>
+</details>
+
+<details>
+<summary>东亚 / 中国文化背景下，本文的"政治学"是否适用？孙子和 Axelrod 哪个更管用？</summary>
+<div>有显著差异。东亚组织（尤其国内大厂）的政治结构经常更高语境（high-context）、更强 face culture、更隐性 hierarchy。Stakeholder 矩阵和 Tit-for-Tat 的底层逻辑跨文化通用——但**表达方式**差异巨大：西方组织你可以 "let's discuss this disagreement openly"，东亚组织同样目的需要通过 indirection（饭桌、私下、第三方）实现。孙子兵法的"不战而屈人之兵"、"上兵伐谋"——这些在东亚组织里有时比 Axelrod 更精准（Week 10 会专门拆）。但底层博弈论是一样的：repeated game、互惠、信息不对称。建议同时学西方框架（Pfeffer、Grant）+ 东方智慧（孙子、韩非）—— 框架来自西方学界、心法来自东方经典——两者互补不冲突。</div>
+</details>
+
+<details>
+<summary>什么时候应该选择"优雅退场"而不是继续 navigate 政治？</summary>
+<div>三个 signal 同时出现就该 exit（Week 35 会深入展开）：(1) **结构性敌对**——你的 skip-level 或 VP 把你定位为问题，不是合作伙伴，且无 escalation path（HR / 跳槽内部都失败）；(2) **道德底线被反复挤压**——不是一次 disagreement，是 pattern 性要求你做你认为 unethical 的事；(3) **机会成本无穷大**——你 invest 在 navigate 的时间，外面的 offer 已经显著更好。这三条任何单独一条都不够——只有同时出现才意味着 navigate 的 ROI 真的为负。注意一个反向陷阱：很多人在 (1) 或 (2) 出现时太早走，错过了通过 build capital 反转 narrative 的窗口。同时也很多人在三条都满足后还继续 sunk cost——这种坚持没有美德，只有损耗。</div>
+</details>
+
+<details>
+<summary>tech lead manager 做政治学习，会不会让 IC 队员觉得"老板变了"、失去信任？</summary>
+<div>这是真问题。具体边界：(a) 政治知识用来**保护团队**（争资源、屏蔽 noise、push 团队成果可见）= IC 会感激（即使他们不知道你在做这些）；(b) 政治知识用来**牺牲团队换个人 visibility**（把 junior credit 占为己有、把团队当 stepping stone）= 信任崩塌。同一套 skill 服务不同目的，结果完全相反。Camille Fournier 在 *The Manager's Path* 里说："The job of a manager is to amplify the team's signal. Politics is one of the amplifier instruments." 队员不需要听你讲政治，他们需要看到你的政治能力在为他们工作——这是信任的真正基础。一个反向 caution：如果你完全不学政治，团队的好工作不被看见、资源被邻组抢——团队也会失去信任，只是表现为 "她是好人但她保护不了我们" ——更 slow burn 的失败。</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Week 6 Action</h3>
+<p>本周做两件事——必须做完：</p>
+<div class="action">
+<strong>(1) 画你当前最重要项目的决策图。</strong>列出 Authority / Influence / Veto / Broker 四类节点，每类写出具体人名。然后问自己：我有没有 invest 在每一类？哪一类我完全没碰过？接下来 4 周补上去。<br><br>
+<strong>(2) 列出你的 capital network——你能打电话求帮的 peer。</strong>写不出 5 个 = 这周开始每周给 1 个同事发一份 unsolicited give（一篇文章、一句 specific 祝贺、一个 referral、一个 intro）。半年后这个名单是 15 人，你的组织韧性会跃升。<br><br>
+<strong>反思题：</strong>回看过去 12 个月你被卡住或失败的一个项目——用今天的决策图 + stakeholder 矩阵复盘，是哪一个节点你忽略了？是 Veto 没识别，还是 Broker 没 invest，还是把 Taker 当 Matcher？这个 pattern 会在下一个项目重演，除非你写下来。</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 06 · 2026.06.24</footer>
+</div>
+</body>
+</html>

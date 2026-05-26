@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 6: Org Politics 101 — Power Maps and Survival</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.05rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"\2610";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.matrix-2x2{display:grid;grid-template-columns:120px 1fr 1fr;grid-template-rows:auto auto auto auto;gap:6px;margin:14px 0;font-size:0.88rem}
+.matrix-2x2 .axis-y{writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:8px;grid-row:2/4;display:flex;align-items:center;justify-content:center}
+.matrix-2x2 .col-header{text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:6px}
+.matrix-2x2 .cell{padding:14px;border-radius:4px;min-height:110px}
+.matrix-2x2 .cell.q1{background:#e6efdc;border:1px solid #8aa86a}
+.matrix-2x2 .cell.q2{background:#f5e6c4;border:1px solid #c4a878}
+.matrix-2x2 .cell.q3{background:#f8f0dd;border:1px solid #d4b888}
+.matrix-2x2 .cell.q4{background:#f0e8d8;border:1px solid #c4b898}
+.matrix-2x2 .cell .label{font-weight:700;color:#5c3a18;display:block;margin-bottom:6px;font-size:0.92rem}
+.matrix-2x2 .cell .desc{color:#3a2f1c;font-size:0.86rem;line-height:1.55}
+.matrix-2x2 .axis-x{grid-column:2/4;text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:6px}
+.typology{margin:14px 0;background:#fcf6e8;border-radius:6px;border:1px solid #e6d9bf;overflow:hidden}
+.typology table{width:100%;border-collapse:collapse;font-size:0.9rem}
+.typology th{background:#e8dcc0;color:#5c3a18;padding:10px 12px;text-align:left;font-weight:700;letter-spacing:1px;font-size:0.82rem;border-bottom:2px solid #c4a878}
+.typology td{padding:10px 12px;border-bottom:1px solid #e6d9bf;color:#3a2f1c;vertical-align:top}
+.typology tr:last-child td{border-bottom:none}
+.typology td:first-child{font-weight:700;color:#5c3a18;white-space:nowrap}
+.decision-graph{background:#fcf6e8;padding:18px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.decision-graph .row{display:flex;gap:12px;margin:8px 0;align-items:flex-start}
+.decision-graph .label-col{flex:0 0 110px;font-weight:700;color:#a8702d;font-size:0.82rem;letter-spacing:1.5px;text-transform:uppercase;padding-top:8px}
+.decision-graph .node{flex:1;background:#fffaf0;padding:8px 12px;border-radius:4px;border:1px solid #c4a878;font-size:0.9rem;color:#3a2f1c}
+.decision-graph .node.formal{border-color:#b8a888;background:#f5efe0;color:#6b4a1f}
+.decision-graph .node.real{border-left:3px solid #5c8a3a;background:#e6efdc}
+.decision-graph .arrow{text-align:center;color:#a8702d;font-size:1rem;margin:4px 0}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"\25B8";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.matrix-2x2{grid-template-columns:60px 1fr 1fr;font-size:0.78rem}
+.matrix-2x2 .cell{padding:10px;min-height:auto}
+.matrix-2x2 .cell .desc{font-size:0.8rem}
+.decision-graph .row{flex-direction:column;gap:4px}
+.decision-graph .label-col{flex:none}
+.typology table{font-size:0.82rem}
+.typology th,.typology td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 06 · 2026.06.24</div>
+<h1>Org Politics 101: Power Maps and Survival Fundamentals</h1>
+<div class="meta"><span>Topic: Org Politics 101</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"You may not be interested in politics, but politics is interested in you." — attributed to Pericles, frequently cited by Trotsky</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> Tech leads with IC backgrounds carry a common naïveté — "I do good technical work, my boss will see it; people who play politics aren't doing real work." That statement is true in a 10-person company and is a fatal misconception in a 10,000-person one. Org politics is not a moral choice; it's the inevitable byproduct of resource scarcity, information asymmetry, and misaligned incentives in any large organization. <strong>Not participating isn't innocence — it's ceding decision rights to those who do.</strong> Four pieces this week: (1) how to read the real decision graph, (2) how to triage stakeholders by Power × Interest, (3) how to identify player archetypes (Givers / Takers / Matchers + Predators), (4) why long-term alliances are built on reciprocity, not transactions. By the end you should be able to map the decision graph and stakeholder matrix for your most important current project.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The Decision Graph Is Not the Org Chart
+<span class="en">Read the Real Power Map</span></h2>
+<span class="tag">Pfeffer</span><span class="tag">Will Larson</span><span class="tag">Power Mapping</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">The org chart tells you "who reports to whom." The decision graph tells you "how a thing actually happens." The two diverge sharply. To land a project, identify four node types: <strong>Authority</strong> (can formally approve), <strong>Influence</strong> (shapes Authority's view), <strong>Veto</strong> (can block), <strong>Broker</strong> (controls information flow to Authority). Most projects don't die because Authority disagrees — they die because a Veto or Broker wasn't handled. Treating the org chart as the decision graph is the most common failure mode of an IC's first year as a manager.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Power is not granted by titles. Almost everything I know about getting things done in organizations comes from observing that the formal organization is a small subset of how decisions actually get made. The people who advance learn this in their first three years; the people who don't, complain about politics for the rest of their careers."</span>
+<span class="source">— Jeffrey Pfeffer · Power: Why Some People Have It and Others Don't (Ch. 1)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Visualization: Two Maps for the Same Project</div>
+<div class="decision-graph">
+<div class="row">
+<div class="label-col">Org Chart</div>
+<div class="node formal">VP Eng → Director (your boss) → You → Team</div>
+</div>
+<div class="arrow">↓ Looks simple. But where projects actually get stuck: ↓</div>
+<div class="row">
+<div class="label-col">Authority</div>
+<div class="node real">VP Eng (final sign-off, but mostly defers to Director's recommendation)</div>
+</div>
+<div class="row">
+<div class="label-col">Influence</div>
+<div class="node real">Staff Eng X (Director's trusted technical voice — without X's nod, Director won't push)</div>
+</div>
+<div class="row">
+<div class="label-col">Veto</div>
+<div class="node real">Security Lead Y (if she says "unsafe," it's dead)<br>Adjacent Director Z (resource conflict — she can lobby VP to cut)</div>
+</div>
+<div class="row">
+<div class="label-col">Broker</div>
+<div class="node real">VP's Chief of Staff (controls what docs VP sees, what gets on the agenda, when)</div>
+</div>
+</div>
+<p style="font-size:0.85rem;color:#6b4a1f;margin-top:8px;text-align:center;font-style:italic">→ Org chart: 4 nodes. Real decision graph: 7. Miss Y, Z, or the Broker and your project capsizes in the final week.</p>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: The First Week After Reorg</div>
+<div class="scene">
+<div class="setup">Reorg just shipped. Your platform team now reports up through a new VP you don't know. You have a Q3 migration to push.</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (work the org chart)</div>
+<p>"I sent the proposal to the new VP and I'm waiting for his reply. Already synced with my direct boss. Should be unblocked."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ You touched only Authority. The new VP doesn't know you or the project — he'll ask someone. Who? You don't know. Two weeks later he replies "Have you talked to [person]?" That's the Influence/Veto node — you should have identified them <strong>before</strong> the proposal went out.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (map before you act)</div>
+<p>Don't write the proposal in week one. <strong>Do five 30-minute coffee chats first:</strong><br><br>
+<strong>(1) Your Director:</strong> "On technical decisions in this space, whose judgment does the new VP trust? I want to make sure that person is bought in before the proposal goes public."<br>
+<strong>(2) Adjacent staff/manager:</strong> "Last time your team pushed a big project past this VP, what kind of proposal landed? What does he care about most — metrics, risk, or customer story?"<br>
+<strong>(3) The VP's Chief of Staff (or most senior report):</strong> "I'd like to understand the VP's priorities for the quarter so I can make sure my project aligns with his narrative."<br>
+<strong>(4) Security and adjacent Director:</strong> "I have an idea — before I formalize it, I want to hear your concerns."<br>
+<strong>(5) A peer who recently landed something similar:</strong> "Can you walk me through the path you took?"<br><br>
+<em>Then</em> write the proposal — with Y's security concerns already addressed, X's preferred tech choice already cited, framed in the metric the VP cares about. What Authority receives is not an ask; it's a plan that's 95% pre-walked through Influence and Veto.</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ Same project. The bad version: 3 months, likely dies in the final week. The good version: 6 weeks, lands. The difference isn't "political skill" — it's <strong>the discipline of mapping</strong>.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Drawing the Decision Graph</div>
+<ul class="checklist">
+<li><strong>List Authority:</strong> Who signs off on this? (One name, not "management.")</li>
+<li><strong>List Influence:</strong> Whom does Authority consult before deciding? (Usually 1–3 specific people — can you name them? Can't = haven't done the homework.)</li>
+<li><strong>List Veto:</strong> Who can stop this? (Security / Legal / adjacent director / platform owner — any single "no" means rework.)</li>
+<li><strong>List Broker:</strong> Who controls what information Authority sees? (EA, Chief of Staff, the senior IC closest to her.)</li>
+<li><strong>Distinct ask per node:</strong> Authority needs the narrative. Influence needs the technical detail. Veto needs risk mitigation. Broker needs timing and framing. One doc can't serve all four.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Equating "my boss supports it" with "this will land."</strong> Your boss is also just one node in <em>her own</em> decision graph — her ask can be vetoed too.</li>
+<li><strong>Skipping the Broker.</strong> Chief of Staff, EA, the most senior direct report — they decide what your VP sees in which meeting. Not investing in them = not appearing on the agenda.</li>
+<li><strong>Treating Veto as the enemy.</strong> Security Lead isn't against you — her KPI is risk. Bring her a mitigation <em>before</em> she has to react, and Veto turns into sponsor.</li>
+<li><strong>Misreading informal influencers as power plays.</strong> Some staff/principals have influence without title because their historical judgment is sound. That's legitimate power, not favoritism.</li>
+<li><strong>"I shouldn't have to do this" as principle.</strong> Moral posture wrapped around engineer ego — the cost is your project failing and your team failing with you.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · The Invisible Edges in the Decision Graph</span>
+<p>The informal decision graph in large orgs often runs through channels you may not be in: golf, after-work drinks, men's-room hallway chats, smoke breaks, sports-talk warm-ups between senior men. Sylvia Ann Hewlett's data in <em>Forget a Mentor, Find a Sponsor</em>: senior women report being "excluded from important informal communication" at 2.4× the rate of men at the same level. That isn't a complaint — it's <strong>an edge in the decision graph you can't see</strong>.</p>
+<p>The counter isn't "force your way into the golf foursome" — inefficient and demeaning. Three concrete moves:</p>
+<p><strong>(1) Cultivate a Broker ally:</strong> the VP's Chief of Staff, an EA, or a peer willing to give you a readout — someone who can tell you "the VP said over dinner he doesn't like option B." That information flow can't be bought, but can be built through long-term reciprocity (see Card 4).</p>
+<p><strong>(2) Create your own informal venues:</strong> not by imitating male rituals. Small-group lunches, cross-team reading groups, new-hire onboarding coffees — any <strong>repeating, low-barrier, information-dense</strong> venue. If you're not in their room, build your own room and have the right people show up.</p>
+<p><strong>(3) Sponsor ≠ Mentor:</strong> mentors give you advice; sponsors speak for you in rooms you're not in. Hewlett's research: women have more mentors and fewer sponsors than men. A sponsor is an Influence node who advocates for your <em>specific</em> project. Identify whose voice has leverage on you, then invest — not by flattery, but by giving them <strong>useful, citable work</strong>.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>The Stakeholder Matrix: Triage by Power × Interest
+<span class="en">Differentiated Engagement, Not Equal Treatment</span></h2>
+<span class="tag">Mendelow</span><span class="tag">PM Classic</span><span class="tag">Attention Allocation</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">Not all stakeholders deserve equal attention — and treating them as if they do is the single biggest energy drain for tech leads pushing big projects. Mendelow's matrix (1981) sorts stakeholders into four quadrants by Power × Interest, with a distinct engagement strategy per quadrant: High Power × High Interest = <strong>Manage Closely</strong>; High Power × Low Interest = <strong>Keep Satisfied</strong>; Low Power × High Interest = <strong>Keep Informed</strong>; Low Power × Low Interest = <strong>Monitor</strong>. "Manage Closely" for everyone = you drown in meetings while the people who actually decide the project's fate get the least of you.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"The most common stakeholder-management error is not too little engagement — it is undifferentiated engagement. Treating every stakeholder identically means under-serving the ones who decide the project's fate and over-spending on ones who only need a status update."</span>
+<span class="source">— Aubrey Mendelow · Stakeholder Mapping (1981, Cleveland State University Conference) — standard reference in PM/MBA curricula</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Visualization: Power × Interest 2×2</div>
+<div class="frame-diagram">
+<div class="matrix-2x2">
+<div></div>
+<div class="col-header">Low Power</div>
+<div class="col-header">High Power</div>
+
+<div class="axis-y">High Interest</div>
+<div class="cell q3">
+<span class="label">Keep Informed</span>
+<span class="desc">Cares but limited power: regular updates, Q&amp;A, give her a feedback channel. Your ally pool.</span>
+</div>
+<div class="cell q1">
+<span class="label">Manage Closely ⭐</span>
+<span class="desc">Decides the project's fate: high-frequency 1:1s, pre-review proposals, bake her concerns into the design. 80% of your attention goes here.</span>
+</div>
+
+<div class="axis-y">Low Interest</div>
+<div class="cell q4">
+<span class="label">Monitor</span>
+<span class="desc">Don't actively invest: one-line monthly update. Over-investing looks desperate.</span>
+</div>
+<div class="cell q2">
+<span class="label">Keep Satisfied</span>
+<span class="desc">Powerful but not very engaged: don't pester, but make sure she's <em>never surprised by someone else</em>. A 1-page brief is enough.</span>
+</div>
+
+<div></div>
+<div class="axis-x">→ Power (ability to affect outcome)</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: A Platform Migration's Stakeholder List</div>
+<div class="scene">
+<div class="setup">You're pushing a service migration across three teams. Your first instinct: "Pull all the stakeholders into a weekly sync."</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (undifferentiated group)</div>
+<p>"Spin up a Slack channel with all 12 stakeholders. A 30-minute weekly sync — everyone shows up."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Three months in: the sync devolves into status reports, nobody speaks, and the key decision gets overturned outside the meeting by a director you didn't notice. You "managed" everyone — actually managed no one.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (triage first, then design cadence)</div>
+<p>List the 12 stakeholders. Place them on the matrix. Then design cadence:<br><br>
+<strong>Manage Closely (3 people · 80% of time):</strong> your Director + adjacent Director (resource conflict) + Platform Owner (the destination). 30-minute 1:1 every two weeks each. Proposals previewed before publication. Concerns baked into the doc.<br><br>
+<strong>Keep Satisfied (2 people · 10%):</strong> VP + Security Lead. One-page brief monthly. The VP doesn't need weekly noise — but she <em>cannot</em> be surprised in an all-hands. Give her informational control.<br><br>
+<strong>Keep Informed (5 people · 8%):</strong> adjacent staff engineers, internal customers. An internal blog post + biweekly email. They care but have limited power — invest in transparency, not 1:1s.<br><br>
+<strong>Monitor (2 people · 2%):</strong> distant SRE, finance partner. One line at month-end. They neither care nor influence — more investment is waste.</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ Same 12 people. Your attention shifts from "1/12 each" to "3 people get 80%." Project success rate climbs sharply — and <strong>your calendar drops from 20 hours of syncs to 6</strong>. The remaining 14 hours go back to real work.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Using the Matrix</div>
+<ul class="checklist">
+<li><strong>Specific names, not categories.</strong> Not "leadership," not "the business" — actual people.</li>
+<li><strong>Power has evidence behind it.</strong> Not title — "if she says no, will this die?" If yes = High Power.</li>
+<li><strong>Interest is current or future?</strong> Someone who isn't engaged today but will be blamed if the project fails = High Interest. Underestimating this group is how you bury landmines.</li>
+<li><strong>Manage Closely never exceeds 5.</strong> More than 5 = you're not triaging, you're labeling everyone closely-managed. Re-sort.</li>
+<li><strong>Redraw quarterly.</strong> People rotate, interests shift, reorgs move power. A six-month-old matrix is wrong.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Equating Power with title.</strong> A staff engineer can have more power than a Director — because the Director asks her. Map real influence, not org level.</li>
+<li><strong>Over-investing in "Keep Satisfied" out of fear.</strong> A VP's attention is scarce. She doesn't need weekly updates — she needs you to show up when needed and stay out otherwise.</li>
+<li><strong>Ignoring "Monitor" entirely.</strong> Monitor ≠ vanish. A one-line monthly update prevents the day she suddenly becomes High Interest with zero context on you.</li>
+<li><strong>Drawing the matrix once and forgetting it.</strong> Reorgs, new projects, strategy shifts all move positions. A stakeholder moving from Q4 to Q1 unnoticed = three months later you discover the project is stuck on her.</li>
+<li><strong>Using the matrix as a moral verdict.</strong> Low Power × Low Interest doesn't mean "she doesn't matter" — she may be a great colleague unrelated to this project. The matrix is a project tool, not an evaluation of people.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Player Archetypes: Givers / Takers / Matchers + Predators
+<span class="en">Identify Before You Engage</span></h2>
+<span class="tag">Adam Grant</span><span class="tag">Robert Sutton</span><span class="tag">Counter-Manipulation</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">Adam Grant in <em>Give and Take</em> sorts people in organizations into three types: <strong>Givers</strong> (default to helping, no immediate accounting), <strong>Takers</strong> (default to extracting value, often disguised as collaboration), <strong>Matchers</strong> (strict reciprocity ledger). The large majority are Matchers. Plus a fourth, dangerous category: <strong>Predators</strong> (zero-sum, willing to harm you to elevate themselves — described in depth by Robert Sutton in <em>The No Asshole Rule</em>). Misidentifying type = applying the wrong strategy: treating a Taker like a Matcher and continuing to invest is slow bleed; treating a Giver like a Matcher and demanding repayment loses your most valuable relationships; failing to identify a Predator and mistaking structural hostility for ordinary conflict.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Givers, takers, and matchers all can — and do — achieve success. But when givers succeed, it spreads and cascades. When takers win, there's usually someone else who loses. Research shows that people tend to envy successful takers and find ways to knock them down. In the long run, givers may finish last in any single transaction, but they finish first in the marathon."</span>
+<span class="source">— Adam Grant · Give and Take (Intro &amp; Ch. 1)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Visualization: The Four Archetypes and Your Strategy</div>
+<div class="typology">
+<table>
+<tr><th>Type</th><th>Signals</th><th>Your Strategy</th></tr>
+<tr>
+<td>Giver</td>
+<td>Helps proactively, doesn't keep score, surfaces opportunities to others, gives credit to the team, invests disproportionately in juniors.</td>
+<td><strong>Actively sponsor.</strong> Givers are an organization's scarcest resource. Grant's research: pure Givers are vulnerable to exploitation — your job is to protect them, amplify their work, make their sacrifice visible.</td>
+</tr>
+<tr>
+<td>Matcher</td>
+<td>Reciprocates evenly, accounts clearly, attuned to fairness, neither takes advantage nor accepts being taken advantage of. ~70% of any org.</td>
+<td><strong>Activate via reciprocity.</strong> Give something specific first (information, an intro, technical help) — she'll return it. The most reliable relational mode.</td>
+</tr>
+<tr>
+<td>Taker</td>
+<td>Takes more than gives in collaboration, dresses outcomes as "team work" while owning the credit, sycophantic upward and harsh downward, restates others' ideas as her own, disappears in crisis.</td>
+<td><strong>Reduce surface area.</strong> Don't confront (ineffective). Don't try to reform (more ineffective). Cut exposure: don't collaborate 1:1, don't share unpublished ideas, keep paper trails, surface your contributions explicitly to your director.</td>
+</tr>
+<tr>
+<td>Predator</td>
+<td>Zero-sum mindset, actively harmful (rumors, scope grabs, public humiliation), unusually harsh on the weak, treats your failure as her win. Rare but high-toxicity.</td>
+<td><strong>Escalate or insulate.</strong> Not office politics — structural hostility. Document incidents, alert HR / your manager, do not try to "talk it out." Sutton's core advice: <strong>don't engage with assholes — escalate or exit.</strong></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Identifying a Taker Peer</div>
+<div class="scene">
+<div class="setup">Your peer tech lead P, over the past six months: brainstorms with you, then presents the result in his name at all-hands; writes docs framing your contribution as "team effort"; ignores your juniors' help requests; expects you to review his docs same-day. You're starting to suspect. You also think "maybe I'm being sensitive."</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (don't identify, keep investing)</div>
+<p>"Maybe he's a Matcher with different timing. Next time he asks for help I'll invest — long-term it will return."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Six months later: he's promoted to staff, you're stagnant; you reviewed 5 of his docs, he reviewed 0 of yours; he presented your brainstormed idea for visibility. Continuing to invest isn't generosity — it's being exploited.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (identify → reduce surface area)</div>
+<p>Three moves, gradual:<br><br>
+<strong>(1) Validate with data, not vibes:</strong> over the past 6 months, <strong>specifically</strong> list times you helped him (reviews, debug, covering for him) vs. times he helped you (specific instances, not "general support"). If it's 8:1, that's not a feeling — that's a fact.<br><br>
+<strong>(2) Don't confront — change the collaboration mode:</strong> next time he asks for a doc review: "Sorry, I'm slammed this week — I'd suggest pinging [someone else]." No explanation. Next time he wants to brainstorm: "Let's write it down and discuss async?" — forces a paper trail. Your idea has a timestamp before he can claim it.<br><br>
+<strong>(3) Surface your contributions proactively:</strong> not bragging. In your weekly 1:1 with your Director, be specific: "On project X, I did the framing and architecture; P did about 30% of execution." You used to worry this sounded like credit-grabbing — now you understand: if you don't say it, the Taker says it in the opposite direction.<br><br>
+<strong>Note: you don't tell P you're doing any of this.</strong> Confrontation hands a Taker narrative material: "She's become uncooperative." You're just quietly closing the extraction channel.</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ A quarter later: P finds another target (Takers cycle through Givers). Your capital is back in your hands. You also haven't paid a reputational cost — because you didn't confront, didn't gossip, didn't "play politics."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Identifying Archetypes</div>
+<ul class="checklist">
+<li><strong>Reciprocity ratio:</strong> in the past 6 months, you've done N things for them, they've done M for you. N/M &gt; 3 = warning. &gt; 6 = high probability Taker.</li>
+<li><strong>Behavior toward subordinates:</strong> how do they treat juniors / people who can't help them? Sycophantic up + harsh down = Grant's strongest single signal for Takers.</li>
+<li><strong>Credit language:</strong> when projects succeed, do they say "we did" or "I led"? Consistency over time matters more than any one instance.</li>
+<li><strong>Crisis behavior:</strong> when you need help and there's no immediate upside for them, do they show up or vanish? Crisis is the X-ray.</li>
+<li><strong>Third-party signals:</strong> three independent people warn you "be careful working with X" — not coincidence. Your gut + multiple independent observations = pattern.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Identifying Takers too late.</strong> Because "trust as default is good" — which is correct, but recalibrating after identification isn't becoming cynical, it's calibration.</li>
+<li><strong>Trying to reform Takers.</strong> You won't. Takers aren't unaware — they're strategically taking. Your confrontation hands them more material.</li>
+<li><strong>Mistaking Matchers for Takers.</strong> Matchers keep clear accounts not out of selfishness — out of fairness. Give them specific value, they return it. Misreading them costs you 70% of your collaboration pool.</li>
+<li><strong>Burning out the Givers.</strong> Givers don't say no — so you have to say no for them. A manager's job includes protecting Givers from organizational extraction (default-assigned office housework, unlimited mentor requests).</li>
+<li><strong>Treating a Predator like a Taker.</strong> Takers extract value; Predators actively harm. Different strategies — Taker = reduce surface area; Predator = must escalate. Conflating them = sustained damage.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · The Giver-Label Trap and the Likability Tax</span>
+<p>Women in the workplace are defaulted into the Giver role — "warm," "helpful," "good team player." Grant's research: women are asked to do non-promotable tasks (office housework, organizing celebrations, mentoring newcomers, taking notes) 30–50% more than men. The cost of being default-cast Giver: (a) your time drains away, (b) Takers identify you as a primary target, (c) when you say no, you're tagged "abrasive" — the same behavior in men reads as "focused."</p>
+<p>Other side of the asymmetry: <strong>women perceived as Takers pay a far higher cost than men perceived the same way.</strong> Self-advocacy — "I did X" — reads as confident from men, self-serving from women. Classic likability vs. competence double bind (Sandberg in <em>Lean In</em>; Tomas Chamorro-Premuzic in <em>Why Do So Many Incompetent Men Become Leaders?</em>, with extensive data).</p>
+<p>Three concrete moves:</p>
+<p><strong>(1) Audit your giving:</strong> monthly, ask "which of these gives are promotable work, which are office housework?" Reject the latter or rotate them ("I led onboarding last year — proposing [male colleague] take it this year").</p>
+<p><strong>(2) Use "team" framing to carry self-advocacy:</strong> "My team shipped X" lands better than "I shipped X." Not fair, but it's the field. Joan C. Williams's <em>Bias Interrupted</em> has a catalog of specific phrasings that surface contribution while avoiding the likability penalty.</p>
+<p><strong>(3) Identify "warmth-extracting" Takers:</strong> female managers are frequently treated as emotional dumping grounds by juniors (especially female juniors). That's a Taker pattern in a different form. Distinguish "real growth" from "continuous extraction of emotional labor" — the latter needs boundaries.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Reciprocity &amp; Coalitions: Capital Before You Need It
+<span class="en">Tit-for-Tat in the Repeated Game</span></h2>
+<span class="tag">Dawkins</span><span class="tag">Axelrod</span><span class="tag">Tit-for-Tat</span><span class="tag">Long Game</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">Alliances in an organization are a repeated game — you interact with the same people across years, sometimes decades. Robert Axelrod in <em>The Evolution of Cooperation</em> showed via computer tournament that the most stable and most successful strategy in a repeated game is <strong>Tit-for-Tat</strong>: cooperate on move one, then mirror the opponent's previous move, with a bias toward forgiveness. Dawkins in <em>The Selfish Gene</em> extends this biologically: reciprocal altruism is an evolutionarily stable strategy. The organizational implication: <strong>build capital when you don't need it; spend it when you do.</strong> Reaching out only in crisis = a bank account with no deposits, only overdraft.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"The most successful strategy in the iterated Prisoner's Dilemma tournament was the simplest one: TIT FOR TAT. It cooperates on the first move and then does whatever the other player did on the previous move. Its success depended on four properties: it was nice (never first to defect), retaliatory (never let exploitation go unanswered), forgiving (returned to cooperation after one round of punishment), and clear (its strategy was easy for the opponent to read)."</span>
+<span class="source">— Robert Axelrod · The Evolution of Cooperation (Ch. 2 · 1984)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Who Can You Call in a Crisis?</div>
+<div class="scene">
+<div class="setup">Friday, 5 PM. Your service has caused an incident affecting a critical pipeline in an adjacent team. You need their staff engineer to debug — but he's off the clock.</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (cold relationship + direct ask)</div>
+<p>"Hi X, we have an incident and need your help debugging — can you get online?"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Over the past 6 months you've interacted with him twice — both were asks (he unblocked you once, referred a candidate once). His choice now: Friday night with family vs. helping someone with whom he has no capital. The rational play is "I'll see this tomorrow morning." That's not him being bad — that's Tit-for-Tat playing out. No deposits, no withdrawals.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (cash in after long investment)</div>
+<p>The past 12 months with X looked like this:<br>
+- You reviewed his RFC once (45 minutes, substantive feedback)<br>
+- When he shipped a launch, you sent a short but specific congrats email, cc'ing his manager<br>
+- You invited him to present at your cross-team brown bag<br>
+- You heard he was hiring, proactively referred a friend (no hire, but he appreciated it)<br>
+- One monthly lunch — no shop talk, just relationship<br><br>
+<strong>Total cost: ~6–8 hours spread across a year.</strong><br><br>
+Now you ping: "X, we have a P1 affecting your pipeline. I know Friday night is a bad ask — but our root cause is stuck on an edge case in your service. If you can come online for 30 minutes we can resolve tonight; otherwise it slips to Monday and hits your team too. I owe you one."<br><br>
+He likely shows up. Not from obligation alone (though that's part of it), but because he trusts your judgment (you don't over-ask), trusts you'll actually reciprocate, and a year of relationship made "default cooperate" his natural reaction.</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ Same ask. The difference is twelve months of "account balance." Not manipulation — Axelrod's empirical result: the most stable strategy in a repeated game. You'd do the same for him. This is the substrate of organizational survival: <strong>long-term cooperative networks beat single-shot cleverness.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Building Long-Term Capital</div>
+<ul class="checklist">
+<li><strong>List 5–10 peers:</strong> people you could call for help when work hits a wall. Can't list 5 = your capital network is too thin.</li>
+<li><strong>One unsolicited give per month:</strong> send a relevant article, send a specific congrats on a launch, cc her manager with praise — low cost, high signal.</li>
+<li><strong>Nice + retaliatory in balance:</strong> Tit-for-Tat isn't being a saint. When a Taker exploits you, cleanly stop cooperating. Nice ≠ doormat.</li>
+<li><strong>Forgiving:</strong> one conflict isn't permanent estrangement. Axelrod: permanent-retaliation strategies (Grim Trigger) lose long-term. Strategies that return to cooperation after a single punishment win.</li>
+<li><strong>Clear:</strong> your cooperation/non-cooperation should be predictable. Random nice, random distant — people don't know how to engage with you = they don't engage.</li>
+<li><strong>Coalitions, not cabals:</strong> open, cross-faction, mutual-aid. Coalitions make you robust; cabals make you brittle — the faction shifts and you go down with it.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Capital as a debt ledger.</strong> Recording every give and expecting return next round is the Matcher failure mode — too transactional. Givers win on capital because they don't keep strict score, and the looser accounting expands the network.</li>
+<li><strong>Only reaching out when you need something.</strong> First reaction on receiving your message: "What does she want?" You've calibrated yourself as a Taker.</li>
+<li><strong>Over-investing at the top.</strong> Your VP has no shortage of people seeking her attention. <strong>The highest-ROI investments are usually peers and people half a level up</strong> — in 5 years, they're VPs. Sponsor up; invest sideways.</li>
+<li><strong>No forgiveness.</strong> Conflict is frequent; reorgs turn adversaries into colleagues. Grim Trigger — one betrayal, permanent enmity — loses badly in long-term games.</li>
+<li><strong>Factionalism.</strong> "Standing with X's faction" looks strong; it concentrates all your eggs in a single reorg-risk basket. Coalitions should be cross-cutting — any faction can fall and you're still standing.</li>
+<li><strong>Reciprocity as quid pro quo.</strong> Real long-term relationships are <em>generalized</em> reciprocity — I help because that's how this network operates, not because you helped me last month. Quid pro quo is transaction; generalized reciprocity is culture — the latter is far more robust.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · The Sponsor Gap and Asymmetric Returns on Coalition</span>
+<p>Hewlett's data: 71% of the people senior men actively sponsor are also men. Building a capital network of equal size as a woman requires more effort across more distance. Coalition-building isn't a "nice to have" — it's a structural necessity, because your default network starts smaller than that of male peers.</p>
+<p>The other asymmetry: women's investments in male colleagues yield lower return. Hewlett's data: men sponsor men more often than women. Not necessarily malice — more often in-group bias (you more easily recognize "promising" in people like yourself; Aronson's <em>The Social Animal</em> covers this in depth).</p>
+<p>Three concrete moves:</p>
+<p><strong>(1) Dual-track investment:</strong> build both cross-gender and within-gender coalitions. Investing exclusively in male networks = becoming a token. Investing exclusively in female networks = being marginalized. Build both, accept the asymmetric return, don't get demoralized.</p>
+<p><strong>(2) Ask for sponsorship explicitly. Don't wait.</strong> Hewlett's research: successful women leaders share one pattern — they <strong>ask</strong> senior leaders to sponsor them, with specific asks ("I'm aiming for Director — would you advocate for me in the next promo calibration?"). Men ask for this 5× more than women — not because they're more qualified, but because they don't read it as imposition.</p>
+<p><strong>(3) Reciprocate to those coming up.</strong> Once you accumulate capital, actively sponsor women and underrepresented people behind you. Sandberg: every generation of women leaders has a responsibility to narrow the sponsor gap for the next. Not a moral posture — it's the long game of coalition: the network you build today is your largest capital ten years out.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>Further Reading</h3>
+<ul>
+<li><strong>Jeffrey Pfeffer · Power: Why Some People Have It and Others Don't</strong> — Stanford GSB's "power course" text. Chs. 1–3 dissect org chart vs. real influence; Chs. 6–7 cover building power. Academic opinion is split, but it's the essential demystifying primer.</li>
+<li><strong>Adam Grant · Give and Take</strong> — Empirical foundation for Givers/Takers/Matchers. Read Ch. 1 (definitions) and the final two chapters (how not to be an exploited Giver).</li>
+<li><strong>Robert Axelrod · The Evolution of Cooperation</strong> (1984) — The Tit-for-Tat tournament classic. Chs. 1–3 suffice. One of the most-cited works in organizational behavior.</li>
+<li><strong>Richard Dawkins · The Selfish Gene</strong> (Ch. 12, "Nice Guys Finish First") — The biological case for reciprocal altruism. The evolutionary flank of Axelrod's argument.</li>
+<li><strong>Robert Sutton · The No Asshole Rule</strong> — Identifying Predator-type and how to survive them. Stanford professor, data-grounded.</li>
+<li><strong>Sylvia Ann Hewlett · Forget a Mentor, Find a Sponsor</strong> — Sponsor vs. mentor distinction + sponsor gap data. Essential for women / underrepresented careerists.</li>
+<li><strong>Joan C. Williams · Bias Interrupted</strong> — Data-driven methods for interrupting organizational bias, including concrete self-advocacy scripts.</li>
+<li><strong>Marie G. McIntyre · Secrets to Winning at Office Politics</strong> — Field manual level. The power-dynamics chapter is directly usable.</li>
+<li><strong>Will Larson · Staff Engineer / An Elegant Puzzle</strong> — Org politics from the IC perspective; particularly useful for tech leads.</li>
+<li><strong>Elliot Aronson · The Social Animal</strong> — In-group/out-group, conformity, cognitive dissonance — the social-psychology foundation for understanding organizational behavior.</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Open Questions</h3>
+
+<details>
+<summary>Is "org politics" itself a moral compromise? Should technical people refuse to participate?</summary>
+<div>The question presupposes a binary: noble vs. base. The actual spectrum has three layers. The <strong>bottom</strong>: deception, scope grabs, personal attacks — refuse, and build enough capital to push these people out. The <strong>middle</strong>: framing, timing, stakeholder management — legitimate. Not participating means handing your work to whoever is willing to represent it. The <strong>top</strong>: using influence to make the organization do the right thing — refusing the middle means forfeiting the top. "Refusing politics" sounds noble; in practice it cedes decision rights to whoever is willing. They may be less ethical than you. Pfeffer's sharper version: technical people are unhappy in big orgs not because politics exists, but because they refuse to learn what others won't refuse.</div>
+</details>
+
+<details>
+<summary>How does the political landscape differ between startups and large companies?</summary>
+<div>Startup: low volume, high density. In a 20-person team, conflicts directly affect the cap table; whose founder-trust you carry decides everything. Large company: high volume, dilution. In a 10,000-person org you affect a narrower scope, but a single failure isn't fatal. <strong>Different strategies.</strong> Startups: grip the founder relationship tight (the only real decision graph), be extremely sensitive to short-term capital. Large companies: invest in cross-functional networks over time, tolerate single-point failures, lean into Tit-for-Tat's forgiving property (people rotate, reorgs reshuffle). Ben Horowitz in <em>The Hard Thing About Hard Things</em>: early-stage politics is founder mode — there is no stakeholder matrix because there's only one stakeholder.</div>
+</details>
+
+<details>
+<summary>Does this framework apply in East Asian / Chinese organizational contexts? Sun Tzu vs. Axelrod — which works better?</summary>
+<div>Significant differences. East Asian organizations (especially Chinese big tech) often run with higher-context communication, stronger face culture, more implicit hierarchy. The underlying logic of stakeholder matrices and Tit-for-Tat is cross-cultural — but <strong>the expression differs sharply</strong>: in a Western org you can say "let's discuss this disagreement openly"; in an East Asian org the same goal must be achieved through indirection (dinner table, private, third party). Sun Tzu's "subdue the enemy without fighting" and "the highest war is to attack stratagem" — in East Asian orgs these are often more precise than Axelrod (Week 10 will dive in). But the underlying game theory is identical: repeated games, reciprocity, information asymmetry. The recommendation is to learn both — Western frameworks (Pfeffer, Grant) plus Eastern wisdom (Sun Tzu, Han Fei). Frameworks from Western scholarship, "heart-method" from Eastern classics — complementary, not conflicting.</div>
+</details>
+
+<details>
+<summary>When should you "exit gracefully" instead of continuing to navigate politics?</summary>
+<div>Three signals together (Week 35 explores this deeply): (1) <strong>structural hostility</strong> — your skip-level or VP frames you as the problem, not a partner, with no working escalation path (HR / internal transfer both fail); (2) <strong>moral floor repeatedly tested</strong> — not one disagreement, a pattern of asks you consider unethical; (3) <strong>opportunity cost infinite</strong> — the time you'd invest navigating is already worth less than outside offers. Any single signal isn't enough — all three together means the navigation ROI has truly gone negative. One inverse trap: many people leave too soon at (1) or (2), missing the window where building capital can flip the narrative. Equally, many people remain in sunk cost after all three trigger — that persistence isn't virtue; it's depletion.</div>
+</details>
+
+<details>
+<summary>If a tech lead manager studies politics, does the team feel "the boss has changed" and lose trust?</summary>
+<div>Real question. Concrete boundary: (a) using political knowledge to <strong>protect the team</strong> (fight for resources, shield noise, push for visibility of the team's work) = ICs appreciate it (even if they don't know you're doing it); (b) using political knowledge to <strong>sacrifice the team for personal visibility</strong> (claiming junior credit, treating the team as a stepping stone) = trust collapses. Same skills, different purpose, opposite outcome. Camille Fournier in <em>The Manager's Path</em>: "The job of a manager is to amplify the team's signal. Politics is one of the amplifier instruments." The team doesn't need you to lecture about politics — they need to see your political competence working <em>for</em> them. That's the actual basis of trust. One inverse caution: if you refuse to learn politics, your team's good work goes unseen and adjacent teams take your resources — they'll lose trust too, expressed as "she's good but she can't protect us" — a slow-burn version of the same failure.</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>Your Week 6 Action</h3>
+<p>Two things this week — both must be done:</p>
+<div class="action">
+<strong>(1) Draw the decision graph for your most important current project.</strong> List Authority / Influence / Veto / Broker nodes by name. Then ask: have I invested in each node type? Which category have I touched zero? Fix that over the next four weeks.<br><br>
+<strong>(2) List your capital network — peers you could call for help.</strong> Can't list 5 = start sending one unsolicited give to one colleague each week (an article, a specific congrats, a referral, an intro). In six months the list will be 15. Your organizational resilience will jump in step.<br><br>
+<strong>Reflection:</strong> review a project from the past 12 months where you got stuck or failed. Using today's decision graph + stakeholder matrix as a lens — which node did you miss? Unidentified Veto? Uninvested Broker? Mistook a Taker for a Matcher? That pattern will repeat in the next project unless you write it down.</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 06 · 2026.06.24</footer>
+</div>
+</body>
+</html>
