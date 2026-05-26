@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 2: The Craft of Feedback</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.english{background:#eef0e8;padding:14px 18px;border-radius:4px;font-size:0.94rem;color:#3a4a20;border-left:3px solid #5c7a3a}
+.english .label{font-weight:700;color:#4a6a28;font-size:0.82rem;letter-spacing:2px;margin-bottom:8px;display:block}
+.english em{color:#5c8a3a;font-weight:600;font-style:normal}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 02 · 2026.05.27</div>
+<h1>The Craft of Feedback: From "It's Fine" to "Here's What I Saw You Do"</h1>
+<div class="meta"><span>Topic: Giving Feedback</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"When you criticize someone without taking the time to show that you care, your guidance feels obnoxiously aggressive." — Kim Scott</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Most managers get feedback wrong at one of two poles — swallowing the truth to spare feelings (Ruinous Empathy) or hurling "objective" criticism (Obnoxious Aggression). Both send the team in the wrong direction. The moment Sheryl Sandberg told Kim Scott "you said 'um' a lot" wasn't an attack on her professionalism — it was care delivered straight. This week we unpack the craft: use Kim Scott's 2x2 to locate your own default style, replace personality verdicts with SBI (Situation–Behavior–Impact), treat "now vs. later" as a deliberate design choice rather than a reflex, and set a channel protocol — what belongs in Slack, what must be face-to-face. Get these four right, and a report will tell you, for the first time, that they finally feel <em>seen</em>.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Radical Candor 2x2: Care Personally × Challenge Directly
+<span class="en">Care Personally + Challenge Directly</span></h2>
+<span class="tag">Kim Scott</span><span class="tag">2x2 matrix</span><span class="tag">Self-locate</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">Feedback isn't a single axis from "gentle" to "harsh." It has two axes: do you genuinely care about this person, and are you willing to challenge them directly? Both required for Radical Candor. Drop one, and you fall into one of three failure quadrants.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"Radical Candor is what happens when you put 'Care Personally' and 'Challenge Directly' together. It builds trust and opens the door for the kind of communication that helps you achieve the results you're aiming for."</span>
+<span class="source">— Kim Scott, <em>Radical Candor</em>, Ch. 1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Radical Candor 2x2</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg">
+<text x="280" y="22" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Challenge Directly →</text>
+<text x="22" y="240" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18" transform="rotate(-90,22,240)">Care Personally →</text>
+
+<rect x="60" y="50" width="220" height="170" fill="#f3e8f0" stroke="#8a3a6a" stroke-width="1.5"/>
+<text x="170" y="80" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#7a2a5a">Ruinous Empathy</text>
+<text x="170" y="100" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#7a2a5a">Kindness without honesty</text>
+<text x="170" y="128" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Care ✓ &nbsp; Challenge ✗</text>
+<text x="170" y="158" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">"You're doing great, just tweak it"</text>
+<text x="170" y="180" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">→ Six months later, PIP is a shock</text>
+<text x="170" y="205" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">→ The kind person's biggest sin</text>
+
+<rect x="290" y="50" width="220" height="170" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="400" y="80" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">Radical Candor</text>
+<text x="400" y="100" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#4a6a28">The target</text>
+<text x="400" y="128" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Care ✓ &nbsp; Challenge ✓</text>
+<text x="400" y="158" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a6a28">"I noticed X. Here's the impact."</text>
+<text x="400" y="180" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a6a28">→ 5 minutes of discomfort now</text>
+<text x="400" y="205" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a6a28">→ Three months later, growth</text>
+
+<rect x="60" y="240" width="220" height="170" fill="#f0eadc" stroke="#8a7a3a" stroke-width="1.5"/>
+<text x="170" y="270" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#6b5a1f">Manipulative Insincerity</text>
+<text x="170" y="290" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#6b5a1f">The worst quadrant</text>
+<text x="170" y="318" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Care ✗ &nbsp; Challenge ✗</text>
+<text x="170" y="348" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Backchannel, passive-aggressive email</text>
+<text x="170" y="370" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">→ Politics, trust destroyed</text>
+<text x="170" y="395" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">→ The toxic floor</text>
+
+<rect x="290" y="240" width="220" height="170" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<text x="400" y="270" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">Obnoxious Aggression</text>
+<text x="400" y="290" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#a04020">"Brutal honesty"</text>
+<text x="400" y="318" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Care ✗ &nbsp; Challenge ✓</text>
+<text x="400" y="348" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">"This analysis is garbage."</text>
+<text x="400" y="370" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">→ Short-term output, long-term attrition</text>
+<text x="400" y="395" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">→ Subtler toxicity than silence</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: Your senior engineer A presents a rushed design doc at a cross-team review. The logic skips around; the PM looks visibly lost. You walk back to your desks together after the meeting.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Ruinous Empathy (the most common trap)</div>
+<p>When the report says "Eh, that meeting was rough," don't say "Don't worry, the doc was thorough, the PM just didn't have the context." Because what they hear is "I'm fine," and two weeks later they ship another doc with the same flaw.</p>
+</div>
+<div class="dialog bad">
+<div class="speaker">✗ Obnoxious Aggression</div>
+<p>"Did you even read your own doc? It's a mess, the PM had no shot at following it." They remember your tone, not what to fix. Next round, they're more defensive, not less.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Radical Candor</div>
+<p><strong>Open with real care (not flattery):</strong> "I know you were trying to ship launch and write the doc in the same week — the timing was brutal."</p>
+<p><strong>Then challenge plainly:</strong> "But honestly, the PM losing the thread wasn't on him. Section 2 jumped straight to the implementation without setting up the core conflict we're solving. I've seen the same pattern in your last three docs."</p>
+<p><strong>Give a concrete next move:</strong> "Next time, write the draft, sleep on it, and reread before sending — or ping me and I'll do a pass. This is a structure issue, not a wording one. Worth fixing."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Self-location checklist (do this weekly)</div>
+<ul class="checklist">
+<li>How many of my negative feedback moments in the past 7 days were delivered to the person's face (or video)?</li>
+<li>Is there anything I've vented about in a Slack DM with a peer but haven't said directly to the person? (Manipulative Insincerity signal.)</li>
+<li>Have I substituted "you're too X" personality labels for specific behavior descriptions? (Aggression signal.)</li>
+<li>Have I confused "being kind" with "staying silent"? (Ruinous Empathy signal.)</li>
+<li>Does this report actually believe I care about them? When did I last give them specific, concrete positive recognition?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Reading "Radical Candor" as "license to be blunt."</strong> Kim Scott has spent years correcting this — it's the most-abused part of her framework. Care Personally is the prerequisite, not the optional flavor.</li>
+<li><strong>Hiding behind "I'm critiquing the work, not you."</strong> That sentence is often Obnoxious Aggression in costume. The work and the person both need care.</li>
+<li><strong>Waiting until perf review to deliver negative feedback.</strong> That's not Radical Candor. That's delayed Manipulative Insincerity.</li>
+<li><strong>Thinking positive feedback doesn't need Radical Candor.</strong> Wrong. "You did a great job" is the positive flavor of Ruinous Empathy. "Here's the specific behavior you executed and the impact it had" is the real thing.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research (Stanford VMware Women's Leadership Lab and others) consistently shows that the same direct feedback, delivered by a woman, is more often labeled "too harsh" or "emotional." Classic double bind — too soft is dismissed, too direct is punished. Two counters: <strong>(1)</strong> Use SBI (next card) to reduce feedback to pure observable behavior, which is nearly impossible to dismiss as "emotional"; <strong>(2)</strong> Frame the feedback with care explicitly: "I'm telling you this because I want you to succeed here." Your male peers don't need to do this; you do. Acknowledge the unfairness, then play the move. Sheryl Sandberg walks through this exact arc in <em>Lean In</em> — from being labeled "too aggressive" to learning the upfront framing.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Kim Scott, <em>Radical Candor</em></strong> (Ch. 1–2) — the original 2x2 and the famous Sandberg "um" story.<br><strong>Sheryl Sandberg, <em>Lean In</em></strong> (Ch. 4 "It's a Jungle Gym, Not a Ladder") — the particular bind women face when giving feedback.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Phrases worth keeping verbatim</span>
+<p>"<em>Care personally, challenge directly.</em>" — Kim Scott's mantra. Memorize it.</p>
+<p>"I'm telling you this <em>because I want you to win</em>." — Upfront frame; activates trust in one sentence.</p>
+<p>"That came across as <em>obnoxious</em>." — Kim Scott's word choice. More precise than "rude" — it names "thought you were being direct, but you were unbearable."</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>SBI: Three Specifics Instead of "You're Too X"
+<span class="en">Situation · Behavior · Impact</span></h2>
+<span class="tag">CCL framework</span><span class="tag">Behavior, not character</span><span class="tag">Feedback structure</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">Never give personality feedback ("you're too negative / too dominant / too passive"). Always give behavior feedback: in this specific situation (S), I observed this specific behavior (B), and here's the specific impact it had (I). All three required.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"Effective feedback is specific, focuses on observable behavior, and describes impact rather than attributing motive or character."</span>
+<span class="source">— Center for Creative Leadership, SBI Feedback Model</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">SBI in three parts</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="40" width="200" height="180" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="240" y="40" width="200" height="180" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="460" y="40" width="200" height="180" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+
+<text x="120" y="68" text-anchor="middle" font-family="Georgia" font-size="20" font-weight="700" fill="#5c3a18">S</text>
+<text x="120" y="90" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Situation</text>
+<text x="120" y="108" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">When &amp; where</text>
+<text x="120" y="135" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Specific to a</text>
+<text x="120" y="155" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">date, meeting,</text>
+<text x="120" y="175" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">or thread</text>
+<text x="120" y="195" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#a8702d">"Yesterday's design review"</text>
+
+<text x="340" y="68" text-anchor="middle" font-family="Georgia" font-size="20" font-weight="700" fill="#5c3a18">B</text>
+<text x="340" y="90" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Behavior</text>
+<text x="340" y="108" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">What a camera saw</text>
+<text x="340" y="135" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Actions or words —</text>
+<text x="340" y="155" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">not motive, not character</text>
+<text x="340" y="175" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c"> </text>
+<text x="340" y="200" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#a8702d">"You interrupted the PM 3 times"</text>
+
+<text x="560" y="68" text-anchor="middle" font-family="Georgia" font-size="20" font-weight="700" fill="#5c3a18">I</text>
+<text x="560" y="90" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Impact</text>
+<text x="560" y="108" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">Real consequences</text>
+<text x="560" y="135" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">On people / project /</text>
+<text x="560" y="155" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">team — and on you</text>
+<text x="560" y="175" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c"> </text>
+<text x="560" y="200" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#a8702d">"She told me afterward…"</text>
+
+<line x1="220" y1="130" x2="240" y2="130" stroke="#a8702d" stroke-width="2" marker-end="url(#arrowhead2)"/>
+<line x1="440" y1="130" x2="460" y2="130" stroke="#a8702d" stroke-width="2" marker-end="url(#arrowhead2)"/>
+<defs>
+<marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<polygon points="0 0, 8 3, 0 6" fill="#a8702d"/>
+</marker>
+</defs>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: translating personality verdict into SBI</div>
+<div class="scene">
+<div class="setup">Setup: You want to tell a report "you're too dominant — no one else gets a word in." Say that as-is, and they'll either deny or be wounded — with no path forward.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Personality feedback (a closed door)</div>
+<p>"You've been too dominant in meetings lately, no one else can speak. You need to learn to listen more."</p>
+<p>Why it fails: "Dominant" is a verdict — they can just say "no I'm not." "Listen more" is vague — they don't know what to change.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ SBI translation</div>
+<p><strong>S:</strong> "Yesterday's 2pm sprint planning,"</p>
+<p><strong>B:</strong> "I tracked it — in 50 minutes, you spoke for about 25, Maria and Tom together less than 5. Maria tried to jump in three times and you kept the floor."</p>
+<p><strong>I:</strong> "End result, the two decisions in that meeting were basically yours alone. Maria told me in our 1:1 she didn't get to surface her alternative — and next week she'll probably stop preparing one."</p>
+<p><strong>Close by opening a dialogue (not issuing an order):</strong> "Does that match what you saw? How did the meeting look from your side?"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">SBI prep checklist</div>
+<ul class="checklist">
+<li>Can I name the Situation down to a date / meeting / Slack thread? A vague "lately" is an SBI failure signal.</li>
+<li>Is my Behavior something a camera could record? If I'm using words like "negative / aggressive / defensive," rewrite.</li>
+<li>Is my Impact something that actually happened? Or am I worrying about something that might happen? Stick to what happened.</li>
+<li>Have I smuggled in attribution? "You did this because you wanted to…" — that's mind-reading. Cut it.</li>
+<li>Am I ready to leave the last word to them? SBI is not a verdict; it opens a conversation.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">The SBI-Q variant: add "what was your intent?"</div>
+<div class="scene">
+<div class="setup">Many coaches add a Q after SBI: "what was your intent?" When your interpretation of motive is wrong, this question saves you from a false accusation. Example:</div>
+<p style="padding:8px 14px;background:#fcf6e8;border-radius:4px;margin-top:8px"><strong>After delivering SBI:</strong> "That's the impact I observed. I want to understand — what were you trying to do when you cut Maria off?"</p>
+<p style="padding:8px 14px;background:#fcf6e8;border-radius:4px;margin-top:8px">They might say: "Honestly, I thought she was stuck and I was trying to help her finish — but I see now that backfired." That's when you've got a real handle for behavior change.</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>S too wide.</strong> "Over the last few weeks…" — they can't locate it, so they reconstruct the most innocent version they remember and defend that.</li>
+<li><strong>B contains character.</strong> "You interrupted her, because you don't respect her" — you've fused observable behavior with motive interpretation.</li>
+<li><strong>I is prediction, not fact.</strong> "If you keep doing this, the team will fall apart" — that's a threat, not feedback. Stick to impact that has already happened.</li>
+<li><strong>SBI as a vehicle for venting.</strong> Wrapping "I'm pissed" in three-part structure isn't SBI; it's a dignified release of resentment. Cool down first.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+SBI has an underappreciated protective effect for women leaders. When you're accused of being "too emotional," SBI notes are your defense: dates, observable behaviors, observable impact — pure fact, zero personality verdict. It becomes very hard to dismiss as "she's being emotional." Recommendation: before any negative-feedback conversation, spend 60 seconds writing S / B / I in your notebook — not just for them, but as evidence-of-record for yourself. Lara Hogan in <em>Resilient Management</em> calls these "feedback receipts." Managing your feedback paper trail is managing your defensive position when you're attacked for caring enough to give feedback at all.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Center for Creative Leadership, <em>Feedback That Works</em></strong> — the official SBI manual, used by 3,000+ organizations.<br><strong>Douglas Stone &amp; Sheila Heen, <em>Thanks for the Feedback</em></strong> — the receiver-side complement, explains why SBI works.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Phrases worth keeping verbatim</span>
+<p>"I want to share an <em>observation</em>, not a judgment." — Softer opener than "I want to give you feedback."</p>
+<p>"<em>What I saw was</em>… <em>What I noticed was</em>…" — First-person framing; avoids the "objective truth" tone.</p>
+<p>"<em>The impact on me / on the team was</em>…" — Use "impact" instead of "made me feel." More professional, equally honest.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Now vs. Later: Treat Feedback Timing as a Design Choice
+<span class="en">Real-Time, Same-Day, or Scheduled?</span></h2>
+<span class="tag">Timing</span><span class="tag">Design choice</span><span class="tag">Cool-down</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">"Give feedback ASAP" is the simplified version. The accurate version: default to 24 hours, but make a deliberate choice based on three variables — your emotional temperature, the receiver's capacity to absorb, and the stakes. The wrong timing turns the right content into poison.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"Feedback is best delivered as close to the event as possible, but never when you're angry. If you can't deliver it within a week, you've waited too long; if you deliver it in the heat of the moment, you've waited too little."</span>
+<span class="source">— adapted from Marshall Goldsmith, <em>What Got You Here Won't Get You There</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Timing decision matrix</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg">
+<text x="320" y="22" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Stakes / severity →</text>
+<text x="22" y="200" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18" transform="rotate(-90,22,200)">Your emotional temperature ↓</text>
+
+<rect x="60" y="50" width="270" height="140" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="195" y="78" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">Calm + low stakes</text>
+<text x="195" y="100" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#4a6a28">→ Immediate / same day</text>
+<text x="195" y="125" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Small nit, mention on the walk back</text>
+<text x="195" y="145" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">"Slide 3 could be clearer next time."</text>
+<text x="195" y="170" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a6a28">Faster = more natural</text>
+
+<rect x="340" y="50" width="270" height="140" fill="#f0eadc" stroke="#8a7a3a" stroke-width="2"/>
+<text x="475" y="78" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#6b5a1f">Calm + high stakes</text>
+<text x="475" y="100" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#6b5a1f">→ Scheduled meeting, 24–48 hrs</text>
+<text x="475" y="125" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Affects perf / relationship / major miss</text>
+<text x="475" y="145" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Not hallway-casual,</text>
+<text x="475" y="165" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">but don't wait until next 1:1</text>
+
+<rect x="60" y="200" width="270" height="140" fill="#f3e8f0" stroke="#8a3a6a" stroke-width="2"/>
+<text x="195" y="228" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#7a2a5a">Heated + low stakes</text>
+<text x="195" y="250" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#7a2a5a">→ Sleep on it, then decide</text>
+<text x="195" y="275" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">They tripped your trigger,</text>
+<text x="195" y="295" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">but didn't actually do anything wrong</text>
+<text x="195" y="315" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">70% of the time you won't deliver it</text>
+
+<rect x="340" y="200" width="270" height="140" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="475" y="228" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">Heated + high stakes</text>
+<text x="475" y="250" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#a04020">→ 12–24 hr cool-down, then schedule</text>
+<text x="475" y="275" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Most dangerous quadrant</text>
+<text x="475" y="295" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Now = blowup,</text>
+<text x="475" y="315" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">too late = ambush</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: Monday afternoon all-hands. Your report B cites an inaccurate number in front of a customer, who calls it out on the spot. You're so angry after the meeting you can't form a sentence.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Letting it rip immediately</div>
+<p>"Where did you get that number? Did you not realize the customer would check? You just torched the project's credibility!"</p>
+<p>At emotional temperature 9/10, they'll remember your face, not your words. Even if every word is correct, their defense system is up.</p>
+</div>
+<div class="dialog bad">
+<div class="speaker">✗ Waiting until next perf review</div>
+<p>"Oh, also, that customer meeting three months ago…" — they've either forgotten, or it lands as ambush.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The 12–24-hour designed version</div>
+<p><strong>Right after the meeting:</strong> Say only one neutral thing: "Thanks everyone. Let's debrief tomorrow morning." Don't make decisions at temperature 9.</p>
+<p><strong>That night, alone:</strong> Write SBI in three lines. If possible, have a partner or trusted peer sanity-check the language.</p>
+<p><strong>Next morning, send the calendar invite:</strong> "Want to spend 30 minutes debriefing yesterday's customer meeting — 11am OK?" Telegraphed, not ambushed.</p>
+<p><strong>Open the meeting:</strong> "Let me name something first — I had a strong reaction in the room yesterday. That's why I chose to wait a day rather than say something then. The actual feedback is about the data source. Let's start with how you sourced the number…" Naming your cool-down explicitly is modeling how you want the team to handle high-stakes moments.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">"Now vs. later" checklist</div>
+<ul class="checklist">
+<li>What's my emotional temperature, 1–10? Above 6 — do not deliver now.</li>
+<li>What are the stakes? Affects a single demo (low) vs. perf review / team trust (high)?</li>
+<li>What's their capacity right now? Just got chewed out, exhausted, sick — capacity is 0.</li>
+<li>If I wait 24 hours, will I still want to give this feedback? (If not, it shouldn't be given at all.)</li>
+<li>Will waiting for the next 1:1 (maybe 5 days away) make it an ambush? If yes, book a 30-minute slot now.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>"When I'm calm, I just won't give it."</strong> That's not calm — that's Ruinous Empathy. Calm + silent ≠ healthy.</li>
+<li><strong>Reading "immediate" as "in front of others."</strong> Negative feedback delivered in front of a third party, no matter how gently, is public humiliation. Praise in public, criticize in private.</li>
+<li><strong>Long Slack message in the heat of the moment.</strong> No tone, no eyes, no pauses. Your "urgency" reads as "anger." (More in Card 4.)</li>
+<li><strong>Always waiting for the next 1:1.</strong> Unless your next 1:1 is within 48 hours, that's too late. Book a dedicated slot.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"Emotional" is the most weaponized label against women leaders. But suppressing all feeling makes you read as cold, which is worse. The middle path: <strong>acknowledge the feeling, separate it from the content</strong>. "I noticed I had a strong reaction yesterday — that's information, not the message. The actual feedback is…" You're naming the emotion as data, not venting or burying it. As a bonus, you're modeling for your male reports that emotional intelligence is not weakness. Brené Brown calls this "rumbling with vulnerability" in <em>Dare to Lead</em> — putting the emotion on the table is the strong move, not the soft one.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Marshall Goldsmith, <em>What Got You Here Won't Get You There</em></strong> — the "Feedforward" concept and counterintuitive insights about feedback timing.<br><strong>Brené Brown, <em>Dare to Lead</em></strong> — "Rumbling with vulnerability": emotion as a leadership tool, not a liability.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Phrases worth keeping verbatim</span>
+<p>"Let me <em>sleep on it</em> and follow up tomorrow." — The graceful 24-hour buffer.</p>
+<p>"I'd like to <em>debrief</em> tomorrow morning — 11am OK?" — "Debrief" is neutral. No judgment in the word.</p>
+<p>"<em>Praise in public, criticize in private.</em>" — Never wrong. Memorize.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Written vs. Spoken: The Channel Is Part of the Message
+<span class="en">The Channel Is The Message</span></h2>
+<span class="tag">Channel</span><span class="tag">Slack vs in-person</span><span class="tag">Written follow-up</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">The channel isn't a neutral container. The same sentence in Slack, email, a 1:1, or a doc gets decoded completely differently. Default rules: negative feedback face-to-face or video; positive feedback as public as possible; high-stakes feedback needs a written follow-up for the paper trail. Three rules, no exceptions.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"Written feedback feels harsher than spoken; spoken feedback feels harsher than the same words shared in a context of evident care. Choose your medium with the same care you choose your words."</span>
+<span class="source">— Lara Hogan, <em>Resilient Management</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Channel decision table</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="20" width="160" height="350" fill="#f8f0dd" stroke="#a8702d" stroke-width="1.5"/>
+<text x="90" y="48" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Feedback type</text>
+
+<rect x="170" y="20" width="170" height="350" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<text x="255" y="48" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Default channel</text>
+
+<rect x="340" y="20" width="170" height="350" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<text x="425" y="48" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Paper trail</text>
+
+<rect x="510" y="20" width="160" height="350" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<text x="590" y="48" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Never</text>
+
+<line x1="10" y1="70" x2="670" y2="70" stroke="#a8702d" stroke-width="1"/>
+
+<text x="90" y="98" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#4a6a28">Positive · small</text>
+<text x="255" y="98" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Public Slack channel</text>
+<text x="425" y="98" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">/</text>
+<text x="590" y="98" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">DM only</text>
+
+<line x1="10" y1="115" x2="670" y2="115" stroke="#e6d9bf" stroke-width="1"/>
+
+<text x="90" y="143" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#4a6a28">Positive · big</text>
+<text x="255" y="143" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">All-hands / skip-level mention</text>
+<text x="425" y="143" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">In perf doc</text>
+<text x="590" y="143" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Only privately</text>
+
+<line x1="10" y1="160" x2="670" y2="160" stroke="#e6d9bf" stroke-width="1"/>
+
+<text x="90" y="188" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">Negative · small</text>
+<text x="255" y="188" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">1:1, spoken</text>
+<text x="425" y="188" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">One line in 1:1 doc</text>
+<text x="590" y="188" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Slack DM</text>
+
+<line x1="10" y1="205" x2="670" y2="205" stroke="#e6d9bf" stroke-width="1"/>
+
+<text x="90" y="233" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">Negative · big</text>
+<text x="255" y="233" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Dedicated meeting (in-person/video)</text>
+<text x="425" y="233" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Recap email after</text>
+<text x="590" y="233" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">DM / email first</text>
+
+<line x1="10" y1="250" x2="670" y2="250" stroke="#e6d9bf" stroke-width="1"/>
+
+<text x="90" y="278" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">PIP / warning</text>
+<text x="255" y="278" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">In-person + HR present</text>
+<text x="425" y="278" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Formal document</text>
+<text x="590" y="278" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Any informal channel</text>
+
+<line x1="10" y1="295" x2="670" y2="295" stroke="#e6d9bf" stroke-width="1"/>
+
+<text x="90" y="323" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#6b5a1f">Sensitive relationship</text>
+<text x="255" y="323" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Video 1:1 (not in-person)</text>
+<text x="425" y="323" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">None yet (avoid premature record)</text>
+<text x="590" y="323" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Slack thread</text>
+
+<line x1="10" y1="340" x2="670" y2="340" stroke="#e6d9bf" stroke-width="1"/>
+
+<text x="90" y="362" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#4a6a28">Code / doc</text>
+<text x="255" y="362" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">PR review / doc comments</text>
+<text x="425" y="362" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Async = paper trail</text>
+<text x="590" y="362" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Re-litigated in 1:1</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: Senior engineer C and junior engineer D have a 30-comment back-and-forth on a PR. C's tone is getting colder. D DMs you on Slack: "Does C hate me?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Slacking C the feedback</div>
+<p>"Hey C — D mentioned your tone on his PR was a bit… can you watch it?"</p>
+<p>Problems: (1) You're giving negative feedback over Slack — wrong default. (2) You're quoting D's private DM — D's trust just broke. (3) "Watch it" is vague — C has no idea what to change. (4) Text has no tone — C might read this as you talking behind their back.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Layered by channel</div>
+<p><strong>To D (Slack DM is fine):</strong> "I see it. I'll go look at the PR comments myself and decide how to handle it — your name won't come up. You focus on the PR. We'll talk more in our next 1:1."</p>
+<p><strong>To C (dedicated 1:1, video, 30 minutes):</strong> Don't drop it on Slack. Schedule it: "Want to spend 30 min on mentorship next session — tomorrow 2pm?"</p>
+<p><strong>In the meeting (spoken SBI):</strong> "I went and read PR #847. In comments 23–29 you wrote 'this is not how we do it,' 'you should know better.' Those are behaviors — I don't need you to explain the motive. Impact: I observed D spent three days iterating, and in the end he just pasted in your version. He didn't learn anything, you spent the time anyway — both lose."</p>
+<p><strong>After the meeting (one line in 1:1 doc):</strong> "2026-05-29 — discussed PR review tone with juniors. Agreed to pair on one review next month." Paper trail without ambush.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Channel discipline checklist</div>
+<ul class="checklist">
+<li>If this Slack message were screenshotted six months from now, would I be comfortable? (If not, don't send it.)</li>
+<li>Am I using Slack as a way to "go faster," when the real reason is avoidance? (Speed is usually avoidance.)</li>
+<li>Have I delivered positive feedback publicly? Private-only positive feedback has half the impact.</li>
+<li>For high-stakes negative feedback — did I write a one-line recap in the 1:1 doc afterward?</li>
+<li>For PIP / warning-level feedback — is HR in the room and is there a formal document? If not, don't start the conversation.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Long Slack message for negative feedback.</strong> No tone, no eyes, no pauses. They'll reread it five times, each pass worse than the last.</li>
+<li><strong>Positive feedback that lives only in your head.</strong> "They know I appreciate them" — they don't. Say it. Write it. Mention it publicly.</li>
+<li><strong>High-stakes feedback with no written follow-up.</strong> Three months later they say "you never told me." A single line in 1:1 doc would have saved you.</li>
+<li><strong>Written substitution for in-person.</strong> Using a long email as a shield against the hard conversation. They'll feel even worse — you didn't show up.</li>
+<li><strong>Citing one person's private complaint as another's feedback source.</strong> Quoting D when giving C feedback — D will never tell you anything again.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+There's a counterintuitive channel trap for women leaders: <strong>written feedback is safer for you, and also more easily weaponized against you</strong>. A professionally written negative-feedback email can be screenshotted three months later and sent to HR / a skip-level, framed as "she has a pattern of being critical." Your male peers, saying the same things verbally in a hallway, leave no record to be weaponized. Two counters: <strong>(1)</strong> For important negative feedback, deliver it verbally, then <em>you</em> write the neutral recap in 1:1 doc — you define the record, rather than letting the other party define it for you; <strong>(2)</strong> Never send written feedback at temperature 5+. Anne-Marie Slaughter in <em>Unfinished Business</em> describes always waiting overnight before sending. That isn't weakness — it's navigating the double bind as craft.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Lara Hogan, <em>Resilient Management</em></strong> — "Feedback Equation" and chapters on channel selection.<br><strong>Patrick Lencioni, <em>The Five Dysfunctions of a Team</em></strong> — Trust and Conflict chapters; why the channel determines the quality of team conflict.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Phrases worth keeping verbatim</span>
+<p>"Let's <em>jump on a quick video call</em>." — More concrete than "let's talk." Stops Slack drift.</p>
+<p>"I'd rather <em>say this in person</em> than write it." — Naming your channel choice signals care.</p>
+<p>"Just to <em>recap what we discussed</em>:" — The opening for a written follow-up. Creates a record without being cold.</p>
+<p>"<em>Public praise, private critique.</em>" — Four-word rule.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Practice · Your Week 2 Action</h3>
+<p>One concrete action this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Pick the report you've swallowed feedback for in the last 30 days</strong> — the one who pulled you into Ruinous Empathy.<br><br>
+<strong>(1) By Tuesday, write SBI in three lines</strong> (for you, not them yet): specific situation, specific behavior, specific impact.<br>
+<strong>(2) Use Card 3's timing matrix</strong>: what's your temperature, what are the stakes? Decide: within 24 hours, or later this week?<br>
+<strong>(3) Pick the channel from Card 4</strong>: default to in-person or video, not a long Slack message.<br>
+<strong>(4) The night after, write two lines of recap in 1:1 doc</strong>: what you said, what they responded.<br><br>
+Look back next Monday. If you delivered zero feedback this week, it wasn't because you were busy. Ruinous Empathy was protecting your comfort — at the price of another week of them on the wrong path.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Weekly · Week 02 · 2026.05.27</footer>
+</div>
+
+</body>
+</html>
