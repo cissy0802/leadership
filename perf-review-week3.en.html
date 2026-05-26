@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 3: The Craft of Perf Review</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.english{background:#eef0e8;padding:14px 18px;border-radius:4px;font-size:0.94rem;color:#3a4a20;border-left:3px solid #5c7a3a}
+.english .label{font-weight:700;color:#4a6a28;font-size:0.82rem;letter-spacing:2px;margin-bottom:8px;display:block}
+.english em{color:#5c8a3a;font-weight:600;font-style:normal}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.template{background:#f5efe0;padding:16px 18px;border-radius:4px;border:1px dashed #c4a878;font-family:"Courier New",monospace;font-size:0.88rem;color:#3a2f1c;white-space:pre-wrap;line-height:1.6;margin-top:10px}
+.template .label-inline{color:#a8702d;font-weight:700}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 03 · 2026.06.03</div>
+<h1>The Craft of Perf Review: Compressing a Year Into Two Pages, and Two Pages Into One Conversation</h1>
+<div class="meta"><span>Topic: Performance Review</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Your output as a manager is the output of your organization plus the output of the neighboring organizations under your influence." — Andy Grove</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Perf review is the two hours your report will remember longest from the entire year. Ten years from now they will have forgotten the projects you assigned, but they will remember whether you looked them in the eye when you said "Meets," and they will remember whether your answer to "why not Exceeds" actually addressed the question. Most managers wreck this in four places: (1) writing it like a status report instead of a judgment, (2) arriving at calibration without a story that survives the room, (3) not seeing the bias they're smuggling into their ratings, and (4) sprinting away from the "why not higher" conversation. This week unpacks all four — from Andy Grove's task-relevant maturity to the calibration practices at Lattice and Google to Amy Edmondson on how one botched review can destroy psychological safety overnight. By the end, you should be able to open one of your reports' review docs and start rewriting.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The Anatomy of a Review: Judgment ≠ Summary
+<span class="en">The Anatomy of a Performance Review</span></h2>
+<span class="tag">Andy Grove</span><span class="tag">Camille Fournier</span><span class="tag">Writing structure</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">A perf review is not a list of "what they did this half" — that's their brag doc. Your job is to answer one question: relative to the bar for their level, where are they above / at / below? Then bring evidence. Judgment first, evidence next, direction last. Reversed order turns it into a status meeting.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"Performance appraisal is, in many ways, the single most important form of task-relevant feedback we as supervisors can provide. It is how we assess our subordinates' level of performance and how we deliver that assessment to them. It is also how we allocate the rewards…"</span>
+<span class="source">— Andy Grove, <em>High Output Management</em>, Ch. 13 "Performance Appraisal: Manager as Judge and Jury"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The writing structure (recommended template)</div>
+<div class="template">
+<span class="label-inline">[OVERALL]</span> A 3–4 sentence core judgment. Above / At / Below + the main reason.
+Do NOT save this for the end — this is the thesis of the entire review.
+
+<span class="label-inline">[IMPACT]</span> The 3 most important things this half. One paragraph each:
+   • What they did (one line)
+   • Why it matters (business / team impact)
+   • What you (the manager) observed about their craft — not their project role
+
+<span class="label-inline">[STRENGTHS]</span> 2–3 dimensions where they operate above the bar for their level.
+   Each backed by one specific piece of evidence ("In project X, they did Y") —
+   never "a great team player."
+
+<span class="label-inline">[GROWTH AREAS]</span> 2–3 dimensions where they need to close a gap.
+   Each one: observation (specific scene) + impact (why it's a gap) +
+   what you want to see next half.
+   Don't write "needs to improve communication." Write "In design reviews, they
+   often raise directional objections only after a conclusion has been reached,
+   which has caused the team to roll back twice. Next half, surface these at the
+   RFC stage."
+
+<span class="label-inline">[NEXT HALF]</span> 1–2 explicit development focuses. Not 5.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Same engineer, same half, two versions of the OVERALL paragraph:</div>
+<div class="dialog bad">
+<div class="speaker">✗ Weak version</div>
+<p>"X contributed meaningfully this half. Shipped the payments refactor, contributed to onboarding, ran 3 tech talks. A core senior on the team. Continues to meet expectations of their level."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Strong version</div>
+<p>"X performed above the Senior bar this half, but not yet stably enough for Staff. They independently delivered the payments refactor — a project originally scoped at Staff — and Z (a calibrated Staff) reviewed the delivery and called it promo-ready. However, on the Staff dimensions of cross-team alignment and unblocking peers, the evidence is still thin. If next half they can act as technical lead on 1–2 cross-team projects, the promo case is made."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist before you write</div>
+<ul class="checklist">
+<li>Can I state the thesis of this review in one sentence? If not, I haven't thought hard enough yet.</li>
+<li>Does every strength / growth area come with a specific scene? Delete anything that doesn't — that's impression, not evaluation.</li>
+<li>Did I use vague frequency adverbs ("sometimes / often / tends to")? Replace with concrete counts or scenes.</li>
+<li>Are next-half focuses things they can control? Or do they depend on other people / project luck?</li>
+<li>If they remember only one thing from this review, is it the thing I wanted them to remember?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>List-style writing.</strong> Copying the brag doc into the review template. That's their writing, not your judgment.</li>
+<li><strong>"Communication" as the universal growth area.</strong> It says nothing. Which scene, which mode of communication, with whom.</li>
+<li><strong>OVERALL written last and written limp.</strong> Reader reads three pages of strengths, then a single "meets expectations" — they'll be confused: so why not Exceeds?</li>
+<li><strong>"Next steps" smuggled in to replace "growth areas."</strong> Dressing up weaknesses as "opportunities" is the written form of Ruinous Empathy.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>Andy Grove, <em>High Output Management</em></strong> (Ch. 13 "Performance Appraisal: Manager as Judge and Jury") — names the manager explicitly as judge, not coach. Read this chapter to cure any hesitation about "should I really be judging them."<br>
+<strong>Camille Fournier, <em>The Manager's Path</em></strong> ("The Process of Writing Performance Reviews") — operational guidance on collecting peer feedback and handling 360s.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Phrases for writing reviews</span>
+<p>• <em>"X consistently operates above the Senior bar in Y, and is approaching the Staff bar in Z."</em> — Anchor the rating to the level rubric, not to "how much they did."</p>
+<p>• <em>"The pattern I'd like to see shift next half is…"</em> — More precise and behavior-pointed than "they need to improve."</p>
+<p>• <em>"This is a strong half, but not yet a promotion case, because…"</em> — Say it plainly. No hedging.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Calibration: You're Not Reporting — You're Negotiating
+<span class="en">Calibration: Why Your Story Must Survive the Room</span></h2>
+<span class="tag">Calibration</span><span class="tag">Lara Hogan</span><span class="tag">Cross-team fairness</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">The point of calibration: take every manager's private "my people are great" narrative, put it in one room, and force-rank against each other. Whether your report gets the rating they deserve depends on whether you can tell their story in 90 seconds and hold up under questioning from five other managers. Preparing for calibration is 60% of the review-writing work.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Why we calibrate</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 560 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="30" width="160" height="220" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5" rx="4"/>
+<text x="100" y="55" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">No calibration</text>
+<text x="100" y="85" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Manager A's Exceeds</text>
+<text x="100" y="102" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">≠</text>
+<text x="100" y="119" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Manager B's Exceeds</text>
+<text x="100" y="155" text-anchor="middle" font-family="Georgia" font-size="10" fill="#a04020">→ Promotion depends</text>
+<text x="100" y="170" text-anchor="middle" font-family="Georgia" font-size="10" fill="#a04020">  on your manager's lens</text>
+<text x="100" y="200" text-anchor="middle" font-family="Georgia" font-size="10" fill="#a04020">→ Underrepresented</text>
+<text x="100" y="215" text-anchor="middle" font-family="Georgia" font-size="10" fill="#a04020">  systematically downgraded</text>
+<text x="100" y="240" text-anchor="middle" font-family="Georgia" font-size="10" fill="#a04020">→ Team loses trust</text>
+<text x="280" y="145" text-anchor="middle" font-family="Georgia" font-size="20" fill="#a8702d">→</text>
+<rect x="380" y="30" width="160" height="220" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5" rx="4"/>
+<text x="460" y="55" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">With calibration</text>
+<text x="460" y="85" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">All Exceeds candidates</text>
+<text x="460" y="102" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">at one table,</text>
+<text x="460" y="119" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">compared at same level</text>
+<text x="460" y="155" text-anchor="middle" font-family="Georgia" font-size="10" fill="#4a6a28">→ Shared ruler across teams</text>
+<text x="460" y="170" text-anchor="middle" font-family="Georgia" font-size="10" fill="#4a6a28">→ Managers must publicly</text>
+<text x="460" y="185" text-anchor="middle" font-family="Georgia" font-size="10" fill="#4a6a28">  defend the rating</text>
+<text x="460" y="215" text-anchor="middle" font-family="Georgia" font-size="10" fill="#4a6a28">→ Bias visible to peers</text>
+<text x="460" y="240" text-anchor="middle" font-family="Georgia" font-size="10" fill="#4a6a28">→ Accountability</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"Calibration is where bias goes to die — but only if you walk in armed with specifics. 'She's just really strong' will get steamrolled by another manager who shows up with three concrete cross-team artifacts."</span>
+<span class="source">— Lara Hogan, <em>Resilient Management</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: your 90 seconds defending a rating</div>
+<div class="scene">
+<div class="setup">Mid-calibration. The facilitator: "Next up, X — you're proposing Exceeds. Talk us through it." You have about 90 seconds.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Weak version (the room will push back)</div>
+<p>"X has been really solid this half. Hit all her OKRs, the team loves her. She's the most reliable senior on my team, I think she's clearly at Exceeds."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ No anchor to the level rubric, no concrete cross-team evidence, "the team loves her" is unverifiable in this room. The next manager to speak will dismantle this in one sentence.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Strong version</div>
+<p>"X for Exceeds, anchored on three Senior rubric criteria. (1) Scope — she independently owned the payments refactor, which was scoped at Staff; I had Z (a calibrated Staff) review the delivery and they called it promo-ready. (2) Multiplier — both mids she mentored were promoted to Senior this half, and her onboarding doc is now being used by two other teams. (3) Cross-team — she has substantive comments adopted in RFCs from infra, billing, and growth. Anchoring her against the other three Exceeds proposals in this room, she's at least stronger on Multiplier."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">One week before calibration — checklist</div>
+<ul class="checklist">
+<li>Can I tell this person's story in 60–90 seconds without notes? If not, I'm not ready.</li>
+<li>Have I read the level rubric? Can I map their evidence to each line of it? (Scope / Impact / Multiplier / Cross-team)</li>
+<li>Can I name one cross-team peer as an anchor — "same level as Y, but stronger on dimension X"?</li>
+<li>For each Exceeds I'm proposing, do I have a "I'll concede this weakness, but…" fallback?</li>
+<li>For each Meets, am I ready to answer both "why not Below" and "why not Exceeds"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating calibration as a briefing.</strong> It's a negotiation plus collective arbitration. If you don't defend them, no one else will.</li>
+<li><strong>Over-nominating Exceeds.</strong> Everyone Exceeds = you lose credibility, and every future rating from you gets discounted. Grove: "Performance ratings are signals — inflated signals are noise."</li>
+<li><strong>Only preparing for the "stars" and running naked on your Meets.</strong> The Meets ratings are often the ones the room pushes down to Below. You have to hold the line.</li>
+<li><strong>Walking out without knowing what changed.</strong> First thing post-calibration: get the final rating sheet and do a diff against your proposals — who got pushed up, who got pushed down, why. That's your ammunition for next cycle.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>Lara Hogan, <em>Resilient Management</em></strong> — concrete scripts for defending your reports in calibration.<br>
+<strong>Will Larson, <em>An Elegant Puzzle</em></strong> (around "Productivity in the age of hypergrowth") — how calibration prevents rating inflation, and how a manager's credibility compounds.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Calibration-room phrases</span>
+<p>• <em>"I'd like to anchor her against Y, who's a calibrated Exceeds — on multiplier she's stronger; on scope they're equivalent."</em></p>
+<p>• <em>"I hear the concern. Let me concede X, but the case still holds on Y and Z."</em> — Give ground on the small point, hold the core.</p>
+<p>• <em>"This is a Meets, not a Below — and here's why the room shouldn't push it down."</em> — Proactive defense.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Fairness: How Much Bias Are You Smuggling Into Your Ratings?
+<span class="en">Fairness: The Biases You're Smuggling In</span></h2>
+<span class="tag">DEI</span><span class="tag">Bias mitigation</span><span class="tag">Evidence baseline</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">"Fairness" isn't an intention — it's a craft. The research is consistent: women, people of color, introverts, remote employees, and people who don't self-promote get systematically downgraded in perf reviews. Not because managers are bad people, but because the brain substitutes "impression" for "evidence." Fair reviews come from process, not from good will.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"In performance reviews, women are 1.4 times more likely than men to receive critical subjective feedback. Men are more likely to receive feedback tied to specific business outcomes — feedback they can act on."</span>
+<span class="source">— Kieran Snyder, Stanford VMware Women's Leadership Lab, 2014</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The 5 most common biases (and their antidotes)</div>
+<div class="template">
+<span class="label-inline">1. RECENCY BIAS</span> You only remember the last 6 weeks.
+   Antidote: before writing, re-read the full 1:1 doc + project milestones.
+   Camille Fournier suggests "3 lines of running notes per month, the whole cycle."
+
+<span class="label-inline">2. HALO / HORNS</span> One vivid impression colors every dimension.
+   Antidote: rate each dimension independently with its own evidence.
+   Not "she's strong overall → every dimension is Exceeds."
+
+<span class="label-inline">3. SIMILARITY BIAS</span> People who look/sound like you seem "more senior."
+   Antidote: ask — if this person had a different communication style /
+   gender / background, would I give the same rating for the same output?
+
+<span class="label-inline">4. ATTRIBUTION BIAS</span> Men's failure = circumstance; women's failure = ability.
+                          Men's success = ability; women's success = luck / team.
+   Antidote: read the review with the name redacted. If swapping the gender
+   would make you want to change a sentence, that sentence was biased.
+
+<span class="label-inline">5. SELF-PROMOTION BIAS</span> People who write good brag docs look more impactful.
+   Antidote: it's your job to see the quiet ones.
+   "Impact they didn't bring up" is the manager's homework, not their failure.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: editing your own review</div>
+<div class="scene">
+<div class="setup">You finished X's (a female senior) review and are about to submit. Before you hit submit —</div>
+<div class="dialog bad">
+<div class="speaker">✗ Original sentence (what you wrote)</div>
+<p>"X is sometimes too assertive in design discussions, which can make junior engineers hesitant to push back."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Rewrite (gendered language removed)</div>
+<p>"In 3 design reviews this half (Q1 payments, Q2 onboarding redesign, Q2 search migration), X arrived with a strong proposed solution. In 2 of those, junior engineers told me afterward they had alternative ideas they didn't raise. Next half, I'd like to see X open these reviews with the problem framing only, and invite proposals before sharing her own."</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ Same behavioral observation, but (1) specific count and scenes, (2) feedback aimed at behavior, not "character," (3) a concrete actionable direction. The original "too assertive" is precisely the gendered language Snyder's research identifies.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Bias checklist before submit</div>
+<ul class="checklist">
+<li>Every adjective in this review — can I replace it with "specific scene + specific behavior"?</li>
+<li>If I swap X's name for a male colleague's, would I change any sentence? If yes, why?</li>
+<li>Frequency words like "sometimes / often / can be" — do I have specific counts to back them up?</li>
+<li>Am I confusing "she doesn't self-promote" with "she has less impact"?</li>
+<li>Is every critique tied to a business outcome rather than a personality trait?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Lens · Vigilance in two directions</span>
+<p>As a woman leader, you have to watch perf review from two sides:</p>
+<p><strong>(1) The reviews you write:</strong> Research shows female managers sometimes rate female reports more harshly — sometimes called "Queen Bee," but more accurately: you unconsciously hold "people like you" to a higher bar. After writing any review of a female report, ask yourself: "If they were male, would I have used the same words?"</p>
+<p><strong>(2) The reviews you receive:</strong> If you see "abrasive / too direct / intimidating / needs to be more collaborative" in your own review, ask your manager for the specific business impact. Sheryl Sandberg in <em>Lean In</em> describes the first time she got this kind of feedback at Google: instead of accepting it as "well-meaning advice," she asked, "Can you tell me which decisions would have been better if I'd been less direct?" That single question changed how she received feedback afterward — and changed the quality of the feedback she got.</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>Kieran Snyder, "The abrasiveness trap" (Fortune, 2014)</strong> — analyzed 248 perf reviews for gendered language. The most-cited piece in this space.<br>
+<strong>Lara Hogan's blog series "Writing performance reviews"</strong> — operational bias-check lists.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Substitution library</span>
+<p>• Don't write <em>"abrasive"</em> → write <em>"In meeting X, she interrupted Y twice; this is the pattern I'd like to shift."</em></p>
+<p>• Don't write <em>"not a team player"</em> → write <em>"declined to take on 2 cross-team requests that the team needed."</em></p>
+<p>• Don't write <em>"too quiet"</em> → write <em>"in our design reviews, his strongest ideas surface in 1:1s afterward rather than in the room — I'd like to help him bring them into the room."</em></p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>"Why Not Exceeds": The Conversation You Most Want to Skip
+<span class="en">The "Why Not Exceeds" Conversation</span></h2>
+<span class="tag">Hard conversation</span><span class="tag">Meets ≠ failure</span><span class="tag">Kim Scott</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">Most people are Meets. Most of them will ask "why not Exceeds?" If your answer is "you did great, but the quota was tight," you've lied, broken their trust in the system, and shoved them into a half-year of disengaged drift. The honest answer: Meets isn't failure, and Exceeds has a specific bar — here's what the bar is, and here's where you fell short.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"When you withhold honest feedback to be 'kind,' you're actually being unkind — you're robbing the person of the information they need to grow. The kindest thing is to tell them exactly what would have made the difference."</span>
+<span class="source">— Kim Scott, <em>Radical Candor</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: the 60-second conversation</div>
+<div class="scene">
+<div class="setup">X. You rated them Meets. Thirty minutes into the review conversation, they ask: "Can I ask why this isn't Exceeds? I feel like I did a lot this half."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Trap 1: blame the system</div>
+<p>"Honestly, you did great — the company caps Exceeds at 15% this year, and calibration was brutal. You were close, you'll get it next time."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Shifts responsibility to "the system." They conclude "it's not me, it's luck." They change nothing next half.</p>
+</div>
+<div class="dialog bad">
+<div class="speaker">✗ Trap 2: vague encouragement</div>
+<p>"You're solid at Senior. A little more visibility, a little more ownership, and you're there. Keep it up!"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ "Visibility / ownership" is empty. They walk out with no idea what to actually do — but with a warm fuzzy feeling. The textbook version of Ruinous Empathy.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Strong version: validate, then break down the bar</div>
+<p>"Good question. First — Meets is not me being unhappy with the half. You delivered payments refactor and two core onboarding modules; the quality was solid.<br><br>
+Exceeds at this level has two specific bars: (1) Scope expansion — independently owning an ambiguous problem originally scoped at Staff; (2) Multiplier — measurably raising the output of others on the team. On the first one, you got halfway: the payments refactor was Staff-sized, but the scoping was done by Y; you took over execution. On the second, I saw signals but not yet a stable pattern — you mentored Z, but your design doc didn't get adopted outside our team, so it didn't produce leverage.<br><br>
+So this isn't 'a hair short' — there are two concrete things that didn't fully happen. Next half, if you can own the search project end to end, starting from the problem framing, and write up your caching pattern so the platform team adopts it, the Exceeds case is made. I'll put both of those in your next-half focus."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist before this conversation</div>
+<ul class="checklist">
+<li>Can I name in one sentence where they fell short? Not "almost there" — which specific dimension.</li>
+<li>Is that gap controllable by them next half? (If not, action is impossible and the conversation is pointless.)</li>
+<li>If they didn't ask, would I bring it up unprompted? (If not, my answer doesn't actually hold up.)</li>
+<li>Am I prepared for them to cry, be upset, or push back?</li>
+<li>If they say "well, why did Y get Exceeds?" — am I ready? (Don't discuss someone else's rating, but you can discuss the rubric.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating ratings as prizes.</strong> Meets is not a consolation prize. In a healthy system it's where most high-performing people sit. If your tone makes Meets sound like failure, you're feeding rating inflation.</li>
+<li><strong>Spending too little time on the rating itself.</strong> Many managers spend 5 minutes on the rating in a 60-minute review. The report walks out confused. Rule: rating rationale + next-half direction should take at least 25 minutes.</li>
+<li><strong>Not restating the main points.</strong> At the end of the conversation: "The three things I want you to leave with today are X / Y / Z." Otherwise, a week later they remember the emotion, not the content.</li>
+<li><strong>No written follow-up.</strong> A verbal conversation + a 2-paragraph recap email within 24 hours = they remember it 5x more accurately.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Lens · When you receive Meets</span>
+<p>As a woman leader, when you get a Meets and expected an Exceeds, research suggests you're more likely than male peers to: (a) accept it immediately, blame yourself, "I should have worked harder"; (b) swallow the "why not Exceeds" question because asking feels "ungrateful"; (c) quietly burn out instead of asking for more scope or resources.</p>
+<p>The right move is Sandberg's: "Can you walk me through what would have made this an Exceeds — specifically, which scope or which artifact?" That isn't ungrateful, it's professional. If you don't ask, next half you'll get the same fuzzy feedback and the same Meets — and by year three you'll think you've hit your ceiling.</p>
+<p>Conversely, when you're the manager giving a female report Meets: proactively open the "why not Exceeds" door. Don't wait for them to ask — many of them won't.</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>Kim Scott, <em>Radical Candor</em></strong> ("Get Stuff Done Wheel" chapter) — why vague encouragement is the least kind version.<br>
+<strong>Ben Horowitz, <em>The Hard Thing About Hard Things</em></strong> (the feedback philosophy around "Lead Bullets") — vague positive feedback is the manager being comfortable at the report's expense.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Useful phrases for this conversation</span>
+<p>• <em>"Meets is not a consolation prize — let me first say what made this a strong half."</em> — Open. Set the tone.</p>
+<p>• <em>"The two specific things that would have made this Exceeds are…"</em> — Cut to the core. No hedging.</p>
+<p>• <em>"This is concretely actionable. Let's put it in your next-half focus."</em> — Close. Pivot to the future.</p>
+<p>• Avoid <em>"You were close" / "Next time" / "It was competitive"</em> — these three are the throwaway phrases of perf review.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Practice · Your Week 3 Action</h3>
+<p>If you're writing or just finished perf reviews this week — do this before you submit:</p>
+<div class="action">
+<strong>(1) Pick the next review you're about to submit</strong> and pull out the OVERALL paragraph. Can you state your thesis on this person in one sentence (above / at / below + main reason)? If not, you haven't thought it through — stop and finish thinking.<br><br>
+<strong>(2) The name-and-gender redaction test</strong>: replace the name and pronouns with the opposite gender, then re-read. If you'd want to change any sentence — that sentence was biased. Fix it, then submit.<br><br>
+<strong>(3) Rehearse "why not Exceeds" in advance</strong>: for every report you rated Meets, write out your 60-second answer (specific bar + specific gap + concrete next-half action). If you can't write it, your Meets rating doesn't have the reasoning to back it up. Go back and shore it up.<br><br>
+<strong>(4) The day before calibration</strong>: speak the 90-second case for every Exceeds / Below proposal out loud — to a mirror or a voice memo. If you can speak it, you can defend it. If you can't, the rating won't survive the room either.<br><br>
+Honestly: you won't have time to do all of these for every report this week. But even if you do this process for the 1–2 most important reports, their trust in you will change within the next 6 months. They'll learn you're "the kind of manager who really evaluates me" rather than "the kind of manager who treats review as a process."
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Weekly · Week 03 · 2026.06.03</footer>
+</div>
+
+</body>
+</html>
