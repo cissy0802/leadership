@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 4: The Craft of Hard Conversations</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.english{background:#eef0e8;padding:14px 18px;border-radius:4px;font-size:0.94rem;color:#3a4a20;border-left:3px solid #5c7a3a}
+.english .label{font-weight:700;color:#4a6a28;font-size:0.82rem;letter-spacing:2px;margin-bottom:8px;display:block}
+.english em{color:#5c8a3a;font-weight:600;font-style:normal}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.template{background:#f5efe0;padding:16px 18px;border-radius:4px;border:1px dashed #c4a878;font-family:"Courier New",monospace;font-size:0.88rem;color:#3a2f1c;white-space:pre-wrap;line-height:1.6;margin-top:10px}
+.template .label-inline{color:#a8702d;font-weight:700}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 04 · 2026.06.10</div>
+<h1>The Craft of Hard Conversations: Doing Right the 30 Minutes You Most Want to Postpone</h1>
+<div class="meta"><span>Topic: Hard Conversations</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"The conversation is the relationship. The conversation you've been avoiding is the relationship you've been losing." — Susan Scott</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Hard conversations — termination, denied promotion, blameless postmortem, PIP — are the events in a manager's job where doing them wrong costs the most and doing them right earns the least gratitude. Get them right and no one thanks you; the person on the other side just thinks "that's how it should have gone." Get them wrong and the team remembers for two years. Most managers wreck them in three places: (1) <strong>procrastination</strong> — "next week" turns into six months, and the issue metastasizes; (2) <strong>too much cushioning</strong> — sandwich feedback, fake empathy, half an hour of preamble before the actual point, and the person walks out without remembering the core message; (3) <strong>unprepared internal state</strong> — your own emotions unprocessed, your guilt undigested, your sentences come out tangled. This week unpacks four — from Stone/Patton/Heen's "three layers" model, to Ben Horowitz's termination protocol, to Amy Edmondson and John Allspaw on blameless postmortems. By the end you should be able to open your calendar and put the 1:1 you've been dragging onto it.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The Three Layers: You Think You're Talking About One Thing — It's Three
+<span class="en">The Three Layers of a Hard Conversation</span></h2>
+<span class="tag">Stone &amp; Heen</span><span class="tag">Mental prep</span><span class="tag">Intent vs Impact</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">Every hard conversation runs on three layers at once: <strong>What Happened (facts) / Feelings / Identity</strong>. You think you're discussing "the project slipped." What they hear is "you're saying I'm not capable / I'm a bad engineer." If you only prepare the fact layer, 90% of the conversation will go sideways — not because they're being unreasonable, but because you're throwing at layer one and they're catching at layer three.</div>
+</div>
+
+<div class="section">
+<div class="section-label">The three layers</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 560 290" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="30" width="480" height="60" fill="#e8dcc0" stroke="#a8702d" stroke-width="1.5" rx="4"/>
+<text x="280" y="55" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">Layer 1 · WHAT HAPPENED (Facts)</text>
+<text x="280" y="78" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">What happened? Whose responsibility? What was the intent? — the only layer most managers prep</text>
+<rect x="40" y="105" width="480" height="60" fill="#f3e9d2" stroke="#a8702d" stroke-width="1.5" rx="4"/>
+<text x="280" y="130" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">Layer 2 · FEELINGS</text>
+<text x="280" y="153" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">What will they feel — shame? Anger? Betrayal? What do <em>I</em> feel — anxiety? Guilt?</text>
+<rect x="40" y="180" width="480" height="80" fill="#f3e8f0" stroke="#8a3a6a" stroke-width="1.5" rx="4"/>
+<text x="280" y="205" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#7a2a5a">Layer 3 · IDENTITY</text>
+<text x="280" y="228" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a1f3a">What they hear underneath: "Am I a bad engineer / parent / person?"</text>
+<text x="280" y="248" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a1f3a">Deepest, most painful, least seen — but it determines whether they recover</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"The single most important thing you can do is to shift your internal stance from 'I understand' to 'Help me understand.' Everything else follows from that. Done indelicately, we tell others what their story should be. Done well, we help them tell theirs."</span>
+<span class="source">— Douglas Stone, Bruce Patton, Sheila Heen, <em>Difficult Conversations</em> (Harvard Negotiation Project)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: same opening, two internal stances</div>
+<div class="scene">
+<div class="setup">You need to talk to staff engineer X about something — last week in a design review, he publicly tore down junior Y's proposal. Y came to your 1:1 in tears.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Weak version (only hits layer one)</div>
+<p>"X, I want to talk about last week's design review. Your reaction to Y's proposal wasn't appropriate. I want you to be more careful going forward."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Pure fact layer. What X hears: "manager says I'm not appropriate." Identity-layer alarm blares; he immediately defends — "What was inappropriate? I just said what I thought." Now you're in a debate.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Strong version (all three layers)</div>
+<p>"X, I want to bring something up. You may see it differently, so I'd like to hear your version first. In last week's design review, your response to Y's proposal — 'this is exactly the project we lost three years ago' — and afterward Y didn't speak again. Can I start by asking: what were you trying to do in that moment?<br><br>
+(After listening:)<br><br>
+I believe your intent was to keep the team from repeating a mistake — that's the kind of thing a staff engineer should do. But the impact landed differently — Y now doesn't want to propose again. I'm not saying you're a mean person — I know you're not. I'm pointing at a specific pattern that I need expressed differently. Want to think through it together?"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ All three covered: (1) facts — the specific sentence, specific consequence; (2) feelings — asks his intent, names your own discomfort; (3) identity — explicitly: "you're not a mean person." This is what Stone calls "separate intent from impact."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist before the meeting</div>
+<ul class="checklist">
+<li>Can I name the purpose of this conversation in one sentence? (Not "want to chat" — but "by the end, I want X behavior change / Y fact understood")</li>
+<li>Fact layer: do I have 2–3 specific scenes as evidence? (No = reschedule, go gather more.)</li>
+<li>Feelings layer: what am I feeling? (Angry? Guilty?) If I walk in carrying that, take 10 minutes alone first.</li>
+<li>Identity layer: what subtext might they hear — "I'm not capable / not respected / not trusted"? Am I ready to explicitly dismantle that subtext?</li>
+<li>Am I ready for them to disagree, cry, or push back? What's my next move?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Sandwich feedback.</strong> "You've been great — there's one thing — overall you're doing well." They remember only the last sentence. Kim Scott calls this Manipulative Insincerity — scripting designed for your comfort, not theirs.</li>
+<li><strong>Treating "intent" as a defense of "impact."</strong> "I didn't mean it that way." — Your intent doesn't erase impact. Hold both, separately.</li>
+<li><strong>Softening with "we."</strong> "We've had some friction in communication." You're the manager. "We" is responsibility-blurring and it lands as vague. Use "I" when "I" is what you mean.</li>
+<li><strong>Dragging the hard conversation into the last 5 minutes of a 1:1.</strong> No time to process their reaction, and they leave with a stomach full of unspoken feeling. Hard conversations need a 30-minute dedicated block.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Lens · The double bind in hard conversations</span>
+<p>Women leaders face a specific trap in hard conversations: too soft = not taken seriously ("she's just suggesting"); too direct = labeled abrasive, aggressive, cold. This isn't your failure — it's systemic bias. But you need tools to work around it.</p>
+<p>The useful posture: <strong>warm tone + hard content</strong>. Relaxed voice, body forward, use their name, hold eye contact — but don't soften the content. Sandberg in <em>Lean In</em> tells the story of firing an exec at Facebook — tone was warm throughout, and afterward he said "she's the most ruthless and most kind person I've ever worked with." Ruthless was content; kind was delivery. They don't conflict.</p>
+<p>Another trap: women managers tend to ruminate with guilt after hard conversations — "was I too harsh?" If you don't catch it, that guilt drives compensatory softening over the next week, and the person reads mixed signals. Rule for yourself: in the 24 hours after a hard conversation, don't proactively go "fix things." Let the message settle.</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>Douglas Stone, Bruce Patton, Sheila Heen, <em>Difficult Conversations</em></strong> — Harvard Negotiation Project. The "three layers" framework is the most-cited model in this space. Chapters 1–3 alone are a lifetime asset.<br>
+<strong>Susan Scott, <em>Fierce Conversations</em></strong> — A more aggressive stance: "the conversation IS the relationship." Will recalibrate your sense of how expensive delay really is.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Templates for switching layers</span>
+<p>• Open fact layer: <em>"I want to share an observation, and I may be missing context — so I'd like to hear your version first."</em></p>
+<p>• Separate intent / impact: <em>"I believe your intent was X. The impact landed as Y. Both can be true."</em></p>
+<p>• Protect identity layer: <em>"This is about a specific pattern, not about who you are. I wouldn't be raising it if I didn't believe you can shift it."</em></p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Termination: Do It Cleanly, With Dignity, In Under 15 Minutes
+<span class="en">The Termination Conversation</span></h2>
+<span class="tag">Ben Horowitz</span><span class="tag">Andy Grove</span><span class="tag">Dignity</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">A termination is not a conversation. It is the <strong>announcement of a decision that has already been made</strong>. If, in the room, you're still weighing, still explaining, still hoping he understands — you came in too soon. Go back, think for three more days. Once the decision is made, the conversation has exactly three goals: (1) in the first 90 seconds, deliver "decision is final, today is your last day"; (2) preserve dignity; (3) walk through the logistics. The most unkind version is dragging it out.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"The way you fire someone matters as much as the way you hire them. Everybody on the team will be watching. If you fire them with dignity, the team learns 'this place treats people like humans even when things end.' If you don't, the team learns the opposite — and your best people start updating their LinkedIn."</span>
+<span class="source">— Ben Horowitz, <em>The Hard Thing About Hard Things</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The 5-part structure (recommended script)</div>
+<div class="template">
+<span class="label-inline">[0–30 SEC]</span> Cut straight in. No small talk. No "how was your weekend."
+   "X, I asked you here to share difficult news. The company has decided
+    to end your employment here. Today is your last day."
+
+<span class="label-inline">[30–90 SEC]</span> One-sentence reason. No elaboration.
+   "This decision is based on the performance areas we discussed during
+    your PIP / your role has been eliminated. I know this is hard."
+   Do NOT relitigate PIP details here — they know, and rehashing is twisting the knife.
+
+<span class="label-inline">[90 SEC – 5 MIN]</span> Stop. Let them speak.
+   They may be angry, silent, or in tears. Your job is not to rebut — it is to acknowledge.
+   "I hear you / I understand you're disappointed / You don't need to respond right now."
+
+<span class="label-inline">[5–10 MIN]</span> Logistics. HR takes it from here.
+   • Severance is X weeks
+   • Health benefits continue through Y
+   • Equipment must be returned by Z
+   • Outplacement / reference we'll provide is W
+   All of this prepared in a written packet, handed to them.
+
+<span class="label-inline">[10–15 MIN]</span> Last line — from you.
+   "I want to say one thing. This decision doesn't mean you're not capable —
+    it means the fit wasn't right. I'll give you an honest reference /
+    I'd suggest reaching out to V."
+   Then HR takes over the remaining flow.
+
+Target total length: 12–15 minutes. Over 20 = you're explaining in circles. Stop.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: two versions of the opening sentence</div>
+<div class="scene">
+<div class="setup">You're firing X. You've booked 30 minutes, Monday 9am. X walks in, sits down.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Weak version (too much runway)</div>
+<p>"Hey X, morning. How was the weekend? … so, I wanted to talk through some stuff with you. The last few months we've been discussing some performance things, and you know the PIP hasn't gone as well as we hoped. The company has been thinking about, well, how to put it, broader considerations…"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ X has already heard it: he's being fired — but you haven't said it. Every second is torture. Horowitz: "the worst kind of cruelty disguised as kindness."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Strong version (the 90-second rule)</div>
+<p>"X, thanks for coming in. I asked you here to share difficult news. The company has decided to end your employment. Today is your last day.<br><br>
+(Pause 3 seconds. Look at him.)<br><br>
+This decision is based on the performance areas we discussed during your PIP. I know hearing this is hard. After we finish, HR will join to walk through severance and the rest of the logistics — everything's already written up in this packet. You don't have to make any decisions right now.<br><br>
+I'm going to pause. What's on your mind?"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">72-hour pre-termination checklist</div>
+<ul class="checklist">
+<li>Is this decision final? Would anything they say in the next 30 minutes change my mind? (If yes, the decision isn't made — go back.)</li>
+<li>Is HR fully prepared? Severance document, equipment return, access revocation timing, benefits continuation — all in one packet?</li>
+<li>Have I processed my own emotion? I can't cry in the room, can't over-apologize away my authority, can't be so cold I look casual.</li>
+<li>Who tells the team next? What's my script? (Team announcement should land within 24 hours — don't let them learn it through the grapevine.)</li>
+<li>If they ask "why me and not Y?" — I don't answer (never discuss someone else's case). If they ask "can I have another chance?" — I don't soften. Have I rehearsed both answers?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Over-apologizing.</strong> "I'm sorry" once is enough. Say it three times and they start to think "wait, is this your fault? Can I argue this?" — and the conversation drags on.</li>
+<li><strong>Trying to make them "understand."</strong> They won't understand in those 15 minutes. They won't understand this week. Maybe a year from now. Let them leave. Don't try to convince.</li>
+<li><strong>False comfort.</strong> "You'll find something better / this is an opportunity for you." Unless you genuinely believe it, don't say it. Grove in <em>HOM</em>: "The most damaging thing a manager can do in a termination is to lie to make themselves feel better."</li>
+<li><strong>Friday afternoon terminations.</strong> They have to endure a weekend with no HR, no colleagues, no support system. Unless compliance forces it, don't do this. Monday morning is best — they still have a full week to call HR, sort out finances.</li>
+<li><strong>No team announcement prepped.</strong> Within two hours of them leaving, you should be ready with the Slack / standup message. Otherwise the team will speculate, and the first speculation is always "am I next?"</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Lens · The guilt trap in termination</span>
+<p>Research consistently shows women managers are more likely than men to experience long guilt-rumination after a termination. This isn't "you being too soft" — it's socialization. You were trained from childhood that "maintaining relationships is your job." Two specific costs:</p>
+<p><strong>(1) Delay:</strong> The person who needed to be terminated — you take 2–3 months longer than male peers, on average. The price is paid by the rest of the team, who carry an underperforming peer's impact for those two months. That is the actual unkindness.</p>
+<p><strong>(2) Over-softening during the conversation:</strong> "Today is your last day" gets dressed up as "let's see how we can arrange things." The person walks out unsure of what just happened, comes back tomorrow, and the whole thing becomes a humiliating drag. Horowitz's 90-second rule isn't cruelty — it's the protection of their dignity.</p>
+<p>A useful reframe: not firing this person means signaling to the other nine on your team that "our standards don't matter." Lara Hogan: "Firing one is sometimes the most generous act toward the other nine."</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>Ben Horowitz, <em>The Hard Thing About Hard Things</em></strong> (chapters around "The Right Way to Lay People Off") — the most direct CEO writing on terminations.<br>
+<strong>Andy Grove, <em>High Output Management</em></strong> (chapters on disagreement and performance management) — the older but more rigorous version: separate the decision from the delivery.<br>
+<strong>Kim Scott, <em>Radical Candor</em></strong> ("Compassionate Firing") — places firing inside the Care Personally / Challenge Directly frame.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Termination key lines</span>
+<p>• Standard opener: <em>"I have difficult news to share. The company has decided to end your employment, effective today."</em></p>
+<p>• When they ask "why": <em>"The decision is based on the performance areas we've discussed during your PIP. I'm not going to relitigate those today — what matters now is your transition."</em></p>
+<p>• Dignity close: <em>"This decision isn't a verdict on your worth. It's a fit decision. I wish you well."</em></p>
+<p>• Avoid: <em>"I'm sorry"</em> more than twice; <em>"Maybe in the future…"</em> (false hope); <em>"Don't take it personally"</em> (they will, of course, take it personally).</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>"You Didn't Get Promoted": The Denied-Promotion Conversation
+<span class="en">The Promotion Denial Conversation</span></h2>
+<span class="tag">Camille Fournier</span><span class="tag">Will Larson</span><span class="tag">Honesty without escape hatch</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">The failure mode of "you didn't get promoted" is not being too harsh — it's being too soft. Most managers turn this into "gentle disappointment," and the report goes home full of confusion and vague hope, then spends the next half neither knowing what to do nor trusting the system. The honest version: (1) name clearly that the answer is no; (2) name two or three specific dimensions where they fell short; (3) give a verifiable timeline. If you can't do all three — it's not because you don't know how, it's because they shouldn't have been nominated in the first place.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"The kindest thing you can do for someone who didn't get promoted is to tell them, in concrete terms, what's missing. Vague encouragement is the cruelest feedback you can give — it traps them in another year of guessing."</span>
+<span class="source">— Camille Fournier, <em>The Manager's Path</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: opening the 1:1</div>
+<div class="scene">
+<div class="setup">Calibration just ended. You nominated X for Staff, and it didn't pass. Today's 1:1 is where you tell him. He knows you nominated him; he's been waiting for the result.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Weak version (protecting him = hurting him)</div>
+<p>"X, I have some not-great news on the promo. It didn't go through this time. Honestly, you were really close — a lot of people in the room were on your side, but a few cross-team scope details didn't quite hold up. Just keep doing what you're doing this half, you'll get it next time. I have full confidence in you."</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Three problems: (1) "a few cross-team scope details" is vague — he doesn't know what to act on; (2) "you'll get it next time" is a promise you can't keep; (3) implies "the system was slightly unfair," which shifts responsibility off him. He'll repeat the same pattern next half and fail again.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Strong version (clear + path + honest hope)</div>
+<p>"X, I have your promo news. You didn't get promoted this cycle. Let me say a few things, then I want to hear you.<br><br>
+<strong>First</strong> — I nominated you, and I held the nomination. So this isn't me losing confidence in you. The room didn't accept the case on two specific Staff bar items: (1) Scope — the payments refactor you owned is Senior+ work, but you haven't yet owned an ambiguous problem where you frame the problem yourself at Staff size; (2) Multiplier — your impact is mostly within our team; verifiable leverage outside the team isn't there yet.<br><br>
+<strong>Second</strong> — both of these are addressable next half. I've been thinking about the search platform project — it's ambiguous and cross-team, hits both bars. Let's scope it together next week.<br><br>
+<strong>Third</strong> — I can't guarantee next half's outcome, because calibration is always relative. But I can guarantee that if you close those two, I'll nominate you again, and the case will be much stronger.<br><br>
+Pausing now. What's on your mind?"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Pre-conversation checklist</div>
+<ul class="checklist">
+<li>Can I name the specific dimension where they fell short in one sentence? (Not "a hair short" — but "fell short on Scope, specifically X.")</li>
+<li>Are those 2–3 gaps controllable by them next half? (If they depend on project opportunity, then my job as their manager is to create that opportunity — and I should put that in writing too.)</li>
+<li>Do I actually plan to nominate again? Or am I quietly thinking they're not ready? (Latter = this isn't a "promo denial" conversation, it's the harder "you're not on the promo track" conversation.)</li>
+<li>Am I ready for them to ask "why did Y get promoted?" (Rule: don't discuss someone else, discuss the rubric.)</li>
+<li>Will I send a written follow-up within 24 hours summarizing the two gaps + the next-half actions?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Hiding behind "the system was unfair."</strong> "Calibration was brutal," "the quota was tight" — these may be facts, but saying them tells the report "your fate is out of your hands." They'll coast harder next half because effort feels disconnected from outcome.</li>
+<li><strong>Promising things you can't deliver.</strong> "Definitely next half." You can't guarantee it. If you say it and it doesn't happen, their trust in you and the system collapses simultaneously.</li>
+<li><strong>No written follow-up.</strong> What they heard in the room and what you said diverge wildly a week later. A 24-hour email summarizing: the gaps + 1–2 concrete next-half actions.</li>
+<li><strong>Mixing "gap conversation" with "career conversation."</strong> This conversation only addresses "why not promoted." "Should I think about another team / company?" is a separate conversation — they may not ask for two weeks. Don't force the answer today.</li>
+<li><strong>Over-empathizing.</strong> "I know you're disappointed, I'm disappointed too." Once is enough. If you sit in disappointment with them for 20 minutes, you're signaling "this is really bad," and the rest of the half carries that shadow.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Women's perspective</div>
+<div class="female">
+<span class="female-label">Female Lens · When you're denying a woman</span>
+<p>Research consistently shows that, after a denied promotion, women are more likely than men to: (a) accept, internalize, blame themselves "I should have worked harder"; (b) stop actively pushing for promo; (c) quietly leave within a year — often to another company at the level they were just denied (the "leaky bucket").</p>
+<p>As the manager delivering this message to a woman, you have extra responsibility to interrupt that cycle:</p>
+<p><strong>(1) Externalize the cause:</strong> Don't let her conclude "I'm not good enough." Be specific about the two concrete, actionable things she didn't do.</p>
+<p><strong>(2) State your nomination commitment explicitly:</strong> "I will nominate you again." Women more than men assume "if I didn't get promoted, my manager stopped supporting me." Break that misread directly.</p>
+<p><strong>(3) Proactively raise retention:</strong> "You may be wondering: should I look elsewhere? I'd like you to stay, but I understand if you want to explore. That won't affect my support." Giving her permission to consider it actually raises her odds of staying. Pretending "she won't think about leaving" is the fastest way to lose her.</p>
+<p>Conversely, if you yourself are the woman who was denied — Sandberg's advice: don't make any decision in the first 72 hours. The reflexive thought is "I should leave / I'm not good enough." After 72 hours, look at the gaps and the path, then judge.</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>Camille Fournier, <em>The Manager's Path</em></strong> (chapters on managing senior engineers and promotions) — concrete scripts for promotion denial.<br>
+<strong>Will Larson, <em>Staff Engineer</em></strong> — breaks the Staff bar down concretely; you can borrow the language directly.<br>
+<strong>Lara Hogan's blog "Managing Up: A Better Way to Get Promoted"</strong> — includes the manager's-side script for delivering bad news.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Key phrases for this conversation</span>
+<p>• Open without hedging: <em>"I have promotion news. You weren't promoted this cycle. Let me tell you why, and what's next."</em></p>
+<p>• Hold your role: <em>"I nominated you and I held the nomination. This isn't a withdrawal of support."</em></p>
+<p>• Name the gaps: <em>"There are two specific gaps the room didn't accept: X and Y. Both are addressable next half."</em></p>
+<p>• Honest hope, not empty promise: <em>"I can't guarantee the outcome, but I can guarantee I'll nominate again if these two close."</em></p>
+<p>• Avoid: <em>"You were so close" / "Next time for sure" / "It was super competitive"</em> — the standard throwaway lines of promo denial.</p>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Blameless Postmortem: When Someone Broke Something Big
+<span class="en">The Blameless Postmortem: When Someone Broke Something Big</span></h2>
+<span class="tag">John Allspaw</span><span class="tag">Edmondson</span><span class="tag">System vs individual</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle</div>
+<div class="principle">Blameless does not mean consequence-less. "Blameless" describes the <strong>postmortem conversation</strong>: no naming-and-shaming in the room — the goal is to extract system-level learning. The <strong>individual feedback, performance impact, and PIP</strong> that should follow — they still happen, just in a different room, a different 1:1. Most managers conflate the two: either "we're being blameless, so I give no individual feedback" (team learns: there's no cost to breaking things), or they humiliate the engineer in the postmortem (team learns: never admit a mistake, hide everything). Two rooms, two conversations. Both required.</div>
+</div>
+
+<div class="section">
+<div class="section-label">The two rooms</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 560 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="250" height="240" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5" rx="6"/>
+<text x="145" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">ROOM 1 · POSTMORTEM</text>
+<text x="145" y="68" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#4a6a28">(Blameless · full team)</text>
+<text x="40" y="98" font-family="Georgia" font-size="11" fill="#3a2f1c">Goal: extract system learning</text>
+<text x="40" y="118" font-family="Georgia" font-size="11" fill="#3a2f1c">Subject: "Our system…"</text>
+<text x="40" y="138" font-family="Georgia" font-size="11" fill="#3a2f1c">Question: "Where were guardrails missing?"</text>
+<text x="40" y="158" font-family="Georgia" font-size="11" fill="#3a2f1c">Output: system + process changes</text>
+<text x="40" y="185" font-family="Georgia" font-size="11" font-weight="700" fill="#4a6a28">NOT discussed here:</text>
+<text x="40" y="205" font-family="Georgia" font-size="10" fill="#3a2f1c">• Who should be punished</text>
+<text x="40" y="222" font-family="Georgia" font-size="10" fill="#3a2f1c">• The individual's performance</text>
+<text x="40" y="239" font-family="Georgia" font-size="10" fill="#3a2f1c">• Whose "judgment" failed</text>
+<rect x="290" y="20" width="250" height="240" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5" rx="6"/>
+<text x="415" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">ROOM 2 · 1:1</text>
+<text x="415" y="68" text-anchor="middle" font-family="Georgia" font-size="11" font-style="italic" fill="#a04020">(Private · manager + engineer)</text>
+<text x="310" y="98" font-family="Georgia" font-size="11" fill="#3a2f1c">Goal: individual feedback + learning</text>
+<text x="310" y="118" font-family="Georgia" font-size="11" fill="#3a2f1c">Subject: "Your judgment…"</text>
+<text x="310" y="138" font-family="Georgia" font-size="11" fill="#3a2f1c">Question: "What were you thinking then?"</text>
+<text x="310" y="158" font-family="Georgia" font-size="11" fill="#3a2f1c">Output: behavior change + trust repair</text>
+<text x="310" y="185" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">Discussed here:</text>
+<text x="310" y="205" font-family="Georgia" font-size="10" fill="#3a2f1c">• Performance impact (if any)</text>
+<text x="310" y="222" font-family="Georgia" font-size="10" fill="#3a2f1c">• Your judgment pattern</text>
+<text x="310" y="239" font-family="Georgia" font-size="10" fill="#3a2f1c">• How to rebuild trust</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In the author's own words</div>
+<div class="quote">
+<span class="en">"A blameless postmortem allows engineers to contribute their accounts in a way that doesn't reflect badly on themselves or others — and in doing so, you get the real story. Without it, you get a sanitized story that teaches you nothing."</span>
+<span class="source">— John Allspaw, "Blameless PostMortems and a Just Culture" (Etsy Engineering Blog, 2012)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: opening the postmortem</div>
+<div class="scene">
+<div class="setup">Engineer X pushed a migration without review and took production down for 4 hours. You're convening the postmortem, X is there, you are facilitating.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Weak version ("fake blameless")</div>
+<p>"Everyone, today we're doing the postmortem for this incident. To be clear up front: this is blameless. We're not here to figure out who's at fault. X, do you want to walk us through what happened?"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Three problems: (1) "not figuring out who's at fault" — but everyone knows this is about X, so it becomes the awkward pretense of "blameless"; (2) having X go first puts him on trial; (3) no defined output for the meeting.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Strong version (Allspaw style)</div>
+<p>"Everyone, we'll spend 60 minutes on last Wednesday's incident. The goal is explicit: extract every place in our system where a 4-hour outage became possible — guardrails, process, monitoring, docs.<br><br>
+A few ground rules: (1) we don't discuss 'who should be punished' here — any individual performance discussion happens in a 1:1 between me and the person, not in this room; (2) we use 'the change,' 'the deploy,' 'the system' as our subjects — not 'X did' — because we're examining a system, not a person; (3) anyone who says 'they should have caught this' — I'll interrupt. Hindsight is banned in postmortems.<br><br>
+I'll walk the timeline. Then we go back to that moment and ask: at that point, with the information that was actually available, why did this decision look reasonable?"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Pre-postmortem checklist (facilitator)</div>
+<ul class="checklist">
+<li>Can I separate "this postmortem" from "my 1:1 with X" cleanly? Am I prepared to hold both, in order?</li>
+<li>Have I reconstructed the timeline myself? Do I have raw data ready (Slack logs, commits, metrics)?</li>
+<li>Am I ready to interrupt hindsight bias? ("Should have caught it / obviously a bad idea" — banned.)</li>
+<li>What's the output of this meeting? (List of system changes + owner + deadline — not "let's all be more careful.")</li>
+<li>Have I given X a heads-up? Told him the ground rules, told him the 1:1 is a separate conversation, made sure he won't be ambushed in front of the team?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Room 2: the private follow-up</div>
+<div class="scene">
+<div class="setup">24–48 hours after the postmortem. You and X, 1:1. This is where individual feedback lives.</div>
+<div class="dialog good">
+<div class="speaker">Opening the private 1:1</div>
+<p>"X, in the postmortem we didn't discuss your individual piece — by design. Today's 1:1, we're going to.<br><br>
+What I observed: you bypassed code review because you judged this to be a 'simple migration.' That judgment was wrong. The thing I want to understand is not 'why review matters for this kind of change' — you know that — what I want to understand is: in that moment, what made you decide 'this one can skip review'? Time pressure? Confidence in your read? Something else?<br><br>
+I'm asking because if we don't surface the pattern in that judgment, the same pressure will produce the same call next time."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Common pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>"Fake blameless."</strong> Saying "blameless" out loud while everyone in the room knows it's about one person. The engineer doesn't speak, no one else speaks, the postmortem becomes a manager monologue. Allspaw's actual line: "Blameless is not no-name." Blameless is about the <em>narrative voice</em> (use "the system" as subject) — not about hiding the engineer.</li>
+<li><strong>Only Room 1, never Room 2.</strong> No 1:1 feedback to the engineer — team learns "breaking big stuff has no cost." Other engineers will be sloppier next time.</li>
+<li><strong>Only Room 2 (public shaming), never Room 1.</strong> No system change. Three months later, the same incident repeats — because the system didn't change.</li>
+<li><strong>Action items without owner or deadline.</strong> "We should strengthen review." Who? By when? If it isn't written, it doesn't exist.</li>
+<li><strong>Not publishing the postmortem.</strong> The learning stops at the team boundary. Another team makes the same mistake six months later.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref">
+<strong>John Allspaw, "Blameless PostMortems and a Just Culture" (2012)</strong> — the Etsy engineering blog post that founded the field. Still cited 10+ years later.<br>
+<strong>Amy Edmondson, <em>The Fearless Organization</em></strong> — the empirical basis for psychological safety; explains why blameless culture lets organizations learn faster.<br>
+<strong>Sidney Dekker, <em>The Field Guide to Understanding 'Human Error'</em></strong> — the deeper theoretical layer: from "old view" (find the bad apple) to "new view" (understand how the system lets good people make bad decisions).
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Language to steal</div>
+<div class="english">
+<span class="label">Postmortem facilitation phrases</span>
+<p>• Set the tone: <em>"This is a blameless postmortem. We use 'the system' and 'the change' as subjects, not names. Anyone slipping into hindsight — 'they should have caught this' — I'll interrupt."</em></p>
+<p>• Make the engineer safe: <em>"Walk us through what you knew at the time, not what you know now."</em></p>
+<p>• Turn toward the system: <em>"What would have had to be different in our tooling / process / on-call playbook for this decision to be safer?"</em></p>
+<p>• Mark the boundary: <em>"Performance discussions live in 1:1s, not here. Today is about the system."</em></p>
+</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Practice · Your Week 4 Action</h3>
+<p>This week pick one hard conversation you've been dragging — and do these three things:</p>
+<div class="action">
+<strong>(1) Name the conversation you've been avoiding.</strong> Every manager has a list: the promo-denial 1:1 you keep pushing to next month, the report you should fire but you've been giving "another three months," the postmortem you've been "too busy" to schedule. Pick that one and <strong>write it down</strong>: who, about what, how long you've been delaying. Just naming it kills 30% of the avoidance energy.<br><br>
+<strong>(2) Prep with the three-layer framework.</strong> On one sheet of paper, three columns:<br>
+&nbsp;&nbsp;• <strong>What Happened:</strong> 3 specific scenes as evidence. No evidence = not ready to schedule.<br>
+&nbsp;&nbsp;• <strong>Feelings:</strong> What emotional reaction will they have? What am I carrying right now?<br>
+&nbsp;&nbsp;• <strong>Identity:</strong> What subtext will they hear? How do I explicitly dismantle it?<br>
+Then write your <strong>first sentence</strong> — no more than 30 words. That sentence is the whole conversation.<br><br>
+<strong>(3) Put it on the calendar.</strong> Sometime next week, find a 30–45 minute block. Title it "1:1 with X." Don't title it "hard conversation" — you'll see it and want to cancel out of anxiety.<br><br>
+Honestly: 80% of the hard conversations you have will go better than you expected. The other 20% will go worse. But <strong>all of them will go better than not having them.</strong> Re-read the Susan Scott line once more: the conversation you've been avoiding is the relationship you've been losing.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Weekly · Week 04 · 2026.06.10</footer>
+</div>
+
+</body>
+</html>
