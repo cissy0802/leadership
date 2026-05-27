@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Week 8：跨部门影响力 — Lateral Influence</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.05rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.principle strong{color:#5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-bottom:10px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf}
+.matrix-2x2{display:grid;grid-template-columns:120px 1fr 1fr;grid-template-rows:auto auto auto auto;gap:6px;margin:14px 0;font-size:0.88rem;text-align:left}
+.matrix-2x2 .axis-y{writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:8px;grid-row:2/4;display:flex;align-items:center;justify-content:center}
+.matrix-2x2 .col-header{text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:6px}
+.matrix-2x2 .cell{padding:14px;border-radius:4px;min-height:110px}
+.matrix-2x2 .cell.q1{background:#e6efdc;border:1px solid #8aa86a}
+.matrix-2x2 .cell.q2{background:#f5e6c4;border:1px solid #c4a878}
+.matrix-2x2 .cell.q3{background:#f8f0dd;border:1px solid #d4b888}
+.matrix-2x2 .cell.q4{background:#f0e8d8;border:1px solid #c4b898}
+.matrix-2x2 .cell .label{font-weight:700;color:#5c3a18;display:block;margin-bottom:6px;font-size:0.92rem}
+.matrix-2x2 .cell .desc{color:#3a2f1c;font-size:0.86rem;line-height:1.55}
+.matrix-2x2 .axis-x{grid-column:2/4;text-align:center;font-weight:700;color:#5c3a18;font-size:0.78rem;letter-spacing:2px;padding:6px}
+.currency-grid{margin:14px 0;background:#fcf6e8;border-radius:6px;border:1px solid #e6d9bf;overflow:hidden}
+.currency-grid table{width:100%;border-collapse:collapse;font-size:0.9rem}
+.currency-grid th{background:#e8dcc0;color:#5c3a18;padding:10px 12px;text-align:left;font-weight:700;letter-spacing:1px;font-size:0.82rem;border-bottom:2px solid #c4a878}
+.currency-grid td{padding:10px 12px;border-bottom:1px solid #e6d9bf;color:#3a2f1c;vertical-align:top}
+.currency-grid tr:last-child td{border-bottom:none}
+.currency-grid td:first-child{font-weight:700;color:#5c3a18;white-space:nowrap;width:110px}
+.currency-grid td .examples{color:#6b4a1f;font-size:0.86rem;display:block;margin-top:4px;font-style:italic}
+.sequence-flow{background:#fcf6e8;padding:18px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.sequence-flow .stage{display:flex;gap:14px;align-items:flex-start;margin:10px 0}
+.sequence-flow .stage-label{flex:0 0 150px;font-weight:700;color:#a8702d;font-size:0.84rem;letter-spacing:1px;padding-top:10px;text-align:right;text-transform:uppercase}
+.sequence-flow .stage-body{flex:1;background:#fffaf0;padding:10px 14px;border-radius:4px;border-left:3px solid #c4a878;font-size:0.9rem;color:#3a2f1c}
+.sequence-flow .stage-body.inner{border-left-color:#5c8a3a;background:#e6efdc}
+.sequence-flow .stage-body.public{border-left-color:#5c3a18;background:#f3e9d2}
+.sequence-flow .arrow-down{text-align:center;color:#a8702d;margin:2px 0}
+.ledger{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.ledger .col{background:#fcf6e8;border-radius:6px;border:1px solid #e6d9bf;padding:16px 18px}
+.ledger .col.deposit{border-top:3px solid #5c8a3a}
+.ledger .col.withdraw{border-top:3px solid #b85c3a}
+.ledger .col h4{font-size:0.92rem;color:#5c3a18;margin-bottom:10px;letter-spacing:1px;font-weight:700}
+.ledger .col.deposit h4{color:#4a6a28}
+.ledger .col.withdraw h4{color:#a04020}
+.ledger ul{list-style:none;padding:0;font-size:0.86rem}
+.ledger li{padding:5px 0 5px 14px;position:relative;color:#3a2f1c;line-height:1.5}
+.ledger .col.deposit li::before{content:"+";position:absolute;left:0;color:#5c8a3a;font-weight:700}
+.ledger .col.withdraw li::before{content:"−";position:absolute;left:0;color:#b85c3a;font-weight:700}
+.ratio-note{text-align:center;font-size:0.88rem;color:#6b4a1f;margin-top:8px;font-style:italic}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.matrix-2x2{grid-template-columns:60px 1fr 1fr;font-size:0.78rem}
+.matrix-2x2 .cell{padding:10px;min-height:auto}
+.matrix-2x2 .cell .desc{font-size:0.8rem}
+.sequence-flow .stage{flex-direction:column;gap:4px}
+.sequence-flow .stage-label{flex:none;text-align:left}
+.currency-grid table{font-size:0.82rem}
+.currency-grid th,.currency-grid td{padding:6px 8px}
+.ledger{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 08 · 2026.05.27</div>
+<h1>跨部门影响力：没权力时怎么推动</h1>
+<div class="meta"><span>主题：Lateral Influence</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"If you want to be powerful, depend on people who depend on you." — David Bradford & Allan Cohen</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>大组织里 tech lead manager 60% 的工作不是管自己团队——是<strong>说服你不能命令的人</strong>。要 Platform team 优先你的 unblock、要 PM 接受你的 tech debt sprint、要 Security 加速 review、要 peer team 共担依赖。formal authority 在这些场景为零，但任务的 ownership 100% 在你。本周拆四件事：(1) <strong>影响货币</strong>——Cohen & Bradford 的核心：不靠关系也不靠 charisma，是结构化地识别对方"想要什么"、用你"能给什么"做交换；(2) <strong>Stakeholder 地图</strong>——Power × Interest 矩阵，把对方分成 sponsor / blocker / fence-sitter，每类用不同 play；(3) <strong>联盟构建的顺序</strong>——错误顺序 = 浪费精力。先 inner ally → 再 swing votes → 最后 face the blocker；(4) <strong>信任银行</strong>——影响力不是事到临头才造，是日常 deposit 的累积。读完你应该有：一份针对当前最重要跨部门项目的 stakeholder map + currency 列表 + coalition sequencing 计划。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>影响货币：不靠权力，靠交换
+<span class="en">Currencies of Exchange: Influence as Structured Reciprocity</span></h2>
+<span class="tag">Cohen & Bradford</span><span class="tag">Reciprocity</span><span class="tag">货币交换</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">没有 formal authority 时，唯一的影响杠杆是<strong>互惠</strong>——但互惠不是"我帮你"的模糊好意，是<strong>明确的货币交换</strong>。Cohen & Bradford 的核心洞察：每个人在职场里都在交易五类货币——<strong>任务（资源/支持）、位置（visibility/认可）、灵感（vision/mission）、关系（信任/倾听）、个人（自我价值感）</strong>。影响失败 90% 不是因为对方"不合作"——是因为你想要 task currency（他派工程师），却只能 offer inspiration currency（"这对公司很重要"）。<strong>先识别对方真正缺什么货币，再问"我能给的货币里他最需要哪种"。</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"In most organizational situations, influence is the result of an exchange—the trading of something valued for something else valued in return. The 'currencies' of exchange aren't just money or formal favors; they include task support, position-related benefits like recognition and visibility, inspiration, relationship-based goods like understanding and acceptance, and even personal feelings of self-worth and gratitude."</span>
+<span class="zh">在大多数组织情境下，影响力是<strong>交换</strong>的结果——以彼此重视的东西做交换。"货币"不只是钱或正式人情，包括任务支持、位置类好处（认可、曝光）、灵感、关系类礼物（理解、接纳），甚至是自我价值感和感激。</span>
+<span class="source">— Allan R. Cohen & David L. Bradford · Influence Without Authority（2nd ed, 2005, Chapter 2 "The Cohen-Bradford Model"）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">视觉化：5 类影响货币 · 备查表</div>
+<div class="currency-grid">
+<table>
+<tr><th>货币类</th><th>对方在求什么 · 你能给什么的例子</th></tr>
+<tr>
+<td>① Inspiration<br><span style="font-weight:400;color:#8a6d3b;font-size:0.78rem">灵感</span></td>
+<td>使命感、卓越感、对更大目标的贡献。
+<span class="examples">例：把项目 frame 成 "this is how we level up our engineering bar" / "first-of-its-kind in the industry"。注意：通胀严重，单独使用 ROI 低。</span></td>
+</tr>
+<tr>
+<td>② Task<br><span style="font-weight:400;color:#8a6d3b;font-size:0.78rem">任务</span></td>
+<td>实际资源、人手、信息、技术帮助、关键依赖的快速解锁。
+<span class="examples">例：派一个 engineer 帮 platform team 写 integration spec / 共享你团队的 load test infra / 帮 review 一份 RFC。</span></td>
+</tr>
+<tr>
+<td>③ Position<br><span style="font-weight:400;color:#8a6d3b;font-size:0.78rem">位置</span></td>
+<td>曝光、信誉、对 senior leadership 的 visibility、晋升弹药。
+<span class="examples">例：在 staff meeting 主动 highlight 对方 work / 把对方写进 quarterly review 给 VP / 推荐对方做 tech talk。</span></td>
+</tr>
+<tr>
+<td>④ Relationship<br><span style="font-weight:400;color:#8a6d3b;font-size:0.78rem">关系</span></td>
+<td>信任、被听到、被理解、被接纳进入 inner circle。
+<span class="examples">例：给对方 honest read on 组织风向 / 在他/她被批评时私下 back / 把对方 loop 进早期讨论而非 fait accompli。</span></td>
+</tr>
+<tr>
+<td>⑤ Personal<br><span style="font-weight:400;color:#8a6d3b;font-size:0.78rem">个人</span></td>
+<td>胜任感、成长、自主性、感激被表达。
+<span class="examples">例：给对方一个能 stretch 的 ownership 机会 / 公开 thank you / 主动 ask for advice（被求助本身是 personal currency）。</span></td>
+</tr>
+</table>
+<p style="font-size:0.85rem;color:#6b4a1f;margin-top:10px;text-align:center;font-style:italic">→ 大多数 tech lead 只会用 ①（灵感）+ ⑤ 一小角。剩下三类被忽略——这才是 leverage 所在。</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：要 Platform team 紧急上一个 feature</div>
+<div class="scene">
+<div class="setup">Q3 即将开始，你需要 Platform team 在前 4 周交付一个 API 改动，否则你的 product 上线推迟 6 周。Platform team 已经 fully booked。你跟 Platform Director 没什么交往。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（只用 inspiration currency）</div>
+<p>邮件给 Platform Director："这个 feature 对公司 Q3 OKR 非常关键，恳请你们优先排期。我们 product 上线时间 critical。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 失败原因：Platform Director 每周收 10 封这样的邮件。"对公司关键"是被严重通胀的 inspiration currency——他无法从中区分 priority。结果他用 default 反应："Q3 已满，请提交 Q4 ticket。"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（先 diagnose 对方货币、再做 substantive 交换）</div>
+<p><strong>Step A（diagnose）：</strong>先约 Platform PM 30 分钟咖啡。<strong>问：</strong>"你们 Q3 自己的 top priorities 是什么？最大的 pain point 在哪？"<br><br>
+他/她："我们想做 X migration，但缺一个 design partner 验证 API——必须有 real consumer 团队配合，但没人愿意做 early adopter。"<br><br>
+<strong>Step B（offer exchange）：</strong>你跟 Platform Director：<br>
+"我有一个 proposal 想跟你聊。我们 product 团队可以做 X migration 的 design partner——具体来说：<br>
+• 派 1 个 senior engineer 帮你们写 integration spec 和 weekly feedback（<strong>task currency</strong>）<br>
+• Q3 季度末我帮你们写一份 case study 放 staff meeting 和 quarterly write-up，VP 那边的 visibility 我来 channel（<strong>position currency</strong>）<br>
+• 我也愿意成为你们 future 的 reliable design partner，需要 reciprocal priority access 时再来谈（<strong>relationship currency</strong>）<br>
+作为交换，希望你们能在前 4 周 unblock 我们的 API 改动。我知道这是 ask——但 exchange 是真实的，不是 IOU。"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 成功原因：你 offer 了三种货币（task / position / relationship）换一个 task currency。每一种都 specific、可兑现、对方真正需要。Platform Director 现在不是被请求做 favor，是评估一个 fair exchange。即使他/她最终只能给 70%（partial unblock），双方关系也 net positive。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">影响货币的检查表</div>
+<ul class="checklist">
+<li><strong>开口前问：</strong>对方现在最缺哪种货币？答不出 = 不要开口。先 diagnose 再 negotiate。</li>
+<li><strong>列出你能 offer 的 5 种货币</strong>，每种 specific 到动作——"我帮你 promote" → "我把你的 result 写进 staff meeting deck + skip-level write-up"。</li>
+<li><strong>交换要 visibly 公平。</strong>不平衡的 ask 必须加长期承诺（"未来你来 ask priority 时我们 reciprocate"）。</li>
+<li><strong>避免 IOU 经济。</strong>现货交易 > 赊账——长期 IOU 易被遗忘或 disputed。</li>
+<li><strong>给对方"对外讲得通"的 narrative。</strong>对方 commit 后要跟自己 boss 解释为什么改 priority——你的 exchange 要让他/她有 ready-made 说辞。</li>
+<li><strong>记录 exchange。</strong>1 句 followup 邮件 confirm 双方理解——避免 6 个月后 "我没答应过"。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 inspiration 当万能。</strong>"对公司很重要"在 30% 的场景成立——剩下 70% 你需要 task / position / relationship currency。</li>
+<li><strong>把"友好"当影响力。</strong>笑眯眯请求和板着脸请求都失败——没交换内容，态度无关。</li>
+<li><strong>用 position currency 强压（"VP 会问的"）。</strong>当下可能赢，长期被 tag 为 bully——下次对方避你。</li>
+<li><strong>给对方你方便的货币，不是对方需要的。</strong>你给团队 swag，对方需要的是 engineer hours——给错货币 = 不算 deposit。</li>
+<li><strong>忘了对方的 boss。</strong>你跟对方达成共识后，他/她要跟自己 director 解释——如果没法解释，共识会反悔。预先帮对方 framing。</li>
+<li><strong>把 exchange 做成 transactional 到 obvious。</strong>"我给你 X 你给我 Y"赤裸到对方感觉被 buy——好 exchange 是<strong>看似自然实则结构化</strong>。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 看不见的 deposit、Office housework、Glue work</span>
+<p>女性在 currency exchange 上面临两个非对称 cost：(1) <strong>更倾向 give relationship currency</strong>（情感支持、listening、coordination），但 organization 按 task / position currency 评估你的 contribution——你的"deposit"不被计入 official 账户；(2) <strong>更频繁被请求 office housework</strong>（记笔记、组织庆生、安排团建）= relationship currency 单向 give 没 ask back。Joan Williams 实证数据：女性接受 office housework 请求的频率是男性的 2-3 倍。Tanya Reilly 在《The Staff Engineer's Path》一书中专门提的 "glue work" 陷阱——必要但 underrewarded 的工作往往落女性身上。</p>
+<p>三件可做：</p>
+<p><strong>(1) 把 relationship currency 显式定价：</strong>"我可以帮你 onboard 新人——同时我也想跟你 Director 半小时聊 platform roadmap"——把单向变双向 exchange。</p>
+<p><strong>(2) Refuse low-status currency 请求，不带攻击性：</strong>Lara Hogan 在《Resilient Management》推荐的话术："Great suggestion. I'm at capacity this quarter, but [X person] would be excellent for this—it's exactly the scope they're looking for." 把 deflection 同时变 visibility deposit 给别人。</p>
+<p><strong>(3) Deposit 也要 visible 一部分：</strong>women's invisible deposits 不会自动 surface——每月 1 次写一份 1-page memo 给 manager 列你跨部门的 contribution。不是吹嘘，是抵消 invisible work 的 invisible-ness。</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作</div>
+<p style="font-size:0.95rem;color:#3a2f1c">列你当前最重要的 1 个跨部门 ask，写出：(a) 对方最缺哪种货币 (b) 你能 offer 的 3 种 specific 货币 (c) 完整的 exchange 提议。本周内跟对方约 30 分钟 face-to-face 跑一遍。</p>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Stakeholder Map：Power × Interest 矩阵
+<span class="en">Stakeholder Mapping: Power × Interest Matrix + Archetypes</span></h2>
+<span class="tag">Mendelow</span><span class="tag">Power × Interest</span><span class="tag">Stakeholder</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">在你 push 跨部门事情之前，画一张 stakeholder map 是<strong>20 分钟换 20 小时</strong>的投入。错误模式：把所有 stakeholder 平等对待——给每个人发同样 update、约同样 1:1。<strong>正确模式：按 Power（决策影响力）× Interest（关心程度）分四象限，每象限用不同频率和深度对待。</strong>Mendelow 1991 年提出的矩阵到今天仍是 PM/TLM 工具箱里最锐利的工具之一——简单到 5 分钟能画完，但每画一次都会让你发现 1-2 个被忽略的关键 stakeholder。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Stakeholders differ along two axes: the power they have to affect the outcome, and the interest they have in doing so. Investing the same effort across all stakeholders is the most common waste of influence capital. The discipline is simple but rare: map first, engage second; engage proportionally, not democratically."</span>
+<span class="zh">利益相关方在两个维度上不同：影响结果的<strong>权力</strong>、以及他们对此的<strong>关心程度</strong>。在所有 stakeholder 身上平均投入精力是影响力资本最常见的浪费。纪律很简单但很罕见：<strong>先画图，后接触；按比例 engage，不要平均主义</strong>。</span>
+<span class="source">— Aubrey Mendelow · "Stakeholder Mapping"（Kent State, 1991）；后在 Johnson & Scholes Exploring Corporate Strategy（Chapter 4）系统化为商学院通行框架</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">视觉化：Power × Interest 矩阵 + Archetype 叠加</div>
+<div class="frame-diagram">
+<div class="matrix-2x2">
+<div></div>
+<div class="col-header">Interest 低<br><span style="font-weight:400;font-size:0.72rem">（不太关心）</span></div>
+<div class="col-header">Interest 高<br><span style="font-weight:400;font-size:0.72rem">（紧密关心）</span></div>
+
+<div class="axis-y">Power 高</div>
+<div class="cell q3">
+<span class="label">Keep Satisfied</span>
+<span class="desc">保持知情，不烦扰。Biweekly 1-page status email。<br><strong>典型：</strong>兼管的 director / skip-level VP。<br><strong>风险：</strong>他们 interest 低不代表不会突然 intervene——保持 satisfied 是 hedge。</span>
+</div>
+<div class="cell q1">
+<span class="label">Manage Closely ⭐</span>
+<span class="desc">亲密管理。每周 1:1，pre-wire 必做，决策前先 align。<br><strong>典型：</strong>Sponsor / Direct decision maker / 你的 Director。<br><strong>这是影响力投入最高 ROI 的象限。</strong></span>
+</div>
+
+<div class="axis-y">Power 低</div>
+<div class="cell q4">
+<span class="label">Monitor</span>
+<span class="desc">最小投入。Quarterly digest 即可。<br><strong>典型：</strong>弱关联的 peer team / 远端 stakeholder。<br><strong>风险：</strong>会随项目阶段升级——重新评估每月一次。</span>
+</div>
+<div class="cell q2">
+<span class="label">Keep Informed</span>
+<span class="desc">保持告知。周会 update + raise concern 渠道。他们是 advocate。<br><strong>典型：</strong>受影响的下游团队 / power users / 你的 IC team。<br><strong>价值：</strong>他们 interest 高、可以变 ally 帮你 push。</span>
+</div>
+
+<div></div>
+<div class="axis-x">→ Interest</div>
+</div>
+<p style="font-size:0.85rem;color:#6b4a1f;margin-top:8px;text-align:center;font-style:italic">→ 然后在每个 stakeholder 旁标 archetype：Sponsor（明确支持）/ Coach（给 advice 不直接 stake）/ Skeptic（怀疑但 open）/ Blocker（反对）/ Fence-sitter（观望）。不同 archetype 对应不同 play（见 Card 3）。</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：跨 3 个 team 推 service mesh migration</div>
+<div class="scene">
+<div class="setup">你负责推一个 service mesh migration，需要 3 个 team 配合。7 个 stakeholder：你 Director、VP、Platform Director A、下游 SDE team A 的 EM、下游 SDE team B 的 EM、Security Director、弱关联的 Data team Director。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（无 map · 平均对待）</div>
+<p>你给所有 7 个 stakeholder 群发同样的 RFC 邮件 + 设一个 all-hands 会议。结果：<br>
+• VP（HPHI）感觉被 surprise——没人提前 prep 他，会议上 -1<br>
+• Platform Director A（HPLI）被烦扰，开始反感你<br>
+• 下游 SDE team A（LPHI）没被告知细节，4 周后发现破坏他们 API，blocking<br>
+• Security（HPHI）没被 loop 在初期，最后给 -1 推迟 2 个月<br>
+• Data team（LPLI）回了一堆不相关问题占用你时间</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 失败原因：把所有人当成同一种 stakeholder。HPHI 被 under-invested（surprise），HPLI 被 over-invested（烦扰），LPHI 被忽略（变成 blocker），LPLI 被无意义 engage（占资源）。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（先画 map · 按象限投入）</div>
+<p><strong>VP（HPHI · Sponsor 待定）：</strong>项目第 1 周 pre-wire 1:1，30 分钟。听他 framing、问他在乎什么 metric。他从 surprise 转 sponsor。后续每两周 15 分钟 sync。<br><br>
+<strong>你 Director（HPHI · Sponsor）：</strong>每周 1:1 现成的 slot 留 10 分钟讲项目。最早 align。<br><br>
+<strong>Platform Director A（HPLI · Coach 倾向）：</strong>1-page biweekly status email，cc 而非 ask 回应。每月一次 15 分钟 sync。不烦扰。<br><br>
+<strong>下游 SDE team A & B 的 EM（LPHI · 可能 Skeptic）：</strong>项目第 2 周专门 30 分钟 walkthrough，给他们 raise concern 的渠道（Slack channel + biweekly office hour）。把他们 concern 写进 RFC——他们变 quiet supporter。<br><br>
+<strong>Security Director（HPHI · 容易变 Blocker）：</strong>项目第 1 周就 loop in，让他们 review architecture，把他们的 security framework 语言写进 RFC。让他们成为 co-author 而非 reviewer。<br><br>
+<strong>Data team（LPLI · Monitor）：</strong>只发 quarterly digest，不约会议。如果项目阶段变化升级，重新评估。</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 结果：4 周 migration 在 8 周内完成、零重大 blocker。同样人力，按 map 分配，ROI 差 3-5 倍。<strong>关键 insight：</strong>map 不是一次画完——每月重画一次，stakeholder 在 reorg / 升迁 / 项目阶段中会迁移象限。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Stakeholder Mapping 的检查表</div>
+<ul class="checklist">
+<li><strong>列 stakeholder 时包括影子决策者：</strong>VP 的 Chief of Staff、Director 信任的 tech lead、HR Business Partner——这些人不在 org chart 上但影响力高。漏掉 = 后期被 ambush。</li>
+<li><strong>每个 stakeholder 标 archetype：</strong>Sponsor / Coach / Skeptic / Blocker / Fence-sitter。不同 archetype 用不同 play（见 Card 3）。</li>
+<li><strong>HPHI 象限 = 每周至少一次 touch；</strong>其他象限频率显著降低。投入 disproportionate 到 HPHI。</li>
+<li><strong>Power 评估不只看 title：</strong>看真实 decision rights、informal influence、跟 sponsor 的私交。Senior IC 有时比 manager 影响力大。</li>
+<li><strong>Interest 包括 negative interest：</strong>项目损害他们利益的人是 high interest（反向）——比 fence-sitter 危险，必须主动接触。</li>
+<li><strong>每月重画一次。</strong>map 是 living document——reorg / 升迁 / 项目阶段都会让 stakeholder 跨象限迁移。</li>
+<li><strong>map 私存，不公开。</strong>把人显式分类的文档放公司 wiki = 当天就被截图传开——你的 craft 应该 invisible。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把所有 stakeholder 当 HPHI 对待。</strong>资源不够 → 真正的 sponsor 反而被稀释 → 关键象限投入不足。</li>
+<li><strong>漏掉 HPLI 象限。</strong>"他们不关心就不用管"——错。他们突然 intervene 时（reorg / 预算 / 危机）你才发现自己没准备。</li>
+<li><strong>把 fence-sitter 当 ally。</strong>没表态 ≠ 支持。中期会倒向 winning side——pre-wire 之前他们是 neutral 不是 plus。</li>
+<li><strong>漏掉 negative stakeholder。</strong>项目伤害谁的利益（裁掉他们的 scope / 增加他们的 oncall / 让他们的 metric 难看）？没识别 = 后期 ambush。</li>
+<li><strong>map 画完不更新。</strong>第一周画的 map 在第八周已经 stale——reorg 一次、升迁一次都改变 power 分布。</li>
+<li><strong>把 Power 当成对你权力的友好度。</strong>Power 是<strong>对决策的影响力</strong>，不管对你态度——一个非常反对你的 Director 仍是 HPHI，不是 LPHI。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作</div>
+<p style="font-size:0.95rem;color:#3a2f1c">为你当前最重要的跨部门项目画一张 stakeholder map（spreadsheet 即可）：列每个 stakeholder 的 Power（H/L）、Interest（H/L）、Archetype、本周/本月该投入什么。完成后问自己：哪个 stakeholder 我之前没意识到是 HPHI？哪个 negative interest 我之前没识别？</p>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>联盟构建的顺序：Inner → Swing → Blocker
+<span class="en">Coalition Sequencing: Allies First, Blockers Last</span></h2>
+<span class="tag">Will Larson</span><span class="tag">Heath Brothers</span><span class="tag">Coalition</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">联盟构建有<strong>正确的顺序</strong>，错误顺序 = 浪费精力 + 暴露自己。错误模式：直接去 confront blocker、试图说服——他/她戒备最高、反弹最强，你单兵作战又没 ally。正确模式：<strong>先 inner ring（已 align 的 1-2 人）→ 再 coaches（提供反馈不直接 stake 的 senior）→ 再 swing votes（fence-sitter）→ 公开发布 → 最后才 face blocker</strong>。这样 blocker 看到的不是你一个人的提议——是已有 5 个 peer 支持的方向。他/她要么 join 要么孤立。这是 Saul Alinsky 的 organizing 原则、Heath Brothers 在《Switch》里讲的 "find the bright spots" 顺序、也是 Will Larson 在《Staff Engineer》里 explicit 建议的 staff engineer push proposal 的顺序。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The best way to convince a skeptic is rarely to talk to them first. Talk to the willing first—they sharpen your argument, become co-authors, and give you the social proof to bring along the doubtful. Confronting opposition before you have a coalition isn't courage—it's a tactical error that wastes the proposal's best chance."</span>
+<span class="zh">说服怀疑者最好的方式很少是先找他/她。<strong>先找愿意的人</strong>——他们打磨你的论点、变 co-author、提供 social proof 把动摇者带过来。在你没有 coalition 之前 confront 反对者不是勇气，是<strong>战术错误</strong>，浪费提案的最佳机会。</span>
+<span class="source">— Will Larson · Staff Engineer: Leadership Beyond the Management Track（2021, "Working with Peers" 章节）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">视觉化：联盟构建 5 阶段序列</div>
+<div class="sequence-flow">
+<div class="stage">
+<div class="stage-label">Phase 1 · Inner Ring</div>
+<div class="stage-body inner"><strong>1-2 个已高度 align 的 peer</strong>。一起 refine idea。让他们的<strong>名字</strong>出现在 doc 上——他们就 invested 了。这一阶段 idea 还可以大改，欢迎严苛 critique。</div>
+</div>
+<div class="arrow-down">↓</div>
+<div class="stage">
+<div class="stage-label">Phase 2 · Coaches</div>
+<div class="stage-body inner"><strong>1-2 个有威望但不直接 stake 的 senior</strong>（principal engineer / 退役 director）。给 critical feedback。他们不正式背书，但给你 "this is stronger than v1" 的 signal——你拿这个 signal 进 Phase 3。</div>
+</div>
+<div class="arrow-down">↓</div>
+<div class="stage">
+<div class="stage-label">Phase 3 · Swing Votes</div>
+<div class="stage-body"><strong>3-5 个 fence-sitter</strong>。每人 30 分钟 1:1。<strong>目的是听不是说服</strong>——把他们顾虑写进 doc，他们就 invested。大约一半会变 quiet supporter。</div>
+</div>
+<div class="arrow-down">↓</div>
+<div class="stage">
+<div class="stage-label">Phase 4 · Public Reveal</div>
+<div class="stage-body public"><strong>RFC / 会议 / Doc 公开</strong>。此时 inner ring 在 author list、swing votes 在评论区点头、coach 给过 implicit endorsement。Public reveal 不再是 cold pitch——是 ratify 已经形成的共识。</div>
+</div>
+<div class="arrow-down">↓</div>
+<div class="stage">
+<div class="stage-label">Phase 5 · Face Blocker</div>
+<div class="stage-body"><strong>最后才找 blocker</strong>。framing："已经 5-8 个 team review，你的视角对我很重要。哪 3 件事你最关心？" 此时 blocker 面对的是 coalition，不是你一人——他/她 sole opposition 的 political cost 高。多数会变 abstain（"我有 concerns 但 ok proceed"）。</div>
+</div>
+</div>
+<p style="font-size:0.85rem;color:#6b4a1f;margin-top:10px;text-align:center;font-style:italic">→ 大多数新手 manager 的失败模式：直接跳 Phase 5（"先把硬的攻下来"）—— blocker 第一时间 -1，社会信号扩散，提案在 Phase 4 之前就死。</p>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：你想推一个公司级 code review standard，需要 8 个 team 接受</div>
+<div class="scene">
+<div class="setup">你想推一个 code review standard，需要 8 个 team 接受。8 个 EM 里：2 个已经在做类似的、4 个中立、2 个一向反对 process（Director B 是最大 skeptic）。你有 5 周时间。</div>
+<div class="dialog bad">
+<div class="speaker">差版本（直接攻最大 blocker）</div>
+<p>你 Week 1 直接去找 Director B，30 分钟 pitch。他向来反对 "process for process sake"，给 -1。消息传开，其他 EM 看到 "B 反对了"，纷纷 wait-and-see。Week 3 你召开 all-hands，房间里 6 个人 silently 沉默。提案死。</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 失败原因：① 你给 B 看到的是 "raw idea + 你一个人"——他容易反对；② 你给社会扩散的信号是 "B 反对了"，社会从众反应跟随；③ 你单兵进 most hostile 战场，胜算最低。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（按 5 阶段顺序）</div>
+<p><strong>Week 1（Inner Ring）：</strong>找 2 个已经在做类似事情的 staff engineer。1:1："我想推 X，你帮我看哪里弱？" 一起 refine idea。两人变 co-author。<br><br>
+<strong>Week 2（Coaches）：</strong>找 1 个 principal engineer——曾经做过类似 initiative。45 分钟 critical feedback。他指出 3 个 gap（指标缺失、rollout 模糊、reviewer training 不够），你补上。他没正式 endorse 但 quietly 说"质量比第一版高很多"——你后续可以引用。<br><br>
+<strong>Week 3（Swing Votes）：</strong>4 个中立 EM，每人 30 分钟 1:1。<strong>问的不是"你支不支持"——而是"如果这个真要 ship，你最担心什么？"</strong> 4 个顾虑收集完，全部写进 v2 doc 的 "addressed concerns" 章节。4 人里 3 个变 quiet supporter（"我的顾虑被听到了"），1 个仍中立。<br><br>
+<strong>Week 4（Public Reveal）：</strong>RFC 发布。2 个 co-author 是 visible author。3 个 swing supporter 在评论区点头："this addresses my concern from our discussion"。Principal engineer 公开 comment "v2 stronger than I expected"。社会信号变成 "5 个人 endorse 了 + 你的提议"。<br><br>
+<strong>Week 5（Face Blocker）：</strong>此时找 Director B。framing："已经 6 个 team 看过，你的视角我特别想听——你过去推 X 的经验最相关。哪 3 件事你最关心？" B 现在面对的是 6 vs 1 的 coalition——他 -1 的 political cost 很高。他 raise 2 个 concern（reviewer fatigue / process overhead），你 incorporate。他最后 abstain："我有 concerns 但 ok proceed"。提案过。</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 同样内容，<strong>不同顺序，结果完全不同</strong>。差版本是攻城败北，好版本是 围而后议——给 blocker 一个 face-saving 的 abstain 出口，比要他/她 yes 现实得多。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">联盟构建的检查表</div>
+<ul class="checklist">
+<li><strong>第一个对话必须是 inner ring，不是 blocker。</strong>refine idea 在 ally 那里完成，不要在敌对环境。</li>
+<li><strong>Inner ring 的人帮你 co-author。</strong>让他们的名字在 doc 上——他们的声誉绑定 = 他们 invested。</li>
+<li><strong>Swing vote 的 1:1 目的是听不是说服。</strong>把对方顾虑变成 doc 的章节，对方就 invested 了。Hard sell 的转化率比 ask-and-incorporate 低 10x。</li>
+<li><strong>Blocker 留到最后。</strong>此时他/她面对的是 coalition 不是你一人。</li>
+<li><strong>给 blocker 一个 face-saving exit。</strong>"我有 concerns 但 ok proceed" 比 yes 现实得多——不要逼对方 endorse。</li>
+<li><strong>每阶段问自己：上阶段是否真尽到了？</strong>跳级 → 失败率高。</li>
+<li><strong>不要 lobby 信号。</strong>pre-wire 是听对方思考，不是收集 votes。变 vote-collecting → 你被 tag 为 political operator。</li>
+<li><strong>Inner ring 1-2 人足够。</strong>5 个 co-author = 没有 owner = 无人推动。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>觉得"按顺序"= 操纵。</strong>实际是降低 cognitive load 让每个 stakeholder 有空间思考——比 cold all-hands pitch 更尊重每个人。</li>
+<li><strong>Inner ring 太大。</strong>5 个 co-author = decision by committee = idea 被稀释。1-2 个紧密 ally 足够。</li>
+<li><strong>跳过 Coaches 阶段。</strong>Coach 是 idea quality 检验器——没他你的提案 ship 时 30% 是 garbage、剩下的 quality 也被 blocker 一眼看穿。</li>
+<li><strong>Swing vote 阶段试图 hard sell。</strong>反向。问问题、听、incorporate——转化率比 sell 高 10x。</li>
+<li><strong>把 Inner ring 当 echo chamber。</strong>故意在 inner ring 里包含 1 个能 criticize 你的人——否则提案出门前没经过敌意测试。</li>
+<li><strong>Phase 5 试图把 blocker 转成 yes。</strong>过高目标。Blocker → abstain 已是胜利。Blocker → enthusiastic supporter 通常需要 6+ 个月跨项目积累。</li>
+<li><strong>每个 stage 之间没间隔。</strong>Phase 1 早晨发 doc，下午就 Phase 4 all-hands——你 burn 了所有 refine 的机会。每个 stage 至少 3-5 天。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · Coalition 的 ROI 与 backlash 风险</span>
+<p>联盟构建对女性是<strong>双刃</strong>。<strong>ROI 高</strong>：单兵 dissent 女性被打 "abrasive" 标签，coalition 把异议从"个人不满"变"集体判断"——去人格化保护你。<strong>风险高</strong>：女性 build coalition 容易被 tag 为 "cliquish / political"，男性做同样事被认为 "well-networked"。同一行为，不同 label——Williams & Dempsey 在《What Works for Women at Work》详细数据。</p>
+<p>三件具体可做：</p>
+<p><strong>(1) Cross-gender ally 优先。</strong>纯女性 coalition 在男性主导组织里容易被打折扣——混合 coalition 更难被 dismiss。Inner ring 里至少有 1 个 male ally。</p>
+<p><strong>(2) Framing 做成 "we built this"，不是 "I led this"。</strong>女性显式化 collective ownership 能减少 backlash；男性反而需要 individual attribution。讽刺但实证。</p>
+<p><strong>(3) 记录 contribution。</strong>Amplification 协议在 coalition building 里同样关键——Will Larson 在《Staff Engineer》专门提：女性 staff engineer 的 work 经常被 attributed 给 male collaborator，<strong>事后 written record 是唯一防御</strong>。每个 phase 后发一句 "thanks [name] for sharpening X" 的 followup email——既 deposit 又 attribution。</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作</div>
+<p style="font-size:0.95rem;color:#3a2f1c">为你当前最重要的跨部门 push，列出：(a) Inner Ring 1-2 人 (b) Coach 1 人 (c) Swing votes 3-5 人 (d) Blocker 1-2 人。本周完成 Inner Ring 的 first conversation——不要急着进下一阶段。</p>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>信任银行：影响力是日常 deposit 的累积
+<span class="en">The Trust Bank: Influence Is Daily Deposits, Not Crisis Currency</span></h2>
+<span class="tag">Cialdini</span><span class="tag">Adam Grant</span><span class="tag">Reciprocity</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">跨部门影响力<strong>不是事到临头才造的——是日常 deposit 累积的 capital</strong>。当你急需 Platform team 优先时，你已经晚了；真正成功的 cross-functional leader 在不需要任何东西的时候已经 deposit 了 6 个月。这是 Cialdini 的 reciprocity 长期版本。Adam Grant 在《Give and Take》区分三类：<strong>Taker</strong>（只取不给，短期赢长期被孤立）、<strong>Matcher</strong>（精算式互惠，安全但天花板低）、<strong>Giver</strong>（主动给——但要分清楚 self-sacrificing giver 和 strategic "otherish" giver）。Grant 的反直觉发现：长期最成功的是 <strong>strategic Giver</strong>——给得多，但给得<strong>对</strong>。不加 calibrate 的 giving = 被薅羊毛 + burnout。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The rule of reciprocation, in its most fundamental form, requires that one person try to repay, in kind, what another person has provided. By virtue of the reciprocity rule, we are obligated to the future repayment of favors, gifts, invitations, and the like. The web of indebtedness is the very fabric of human society."</span>
+<span class="zh">互惠规则最基本的形式要求一个人尝试以类似方式回报另一个人给予的东西。借由互惠规则，<strong>我们被绑定到未来回报恩惠、礼物、邀请等</strong>。这张相互亏欠的网，正是人类社会的基本结构。</span>
+<span class="source">— Robert Cialdini · Influence: The Psychology of Persuasion（Chapter 2 "Reciprocation"）</span>
+</div>
+<div class="quote">
+<span class="en">"Successful givers aren't just more other-oriented than their peers; they're also more self-interested. Successful givers, it turns out, are just as ambitious as takers and matchers... they have to be 'otherish'—concerned about benefiting others, but also keeping their own interests in the rearview mirror."</span>
+<span class="zh">成功的 giver 不只是比同辈更利他——他们同时<strong>更利己</strong>。成功的 giver 跟 taker、matcher 一样有野心……他们必须是 "otherish"——关心他人利益的同时，也始终把自己的利益放在后视镜里。</span>
+<span class="source">— Adam Grant · Give and Take（2013, Chapter 6 "The Scrooge Shift"）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">视觉化：信任银行 · Deposits & Withdrawals 账本</div>
+<div class="ledger">
+<div class="col deposit">
+<h4>Deposits（存款）· 日常累积</h4>
+<ul>
+<li><strong>5-minute favor：</strong>给 peer 推他/她的 candidate（"send me the resume, I'll chat in 30"）</li>
+<li><strong>Visibility deposit：</strong>在 staff meeting 提别人 work（"X's team's migration is a great example of…"）</li>
+<li><strong>Quiet support：</strong>帮 peer review 一份 doc，不要 credit</li>
+<li><strong>Knowledge deposit：</strong>把你 team 的 learning 写成 1-page memo 分享 broader org</li>
+<li><strong>信息 deposit：</strong>给对方 honest read on 组织风向 / reorg 传言（前提你知道）</li>
+<li><strong>Personal acknowledge：</strong>对方完成 milestone 时主动 thank-you note，cc 对方 manager</li>
+<li><strong>主动 ask for advice：</strong>被求助本身是 personal currency——降低对方 face cost</li>
+</ul>
+</div>
+<div class="col withdraw">
+<h4>Withdrawals（取款）· 在关键时刻</h4>
+<ul>
+<li><strong>紧急资源请求：</strong>需要对方下季度优先排期</li>
+<li><strong>异常 priority 调整：</strong>要 platform 中断 sprint 来解 unblock</li>
+<li><strong>信息 ask：</strong>"私下问，X 那边在 reorg 吗？我们怎么准备？"</li>
+<li><strong>难话题代言：</strong>会议里要对方 back you up on Y</li>
+<li><strong>引荐：</strong>请对方帮你介绍 senior leadership / 引荐 candidate</li>
+<li><strong>Cover：</strong>对方在没你在场的会议里帮你提你的方向</li>
+<li><strong>Honest critique：</strong>请对方告诉你你的 blind spot——这也是 withdraw</li>
+</ul>
+</div>
+</div>
+<p class="ratio-note">→ 健康账户的比例：每个对手账户 <strong>5–7 deposits ：1 withdrawal</strong>。低于 3:1 = 你在透支。</p>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：1 年的 deposits vs zero balance withdrawal</div>
+<div class="scene">
+<div class="setup">下季度你需要 Platform Director 的 favor——让他们中断 sprint 帮你 unblock。两种历史：</div>
+<div class="dialog bad">
+<div class="speaker">差版本（Zero balance · 临时 withdraw）</div>
+<p>过去 1 年你和 Platform Director 几乎没 interaction。突然一封邮件："Director，下季度我们需要你们优先支持 Project X，能帮忙吗？"<br><br>
+他："我们 Q3 fully booked，sorry。"<br>
+你："VP 已经 sign off。"<br>
+他："那 VP 跟我说吧。"</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 失败原因：Zero balance 时 withdraw = 不仅得不到，还透支——他记你"只有 ask 没 give"。下次你的任何请求都先 discount。这是<strong>account 负数</strong>。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">好版本（1 年 deposits 累积）</div>
+<p><strong>M1：</strong>Platform 在招 staff engineer。你主动 refer 一个候选人——5-minute favor，cost 低，他记得。<br><br>
+<strong>M3：</strong>他们做了一个 internal tool。你在 staff meeting 主动 highlight："X's team's tool saved my team 2 sprints。"（<strong>visibility deposit</strong>）<br><br>
+<strong>M5：</strong>Q2 reorg 传言时你私下给他 honest read："我听到 VP 在重新看 platform 投资，可能值得提前 brief 一下你们的 ROI 数据。"（<strong>信息 deposit</strong>）<br><br>
+<strong>M7：</strong>你帮他们 review 一份 RFC，给 3 个 substantive comment，不要 credit。（<strong>quiet support</strong>）<br><br>
+<strong>M9：</strong>他们一次 outage 后做 postmortem。你公开 thread 里 send a note："你们的 response 很 disciplined，learnings 我会分享给我们 team。"（<strong>normalize blameless culture · personal currency</strong>）<br><br>
+<strong>M12（withdrawal）：</strong>"Director，下季度我们需要你们优先支持 Project X——这里有 1-page brief、impact data、和我们能 reciprocate 的方案。我知道是 ask，所以提前 3 周来谈。"<br><br>
+他："Let me see what we can do. Send me the brief, I'll discuss with my staff."</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 同样 ask、不同 balance、不同结果。哪怕最后他/她只能给 70%——双方关系仍 net positive，下次 withdraw 还能用。<strong>关键：12 个月 deposits 没有一次是"为了这次 withdrawal"——都是 standalone 的 substantive deposit。Strategic giving 的 craft 就在这里。</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">信任银行的检查表</div>
+<ul class="checklist">
+<li><strong>每月 review：</strong>这个月我给 cross-functional peer 做了几件 deposit？低于 3 件 = warning sign。</li>
+<li><strong>5-minute favor 慷慨给，5-hour favor 谨慎给。</strong>Grant 的 rule——前者 ROI 极高且无 burnout 风险，后者必须 strategic 选择。</li>
+<li><strong>Deposit 要 substantive，不是 performative。</strong>群发一句"great job"是 noise；具体提对方 work 是 deposit。</li>
+<li><strong>不要 keep score 到 obvious。</strong>Matcher 的 transactional 感对方 detect 得到——strategic giver 的 craft 是"看似不算计但 ledger 实际清晰"。</li>
+<li><strong>Withdraw 时显式承认 balance。</strong>"I know I'm asking a lot, here's what I can reciprocate" 比 "你该帮我" trust 高 5x。</li>
+<li><strong>Deposit 在 different levels：</strong>peer / 下属 / 上级 / cross-org senior。下属今天可能是明天的 peer——not deposit on hierarchy 是常见 mistake。</li>
+<li><strong>Burnout 信号：</strong>你 give 多过 3 个月没人 give back = 重新 calibrate 或离开此关系。Selfless giver 直接破产。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>Quid pro quo 太明显。</strong>"我帮你 X 你要帮我 Y" 直接 transactional——trust 反而下降，对方感觉被 buy。</li>
+<li><strong>Withdraw 太早。</strong>关系还没 deposit 就 ask——对方 default 认为 you're a taker。新加入跨部门 collaboration 至少先 3 个 deposit 再 withdraw。</li>
+<li><strong>Withdraw 太频繁。</strong>balance 没回正就 ask 第二次——对方开始 avoid 你的 calendar invite。</li>
+<li><strong>Selfless giver 陷阱。</strong>Grant 反复警告：纯利他 giver 在 success ladder 底端——给到自己 burnout 既损失自己又长期减少能给的总量。"Otherish" 才是 sustainable。</li>
+<li><strong>Deposit 用 visible only。</strong>不只在 staff meeting 高调赞美——quiet support（背后帮人 review、不要 credit）的 trust ROI 反而更高。Visible + invisible 都要做。</li>
+<li><strong>用 deposit 隐式 expect specific reciprocation。</strong>真 deposit 是不期待特定回报的——回报由账户决定不由具体交易。你越期待具体回报，就越接近 matcher 而非 giver。</li>
+<li><strong>透支 visible deposits 给陌生人。</strong>资源稀缺时优先 invest 已有信任的关系——cold network 是 long tail，不是 cap table。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 看不见的 deposit、Withdraw 的 likability tax</span>
+<p>女性在 deposit / withdrawal 上有明显非对称 cost：(1) <strong>"看不见的 deposit"不计入账户</strong>——女性更多做 invisible support（情感支持、coordination、glue work），但组织按 visible output 评估贡献。Tanya Reilly 在《The Staff Engineer's Path》专门讨论 "glue work" 陷阱：必要但 underrewarded 的工作系统性落在女性身上；(2) <strong>Withdraw 时 likability cost 更高</strong>——同样 ask "I need X next quarter"，女性更易被读作 "demanding"，男性被读作 "assertive"。同一 phrasing，不同 cost。</p>
+<p>三件具体可做：</p>
+<p><strong>(1) Deposit 必须包含 visible 一部分。</strong>例：staff meeting 里 amplify peer's work、written postmortem 里给 credit、quarterly memo 列你的跨部门贡献——不是吹嘘，是<strong>抵消 invisible work 的 invisible-ness</strong>。</p>
+<p><strong>(2) Withdraw 时 explicit frame for impact。</strong>"This unblocks X for the customer / company" 比 "我需要" 触发的 likability tax 低。把 ask 从个人需求 reframe 成组织需求。</p>
+<p><strong>(3) Refuse glue work without backlash。</strong>Lara Hogan 推荐的话术："Great suggestion. I'm at capacity, but [X] would be excellent for this scope—they're looking for exactly this kind of opportunity." 同时拒绝 + 把机会变成 visibility deposit 给别人。一举两得。</p>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作</div>
+<p style="font-size:0.95rem;color:#3a2f1c">两个动作：(1) 这周做 3 件 5-minute favor / deposit——具体 named action（refer candidate / amplify peer's work / quiet review）。不期待 specific return。(2) 给自己列一张过去 12 个月的 ledger：最多 deposit 你的 3 个 peer 是谁？最多 withdraw 你的 3 个是谁？balance 严重不正的关系本月修复一项。</p>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>深入资源 · Further Reading</h3>
+<ul>
+<li><strong>Allan R. Cohen & David L. Bradford · Influence Without Authority</strong>（2nd ed, 2005）— 影响货币模型的核心著作。Chapter 2-3 给完整 currency framework + 诊断工具。本周 Card 1 直接源头。</li>
+<li><strong>Robert Cialdini · Influence: The Psychology of Persuasion</strong>（1984；revised expanded edition 2021）— 六大说服原则（reciprocity / liking / social proof / authority / commitment / scarcity）。Chapter 2 是跨部门 reciprocity 的实证 baseline。</li>
+<li><strong>Adam Grant · Give and Take</strong>（2013）— Giver vs Taker vs Matcher 的实证 + "otherish" strategic giving 的边界。Chapter 6 关于 boundaries 必读。</li>
+<li><strong>Will Larson · Staff Engineer: Leadership Beyond the Management Track</strong>（2021）— "Working with Peers"、"Building a Personal Network"、"Build a Product Mind" 章节直接 actionable。开源版可在 staffeng.com 阅读。</li>
+<li><strong>Tanya Reilly · The Staff Engineer's Path</strong>（2022）— "Big-Picture Thinking" 和 "Project Lifecycle" 讲影响超出团队边界，"Glue Work" 章节是 invisible labor 经典。</li>
+<li><strong>Camille Fournier · The Manager's Path</strong>（2017）— Chapter 5 含 cross-team influence；Chapter 7 "Managing Multiple Teams" 是 lateral influence 的标准 reference。</li>
+<li><strong>Lara Hogan · Resilient Management</strong>（2019）— 实操脚本：stakeholder 管理、glue work refusal、boundary 话术，特别针对女性 manager 的 dual-bind 提供具体 phrasing。</li>
+<li><strong>Aubrey Mendelow · "Stakeholder Mapping"</strong>（Kent State 1991 paper）& Johnson / Scholes / Whittington · Exploring Strategy — Power × Interest 矩阵源头，Chapter 4 "Stakeholders and Governance"。</li>
+<li><strong>Chip & Dan Heath · Switch</strong>（2010）— "Find the Bright Spots"、"Rally the Herd" 章节直接对应联盟构建。</li>
+<li><strong>Joan C. Williams & Rachel Dempsey · What Works for Women at Work</strong> — 四类性别 bias 的实证 + 应对 script。"Office housework"、"prove-it-again"、"tightrope" 等概念的实证 base。</li>
+<li><strong>Chris Voss · Never Split the Difference</strong>（2016）— FBI 谈判技巧应用到 cross-functional 议价：tactical empathy、calibrated questions、accusation audit。</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · Open Questions</h3>
+
+<details>
+<summary>把人际互动结构化成 "currency exchange" 是否 dehumanize？这是不是把同事变成手段？</summary>
+<div>这是 Cohen & Bradford 模型最常被攻击的点——它把人简化成"想要什么的人"。但仔细看，<strong>currency 框架反向是更尊重对方</strong>。默认模式（"我请求你帮我，因为我们是同事"）实际上把对方当成<strong>应该为你付出的资源</strong>——你预设了 obligation。Currency 模型反过来承认：对方不欠你任何东西，他/她有自己的目标、压力、稀缺资源；如果你想要他/她的精力，应当 substantively offer something they value 而不是 trade on goodwill。这其实是 Kant 的 "treat humans as ends not means" 的实操化——把对方的 utility function 当真，而不是假设对方应该 prioritize 你的。dehumanize 的反而是 inspirational-only 模式："this is for the company" 把对方当成应该自我牺牲的 ideology bearer。所以真正的边界不在于"用不用 currency 思考"——而在于 (a) 你给的 currency 是不是真的对方需要 vs 你方便给；(b) 你是不是把这种思考方式 disclose 到对方层面（"I want to make this a fair exchange because I value the relationship"）；(c) 你是不是同时也 give without expecting return（strategic giver 的 baseline）。三个条件满足，currency 框架反而比 "请帮我" 更尊重对方 agency。</div>
+</details>
+
+<details>
+<summary>没 formal authority 的环境下，长期最有影响力的人是什么类型？</summary>
+<div>长期看是<strong>三个特质叠加的人</strong>：(1) <strong>稀缺但 generous 的专业判断</strong>——别人来 ask 时给真实有价值的 take，不是 hedged 的 corporate-speak。这让你成为 "go-to" person，他人 default 想到你；(2) <strong>稳定的 deposit 行为 + 不轻易 withdraw</strong>——账户大、但取得少。这造成的现象是 "everyone owes them but nobody feels burdened"——对方乐意 reciprocate 因为他们记得多次被 help 过；(3) <strong>结构化的 information broker</strong>——你跨多个 silo，能在 A team 和 B team 之间 translate 意图、surfac 误解、提前 flag 冲突。这种角色 Adam Grant 在《Originals》和 Tanya Reilly 的 glue work 都有提——是组织里 invisible 但 critical 的 connective tissue。注意一个 anti-pattern：很多人误以为"有影响力 = 大 network"——其实是<strong>高质量小 network</strong>。Larson 在《Staff Engineer》数据：staff+ 工程师的 effective network 通常是 15-30 人，不是 200 人。深度 deposit 的 ROI 远高于浅度 networking。最后一个 counterintuitive 点：长期影响力最高的人往往 visible 程度不是最高的——他们让 visible attribution 给别人，自己保持 "trusted advisor" 位置。这是 Adam Grant 区分 "successful giver" 和 "performative giver" 的核心。</div>
+</details>
+
+<details>
+<summary>东亚组织 / 国内大厂里，currency exchange 模型怎么适配？关系（guanxi）是不是覆盖一切？</summary>
+<div>显著差异但不是 dichotomy。东亚 high-context + face-driven + 长期主义 的文化让 currency exchange 的形态不同，但 underlying mechanism 一致。具体差异：(1) <strong>Relationship currency 在东亚组织权重高很多</strong>——西方组织里你可以靠 task + position currency 推进，东亚组织里 relationship currency 是 prerequisite，没它别的 currency 都贬值。这就是 guanxi 现象——但 guanxi 不是 magic，本质是<strong>长期 deposit + 共同 face investment</strong>；(2) <strong>Explicit transaction 反而失效</strong>——西方组织里说 "let's do an exchange" 是 mature，东亚组织里 explicit 提交换显得 transactional 和 disrespect。Currency 仍交换，但 framing 必须 implicit："我们一起把事情做好" 而不是 "我帮你 X 你帮我 Y"；(3) <strong>Position currency 的形态不同</strong>——西方组织 visibility 直接 → 晋升 / external recognition；东亚组织 visibility 必须经过 "给 boss face" 中介——你不能直接 highlight 同事的 work，要让对方的 boss 看到；(4) <strong>时间维度不同</strong>——东亚组织的 reciprocity time horizon 长（年级别），西方组织相对短（月级别）。这意味着东亚组织里早期 deposit 不会立即回报，但累积价值更高、更 durable。Sun Tzu 和韩非的 framework 在这里比 Bezos 直接相关。读《孙子兵法》"伐交"篇 + 韩非"内储说"对东亚组织 lateral influence 比读 Cohen & Bradford 直接。但<strong>不要把"东亚文化"当不需要 substantive exchange 的借口</strong>——任正非、张一鸣 都在公开讲他们厌恶的是 "只关系不业绩" 的人。Substantive currency 跨文化都成立，只是 phrasing 和节奏不同。</div>
+</details>
+
+<details>
+<summary>远程 / 混合工作让 "信任 deposit" 更难还是更容易？怎么 deposit 在异步环境？</summary>
+<div>结论：<strong>更难，但可以系统化补偿</strong>。远程环境减少了 incidental deposit 的机会——办公室里的 "随手 review 一个 doc"、"咖啡时 unsolicited advice"、"看到对方 stressed 时一句 check-in" 这些占了传统 deposit 的 40%+。Microsoft 2021 的内部研究（New Future of Work Report）数据：远程后跨团队 collaboration network 显著 sparser，cross-silo tie 明显减少——这正是 lateral influence 的载体。但远程也带来新型 deposit：(1) <strong>Async written deposit ROI 高</strong>——一份 thoughtful 1-page memo 共享给 cross-org，比办公室口头评论 reach 更广、durability 更长。Will Larson 反复强调 "write things down" 是 distributed lateral influence 的核心；(2) <strong>Public Slack channel 的 visibility 比 hallway 高</strong>——在 #general 帮 peer 解一个技术问题，是 5-minute deposit + visible to 200 人；(3) <strong>1:1 video calls 比 hallway 更 intentional</strong>——但因为 intentional，深度 deposit（如 "你最近怎么样"）反而需要主动安排。三个 deliberate 动作：(a) <strong>Calendar block "office hour"</strong>——每周 30 分钟 open Zoom，cross-team 任何人可以 drop in；(b) <strong>Async deposit 习惯</strong>——读到对 peer 有用的 article / paper / RFC，直接 DM 一句"this made me think of your X work"——5 秒成本，long memory；(c) <strong>Periodic 1:1 outside team</strong>——每月跟 2 个 cross-org peer 30 分钟 random 1:1，无 agenda。Sustained 6 个月后你会发现 lateral influence 跟 in-office 时代相当甚至更高——但需要 deliberate scaffolding 替代 incidental。</div>
+</details>
+
+<details>
+<summary>怎么区分 "strategic giver / influencer" 和 "manipulative networker / political operator"？外观相似，本质不同。</summary>
+<div>这是 Adam Grant 在《Give and Take》和《Originals》反复处理的核心 question。外观相似——两者都 deposit、都 build network、都 reciprocity-aware。区分的几条 acid test：(1) <strong>Deposit 在<strong>关系开始时</strong>已经是无条件的吗？</strong>Strategic giver 在还没看到 potential return 时就 deposit（推荐 candidate 给完全 unfamiliar 的 team），manipulative networker 只 deposit 给"对自己有用"的关系——可以通过他们对 lower-status 的人态度看出来。被 manipulative networker 当 "useful" 的人，3 个月后失去 status，立刻被 dropped；(2) <strong>Withdraw 时是否 explicit acknowledge balance？</strong>Strategic giver 显式说 "I know I'm asking a lot here"，manipulative networker 把 withdraw 包装成"为团队/公司好"，回避自己 ask 的事实；(3) <strong>对自己<strong>不利</strong>的真话说不说？</strong>Strategic giver 即使对自己 reputation 不利也会 honestly disagree（Card 1 的 substantive critique），manipulative networker 永远 align with 当下的 power——这是最锐利的 acid test，因为 manipulator 没法 fake 长期 honest dissent；(4) <strong>Deposit invisible 部分占比多大？</strong>纯 visible deposit（公开 highlight、staff meeting acknowledgment）有可能是 performative。Strategic giver 的 ledger 里 invisible deposit 占 30-50%（背后 review、不要 credit 的帮忙）——这部分骗不了对方，因为对方知道你没收益还在做。一个补充观察：组织里能<strong>识别</strong>这种区分的人也是稀缺技能——很多 senior leader 自己 hover 在 borderline，所以也不能 reliably 区分别人。这就是为什么有些 manipulator 在组织里能持续上升——直到遇到一个 self-aware giver 系统性识破。Robert Greene 在《48 Laws of Power》和《Cunning of History》给的工具偏向 manipulator 视角；Grant 给的工具偏向 long-term integrity 视角。<strong>选哪个工具箱反映你想成为哪种人，也决定 5-10 年后跟你 long-term coalition 的人质量。</strong></div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Week 8 Action</h3>
+<p>本周做三件事，<strong>必须做完</strong>：</p>
+<div class="action">
+<strong>(1) Stakeholder map（30 分钟）。</strong>为你当前最重要跨部门项目画一张 Power × Interest map（spreadsheet 即可）。列每个 stakeholder 的 Power（H/L）、Interest（H/L）、Archetype（Sponsor/Coach/Skeptic/Blocker/Fence-sitter）、本周该 invest 什么。<br><br>
+<strong>(2) Currency 对话（90 分钟）。</strong>列你最重要的 1 个跨部门 ask。诊断对方最缺的货币、列你能 offer 的 3 种 specific 货币。本周内跟对方约 30 分钟 face-to-face/video 实际跑一遍 currency exchange——不是 inspiration only，是 substantive trade。<br><br>
+<strong>(3) Coalition sequencing（5 分钟规划 + Week 1 执行）。</strong>为另一个跨部门 push 列出 Inner Ring 1-2 人 / Coach 1 人 / Swing votes 3-5 人 / Blocker 1-2 人。本周完成 Inner Ring 的 first conversation——拒绝先攻 blocker 的冲动。<br><br>
+<strong>反思题：</strong>回看过去 12 个月你最痛苦的一次跨部门失败。如果重来，在 Card 1-4 的哪个原则上你最该改？是没 diagnose 对方货币？没画 map？联盟顺序错？还是 zero balance withdraw？把 root cause 写下来——不写不会改。pattern 不写，就会 repeat。</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 08 · 2026.05.27</footer>
+</div>
+</body>
+</html>
