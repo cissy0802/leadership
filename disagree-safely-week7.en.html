@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 7: The Art of Disagreement</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 07 · 2026.07.01</div>
+<h1>The Art of Disagreement: Push Back Without Getting Pushed Out</h1>
+<div class="meta"><span>Topic: Disagreeing Safely</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"The persuader who can avoid brushing the ruler's reverse scale has nearly arrived." — Han Feizi, "The Difficulties of Persuasion"</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> The biggest blind spot for technical people is treating "being right" and "being heard" as the same thing — they are two different skills. The organization won't reward you just for being correct; it often punishes the person who points out the problem. <strong>The art of disagreement is not about swallowing your objections, nor about fighting to the death — it's about making your dissent both improve the decision and preserve your political capital.</strong> Four tools this week: use Sun Tzu and the Stoics to filter "is this battle worth fighting"; use 7 safe phrasings to translate "you're wrong" into something the other side can actually hear; walk the escalation ladder one rung at a time, never skipping; and finally — you'll lose most disagreements — close with grace via Disagree and Commit. Honestly: silence has a cost (Kim Scott calls it "ruinous empathy"), and so does charging in head-on. We flag the price at every tier.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Is This Battle Worth Fighting: The Pre-Dissent Filter
+<span class="en">Pick your battles before you open your mouth</span></h2>
+<span class="tag">Pick battles</span><span class="tag">Control / no control</span><span class="tag">Reversibility</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">Not every disagreement is worth voicing. Run two filters first: is this <strong>reversible</strong> (can it be undone if wrong)? Is my objection built on a <strong>real information edge</strong>, or just preference? Fire at full force only in the "irreversible + you're confident" cell; downgrade the rest — your dissent budget is finite.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"The victorious army wins first and then seeks battle; the defeated army fights first and then seeks to win."</span>
+<span class="zh">Same with dissent: stack your information and allies off the field first — don't walk in naked and gamble on the moment.</span>
+<span class="source">— Sun Tzu, The Art of War (Disposition)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Decision Filter Matrix: Reversibility × Your Conviction</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<text x="195" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#5c3a18" font-family="Georgia">Reversible · two-way door</text>
+<text x="510" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#5c3a18" font-family="Georgia">Irreversible · one-way door</text>
+<rect x="45" y="45" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="45" width="300" height="105" rx="6" fill="#fdeee2" stroke="#b85c3a" stroke-width="2.5"/>
+<rect x="45" y="165" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#c4a878" stroke-width="2"/>
+<rect x="360" y="165" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="22" y="100" text-anchor="middle" font-size="12" fill="#8a6d3b" font-family="Georgia" transform="rotate(-90 22 100)">High conviction</text>
+<text x="22" y="220" text-anchor="middle" font-size="12" fill="#8a6d3b" font-family="Georgia" transform="rotate(-90 22 220)">Low conviction</text>
+<text x="195" y="92" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">Mention once,</text>
+<text x="195" y="114" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">then commit</text>
+<text x="510" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#a04020" font-family="Georgia">Fight hard,</text>
+<text x="510" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#a04020" font-family="Georgia">escalate if needed ↑</text>
+<text x="195" y="223" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">Let it run, just observe</text>
+<text x="510" y="213" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">Ask, add info —</text>
+<text x="510" y="235" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">don't oppose yet</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: In an architecture review your boss commits to a tech choice you think carries long-term risk but is fully reversible (say, a particular message queue).</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>You fire off three objections on the spot and drag the meeting out 20 minutes. The boss decides anyway, and you get tagged as "argues about everything." Then, when the truly irreversible battle arrives, your voice has already been discounted.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>You judge: this is <strong>reversible</strong> (if it's bad we can swap it in six months) and your conviction is medium. So you say one thing for the record: "I support shipping first. My only reservation is X may bottleneck at peak — I'll note it in the doc, and <strong>if P99 crosses the line within three months, we revisit.</strong>" Then let it pass. Save the firepower for the real one-way door.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Ask Yourself Before Speaking</div>
+<ul class="checklist">
+<li>Is this decision reversible? Is the cost of undoing it days, or quarters?</li>
+<li>Is my objection based on a real information edge, or just "my preference / my turf"?</li>
+<li>If I stay quiet this time, what's the worst case? Can I live with it?</li>
+<li>How much "dissent budget" have I already spent elsewhere this week? (it's finite)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Objecting to everything.</strong> Wearing "critical thinking" as an identity and weighing in on every decision — so no one listens when it actually matters.</li>
+<li><strong>Burning capital on reversible calls.</strong> Bleed yourself dry over a choice you could roll back, and your budget is empty when the real one-way door arrives.</li>
+<li><strong>Equating "not adopted" with "not respected."</strong> The Stoic line: you control the quality of your argument, not the other person's decision. Confuse the two and you'll burn out over every loss.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Seven Safe Phrasings: Turning "You're Wrong" into "Let's Think Together"
+<span class="en">Lock the conflict on the task, never on the person</span></h2>
+<span class="tag">Phrasing</span><span class="tag">Task vs. relationship conflict</span><span class="tag">Confident humility</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">The <strong>content</strong> of a disagreement and its <strong>phrasing</strong> are two different things. The same objection, phrased differently, lands as "help me get this right" or "you're attacking me." The key is to lock the conflict on the <strong>task</strong> (task conflict) and never let it slide to the <strong>person</strong> (relationship conflict) — the former improves decisions, the latter destroys relationships.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Confident humility is having faith in your capability while appreciating that you may not have the right solution—or even be addressing the right problem."</span>
+<span class="zh">In practice: argue as if you're right, and listen as if you're wrong.</span>
+<span class="source">— Adam Grant, Think Again (2021)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Replace Your Objection Library</div>
+<div class="scene">
+<div class="setup">Situation: a peer proposes a design in a doc that you think buries technical debt.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The line that triggers defense</div>
+<p>"This design has problems — you didn't consider scalability, we can't do this."<br>— Aimed at the person ("you didn't") + a verdict + a dead end. Their first instinct is to protect their ego, not solve the problem.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Seven safe phrasings (combine 2–3)</div>
+<p>1. <strong>Open with curiosity:</strong> "Help me understand — how does this scale at 10× traffic?" (not "this won't scale")<br>
+2. <strong>Hang the objection on risk/data, not the person:</strong> "What worries me is write amplification, not your approach."<br>
+3. <strong>Real affirmation + pivot</strong> (not the sandwich trick): "I agree we need to ship fast; <strong>because</strong> it's fast, I worry this debt bites back in three months."<br>
+4. <strong>"I see" instead of "you missed":</strong> "I see a risk here…" rather than "you missed…"<br>
+5. <strong>Bring options, don't just negate:</strong> "I see two paths: A is fast but indebted, B is slower but stable. I lean B — what do you think?"<br>
+6. <strong>Make their final call explicit:</strong> "You decide in the end, and I'll support it; but before you do, I need you to hear this concern."<br>
+7. <strong>Set a falsifiable exit condition:</strong> "If X doesn't show up within three weeks, then I was just being paranoid."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Before You Hit Send</div>
+<ul class="checklist">
+<li>Does this line have "you + a negative verb" (you didn't / you missed / you're wrong)? → Change it to "I see / I'm worried."</li>
+<li>Did I hang the objection on a specific thing/data, or on the person and a blanket rejection of the design?</li>
+<li>Did I leave them a graceful out (final say, a falsifiable exit condition)?</li>
+<li>If they forwarded this line verbatim to their boss, would I be embarrassed?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>The sandwich trick.</strong> "You're great, but this design fails, anyway you're a lovely person" — they only remember the negative filling, and think you're insincere.</li>
+<li><strong>So soft they don't hear the objection.</strong> Safe ≠ vague. Grant's "confident humility" needs both words: listen humbly, speak confidently.</li>
+<li><strong>Escalating task conflict into relationship conflict.</strong> The moment you say "you always…", you've slid from task to person, and there's no way back.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research (e.g., Kieran Snyder's analysis of performance reviews) shows women voicing the same objection are more readily tagged "abrasive," while men saying the same thing are read as "having a strong point of view." This is the double bind: too soft and no one listens, too hard and you're penalized on likability. The fix isn't being softer, it's being more <strong>structured</strong> — hang the objection explicitly on a shared goal and data ("for our SLA this quarter, I have to flag…"), so its legitimacy comes from the goal, not your tone. And cut self-softening prefixes like "this may be a dumb question…" — they only weaken your signal.
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Escalation Ladder: One Rung at a Time, Never Skip
+<span class="en">Each rung up, cost and irreversibility jump</span></h2>
+<span class="tag">Escalation path</span><span class="tag">Han Feizi</span><span class="tag">Reverse scale</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">Disagreement has tiers. Skipping — going over your boss's head straight to theirs, or opening with a public fight — is political suicide. <strong>Each rung up, cost and irreversibility jump; finish the low-cost rungs first.</strong> Han Feizi: the difficulty of persuasion lies in "knowing the mind of the one you persuade" — figuring out what they're really protecting.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"The dragon can be tamed and ridden; yet beneath its throat are reverse scales a foot across — touch them and it will surely kill you. A ruler, too, has reverse scales. The persuader who avoids brushing them has nearly arrived."</span>
+<span class="zh">Making your boss lose face in public is exactly "brushing the reverse scale."</span>
+<span class="source">— Han Feizi, "The Difficulties of Persuasion"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Dissent Escalation Ladder (low cost to high)</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 330" xmlns="http://www.w3.org/2000/svg">
+<text x="18" y="175" text-anchor="middle" font-size="12" fill="#8a6d3b" font-family="Georgia" transform="rotate(-90 18 175)">Cost · irreversibility ↑</text>
+<rect x="55" y="262" width="300" height="46" rx="5" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="95" y="208" width="330" height="46" rx="5" fill="#eef0e0" stroke="#7a9a3a" stroke-width="2"/>
+<rect x="135" y="154" width="360" height="46" rx="5" fill="#f3ecd2" stroke="#a8702d" stroke-width="2"/>
+<rect x="175" y="100" width="390" height="46" rx="5" fill="#f8e2d0" stroke="#c47040" stroke-width="2"/>
+<rect x="215" y="46" width="410" height="46" rx="5" fill="#f5d6c6" stroke="#b85c3a" stroke-width="2.5"/>
+<text x="70" y="290" font-size="13" fill="#2a3a18" font-family="Georgia">① Private 1:1, verbal</text>
+<text x="110" y="236" font-size="13" fill="#2a3a18" font-family="Georgia">② Put it in writing (email / doc)</text>
+<text x="150" y="182" font-size="13" fill="#3a2f1c" font-family="Georgia">③ Raise in a small room (with allies)</text>
+<text x="190" y="128" font-size="13" fill="#5a3818" font-family="Georgia">④ Formal dissent, on the record</text>
+<text x="230" y="74" font-size="13" font-weight="700" fill="#a04020" font-family="Georgia">⑤ Skip-level / HR (nuclear · burns bridges)</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: your director pushes a reorg that splits your team across two managers; you think it will wreck delivery.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Skipping rungs (brushing the scale)</div>
+<p>In the all-hands Q&amp;A you publicly challenge the director: "This reorg has no data behind it and will destroy the team." — You make him lose face in public, get branded a "troublemaker," and the reorg proceeds anyway.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Walk the ladder</div>
+<p><strong>Rung ①:</strong> Book a 1:1 with the director first — "I want to understand the goal behind the reorg, which metric is it for?" (first read what he cares about = knowing his mind)<br>
+<strong>Rung ②:</strong> Afterward send a one-pager listing delivery risks + two alternative splits, <strong>cc'd to him alone</strong>.<br>
+<strong>Rung ③:</strong> Bring another affected manager; the three of you raise it in a small meeting (allies &gt; flying solo).<br>
+In most cases the first three rungs already get you "heard" with no bridges burned. Only if all of that is ignored and the outcome is irreversible do you consider Rung ④, the formal record.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Which rung am I on now? Did I skip a lower-cost one?</li>
+<li>Have I figured out their "reverse scale" — what is this decision really protecting (face? a KPI promised upward)?</li>
+<li>Do I have allies, or am I flying solo? (the solo dissenter is easiest to isolate and label)</li>
+<li>If I go to the top rung (skip-level / record), do I accept the "almost certainly burns bridges" cost?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Leaping to the top.</strong> Bottling it up until you can't take it, then erupting in public or going over their head — turning a low-cost fix into a nuclear war.</li>
+<li><strong>Correcting your boss in public.</strong> Even if you're right, a public slap = brushing the reverse scale; their defensive instinct overrides the logic.</li>
+<li><strong>Skipping level with no room to retreat.</strong> Before skipping, make sure you gave your direct boss a chance to correct course — otherwise you didn't skip a level, you skipped their trust.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>After You Lose: Disagree and Commit, Close With Grace
+<span class="en">Delete "I told you so" from your vocabulary</span></h2>
+<span class="tag">Disagree and commit</span><span class="tag">Control / no control</span><span class="tag">No "I told you so"</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">You'll lose most disagreements — the call was never yours to make. <strong>How you lose decides whether you still have a voice next time.</strong> After voicing your reservation, execute at full force (disagree and commit); delete "I told you so" from your vocabulary. Epictetus's line: you can't control others' decisions, but you fully control how you execute and how you keep emotion from poisoning your reputation.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"If you have conviction on a particular direction even though there's no consensus, it's helpful to say, 'I know we disagree on this but will you gamble with me on it? Disagree and commit?' ... I disagree and commit all the time."</span>
+<span class="zh">Voice the disagreement, then back it fully — the commit is not lip service.</span>
+<span class="source">— Jeff Bezos, 2016 Amazon Shareholder Letter</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: the call is made, in a direction against your clear advice. The team is watching your reaction.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Passive-aggressive</div>
+<p>"Fine, I said my piece, don't blame me later." + half-hearted execution, quietly waiting for it to fail so you're proven right. — The team sees all of it; you won the argument and lost the trust.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Close with grace (three steps)</div>
+<p><strong>To the team (publicly):</strong> "The direction is set. I voiced my reservation earlier — that was my job; now that it's decided, I'm 100% behind it — let's make it work."<br>
+<strong>To yourself (privately):</strong> File your concern in a doc — not for "I told you so," but to debrief fast if it goes wrong and to pull the alarm the moment the exit condition trips.<br>
+<strong>When the risk actually trips (back at the table):</strong> "The exit condition we agreed on just tripped — P99 over the line for three straight weeks. I'm not here to relitigate, I'm here to revisit as planned."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: After You Lose</div>
+<ul class="checklist">
+<li>Am I genuinely committing, or committing in words while slacking in action? The team can tell.</li>
+<li>Did I swallow "I told you so"? (the moment it leaves your mouth, political capital −1)</li>
+<li>Can I separate "my proposal lost" from "I as a person was rejected"? (the Stoic line)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Passive-aggressive execution.</strong> Commit on the surface, drag your feet and talk it down underneath, waiting for it to fail. The most trust-corroding move — and the boss always sees it.</li>
+<li><strong>Relitigating a settled decision.</strong> Still dredging up old arguments in every meeting = sliding from "has conviction" to "won't let go."</li>
+<li><strong>Using the exit condition as "I told you so" ammo.</strong> It's a tool for timely course-correction, not evidence for taking credit after the fact.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women bear extra labeling risk "after the loss": persisting on a disagreement reads as "difficult / not a team player," and showing disappointment afterward is more readily attributed to being "emotional," while a man's identical reaction often reads as "caring with ownership." The fix: make the commit <strong>visible and explicit</strong> — a public "it's decided, I fully support it" actively dismantles the "she's still sulking" assumption; and pin concerns to data-based exit conditions, so any future "revisit" stands on an objective trigger line, not your "feeling."
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>Further Reading</h3>
+<ul>
+<li><strong>Adam Grant · Think Again</strong> — confident humility; task vs. relationship conflict.</li>
+<li><strong>Adam Grant · Originals</strong> — how to speak up safely; agreeable vs. disagreeable givers.</li>
+<li><strong>Amy Edmondson · The Fearless Organization</strong> — psychological safety: "safe ≠ nice."</li>
+<li><strong>Kim Scott · Radical Candor</strong> — Challenge Directly and the cost of "ruinous empathy."</li>
+<li><strong>Charlan Nemeth · In Defense of Troublemakers</strong> — the empirical case that dissent improves group decisions.</li>
+<li><strong>Han Feizi · "The Difficulties of Persuasion"</strong> — "knowing the mind you persuade" and the reverse scale: an Eastern theory of managing-up risk.</li>
+<li><strong>Sun Tzu · The Art of War (Disposition)</strong> — "win first, then seek battle"; choosing which fights to fight.</li>
+<li><strong>Epictetus · Enchiridion</strong> — the control / no-control dichotomy.</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Open Questions</h3>
+
+<details>
+<summary>Can "disagreeing safely" slide into "disagreeing limply," where nothing actually changes?</summary>
+<div>The boundary: safety is about <strong>phrasing and path</strong>, not about the strength of your stance. "Confident humility" asks you to hold your position firmly while staying humble in posture. The real failure mode isn't being too safe — it's using "safe" as an excuse to avoid conflict (ruinous empathy). A self-check: in the past six months, did you pay a short-term price at least once for sticking to a disagreement? If never, you're probably avoiding, not "being safe."</div>
+</details>
+
+<details>
+<summary>When does disagree-and-commit cross the line into complicity with a wrong or even unethical decision?</summary>
+<div>Commit presumes "the decision is within legal, compliant, ethical bounds — only the judgment differs." When it touches a safety red line, fraud, harm to users, or law-breaking, disagree-and-commit doesn't apply — you use the top rung of the ladder, up to external whistleblowing. "I was just following orders" (the Eichmann defense) doesn't hold ethically. The key is distinguishing "I disagree but can accept it" from "I disagree and cannot take part."</div>
+</details>
+
+<details>
+<summary>In high-context, face-conscious East Asian organizations, how do the "7 phrasings" and the ladder adapt?</summary>
+<div>In high-context cultures, Rung ① (private, indirect, via a third party) carries far more weight than in the West, and public dissent costs far more — brushing the "reverse scale" is nearly fatal. A written record (Rung ④) in relationship-oriented orgs can read as "distrust, building a case," and may hurt the relationship. Adapt: stretch the lower rungs longer and softer, use private channels and intermediaries, go light on formal records. Han Feizi's "Difficulties of Persuasion" already weighs reading the other person over speaking your mind.</div>
+</details>
+
+<details>
+<summary>Is a personal "dissent budget" real, or just cowardice dressed up as "saving the budget"?</summary>
+<div>The budget is real — every objection spends a little of the other person's trust and patience; but it's also easily abused as an excuse for timidity. The distinguishing test is in the retrospective: did the budget you "saved" actually get spent on the important, irreversible calls? If you're always saving and never spending, that's not strategy, it's avoidance. The budget is meant to be spent, not hoarded to retirement.</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>Your Week 7 Action</h3>
+<p>Do one concrete thing this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Pick a real disagreement you're sitting on</strong> (with your boss or a peer), and use the Card 1 filter to place it in a cell first.<br><br>
+<strong>(1)</strong> If it's in the "fight hard" cell: pick 2 of the 7 phrasings from Card 2, write out your raw line, and deliberately turn every "you + negative verb" into "I see / I'm worried"; then walk the Card 3 ladder and <strong>only do Rung ①</strong> (private, verbal), no skipping.<br>
+<strong>(2)</strong> Whatever the outcome, write three lines afterward: which rung I used; what the other person's "reverse scale" is; if I lost, what my exit condition is.<br><br>
+<strong>Reflection:</strong> Look back at the one "didn't say it" you regret most from the past year — did it die because you judged it "not worth it" (the rational filter), or because you didn't dare brush their reverse scale (fear dressed up as strategy)?
+</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 07 · 2026.07.01</footer>
+</div>
+</body>
+</html>
