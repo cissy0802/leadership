@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 8: Cross-Functional Influence</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 08 · 2026.07.08</div>
+<h1>Cross-Functional Influence: Moving Things With No Authority</h1>
+<div class="meta"><span>Topic: Cross-Functional Influence</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"If you want to go fast, go alone. If you want to go far, go together." — African proverb</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> The hardest kind of leadership is the kind with no authority behind it. As a tech lead manager at a large company, more than half your dependencies sit with teams that <strong>don't report to you</strong>—platform, security, data, product. Positional power runs out at the edge of your team; beyond that edge, only influence works. This week, four tools: trade in "currencies" (how to move people when you can't command them), map your stakeholders before you push, line up your key people one-on-one before the big meeting (pre-wiring), and make the win theirs. The honest part: influence without authority is slower, and you'll incur favors you may never collect—we mark the cost at every step.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Currencies of Exchange: With No Authority, You Trade
+<span class="en">Currencies of Exchange</span></h2>
+<span class="tag">Reciprocity</span><span class="tag">Currency trade</span><span class="tag">Give first</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Beyond your team's edge, commands fail; only exchange remains. Everyone has a <strong>currency</strong> they care about—visibility, resources, favors, information, status. Influence = figure out which currency they want, then trade what you have for it. <strong>Give first, then ask.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"The cornerstone of our model is the law of reciprocity: the almost universal belief that people should be paid back for what they do—that one good turn deserves another."</span>
+<span class="zh">The foundation of cross-functional influence: people expect to be paid back for what they give—budget your favors as an account, not a one-off.</span>
+<span class="source">— Allan Cohen &amp; David Bradford, <em>Influence Without Authority</em>, Ch.2</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Five Currencies of Influence (Cohen &amp; Bradford)</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<rect x="30" y="20" width="640" height="48" rx="6" fill="#f3ecd2" stroke="#a8702d" stroke-width="2"/>
+<rect x="30" y="78" width="640" height="48" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="30" y="136" width="640" height="48" rx="6" fill="#f8e2d0" stroke="#c47040" stroke-width="2.5"/>
+<rect x="30" y="194" width="640" height="48" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="30" y="252" width="640" height="48" rx="6" fill="#f3ecd2" stroke="#a8702d" stroke-width="2"/>
+<text x="48" y="50" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">Inspiration</text>
+<text x="290" y="50" font-size="13" fill="#3a2f1c" font-family="Georgia">vision · excellence · doing the right thing</text>
+<text x="48" y="108" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">Task</text>
+<text x="290" y="108" font-size="13" fill="#3a2f1c" font-family="Georgia">resources · hands · information · cooperation</text>
+<text x="48" y="166" font-size="14" font-weight="700" fill="#a04020" font-family="Georgia">Position</text>
+<text x="290" y="166" font-size="13" fill="#3a2f1c" font-family="Georgia">promotion · recognition · visibility · network</text>
+<text x="48" y="224" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">Relationship</text>
+<text x="290" y="224" font-size="13" fill="#3a2f1c" font-family="Georgia">acceptance · support · being understood</text>
+<text x="48" y="282" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">Personal</text>
+<text x="290" y="282" font-size="13" fill="#3a2f1c" font-family="Georgia">gratitude · involvement · self-concept · comfort</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: You need the platform team to change an API to unblock your project, but their backlog runs three months deep—and you have zero authority over them.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>"This is really critical for us—any chance you can rush it this week?" You only voiced <em>your</em> urgency, never why they should care. They default to no: <strong>your emergency isn't theirs.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>First research their currency: this quarter's OKR is "retire special-case platform APIs." So you open with: "I saw you want to cut special-case APIs. Our need actually kills off one common special case for you—<strong>my engineers will write the design doc and tests, you just review; and I'll credit your team by name as the unblocker in the VP review.</strong>" You just spent three currencies: relief (task), saved effort (resources), visibility (position).</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Before You Ask</div>
+<ul class="checklist">
+<li>Do I know what their team cares about this quarter (OKRs, promo season, their boss's focus)?</li>
+<li>What currency can I offer—information, hands, visibility, a future favor?</li>
+<li>Am I giving first, or asking first?</li>
+<li>How and when do I plan to repay this favor? (Track the debt.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Leading with your own urgency.</strong> Your P0 isn't theirs; untranslated into their benefit, they have no reason to move.</li>
+<li><strong>Writing IOUs you never repay.</strong> A favor you can't return hurts more than not borrowing; an overdrawn lateral account is hard to recover.</li>
+<li><strong>Pressuring with "this is a company priority."</strong> Unless you really have VP backing, that's just dressing up no-power as power—and they see through it.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research (Babcock, Grant, et al.) shows women are more often asked to do "office housework" (notes, organizing events, firefighting), and such effort is less often counted as currency or repaid. Countermoves: (1) make help <strong>visible and on the books</strong>—add a line like "I'll cover this; next sprint I'll need your team on X"; (2) learn to say no to pure-sink chores: "I can't take this on, but I can help you find someone." Steer goodwill toward currencies that pay back, not bottomless pits.
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Stakeholder Map: See Who Can Make You and Who Can Block You
+<span class="en">Stakeholder Mapping — Power × Interest</span></h2>
+<span class="tag">Power × Interest</span><span class="tag">Real influence net</span><span class="tag">Supporters vs blockers</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Before you push a cross-team effort, don't rush to broadcast. Plot stakeholders on two axes—<strong>power</strong> and <strong>interest</strong>—then mark who's a supporter, a blocker, a fence-sitter. Apply different force per quadrant: spread evenly and you waste effort on the unimportant and miss the one who can actually block you.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Know the other and know yourself: a hundred battles without peril. Know yourself but not the other: one win for one loss. Know neither: every battle in danger."</span>
+<span class="zh">Driving an initiative is like marching an army: identify the players first, then commit your forces.</span>
+<span class="source">— Sun Tzu, <em>The Art of War</em>, "Attack by Stratagem"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Power × Interest Grid</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<text x="195" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#5c3a18" font-family="Georgia">Low interest</text>
+<text x="510" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#5c3a18" font-family="Georgia">High interest</text>
+<rect x="45" y="42" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="42" width="300" height="105" rx="6" fill="#fdeee2" stroke="#b85c3a" stroke-width="2.5"/>
+<rect x="45" y="162" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#c4a878" stroke-width="2"/>
+<rect x="360" y="162" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="22" y="97" text-anchor="middle" font-size="12" fill="#8a6d3b" font-family="Georgia" transform="rotate(-90 22 97)">High power</text>
+<text x="22" y="220" text-anchor="middle" font-size="12" fill="#8a6d3b" font-family="Georgia" transform="rotate(-90 22 220)">Low power</text>
+<text x="195" y="89" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">Keep satisfied ·</text>
+<text x="195" y="111" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">informed, no surprises</text>
+<text x="510" y="89" text-anchor="middle" font-size="13" font-weight="700" fill="#a04020" font-family="Georgia">Manage closely ·</text>
+<text x="510" y="111" text-anchor="middle" font-size="13" font-weight="700" fill="#a04020" font-family="Georgia">pre-wire 1:1 ★</text>
+<text x="195" y="221" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">Minimal effort · monitor</text>
+<text x="510" y="210" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">Keep informed ·</text>
+<text x="510" y="232" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">enlist as champions</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: You're driving a company-wide migration to a new auth framework spanning six teams—you own only one of them.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>You send a company-wide email plus an RFC and call a 30-person meeting to announce it all at once. Result: a security director you never spoke to privately challenges you in front of everyone, the meeting derails; and the engineers who'd actually do the work were never recruited—they quietly resist.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>Map first. Security director = <strong>high power, high interest</strong> → a private 1:1 beforehand to make him a co-author. The neighboring platform team = <strong>high power, low interest</strong> → a one-page summary so they're "informed and not opposed," no long meeting. The frontline owners = <strong>low power, high interest</strong> → recruit them early as "migration champions" to persuade their own teams. <strong>The big meeting only ratifies; it doesn't persuade.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Did I list every stakeholder—including the quiet one who can veto?</li>
+<li>Which quadrant does each fall into? Is my strategy genuinely different per quadrant?</li>
+<li>Is the blocker against the proposal, or against "not being consulted first"?</li>
+<li>Am I mapping the real influence network or the org chart? (The real decider often isn't in the boxes.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Broadcasting to everyone equally.</strong> High-power people who aren't handled individually feel slighted.</li>
+<li><strong>Cultivating only supporters, avoiding blockers.</strong> A blocker doesn't disappear because you look away.</li>
+<li><strong>Drawing from the org chart.</strong> The real veto often sits with a staff engineer or a senior PM, not the nominal director.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Pre-Wiring: The Real Decision Is Made Before the Meeting
+<span class="en">Pre-Wiring — The Meeting Only Ratifies</span></h2>
+<span class="tag">Pre-wiring</span><span class="tag">Coalition building</span><span class="tag">Blocker inside the tent</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">An important decision shouldn't be heard for the first time in the meeting. A meeting <em>ratifies</em> consensus; it doesn't <em>form</em> it. Beforehand, win over key people one-on-one, collect objections, adjust the proposal, lock in support. Above all: <strong>bring the most likely opponent inside the tent early</strong>—make him a co-builder, not a sniper in the audience.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"It's probably better to have him inside the tent pissing out, than outside the tent pissing in."</span>
+<span class="zh">Rather than let a potential opponent tear you down from outside, bring him in early so he has a stake.</span>
+<span class="source">— Lyndon B. Johnson (c. 1971, on whether to keep J. Edgar Hoover)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: You're proposing a contentious technical design at an architecture review. The board has five people, one of them a senior engineer known for nitpicking and guarding his turf.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>You prep perfect slides and unveil the proposal for the first time in the meeting, expecting logic to win the room. The senior engineer fires off a chain of questions, the others waver, and the proposal is bounced to "let's discuss further."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>Three days before, you meet that senior engineer one-on-one: "I want to push a proposal, but I know you got burned on X—I'd like to hear your concerns first, so I don't miss something." You did two things: surfaced his real objection (often <strong>"not feeling respected," not the tech itself</strong>) and absorbed it into the design. In the meeting he becomes your endorser, not your sniper; you've also pinged the other supporters in advance. The meeting clears in 15 minutes.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Are key people hearing this for the first time in the meeting, or have I pre-warmed each?</li>
+<li>Have I brought the most likely opponent into the tent, or left him out in the audience?</li>
+<li>Are the objections I collected absorbed into the proposal, or am I planning to fight them live?</li>
+<li>Have I activated supporters—will someone speak for me, or am I alone?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Saving the proposal for a "grand reveal."</strong> Surprise is almost always a liability in politics.</li>
+<li><strong>Pre-warming only supporters, dodging the hard case.</strong> The opponent is exactly who you should consult first.</li>
+<li><strong>Hearing objections but not actually changing the plan.</strong> Going-through-the-motions "fake consulting" angers people more than not consulting at all.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Lateral Leadership: Make It "Their" Win
+<span class="en">Lateral Leadership — Make It Their Win</span></h2>
+<span class="tag">Shared goal</span><span class="tag">Give away credit</span><span class="tag">Don't chase the byline</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">With no command authority, momentum comes from making the other person feel it's their idea, their win. <strong>The more you want the byline, the less it moves; the more you let others win, the more gets done.</strong> Translate your goal into theirs, give away the spotlight—and the influence settles on you anyway.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Let the other person feel that the idea is his or hers."</span>
+<span class="zh">Influence without authority lives on this line: when people own the idea, they drive it for you.</span>
+<span class="source">— Dale Carnegie, <em>How to Win Friends and Influence People</em>, Part 3, Principle 7</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: You've designed a better service-monitoring standard and want three other teams to adopt it—but you can't mandate it.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>You ship a doc: "Follow our team's standard—this is best practice." "Our standard," "you comply" triggers turf defense. Even if they agree, they stall: adopting = admitting you're better than them.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>Reframe: "I've collected the monitoring pitfalls several teams have hit; I'd like to define one standard everyone buys into—<strong>your team does alert noise-reduction better than us, can that part go in, authored by you?</strong>" You turn "my standard" into "our co-built standard," leaving the other side a byline and home turf. Once it lands, all three teams call it "the one we helped define"—which is exactly the outcome you wanted.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Am I saying "my plan, you comply," or "the standard we defined together"?</li>
+<li>Did I give the other side real home turf—a section they author and sign?</li>
+<li>After it works, do I grab the credit or publicly share it out?</li>
+<li>Do I actually want "to be seen as right," or "to get it done"? (Often you can't have both.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Clinging to the byline.</strong> Who gets credit and whether it gets done are often two separate things.</li>
+<li><strong>Treating adoption as the other side "conceding."</strong> Once it feels zero-sum, they're motivated to let it fail.</li>
+<li><strong>Giving away credit but keeping score and grumbling later.</strong> Give for real—half-hearted is worse than not giving.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"Give away the credit" is double-edged for women: research (e.g., Heilman) shows women's contributions are more readily overlooked or reattributed to male colleagues (a man repeats the idea and suddenly it's his). Give away credit on top of that and you can vanish entirely. The fix isn't to stop giving, but to <strong>give on the record</strong>: (1) use written/async trails (docs, email, PRs) to timestamp your original contribution; (2) borrow the Obama-staffer "amplification" tactic—ally up and name each other: "as XX just proposed…", pointing credit back to its real source. Giving credit is a tactic, not self-erasure.
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>Further Reading</h3>
+<ul>
+<li><strong>Allan Cohen &amp; David Bradford · Influence Without Authority</strong> — currencies of exchange and the law of reciprocity; the source for Card 1.</li>
+<li><strong>Tanya Reilly · The Staff Engineer's Path</strong> — cross-team leadership without authority, glue work, driving big projects.</li>
+<li><strong>Will Larson · Staff Engineer / An Elegant Puzzle</strong> — how staff engineers manage stakeholders and influence.</li>
+<li><strong>Robert Cialdini · Influence</strong> — reciprocity, commitment-consistency, social proof, and the other principles of persuasion.</li>
+<li><strong>Adam Grant · Give and Take</strong> — how givers avoid being drained while accruing long-term influence.</li>
+<li><strong>Dale Carnegie · How to Win Friends and Influence People</strong> — let the idea be theirs.</li>
+<li><strong>Sun Tzu · The Art of War, "Attack by Stratagem"</strong> — know the other and yourself; supreme victory without battle.</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Open Questions</h3>
+
+<details>
+<summary>Is influence bought through exchange inherently fragile—the moment you have no currency left, do you instantly lose power?</summary>
+<div>Yes and no. Purely transactional relationships are fragile: empty the account and the bond breaks. But Cohen &amp; Bradford's point is that repeated good-faith exchange deposits into <strong>relationship currency</strong>—trust itself becomes the most durable currency, so future requests no longer need to be settled transaction by transaction. Short term you run on currency; long term on reputation: the former is fragile, the latter antifragile.</div>
+</details>
+
+<details>
+<summary>Where's the line between "wiring it up beforehand" and "back-room dealing that hollows out the formal process"?</summary>
+<div>The line is transparency and reversibility. Healthy pre-wiring makes the formal meeting more efficient—every objection has been heard and absorbed, and it can still be overturned in the room. The corrupted version: it's privately locked before the meeting, the formal session is a rubber stamp, and dissenters have no real voice. Self-test: if someone raises a strong new objection in the room, can your "consensus" still be overturned? If yes, it's pre-wiring; if no, it's manipulation.</div>
+</details>
+
+<details>
+<summary>Does giving away credit and staying invisible long-term hurt your own promotion—since promotion rewards "visible individual impact"?</summary>
+<div>A real tension, especially in orgs that prize the individual-hero narrative. The fix isn't to grab credit, but to distinguish two visibilities: grabbing the "I did this" credit, versus accruing the reputation that "things he touches succeed." The latter is slower but higher-order—staff/director promotions look precisely for "makes things happen across teams." But be honest: in short-term, individual-KPI-driven environments, excessive selflessness gets exploited—which is when the earlier "give on the record" matters.</div>
+</details>
+
+<details>
+<summary>In high-context, steep-hierarchy orgs (East Asia, parts of India), how should "lateral influence" and "pre-wiring" be adjusted?</summary>
+<div>In steep-hierarchy cultures, pure peer-to-peer persuasion often isn't enough—many things ultimately need "borrowing power upward": persuade the shared boss first, then push top-down. Pre-wiring weighs even more (public dissent is very costly). Western "influence without authority" assumes a relatively flat structure; when transplanting it, thicken the "upward" line.</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>Your Week 8 Action</h3>
+<p>Do one concrete thing this week—not reflection, not reading:</p>
+<div class="action">
+<strong>Pick one cross-team dependency you're genuinely stuck on right now</strong> (a team with no incentive to help you).<br><br>
+<strong>(1)</strong> Use Card 2's grid to plot the stakeholders into four quadrants; circle the one who is "high power but you haven't spoken to one-on-one yet."<br>
+<strong>(2)</strong> Use Card 1 to write down one "currency" their team cares about this quarter, and one you can offer in trade.<br>
+<strong>(3)</strong> This week, book a 15-minute 1:1 with that key person (Card 3's pre-wiring)—ask their concerns first, <strong>bring no proposal to persuade, just listen</strong>.<br><br>
+<strong>Reflection:</strong> Look back at your most recent "couldn't move it" cross-team effort. Did it stall because your proposal wasn't good enough, or because you skipped "figure out their currency first / bring them into the tent first"?
+</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 08 · 2026.07.08</footer>
+</div>
+</body>
+</html>

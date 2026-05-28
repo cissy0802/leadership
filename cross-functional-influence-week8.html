@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Week 8：跨部门影响力</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 08 · 2026.07.08</div>
+<h1>跨部门影响力：手里没权力，照样推动事情</h1>
+<div class="meta"><span>主题：Cross-Functional Influence</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">「If you want to go fast, go alone. If you want to go far, go together.」 — 非洲谚语</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>最难的领导，是背后没有职权的领导。作为大公司的 tech lead manager，你一半以上的依赖落在<strong>不向你汇报</strong>的团队身上——平台、安全、数据、产品。职位权力在你团队的边界就用完了；边界之外，只有影响力起作用。本周四个工具：用「货币」做交换（没职权时怎么换动别人）、推动前先画利益相关方地图、在大会前逐个搞定关键人（会前布局）、最后让胜利归对方。诚实地讲：无职权的影响更慢，你会欠下不一定收得回的人情——每一步我们都标出代价。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>影响力的货币：没职权时，你靠的是交换
+<span class="en">Currencies of Exchange</span></h2>
+<span class="tag">互惠法则</span><span class="tag">货币交换</span><span class="tag">先付出</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">在你团队边界之外，命令失效，只剩交换。每个人都有他在意的<strong>货币</strong>——可见度、资源、人情、信息、地位。影响力 = 先搞清对方要哪种货币，再用你有的去换。<strong>先付出，再开口。</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The cornerstone of our model is the law of reciprocity: the almost universal belief that people should be paid back for what they do—that one good turn deserves another."</span>
+<span class="zh">「我们模型的基石是互惠法则——一个近乎普世的信念：人的付出应当得到回报，一次善意值得另一次回应。」</span>
+<span class="source">— Allan Cohen &amp; David Bradford,《Influence Without Authority》Ch.2</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">影响力的五类货币（Cohen &amp; Bradford 分类）</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<rect x="30" y="20" width="640" height="48" rx="6" fill="#f3ecd2" stroke="#a8702d" stroke-width="2"/>
+<rect x="30" y="78" width="640" height="48" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="30" y="136" width="640" height="48" rx="6" fill="#f8e2d0" stroke="#c47040" stroke-width="2.5"/>
+<rect x="30" y="194" width="640" height="48" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="30" y="252" width="640" height="48" rx="6" fill="#f3ecd2" stroke="#a8702d" stroke-width="2"/>
+<text x="48" y="50" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">启发类 Inspiration</text>
+<text x="290" y="50" font-size="13" fill="#3a2f1c" font-family="Georgia">愿景 · 卓越 · 做正确的事</text>
+<text x="48" y="108" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">任务类 Task</text>
+<text x="290" y="108" font-size="13" fill="#3a2f1c" font-family="Georgia">资源 · 人手 · 信息 · 协作</text>
+<text x="48" y="166" font-size="14" font-weight="700" fill="#a04020" font-family="Georgia">地位类 Position</text>
+<text x="290" y="166" font-size="13" fill="#3a2f1c" font-family="Georgia">升迁 · 认可 · 可见度 · 人脉 · 声誉</text>
+<text x="48" y="224" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">关系类 Relationship</text>
+<text x="290" y="224" font-size="13" fill="#3a2f1c" font-family="Georgia">被接纳 · 被支持 · 被理解</text>
+<text x="48" y="282" font-size="14" font-weight="700" fill="#5c3a18" font-family="Georgia">个人类 Personal</text>
+<text x="290" y="282" font-size="13" fill="#3a2f1c" font-family="Georgia">感激 · 参与感 · 自我认同 · 省心</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你需要平台团队改一个 API 来解锁你团队的项目，但他们的 backlog 排到三个月后，而你对他们没有任何指挥权。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「这个对我们很关键，能不能这周加急一下？」——只讲你的紧急，没讲他们为什么要管。对方默认拒绝：<strong>你的紧急不是他的紧急。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>先调研他们在意的货币：他们这季度的 OKR 是「收敛平台 API 的特例支持」。你这样开口：「我看了你们想砍掉特例 API。我们的需求正好能帮你们干掉一类常见特例——<strong>设计文档和测试我的人写好，你们只 review；上线后我在 VP 的 review 上点名是你们团队解锁的。</strong>」你一次用了三种货币：减负（任务）、省力（资源）、可见度（地位）。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：开口前</div>
+<ul class="checklist">
+<li>我搞清对方团队这季度在意什么了吗（OKR、晋升季、他们老板的关注点）？</li>
+<li>我能拿出的货币是什么——信息、人手、可见度、未来的人情？</li>
+<li>我是「先付出」还是「先索取」？</li>
+<li>这笔人情我打算怎么还、什么时候还？（欠账要记）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只讲自己的紧急。</strong>你的 P0 不是别人的 P0；不翻译成对方的收益，对方没有动机。</li>
+<li><strong>开空头人情却不还。</strong>还不起的 IOU 比不借更伤信任，横向账户一旦透支极难恢复。</li>
+<li><strong>用「这是公司优先级」施压。</strong>除非真有 VP 背书，否则这只是把没权力包装成有权力，对方一眼看穿。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究（Babcock、Grant 等）显示：女性更常被要求承担「办公室杂务」（office housework：记纪要、组织活动、救火），且这类付出更少被记成「货币」、更少获得回报。对策：(1) 帮忙时让它<strong>被看见、被记账</strong>——附一句「这次我来 cover，下个 sprint 我需要你们帮 X」；(2) 对纯消耗型杂务学会说「我这次没法，但能帮你找人」。把善意导向能回报的货币，而非无底洞。
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>利益相关方地图：先画清谁能成全你、谁能拦你
+<span class="en">Stakeholder Mapping — Power × Interest</span></h2>
+<span class="tag">权力×利益</span><span class="tag">真实影响网</span><span class="tag">支持者vs阻挡者</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">推一件跨团队的事之前，别急着发广播。把相关方按<strong>权力</strong>和<strong>利益</strong>两轴画进四象格，再标出谁是支持者、谁是阻挡者、谁在骑墙。对不同象限用不同力度——平均用力 = 浪费在不重要的人身上，漏掉真正能拦你的人。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">知彼知己，百战不殆；不知彼而知己，一胜一负；不知彼不知己，每战必殆。</span>
+<span class="zh">既了解对方又了解自己，百战不败；只懂自己不懂对方，胜负各半；两者皆不懂，每战必危。推事如行军：先识人，再发兵。</span>
+<span class="source">— 孙子《孙子兵法·谋攻篇》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">权力 × 利益矩阵</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<text x="195" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#5c3a18" font-family="Georgia">利益低</text>
+<text x="510" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#5c3a18" font-family="Georgia">利益高</text>
+<rect x="45" y="42" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="42" width="300" height="105" rx="6" fill="#fdeee2" stroke="#b85c3a" stroke-width="2.5"/>
+<rect x="45" y="162" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#c4a878" stroke-width="2"/>
+<rect x="360" y="162" width="300" height="105" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="22" y="97" text-anchor="middle" font-size="12" fill="#8a6d3b" font-family="Georgia" transform="rotate(-90 22 97)">权力高</text>
+<text x="22" y="217" text-anchor="middle" font-size="12" fill="#8a6d3b" font-family="Georgia" transform="rotate(-90 22 217)">权力低</text>
+<text x="195" y="89" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">维持满意 ·</text>
+<text x="195" y="111" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">保持知情，别踩雷</text>
+<text x="510" y="89" text-anchor="middle" font-size="13" font-weight="700" fill="#a04020" font-family="Georgia">紧密管理 ·</text>
+<text x="510" y="111" text-anchor="middle" font-size="13" font-weight="700" fill="#a04020" font-family="Georgia">会前逐个搞定 ★</text>
+<text x="195" y="221" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">最小投入 · 监测即可</text>
+<text x="510" y="210" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">保持知情 ·</text>
+<text x="510" y="232" text-anchor="middle" font-size="13" fill="#3a2f1c" font-family="Georgia">借力当推手（大使）</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你要推动把全公司服务迁到新的鉴权框架，涉及六个团队，你只 own 其中一个。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>你发一封全员邮件 + 一份 RFC，召集 30 人大会一次性宣布。结果：一个你没单独打过招呼的安全总监在会上当众质疑，会议失控；而真正干活的几个工程师没被争取，消极抵制。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>先画图。安全总监 = <strong>高权力高利益</strong> → 会前单独 1:1，把他变成 co-author。隔壁平台团队 = <strong>高权力低利益</strong> → 给一页摘要让他「知情且不反对」即可，不拉进长会。几个一线 owner = <strong>低权力高利益</strong> → 提前发展成「迁移大使」，让他们去说服各自团队。<strong>大会只用来「确认」，不用来「说服」。</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我列全相关方了吗——包括那个安静、但能一票否决的人？</li>
+<li>每个人落在哪个象限？我对每个象限的策略真的不同吗？</li>
+<li>阻挡者反对的是方案本身，还是「没被提前打招呼」这件事？</li>
+<li>我画的是真实影响网，还是 org chart？（真正拍板的常不在架构图的格子里）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把所有人一视同仁地广播。</strong>高权力的人没被单独对待，会觉得被冒犯。</li>
+<li><strong>只经营支持者，回避阻挡者。</strong>阻挡者不会因为你不看他就消失。</li>
+<li><strong>照着 org chart 画。</strong>真实的否决权常握在一个 staff 工程师或某位资深 PM 手里，而非那个挂名的总监。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>会前布局：真正的决定，在会议之前就做好了
+<span class="en">Pre-Wiring — The Meeting Only Ratifies</span></h2>
+<span class="tag">预先布局</span><span class="tag">联盟构建</span><span class="tag">把阻挡者请进帐篷</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">重要决定不该在会上被第一次听到。会议是「确认」共识，不是「形成」共识。开会前逐个一对一把关键人搞定、收集反对、调整方案、锁定支持。尤其：<strong>把最可能反对的人提前请进帐篷</strong>——让他成为共建者，而不是台下的狙击手。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"It's probably better to have him inside the tent pissing out, than outside the tent pissing in."</span>
+<span class="zh">「与其让他在帐篷外往里尿，不如把他请进帐篷里往外尿。」——与其让潜在反对者在外面拆台，不如提前纳入，让他有份。</span>
+<span class="source">— Lyndon B. Johnson（约 1971，论是否留用 J. Edgar Hoover）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你要在架构评审会上提一个有争议的技术方案，评审组五人，其中一位资深工程师以「爱挑刺、护地盘」著称。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>你准备好完美的 slides，会上第一次公布方案，期待用逻辑碾压全场。那位资深工程师当场连环发问，其他人跟着犹豫，方案被打回「再讨论」。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>会前三天，你单独找那位资深工程师：「我想推一个方案，但我知道你在 X 上踩过坑——想先听你的顾虑，免得我漏了。」你做了两件事：摸到他真实的反对点（往往是<strong>「没被尊重」而非技术本身</strong>），并把他的意见吸收进方案。会上他成了你的背书人，而不是狙击手；其余支持者你也提前各打了招呼。会议 15 分钟通过。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>关键人是在会上第一次听到，还是我已逐个预热过？</li>
+<li>最可能的反对者，我提前请进帐篷了吗？还是把他晾在台下？</li>
+<li>会前收集到的反对，是已吸收进方案，还是打算会上硬刚？</li>
+<li>我有没有激活支持者——会上有人帮我说话，还是我孤军作战？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把方案留到大会「惊艳亮相」。</strong>惊喜在政治里几乎总是负资产。</li>
+<li><strong>只预热支持者，回避硬骨头。</strong>最该提前打招呼的，恰恰是反对者。</li>
+<li><strong>会前听了反对却没真改方案。</strong>走过场式的「假咨询」，比不咨询更激怒对方。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>横向领导力：让这件事成为「他们的」胜利
+<span class="en">Lateral Leadership — Make It Their Win</span></h2>
+<span class="tag">共享目标</span><span class="tag">让功劳归对方</span><span class="tag">不争署名</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">没有指挥权时，推动力来自「让对方觉得这是他的主意、他的功劳」。<strong>你越想署名，越推不动；你越让别人赢，事越成。</strong>把你的目标翻译成对方的目标，把聚光灯让出去——影响力反而沉淀在你身上。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Let the other person feel that the idea is his or hers."</span>
+<span class="zh">「让对方觉得这个主意是他自己的。」</span>
+<span class="source">— Dale Carnegie,《How to Win Friends and Influence People》Part 3, Principle 7</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你设计了一套更好的服务监控规范，想让另外三个团队采用，但你无权强制。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>你发文档：「按我们团队的规范来，这是最佳实践。」——「我们的规范」「你们照做」，触发地盘防御。对方就算认同也会拖：采纳 = 承认你比他强。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>换个框架：「我整理了几个团队踩过的监控坑，想一起定一套大家都认的标准——<strong>你们在告警降噪上做得比我们好，那部分能不能纳进来、由你们主笔？</strong>」你把「我的规范」变成「我们共建的标准」，给对方留了署名和主场。标准落地后，三个团队都说是「自己参与定的」——这正是你要的结果。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我说的是「我的方案，你们照做」，还是「我们一起定的标准」？</li>
+<li>我给了对方一个真实的主场吗——一块由他主笔、署他名的部分？</li>
+<li>事成之后，我抢着邀功，还是公开把功劳分出去？</li>
+<li>我真正要的是「被看见正确」，还是「事情做成」？（两者常不可兼得）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>执着于署名。</strong>功劳算谁的，和事情成不成，常是两件事。</li>
+<li><strong>把采纳你的方案当成对方「认输」。</strong>一旦对方感到是零和，他就有动机让它失败。</li>
+<li><strong>让出功劳却心里记账、事后抱怨。</strong>让就真让，半推半就比不让更糟。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+「让功劳归对方」对女性是把双刃剑：研究（如 Heilman）显示，女性的贡献本就更容易被默认、被重新归到男性同事名下（同一个主意男同事复述一遍就成了他的）。若再主动让功，可能彻底隐形。对策不是不让，而是<strong>让得有记录</strong>：(1) 用书面 / 异步留痕（doc、邮件、PR）给你的原始贡献打上时间戳；(2) 学奥巴马团队女幕僚的「放大」（amplification）策略——结盟互相点名：「就像 XX 刚才提的那个方案……」，把功劳指认回真正的来源。让功劳是策略，不是自我抹除。
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>深入资源 · Further Reading</h3>
+<ul>
+<li><strong>Allan Cohen &amp; David Bradford · Influence Without Authority</strong> — 货币交换与互惠法则，本周第一卡的源头。</li>
+<li><strong>Tanya Reilly · The Staff Engineer's Path</strong> — 没有职权的跨团队领导、glue work 与大项目推动。</li>
+<li><strong>Will Larson · Staff Engineer / An Elegant Puzzle</strong> — staff 工程师如何经营 stakeholder 与影响力。</li>
+<li><strong>Robert Cialdini · Influence</strong> — 互惠、承诺一致、社会认同等六条说服原则。</li>
+<li><strong>Adam Grant · Give and Take</strong> — 给予者如何既不被掏空、又积累长期影响力。</li>
+<li><strong>Dale Carnegie · How to Win Friends and Influence People</strong> — 让主意归对方。</li>
+<li><strong>孙子《孙子兵法·谋攻篇》</strong> — 知彼知己、上兵伐谋。</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · Open Questions</h3>
+
+<details>
+<summary>「靠交换换来的影响力」会不会本质上脆弱——一旦你没货币可换，就立刻失势？</summary>
+<div>是，也不是。纯交易型关系确实脆弱：账户一空，关系就断。但 Cohen &amp; Bradford 的要点是，反复的善意交换会沉淀成<strong>关系货币</strong>——信任本身成为最耐用的货币，让未来的请求不再需要逐笔结算。短期靠 currency，长期靠 reputation：前者脆弱，后者反脆弱。</div>
+</details>
+
+<details>
+<summary>「会前把人搞定」和「暗箱操作、架空正式决策流程」的界线在哪？</summary>
+<div>界线在透明度与可逆性。健康的 pre-wiring 让正式会议更高效——所有反对都已被听见、被吸收，会上仍可推翻。变味的版本是：会前已私下锁死，正式会议沦为橡皮图章，异见者根本没有真实发言权。自检：如果有人在会上提出全新的有力反对，你的「共识」还推得翻吗？推得翻是布局，推不翻是操纵。</div>
+</details>
+
+<details>
+<summary>让功劳归对方、长期隐身，会不会损害自己的晋升——毕竟晋升要看「可见的个人影响」？</summary>
+<div>真实的张力，尤其在崇尚个人英雄叙事的组织。解法不是抢功，而是区分两种可见度：抢「这是我做的」的功，和积累「凡他参与的事都成」的声誉。后者更慢但更高级——staff / 总监级晋升看的恰恰是「跨团队让事发生」的能力。但要诚实：在短期、个人 KPI 导向的环境里，过度无私会被占便宜——这时需要前面说的「让得有记录」。</div>
+</details>
+
+<details>
+<summary>在高语境、强等级的组织（如东亚、部分印度企业）里，「横向影响」和「会前布局」要怎么调？</summary>
+<div>高等级文化里，纯横向的同级说服往往不够——很多事最终要靠「向上借力」：先说服双方共同的上级，再自上而下推动。会前布局的权重更高（公开异议代价极大）。西方的 influence without authority 默认结构相对扁平，移植时要把「向上」这条线加粗。</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Week 8 Action</h3>
+<p>本周做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>选一个你当前真实卡住的跨团队依赖</strong>（某团队没动力配合你）。<br><br>
+<strong>(1)</strong> 用 Card 2 的矩阵，把相关方画进四象格，圈出那个「高权力、但你还没单独打过招呼」的人。<br>
+<strong>(2)</strong> 用 Card 1，写下对方团队这季度在意的一种「货币」，以及你能拿出来交换的一种。<br>
+<strong>(3)</strong> 本周内约那个关键人做一次 15 分钟 1:1（Card 3 的会前布局）——先问他的顾虑，<strong>不带方案去说服，只去听</strong>。<br><br>
+<strong>反思题：</strong>回看你最近一次「推不动」的跨团队事，它卡住，是因为你的方案不够好，还是因为你跳过了「先搞清对方要什么货币 / 先把人请进帐篷」这一步？
+</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 08 · 2026.07.08</footer>
+</div>
+</body>
+</html>
