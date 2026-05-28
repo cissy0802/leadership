@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 6: Office Politics 101</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 06 · 2026.06.24</div>
+<h1>Office Politics 101: Read the Power Map Before You Talk Survival</h1>
+<div class="meta"><span>Topic: Office Politics 101</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"To subdue the enemy without fighting is the acme of skill." — Sun Tzu, The Art of War</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Many engineers treat "politics" as a dirty word, believing "if I just do great work I'll be treated fairly." That is exactly the most dangerous naivety — it doesn't make you above politics, it makes you its <strong>victim</strong>. Office politics is not noble vs. base; it's about <strong>how power actually flows and how decisions actually get made</strong>. This week, four tools: a power map, the four political-player types, the stakeholder grid, and the reciprocal-altruism logic of political capital. Honestly: politics has moral gray zones, and we'll mark the cost of every move.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Power Mapping: The Org Chart Won't Tell You Who Decides
+<span class="en">Map the real decision path, not the reporting line</span></h2>
+<span class="tag">Power structure</span><span class="tag">Shadow org</span><span class="tag">Socialize</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">The org chart shows <strong>reporting lines</strong> and <strong>accountability</strong>; it almost never tells you how a decision actually gets made. Real power flows along three hidden lines — <strong>information, resources, relationships</strong>. The second map you must draw shows: who can make things happen, who can stop them, and whose objection gets taken seriously. The overlap between the two maps is often under half.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Know the enemy and know yourself, and victory will not be at risk; know the ground and know the weather, and your victory will be complete."</span>
+<span class="zh">In an organization, the "ground and weather" is the power terrain — fail to read it, and even the best proposal hits invisible rocks.</span>
+<span class="source">— Sun Tzu, The Art of War (Terrain)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: You Socialized the Title, Not the Power</div>
+<div class="scene">
+<div class="setup">Situation: You (BigCat) propose a cross-team storage migration. The nominal decision-maker is platform director D. You send D the RFC and book a review.</div>
+<div class="dialog bad">
+<div class="speaker">Bad version (running on the org chart)</div>
+<p>You only socialize it to D (the nominal owner). In the review, D says "technically I'm fine, but let's hear from the teams." Then a senior staff S you never briefed — D's most trusted source of technical judgment — raises three concerns on the spot. No conclusion; the proposal stalls for a month.</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ S has no decision authority but has <strong>veto-level influence</strong>. You socialized the title, not the power.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Good version (running on the power map)</div>
+<p>Two weeks before the review, you grab coffee with S alone, walk him through the proposal, and ask "<strong>What would you be worried about?</strong>" — resolving his concerns privately or folding them into the RFC. Then you align with the PM most likely to block it. By the formal review, the key people are pre-wired and the meeting is just a rubber stamp.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Draw a Power Map (for your next push)</div>
+<ul class="checklist">
+<li>Who is the nominal decision owner? Who is the "shadow advisor" they quietly consult?</li>
+<li>Who is the <strong>gatekeeper</strong> (controls information / budget / headcount flowing to the decider)?</li>
+<li>Who is the <strong>connector</strong> (links many circles, best-informed)? Cross them = your information dries up.</li>
+<li>Whose "silent objection" can quietly kill the proposal? (veto-level influence, no formal power)</li>
+<li>Where does this decision actually get made — the formal review, or a hallway chat / Slack DM beforehand?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking title for power.</strong> The highest-ranked person often outsources judgment to an IC they trust.</li>
+<li><strong>First revealing the proposal at the formal meeting.</strong> Meetings are where you rubber-stamp, not persuade — persuasion happens beforehand.</li>
+<li><strong>Ignoring the gatekeeper</strong> (chief of staff, a senior staff). They decide whether you even reach the agenda.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · Excluded from informal networks</span>
+The hidden lines of information often flow through <strong>informal networks</strong> (drinks, the smoking area, the after-work game). Research (Herminia Ibarra) shows women are more often excluded from these informal networks, and so learn later "where the real decision happens." The fix isn't forcing your way into the bar — it's <strong>deliberately building your own network</strong>: 2-3 fixed cross-team "no-agenda coffees" each week, used purely to read the terrain, not to discuss projects — turning what others get by accident into your deliberate routine.
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Owl, Fox, Donkey, Sheep — Locate Yourself First
+<span class="en">The four political-player types</span></h2>
+<span class="tag">Baddeley &amp; James</span><span class="tag">Political awareness</span><span class="tag">Self-location</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">Political skill splits into two independent axes: <strong>political awareness</strong> (can you read power and motives?) × <strong>intent</strong> (acting for the common good, or only for yourself?). The two axes produce four player types. The classic engineer trap is being the "sheep": full of integrity, zero awareness — repeatedly sacrificed in games without knowing it. The goal is to be the "owl": high awareness + integrity.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Being politically unaware does not make you 'above politics' — it makes you a victim of it."</span>
+<span class="source">— Simon Baddeley &amp; Kim James, "Owl, Fox, Donkey or Sheep: Political Skills for Managers" (1987)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Four Quadrants: Awareness × Intent</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="40" x2="350" y2="320" stroke="#c4a878" stroke-width="1.5"/>
+<line x1="60" y1="180" x2="660" y2="180" stroke="#c4a878" stroke-width="1.5"/>
+<text x="350" y="20" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↑ Integrity (common good)</text>
+<text x="350" y="345" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↓ Self-serving</text>
+<text x="120" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">Low awareness ←</text>
+<text x="600" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">→ High awareness</text>
+<rect x="70" y="50" width="270" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="360" y="50" width="290" height="120" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="70" y="190" width="270" height="120" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<rect x="360" y="190" width="290" height="120" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<text x="205" y="95" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#5c3a18">SHEEP</text>
+<text x="205" y="120" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">Well-meaning but blind</text>
+<text x="205" y="142" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">Repeatedly sacrificed</text>
+<text x="505" y="95" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#4a6a28">OWL ★</text>
+<text x="505" y="120" text-anchor="middle" font-family="Georgia" font-size="12" fill="#3a5a18">Reads power + integrity</text>
+<text x="505" y="142" text-anchor="middle" font-family="Georgia" font-size="12" fill="#3a5a18">Target quadrant</text>
+<text x="205" y="235" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#a04020">DONKEY</text>
+<text x="205" y="260" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">Clumsily self-serving</text>
+<text x="205" y="282" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">Steps on every mine</text>
+<text x="505" y="235" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#a04020">FOX</text>
+<text x="505" y="260" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">Shrewd, self-serving</text>
+<text x="505" y="282" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">Wins short, exposed long</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Sheep vs. Owl Amid Reorg Rumors</div>
+<div class="scene">
+<div class="setup">Situation: Reorg rumors suggest a key project of your team may be moved to another group.</div>
+<div class="dialog bad">
+<div class="speaker">Sheep reaction</div>
+<p>"I'll just focus on doing great technical work; politics isn't my business." → Three weeks later the project is moved, justified as "the other group has more bandwidth," and you never said a word to keep it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Owl reaction</div>
+<p>You don't play dirty, but you <strong>actively read the situation and act legitimately</strong>: (1) figure out who's pushing the move and why (genuine efficiency, or a director expanding turf?); (2) write a one-pager on the objective reasons the project should stay; (3) socialize it to the real decision owner before the decision meeting.<br><strong>You didn't manipulate — you just refused to be absent.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Locate and Upgrade Your Political Position</div>
+<ul class="checklist">
+<li>Which quadrant am I in right now? (Honestly — most engineers are sheep and deny it.)</li>
+<li>That person on my team who's always better-informed yet keeps surprising me — fox or owl?</li>
+<li>The last time I "focused on tech and ignored politics," was I truly above it, or a victim?</li>
+<li>My next move — is it for the team / the facts (Owl), or just for my own turf (Fox)?</li>
+<li>Am I being a "donkey" — selfishly and clumsily grabbing credit, going over heads, taking sides too early?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking "sheep" for the moral high ground.</strong> Not reading politics isn't purity; it puts your teammates' interests at risk.</li>
+<li><strong>Treating every political player as a fox.</strong> Many high-awareness people are owls — the ones you should learn from, not guard against.</li>
+<li><strong>Trying to jump from sheep straight to fox.</strong> Learn awareness before tactics — awareness + integrity is the owl, and that takes you far.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Power / Interest Grid — Spend Capital Where It Pays
+<span class="en">Map stakeholders, then allocate finite energy</span></h2>
+<span class="tag">Mendelow's matrix</span><span class="tag">Stakeholder mapping</span><span class="tag">Energy allocation</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">You can't invest equally in everyone. Place each stakeholder on two axes: <strong>power</strong> (how much they can sway the outcome) × <strong>interest</strong> (how much they care). The four boxes call for four entirely different strategies. The deadliest error is treating "high power + low interest" people as background scenery — they're quiet, until they get surprised and veto on the spot.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"If you defend everywhere, you are weak everywhere."</span>
+<span class="zh">Political energy is finite force. Spreading it evenly across all stakeholders means too little force on the people who matter most.</span>
+<span class="source">— Sun Tzu, The Art of War (Weak Points and Strong)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Four Quadrants: Power × Interest</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="40" x2="350" y2="320" stroke="#c4a878" stroke-width="1.5"/>
+<line x1="60" y1="180" x2="660" y2="180" stroke="#c4a878" stroke-width="1.5"/>
+<text x="350" y="20" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↑ High power</text>
+<text x="350" y="345" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↓ Low power</text>
+<text x="120" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">Low interest ←</text>
+<text x="600" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">→ High interest</text>
+<rect x="70" y="50" width="270" height="120" rx="6" fill="#f8ecd0" stroke="#c47040" stroke-width="2"/>
+<rect x="360" y="50" width="290" height="120" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="70" y="190" width="270" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="360" y="190" width="290" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<text x="205" y="92" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#a04020">Keep Satisfied</text>
+<text x="205" y="118" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a3a1a">⚠ Don't surprise them!</text>
+<text x="205" y="140" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a3a1a">Brief in advance</text>
+<text x="505" y="92" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#4a6a28">Manage Closely</text>
+<text x="505" y="118" text-anchor="middle" font-family="Georgia" font-size="12" fill="#3a5a18">Turn into a co-owner</text>
+<text x="205" y="235" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">Monitor</text>
+<text x="205" y="261" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">Don't waste energy</text>
+<text x="505" y="235" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">Keep Informed</text>
+<text x="505" y="261" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">Potential evangelist</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: A Proposal to Merge Three Teams' Services</div>
+<div class="scene">
+<div class="setup">Situation: BigCat proposes merging three teams' services onto one platform. Place each stakeholder on the grid —</div>
+<div class="dialog good">
+<div class="speaker">Allocate energy by the grid</div>
+<p>· <strong>Platform lead L</strong> (high power + high interest) → Manage Closely: weekly alignment, pull them in as co-owner.<br>
+· <strong>The overseeing VP</strong> (high power + low interest) → Keep Satisfied: they don't care about technical detail, but if surprised by someone at an all-hands they'll block instantly. Send a one-page exec summary, 30-second face-to-face sync — you're not seeking enthusiasm, just "no objection."<br>
+· <strong>A vocal senior engineer on a merged team</strong> (low power + high interest) → Keep Informed: they can't sway the decision but can set the tone on Slack; feed them detail, hear their concerns, and they may turn from objector into your best evangelist.<br>
+· <strong>An unrelated neighboring team</strong> (low power + low interest) → one FYI email suffices.</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Cost of misallocation: pouring all your time onto the vocal engineer while forgetting to brief the VP — who gets surprised in review and vetoes.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Draw the Grid for Your Next Proposal</div>
+<ul class="checklist">
+<li>Have I scored each stakeholder on both "power" and "interest"?</li>
+<li>Is there a "high power + low interest" person I haven't briefed yet? (most overlooked, most lethal)</li>
+<li>For "high power + high interest" people, am I managing them as objects, or have I pulled them in as co-owners?</li>
+<li>The vocal but low-power person — am I treating them as noise, or as a potential evangelist?</li>
+<li>This grid shifts with reorgs / promotions — how often do I refresh it?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating high-power-low-interest people as scenery</strong> — until they get surprised and veto.</li>
+<li><strong>Spreading effort evenly</strong> — under-investing in your key allies.</li>
+<li><strong>Filing the grid away after drawing it once.</strong> Power distribution gets reshuffled with every reorg.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Political Capital: Deposit Before You Withdraw
+<span class="en">Reciprocal altruism and coalition-building</span></h2>
+<span class="tag">Dawkins · reciprocity</span><span class="tag">Tit-for-tat</span><span class="tag">Coalitions</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Sentence</div>
+<div class="principle">Influence is not something you "have," it's something you "deposit." Every time you unblock someone, give public credit, or don't grab credit, you deposit into a relationship account; when you need to push something cross-team, you withdraw the sum of past deposits. This is <strong>reciprocal altruism</strong>: in repeated games, "extend goodwill first, give-and-take" wins long-term. But there's a hard constraint: you must not be the <strong>sucker</strong> — when you meet a taker who only withdraws, cut off supply decisively.</div>
+</div>
+
+<div class="section">
+<div class="section-label">From the Source</div>
+<div class="quote">
+<span class="en">"Don't be envious. Don't be the first to defect. Reciprocate both cooperation and defection. Don't be too clever."</span>
+<span class="zh">These are the four maxims of the tit-for-tat strategy that won Axelrod's tournaments: nice, provocable, forgiving, and clear.</span>
+<span class="source">— Robert Axelrod, The Evolution of Cooperation (1984); popularized by Richard Dawkins, The Selfish Gene (Ch. 12, "Nice Guys Finish First")</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene A: Spot and Recalibrate a Taker</div>
+<div class="scene">
+<div class="setup">Situation: Peer P comes to your team for help every few days (borrowing people, firefighting, reviews), but when you need them it's always "next week."</div>
+<div class="dialog bad">
+<div class="speaker">The boundary-less giver</div>
+<p>You keep saying yes to everything. Three months later the team is grumbling, you're drained — and P's account is still in your debt.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">Tit-for-tat: forgiving, but stop unconditional supply</div>
+<p>"P, I'm glad to keep supporting you. But over the past two months, the things I helped with — when it was my turn to need X, it never got slotted in. Can we get <strong>X into your next sprint</strong> first? That way I can keep helping you down the line."</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ Make reciprocity explicit, give them one chance to return to cooperation (forgiving), while clearly ending one-way supply — no burned bridge, but the account must run both ways.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene B: Coalitions Are Built Before the Meeting, Not In It</div>
+<div class="scene">
+<div class="setup">Situation: Before a reorg you want to push a new direction, but on your own you don't carry enough weight.</div>
+<div class="dialog good">
+<div class="speaker">One-on-ones before going public</div>
+<p>Before the proposal goes public, privately approach 2-3 aligned, weighty peers individually: "I'm thinking of pushing X; the upside for your team is Y — what do you think? <strong>What would need to change for you to support it?</strong>" By the formal proposal, it's not you speaking alone — it's a coalition speaking.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Your Political Capital Account</div>
+<ul class="checklist">
+<li>In the past month, what "deposits" have I made to peers / other teams (substantive help, public credit, not grabbing credit)?</li>
+<li>Is there a persistent "withdraw-only" taker around me? Am I still supplying unconditionally?</li>
+<li>For my next big proposal, which allies have I pre-wired beforehand? Or am I planning to "let the proposal speak for itself" in the room?</li>
+<li>Am I overdrawing some account (always asking the same person, never reciprocating)?</li>
+<li>Is my "goodwill" tit-for-tat (can be ended reciprocally), or boundary-less (destined to be drained by takers)?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Being a boundary-less giver.</strong> Adam Grant's data: givers occupy both the top and the <strong>bottom</strong> of performance — the difference is whether they protect themselves from being drained by takers.</li>
+<li><strong>Only remembering relationships when you need something.</strong> Deposits must start long before you need to withdraw.</li>
+<li><strong>Building coalitions at the meeting table.</strong> The real alignment happens in one-on-ones beforehand.</li>
+<li><strong>Helping invisibly.</strong> You deposited but they never noticed — the balance is zero. Let your contribution be seen, in moderation.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Lens</div>
+<div class="female">
+<span class="female-label">Female Lens · Office housework is not political capital</span>
+"Office housework" — note-taking, ordering lunch, organizing team events, onboarding newcomers — these <strong>non-promotable tasks</strong> are disproportionately assigned to women (Linda Babcock's core research, The No Club). They look like "deposits" but are pseudo-capital that doesn't count toward promotion. Distinguish: a real deposit is <strong>high-visibility, strategically relevant</strong> help (unblocking a critical issue, covering an important demo); office housework is low-visibility work anyone could do. A script when assigned: "My bandwidth this quarter is committed to X (a strategic project). Can we rotate the lunch ordering / hand it to someone newer?" Learning to say "no" is how you stop selling your capital cheap.
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>Further Reading</h3>
+<ul>
+<li><strong>Jeffrey Pfeffer · Power: Why Some People Have It—and Others Don't</strong> — the Stanford GSB power course; the most candid empirical take on org politics.</li>
+<li><strong>Marie G. McIntyre · Secrets to Winning at Office Politics</strong> — a practical playbook on player types and concrete tactics.</li>
+<li><strong>Simon Baddeley &amp; Kim James · "Owl, Fox, Donkey or Sheep" (1987)</strong> — the original source of the four political-player model.</li>
+<li><strong>Richard Dawkins · The Selfish Gene (Ch. 12) &amp; Robert Axelrod · The Evolution of Cooperation</strong> — the science behind reciprocal altruism and tit-for-tat.</li>
+<li><strong>Robert Cialdini · Influence</strong> — the reciprocity principle and the six weapons of influence.</li>
+<li><strong>Adam Grant · Give and Take</strong> — giver / taker / matcher, and "the giver who doesn't get drained."</li>
+<li><strong>Herminia Ibarra · Act Like a Leader, Think Like a Leader</strong> — informal networks and building the network that lets you "read the terrain."</li>
+<li><strong>Sun Tzu · The Art of War (Offensive Strategy / Terrain / Weak Points and Strong)</strong> — know-self-and-other, strike the void, subdue without fighting — mapped onto org games.</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Open Questions</h3>
+
+<details>
+<summary>Reading power, building coalitions, pre-wiring — where's the line between this and manipulation?</summary>
+<div>The line is <strong>intent and transparency</strong>. Pre-wiring is "letting the right people know in advance and giving them a chance to voice concerns" — that's respect; manipulation is "hiding information and engineering an asymmetry for private gain." The same action (a pre-meeting 1:1) can be used by the owl to align on facts, or by the fox to set an ambush. Honesty has a real cost: sometimes transparency loses you a win you could have stolen by surprise — that's the price the owl accepts and the fox doesn't. A simple self-check: could you openly disclose what you did to all parties involved?</div>
+</details>
+
+<details>
+<summary>In companies that call themselves "flat / anti-hierarchy" (as many tech firms do), does the power map still hold?</summary>
+<div>Even more so. When hierarchy is formally weakened, power doesn't vanish — it moves into more hidden informal networks (who has dinner with the founder, who holds sway in a certain Slack channel, who gets quietly pulled in to decide). Politics in flat orgs is often <strong>harder to read</strong>, because there's no title as a clue. Pfeffer repeatedly notes that "flat" usually means the power map is hidden, not removed.</div>
+</details>
+
+<details>
+<summary>How should this (Western, direct) playbook be adapted for East Asian / high-context organizations?</summary>
+<div>In high-context cultures, the deposit-and-withdraw cycle of relationships is longer and more indirect; pre-wiring relies more on private settings and third-party introductions than on a direct one-on-one showdown. "Face" makes the cost of public objection extremely high — so "aligning beforehand" isn't a technique there but a <strong>necessity</strong>: any proposal that makes someone lose face in public is nearly doomed. Erin Meyer's The Culture Map breaks this down concretely.</div>
+</details>
+
+<details>
+<summary>When you judge that the politics of your org has gone "sick" (bad money drives out good, foxes rule), do you keep playing or exit?</summary>
+<div>First distinguish "local factional fighting" from "systemic rot." The former you can survive via coalitions, changing managers, or transferring; the latter — promotions tracking only allegiance, truth-tellers punished, a steady stream of good people leaving — when the signals are clear, a graceful exit (see Week 35) is often more rational than grinding it out. The hidden cost of staying isn't just the pain — it's that you'll slowly be domesticated by the environment into a fox or a donkey. A test: the last time you told the truth, were you rewarded, or were you marked?</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>Your Week 6 Action</h3>
+<p>Pick one cross-team thing you're currently pushing, and do two concrete things:</p>
+<div class="action">
+<strong>(1) Draw a power map (15 minutes, on paper):</strong> Who is the nominal decision owner, the shadow advisor, the gatekeeper, and the person with veto-level influence? Then use Card 3's grid to score each on "power × interest."<br><br>
+<strong>(2) Find the "high power + low interest" person you haven't briefed</strong>, and this week send them a one-page exec summary or book a 15-minute sync — the goal isn't enthusiastic support, it's that they "don't get surprised."<br><br>
+<strong>Reflection:</strong> Look back at a proposal that "failed / stalled" in the past year — did it lose on the merits, or because you socialized the title but missed the power?</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 06 · 2026.06.24</footer>
+</div>
+</body>
+</html>

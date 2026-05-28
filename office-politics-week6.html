@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Week 6：组织政治入门</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.resources ul{list-style:none;padding:0}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li:last-child{border-bottom:none}
+.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
+.resources li strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
+.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
+.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 06 · 2026.06.24</div>
+<h1>组织政治入门：先看清权力地图，再谈生存</h1>
+<div class="meta"><span>主题：Office Politics 101</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"不战而屈人之兵，善之善者也。" — 孙子《谋攻篇》</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>很多技术人把"政治"当脏字，以为"我只要把活干好就会被公正对待"。这恰恰是最危险的天真——它不会让你超脱政治，只会让你成为政治的<strong>牺牲品</strong>。组织政治无关高尚 vs 卑鄙，它关于<strong>权力如何流动、决策如何真正做出</strong>。本周四个工具：权力地图、四类政治玩家、利益相关方矩阵、互惠利他的政治资本逻辑。诚实地讲：政治里有道德灰色地带，我们会标出每个动作的成本。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>权力地图：组织图给你汇报线，它不给你决策路径
+<span class="en">Power Mapping — The Org Chart Won't Tell You Who Decides</span></h2>
+<span class="tag">权力结构</span><span class="tag">影子组织</span><span class="tag">socialize</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">组织图 (org chart) 画的是<strong>汇报线</strong>与<strong>问责</strong>，它几乎从不告诉你"一个决策实际如何被做出"。真正的权力沿着<strong>信息、资源、关系</strong>三条暗线流动。你要画的是第二张图——谁能让事情发生、谁能让它停下、谁的反对会被认真对待。两张图的重叠度常常不到一半。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"知彼知己，胜乃不殆；知天知地，胜乃可全。"</span>
+<span class="zh">了解对方也了解自己，胜利就没有危险；了解天时也了解地形，胜利才能完整。组织里的"天地"就是权力地形——你不读它，再好的方案也会撞上看不见的暗礁。</span>
+<span class="source">— 孙子《孙子兵法·地形篇》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：socialize 了 title，漏了 power</div>
+<div class="scene">
+<div class="setup">情境：你（BigCat）提一个跨团队的存储层迁移方案，名义拍板人是平台部总监 D。你把 RFC 发给 D，约了评审会。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 按组织图办事</div>
+<p>你只 socialize 给 D（名义 owner）。评审会上 D 说"技术上我没意见，但要听听各团队"。这时一个你没打招呼的资深 staff S——D 极度信任的技术判断来源——当场提出三个顾虑。会议没结论，方案搁置一个月。</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ S 没有决策权，却有<strong>否决性影响力</strong>。你 socialize 了 title，没 socialize power。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 按权力地图办事</div>
+<p>评审会前两周，你先单独约 S 喝咖啡，把方案给他看，问"<strong>你会担心什么？</strong>"——把他的顾虑在私下解决、或吸收进 RFC。再找那个最容易在会上 block 的 PM 对齐。正式评审会时关键人都已 pre-wired，会议只是盖章。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">画一张权力地图（针对你下一个要推的决策）</div>
+<ul class="checklist">
+<li>名义 decision owner 是谁？真正会被他私下征求意见的"影子顾问"是谁？</li>
+<li>谁是 <strong>gatekeeper</strong>（控制信息 / 预算 / 人头流向决策者的人）？</li>
+<li>谁是 <strong>connector</strong>（连接多个圈子、消息最灵通的人）？得罪他 = 消息断流。</li>
+<li>谁的"沉默反对"足以拖死方案？（有否决性影响力但无正式权力的人）</li>
+<li>这个决策真正在哪里被做出——正式评审会，还是会前的某次走廊对话 / Slack DM？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 title 当 power。</strong>最高职级的人常常把判断外包给某个他信任的 IC。</li>
+<li><strong>等正式会议才第一次亮方案。</strong>会议是盖章的地方，不是说服的地方——说服发生在会前。</li>
+<li><strong>忽视 gatekeeper</strong>（chief of staff、某资深 staff）。他们能决定你的方案是否上得了议程。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 被排除在非正式网络外</span>
+信息暗线常沿着<strong>非正式网络</strong>流动（酒局、抽烟区、下班后的球局）。研究（Herminia Ibarra）显示女性更容易被排除在这些 informal network 之外，更晚知道"真实决策在哪发生"。对策不是硬挤进酒局，而是<strong>刻意建立自己的网络</strong>：每周固定 2-3 个跨团队的"非议程咖啡"，专门用来读地形、而非谈项目——把别人偶然获得的信息，变成你有意识的例行动作。
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>四类政治玩家：先诚实定位自己的政治坐标
+<span class="en">Owl, Fox, Donkey, Sheep — Locate Yourself First</span></h2>
+<span class="tag">Baddeley &amp; James</span><span class="tag">政治觉察</span><span class="tag">自我定位</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">政治能力可拆成两个独立维度：<strong>政治觉察</strong>（你读不读得懂权力与动机）× <strong>行为意图</strong>（为公共利益还是只为自己）。两轴交叉出四类玩家。技术人最常见的陷阱是当"绵羊"：有正直、零觉察，反复成为博弈的牺牲品而不自知。目标是做"猫头鹰"——高觉察 + 守正直。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Being politically unaware does not make you 'above politics' — it makes you a victim of it."</span>
+<span class="zh">对政治毫无觉察，并不会让你"超脱政治"——它只会让你成为政治的受害者。</span>
+<span class="source">— Simon Baddeley &amp; Kim James,《Owl, Fox, Donkey or Sheep: Political Skills for Managers》(1987)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">四象限：觉察 × 意图</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="40" x2="350" y2="320" stroke="#c4a878" stroke-width="1.5"/>
+<line x1="60" y1="180" x2="660" y2="180" stroke="#c4a878" stroke-width="1.5"/>
+<text x="350" y="20" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↑ 正直 (为公共利益)</text>
+<text x="350" y="345" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↓ 自利 (为自己)</text>
+<text x="120" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">低觉察 ←</text>
+<text x="600" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">→ 高觉察</text>
+<rect x="70" y="50" width="270" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="360" y="50" width="290" height="120" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="70" y="190" width="270" height="120" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<rect x="360" y="190" width="290" height="120" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<text x="205" y="95" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#5c3a18">绵羊 SHEEP</text>
+<text x="205" y="120" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">善意但盲目</text>
+<text x="205" y="142" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">反复被牺牲</text>
+<text x="505" y="95" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#4a6a28">猫头鹰 OWL ★</text>
+<text x="505" y="120" text-anchor="middle" font-family="Georgia" font-size="12" fill="#3a5a18">读懂局 + 守正直</text>
+<text x="505" y="142" text-anchor="middle" font-family="Georgia" font-size="12" fill="#3a5a18">目标象限</text>
+<text x="205" y="235" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#a04020">驴 DONKEY</text>
+<text x="205" y="260" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">笨拙自利</text>
+<text x="205" y="282" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">越级、抢功、踩雷</text>
+<text x="505" y="235" text-anchor="middle" font-family="Georgia" font-size="17" font-weight="700" fill="#a04020">狐狸 FOX</text>
+<text x="505" y="260" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">精明自利的玩家</text>
+<text x="505" y="282" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a2a1a">短期赢、长期被识破</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：reorg 传闻中的绵羊 vs 猫头鹰</div>
+<div class="scene">
+<div class="setup">情境：reorg 传闻里，你团队的一个关键项目可能被划给另一个组。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 绵羊反应</div>
+<p>"我专注做好技术就行，politics 不关我事。"→ 三周后项目被划走，理由是"另一个组更有 bandwidth"，而你从没为留住它说过一句话。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 猫头鹰反应</div>
+<p>你不玩阴的，但你<strong>主动读局并正当行动</strong>：(1) 搞清谁在推、动机是什么（真为效率，还是某总监扩地盘）；(2) 写一页纸说明项目留在你组的客观理由；(3) 决策会前 socialize 给真正的 decision owner。<br><strong>你没有操纵，你只是没有缺席。</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">定位与升级你的政治坐标</div>
+<ul class="checklist">
+<li>此刻我在哪个象限？（诚实——大多数技术人是绵羊，且否认自己是）</li>
+<li>我团队里那个"消息总比我灵通、却常让我意外"的人，是狐狸还是猫头鹰？</li>
+<li>我上一次"专注技术、不管政治"的结果，是真超脱，还是当了牺牲品？</li>
+<li>我下一个动作，是为团队 / 事实（Owl），还是只为自己的地盘（Fox）？</li>
+<li>我有没有当"驴"——自利且笨拙地公开抢功、越级、过早站队？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"绵羊"误当道德高地。</strong>不读政治不是清高，是把队友的利益置于风险中。</li>
+<li><strong>把所有政治玩家都当狐狸。</strong>很多高觉察的人是猫头鹰，是你最该学习而非提防的人。</li>
+<li><strong>想从绵羊一步跳到狐狸。</strong>学手段之前先学觉察——觉察 + 正直就是猫头鹰，足够你走很远。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>利益相关方矩阵：把有限的政治精力花在对的人身上
+<span class="en">The Power / Interest Grid — Spend Capital Where It Pays</span></h2>
+<span class="tag">Mendelow 矩阵</span><span class="tag">stakeholder mapping</span><span class="tag">精力分配</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">你不可能对所有人投入同等精力。按两维给每个 stakeholder 定位：<strong>影响力</strong>（他多大程度能左右成败）× <strong>关切度</strong>（他多在乎这件事）。四个格子对应四种策略。最致命的错误是把"高影响 + 低关切"的人当背景板——他们平时不出声，一旦被惊到 (surprised) 就一票否决。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"无所不备，则无所不寡。"</span>
+<span class="zh">处处都设防，就处处都薄弱。政治精力是有限兵力——对所有 stakeholder 平均用力，等于在最关键的人身上力量不足。</span>
+<span class="source">— 孙子《孙子兵法·虚实篇》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">四象限：影响力 × 关切度</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="40" x2="350" y2="320" stroke="#c4a878" stroke-width="1.5"/>
+<line x1="60" y1="180" x2="660" y2="180" stroke="#c4a878" stroke-width="1.5"/>
+<text x="350" y="20" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↑ 高影响力</text>
+<text x="350" y="345" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">↓ 低影响力</text>
+<text x="120" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">低关切 ←</text>
+<text x="600" y="365" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">→ 高关切</text>
+<rect x="70" y="50" width="270" height="120" rx="6" fill="#f8ecd0" stroke="#c47040" stroke-width="2"/>
+<rect x="360" y="50" width="290" height="120" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="70" y="190" width="270" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="360" y="190" width="290" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<text x="205" y="92" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#a04020">让其满意</text>
+<text x="205" y="115" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a3a1a">Keep Satisfied</text>
+<text x="205" y="142" text-anchor="middle" font-family="Georgia" font-size="12" fill="#7a3a1a">⚠ 别惊到！提前 brief</text>
+<text x="505" y="92" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#4a6a28">紧密管理</text>
+<text x="505" y="115" text-anchor="middle" font-family="Georgia" font-size="12" fill="#3a5a18">Manage Closely</text>
+<text x="505" y="142" text-anchor="middle" font-family="Georgia" font-size="12" fill="#3a5a18">拉成 co-owner</text>
+<text x="205" y="235" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">最少监控</text>
+<text x="205" y="258" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">Monitor</text>
+<text x="205" y="285" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">别浪费精力</text>
+<text x="505" y="235" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">保持告知</text>
+<text x="505" y="258" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">Keep Informed</text>
+<text x="505" y="285" text-anchor="middle" font-family="Georgia" font-size="12" fill="#6b4a1f">潜在传道者</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：合并三个团队服务的提案</div>
+<div class="scene">
+<div class="setup">情境：BigCat 推一个把三个团队的服务合并到统一平台的提案。把每个 stakeholder 放进矩阵——</div>
+<div class="dialog good">
+<div class="speaker">✓ 按矩阵分配精力</div>
+<p>· <strong>平台团队 lead L</strong>（高影响 + 高关切）→ 紧密管理：每周对齐，拉成 co-owner。<br>
+· <strong>分管 VP</strong>（高影响 + 低关切）→ 让其满意：他不关心技术细节，但若在 all-hands 被当"惊喜"问到会立刻 block。提前发一页 exec summary、当面 30 秒同步——求的不是热情支持，是"不反对"。<br>
+· <strong>被合并团队里爱发声的资深工程师</strong>（低影响 + 高关切）→ 保持告知：他左右不了决策但能在 Slack 带节奏；喂细节、听顾虑，他可能从反对者变成你最好的传道者。<br>
+· <strong>不相关的隔壁团队</strong>（低影响 + 低关切）→ 一封 FYI 邮件即可。</p>
+<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 错配代价：把时间全花在爱发声的工程师身上，却忘了给 VP 提前 brief——VP 在 review 被惊到，一票否决。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">给你下一个提案画矩阵</div>
+<ul class="checklist">
+<li>我列的每个 stakeholder 是否都标了"影响力"和"关切度"两个分？</li>
+<li>有没有"高影响 + 低关切"的人我还没 brief？（最易被忽略、最致命）</li>
+<li>"高影响 + 高关切"的人，我是把他当对象管理，还是已拉成 co-owner？</li>
+<li>爱发声但低影响的人，我是把他当噪音，还是当潜在传道者？</li>
+<li>这张图随 reorg / 晋升而变——我多久更新一次？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把高影响低关切的人当背景板。</strong>直到他被 surprise 后一票否决。</li>
+<li><strong>对所有人平均用力。</strong>在关键盟友身上反而投入不足。</li>
+<li><strong>矩阵画完一次就归档。</strong>权力分布随每次 reorg 重排。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>政治资本的存取：先存款，才能取款
+<span class="en">Political Capital — Deposit Before You Withdraw</span></h2>
+<span class="tag">Dawkins 互惠利他</span><span class="tag">tit-for-tat</span><span class="tag">联盟建立</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">影响力不是你"有"的，是你"存"的。你每帮别人解一个 blocker、给一句公开认可、不抢功，都是往关系账户存款；等你要跨团队推一件事时，取的是过去存款的总和。这就是<strong>互惠利他 (reciprocal altruism)</strong>：在重复博弈里，"先释善意、有来有往"长期胜出。但有个硬约束：你不能当冤大头 (sucker)——遇到只取不存的 taker，要果断停止供给。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Don't be envious. Don't be the first to defect. Reciprocate both cooperation and defection. Don't be too clever."</span>
+<span class="zh">别嫉妒；别先背叛；对合作与背叛都要对等回应；别耍小聪明。这是 Axelrod 博弈竞赛里长期胜出的 tit-for-tat 策略——善意、可激怒、肯宽恕、且透明。</span>
+<span class="source">— Robert Axelrod,《The Evolution of Cooperation》(1984)；Richard Dawkins《自私的基因》第12章"好人终有好报"普及</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范 A：识别并校准一个 taker</div>
+<div class="scene">
+<div class="setup">情境：peer P 每隔几天就来求你团队帮忙（借人、救火、review），但你需要他配合时永远"下周吧"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 无底线的 giver</div>
+<p>你继续有求必应。三个月后团队怨声载道，你自己也透支——而 P 的账户始终欠你。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ tit-for-tat：肯宽恕，但停止无条件供给</div>
+<p>"P，我很乐意继续支持。不过过去两个月帮你的几件事，轮到我这边需要 X 时都没排上。我们能不能先把 <strong>X 排进你下个 sprint</strong>？这样我下次也好继续帮你。"</p>
+<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 把"互惠"显式化，给他一次回到合作的机会（forgiving），同时明确终止单向供给——不撕破脸，但账户必须双向。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范 B：联盟在会前谈成，不在会上拉</div>
+<div class="scene">
+<div class="setup">情境：reorg 前你想推一个新方向，单靠自己分量不够。</div>
+<div class="dialog good">
+<div class="speaker">✓ 提案公开前的一对一</div>
+<p>先私下找 2-3 个利益一致、有分量的 peer，单独沟通："我在想推 X，对你团队的好处是 Y，你怎么看？<strong>需要怎么调整你才能支持？</strong>" 等正式提案时，你不是一个人在说话，是一个联盟在说话。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">你的政治资本账户</div>
+<ul class="checklist">
+<li>过去一个月，我给同级 / 其他团队存了哪些"款"（实质帮助、公开认可、不抢功）？</li>
+<li>身边有没有持续"只取不存"的 taker？我还在无条件供给吗？</li>
+<li>下一个大提案，会前 pre-wire 了哪几个盟友？还是打算到会上"靠方案本身说话"？</li>
+<li>我有没有透支某个账户（总求同一个人，从不回报）？</li>
+<li>我的"善意"是 tit-for-tat（可被对等终止），还是无底线（注定被 taker 榨干）？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>当无底线的 giver。</strong>Adam Grant 的数据：giver 同时占据绩效分布的顶端和<strong>底端</strong>——区别在于会不会保护自己不被 taker 榨干。</li>
+<li><strong>临到要办事才想起建关系。</strong>存款要在需要取款之前很久就开始。</li>
+<li><strong>帮忙不留痕。</strong>存了款但对方没意识到，账户余额是零——适度让贡献被看见。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Lens · 办公室家务不是政治资本</span>
+"办公室家务 (office housework)"——记笔记、订午餐、组织团建、带新人——这些<strong>非晋升性任务 (non-promotable tasks)</strong> 被不成比例地分配给女性（Linda Babcock《The No Club》）。它们看似"存款"，实则是不计入晋升的伪资本。区分：真存款是<strong>高可见度、与战略相关</strong>的帮助（解关键 blocker、cover 一个重要 demo）；办公室家务是低可见度、谁都能做的杂务。被分派时的话术："我这个 quarter 的带宽要保给 X（战略项目）。订午餐这件事能不能轮流 / 让更新的同事来做？" 学会说"不"，是保护资本不被贱卖。
+</div>
+</div>
+</div>
+
+<!-- ============ Resources ============ -->
+<div class="resources">
+<h3>深入资源 · Further Reading</h3>
+<ul>
+<li><strong>Jeffrey Pfeffer · Power: Why Some People Have It—and Others Don't</strong> — 斯坦福 GSB 权力课，组织政治最直白的实证视角。</li>
+<li><strong>Marie G. McIntyre · Secrets to Winning at Office Politics</strong> — 政治博弈的实操手册，玩家类型与具体战术。</li>
+<li><strong>Simon Baddeley &amp; Kim James · "Owl, Fox, Donkey or Sheep" (1987)</strong> — 四类政治玩家模型的原始出处。</li>
+<li><strong>Richard Dawkins · The Selfish Gene（第12章）&amp; Robert Axelrod · The Evolution of Cooperation</strong> — 互惠利他与 tit-for-tat 的科学基础。</li>
+<li><strong>Robert Cialdini · Influence</strong> — 互惠原则 (reciprocity) 等六个影响力武器。</li>
+<li><strong>Adam Grant · Give and Take</strong> — giver / taker / matcher 与"不被榨干的给予者"。</li>
+<li><strong>Herminia Ibarra · Act Like a Leader, Think Like a Leader</strong> — informal network 与"读地形"的网络建构。</li>
+<li><strong>孙子《孙子兵法》（谋攻 / 地形 / 虚实篇）</strong> — 知彼知己、避实击虚、不战而屈人之兵的组织映射。</li>
+</ul>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · Open Questions</h3>
+
+<details>
+<summary>读权力、建联盟、pre-wire——这些和"操纵"的界线在哪里？</summary>
+<div>界线在<strong>意图与透明度</strong>。Pre-wire 是"让对的人提前知情、有机会表达顾虑"——这是尊重；操纵是"隐瞒信息、制造信息不对称以谋私利"。同一个动作（会前 1:1），猫头鹰用来对齐事实，狐狸用来埋伏。诚实有成本：有时透明会让你输掉一个本可"偷袭"赢的局——这正是 Owl 接受、Fox 不接受的代价。一个简单自检：你能否向所有相关方公开你做了什么？</div>
+</details>
+
+<details>
+<summary>在自称"扁平 / 反等级"的科技公司，权力地图还成立吗？</summary>
+<div>更成立。等级被正式弱化时，权力不会消失，只会转入更隐蔽的非正式网络（谁和创始人吃饭、谁在某个 Slack channel 有话语权、谁被默认请去拍板）。扁平组织的政治往往<strong>更难读</strong>，因为没有 title 当线索。Pfeffer 反复指出："扁平"常意味着权力地图被隐藏，而非被消除。</div>
+</details>
+
+<details>
+<summary>这套（偏西方、直接）的玩法在东亚 / 高语境组织里要怎么调？</summary>
+<div>高语境文化里，关系的存取周期更长、更含蓄，pre-wire 更依赖私下场合与第三方引荐，而非直接的一对一摊牌。"面子"使得公开反对的代价极高——所以"会前对齐"在这些文化里不是技巧，而是<strong>必需</strong>：任何让人当众下不来台的提案几乎注定失败。Erin Meyer《The Culture Map》对此有具体拆解。</div>
+</details>
+
+<details>
+<summary>当你判断组织政治已经"病了"（劣币驱逐良币、狐狸当道），是继续玩还是退场？</summary>
+<div>先区分"局部派系斗争"和"系统性腐坏"。前者可通过建联盟、换 manager、调岗存活；后者——晋升只看站队、说真话被惩罚、连续的好人离开——信号明确时，优雅退场（见 Week 35）往往比硬扛更理性——留下的隐性成本，是你也会慢慢被环境驯化成狐狸或驴。判断标准：你最近一次说真话，是被奖励了，还是被记上了一笔？</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Week 6 Action</h3>
+<p>选一个你正在推动的跨团队事项，做两件事：</p>
+<div class="action">
+<strong>(1) 画一张权力地图（15 分钟，纸上即可）：</strong>名义 decision owner、影子顾问、gatekeeper、有否决性影响力的人——各是谁？再用 Card 3 的矩阵给每个人标"影响力 × 关切度"。<br><br>
+<strong>(2) 找出那个"高影响 + 低关切、你还没 brief"的人</strong>，这周给他发一页 exec summary 或约 15 分钟同步——目标不是让他热情支持，是让他"不被惊到"。<br><br>
+<strong>反思题：</strong>回看你过去一年"失败 / 被搁置"的某个提案——它输在方案本身，还是输在你 socialize 了 title、却漏了 power？</div>
+</div>
+
+<footer>BigCat · Leadership Weekly · Week 06 · 2026.06.24</footer>
+</div>
+</body>
+</html>
