@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Week 9：向上管理 Managing Up</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:42px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;margin-bottom:14px;letter-spacing:1.5px}
+.deep details{margin:10px 0;padding:12px 16px;background:#f8f0dd;border-radius:4px;border-left:3px solid #a8702d}
+.deep summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deep details[open] summary{margin-bottom:10px}
+.deep details div{font-size:0.94rem;color:#3a2f1c;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 09 · 2026.05.30</div>
+<h1>向上管理：让老板成为你的杠杆，而不是天花板</h1>
+<div class="meta"><span>主题：Managing Up</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Managing up is not sucking up — it's making your boss's job easier so they can make yours possible." — Julie Zhuo</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>很多技术 leader 把"向上管理"误解为拍马屁、政治表演。错。它的真名是<strong>双向供需对齐</strong>——你掌握老板的真实约束与考核口径，他获得低噪音的高质量信息，你换来空气、资源、护盾。做不好向上管理的下场不是"老板不喜欢你"，是<strong>你团队的好成果在他视野里失真甚至消失</strong>。本周拆四件事：(1) 读懂老板的账本；(2) 让成果被看见且不油腻；(3) 一页 memo 实现上行说服；(4) 当 shit umbrella 而非传声筒。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>读懂老板的账本：他在替谁加分？
+<span class="en">Read Your Boss's Calculus</span></h2>
+<span class="tag">理解</span><span class="tag">压力源</span><span class="tag">考核口径</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">你老板不是终点，他也有老板、有 KPI、有派系站位。任何请求和异议提出前，先回答一句：<strong>这件事在他的账本上是加分还是减分？</strong>不知道答案，就先去搞清楚再开口。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Your boss has a boss. Your boss has goals, constraints, and a worldview that may not be obvious to you. Part of your job is to figure those out."</span>
+<span class="zh">"你的老板也有老板。他有目标、约束和你未必看得到的世界观。搞清楚这些，是你工作的一部分。"</span>
+<span class="source">— Julie Zhuo,《The Making of a Manager》Ch. 8</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">老板账本的四个维度（开会前默问一遍）</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="20" y="135" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="135" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">① 他的 KPI</text>
+<text x="180" y="75" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">本季度他被考核的</text>
+<text x="180" y="93" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">3 个数字 / 里程碑</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">② 他的老板</text>
+<text x="520" y="75" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">谁评他的 perf？</text>
+<text x="520" y="93" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">那个人最近在意什么？</text>
+<text x="180" y="163" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">③ 他的痛点</text>
+<text x="180" y="190" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">最近哪个项目漏</text>
+<text x="180" y="208" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">让他在 ELT 难看？</text>
+<text x="520" y="163" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">④ 他的偏好</text>
+<text x="520" y="190" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">同步 vs 异步？</text>
+<text x="520" y="208" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">数据 vs 叙事？</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你想推一个为期 6 周的技术债重构。老板上周刚被他老板问"为什么 launch 速度变慢"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 失败开场</div>
+<p>"我想用 6 周做 X 重构，长期能让代码更干净，让我们团队更舒服。" → 老板心里：你给我加压，没给我减压。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 同一件事，对齐他的账本</div>
+<p>"我注意到上季度 launch 平均拖了 9 天，根因 70% 在 X 模块。我提议 6 周重构 X——<strong>给你的承诺是 Q3 launch 周期能压回 5 天以内</strong>。下季度你跟 VP 汇报时这是个能说的数字。要不要我写成一页 memo 你过目？"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表（提请求前）</div>
+<ul class="checklist">
+<li>我能说出老板这季度被考核的 3 个具体数字吗？</li>
+<li>我提的事，对应他账本上哪一项？口径用他的语言还是我的？</li>
+<li>他最近一次在 ELT / skip-level 被问到的尴尬问题是什么？</li>
+<li>这件事让他对上汇报时有"可说之物"吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把老板当抽象权威。</strong>他不是审判者，他是个有 KPI 的人。</li>
+<li><strong>只讲技术正确，不讲商业翻译。</strong>"代码更干净"不是 KPI，"launch 周期 -4 天"才是。</li>
+<li><strong>读错账本不复盘。</strong>请求被拒后只想"他不懂技术"，不去问"我猜错了他什么压力"。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>用 5 分钟在 doc 里默写老板本季度的 3 个 KPI 和 1 个最近痛点。下次 1:1 找个低风险问句确认："我猜你这季度最紧的是 X，对吗？"——对错都是信息。<br><strong>反思：</strong>你上一次请求被拒，原因到底是方案不行，还是你提的时候踩中了他账本上的减分项？</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>自我倡导而不油腻：让成果替你说话
+<span class="en">Self-Advocacy Without Being Slimy</span></h2>
+<span class="tag">能见度</span><span class="tag">Brag Doc</span><span class="tag">周报</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">在大公司，<strong>没人有义务追踪你团队的好成果</strong>。让它被看见是你的工作。沉默 ≠ 谦逊，沉默 = 让别人替你写故事。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"If you're the kind of person who hopes good work will speak for itself, you're going to be passed over by people whose work is louder than yours."</span>
+<span class="zh">"如果你以为好工作会自己说话，那你会被那些工作没你好但声音比你大的人超过去。"</span>
+<span class="source">— Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：周一邮件的两种写法</div>
+<div class="scene">
+<div class="setup">情境：上周团队三件事——上线了延迟优化、解了一个 P0、招了个 staff eng。你要写周一上行 update。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 谦逊式（实际上 = 隐身）</div>
+<p>"上周还行，团队按计划推进。延迟有些改善，招聘有进展，下周继续。"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 事实 + 影响 + 归属</div>
+<p>"<strong>三件事：</strong><br>① P95 延迟从 480ms 降到 310ms（A 同学主导），<strong>对你 OKR 的影响</strong>：解锁了 Q3 那个 latency-SLA 承诺。<br>② 周三 P0（B 同学 25 分钟定位 + 修复），事后 doc 已发，没有客户感知。<br>③ Staff offer signed（C 同学），8/1 onboard，会接你提过的 X 项目。<br><strong>需要你做：</strong>没有需要。<strong>本周风险：</strong>D 项目跨团队卡 review，下周一前没动我升级。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Brag Doc 三栏模板（每周花 10 分钟更新）</div>
+<ul class="checklist">
+<li><strong>What:</strong> 这周做成的事，一句话 + 数字。</li>
+<li><strong>So what:</strong> 它对老板 KPI / 公司 OKR / 客户体验的具体影响。</li>
+<li><strong>Who:</strong> 谁主导的（团队成员），你扮演的角色（unblock / 设计 / 谈判）。</li>
+<li>季末写 perf review、和老板谈晋升、和 skip-level 1:1 前，这份 doc 是你唯一不用临时回忆的地方。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把团队成果全归自己。</strong>下属看到会失血。点名归属反而抬高你的领导可信度。</li>
+<li><strong>"等到 perf review 再说"。</strong>那时老板的印象早被高 visibility 同事占满。</li>
+<li><strong>只报喜不报忧。</strong>风险一栏空白 = 老板某天爆雷时不再信你。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究（Bowles, Babcock）显示女性自我倡导面临双重 bind：太低调被忽略，太高调被打"aggressive"标签。一个有效绕道：把"我做了 X"改写成"<strong>团队做了 X，我做的是为他们清掉了 Y</strong>"——既归属团队（likability），又锚定了你的领导动作（competence）。Sandberg 在《Lean In》Ch.4 把这个叫"we language with I anchor"。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>建一份 Brag Doc，把过去 4 周的事补回去。本周一发一次三栏式 update 给老板。<br><strong>反思：</strong>你团队最近一个最大的成果，你老板的老板知道吗？不知道，是谁的失职？</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>一页 memo：上行说服的最高效格式
+<span class="en">The One-Page Memo for Persuading Up</span></h2>
+<span class="tag">写作</span><span class="tag">决策请求</span><span class="tag">选项化</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">越往上的人时间越碎、上下文越浅。<strong>不要带"问题"去找老板，带"选项 + 推荐"去找老板。</strong>口头讨论 30 分钟拍不下来的事，一页 memo 5 分钟能让他签字。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The higher you go, the more you need to write. Senior leaders read; they don't sit through your slides. A crisp one-pager beats a 30-minute meeting."</span>
+<span class="zh">"越往上爬，越需要写。高层只读，不会陪你过 slides。一页清晰的 memo 胜过一个 30 分钟的会。"</span>
+<span class="source">— Camille Fournier,《The Manager's Path》Ch. 7</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">一页 memo 的五段结构</div>
+<ul class="checklist">
+<li><strong>① 背景 3 句：</strong>什么事、为什么现在要决、不决的代价。</li>
+<li><strong>② 选项 2-3 个：</strong>每个一行成本 / 一行收益 / 一行风险。</li>
+<li><strong>③ 推荐 + 理由：</strong>你选哪个，为什么——这一行最关键。</li>
+<li><strong>④ 你需要老板做什么：</strong>"批准 X" / "帮我跟 Y 团队打招呼" / "知会即可"。</li>
+<li><strong>⑤ 不做的下一步：</strong>如果他不回，你的默认动作是什么 & 几号执行。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你要把团队的 on-call rotation 从 1 周改成 2 周，需要老板批。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 口头模式</div>
+<p>"老板有空聊 10 分钟吗？关于 on-call，我们团队最近 burnout 比较严重，我想讨论一下怎么调整……" → 30 分钟开会，没结论，"再想想"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Slack 直接贴 memo（不开会）</div>
+<p>"On-call 调整建议——背景：过去 6 周 3 人因 on-call 周连续被叫超 8 次，2 人提了流动意向。<strong>选项：</strong>(A) 维持现状（成本：流失风险高）；(B) 2 周轮换 + 第二人 backup（成本：每人少 2 周心智自由，收益：单周负荷 -40%）；(C) 招外援（成本：需 1 headcount + 3 月）。<strong>推荐 B</strong>——零成本、本月可实施。<strong>需要你做：</strong>跟 Q 团队同步，他们和我们共享 paging 边界。<strong>如你周五前没反对，</strong>下周一生效。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只给一个选项。</strong>看起来像逼宫，老板本能反弹。三个选项 + 推荐，给他"选"的尊严。</li>
+<li><strong>埋推荐。</strong>推荐放第三段，别等老板读到第七段才知道你想要什么。</li>
+<li><strong>缺第⑤段。</strong>没默认动作，老板就把它扔进"以后再说"。<strong>"如你周五前不反对，下周一生效"</strong>是最有力的一句。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>挑一件你拖了 2 周以上没拍板的事，按五段写成 ≤350 字 memo，贴给老板（不是约会）。<br><strong>反思：</strong>你过去半年里被老板"再想想"挂起的请求，有几件是因为你给的是问题而不是带推荐的选项？</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>当 Shit Umbrella，不当传声筒
+<span class="en">Be the Shit Umbrella, Not the Megaphone</span></h2>
+<span class="tag">护团队</span><span class="tag">透明度边界</span><span class="tag">不传递焦虑</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">上面的混乱（reorg 谣言、headcount 焦虑、老板的情绪）<strong>不要无加工地往下传</strong>。同时——不要把所有真实约束都藏起来，那是另一种欺骗。区分：吸收"噪音"，透明"事实与约束"。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Your job is to be the shit umbrella, not the shit funnel. But also: don't lie about the weather."</span>
+<span class="zh">"你的工作是当一把挡雨伞，不是漏斗。但也别骗他们说外面没下雨。"</span>
+<span class="source">— Lara Hogan,《Resilient Management》Ch. 5（改写自常见口语版本）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">吸收 vs 透明：决策图</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="180" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="180" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">吸收（你独自消化）</text>
+<text x="35" y="78" font-family="Georgia" font-size="12" fill="#5a3818">· 老板的坏情绪 / 抱怨语气</text>
+<text x="35" y="100" font-family="Georgia" font-size="12" fill="#5a3818">· 高层未定的谣言与猜测</text>
+<text x="35" y="122" font-family="Georgia" font-size="12" fill="#5a3818">· 派系冲突的人名细节</text>
+<text x="35" y="144" font-family="Georgia" font-size="12" fill="#5a3818">· 你对老板的私下不满</text>
+<text x="35" y="166" font-family="Georgia" font-size="12" fill="#5a3818">· 还在博弈中的预算数字</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">透明（必须下传）</text>
+<text x="375" y="78" font-family="Georgia" font-size="12" fill="#2a3a18">· 已定的方向变化</text>
+<text x="375" y="100" font-family="Georgia" font-size="12" fill="#2a3a18">· 影响他们日常的约束</text>
+<text x="375" y="122" font-family="Georgia" font-size="12" fill="#2a3a18">· 给他们的考核/晋升口径</text>
+<text x="375" y="144" font-family="Georgia" font-size="12" fill="#2a3a18">· 你为何做了某个权衡</text>
+<text x="375" y="166" font-family="Georgia" font-size="12" fill="#2a3a18">· "我不知道"也是事实</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：周一老板在 staff meeting 上语气很差，暗示 Q3 可能 hiring freeze。你周二有团队会。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 漏斗式</div>
+<p>"昨天老板很不爽，说 Q3 可能要冻招聘，大家做好准备。" → 团队当晚 LinkedIn 改头像，两人开始投简历。你制造了你本可以吸收的恐慌。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 伞式（吸收噪音 + 透明事实）</div>
+<p>"几件事：<strong>已定的</strong>——下季度优先级仍是 X、Y。<strong>有变数的</strong>——Q3 headcount 还在讨论，我会在拍板后第一时间同步，目前不影响在 pipeline 的两个 offer。<strong>我承诺</strong>：任何会影响你们项目或饭碗的事，我知道当周告诉你们，不会从他人那听到。<strong>问题问我。</strong>"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>"我跟你们一样不爽"——求共情。</strong>下属需要的不是同病相怜的 manager，是能挡事的 manager。</li>
+<li><strong>"上面让我转达……"——卸责。</strong>你转达的内容，你就是负责人。换成你自己的话讲。</li>
+<li><strong>过度吸收。</strong>什么都自己扛、什么都不告诉团队 = 他们某天突然被裁员震惊 + 永远不再信你。</li>
+<li><strong>用"还没定"挡所有问题。</strong>到一定时点没定本身就是信息，要说出来。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>列你过去两周从老板那接到的 5 条信息，分别标"吸收 / 透明"。下次团队会前用这个分类过滤一遍要说什么。<br><strong>反思：</strong>你团队对你的信任，更多建立在你 share 了多少，还是你为他们挡了多少？</div>
+</div>
+</div>
+
+<!-- ============ Deep Reflection ============ -->
+<div class="deep">
+<h3>深入思考 · Going Deeper</h3>
+
+<details>
+<summary>老板本身就是公司的"差老板"（无能、政治化、情绪化），向上管理还成立吗？</summary>
+<div>成立，但目标变了。对好老板，向上管理是放大他的杠杆；对差老板，向上管理是<strong>降低被他伤害的概率</strong>。具体动作：(1) 所有重要决策走书面，留 paper trail；(2) 建立 skip-level 的可见度，让上一层独立认识你的成果；(3) 严格定义你"愿意承受多久"——给自己一个 deadline，到期就启动转岗或外部寻路。Ben Horowitz 在《The Hard Thing》里反复说：你能控制的不是老板，是你的退路。</div>
+</details>
+
+<details>
+<summary>东方文化背景下，「自我倡导」会不会过于张扬、被打"不够 humble"标签？</summary>
+<div>是真风险。绕道：(1) <strong>把"我"全部改成"团队"</strong>，但每件事点出团队成员的名字——你作为 manager 的 ownership 不需要说出口，结构本身就证明了；(2) 走"汇报承诺兑现"路线，不说"我做得多好"，说"我上季度承诺 X，结果是 Y"——数字说话比形容词安全；(3) 找一个 sponsor（不是 mentor），让他替你在你不在场的房间里说你的好话。在亚洲文化里，第三个方法回报最高。</div>
+</details>
+
+<details>
+<summary>一页 memo 在你公司没人用怎么办？老板只接受拉群讨论。</summary>
+<div>先低调用，不要宣传"我在做向上管理"。给老板 1:1 时口头说一句"我把上下文写在这了，你方便时看"，附 doc 链接——大多数人会偷偷点开。坚持 4-6 周，你会被记为"那个想清楚才来的人"，开始反向被复制。关键：memo 不是替代会议，是<strong>让会议从"讨论是什么"压缩到"决定怎么做"</strong>。如果老板坚持口头不读字，memo 的真正受益人是你自己——它逼你想清楚，开会时你是房间里准备最充分的人。</div>
+</details>
+
+<details>
+<summary>护团队（吸收）和透明（开诚布公）的边界，多次摇摆怎么稳？</summary>
+<div>用一条硬规则定锚：<strong>"会影响他们饭碗或日常工作的事，我必须当周说；其他都先吸收"</strong>。具体应用——reorg 谣言（不影响）→ 吸收；headcount 数字博弈中（暂不影响）→ 吸收；老板已签字的 reorg 名单（影响）→ 立刻说。摇摆的根因往往是你自己没分清"我焦虑想倾倒"和"他们需要知道"。倾倒找你的 peer manager 或 coach，不要倾倒给团队。</div>
+</details>
+
+<details>
+<summary>tech lead manager 在大公司里，向上管理花多少时间合理？</summary>
+<div>经验值：稳态约 15-20%（一周 6-8 小时，含 1:1、memo、上行 update、skip-level 准备）。重大事件期（reorg、perf 季、预算季）会临时上升到 30%。<strong>低于 10% 通常意味着你的团队成果在系统里失真</strong>，高于 30% 持续超过一季度意味着你正在变政治动物、远离技术。校准方法：每季末看你团队拿到的资源 / 晋升 / 项目分配，相对邻队是否吃亏——吃亏说明向上管理欠债，需要补；不吃亏且你还累，说明可以减。</div>
+</details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Weekly · Week 09 · 2026.05.30</footer>
+</div>
+</body>
+</html>

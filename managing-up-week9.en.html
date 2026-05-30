@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 9: Managing Up</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:42px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;margin-bottom:14px;letter-spacing:1.5px}
+.deep details{margin:10px 0;padding:12px 16px;background:#f8f0dd;border-radius:4px;border-left:3px solid #a8702d}
+.deep summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deep details[open] summary{margin-bottom:10px}
+.deep details div{font-size:0.94rem;color:#3a2f1c;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 09 · 2026.05.30</div>
+<h1>Managing Up: Make Your Boss Your Lever, Not Your Ceiling</h1>
+<div class="meta"><span>Topic: Managing Up</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Managing up is not sucking up — it's making your boss's job easier so they can make yours possible." — Julie Zhuo</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Many tech leaders misread "managing up" as sucking up or political theater. Wrong. The real name is <strong>two-way supply-demand alignment</strong>: you learn your boss's real constraints and scoring rubric; they get low-noise, high-quality signal from you; you trade for oxygen, resources, and air cover. Failing at it doesn't mean "your boss dislikes you" — it means <strong>your team's good work gets distorted or vanishes in their field of view</strong>. Four moves: (1) read your boss's calculus; (2) make work visible without being slimy; (3) persuade up with a one-page memo; (4) be a shit umbrella, not a megaphone.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Read Your Boss's Calculus: Whose Score Are They Raising?
+<span class="en">Read Your Boss's Calculus</span></h2>
+<span class="tag">Understanding</span><span class="tag">Pressure</span><span class="tag">Scoring Rubric</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">Your boss is not the endpoint — they have a boss, KPIs, and faction positioning of their own. Before any request or pushback, answer one question: <strong>does this add or subtract on their scorecard?</strong> If you don't know, go find out before you open your mouth.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key Quote</div>
+<div class="quote">
+<span class="en">"Your boss has a boss. Your boss has goals, constraints, and a worldview that may not be obvious to you. Part of your job is to figure those out."</span>
+<span class="source">— Julie Zhuo, <em>The Making of a Manager</em>, Ch. 8</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Four Dimensions of Your Boss's Ledger (silently run through before any ask)</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="20" y="135" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="135" width="320" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">(1) Their KPIs</text>
+<text x="180" y="75" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">The 3 numbers / milestones</text>
+<text x="180" y="93" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">they're judged on this quarter</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">(2) Their Boss</text>
+<text x="520" y="75" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Who grades their perf?</text>
+<text x="520" y="93" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">What does that person care about?</text>
+<text x="180" y="163" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">(3) Their Pain</text>
+<text x="180" y="190" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Which leaky project just</text>
+<text x="180" y="208" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">made them look bad at ELT?</text>
+<text x="520" y="163" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">(4) Their Style</text>
+<text x="520" y="190" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Sync vs async?</text>
+<text x="520" y="208" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Data vs narrative?</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: you want a 6-week tech-debt refactor approved. Your boss got grilled last week by their boss on "why are launches slowing down?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Failing opener</div>
+<p>"I want 6 weeks to refactor X — long-term it'll make the code cleaner, the team happier." → Your boss hears: you're adding load, not removing any.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Same ask, aligned to their ledger</div>
+<p>"Last quarter launches slipped 9 days on average; root cause is 70% in module X. I'm proposing a 6-week refactor — <strong>commitment to you: by Q3, launch cycle drops back below 5 days</strong>. That's a number you can hand the VP next quarter. Want me to write it up as a one-pager for review?"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (before any request)</div>
+<ul class="checklist">
+<li>Can I name 3 specific numbers my boss is graded on this quarter?</li>
+<li>Does my ask map to one of those? Am I using their language or mine?</li>
+<li>What was the last awkward question they got asked at ELT / skip-level?</li>
+<li>Does this give them something they can <em>say upward</em>?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating your boss as abstract authority.</strong> They are not a judge — they're a person with a KPI sheet.</li>
+<li><strong>Tech-correct pitch, no business translation.</strong> "Cleaner code" is not a KPI; "launch cycle −4 days" is.</li>
+<li><strong>Misreading the ledger and not auditing.</strong> Rejection → blaming "they don't get tech," instead of asking "which pressure of theirs did I step on?"</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week + Reflection</div>
+<div class="ref"><strong>Action:</strong> Spend 5 minutes writing down your boss's 3 KPIs and 1 recent pain point. In your next 1:1 confirm with a low-risk question: "I'm guessing your tightest one this quarter is X — right?" Either answer is information.<br><strong>Reflect:</strong> Your last rejected request — was it really the plan, or did you step on a minus item on their ledger?</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Self-Advocacy Without Being Slimy: Let the Work Speak
+<span class="en">Self-Advocacy Without Being Slimy</span></h2>
+<span class="tag">Visibility</span><span class="tag">Brag Doc</span><span class="tag">Weekly Update</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">In a big company, <strong>no one is obligated to track your team's good work</strong>. Surfacing it is your job. Silence ≠ humility; silence = letting other people write your story.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key Quote</div>
+<div class="quote">
+<span class="en">"If you're the kind of person who hopes good work will speak for itself, you're going to be passed over by people whose work is louder than yours."</span>
+<span class="source">— Tomas Chamorro-Premuzic, <em>Why Do So Many Incompetent Men Become Leaders?</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Two Versions of a Monday Update</div>
+<div class="scene">
+<div class="setup">Situation: last week your team shipped a latency win, resolved a P0, and signed a staff eng. You owe your boss a Monday update.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Humble (= invisible)</div>
+<p>"Last week was fine. Team's on track. Some latency improvement, some hiring progress. Continuing this week."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Facts + impact + attribution</div>
+<p>"<strong>Three things:</strong><br>(1) P95 latency dropped from 480ms → 310ms (A led). <strong>Impact on your OKR:</strong> unlocks the Q3 latency-SLA commitment.<br>(2) P0 Wednesday (B diagnosed + fixed in 25 min). Postmortem shared, zero customer impact.<br>(3) Staff offer signed (C). Onboarding 8/1, will pick up the X project you asked about.<br><strong>Asks of you:</strong> none. <strong>Risk this week:</strong> D project is stuck on cross-team review; if no movement by Monday I'll escalate."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Brag Doc — 3 columns, 10 min/week</div>
+<ul class="checklist">
+<li><strong>What:</strong> what shipped this week, one line + a number.</li>
+<li><strong>So what:</strong> concrete impact on boss's KPI / company OKR / customer.</li>
+<li><strong>Who:</strong> who led (your team member), what role you played (unblocked / designed / negotiated).</li>
+<li>Before perf review, promo conversations, and skip-level 1:1s, this doc is the one place you won't have to reconstruct from memory.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Claiming team wins as your own.</strong> Reports notice and bleed out. Naming them actually raises your credibility as a leader.</li>
+<li><strong>"I'll save it for perf review."</strong> By then your boss's impression is already filled by high-visibility peers.</li>
+<li><strong>All sunshine, no risks.</strong> An empty "risk" column = the day something blows up, your boss stops trusting your updates.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research (Bowles, Babcock) shows female leaders face a double bind in self-advocacy: too quiet = overlooked, too loud = labeled "aggressive." A workable detour: rewrite "I did X" as "<strong>the team did X, and what I did was clear Y for them</strong>" — credit the team (likability) while anchoring your leadership move (competence). Sandberg calls this the "we language with I anchor" in <em>Lean In</em>, Ch. 4.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week + Reflection</div>
+<div class="ref"><strong>Action:</strong> Start a Brag Doc, backfill the last 4 weeks. This Monday, send a three-column update to your boss.<br><strong>Reflect:</strong> Your team's biggest recent win — does your boss's boss know about it? If not, whose failure is that?</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The One-Page Memo: The Highest-Bandwidth Way to Persuade Up
+<span class="en">The One-Page Memo for Persuading Up</span></h2>
+<span class="tag">Writing</span><span class="tag">Decision Request</span><span class="tag">Options</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">The higher someone sits, the more fragmented their time and the shallower their context. <strong>Don't bring problems to your boss — bring options with a recommendation.</strong> A 5-minute one-pager beats a 30-minute meeting you can't get to a decision.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key Quote</div>
+<div class="quote">
+<span class="en">"The higher you go, the more you need to write. Senior leaders read; they don't sit through your slides. A crisp one-pager beats a 30-minute meeting."</span>
+<span class="source">— Camille Fournier, <em>The Manager's Path</em>, Ch. 7</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Five Sections of the One-Page Memo</div>
+<ul class="checklist">
+<li><strong>(1) Context, 3 sentences:</strong> what, why now, cost of not deciding.</li>
+<li><strong>(2) Options, 2–3:</strong> each with one line cost / one line benefit / one line risk.</li>
+<li><strong>(3) Recommendation + reason:</strong> which one, why — this is the most important line.</li>
+<li><strong>(4) What you need from your boss:</strong> "approve X" / "ping Y team" / "FYI only."</li>
+<li><strong>(5) Default if no reply:</strong> what you'll do by when if they don't respond.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: you want to shift the team's on-call rotation from 1 week to 2 weeks. Needs boss approval.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Verbal mode</div>
+<p>"Hey, got 10 min? About on-call — the team's pretty burnt out lately, I want to talk through some changes…" → 30-minute meeting, no decision, "let me think."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Drop the memo in Slack (no meeting)</div>
+<p>"On-call proposal — Context: over the past 6 weeks, 3 people paged 8+ times in their on-call week, 2 mentioned wanting off the team. <strong>Options:</strong> (A) status quo (cost: attrition risk high); (B) 2-week rotation with secondary backup (cost: 2 weeks less mental freedom per person, benefit: weekly load −40%); (C) hire external (cost: 1 headcount + 3 months). <strong>Recommend B</strong> — zero cost, can ship this month. <strong>From you:</strong> sync with Q team since we share paging boundaries. <strong>If no objection by Friday,</strong> live Monday."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Only one option.</strong> Reads as cornering. Three options + recommendation gives them the dignity of choosing.</li>
+<li><strong>Burying the recommendation.</strong> Put it in section 3, not section 7. Don't make them read to find what you want.</li>
+<li><strong>Missing section 5.</strong> Without a default action, the memo lands in "later." <strong>"If no objection by Friday, live Monday"</strong> is the most powerful single line.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week + Reflection</div>
+<div class="ref"><strong>Action:</strong> Pick one thing you've been sitting on for 2+ weeks. Write it as a ≤350-word, five-section memo. Send it (don't book a meeting).<br><strong>Reflect:</strong> Of the asks your boss said "let me think" to in the last six months — how many were problems you brought, instead of options with a recommendation?</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Be the Shit Umbrella, Not the Megaphone
+<span class="en">Shield the Team Without Lying to Them</span></h2>
+<span class="tag">Air Cover</span><span class="tag">Transparency Edge</span><span class="tag">No Anxiety Pass-through</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-Line Principle</div>
+<div class="principle">Noise from above (reorg rumors, headcount anxiety, your boss's mood) <strong>does not get passed down unprocessed</strong>. But also — don't hide every real constraint; that's just a different lie. Distinguish: absorb "noise," be transparent about "facts and constraints."</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key Quote</div>
+<div class="quote">
+<span class="en">"Your job is to be the shit umbrella, not the shit funnel. But also: don't lie about the weather."</span>
+<span class="source">— Lara Hogan, <em>Resilient Management</em>, Ch. 5 (paraphrased from the common verbal version)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Absorb vs. Transparent: Decision Map</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="180" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="180" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">Absorb (you digest alone)</text>
+<text x="35" y="78" font-family="Georgia" font-size="12" fill="#5a3818">· Your boss's mood / venting tone</text>
+<text x="35" y="100" font-family="Georgia" font-size="12" fill="#5a3818">· Undecided exec rumors</text>
+<text x="35" y="122" font-family="Georgia" font-size="12" fill="#5a3818">· Faction name-by-name details</text>
+<text x="35" y="144" font-family="Georgia" font-size="12" fill="#5a3818">· Your private gripes about boss</text>
+<text x="35" y="166" font-family="Georgia" font-size="12" fill="#5a3818">· In-flight budget numbers</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">Transparent (must pass down)</text>
+<text x="375" y="78" font-family="Georgia" font-size="12" fill="#2a3a18">· Decided direction changes</text>
+<text x="375" y="100" font-family="Georgia" font-size="12" fill="#2a3a18">· Constraints affecting their day</text>
+<text x="375" y="122" font-family="Georgia" font-size="12" fill="#2a3a18">· Perf / promo rubric for them</text>
+<text x="375" y="144" font-family="Georgia" font-size="12" fill="#2a3a18">· Why you made a trade-off</text>
+<text x="375" y="166" font-family="Georgia" font-size="12" fill="#2a3a18">· "I don't know" is also a fact</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: Monday's staff meeting your boss is in a foul mood and hints Q3 might bring a hiring freeze. You have a team meeting Tuesday.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Funnel mode</div>
+<p>"Boss was pissed yesterday — Q3 might freeze hiring, brace yourselves." → That night, the team updates LinkedIn photos, two start interviewing. You manufactured panic you could have absorbed.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Umbrella mode (absorb noise, surface fact)</div>
+<p>"A few things: <strong>Decided</strong> — next quarter's priorities are still X and Y. <strong>In flux</strong> — Q3 headcount is still being discussed; I'll sync the moment it's decided. Doesn't affect the two offers in pipeline. <strong>My commitment:</strong> anything that touches your projects or your livelihood, you hear it from me the week I know — not from someone else. <strong>Bring questions to me.</strong>"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>"I'm just as frustrated as you" — seeking empathy.</strong> Reports don't need a manager who shares the misery; they need one who can block it.</li>
+<li><strong>"Leadership asked me to relay…" — deflecting ownership.</strong> Whatever you pass on, you own. Say it in your own words.</li>
+<li><strong>Over-absorbing.</strong> Carrying everything yourself, telling them nothing = one day a layoff blindsides them + permanent loss of trust.</li>
+<li><strong>"It's not decided yet" as a universal shield.</strong> "Still undecided" past a certain point is itself information — say so.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week + Reflection</div>
+<div class="ref"><strong>Action:</strong> List 5 pieces of info you received from your boss in the past 2 weeks. Label each "absorb / transparent." Use this filter to decide what to say at your next team meeting.<br><strong>Reflect:</strong> Does your team's trust in you rest more on how much you share, or how much you block?</div>
+</div>
+</div>
+
+<!-- ============ Deep Reflection ============ -->
+<div class="deep">
+<h3>Going Deeper</h3>
+
+<details>
+<summary>If your boss is genuinely the "bad boss" (incompetent, political, volatile), does managing up still apply?</summary>
+<div>Yes, but the goal shifts. With a good boss, managing up amplifies their leverage. With a bad one, it <strong>lowers your probability of being damaged</strong>. Concrete moves: (1) every important decision in writing — leave a paper trail; (2) build skip-level visibility so the layer above sees your work independently; (3) define how long you'll tolerate it — set a personal deadline, then activate transfer or external search. Ben Horowitz in <em>The Hard Thing About Hard Things</em> repeats it: what you control isn't your boss, it's your exit options.</div>
+</details>
+
+<details>
+<summary>In East Asian / collectivist cultures, doesn't self-advocacy get penalized as "not humble enough"?</summary>
+<div>It's a real risk. Detours: (1) <strong>Replace "I" with "the team" throughout</strong>, but name individuals — your ownership as manager doesn't need to be spoken, the structure proves it; (2) frame around "promise → delivery," not greatness — "I committed X last quarter; result was Y." Numbers are safer than adjectives; (3) find a sponsor (not a mentor) who talks about you in rooms you're not in. In Asian contexts, the third yields the highest return per unit effort.</div>
+</details>
+
+<details>
+<summary>What if nobody at your company uses one-page memos? Your boss only takes verbal / group chat.</summary>
+<div>Use it quietly, don't announce it. In your 1:1, say casually "I wrote the context here, take a look when you can" and attach a link — most bosses will quietly read it. Stick with it for 4–6 weeks and you become known as "the one who thinks before walking in," and it starts being copied back. The memo isn't a replacement for the meeting — it <strong>compresses the meeting from "what is it" to "what do we decide"</strong>. Even if your boss never reads, the memo's real beneficiary is you: it forces clarity, and you walk in the most prepared person in the room.</div>
+</details>
+
+<details>
+<summary>Air cover (absorbing) vs. transparency — how do you keep the line stable instead of wobbling?</summary>
+<div>Anchor with one hard rule: <strong>anything that touches their livelihood or daily work, I say within the week; everything else, absorb first</strong>. Applied: reorg rumor (no impact) → absorb; headcount in flux (not yet impacting) → absorb; signed reorg list (impacts) → say immediately. Wobble usually comes from confusing "I'm anxious and want to vent" with "they need to know." Vent to a peer manager or coach — never to your team.</div>
+</details>
+
+<details>
+<summary>For a tech lead manager in a big company, how much time should managing up consume?</summary>
+<div>Heuristic: steady state ~15–20% (6–8 hours/week including 1:1s, memos, upward updates, skip-level prep). During big events (reorg, perf, budget season) it temporarily spikes to 30%. <strong>Below 10% usually means your team's results are getting distorted in the system</strong>; sustained above 30% for more than a quarter means you're turning into a political animal and drifting from the tech. Calibration: end of each quarter, compare your team's resources / promos / project allocation vs. peer teams — losing out = managing-up debt, pay it down; not losing out and you're still exhausted = you can dial back.</div>
+</details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Weekly · Week 09 · 2026.05.30</footer>
+</div>
+</body>
+</html>
