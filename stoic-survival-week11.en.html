@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Week 11: Stoic Work Survival</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:42px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;margin-bottom:14px;letter-spacing:1.5px}
+.deep details{margin:10px 0;padding:12px 16px;background:#f8f0dd;border-radius:4px;border-left:3px solid #a8702d}
+.deep summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deep details[open] summary{margin-bottom:10px}
+.deep details div{font-size:0.94rem;color:#3a2f1c;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Week 11 · 2026.06.13</div>
+<h1>Stoic Work Survival: Four Engineered Responses to Unfairness, Arrogance, and the Uncontrollable</h1>
+<div class="meta"><span>Topic: Stoicism at Work</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"You have power over your mind — not outside events. Realize this, and you will find strength." — Marcus Aurelius</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> In a big company you hit "this is just unfair" every week — promo blocked, credit stolen, an arrogant peer condescending to you, a reorg killing six months of work. <strong>Anger and replay are the most expensive internal tax</strong> — they drain the energy you need for 1:1s, for clean technical decisions, for composure in high-stakes rooms. Stoicism is not stoic-faced endurance, nor detached coldness — it is <strong>an engineering method to move emotional energy from the uncontrollable into the controllable</strong>. Four operations this week: (1) Epictetus's dichotomy as a workflow; (2) Premeditatio malorum to absorb arrogance ambushes; (3) Obstacle as input, not noise; (4) Marcus's morning/evening journal as a 10-minute daily routine.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The Dichotomy of Control: Sort Before You Spend
+<span class="en">Triage Every Annoyance Into Three Buckets</span></h2>
+<span class="tag">Epictetus</span><span class="tag">Attribution</span><span class="tag">Energy budget</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle + source</div>
+<div class="principle">For every thing that bothers you, take 30 seconds and sort it into three buckets: <strong>fully in your control / influenceable / fully outside</strong>. Spend emotional energy only on the first two. Every minute spent on bucket three is <strong>pure loss</strong>.</div>
+<div class="quote" style="margin-top:12px">
+<span class="en">"Some things are in our control and others not. Things in our control are opinion, pursuit, desire, aversion... Things not in our control are body, property, reputation, command."</span>
+<span class="source">— Epictetus, <em>Enchiridion</em> §1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The three-bucket triage</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="210" height="180" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="245" y="20" width="210" height="180" rx="6" fill="#f8f0dd" stroke="#a8702d" stroke-width="2"/>
+<rect x="470" y="20" width="210" height="180" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="125" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">Fully controllable</text>
+<text x="125" y="68" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a7a38">Spend 70%</text>
+<text x="35" y="98" font-family="Georgia" font-size="12" fill="#2a3a18">· My response &amp; words</text>
+<text x="35" y="120" font-family="Georgia" font-size="12" fill="#2a3a18">· My next move</text>
+<text x="35" y="142" font-family="Georgia" font-size="12" fill="#2a3a18">· My prep &amp; quality</text>
+<text x="35" y="164" font-family="Georgia" font-size="12" fill="#2a3a18">· Who I talk to</text>
+<text x="35" y="186" font-family="Georgia" font-size="12" fill="#2a3a18">· When I leave</text>
+
+<text x="350" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#8a5a20">Influenceable</text>
+<text x="350" y="68" text-anchor="middle" font-family="Georgia" font-size="11" fill="#a8702d">Spend 30%</text>
+<text x="260" y="98" font-family="Georgia" font-size="12" fill="#3a2f1c">· Boss's impression</text>
+<text x="260" y="120" font-family="Georgia" font-size="12" fill="#3a2f1c">· Peer's support</text>
+<text x="260" y="142" font-family="Georgia" font-size="12" fill="#3a2f1c">· Project resources</text>
+<text x="260" y="164" font-family="Georgia" font-size="12" fill="#3a2f1c">· How you're read</text>
+<text x="260" y="186" font-family="Georgia" font-size="12" fill="#3a2f1c">→ Action, not anxiety</text>
+
+<text x="575" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">Uncontrollable</text>
+<text x="575" y="68" text-anchor="middle" font-family="Georgia" font-size="11" fill="#b85c3a">Spend 0%</text>
+<text x="485" y="98" font-family="Georgia" font-size="12" fill="#5a1818">· Calibration outcome</text>
+<text x="485" y="120" font-family="Georgia" font-size="12" fill="#5a1818">· Reorg / layoff calls</text>
+<text x="485" y="142" font-family="Georgia" font-size="12" fill="#5a1818">· A peer's personality</text>
+<text x="485" y="164" font-family="Georgia" font-size="12" fill="#5a1818">· What's already done</text>
+<text x="485" y="186" font-family="Georgia" font-size="12" fill="#5a1818">→ Accept, don't replay</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Friday 4pm. You learn the project you've led for 8 months is being killed — "strategic shift." Your reports will ask on Monday.</div>
+<div class="dialog bad">
+<div class="speaker">✗ All energy in bucket three</div>
+<p>You spend the weekend replaying: "Why me?" "Did that VP never like me?" "If I had aligned one more time…" By Monday morning you're depleted. Your reports see hollow eyes and team morale collapses.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Three-bucket triage (45 minutes)</div>
+<p><strong>Uncontrollable (accept):</strong> the decision, the reorg cadence, the VP's calculus. <strong>Stop replaying.</strong><br>
+<strong>Influenceable (30%):</strong> book a skip-level next week. "How do you see my next step?" — shape the impression, don't reopen the verdict.<br>
+<strong>Controllable (70%):</strong> (1) Sunday night, write 200 words to the team: where the work archives go, each person's next landing, what you'll fight for. (2) Monday before all-hands, Slack the three most senior reports individually so they don't hear it cold in the room.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Triage checklist</div>
+<ul class="checklist">
+<li>Have I actually sorted into three buckets, or just looping in my head?</li>
+<li>The last 30 minutes I spent — which bucket?</li>
+<li>What's the <strong>next concrete action</strong> in bucket two? When and where?</li>
+<li>Am I reinforcing bucket three by venting to my partner or friends?</li>
+<li>Tomorrow morning, which bucket do I hit first?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common errors + female lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mis-sorting "influenceable" as "controllable."</strong> You don't control how the VP thinks, only the inputs he sees. Mis-sorting breeds overcommitment and frustration.</li>
+<li><strong>Mis-sorting "controllable" as "uncontrollable."</strong> "Whatever, I can't…" is the language of giving up. Your response is always in bucket one.</li>
+<li><strong>Sorting without acting.</strong> The dichotomy is an action tool, not a meditation slogan.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women get more often told to "manage your emotions" — a framing that pathologizes the anger itself. The dichotomy is not asking you <strong>not to be angry</strong>; it's asking <strong>which bucket the anger funds</strong>. Anger at promo bias is legitimate signal — but converting that signal into bucket-one action (data, sponsor conversations, written record) has 10x the leverage of staying angry at a peer's personality (bucket three).
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Action + reflection</div>
+<div class="ref"><strong>Action:</strong> Pick the thing bothering you most this week. Draw the three-bucket table in a doc. Then ask: can I cut the bucket-three time by 80%?<br><strong>Reflection:</strong> If all your "work anger" from the past year had been converted to bucket-one action, where would you be now?</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Premeditatio Malorum: Pre-Budget the Bad
+<span class="en">Rehearse the Ambush Before It Lands</span></h2>
+<span class="tag">Seneca</span><span class="tag">Pre-mortem</span><span class="tag">Emotional prep</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle + source</div>
+<div class="principle">Ten minutes before any high-stakes meeting, <strong>actively imagine three worst-case moments</strong> and silently rehearse your response lines. Arrogant peer condescension, public pushback from your boss, credit theft — <strong>the unrehearsed shock is what wounds</strong>. The same shock, rehearsed, is just "ah, here it comes — go."</div>
+<div class="quote" style="margin-top:12px">
+<span class="en">"He robs present ills of their power who has perceived their coming beforehand."</span>
+<span class="source">— Seneca, <em>Letters from a Stoic</em>, Letter 76/91</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Tomorrow: architecture review. You know that senior staff engineer from the peer team will attend. His opening line the last three times was "This is naive…" and the room just nervous-laughed.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Unrehearsed → frozen in the moment</div>
+<p>He says "This is naive, you clearly haven't thought about X." Your mind blanks. You either over-defend (looks defensive) or go silent (looks unprepared). You replay it angrily all evening. Your team meets a frazzled you the next day.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 10 minutes of rehearsal, 3 scenarios</div>
+<p><strong>#1:</strong> He says "naive" → "<strong>That's fair pushback — which assumption would you challenge first?</strong>" (Turns ad hominem back into technical.)<br>
+<strong>#2:</strong> He's come loaded on X → "<strong>I considered X and chose Y because [reason]. Happy to revisit with data.</strong>"<br>
+<strong>#3:</strong> He derails out of scope → "<strong>Good question — let's park it. I'll follow up 1:1 so we don't block the room.</strong>"<br>
+The rehearsed version plays back almost automatically. Your amygdala isn't hijacked, because <strong>it has already been hijacked once — in your head</strong>.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Pre-meeting rehearsal checklist (10 min before any high-stakes room)</div>
+<ul class="checklist">
+<li>Who in this room is most likely to throw me off? What's their pattern?</li>
+<li>Do I have 3 concrete response lines ready (not abstract "stay calm")?</li>
+<li>If the worst happens, what's my <strong>minimum win condition</strong>? (Not overturned? Get the next meeting?)</li>
+<li>Have I given an ally a heads-up so they can back me with a line?</li>
+<li>Is there a 1-hour buffer after the meeting? Shocks need processing — don't chain another meeting.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common errors + female lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Rehearsal turning into anxious rumination.</strong> Rehearsal = "if X, I say Y" — closed-loop. Rumination = "what if X what if X" — open-loop. The difference is <strong>whether you've prepared a concrete sentence</strong>.</li>
+<li><strong>Only rehearsing bad, never neutral.</strong> Sometimes they're not actually attacking. Rehearse a normal version too, or you'll greet a neutral question with hostility.</li>
+<li><strong>Rehearsing too many scenarios.</strong> Three is the cap. More = no preparation.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women are statistically interrupted and mansplained more in technical reviews (Joan Williams's research). Add one canned response for being cut off: "<strong>Let me finish that thought, then I'd love your input.</strong>" Calm, no accusation, no apology — say it three times until it's muscle memory. The interrupter won't change, but your <strong>response latency drops from 5 seconds to 0</strong>, and the authority signal is enormous.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Action + reflection</div>
+<div class="ref"><strong>Action:</strong> Pick the meeting that worries you most this week. Write 3 likely ambushes and your concrete response lines (sentences, not strategies). After the meeting, check which one you actually used.<br><strong>Reflection:</strong> How many of your "I was caught off guard" moments could 10 minutes of rehearsal have absorbed?</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Obstacle Is Material: Treat Uncontrollable Events as Input
+<span class="en">Reframe Friction as Fuel — Don't Waste a Crisis</span></h2>
+<span class="tag">Marcus Aurelius</span><span class="tag">Reframing</span><span class="tag">Don't waste crises</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle + source</div>
+<div class="principle">The thing blocking you can become the road — but only if <strong>you actively turn it into material rather than complaining it exists</strong>. Every reorg, killed project, or bad boss contains a usable byproduct. If you can't find it, you haven't looked yet.</div>
+<div class="quote" style="margin-top:12px">
+<span class="en">"The impediment to action advances action. What stands in the way becomes the way."</span>
+<span class="source">— Marcus Aurelius, <em>Meditations</em> 5.20</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Your project is killed. Five reports need to be re-placed. Default reaction: grief, attrition, leaving a mess behind.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Treat the obstacle as an obstacle</div>
+<p>You hold an apologetic all-hands ("this wasn't our fault"), let people fend for themselves. Three months later only two remain, the new managers have no impression of your team, your political capital is at zero — the obstacle ate both your future and the team's.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Treat the obstacle as material</div>
+<p>Ask: "What can this forced dispersal <strong>buy me that I couldn't normally ask for</strong>?" Three byproducts:<br>
+<strong>(1) High-leverage staffing asks:</strong> 5 placements in one batch is 3x easier than asking senior teams one-by-one — you're <strong>solving "I'm short for next quarter"</strong> for them.<br>
+<strong>(2) A sharp project postmortem:</strong> compress 8 months of technical learning into a 5-page public doc — your most readable staff-level artifact of the year.<br>
+<strong>(3) A capital audit:</strong> who will take a placement for you? Who stops returning calls? The most accurate political radar you'll run all year.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Obstacle-to-material checklist</div>
+<ul class="checklist">
+<li>What can this obstacle <strong>legitimately let me ask for</strong> that I couldn't otherwise? (Resources, attention, info, favors)</li>
+<li>What <strong>artifact</strong> can this produce? (Doc, postmortem, new relationship, new skill)</li>
+<li>What does this obstacle <strong>test</strong>? (Who shows up, which assumptions were wrong, which capabilities are weak)</li>
+<li>Have I separated complaining-time from materializing-time? Complaint ≤ 30 min, the rest is materializing.</li>
+<li>Looking back from 3 months out, what role do I want this to play in my story? Start playing that version now.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common errors + female lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Skipping grief and jumping to reframe.</strong> Real losses need 24–48 hours of acknowledgment; forced positivity is another kind of bypassing.</li>
+<li><strong>Reframing into "this is actually good."</strong> It's not. It's still a bad thing — and <strong>you also extracted something from it</strong>. Both hold.</li>
+<li><strong>Using "the obstacle is the way" as concession on systemic injustice.</strong> Personally it's a tool; systemically you still push back. Internal reframe ≠ external acceptance.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women told after a setback to "keep your head down" are being told to treat the obstacle as an obstacle. A more Stoic move: <strong>after every suppression, produce one visible high-quality artifact</strong> (doc, talk, open-source, cross-org 1:1). Not to prove anything — to <strong>repatriate the visibility that was taken from you</strong>, without depending on the suppressor changing.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Action + reflection</div>
+<div class="ref"><strong>Action:</strong> Pick something from the last 3 months you'd label "pure loss." Force yourself through the 5-item checklist and name three byproducts you could (or already did) extract.<br><strong>Reflection:</strong> The leaders you most respect — how is their "killed project" story told? The telling itself is a skill.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Morning + Evening 10 Minutes: Put the Philosophy in the Calendar
+<span class="en">The Daily Stoic Loop — Make It a Routine, Not a Mood</span></h2>
+<span class="tag">Marcus Meditations</span><span class="tag">Routine</span><span class="tag">Daily engineering</span>
+</div>
+
+<div class="section">
+<div class="section-label">One-line principle + source</div>
+<div class="principle">Stoicism fails not because the ideas are wrong but because <strong>without a routine you only reach for it in collapse</strong> — and by then it's too late. Marcus's <em>Meditations</em> is itself a private morning/evening journal. Turn it into your fixed 10 minutes a day.</div>
+<div class="quote" style="margin-top:12px">
+<span class="en">"When you arise in the morning, think of what a precious privilege it is to be alive — to breathe, to think, to enjoy, to love."</span>
+<span class="source">— Marcus Aurelius, <em>Meditations</em> 2.1 (which opens: "Today I shall meet…")</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The 10-minute loop</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="200" rx="6" fill="#f8f0dd" stroke="#a8702d" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="200" rx="6" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Morning · 5 min (before first email)</text>
+<text x="35" y="78" font-family="Georgia" font-size="12" fill="#3a2f1c">1. Who's most likely to throw me today?</text>
+<text x="35" y="100" font-family="Georgia" font-size="12" fill="#3a2f1c">2. Their pattern + my response line</text>
+<text x="35" y="122" font-family="Georgia" font-size="12" fill="#3a2f1c">3. One uncontrollable to accept today</text>
+<text x="35" y="144" font-family="Georgia" font-size="12" fill="#3a2f1c">4. One controllable I will finish today</text>
+<text x="35" y="166" font-family="Georgia" font-size="12" fill="#3a2f1c">5. If today were my last, what</text>
+<text x="55" y="184" font-family="Georgia" font-size="12" fill="#3a2f1c">would I wish I'd said sooner?</text>
+<text x="180" y="208" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">→ Same page in journal/Notion</text>
+
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Evening · 5 min (before laptop off)</text>
+<text x="375" y="78" font-family="Georgia" font-size="12" fill="#3a2f1c">1. One thing I did right today</text>
+<text x="395" y="96" font-family="Georgia" font-size="12" fill="#3a2f1c">(behavior, not project: an email</text>
+<text x="395" y="114" font-family="Georgia" font-size="12" fill="#3a2f1c">held back, a good question, recognition)</text>
+<text x="375" y="138" font-family="Georgia" font-size="12" fill="#3a2f1c">2. One thing I did wrong</text>
+<text x="375" y="160" font-family="Georgia" font-size="12" fill="#3a2f1c">3. Which bucket got my energy?</text>
+<text x="375" y="182" font-family="Georgia" font-size="12" fill="#3a2f1c">4. What will I do differently tomorrow?</text>
+<text x="520" y="208" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">→ Marcus Book 1 is exactly this</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">You've read 10 Stoic essays this week. Wednesday, one line from your boss still spikes your blood pressure. The problem isn't the ideas — it's the absence of routine.</div>
+<div class="dialog good">
+<div class="speaker">✓ The smallest version that actually lands</div>
+<p><strong>Slot:</strong> add "Stoic 5+5" to Calendar at 8:55 and 18:25. Different color from meetings.<br>
+<strong>Vessel:</strong> one Notion page or notebook, <strong>don't switch tools</strong>. Template = the 9 questions, copy-paste.<br>
+<strong>Trigger:</strong> first sip of morning coffee = write morning entry. Last action before closing laptop = evening entry. Bind to a body action, don't rely on willpower.<br>
+<strong>Tolerance:</strong> miss a day, write "missed" and continue. After 30 days you'll see the "people who throw you" reduce to 2–3 names — <strong>they are your actual political problem</strong>, not the 10 you assumed.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Daily routine checklist</div>
+<ul class="checklist">
+<li>Bound to an <strong>existing body action</strong> (coffee, closing laptop)?</li>
+<li>≤ 5 questions per side, under 5 minutes each?</li>
+<li>Same vessel — not bouncing across 5 apps?</li>
+<li>Sunday 10-minute review of the week's evening entries to spot patterns?</li>
+<li>Is there a tolerance plan for failure (not abandon-the-whole-system)?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common errors + female lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Routine designed too ambitiously.</strong> 20-min meditation + long journal + reading — done by day 4. 10 minutes is the ceiling, not the floor.</li>
+<li><strong>Journal as venting.</strong> Venting fixes emotion. The question template forces "what will I do differently tomorrow."</li>
+<li><strong>Morning only, no evening.</strong> The evening review is <strong>the feedback loop</strong>. Without it, you don't know if you're improving or running in place.</li>
+<li><strong>Stopping once you feel results.</strong> The value compounds — the next 30 days outweighs the first 30 by 3x.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women are still defaulted to more emotional labor at work — meaning every day ends with you having spent one extra unit of energy. The morning/evening loop for you is <strong>not nice-to-have, it's a capital-protection system</strong>. After 90 days, the same unfairness still happens — but your <strong>recovery time</strong> drops from two days to two hours. That's the leverage.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Action + reflection</div>
+<div class="ref"><strong>Action:</strong> Tonight, add two recurring blocks to Calendar: 5 morning + 5 evening, bound to coffee and laptop-off. Review entries on day 7 — who keeps showing up as "the one who throws me"?<br><strong>Reflection:</strong> Every self-management system you've failed at before — was it ambition too big, or no routine?</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>Your Week 11 Action</h3>
+<p>Do one concrete thing this week — move Stoicism off the page and into your calendar:</p>
+<div class="action">
+<strong>Step 1 (tonight):</strong> Add two recurring blocks to Calendar: 8:55–9:00 and 18:25–18:30, titled "Stoic 5+5."<br>
+<strong>Step 2 (next 7 days):</strong> Morning, answer Card 4's 5 questions. Evening, answer the 4. Accumulate on one Notion page.<br>
+<strong>Step 3 (day 7 evening):</strong> Review the week's entries and answer: (1) Top 2 people who threw me this week? (2) Roughly what % of my energy went to "uncontrollable"? (3) What are my targets for both next week?<br><br>
+If day 7 gives you one insight: <strong>the 2–3 people who keep throwing you are the political work for next quarter — not the 20 on your stakeholder list</strong>.
+</div>
+</div>
+
+<!-- ============ Deep Reflection ============ -->
+<div class="deep">
+<h3>Going Deeper</h3>
+
+<details>
+<summary>Does Stoicism make you cold — lose empathy for your team?</summary>
+<div>Common misread. "Apatheia" originally meant "not enslaved by passion," not coldness. Marcus opens Book 2 with "Today I will meet the ungrateful, the arrogant — they are this way because they cannot tell good from evil" — this is <strong>the precondition of empathy: understanding the source of behavior</strong>. Warmth for reports, anger at structural injustice, and refusing to internalize uncontrollables can all coexist.</div>
+</details>
+
+<details>
+<summary>Isn't the dichotomy a kind of gaslighting on systemic injustice (gender / race / class)?</summary>
+<div>The risk exists, so be explicit: <strong>the dichotomy is a personal energy-allocation tool, not a system-evaluation tool</strong>. "Calibration outcomes are uncontrollable" does not mean "the calibration system doesn't need pushback." Separate them: individual-layer reduce loss + system-layer collective action (ERG, HR escalation, data disclosure). Epictetus was himself a freed slave — he wrote about <strong>not being destroyed by what you can't change</strong>, not "change nothing."</div>
+</details>
+
+<details>
+<summary>Doesn't "premeditatio malorum" become a pessimistic self-fulfilling prophecy?</summary>
+<div>Difference lies in <strong>whether a concrete response line is prepared</strong>. "What if he attacks me what if what if" is anxious rumination — open-ended, activates fear. "If he says X I say Y" is rehearsal — closed-ended, activates muscle memory. Neurologically the former activates the default mode network, the latter the prefrontal cortex. Fix: every rehearsal must end with one concrete verb.</div>
+</details>
+
+<details>
+<summary>Eastern traditions (Zhuangzi, Wang Yangming) vs Stoicism at work — how to choose?</summary>
+<div>Stoicism leans <strong>structured, operational, made for anxious engineers</strong> — checklists, dichotomy, morning/evening journal. Zhuangzi leans <strong>dissolving attachment, stepping outside frames</strong> — deeper acceptance, weaker operability. Recommendation: use Stoic engineered routines to get stable first; at staff/principal level read Zhuangzi to widen the frame. Reverse that order and you "understand the principles but life doesn't change."</div>
+</details>
+
+<details>
+<summary>At what point should it be not Stoicism but an exit strategy?</summary>
+<div>Three signals stack: (1) your "uncontrollable" bucket keeps growing; (2) 80% of evening-entry recurring names are people <strong>you cannot reroute within your authority</strong>; (3) after three months of routine, recovery time is lengthening, not shrinking. Then Stoicism is <strong>the tool for an exit with dignity</strong>, not the tool to keep enduring. Epictetus repeatedly says "the door is open" — meaning <strong>in any situation you have the option to leave, and knowing that itself is freedom</strong>.</div>
+</details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Weekly · Week 11 · 2026.06.13</footer>
+</div>
+</body>
+</html>
