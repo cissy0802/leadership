@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 12: Onboarding — Designing a New Hire's First 90 Days</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.cardwork{margin-top:20px;background:#f3ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #a8702d;font-size:0.94rem;color:#4a3a20}
+.cardwork strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #c4a878}
+.deepthink h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin:14px 0 18px}
+.deepthink details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px}
+.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#5c3a18;font-size:0.98rem;list-style:none}
+.deepthink summary::-webkit-details-marker{display:none}
+.deepthink summary::before{content:"▸ ";color:#a8702d}
+.deepthink details[open] summary::before{content:"▾ "}
+.deepthink .answer{padding:0 20px 16px;color:#4a3a20;font-size:0.93rem;line-height:1.75}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 12 · 2026.06.01</div>
+<h1>Onboarding: Designing a New Hire's First 90 Days</h1>
+<div class="meta"><span>Topic: Onboarding</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"The actions you take during your first 90 days will largely determine whether you succeed or fail." — Michael Watkins</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> A new hire's first 90 days decide whether you'll spend the next two years regretting this hire. Onboarding is not HR's process — issue a laptop, add them to a channel, drop a wiki link. It's a path from <em>stranger to contributor</em> that <strong>you personally design</strong>. Michael Watkins calculated that an external hire takes on average <strong>6 months</strong> to reach the breakeven point (net contribution turns positive). Design it well and you pull that point forward to 90 days; design it badly and on day 100 they're still guessing "who do I report to, and what counts as done?" Four principles this week: the 30/60/90 map, the first-30-days early win, transmitting the network and tacit culture, and using the new hire's "outsider eyes" to diagnose your own team.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The 30/60/90 Map: Replace Guessing With a Map
+<span class="en">Set expectations in writing before Day 1</span></h2>
+<span class="tag">Onboarding Plan</span><span class="tag">Clear Expectations</span><span class="tag">Ramp</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · The Quote</div>
+<div class="principle">Before the new hire's Day 1, you should already have a written 30/60/90 doc: <strong>Learn</strong> at 30, <strong>Contribute</strong> at 60, <strong>Own</strong> at 90. Put expectations in writing so they don't have to read the air to know whether they're doing well.</div>
+<div class="quote">
+<span class="en">"The actions you take during your first three months in a new role will largely determine whether you succeed or fail."</span>
+<span class="source">— Michael Watkins,《The First 90 Days》Introduction</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The 30/60/90 Map</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="30" width="205" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="245" y="30" width="205" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="470" y="30" width="210" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="122" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Day 1-30 · Learn</text>
+<text x="122" y="82" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">Build a baseline</text>
+<text x="36" y="116" font-family="Georgia" font-size="12" fill="#3a2f1c">· Set up environment</text>
+<text x="36" y="140" font-family="Georgia" font-size="12" fill="#3a2f1c">· Ship first PR</text>
+<text x="36" y="164" font-family="Georgia" font-size="12" fill="#3a2f1c">· Read 3 core service</text>
+<text x="36" y="188" font-family="Georgia" font-size="12" fill="#3a2f1c">  design docs</text>
+<text x="36" y="212" font-family="Georgia" font-size="12" fill="#3a2f1c">· Meet 8 key people</text>
+<text x="347" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Day 30-60 · Contribute</text>
+<text x="347" y="82" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">Deliver solo</text>
+<text x="261" y="116" font-family="Georgia" font-size="12" fill="#3a2f1c">· Own a mid-sized</text>
+<text x="261" y="140" font-family="Georgia" font-size="12" fill="#3a2f1c">  feature</text>
+<text x="261" y="164" font-family="Georgia" font-size="12" fill="#3a2f1c">· Design to launch</text>
+<text x="261" y="188" font-family="Georgia" font-size="12" fill="#3a2f1c">· Start reviewing</text>
+<text x="261" y="212" font-family="Georgia" font-size="12" fill="#3a2f1c">  others' code</text>
+<text x="575" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Day 60-90 · Own</text>
+<text x="575" y="82" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">Take responsibility</text>
+<text x="486" y="116" font-family="Georgia" font-size="12" fill="#3a2f1c">· Own a subsystem</text>
+<text x="486" y="140" font-family="Georgia" font-size="12" fill="#3a2f1c">· Join on-call</text>
+<text x="486" y="164" font-family="Georgia" font-size="12" fill="#3a2f1c">  rotation</text>
+<text x="486" y="188" font-family="Georgia" font-size="12" fill="#3a2f1c">· Decide small calls</text>
+<text x="486" y="212" font-family="Georgia" font-size="12" fill="#3a2f1c">  independently</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: A new senior engineer on Day 1, and you haven't prepared any onboarding material.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>"Just get familiar with the code, set up your environment, ask me anytime, take your time."<br>→ Three weeks later they still don't know what counts as "ramped," anxious every day that they're too slow — yet afraid to ask.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>Hand over a shared doc with the three milestone stages (see diagram above). Open with: <strong>"This is a draft — we'll tune it together in week one. Its purpose is so you always know 'am I on track?' instead of finding out at a review three months from now."</strong></p>
+<p>Key: milestones must be <strong>verifiable</strong> ("ship your first PR"), not vague words like "get familiar with the business" that no one can mark as done.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (ready before Day 1)</div>
+<ul class="checklist">
+<li>Are accounts, access, and env setup docs ready before Day 1? (Don't make them wait on IT all week.)</li>
+<li>Is the 30/60/90 doc written, with verifiable milestones rather than "get familiar with the business"?</li>
+<li>Is the first task chosen — scoped small enough to ship within two weeks?</li>
+<li>Have you assigned an onboarding buddy? (Not you — a peer.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>"Take your time" is a trap.</strong> "Take your time" with no milestones = making the new hire carry the anxiety alone.</li>
+<li><strong>Expectations live only in your head.</strong> You assume "they should be ramped by 30 days" but never say it; at 60 days you're disappointed and they're shocked.</li>
+<li><strong>Outsourcing all of onboarding to HR / the wiki.</strong> The procedural parts can be outsourced; "what good looks like" only you can define.</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week's exercise:</strong> Write a 30/60/90 draft for a report who's about to join, or is within their first 30 days.<br><strong>Reflection:</strong> Your last new hire — what day did they first truly "ship and contribute"? Was it the plan's fault, or the person's?
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>The First-30-Days Early Win: Trade One Ship for Trust
+<span class="en">Secure an Early Win</span></h2>
+<span class="tag">Early Win</span><span class="tag">Cognitive Load</span><span class="tag">Confidence</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · The Quote</div>
+<div class="principle">In the first 30 days, what a new hire most needs isn't "full understanding of the system" — it's <strong>one small, real launch</strong>. One ship gives the new hire confidence and gives the team the signal: "this person can deliver."</div>
+<div class="quote">
+<span class="en">"Early wins build your credibility and create momentum. They create virtuous cycles that leverage the energy you are putting into your work."</span>
+<span class="source">— Michael Watkins,《The First 90 Days》Ch. "Secure Early Wins"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: You want the new hire to "really understand the system," so you're picking their first task.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>Throw them into refactoring the most complex legacy billing module — "this is the hardest part; crack it and you'll understand everything."<br>→ Three weeks, zero output, they start doubting themselves, and the team sees no signal.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>Give a <strong>good first issue</strong>: small in scope, but it traverses the <strong>entire pipeline</strong> (change code → test → review → deploy → watch monitoring). They learn "how we ship" in one pass and have something live by week two.</p>
+<p>Tell the team: "This is X's first PR — give extra context in review." Turn the early win into a ritual of team acceptance.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (choosing the first task)</div>
+<ul class="checklist">
+<li>Can this task actually ship within 1-2 weeks?</li>
+<li>Will it walk the new hire through the full dev → deploy flow?</li>
+<li>Is it a real need, or a "practice problem"? (Practice problems lack the satisfaction of shipping.)</li>
+<li>If it fails, is the blast radius contained? (The first task shouldn't be able to take down production.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating the hardest bone as a rite of passage.</strong> You think it's trust; the new hire feels thrown in to drown.</li>
+<li><strong>The win becomes a "fake win."</strong> A toy project that never ships gives no real confidence.</li>
+<li><strong>Withdrawing support after the win.</strong> On the first ship, the buddy should be alongside — don't make them navigate the pipeline blind.</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week's exercise:</strong> Reserve a well-scoped good-first-issue for your next new hire.<br><strong>Reflection:</strong> Does your team have a class of deploy steps "only the veterans know how to do"? That's exactly the documentation debt a new hire's early win can expose.
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Relationship Map & Tacit Culture: Onboarding Isn't Only Technical
+<span class="en">Wiring the Network &amp; Transmitting Culture</span></h2>
+<span class="tag">Network</span><span class="tag">Buddy</span><span class="tag">Tacit Rules</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · The Quote</div>
+<div class="principle">New hires rarely fail on technical grounds; more often they fail because they never figured out "how things actually get done here" — <strong>who decides, how to dissent, what counts as done</strong>. Teach these tacit rules deliberately, or they'll spend six months learning them by stepping on landmines.</div>
+<div class="quote">
+<span class="en">"Culture is a pattern of shared basic assumptions learned by a group as it solved its problems… taught to new members as the correct way to perceive, think, and feel."</span>
+<span class="source">— Edgar Schein,《Organizational Culture and Leadership》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: Your onboarding doc is all technical setup; no one explains "how things get done."</div>
+<div class="dialog bad">
+<div class="speaker">✗ The cost of not transmitting tacit rules</div>
+<p>No one tells the new hire: "At this company, cross-team matters get aligned in a Slack DM first; pulling a meeting straight away reads as aggressive."<br>→ Three weeks in, an overly blunt email quietly earns them a grudge from a staff engineer — and they have no idea they stepped on a mine.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>Give a <strong>"people to meet + why"</strong> list: "Alice — billing owner; she must sign off before your feature ships." Assign a <strong>peer buddy</strong> dedicated to fielding "dumb questions." Then verbally cover 2-3 rules that don't fit in a wiki: how to dissent, who really decides, what counts as done.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Did I give a "8 people to meet + why" list?</li>
+<li>Did I assign a peer buddy (not me) to field dumb questions?</li>
+<li>Did I verbally cover 2-3 tacit rules that don't fit in the wiki?</li>
+<li>Did I arrange for them to sit in on one core decision meeting (even just to listen)?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes · Female Leader's Note</div>
+<div class="pitfall">
+<ul>
+<li><strong>Assuming "smart people will figure it out."</strong> They will — in six months, after a few mines.</li>
+<li><strong>The buddy is you.</strong> New hires won't ask their manager dumb questions. A peer buddy is the safe outlet.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+The onboarding period is a high-risk window for <strong>glue work / office housework</strong> assignments to calcify: women and underrepresented new hires are more easily, "naturally," nudged into taking notes, ordering lunch, organizing team-building in the first few weeks. Once it sticks, it's hard to shed. Counter: during onboarding, <strong>deliberately give her the first task with technical visibility</strong>, rather than letting her start from the role of "the team's caretaker."
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week's exercise:</strong> Write a "people to meet + why" list for your next new hire.<br><strong>Reflection:</strong> Which tacit rule on your team did you yourself learn only by stepping on a landmine?
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>30/60/90 Two-Way Check-ins: Harvest "Outsider Eyes" During the Honeymoon
+<span class="en">Two-Way Check-ins &amp; Fresh Eyes</span></h2>
+<span class="tag">Feedback Loop</span><span class="tag">Fresh Eyes</span><span class="tag">Fit Call</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · The Quote</div>
+<div class="principle">In their first 90 days a new hire has a pair of eyes your team has lost — they aren't yet numb to your broken processes. <strong>This window closes fast.</strong> While they still ask "why do you do it this way?", harvest the signal.</div>
+<div class="quote">
+<span class="en">"In the beginner's mind there are many possibilities, but in the expert's mind there are few."</span>
+<span class="source">— Shunryu Suzuki,《Zen Mind, Beginner's Mind》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Breakeven Point: Your Ramp Design Pulls It Forward or Pushes It Back</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="190" x2="660" y2="190" stroke="#a8702d" stroke-width="2"/>
+<line x1="60" y1="40" x2="60" y2="190" stroke="#a8702d" stroke-width="2"/>
+<line x1="60" y1="120" x2="660" y2="120" stroke="#c4a878" stroke-width="1" stroke-dasharray="5,4"/>
+<text x="64" y="115" font-family="Georgia" font-size="11" fill="#8a6d3b">Breakeven (net contribution = 0)</text>
+<path d="M60 175 C 200 173, 280 150, 360 120 S 540 60, 660 50" fill="none" stroke="#5c8a3a" stroke-width="3"/>
+<path d="M60 178 C 250 177, 380 172, 480 155 S 620 110, 660 95" fill="none" stroke="#b85c3a" stroke-width="3" stroke-dasharray="6,5"/>
+<circle cx="360" cy="120" r="5" fill="#5c8a3a"/>
+<text x="330" y="108" font-family="Georgia" font-size="11" fill="#4a6a28">Good ramp ≈ 90 days</text>
+<text x="495" y="135" font-family="Georgia" font-size="11" fill="#a04020">Bad ramp ≈ 6 months+</text>
+<text x="350" y="212" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5c3a18">Time →</text>
+<text x="40" y="55" font-family="Georgia" font-size="12" fill="#5c3a18" transform="rotate(-90 40 55)">Net contribution →</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: The new hire is 30 days in; you run the first formal check-in.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Failed phrasing</div>
+<p>"How's it going? Settling in okay?" → "All good, everyone's been great." (You received nothing.)</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Harvest fresh eyes</div>
+<p>"You're 30 days in, still carrying an outside perspective — eyes our team no longer has. Three questions:<br>(1) What do we do as if it's <strong>obvious that strikes you as strange</strong>?<br>(2) What's one thing your last place did <strong>better</strong>?<br>(3) What still <strong>confuses you but you're embarrassed to ask</strong>?"</p>
+<p>And it's two-way: you also give them their first directional feedback — 30 days is too early to rate performance, but not too early for "keep / adjust."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (30 / 60 / 90 milestones)</div>
+<ul class="checklist">
+<li>Day 30: Did I ask "what feels strange/confusing" to harvest fresh eyes?</li>
+<li>Day 30: Did I give first directional feedback (not a rating — "keep / adjust")?</li>
+<li>Day 60: Did we align on "what to own next"?</li>
+<li>Day 90: Do I have an honest call on "was this hire right"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Waiting for perf review to give first feedback.</strong> By then the window is long closed and problems have set.</li>
+<li><strong>Treating fresh-eyes feedback as an insult.</strong> The new hire says "this process is weird" and you get defensive — next time they go silent, and you lose your last free audit.</li>
+<li><strong>Dragging out a known no-fit at 90 days.</strong> No sugar-coating: some onboarding failures are hiring mismatches, not something effort can fix. Dragging it to month 6 is crueler to them, the team, and you.</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week's exercise:</strong> Run a fresh-eyes check-in with someone within their first 30 days; note the first "you all do this so weirdly" point they raise.<br><strong>Reflection:</strong> Which process do new hires always ask "why?" about, and you always answer "historical reasons"? That's the debt.
+</div>
+</div>
+
+<!-- ============ Deep Thinking ============ -->
+<div class="deepthink">
+<h3>Deeper Questions</h3>
+
+<details>
+<summary>How should 30/60/90 change across seniority levels?</summary>
+<div class="answer">A one-size-fits-all template will simultaneously crush a junior and underuse a senior. A staff+ ramp should, by 90 days, begin to <strong>influence direction</strong> (write a tech vision, drive a cross-team alignment); "deliver a mid-sized task solo" is an insultingly low bar for them. For a new grad, delivering one mid-sized task under guidance by 90 days, without hand-holding, is already good. Get the standard's direction wrong and the senior feels like a cog while the junior feels thrown in the deep end.</div>
+</details>
+
+<details>
+<summary>Where does onboarding break most easily on remote / distributed teams?</summary>
+<div class="answer">Culture transmission that happens automatically by osmosis in an office drops to near-zero remotely: tacit rules, offhand context, hallway conversations all vanish — the new hire only sees what's explicitly written down. Remote onboarding must <strong>force the invisible into the explicit</strong> — write the tacit rules into docs, record key decisions, deliberately schedule the "people to meet" 1:1s, rather than hoping they soak it up in the channels. Remote, a buddy system and high-frequency check-ins aren't bonuses — they're the floor.</div>
+</details>
+
+<details>
+<summary>Big company vs. startup onboarding? Where's the real risk for BigCat?</summary>
+<div class="answer">Big companies have "process in place, people not": the new hire is drowned by onboarding systems, compliance training, and dozens of tools, yet no single person truly owns their ramp. Startups have no process and rely on the manager firefighting in real time. At a big company, BigCat's biggest risk is <strong>equating onboarding with the company's program</strong> and neglecting the team-level, manager-level layer — yet that layer (30/60/90, first task, tacit rules) is exactly what sets ramp speed. The company process handles "compliantly onboarded"; you handle "when do they start truly contributing."</div>
+</details>
+
+<details>
+<summary>Does the "early win" create a false early impression?</summary>
+<div class="answer">It can. A carefully chosen easy win makes the new hire look strong, and if real difficulty then jumps sharply, the team feels a gap and the new hire may misjudge their own ramp progress. The honest move is to hand over the expectation alongside it: "This is a warm-up to get you through the pipeline; the real complexity is that Q3 project, and we'll break it down together then." The early win's purpose is to <strong>build momentum and process familiarity</strong>, not to manufacture a "genius" persona. Position it accurately and it won't backfire.</div>
+</details>
+
+<details>
+<summary>Where's the boundary on onboarding investment? When is it "over-parenting"?</summary>
+<div class="answer">You can't invest equally in every new hire; the key is <strong>matching to need</strong>, not spreading effort evenly. A senior wants context and autonomy — too much hand-holding reads as distrust; a new grad wants structure and frequent check-ins — too much freedom is abandonment. Signals: if the new hire keeps asking "can I decide this myself?", you're managing too much; if they keep stalling on small decisions and reworking, you've given too little structure. The boundary isn't fixed — it expands and contracts dynamically along their capability curve.</div>
+</details>
+
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 12 · 2026.06.01</footer>
+</div>
+</body>
+</html>
