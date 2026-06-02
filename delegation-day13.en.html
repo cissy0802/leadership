@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 13: Delegation — From Micromanaging to Trust Levels</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.cardwork{margin-top:20px;background:#f3ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #a8702d;font-size:0.94rem;color:#4a3a20}
+.cardwork strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #c4a878}
+.deepthink h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin:14px 0 18px}
+.deepthink details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px}
+.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#5c3a18;font-size:0.98rem;list-style:none}
+.deepthink summary::-webkit-details-marker{display:none}
+.deepthink summary::before{content:"▸ ";color:#a8702d}
+.deepthink details[open] summary::before{content:"▾ "}
+.deepthink .answer{padding:0 20px 16px;color:#4a3a20;font-size:0.93rem;line-height:1.75}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 13 · 2026.06.02</div>
+<h1>Delegation: From Micromanaging to Trust Levels</h1>
+<div class="meta"><span>Topic: Delegation</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"It doesn't make sense to hire smart people and tell them what to do; we hire smart people so they can tell us what to do." — Steve Jobs</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> Delegation isn't "I'm too busy, hand off the work." It's whether you can shift from being your team's <em>strongest doer</em> to the person who <em>multiplies others' output</em>—the hardest leap from IC to manager. <strong>The cost of not delegating is structural:</strong> your team's output ceiling equals your personal bandwidth; and the prerequisite for your promotion is precisely proving you can scale output that doesn't depend on you. But delegation isn't abdication either—"hands-off vs. micromanage" is a false binary. The real craft lives in between: <strong>the same task calls for different levels depending on the person and their maturity.</strong> Four principles: figure out what only you can do (the Delegation Matrix), the seven levels of delegation (the Trust Ladder), give the "monkey" back when someone brings you a problem (Coaching vs. Telling), and after letting go, use guardrails instead of surveillance and tolerate the 80% solution.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>List What Only You Can Do; Delegate the Rest by Default
+<span class="en">The Delegation Matrix</span></h2>
+<span class="tag">Delegation Matrix</span><span class="tag">Leverage</span><span class="tag">Trade-offs</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · Source Quote</div>
+<div class="principle">Don't ask "can I hand this off?" Ask the reverse: "<strong>What are the few things only I can do?</strong>" Write that short list (rarely more than 5 items), and <strong>delegate everything else by default</strong>. Decide on two axes only: how high the leverage for the org, and whether someone else can do it to 80%.</div>
+<div class="quote">
+<span class="en">"The most effective management style ... depends on the task-relevant maturity of the subordinate—the more experienced he is at a specific task, the more the manager should delegate."</span>
+<span class="source">— Andy Grove, <em>High Output Management</em>, Ch.7</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Delegation Decision Matrix</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="20" x2="60" y2="290" stroke="#a8702d" stroke-width="2"/>
+<line x1="60" y1="290" x2="680" y2="290" stroke="#a8702d" stroke-width="2"/>
+<text x="30" y="160" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b" transform="rotate(-90 30 160)">Leverage →</text>
+<text x="370" y="312" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">Can someone else do it to 80%? →</text>
+<rect x="75" y="35" width="290" height="115" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="380" y="35" width="290" height="115" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="75" y="165" width="290" height="115" rx="6" fill="#fcf6e8" stroke="#c4a878" stroke-width="2"/>
+<rect x="380" y="165" width="290" height="115" rx="6" fill="#fcf6e8" stroke="#c4a878" stroke-width="2"/>
+<text x="220" y="70" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">High leverage · only you</text>
+<text x="220" y="98" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">Do it—but it's a dangerous</text>
+<text x="220" y="118" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">single point. <tspan font-weight="700">Grow a successor now</tspan></text>
+<text x="525" y="70" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">High leverage · others can</text>
+<text x="525" y="98" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">Delegate + heavy coaching</text>
+<text x="525" y="118" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">Your main battleground</tspan></text>
+<text x="220" y="205" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#6b4a1f">Low leverage · only you</text>
+<text x="220" y="233" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">Document / automate it—</text>
+<text x="220" y="253" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">kill the dependency on you</tspan></text>
+<text x="525" y="205" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#6b4a1f">Low leverage · others can</text>
+<text x="525" y="233" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">Delegate outright, don't touch—</text>
+<text x="525" y="253" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">the cell to let go of first</tspan></text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: You spend 6 hours a week on things "others could do to 80%"—writing the team status, triaging bugs, approving routine PRs.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common mindset</div>
+<p>"I do these faster and better, and teaching takes time—easier to just do it myself."<br>→ That's an account that counts today, not the year. A year later you're still writing the status, no one has grown, and you have no room for what only you can do (strategy, cross-team, developing talent).</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better</div>
+<p>Delegate the whole bottom-right cell (low leverage · others can). When you hand off the status: <strong>"From next week the status rotates. This isn't busywork—writing it forces you to see what the whole team is doing, which sharpens your view of the big picture. I'll give you a template and we'll do the first one together."</strong></p>
+<p>Key: reframe "I'm dumping this on you" as "this is valuable for you," give a template + a first run together, and don't vanish after handing it off.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Is my "only I can do this" list over 5 items? That usually means I haven't grown people, not that it's truly only me.</li>
+<li>How many bottom-right (low leverage · others can) items am I still doing myself this week?</li>
+<li>For each top-left item (high leverage · single point), have I named a successor?</li>
+<li>Is what I delegate only the boring busywork? Am I also sharing the high-leverage growth opportunities?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Pitfalls · A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>"I'm faster" is a short-term account.</strong> The first time you teach is slow, but by the tenth time they do it solo you've already earned it back.</li>
+<li><strong>Only delegating the boring stuff.</strong> Reports aren't stupid—give only chores, keep the glamorous work for yourself, and they leave.</li>
+<li><strong>Reverse delegation.</strong> You delegate, then it gets "asked back" to you and lands on your desk again—Card 3 treats this.</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Two effects stack on women leaders (Babcock, <em>The No Club</em>, on "non-promotable work"): <strong>(1)</strong> women are more likely—by themselves and others—to be assigned "office housework": notes, organizing team events, mentoring newcomers—low-leverage, non-promotable work that crowds out what should be delegated or declined; <strong>(2)</strong> when women assign tasks they're more readily labeled "bossy / pushy," while men's identical behavior reads as "leadership." Counter: frame delegation openly as "rotation + growth," and put glue work on the rotation too (neither hoard it nor get labeled).
+</div>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week:</strong> Write your "only I can do this" list. Over 5 items? Circle the ones that are really "I haven't grown people" and name someone to start coaching for each.<br><strong>Reflection:</strong> The thing you spent the most time on last week—which cell does it fall in? If it's bottom-right, what mindset kept you from letting go?
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Delegation Is a Seven-Step Continuum, Not an On/Off Switch
+<span class="en">The Trust Ladder — Seven Levels of Delegation</span></h2>
+<span class="tag">Trust Ladder</span><span class="tag">7 Levels</span><span class="tag">Explicit Boundary</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · Source Quote</div>
+<div class="principle">Most micromanagement comes from one misconception: that delegation has only two settings—"I decide" and "you decide." It's actually a <strong>seven-step ladder</strong>, from "I decide and tell you" to "you have full authority and I stay out." Same task: level 3 for a newcomer, level 6 for a veteran. <strong>Saying out loud which step you're standing on</strong> erases half the misreads and hurt feelings.</div>
+<div class="quote">
+<span class="en">"Delegation is not a binary thing. There are seven levels of delegation, from telling people what to do up to fully delegating a decision. Make the level explicit."</span>
+<span class="source">— Jurgen Appelo, <em>Management 3.0</em> (Delegation Poker / 7 Levels)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Trust Ladder (left→right: your control falls, their autonomy rises)</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<line x1="40" y1="270" x2="675" y2="270" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="40" y1="270" x2="40" y2="30" stroke="#a8702d" stroke-width="1.5"/>
+<text x="30" y="150" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b" transform="rotate(-90 30 150)">Their autonomy →</text>
+<g font-family="Georgia">
+<rect x="55" y="225" width="82" height="40" rx="4" fill="#f5e0d0" stroke="#b85c3a"/>
+<text x="96" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#a04020">1 Tell</text>
+<rect x="142" y="192" width="82" height="40" rx="4" fill="#f3e0cf" stroke="#c47040"/>
+<text x="183" y="217" text-anchor="middle" font-size="12" font-weight="700" fill="#a04020">2 Sell</text>
+<rect x="229" y="159" width="82" height="40" rx="4" fill="#f1e4cf" stroke="#c4a878"/>
+<text x="270" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#6b4a1f">3 Consult</text>
+<rect x="316" y="126" width="82" height="40" rx="4" fill="#eee5cf" stroke="#c4a878"/>
+<text x="357" y="151" text-anchor="middle" font-size="12" font-weight="700" fill="#6b4a1f">4 Agree</text>
+<rect x="403" y="93" width="82" height="40" rx="4" fill="#e8ebcf" stroke="#9aae5a"/>
+<text x="444" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#4a6a28">5 Advise</text>
+<rect x="490" y="60" width="82" height="40" rx="4" fill="#e0ebd0" stroke="#7a9a4a"/>
+<text x="531" y="85" text-anchor="middle" font-size="12" font-weight="700" fill="#4a6a28">6 Inquire</text>
+<rect x="577" y="27" width="90" height="40" rx="4" fill="#d6e8c4" stroke="#5c8a3a"/>
+<text x="622" y="52" text-anchor="middle" font-size="12" font-weight="700" fill="#3a6a18">7 Delegate</text>
+</g>
+</svg>
+</div>
+<div class="scene" style="margin-top:6px">
+<div class="setup" style="margin-bottom:0"><strong>1 Tell</strong> = I've decided, informing you · <strong>2 Sell</strong> = I've decided, but I'll convince you · <strong>3 Consult</strong> = I hear you first, then I decide · <strong>4 Agree</strong> = we decide together · <strong>5 Advise</strong> = I give input, you decide · <strong>6 Inquire</strong> = you decide first, then tell me · <strong>7 Delegate</strong> = you decide, no need to tell me</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: The same task—designing the API contract for a new service—goes to two different people.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common</div>
+<p>Same level for everyone: either you don't trust it and watch every endpoint (effectively level 1), or you toss out "your call" (level 7) in one line. A newcomer drowns at level 7; a veteran suffocates at level 1.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: say the level out loud</div>
+<p><strong>To the newcomer (level 4 · Agree):</strong> "We'll decide this API together. Draft a version, and Wednesday we'll review and decide together—not a test, I want you to see how I weigh trade-offs."</p>
+<p><strong>To the veteran (level 7 · Delegate):</strong> "This is yours—design, finalize, ship. Just drop a note in the channel when it's done; you don't need my sign-off. Pull me in on any point you want."</p>
+<p>The key is that one line—<strong>"I'm at level X on this"</strong>—so both know the boundary and avoid the "I thought you'd ask me first" landmine.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>For this delegation, did I say "which level" explicitly? Or assume they could read the boundary in my head?</li>
+<li>As the same person's TRM rises, am I moving the level up? Or still stuck at level 3 a year later?</li>
+<li>Am I "level 7 in words, level 2 in body"—saying it's yours, then quietly editing their PR?</li>
+<li>When I temporarily drop a level (e.g., taking the decision back in a crisis), did I explain why? A silent downgrade = a distrust signal.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Same level for everyone.</strong> The level is a function of "person × task," not your fixed personality.</li>
+<li><strong>Saying one level, doing another.</strong> Level 7 in words but level 2 in action hurts trust more than "I'm watching" from the start—because you also lied.</li>
+<li><strong>Never leveling up out of fear of not getting it back.</strong> Levels move both ways; try level 5 first and drop back if it breaks—better than locking at level 3 so they never grow.</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week:</strong> Pick a task you own and a report, decide "which level you're handing it to," and say the exact line "I'm at level X on this" when you assign it.<br><strong>Reflection:</strong> Who on your team is locked at level 3 without your being able to name a reason? Is that a real capability gap, or your need for control?
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>When a Report Brings a Problem, Give the Monkey Back First
+<span class="en">Coaching vs. Telling</span></h2>
+<span class="tag">Coaching</span><span class="tag">Reverse Delegation</span><span class="tag">Questions</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · Source Quote</div>
+<div class="principle">A report brings a problem; the moment you give an answer, the "monkey" (ownership of the problem) jumps from their back to yours—and next time they'll come ask again. Most of the time your job isn't to <strong>solve</strong>, it's to <strong>let them solve it and grow</strong>. Give a little less answer, ask one more question.</div>
+<div class="quote">
+<span class="en">"Tell less and ask more. Your advice is not as good as you think it is. Stay curious a little longer, rush to action and advice-giving a little more slowly."</span>
+<span class="source">— Michael Bungay Stanier, <em>The Coaching Habit</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene (the heart of this card)</div>
+<div class="scene">
+<div class="setup">Context: A mid-level engineer walks over—"I can't decide on the architecture, do you think Kafka or just SQS?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Don't say immediately</div>
+<p>"SQS—simpler, our volume isn't that high, Kafka is overkill."<br>→ You solved it in 3 seconds and also took the decision with you. Next selection, they'll come ask again. You become the team's bottleneck; they don't grow judgment.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try asking first (leave the decision in their hands)</div>
+<p>· "<strong>Which way do you lean, and why?</strong>" (force out their judgment)</p>
+<p>· "What's the <strong>worst case</strong> for each? Which is harder to recover from if it's wrong?"</p>
+<p>· "What <strong>information are you still missing</strong> to decide yourself?" (often the answer is "actually, enough")</p>
+<p>· Close: "Sounds like you lean SQS and the reasoning holds—<strong>this one's yours, I'll back you.</strong>"</p>
+</div>
+<div class="setup" style="margin-top:12px"><strong>Boundary—don't be dogmatic:</strong> when it's urgent, touches safety, or they genuinely <strong>lack the background</strong>, telling is the right move—endlessly questioning a newcomer who needs direction isn't coaching, it's torture. First judge "are they asking for an answer, for authority, or truly without background," then decide whether to give the monkey back.</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>When they throw a problem, can I hold back and first reply "what do you think yourself"?</li>
+<li>Did I distinguish: truly no background (should tell) vs. just wanting my endorsement (give the decision back)?</li>
+<li>Even when I do tell, did I explain "why"? Or just hand over the conclusion?</li>
+<li>After asking, did I leave silence and resist answering my own question?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>The advice monster.</strong> You enjoy being the one with the answer too much—exactly the IC reflex a manager must unlearn.</li>
+<li><strong>Turning coaching into "guess the answer in my head."</strong> Asking "what do you think" then shooting down any wrong answer is sneakier, more wounding micromanagement.</li>
+<li><strong>Hard coaching when you should tell.</strong> Questioning when the building's on fire or a newcomer has no direction is irresponsible. Coaching isn't a master key.</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week:</strong> Catch at least one "report comes to ask you what to do" moment, force your first sentence to be a question not an answer, and note how far their final decision was from your expectation.<br><strong>Reflection:</strong> Recall the last time you "instantly answered" a report—if you'd first asked "what do you think," could they have reached the answer? Were you helping them, or feeding your own sense of being needed?
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>After Letting Go: Tolerate the 80% Solution, Use Guardrails Not Surveillance
+<span class="en">Guardrails, Not Surveillance</span></h2>
+<span class="tag">Tolerance</span><span class="tag">Reversibility</span><span class="tag">Guardrails</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle · Source Quote</div>
+<div class="principle">Once you delegate, accept two things: they'll do it <strong>differently from you</strong>, and they'll make <strong>recoverable mistakes</strong>. The key isn't watching closely but distinguishing <strong>reversible / irreversible</strong>: let go and let them try on reversible calls; step in and slow down only on irreversible ones. Anchor check-ins to <strong>milestones and metrics</strong>, not to your anxiety.</div>
+<div class="quote">
+<span class="en">"Some decisions are consequential and irreversible or nearly irreversible—one-way doors... But most decisions aren't like that—they are changeable, reversible—they're two-way doors. Type 2 decisions can and should be made quickly by ... small groups."</span>
+<span class="source">— Jeff Bezos, Amazon 2015 Letter to Shareholders</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Before stepping in, ask: which kind of door?</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg">
+<rect x="30" y="25" width="310" height="160" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="360" y="25" width="310" height="160" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="185" y="55" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">Two-way door · reversible</text>
+<text x="185" y="82" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">Cheap to undo → <tspan font-weight="700">fully let go</tspan></text>
+<text x="185" y="106" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">Let them try, debrief after</text>
+<text x="185" y="130" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">Resist the "I'd do it this way" urge</text>
+<text x="185" y="158" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a6a28">e.g. internal tooling, naming, refactor order</text>
+<text x="515" y="55" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">One-way door · irreversible</text>
+<text x="515" y="82" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">Costly to undo → <tspan font-weight="700">step in, slow down</tspan></text>
+<text x="515" y="106" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">Decide together, be present</text>
+<text x="515" y="130" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">but still let them lead and reason</text>
+<text x="515" y="158" text-anchor="middle" font-family="Georgia" font-size="11" fill="#a04020">e.g. public API, data schema, hiring</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: You review a report's implementation—it works, but it's not how you'd do it: a bit roundabout, optimizable, and fully reversible.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common</div>
+<p>"Hold on, this part I think should be written like this…" then you take over and replace it with your version.<br>→ You won this PR and lost the long game: they learn "the boss will rewrite it his way anyway," and next time stop thinking and wait for you to decide.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: judge reversibility, then use "I intend to…"</div>
+<p>First ask yourself: <strong>"Is this reversible? If we find it's wrong in three weeks, is it costly to undo?"</strong> Not costly → let go. Tell them: "This runs; I'd pick another style, but that's <strong>taste, not right/wrong</strong>—<strong>your call.</strong> We'll glance at the metrics in two weeks and tune if there's a perf issue."</p>
+<p>For senior teams, use Marquet's "<strong>I intend to…</strong>": let the report say "I intend to do X, because Y," and you only halt at the <strong>irreversible or fatal</strong> points.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: keeping check-ins from becoming micromanagement</div>
+<ul class="checklist">
+<li>Before wanting to step in, did I ask "is this reversible"? If reversible, did I hold back?</li>
+<li>Are my check-ins anchored to milestones/metrics, or to my anxiety about "wanting to know progress"?</li>
+<li>Did we agree on red lines and milestones up front? And after agreeing, did I refrain from hovering in between?</li>
+<li>After they fail, do I run a blameless debrief on improving the system, or settle scores and pull authority back?</li>
+<li>When results land, did I publicly credit them by name?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Pitfalls</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "different from me" as "wrong."</strong> The 80% solution + their growth often beats the 100% solution + their dependence.</li>
+<li><strong>Not even letting go of reversible things.</strong> If every two-way-door decision needs your sign-off, the team forever runs at your single speed.</li>
+<li><strong>Settling scores when things go wrong.</strong> Delegate, then audit after a failure, and next time no one dares take work—you killed the delegation culture yourself.</li>
+<li><strong>Nominal delegation, actual surveillance.</strong> Daily "concern" about progress sends one signal: I don't trust you.</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>This week:</strong> When you hit a "report did it differently but it's reversible" moment, force yourself not to take over—just say "your call, we'll look at the data in two weeks."<br><strong>Reflection:</strong> Your most recent takeover of a report's work—was that truly a "one-way door"? Or were you just uncomfortable that it "wasn't my way"?
+</div>
+</div>
+
+<!-- ============ Deep Thinking ============ -->
+<div class="deepthink">
+<h3>Deeper Questions</h3>
+
+<details>
+<summary>How should delegation levels (the Trust Ladder) shift across seniority and culture?</summary>
+<div class="answer">Two dimensions. <strong>Seniority:</strong> newcomers need not level-7 "freedom" but a clear level 3-4; giving direction is kindness, while a veteran suffocates low on the ladder. <strong>Culture:</strong> in high-power-distance teams (common in East Asia), even senior reports may expect you to "give a direction," and a blunt "your call" can read as dumping or a test, not trust. The fix isn't less delegation but naming level 7 explicitly as "I trust your judgment"—don't leave a blank for them to guess.</div>
+</details>
+
+<details>
+<summary>For remote / async teams, where does delegation break first?</summary>
+<div class="answer">In person you get reassurance from "glancing as you pass"; remote has none of that. Two failure points: managers, unable to see the process, grow anxious and fall back to high-frequency status check-ins (disguised as "syncs") that are really micromanagement; and reports, lacking instant feedback, hesitate to make reversible decisions. The fix is to make trust <strong>upfront and explicit</strong>: write down milestones, red lines, and decision gates (which are reversible = just do it, which irreversible = pull me in), and replace "watching them work" with documents and demo checkpoints. Remote delegation rests on systems, not tacit understanding.</div>
+</details>
+
+<details>
+<summary>Big company vs. startup: where's the real risk for BigCat as a big-company tech lead manager?</summary>
+<div class="answer">Big-company delegation carries higher political cost: a report botches a cross-team project and the fire reaches you, so the instinct is to fall back to micromanaging and review everything yourself. But that's the trap—<strong>the prerequisite for the next level is demonstrating "scaling without you"</strong>: the team still produces and decides when you're absent. A team that always depends on you is your promotion ceiling, not your moat. The real risk isn't "delegation goes wrong," it's "not delegating = you and the team stuck in place together." Treat reversible mistakes as the cost of development, guard the irreversible doors—that's the realistic way to balance this tension in a big company.</div>
+</details>
+
+<details>
+<summary>The delegation-accountability tension: when something goes wrong, who's actually responsible?</summary>
+<div class="answer">This is delegation's most honest gray zone. What you can delegate is <strong>responsibility (the execution)</strong>; what you can't is <strong>accountability (the final answer upward)</strong>—to your boss, you're still the one who has to explain. This means a deliberate asymmetry: <strong>on success the credit goes publicly to the report; on failure you carry the blame upward.</strong> That's not nobility—it's the structural cost of the leader role: you trade "shielding them" for "their willingness to own and to risk." If you can't do this (pushing the report out front when things go wrong), the delegation culture dies at the first failure and no one dares take any autonomy you offer.</div>
+</details>
+
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 13 · 2026.06.02</footer>
+</div>
+</body>
+</html>

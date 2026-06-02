@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 13：授权与放手 — 从微管理到信任的档位</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.cardwork{margin-top:20px;background:#f3ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #a8702d;font-size:0.94rem;color:#4a3a20}
+.cardwork strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #c4a878}
+.deepthink h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin:14px 0 18px}
+.deepthink details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px}
+.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#5c3a18;font-size:0.98rem;list-style:none}
+.deepthink summary::-webkit-details-marker{display:none}
+.deepthink summary::before{content:"▸ ";color:#a8702d}
+.deepthink details[open] summary::before{content:"▾ "}
+.deepthink .answer{padding:0 20px 16px;color:#4a3a20;font-size:0.93rem;line-height:1.75}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 13 · 2026.06.02</div>
+<h1>授权与放手：从微管理到信任的档位</h1>
+<div class="meta"><span>主题：Delegation</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"It doesn't make sense to hire smart people and tell them what to do; we hire smart people so they can tell us what to do." — Steve Jobs</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>授权不是"我太忙了，把活分出去"，而是你能不能从"最强的执行者"变成"放大别人产出的人"——这是 IC 到 manager 最难跨的坎。<strong>不授权的代价是结构性的：</strong>团队产出上限 = 你一个人的带宽；而你晋升的前提，恰恰是先证明你能 scale 出不依赖你的产出。但授权也不是甩手——"放权 vs 微管理"是个假二分，真功夫在中间：<strong>同一件事，对不同的人、不同的成熟度，该用不同的档位。</strong>本周四原则：想清楚什么只有你能做（授权矩阵）、授权的七个档位（信任阶梯）、下属求助时把"猴子"还回去（Coaching vs Telling）、放手后用护栏代替监控、容忍 80% 的解法。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>先列"只有你能做"的短清单，其余默认授权
+<span class="en">The Delegation Matrix — Start From What Only You Can Do</span></h2>
+<span class="tag">授权矩阵</span><span class="tag">杠杆</span><span class="tag">取舍</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则 · 名家原话</div>
+<div class="principle">别问"这件事我能不能分出去"，反过来问："<strong>有哪几件事只有我能做？</strong>"列出那张短清单（通常不超过 5 项），<strong>其余默认全部授权</strong>。决策只看两轴：对组织的杠杆有多高、别人能不能做到 80%。</div>
+<div class="quote">
+<span class="en">"The most effective management style ... depends on the task-relevant maturity of the subordinate—the more experienced he is at a specific task, the more the manager should delegate."</span>
+<span class="zh">"最有效的管理风格……取决于下属对该项任务的'任务相关成熟度'——他在这件具体的事上越有经验，你就该越多地授权。"</span>
+<span class="source">— Andy Grove,《High Output Management》Ch.7</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">授权决策矩阵</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="20" x2="60" y2="290" stroke="#a8702d" stroke-width="2"/>
+<line x1="60" y1="290" x2="680" y2="290" stroke="#a8702d" stroke-width="2"/>
+<text x="30" y="160" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b" transform="rotate(-90 30 160)">任务杠杆 →</text>
+<text x="370" y="312" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">别人能否做到 80% →</text>
+<rect x="75" y="35" width="290" height="115" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="380" y="35" width="290" height="115" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="75" y="165" width="290" height="115" rx="6" fill="#fcf6e8" stroke="#c4a878" stroke-width="2"/>
+<rect x="380" y="165" width="290" height="115" rx="6" fill="#fcf6e8" stroke="#c4a878" stroke-width="2"/>
+<text x="220" y="70" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">高杠杆 · 只有你能</text>
+<text x="220" y="98" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">亲自做——但这是危险</text>
+<text x="220" y="118" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">的单点。<tspan font-weight="700">本季就培养接班人</tspan></text>
+<text x="525" y="70" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">高杠杆 · 别人能做</text>
+<text x="525" y="98" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">授权 + 重点 coaching</text>
+<text x="525" y="118" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">你该投入精力的主战场</tspan></text>
+<text x="220" y="205" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#6b4a1f">低杠杆 · 只有你能</text>
+<text x="220" y="233" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">写文档 / 自动化，</text>
+<text x="220" y="253" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">消灭这个对你的依赖</tspan></text>
+<text x="525" y="205" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#6b4a1f">低杠杆 · 别人能做</text>
+<text x="525" y="233" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">直接授权，别再碰，</text>
+<text x="525" y="253" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">这是你最该松手的格子</tspan></text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你每周花 6 小时在"别人也能做到 80%"的事上——写团队周报、triage bug、approve 例行 PR。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见心态</div>
+<p>"这些我做更快更好，教别人还要花时间，不如自己干。"<br>→ 这是只算今天、不算这一年的账。一年后你还在写周报，没人成长，你也腾不出手做只有你能做的高杠杆事（战略、跨团队、人才培养）。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>把右下格（低杠杆·别人能）整块授权出去。派周报时这样说：<strong>"周报从下周起轮值。这不是杂活——写周报逼你看清全队在干什么，对你理解全局有用。我给你模板，第一次一起过一遍。"</strong></p>
+<p>关键：把"我甩给你"重构成"这对你有价值"，给模板 + 第一次陪跑，别丢出去就消失。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>"只有我能做"的清单超过 5 项了吗？多半是我没培养人，不是真的只有我能。</li>
+<li>右下格（低杠杆·别人能）的事，我这周还亲自做几件？</li>
+<li>左上格（高杠杆·单点依赖）里，每项我指定接班人了吗？</li>
+<li>我授权出去的，是不是只有无聊杂活？高杠杆的成长机会也分了吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 · 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>"我做更快"是短期账。</strong>第一次教确实慢，但第十次他独立做时，你早赚回来了。</li>
+<li><strong>只授权无聊的事。</strong>下属不傻——只给杂活、光鲜的留给自己，他会走。</li>
+<li><strong>反向委派。</strong>授权出去又被"问回来"，活又回到你手上——Card 3 专治。</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+两个效应叠加在女性 leader 身上（Babcock《The No Club》谈"non-promotable work"）：<strong>(1)</strong> 女性更容易被自己和他人分配"office housework"——记纪要、组织团建、带新人这类低杠杆、不带晋升的活，挤占了本该授权或拒绝的时间；<strong>(2)</strong> 女性指派任务时更容易被贴"bossy / 爱使唤人"标签，男性同样行为却被读作"有领导力"。对策：把授权公开框成"轮值 + 成长"，让 glue work 也进轮值表（不独吞也不被标签）。
+</div>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>本周习作：</strong>写下"只有我能做"的清单。超过 5 项，圈出"其实是我没培养人"的那几项，各指定一个可 coach 的人选。<br><strong>思考题：</strong>你上周花最多时间的事落在矩阵哪格？若是右下格，什么心理让你没放手？
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>授权是七档连续，不是开/关开关
+<span class="en">The Trust Ladder — Seven Levels of Delegation</span></h2>
+<span class="tag">信任阶梯</span><span class="tag">七档授权</span><span class="tag">明确边界</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则 · 名家原话</div>
+<div class="principle">大多数微管理来自一个误解：以为授权只有"我管"和"你管"两档。其实它是一道<strong>七级阶梯</strong>，从"我决定告诉你"到"你全权我不插手"。同一件事，新人在第 3 档、资深在第 6 档。<strong>把你站在第几档明确说出口</strong>——这一句能消掉一半的误解与受伤。</div>
+<div class="quote">
+<span class="en">"Delegation is not a binary thing. There are seven levels of delegation, from telling people what to do up to fully delegating a decision. Make the level explicit."</span>
+<span class="zh">"授权不是非此即彼。它有七个层级，从直接告诉别人怎么做，到把决定完全交出去。把当前的层级讲明白。"</span>
+<span class="source">— Jurgen Appelo,《Management 3.0》(Delegation Poker / 7 Levels)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">信任阶梯（左低 → 右高，你的控制递减、他的自主递增）</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<line x1="40" y1="270" x2="675" y2="270" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="40" y1="270" x2="40" y2="30" stroke="#a8702d" stroke-width="1.5"/>
+<text x="30" y="150" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b" transform="rotate(-90 30 150)">他的自主 →</text>
+<g font-family="Georgia">
+<rect x="55" y="225" width="82" height="40" rx="4" fill="#f5e0d0" stroke="#b85c3a"/>
+<text x="96" y="243" text-anchor="middle" font-size="12" font-weight="700" fill="#a04020">1 告知</text>
+<text x="96" y="258" text-anchor="middle" font-size="9" fill="#5a3818">Tell</text>
+<rect x="142" y="192" width="82" height="40" rx="4" fill="#f3e0cf" stroke="#c47040"/>
+<text x="183" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#a04020">2 推销</text>
+<text x="183" y="225" text-anchor="middle" font-size="9" fill="#5a3818">Sell</text>
+<rect x="229" y="159" width="82" height="40" rx="4" fill="#f1e4cf" stroke="#c4a878"/>
+<text x="270" y="177" text-anchor="middle" font-size="12" font-weight="700" fill="#6b4a1f">3 咨询</text>
+<text x="270" y="192" text-anchor="middle" font-size="9" fill="#6b4a1f">Consult</text>
+<rect x="316" y="126" width="82" height="40" rx="4" fill="#eee5cf" stroke="#c4a878"/>
+<text x="357" y="144" text-anchor="middle" font-size="12" font-weight="700" fill="#6b4a1f">4 共定</text>
+<text x="357" y="159" text-anchor="middle" font-size="9" fill="#6b4a1f">Agree</text>
+<rect x="403" y="93" width="82" height="40" rx="4" fill="#e8ebcf" stroke="#9aae5a"/>
+<text x="444" y="111" text-anchor="middle" font-size="12" font-weight="700" fill="#4a6a28">5 建议</text>
+<text x="444" y="126" text-anchor="middle" font-size="9" fill="#4a6a28">Advise</text>
+<rect x="490" y="60" width="82" height="40" rx="4" fill="#e0ebd0" stroke="#7a9a4a"/>
+<text x="531" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#4a6a28">6 询问</text>
+<text x="531" y="93" text-anchor="middle" font-size="9" fill="#4a6a28">Inquire</text>
+<rect x="577" y="27" width="90" height="40" rx="4" fill="#d6e8c4" stroke="#5c8a3a"/>
+<text x="622" y="45" text-anchor="middle" font-size="12" font-weight="700" fill="#3a6a18">7 全权</text>
+<text x="622" y="60" text-anchor="middle" font-size="9" fill="#3a6a18">Delegate</text>
+</g>
+</svg>
+</div>
+<div class="scene" style="margin-top:6px">
+<div class="setup" style="margin-bottom:0"><strong>1 告知</strong>=我定，通知你 · <strong>2 推销</strong>=我定，但说服你 · <strong>3 咨询</strong>=先听你，再我定 · <strong>4 共定</strong>=一起拍板 · <strong>5 建议</strong>=我给意见你定 · <strong>6 询问</strong>=你先定，再告诉我 · <strong>7 全权</strong>=你定，不必告诉我</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：同一个任务——设计一个新服务的 API 契约——要交给两个人。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>对所有人用同一档：要么不放心、全程盯每个 endpoint（实际第 1 档），要么"你看着办"（第 7 档）一句甩出去。新人在第 7 档会淹死，资深在第 1 档会窒息。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法：把档位说出口</div>
+<p><strong>对新人（第 4 档·共定）：</strong>"这个 API 我们一起定。你先出草案，周三一起 review、一起拍板——不是考你，是想让你看我怎么权衡。"</p>
+<p><strong>对资深（第 7 档·全权）：</strong>"这个你全权。设计、定稿、上线你来，做完群里知会一声即可，不需要我点头。想拉我进去的点你叫我。"</p>
+<p>关键就是那句<strong>"这件事我在第 X 档"</strong>——双方都知道边界，避免"我以为你会先问我"式的踩雷。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>这次授权，我明确说出"在第几档"了吗？还是默认对方能读懂我心里的边界？</li>
+<li>同一个人随着 TRM 上升，我把档位往上调了吗？还是一年了还停在第 3 档？</li>
+<li>我有没有"嘴上第 7 档、身体第 2 档"——说全权交给你，又偷偷改他的 PR？</li>
+<li>临时降档（比如危机时收回决定权）时，我解释原因了吗？沉默的降档 = 不信任信号。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>对所有人同一档。</strong>授权档位是"人 × 任务"的函数，不是你的固定性格。</li>
+<li><strong>说一档、做另一档。</strong>口头第 7 档、行为第 2 档，比一开始就说"我盯着"更伤信任——因为你还撒了谎。</li>
+<li><strong>因为怕收不回而永不升档。</strong>档位可上可下；先升到第 5 档试，出问题再降，比锁死在第 3 档让人永远长不大强。</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>本周习作：</strong>挑一个你在 own 的任务和一个下属，决定"交到第几档"，派活时一字不差说出"这件事我在第 X 档"。<br><strong>思考题：</strong>你团队里谁被你一直锁在第 3 档却说不出理由？那是真实能力问题，还是你的控制欲？
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>下属带着问题来，先把"猴子"还回去
+<span class="en">Coaching vs Telling — Give the Monkey Back</span></h2>
+<span class="tag">教练式</span><span class="tag">反向委派</span><span class="tag">提问</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则 · 名家原话</div>
+<div class="principle">下属带问题来，你一给答案，那只"猴子"（问题的所有权）就从他背上跳到你背上——下次他还会来问。多数时候你的任务不是<strong>解决</strong>，是<strong>让他自己解决并长本事</strong>。少给一点答案，多问一个问题。</div>
+<div class="quote">
+<span class="en">"Tell less and ask more. Your advice is not as good as you think it is. Stay curious a little longer, rush to action and advice-giving a little more slowly."</span>
+<span class="zh">"少说，多问。你的建议没你以为的那么好。多保持一会儿好奇，别那么急着给答案、急着行动。"</span>
+<span class="source">— Michael Bungay Stanier,《The Coaching Habit》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范（本卡核心）</div>
+<div class="scene">
+<div class="setup">情境：一位中级工程师走过来——"这个架构选型我拿不准，你觉得用 Kafka 还是直接上 SQS？"</div>
+<div class="dialog bad">
+<div class="speaker">✗ 不要立刻说</div>
+<p>"用 SQS，简单，我们量没那么大，Kafka 是杀鸡用牛刀。"<br>→ 你 3 秒解决了问题，也顺手拿走了这个决定。下一个选型，他还是会来问你。你成了团队的瓶颈，他没长出判断力。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着先问（把决定权留在他手里）</div>
+<p>· "<strong>你自己倾向哪个？为什么？</strong>"（先逼出他的判断）</p>
+<p>· "两个方案<strong>最坏的情况</strong>各是什么？哪个错了更难收场？"</p>
+<p>· "你<strong>还缺哪条信息</strong>才能自己拍板？"（常常答案是"其实够了"）</p>
+<p>· 收尾："听起来你倾向 SQS 且理由成立——<strong>这个你来定，我支持。</strong>"</p>
+</div>
+</div>
+<div class="setup" style="margin-top:12px"><strong>边界——别教条：</strong>任务紧急、涉及安全、或他确实<strong>没背景</strong>时，直接 telling 才对——新人要方向时你一直反问，那不是 coaching，是折磨。先判断"他是求答案、求授权、还是真没背景"，再决定还不还猴子。</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>他抛问题时，我能不能忍住，先回一句"你自己怎么看"？</li>
+<li>我分清了吗：他是真没背景（该 telling），还是只是想要我背书（该把决定还给他）？</li>
+<li>就算我要 telling，我解释"为什么"了吗？还是只给结论？</li>
+<li>问完之后，我留了沉默、忍住没自问自答吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>"建议怪兽"（advice monster）。</strong>你太享受当那个有答案的人——这正是 IC 惯性，manager 要戒。</li>
+<li><strong>把 coaching 变成"猜我心里的答案"。</strong>嘴上问"你怎么看"，他一答错你就否——更隐蔽、更伤人的微管理。</li>
+<li><strong>该 telling 时硬 coaching。</strong>火烧眉毛、新人没方向时反问，是不负责任。教练式不是万能钥匙。</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>本周习作：</strong>这周至少抓一次"下属来问你怎么办"，强迫第一句是反问而非答案，记下他最终的决定和你预期差多少。<br><strong>思考题：</strong>上次你"秒答"下属——若当时先问"你怎么看"，他能自己走到答案吗？你是在帮他，还是喂养自己的"被需要感"？
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>放手后：容忍 80% 的解法，用护栏代替监控
+<span class="en">After Letting Go — Guardrails, Not Surveillance</span></h2>
+<span class="tag">容错</span><span class="tag">可逆性</span><span class="tag">护栏</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则 · 名家原话</div>
+<div class="principle">授权出去，就要接受两件事：他会做得<strong>和你不一样</strong>，他会犯<strong>可恢复的错</strong>。关键不是盯紧，而是分清<strong>可逆 / 不可逆</strong>：可逆的放手让他试错，不可逆的才介入放慢。check-in 绑在<strong>里程碑和指标</strong>上，不是绑在你的焦虑上。</div>
+<div class="quote">
+<span class="en">"Some decisions are consequential and irreversible or nearly irreversible—one-way doors... But most decisions aren't like that—they are changeable, reversible—they're two-way doors. Type 2 decisions can and should be made quickly by ... small groups."</span>
+<span class="zh">"有些决定影响重大、几乎不可逆——是单向门……但多数决定不是这样——它们可改、可逆，是双向门。这类决定可以、也应该由小团队快速做出。"</span>
+<span class="source">— Jeff Bezos, Amazon 2015 致股东信</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">介入前先问：这是哪种门？</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg">
+<rect x="30" y="25" width="310" height="160" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="360" y="25" width="310" height="160" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="185" y="55" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">双向门 · 可逆</text>
+<text x="185" y="82" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">改回来不贵 → <tspan font-weight="700">默认全放手</tspan></text>
+<text x="185" y="106" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">让他试错，事后一起复盘</text>
+<text x="185" y="130" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">忍住"我会这样做"的冲动</text>
+<text x="185" y="158" text-anchor="middle" font-family="Georgia" font-size="11" fill="#4a6a28">例：内部工具选型、命名、重构顺序</text>
+<text x="515" y="55" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">单向门 · 不可逆</text>
+<text x="515" y="82" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">改回来很贵 → <tspan font-weight="700">介入、放慢</tspan></text>
+<text x="515" y="106" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">共同决策，你要在场</text>
+<text x="515" y="130" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">但仍让他主导、解释理由</text>
+<text x="515" y="158" text-anchor="middle" font-family="Georgia" font-size="11" fill="#a04020">例：对外 API 契约、数据 schema、招人</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你 review 下属的实现，方案能 work，但不是你会选的——稍微绕、可优化，且完全可逆。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>"等下，这块我觉得应该这样写……"然后接管，replace 成你的写法。<br>→ 你赢了这个 PR，输了长期：他学到"反正老板最后会改成他的样子"，下次干脆不动脑等你定。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法：先判可逆性，再用"我打算…"机制</div>
+<p>先在心里问：<strong>"这可逆吗？三周后发现不对，改回来贵吗？"</strong> 不贵 → 放手。对他说："这能跑，我会选另一种写法，但这是<strong>风格不是对错</strong>，<strong>你来定。</strong>两周后看监控，有性能问题再调。"</p>
+<p>资深团队可用 Marquet 的"<strong>I intend to…</strong>"：让下属说"我打算这样做，因为 X"，你只在<strong>不可逆或致命</strong>处喊停。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：check-in 不变 micromanage 的边界</div>
+<ul class="checklist">
+<li>想介入前，我先问"这可逆吗"了吗？可逆的，我忍住了吗？</li>
+<li>我的 check-in 绑在里程碑/指标上，还是绑在我"想知道进展"的焦虑上？</li>
+<li>事先约好红线和里程碑了吗？约好之后中间我做到不查岗了吗？</li>
+<li>他失败后，我是 blameless 复盘改进系统，还是秋后算账、收回授权？</li>
+<li>成果出来，功劳我公开归到他名下了吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"和我不一样"当"错"。</strong>80% 的解法 + 他的成长，常常胜过 100% 的解法 + 他的依赖。</li>
+<li><strong>可逆的事也不敢放。</strong>双向门的决定都要你拍板，团队永远跑你一个人的速度。</li>
+<li><strong>出问题就秋后算账。</strong>授权了又在失败后清算，下次没人敢接活——你亲手杀死授权文化。</li>
+<li><strong>名义授权、实际监控。</strong>每天追问进度的"关心"，下属只读到一个信号：你不信我。</li>
+</ul>
+</div>
+</div>
+
+<div class="cardwork">
+<strong>本周习作：</strong>这周遇到"下属做得和你不一样但可逆"的时刻，强迫自己不接管，只说"你来定，两周后看数据"。<br><strong>思考题：</strong>你最近一次接管下属的工作，那真的是"单向门"吗？还是你只是不舒服于"不是我的做法"？
+</div>
+</div>
+
+<!-- ============ 深入思考 ============ -->
+<div class="deepthink">
+<h3>深入思考</h3>
+
+<details>
+<summary>授权档位（信任阶梯）在不同 seniority 和文化上该怎么变？</summary>
+<div class="answer">两个维度。<strong>Seniority：</strong>新人需要的不是第 7 档的"自由"，而是清晰的第 3-4 档，给方向反而是善意；资深的人在低档会窒息。<strong>文化：</strong>高权力距离的团队（东亚常见），资深下属也可能期待你"给个方向"，贸然"你看着办"会被读成甩锅或考验，而非信任。对策不是降低授权，而是把第 7 档明确命名为"我信任你的判断"，别留白让对方猜。</div>
+</details>
+
+<details>
+<summary>远程 / 异步团队的授权，哪里最容易断？</summary>
+<div class="answer">面对面时你靠"路过看一眼"获取安全感，远程没有。两个失效点：manager 看不见过程而焦虑，退回高频 status 查岗（伪装成"同步"），实质是微管理；下属得不到即时反馈而不敢做可逆决策。解法是把信任<strong>前置且显式</strong>：写下里程碑、红线、决策门（哪些可逆=直接做，哪些不可逆=拉我），用文档和 demo 节点代替"看着他做"。远程授权靠制度，不靠默契。</div>
+</details>
+
+<details>
+<summary>大厂 vs 初创：BigCat 作为大厂 tech lead manager 的真实风险在哪？</summary>
+<div class="answer">大厂授权有更高的政治成本：下属搞砸跨团队项目，火会烧到你，本能是退回微管理、什么都自己 review。但这正是陷阱——<strong>晋升到下一级的前提，恰恰是你能 demonstrate "scaling without you"</strong>：团队在你不在时仍能产出、能做决策。永远依赖你的团队，是你晋升的天花板，不是护城河。真正的风险不是"授权出事"，是"不授权 = 你和团队一起卡在原地"。把可逆的错当培养成本、把不可逆的门守住，是大厂里平衡这对张力的现实解。</div>
+</details>
+
+<details>
+<summary>授权与问责的张力：授权出去，出事到底谁负责？</summary>
+<div class="answer">这是授权最诚实的灰色地带。可委派的是 <strong>responsibility（执行责任）</strong>，不可委派的是 <strong>accountability（对上的最终担责）</strong>——对你老板而言，你仍是那个要解释的人。这意味着一种刻意的不对称：<strong>成功时功劳公开归下属，失败时锅你对上扛。</strong>这不是高尚，是 leader 这角色的结构性成本——你用"替他挡责"换"他敢承担、敢试错"。做不到这点（出事就把下属推出去），授权文化会在第一次失败就死掉，没人再敢接你给的自主权。</div>
+</details>
+
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 13 · 2026.06.02</footer>
+</div>
+</body>
+</html>
