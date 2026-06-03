@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 14: Coaching</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.qbank{background:#fcf6e8;border:1px solid #e6d9bf;border-radius:4px;overflow:hidden}
+.qbank .row{display:flex;border-bottom:1px solid #ede0c4;font-size:0.94rem}
+.qbank .row:last-child{border-bottom:none}
+.qbank .role{flex-shrink:0;width:130px;padding:10px 12px;background:#f3e9d2;color:#6b4a1f;font-weight:700;font-size:0.84rem}
+.qbank .q{padding:10px 14px;color:#3a2f1c}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #c4a878}
+.deepthink h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin:14px 0 18px}
+.deepthink details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px}
+.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#5c3a18;font-size:0.98rem;list-style:none}
+.deepthink summary::-webkit-details-marker{display:none}
+.deepthink summary::before{content:"▸ ";color:#a8702d}
+.deepthink details[open] summary::before{content:"▾ "}
+.deepthink .answer{padding:0 20px 16px;color:#4a3a20;font-size:0.93rem;line-height:1.75}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.qbank .role{width:100px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 14 · 2026.06.03</div>
+<h1>Coaching: Give Fewer Answers, Make More Thinking Space</h1>
+<div class="meta"><span>Topic: Coaching</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"Coaching is unlocking a person's potential to maximize their own performance." — John Whitmore</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> As a manager who came up through engineering, your biggest instinctive trap is <strong>"I know the answer, let me just tell you."</strong> As an IC that was your edge; as a manager it's your ceiling — the more answers you hand out, the less your reports think for themselves, and the more they can't function without you. Coaching isn't passivity, nor pretending you don't know; it's a deliberate restraint: <strong>swap "telling" for "asking," and "solving it for them" for "helping them solve it."</strong> The cost is speed — your first coaching conversation takes three times as long as just giving the answer. The payoff compounds — three months later they stop bringing you the same class of problem. Four principles this week: structure a coaching conversation with GROW, tame your "advice monster," seven power questions that change the conversation, and the most honest lesson — <strong>when NOT to coach, when telling them directly is the responsible move.</strong>
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>GROW: The Four Gears of a Coaching Conversation
+<span class="en">Goal, Reality, Options, Will</span></h2>
+<span class="tag">GROW</span><span class="tag">structure</span><span class="tag">framework</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">A coaching conversation isn't a ramble. Move through <strong>Goal → Reality → Options → Will</strong>, and let the report walk themselves to a conclusion inside your questions — you drive the gears, not the content.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"Coaching is unlocking a person's potential to maximize their own performance. It is helping them to learn rather than teaching them."</span>
+<span class="source">— John Whitmore, Coaching for Performance, Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The four GROW gears</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="14" y="40" width="160" height="170" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="188" y="40" width="160" height="170" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="362" y="40" width="160" height="170" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="536" y="40" width="150" height="170" rx="6" fill="#f3e9d2" stroke="#5c3a18" stroke-width="2"/>
+<text x="94" y="68" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">G · Goal</text>
+<text x="26" y="105" font-family="Georgia" font-size="11.5" fill="#3a2f1c">What outcome</text>
+<text x="26" y="125" font-family="Georgia" font-size="11.5" fill="#3a2f1c">do you really</text>
+<text x="26" y="145" font-family="Georgia" font-size="11.5" fill="#3a2f1c">want?</text>
+<text x="26" y="178" font-family="Georgia" font-size="11.5" fill="#8a6d3b">What do you</text>
+<text x="26" y="196" font-family="Georgia" font-size="11.5" fill="#8a6d3b">want to leave with?</text>
+<text x="268" y="68" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">R · Reality</text>
+<text x="200" y="105" font-family="Georgia" font-size="11.5" fill="#3a2f1c">What's actually</text>
+<text x="200" y="125" font-family="Georgia" font-size="11.5" fill="#3a2f1c">happening?</text>
+<text x="200" y="145" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Tried what?</text>
+<text x="200" y="178" font-family="Georgia" font-size="11.5" fill="#8a6d3b">Facts, not</text>
+<text x="200" y="196" font-family="Georgia" font-size="11.5" fill="#8a6d3b">judgment</text>
+<text x="442" y="68" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">O · Options</text>
+<text x="374" y="105" font-family="Georgia" font-size="11.5" fill="#3a2f1c">What could you</text>
+<text x="374" y="125" font-family="Georgia" font-size="11.5" fill="#3a2f1c">do?</text>
+<text x="374" y="145" font-family="Georgia" font-size="11.5" fill="#3a2f1c">And what else?</text>
+<text x="374" y="178" font-family="Georgia" font-size="11.5" fill="#8a6d3b">List first,</text>
+<text x="374" y="196" font-family="Georgia" font-size="11.5" fill="#8a6d3b">judge later</text>
+<text x="611" y="68" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="700" fill="#5c3a18">W · Will</text>
+<text x="548" y="105" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Which will you</text>
+<text x="548" y="125" font-family="Georgia" font-size="11.5" fill="#3a2f1c">do?</text>
+<text x="548" y="145" font-family="Georgia" font-size="11.5" fill="#3a2f1c">First step?</text>
+<text x="548" y="178" font-family="Georgia" font-size="11.5" fill="#6b4a1f">When? Need</text>
+<text x="548" y="196" font-family="Georgia" font-size="11.5" fill="#6b4a1f">what from me?</text>
+<text x="350" y="232" text-anchor="middle" font-family="Georgia" font-size="11" fill="#a8702d">Flow: you keep the cadence, they supply the content →</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: a senior engineer walks into your 1:1 and says, "I think we should rewrite this service in Rust."</div>
+<div class="dialog bad">
+<div class="speaker">✗ IC instinct (snap judgment)</div>
+<p>"A rewrite isn't worth it right now — we don't have the bandwidth and nobody knows Rust. Fix the existing bugs first." You may be right, but he'll keep bringing you half-baked ideas; he never learned to evaluate it himself, and you missed his real concern.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Run GROW</div>
+<p><strong>G:</strong> "Step back — what's the <strong>real problem</strong> you want the rewrite to solve? Performance, maintainability, something else?"</p>
+<p><strong>R:</strong> "Where exactly is the service stuck today? What data do you have — latency, incident rate, slow to change?"</p>
+<p><strong>O:</strong> "Besides a full rewrite, what other ways could solve that problem? … And what else?" (forcing out option two and three: rewrite the hot module, add caching, profile and optimize)</p>
+<p><strong>W:</strong> "Of these, which would you be willing to validate over a week? What do you need me to unblock?"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: before you open GROW</div>
+<ul class="checklist">
+<li>Is this actually a topic worth coaching? (not a crisis, not pure missing info — see Card 4)</li>
+<li>Can I hold back and offer zero solutions until the Options stage?</li>
+<li>Is the Goal <strong>his</strong> goal, not one I set for him?</li>
+<li>In Reality, am I asking for facts or quietly hinting at my own verdict?</li>
+<li>Does the end land on a <strong>concrete next step + a time</strong>?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Skipping G straight to O.</strong> Discuss solutions before aligning on the goal and you spend an hour solving the wrong problem.</li>
+<li><strong>Reality turns into interrogation.</strong> "Why didn't you raise this earlier?" — one accusation and the door slams shut.</li>
+<li><strong>Fake GROW.</strong> The questions are just wrapping; you had the answer all along and wait for him to "guess right." Reports can smell it — worse for trust than just telling them.</li>
+<li><strong>No Will.</strong> A great chat with no commitment; same thing comes back next week unchanged.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>John Whitmore, Coaching for Performance</strong> (the foundational treatment of GROW; traceable back to Timothy Gallwey's The Inner Game of Tennis).<br><strong>Timothy Gallwey, The Inner Game of Tennis</strong> — "the opponent is in your own head," the psychological starting point of coaching.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Asking vs Telling: Tame Your Advice Monster
+<span class="en">Tame the Advice Monster</span></h2>
+<span class="tag">questions</span><span class="tag">restraint</span><span class="tag">directive spectrum</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">There's an "advice monster" in your head that wants to leap out with a solution before your report finishes talking. <strong>Stay curious a little longer; rush to action and advice a little more slowly.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"Stay curious a little longer, and rush to action and advice-giving a little more slowly."</span>
+<span class="source">— Michael Bungay Stanier, The Coaching Habit, Introduction</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The advice monster's three faces</div>
+<div class="pitfall">
+<ul>
+<li><strong>Tell-it:</strong> "Let me tell you what to do" — the one you know best, the engineering leader's default.</li>
+<li><strong>Save-it:</strong> "Don't worry, I'll handle it" — taking the monkey back onto your own shoulder (see Day 13).</li>
+<li><strong>Control-it:</strong> "No, it has to be my way" — fear of losing control, so you reclaim the autonomy.</li>
+</ul>
+Every time you want to blurt out the answer, ask yourself first: which monster just jumped out?
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: hand the ball back</div>
+<div class="scene">
+<div class="setup">Situation: a mid-level engineer asks, "How should I design this API? Cursor pagination or offset?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Hand over the answer</div>
+<p>"Use cursor — offset has performance problems on large datasets." Solved in three seconds, but what he learns is "bring design questions to BigCat," not "how to weigh it myself."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Return the judgment first</div>
+<p>"Which way are you <strong>leaning</strong> right now? Walk me through your reasoning." (make him expose his thinking)</p>
+<p>(after he answers) "And in <strong>what scenario would that choice break down</strong>?" (push him to find the edges himself)</p>
+<p>"If the data grows to 10 million rows, does your call change?" — most of the time he arrives at cursor himself, and remembers why. <strong>When he's truly stuck or time is tight</strong>, then give it directly — but that's Card 4's judgment call.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: micro-habits of restraint</div>
+<ul class="checklist">
+<li>After my report finishes, did I ask one question before deciding whether to give a solution?</li>
+<li>Am I giving "an answer," or "a question that keeps them thinking"?</li>
+<li>When I'm especially sure I'm right — is that exactly the moment to hold back?</li>
+<li>This week, what's my rough ratio of "asking : telling"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Fake questions.</strong> "Don't you think we should use cursor?" — that's a command dressed as a question; all he hears is the command.</li>
+<li><strong>Never giving answers = a different dereliction.</strong> Restraint isn't dogma. Withholding info he genuinely needs is torture, not coaching.</li>
+<li><strong>Using coaching to dodge hard talks.</strong> When you should say "this wasn't good enough," hiding in "what do you think?" — feedback is not a substitute for coaching (see Day 2).</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Coaching naturally leans on questions and holds back on verdicts, which more easily triggers the <strong>double bind</strong> for women leaders: asking gets read as "she can't make up her mind," while giving a direct answer gets read as "abrasive." One counter is to <strong>name the intent explicitly</strong>: "I'm deliberately not handing you a solution yet — I want to hear how you weigh it, to help you build judgment, not because I have no view." Spelling out the restraint turns it from "weakness" into "a deliberate leadership move," instead of letting the other party default to assuming you have no opinion.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Michael Bungay Stanier, The Coaching Habit</strong> (source of the advice monster's three faces).<br><strong>Myles Downey, Effective Coaching</strong> — the <strong>directive ↔ non-directive spectrum</strong>, from "telling" to "pure listening": giving the answer is just the leftmost notch.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Seven Power Questions: Replace Your Question Bank
+<span class="en">Seven Questions That Change The Conversation</span></h2>
+<span class="tag">questions</span><span class="tag">scripts</span><span class="tag">toolkit</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">A good coach relies not on good answers but on a few good questions you can reuse. Memorize them, so that in the conversation you don't slip back into "let me tell you."</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"'And what else?' — the best coaching question in the world. The first answer is almost never the only answer, and rarely the best answer."</span>
+<span class="source">— Michael Bungay Stanier, The Coaching Habit, Ch.3</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Seven questions (drop straight into your next 1:1)</div>
+<div class="qbank">
+<div class="row"><div class="role">Kickstart</div><div class="q">"<strong>What's on your mind?</strong>" Ten times the signal of "how's the project," opens straight to the real issue.</div></div>
+<div class="row"><div class="role">AWE</div><div class="q">"<strong>And what else?</strong>" Ask it 2–3 times. The first answer is a reflex; the gold is in the third layer.</div></div>
+<div class="row"><div class="role">Focus</div><div class="q">"What's the <strong>real challenge here for you</strong>?" The "for you" forces him from abstract complaint down to himself.</div></div>
+<div class="row"><div class="role">Foundation</div><div class="q">"<strong>What do you want?</strong>" Asked directly — often nobody has ever asked him.</div></div>
+<div class="row"><div class="role">Lazy</div><div class="q">"<strong>How can I help?</strong>" Forces him to make an explicit request, instead of you guessing where to intervene.</div></div>
+<div class="row"><div class="role">Strategic</div><div class="q">"If you say yes to this, what are you saying <strong>no</strong> to?" Surfaces the trade-off.</div></div>
+<div class="row"><div class="role">Learning</div><div class="q">"What was <strong>most useful</strong> for you today?" Lets him extract the takeaway himself — it sticks better.</div></div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Silence is part of the question — the 8-second rule</div>
+<div class="scene">
+<div class="setup">After a real question, <strong>count to 8 before you speak</strong>. Most people start adding at 4 seconds, but the real thinking happens at seconds 5–8. Rushing to fill the silence is thinking for them — you'll only get the surface answer.</div>
+<div class="dialog good">
+<div class="speaker">✓ Physical move</div>
+<p>Ask, then pick up your water, take a slow sip, set it down. Eight seconds pass and you still haven't spoken — and he'll start saying the real layer.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: question design for this conversation</div>
+<ul class="checklist">
+<li>How many of my prepared questions are yes/no? Cut them, make them open-ended.</li>
+<li>Did I use one "And what else?"</li>
+<li>After asking, how many seconds of silence did I hold?</li>
+<li>At the end, did I let him say the "most useful point" himself?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Chains of "why."</strong> "Why? Why?" makes people defensive. Ask more "what / how," less "why."</li>
+<li><strong>Asking then answering yourself.</strong> "What do you think? Is it because the timeline's too tight? I think so too…" — you just stole his answer.</li>
+<li><strong>Reading the seven as a script.</strong> They're tools, not a flow; pick by where the conversation actually goes.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Michael Bungay Stanier, The Coaching Habit</strong> (full source of the seven core questions: Kickstart / AWE / Focus / Foundation / Lazy / Strategic / Learning).<br><strong>Kim Scott, Radical Candor</strong> — "What could I do or stop doing that would make it easier to work with me?" belongs to the same power-question family.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>When NOT to Coach: Telling Is Sometimes the Job
+<span class="en">When Telling Is the Responsible Move</span></h2>
+<span class="tag">boundary</span><span class="tag">judgment</span><span class="tag">honesty</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">Coaching isn't universal. <strong>When the situation is urgent, when safety or compliance is at stake, or when the report genuinely lacks the information to judge — don't ask, give a clear instruction.</strong> Hiding in "what do you think?" when you should be telling is dressing up an abdication of responsibility as empowerment.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"Sometimes the answer is to tell people what to do. The skill is knowing which mode you're in — and being honest about it."</span>
+<span class="source">— adapted from Camille Fournier, The Manager's Path, Ch.3</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Coach or Tell? Two dimensions</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="40" x2="60" y2="270" stroke="#8a6d3b" stroke-width="1.5"/>
+<line x1="60" y1="270" x2="610" y2="270" stroke="#8a6d3b" stroke-width="1.5"/>
+<text x="30" y="155" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b" transform="rotate(-90 30 155)">Time / risk</text>
+<text x="335" y="298" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">Can the report judge — capability & information? →</text>
+<rect x="70" y="50" width="255" height="105" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<rect x="340" y="50" width="260" height="105" rx="6" fill="#fbf0e8" stroke="#c47040" stroke-width="1.5"/>
+<rect x="70" y="165" width="255" height="100" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="340" y="165" width="260" height="100" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="197" y="90" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">TELL directly</text>
+<text x="197" y="115" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Urgent + not yet able</text>
+<text x="197" y="135" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Incident, compliance, safety</text>
+<text x="470" y="90" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a05a20">TELL, then explain</text>
+<text x="470" y="115" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Urgent but capable</text>
+<text x="470" y="135" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Give direction, debrief after</text>
+<text x="197" y="200" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a8702d">Teach while giving</text>
+<text x="197" y="225" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Not urgent, lacks info</text>
+<text x="197" y="245" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Give material, then ask</text>
+<text x="470" y="200" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">COACH</text>
+<text x="470" y="225" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">Not urgent + capable</text>
+<text x="470" y="245" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">GROW's golden zone</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: a live P1 incident, DB connection pool saturated, the report posts in the incident channel: "Should we discuss a few recovery options?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Misplaced coaching</div>
+<p>"What options do you see? What are the trade-offs of each?" — this is not coaching time. Every extra question is another minute of user impact.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Command now, coach later</div>
+<p><strong>During:</strong> "First raise the pool cap to X, restart service B, I'll notify stakeholders. Once we're stable for 30 minutes we'll look at root cause." — clear, single chain of command.</p>
+<p><strong>In the postmortem:</strong> "Now let's coach — if next time it's only you, how would you decide between scaling first or restarting first?" Move the coaching to the right time.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: pick the mode before you speak</div>
+<ul class="checklist">
+<li>Is there <strong>time</strong> for him to think it through? (incident, deadline day = no)</li>
+<li>Does he have the <strong>information and experience</strong> to make a sound call? (brand-new domain = give material first)</li>
+<li>Is the cost of being wrong <strong>reversible</strong>? Reversible = let him try; irreversible and high-risk = give direction.</li>
+<li>Did I <strong>tell him which mode we're in</strong>? ("I'm giving you the answer this time, because…")</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating coaching as a default creed.</strong> Read one book and you question everyone on everything; a new hire feels you're stonewalling, refusing to teach.</li>
+<li><strong>Silently switching modes.</strong> You coach usually, then suddenly command in an incident — the report is bewildered. Tell them up front: "in emergencies I'll direct."</li>
+<li><strong>Only ever telling.</strong> The other extreme — answering everything, the team never grows judgment, and you firefight forever.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Camille Fournier, The Manager's Path</strong> (Ch.3, switching between coaching and direct management).<br><strong>Ken Blanchard, Situational Leadership II</strong> — the classic frame for switching among Directing / Coaching / Supporting / Delegating by the report's "competence × commitment."</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 14 Action</h3>
+<p>Do one concrete thing this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Catch the next moment a report comes to you "for the answer"</strong> ("how should I handle this?"). First use Card 4's checklist to judge: should I coach right now? If yes — <strong>resist giving the answer and ask three questions instead:</strong> "Which way are you leaning?" → "Any other approaches?" → "Which would you try first?" After each one, <strong>count to 8 before speaking</strong>.<br><br>Afterward, write two lines: <strong>(1) how far the conclusion he reached was from the answer in your head; (2) the moment you most wanted to jump in with the answer.</strong> That moment is your advice monster — recognize it next time.
+</div>
+</div>
+
+<!-- ============ Deep Thinking ============ -->
+<div class="deepthink">
+<h3>Going Deeper</h3>
+
+<details>
+<summary>Does coaching fail to translate in high-power-distance / East Asian teams?</summary>
+<div class="answer">It can, but it's adjustable, not unusable. In high-power-distance cultures, when a senior report asks "what should I do," they may genuinely expect the authority to give direction; your "what do you think?" can be read as a test, a dodge, or even "he doesn't know either." The counter isn't to abandon coaching but to <strong>name it explicitly</strong>: "I'm asking not to withhold the answer but to hear your judgment and help you build this muscle — if you can't land it, I'll make the call." Spell out the good intent behind the question and add a clear fallback commitment, and coaching won't be misread as abdication. Culture doesn't change the framework — it changes the <strong>packaging and the setup</strong>.</div>
+</details>
+
+<details>
+<summary>Doesn't a structured conversation like GROW feel too formulaic, too mechanical?</summary>
+<div class="answer">It does early on, and you should accept the clumsiness — like memorizing the gear sequence when you learn to drive. GROW is scaffolding; its purpose is to hold you up at the exact moment you most want to leap in with the answer. Once fluent, the four gears internalize into instinct — you stop "reading a script" and naturally align on the goal, then probe reality. The real risk isn't the formulaic feel; it's <strong>fake GROW</strong>: you had the answer all along and use questions to lead them to guess it. That hurts trust more than just telling them, because they can smell being manipulated. The structure can be mechanical; the intent cannot be fake.</div>
+</details>
+
+<details>
+<summary>If the report isn't capable enough yet, is hard-coaching wasting both your time?</summary>
+<div class="answer">Yes — and that's the heart of Card 4. Coaching presupposes the other person <strong>can reach a reasonable answer themselves</strong>; you just help them get there faster and more consciously. If they're in a brand-new domain and don't even know the option space, asking "what other approaches?" yields only blankness or wild guesses. The right move then is to <strong>tell / teach</strong> first: give material, examples, a starting point, and once they have basic judgment, switch back to coaching. Use coaching on the mid-to-late part of the capability curve; the early part is teaching — both are right, the error is mixing them up.</div>
+</details>
+
+<details>
+<summary>As a big-company tech lead manager, how does coaching's time cost ever pay off?</summary>
+<div class="answer">In the short term it doesn't; in the long term it's the only thing that does. Giving the answer solves one instance in three minutes, but what you buy is "he comes back to ask again" — problem volume grows linearly with team size and eventually drowns you. Coaching costs 3x the first time, but buys <strong>him solving the same class of problem himself next time</strong>, and your intervention rate falls over time. It's the same ledger as Day 13's delegation: <strong>the prerequisite for the next level up is scaling out judgment that doesn't depend on you</strong>, and judgment only grows from him making decisions, not from you feeding answers. Treat coaching as an investment in the team's judgment, not the per-incident cost of one solution.</div>
+</details>
+
+<details>
+<summary>Coaching, mentoring, feedback, therapy — where are the boundaries, and how not to cross them?</summary>
+<div class="answer">These four get conflated constantly. <strong>Coaching:</strong> you don't give the answer, you help them find their own (this issue). <strong>Mentoring:</strong> you give advice and a path from your own experience ("here's how I did it back then"). <strong>Feedback:</strong> you tell them a fact about their performance and its impact (Day 2) — that's not asked out of them, it's something you have to say. <strong>Therapy:</strong> handling psychological trauma or clinical issues — beyond the manager role; refer to professional resources. The most common boundary slip is using coaching to dodge feedback: hiding in "what do you think?" when you should plainly say "this wasn't good enough." Remember: <strong>coaching helps them think, feedback is what you must say — don't substitute the former for the latter.</strong></div>
+</details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 14 · 2026.06.03</footer>
+</div>
+</body>
+</html>
