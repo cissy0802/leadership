@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 16: Strategy &amp; Direction</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px;padding:4px 18px}
+.deepen summary{cursor:pointer;font-weight:600;color:#5c3a18;padding:12px 0;font-size:0.98rem}
+.deepen details>div{color:#4a3a20;font-size:0.93rem;padding:4px 0 14px;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 16 · 2026.06.05</div>
+<h1>Strategy &amp; Direction: From "Busy Paddling" to "Knowing Where to Swim"</h1>
+<div class="meta"><span>Topic: Strategy &amp; Direction</span><span>·</span><span>4 tools</span></div>
+<div class="subtitle">"The core of strategy work is always the same: discovering the critical factors in a situation and designing a way to coordinate and focus actions to deal with them." — Richard Rumelt</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> What blocks a tech leader from leveling up is rarely "weak execution" — it's <strong>unclear direction</strong>. The team is busy, but can't say what value it's pushing toward; there's a long list of goals, but not one line stating "which problem are we actually solving." This issue's four tools answer four escalating questions: <strong>which way do we swim</strong> (North Star metric), <strong>how do we know we've arrived</strong> (OKR design), <strong>how do we turn direction into words people can act on</strong> (the strategy memo), and <strong>how do we still dare to set direction when information is never complete</strong> (embracing uncertainty).
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 01</div>
+<h2>The North Star Metric: One Direction Everyone Recognizes
+<span class="en">One Number for Value</span></h2>
+<span class="tag">Direction anchor</span><span class="tag">User value</span><span class="tag">Leading cause</span>
+</div>
+
+<div class="section">
+<div class="section-label">The principle in one line</div>
+<div class="principle">Direction precedes goals. Without a North Star everyone recognizes — the <strong>single metric</strong> that best captures the core value you create for users — each person pushes in the direction they personally think is right, and the net force is zero. The North Star isn't revenue itself; it's the <strong>leading cause</strong> of revenue.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"Your North Star Metric is the single metric that best captures the core value that your product delivers to customers."</span>
+<span class="source">— Sean Ellis (who coined "North Star Metric") &amp; Morgan Brown, <em>Hacking Growth</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: BigCat runs an internal platform team. His boss asks, "What's your team's goal this year?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>List a pile of parallel technical metrics: "Cut P99 latency to X, ship 3 features, hit 99.99% availability." Not one of them says "for whom, what value." The boss can't remember it, the team fragments, and by year-end every number is green — yet no one can say how the platform actually got better.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>Set one North Star: <strong>"Number of active downstream teams that complete end-to-end calls within latency targets each week."</strong> One line anchors "the value we create for internal developers." Latency, availability, new features all step back and become its <strong>input levers</strong> — not parallel goals fighting each other.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="frame-diagram">
+<svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg">
+<rect x="200" y="20" width="300" height="56" rx="6" fill="#5c3a18"/>
+<text x="350" y="44" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#f5e8c8">★ North Star Metric</text>
+<text x="350" y="63" text-anchor="middle" font-family="Georgia" font-size="11" fill="#e0cba0">Active downstream teams within latency / wk</text>
+<line x1="350" y1="76" x2="130" y2="120" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="350" y1="76" x2="350" y2="120" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="350" y1="76" x2="570" y2="120" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="30" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<rect x="250" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<rect x="470" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="130" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">Lever · Speed</text>
+<text x="130" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">P99 within target</text>
+<text x="350" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">Lever · Reliable</text>
+<text x="350" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">Incidents per month</text>
+<text x="570" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">Lever · Ease</text>
+<text x="570" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">Time to onboard</text>
+<rect x="200" y="212" width="300" height="44" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<text x="350" y="232" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#a04020">Guardrail · Don't trade for speed</text>
+<text x="350" y="249" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Call correctness must not drop</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">5 tests for picking a North Star</div>
+<ul class="checklist">
+<li>Does it represent <strong>user value</strong>, or just our internal effort?</li>
+<li>Is it a <strong>leading</strong> indicator of revenue/retention, or a lagging one? (The North Star should be the cause, not the effect.)</li>
+<li>Can the team's daily work directly move it?</li>
+<li>Is there a <strong>guardrail metric</strong> to stop quality being sacrificed for it? (e.g. correctness lost to speed)</li>
+<li>Can the whole team recite it without opening a doc?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating a vanity metric as your North Star.</strong> Total signups, lines of code — they only go up and don't reflect real value.</li>
+<li><strong>Choosing revenue as the North Star.</strong> Too lagging; the team can't see this week's work move it, so it can't guide daily trade-offs.</li>
+<li><strong>More than one North Star.</strong> Two or more equals none — the team fractures across numbers again.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Sean Ellis &amp; Morgan Brown, <em>Hacking Growth</em></strong> — origin and method of the "North Star Metric."<br><strong>Amplitude, <em>The North Star Playbook</em></strong> — practical template for the North Star + input-lever tree.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 02</div>
+<h2>OKR Design: Rescue Key Results From "To-Do List"
+<span class="en">Key Results Are Outcomes, Not Tasks</span></h2>
+<span class="tag">Goal setting</span><span class="tag">Falsifiable</span><span class="tag">Outcome vs task</span>
+</div>
+
+<div class="section">
+<div class="section-label">The principle in one line</div>
+<div class="principle">The Objective answers "where do we want to go" (qualitative, inspiring, directional); the Key Results answer "how will we know we got there" (quantitative, verifiable, <strong>falsifiable</strong>). The most common failure is writing KRs as a to-do list ("did X") instead of an outcome ("X produced Y").</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"A successful MBO system needs only to answer two questions: Where do I want to go? (The answer provides the Objective.) How will I pace myself to see if I am getting there? (The answer gives us Milestones, or Key Results.)"</span>
+<span class="source">— Andy Grove, <em>High Output Management</em>, Ch.6</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: BigCat is setting a quarterly OKR for the team on the theme "improve platform stability."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Tasks disguised as KRs</div>
+<p>O: Improve platform stability<br>KR1: Complete the monitoring migration<br>KR2: Ship the circuit-breaker<br>KR3: Write 5 runbooks</p>
+<p>All three KRs are "what we did." Finish all three and stability <strong>may not change at all</strong> — downstream still gets paged at 3am.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Outcome KRs</div>
+<p>O: Make downstream teams trust our platform won't wake them at night<br>KR1: Downstream on-call pages caused by our incidents drop from 12/mo to <strong>≤3/mo</strong><br>KR2: P0 mean time to recovery (MTTR) drops from 45 min to <strong>≤15 min</strong><br>KR3: Quarterly downstream satisfaction (NSAT) rises from 6.2 to <strong>≥8.0</strong></p>
+<p>Migration, circuit-breaker, runbooks still get done — but now they're <strong>means</strong> to these outcomes, not ends in themselves.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Stress-test your KRs</div>
+<ul class="checklist">
+<li>Is each KR an "outcome" or a "to-do"? (Anything with "complete / ship / deliver" is usually a to-do.)</li>
+<li>Does the number have a <strong>start and an end</strong>? (From X to Y, not just a lone Y.)</li>
+<li>If all three KRs land, is the O <strong>definitely</strong> achieved? (Coverage test.)</li>
+<li>Is it a "sure win"? (Grove &amp; Google: a good OKR should hit ~70% to be ambitious enough.)</li>
+<li>Can it be honestly <strong>falsified</strong>? (An unfalsifiable KR is just a slogan.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Sandbagging (deliberately low).</strong> Lowering targets to secure "100% attainment" turns OKRs into performance insurance and kills ambition.</li>
+<li><strong>Binding KRs directly to individual ratings.</strong> Once KR = perf score, everyone sets conservative goals. Both Grove and Google stress <strong>decoupling</strong> OKRs from compensation.</li>
+<li><strong>O written like a KR (with hard numbers), KR written like a task.</strong> Swap the roles and the whole system breaks.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>John Doerr, <em>Measure What Matters</em></strong> — Google's systematization of OKRs, including the "decouple OKRs from comp" principle.<br><strong>Andy Grove, <em>High Output Management</em></strong> (Ch.6) — the intellectual source of OKRs.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 03</div>
+<h2>Writing the Strategy Memo: Wish List vs Real Strategy
+<span class="en">Rumelt's Kernel</span></h2>
+<span class="tag">Diagnosis</span><span class="tag">Trade-offs</span><span class="tag">Coherent action</span>
+</div>
+
+<div class="section">
+<div class="section-label">The principle in one line</div>
+<div class="principle">Good strategy is neither an inspiring slogan nor a list of goals. Rumelt says a strategy's kernel has just three parts: a <strong>diagnosis</strong> (what is the problem, really), a <strong>guiding policy</strong> (the overall approach to deal with it), and <strong>coherent actions</strong> (a set of concrete, mutually reinforcing, non-contradictory moves). A "strategy" missing the diagnosis is just a wish list.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"The kernel of a strategy contains three elements: a diagnosis, a guiding policy, and a set of coherent actions."</span>
+<span class="source">— Richard Rumelt, <em>Good Strategy Bad Strategy</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: BigCat is asked to write a half-year technical strategy memo for his team.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Bad strategy = wish list</div>
+<p>"Our strategy is to be the most reliable, fastest, most developer-loved platform — improve stability, improve performance, improve experience." All good words, no diagnosis, no trade-offs, everything at once — which says nothing.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Rumelt's three-part kernel</div>
+<p><strong>Diagnosis:</strong> "Our biggest pain isn't missing features — it's that downstream <strong>doesn't trust</strong> us. Last quarter 60% of cross-team escalations pointed to our nightly incidents. This is a trust problem, not a feature problem."</p>
+<p><strong>Guiding policy:</strong> "This half, we sacrifice new-feature velocity to buy reliability credibility. New requests yield to stability until downstream trust recovers."</p>
+<p><strong>Coherent actions:</strong> "(1) Freeze non-urgent new features for two months; (2) put 50% of engineering into observability and auto-rollback; (3) send downstream a transparent reliability report monthly." Three moves reinforce each other and all serve one policy.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Is your memo real strategy or a wish list?</div>
+<ul class="checklist">
+<li>Is there an explicit <strong>diagnosis</strong> — one line naming the core obstacle?</li>
+<li>Are there <strong>trade-offs</strong>? (Real strategy always says "what we won't do." Wanting it all = no strategy.)</li>
+<li>Do the three actions <strong>reinforce</strong> each other, or run separately — even undercut each other?</li>
+<li>After reading it, would a newcomer know what to prioritize next week?</li>
+<li>Strip out every adjective (best, leading, world-class) — is there substance left?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes · A note for women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking a goal for a strategy.</strong> "Double revenue / be #1" is a goal, not a strategy — it doesn't say <strong>how</strong>.</li>
+<li><strong>Dodging trade-offs.</strong> Refusing to say "what we won't do" is the #1 signature of bad strategy (Rumelt).</li>
+<li><strong>Piling on adjectives.</strong> "World-class," "next-gen" substituting for real choices — reads thrilling, impossible to act on.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research shows that for the same strategy memo, women authors are more likely to be rated "meticulous, strong execution" rather than "strategic" — the "strategic" label carries a gendered attribution bias (see LeanIn &amp; McKinsey, <em>Women in the Workplace</em>, on the language of promotion reviews). A countermove: open the memo with an explicit judgment sentence — <strong>"I judge the core problem to be X, therefore I argue for Y"</strong> — putting your "judgment" and "claim" on the table, forcing reviewers to confront your <strong>strategic judgment itself</strong> rather than defaulting to "executes well."
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Richard Rumelt, <em>Good Strategy Bad Strategy</em></strong> — the diagnosis / guiding policy / coherent action "kernel."<br><strong>Will Larson, <em>An Elegant Puzzle</em></strong> ("Vision and strategy") — how to write vision and strategy for engineering teams.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 04</div>
+<h2>Embracing Uncertainty: Firm on Direction, Flexible on Path
+<span class="en">Bet, Learn, Revise</span></h2>
+<span class="tag">Probabilistic thinking</span><span class="tag">Proximate objective</span><span class="tag">Guardrails</span>
+</div>
+
+<div class="section">
+<div class="section-label">The principle in one line</div>
+<div class="principle">Strategy always rests on incomplete information. Professionalism isn't "wait until it's clear, then set direction" — it's setting a <strong>near, concrete proximate objective</strong> in the fog, betting, executing, then revising on feedback. <strong>Firm on direction, flexible on path.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"What makes a decision great is not that it has a great outcome. A great decision is the result of a good process."</span>
+<span class="source">— Annie Duke, <em>Thinking in Bets</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: BigCat must set next year's tech-stack direction, but a certain AI framework's ecosystem is moving fast, and the team argues "if we commit now, won't we bet wrong?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two common traps</div>
+<p>Either "wait until it's clearer" — and fall behind competitors; or commit all the way at once, treating a reversible decision as irreversible, going all-in on an unvalidated stack.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Probabilistic thinking + proximate objective + guardrails</div>
+<p>"We don't bet on 'which framework wins in five years' — that's unknowable. Set a <strong>3-month proximate objective</strong>: build a real-scenario spike on each of two candidates, score them on preset metrics (migration cost, community activity, learning curve). In 3 months we decide on <strong>data</strong>, not intuition today."</p>
+<p>Then one more line to the team: "My current call is A, confidence about <strong>60%</strong>. If signal X appears, I'll change it." Naming your confidence and your "conditions to change" gives direction without faking certainty.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Decision-in-the-fog checklist</div>
+<ul class="checklist">
+<li>Am I using "wait for more info" to <strong>avoid</strong> deciding? (Information is never complete.)</li>
+<li>Is this bet reversible? Can it be split into smaller, affordable bets?</li>
+<li>Can I state my current <strong>confidence</strong> (roughly what %)?</li>
+<li>Have I pre-defined "what signal makes me change"? (No = sunk cost will hold you hostage.)</li>
+<li>When a decision goes wrong, do I review the <strong>process</strong> or just curse the outcome?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Resulting (Annie Duke's term).</strong> Inferring decision quality from outcome quality — a good outcome can come from a bad decision plus luck; judging by results rewards luck and punishes good process.</li>
+<li><strong>"Strong opinions" but not "loosely held."</strong> Clinging to one judgment while ignoring new signals is a breeding ground for the sunk-cost fallacy.</li>
+<li><strong>Using "embrace uncertainty" as an excuse not to commit.</strong> A leader still gives one clear current direction — just openly revisable. Not fence-sitting.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Annie Duke, <em>Thinking in Bets</em></strong> — probabilistic thinking, resulting, process vs outcome.<br><strong>Richard Rumelt, <em>Good Strategy Bad Strategy</em></strong> — the "proximate objective": pick a target close enough to be feasible as your handle.</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 16 Action</h3>
+<p>This week, do one concrete thing — not reflection, not reading:</p>
+<div class="action">
+Pick one area where your team's direction is unclear. Write half a page, stringing today's tools together: <strong>(1)</strong> one line of <strong>diagnosis</strong> (what's the core obstacle, really); <strong>(2)</strong> one <strong>North Star metric</strong> candidate; <strong>(3)</strong> turn it into 1 O + 3 <strong>outcome KRs</strong> (hard rule: no "complete / ship / deliver" verbs allowed in the KRs).<br><br>Take it to the team for review, and ask just one question: <strong>"If all three KRs land, do you trust that our direction was right?"</strong> If anyone hesitates, your KRs don't yet cover the O — go back and fill the gap.
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Going Deeper</h3>
+<details><summary>Can a North Star metric be "gamed" by the team?</summary><div>Goodhart's law: "When a measure becomes a target, it ceases to be a good measure." Teams optimize the number itself rather than the value behind it — e.g. inflating "active downstream teams" with meaningless calls. Two countermoves: (1) always pair the North Star with a guardrail metric (quality, correctness); (2) periodically step up a level and ask "does this number still represent user value?" rather than only watching whether it rose. The metric is the map, not the territory.</div></details>
+<details><summary>Do OKRs work for exploratory / research teams (e.g. frontier AI research)?</summary><div>Outcome KRs work best for delivery teams, but in highly uncertain research, hard-coding "improve model accuracy by X%" can push the team toward safe projects that guarantee the number — strangling real exploration. One adjustment: write research OKRs as "learning goals" rather than "output goals" — e.g. "run 3 experiments that clearly confirm or refute a given hypothesis," rewarding high-quality learning over guaranteed output. The framework should serve the nature of the work, not the reverse.</div></details>
+<details><summary>How stable should a strategy be? How often to rewrite it?</summary><div>Two failure modes: constant flip-flopping (the team is adrift, no one dares invest long-term) vs clinging to a dead plan (the environment changed but the strategy didn't, still chanting slogans into a wall). Rule of thumb: <strong>direction</strong> (diagnosis + guiding policy) should hold for six months to a year; what changes frequently is <strong>tactics</strong>. The trigger to rewrite isn't the calendar but "have the key facts in the diagnosis become invalid?" — if the original core obstacle no longer holds, re-diagnose; otherwise leave it alone.</div></details>
+<details><summary>How to balance "embracing uncertainty" with "giving the team certainty"?</summary><div>The team needs certainty to commit; the leader must stay honest about the unknown — a real tension. A workable approach is to layer it: give certainty on <strong>direction</strong> ("we do reliability and only that for six months, that won't change"), and stay honest with room on <strong>path</strong> ("which exact approach we use, we'll decide in 3 months on data"). Confine "uncertainty" to the revisable tactical layer, rather than letting the team feel the whole direction is adrift.</div></details>
+<details><summary>In a big company, how much room is there for bottom-up strategy?</summary><div>Your team's strategy is always constrained by the layer above — that's not a limit but information. Real tech-leader strategy is often "finding, in the seams of the upper direction, a specific battlefield the layer above hasn't seen clearly but where you can win." Rather than complaining about a lack of freedom, treat the upper goal as your diagnostic input: they want X, and the real bottleneck to X at your layer is Y — make Y your team's strategy, both aligned upward and carrying your own claim.</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 16 · 2026.06.05</footer>
+</div>
+</body>
+</html>

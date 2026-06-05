@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 16：战略与方向</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px;padding:4px 18px}
+.deepen summary{cursor:pointer;font-weight:600;color:#5c3a18;padding:12px 0;font-size:0.98rem}
+.deepen details>div{color:#4a3a20;font-size:0.93rem;padding:4px 0 14px;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 16 · 2026.06.05</div>
+<h1>战略与方向：从"忙着划水"到"知道往哪游"</h1>
+<div class="meta"><span>主题：Strategy &amp; Direction</span><span>·</span><span>4 个工具</span></div>
+<div class="subtitle">"The core of strategy work is always the same: discovering the critical factors in a situation and designing a way to coordinate and focus actions to deal with them." — Richard Rumelt</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>技术 leader 往上走，瓶颈很少是"执行不力"，而是<strong>方向不清</strong>——团队很忙，但说不清在为什么价值用力；目标列了一长串，却没有一条说明"我们到底要解决哪个问题"。本期四个工具回答四个递进的问题：<strong>我们朝哪游</strong>（北极星指标）、<strong>怎么知道到了</strong>（OKR 设计）、<strong>怎么把方向写成让人能行动的文字</strong>（战略 Memo），以及<strong>信息永远不全时怎么仍然敢定方向</strong>（接纳不确定性）。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 01</div>
+<h2>北极星指标：给团队一个所有人都认得的方向
+<span class="en">The North Star Metric — One Number for Value</span></h2>
+<span class="tag">方向锚</span><span class="tag">用户价值</span><span class="tag">前置因</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">方向先于目标。一个团队若没有一个所有人都认得的"北极星"——那个最能代表你为用户创造的核心价值的<strong>单一指标</strong>——每个人都会朝自己以为对的方向用力，合力归零。北极星不是营收本身，是营收的<strong>前置因</strong>。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Your North Star Metric is the single metric that best captures the core value that your product delivers to customers."</span>
+<span class="zh">"你的北极星指标，是最能捕捉你的产品为客户创造的核心价值的那个单一指标。"</span>
+<span class="source">— Sean Ellis（"North Star Metric" 概念提出者），&amp; Morgan Brown,《Hacking Growth》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 带一个内部平台团队。老板问："你们团队今年的目标是什么？"</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>列一堆并列技术指标："把 P99 延迟降到 X、上线 3 个 feature、可用性做到 99.99%。"——没有一条说清"为谁、创造了什么价值"。老板记不住，团队各自为政，年底每个数字都达标了，但没人说得清平台到底变好在哪。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>先定一个北极星：<strong>"每周成功完成端到端调用、且延迟达标的活跃下游团队数"</strong>。一句话锚定"我们为内部开发者创造的价值"。延迟、可用性、新 feature 都退一步，成了它的<strong>输入杠杆</strong>，而不是互相打架的并列目标。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="frame-diagram">
+<svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg">
+<rect x="200" y="20" width="300" height="56" rx="6" fill="#5c3a18"/>
+<text x="350" y="44" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#f5e8c8">★ 北极星指标</text>
+<text x="350" y="63" text-anchor="middle" font-family="Georgia" font-size="11" fill="#e0cba0">每周延迟达标的活跃下游团队数</text>
+<line x1="350" y1="76" x2="130" y2="120" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="350" y1="76" x2="350" y2="120" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="350" y1="76" x2="570" y2="120" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="30" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<rect x="250" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<rect x="470" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="130" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">输入杠杆 · 速度</text>
+<text x="130" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">P99 延迟达标率</text>
+<text x="350" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">输入杠杆 · 可靠</text>
+<text x="350" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">月故障触发次数</text>
+<text x="570" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">输入杠杆 · 易用</text>
+<text x="570" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">新接入耗时</text>
+<rect x="200" y="212" width="300" height="44" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<text x="350" y="232" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#a04020">护栏指标 · 别为提速牺牲</text>
+<text x="350" y="249" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">调用正确率不得下降</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">选北极星的 5 个测试</div>
+<ul class="checklist">
+<li>它代表<strong>用户价值</strong>，还是只代表我们内部的努力？</li>
+<li>它<strong>领先</strong>于营收/留存，还是滞后？（北极星应是因，不是果）</li>
+<li>团队的日常工作能直接影响它吗？</li>
+<li>有没有配一个<strong>护栏指标</strong>，防止为它牺牲质量？（如为提速牺牲正确性）</li>
+<li>全队不看文档，能说出它吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"虚荣指标"当北极星。</strong>总注册数、代码行数——只涨不跌，不反映真实价值。</li>
+<li><strong>选营收当北极星。</strong>它太滞后，团队当周做的事看不到它动，无法指导日常取舍。</li>
+<li><strong>北极星指标超过一个。</strong>两个以上等于没有——团队又开始在多个数字间分裂。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Sean Ellis &amp; Morgan Brown,《Hacking Growth》</strong>— "North Star Metric" 的提出与方法。<br><strong>Amplitude,《The North Star Playbook》</strong>— 北极星 + 输入杠杆树的实操模板。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 02</div>
+<h2>OKR 设计：把 KR 从"待办清单"救成"结果"
+<span class="en">OKRs — Key Results Are Outcomes, Not Tasks</span></h2>
+<span class="tag">目标设定</span><span class="tag">可证伪</span><span class="tag">结果 vs 任务</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Objective 回答"我们要去哪"（定性、鼓舞、有方向）；Key Results 回答"怎么知道到了"（定量、可验证、<strong>能被证伪</strong>）。最常见的失败，是把 KR 写成任务清单（"做完 X"），而不是结果（"X 带来了 Y"）。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"A successful MBO system needs only to answer two questions: Where do I want to go? (The answer provides the Objective.) How will I pace myself to see if I am getting there? (The answer gives us Milestones, or Key Results.)"</span>
+<span class="zh">"一套有效的目标系统只需回答两个问题：我要去哪里？（答案给出目标。）我如何衡量自己是否在接近？（答案给出关键结果。）"</span>
+<span class="source">— Andy Grove,《High Output Management》Ch.6</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 要给团队定一个季度 OKR，主题是"提升平台稳定性"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 任务伪装成 KR</div>
+<p>O：提升平台稳定性<br>KR1：完成监控系统迁移<br>KR2：上线熔断机制<br>KR3：写 5 篇 runbook</p>
+<p>三个 KR 全是"做了什么"。三件都做完了，稳定性<strong>可能根本没变</strong>——下游照样半夜被叫醒。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 结果式 KR</div>
+<p>O：让下游团队信任我们的平台不会半夜叫醒他们<br>KR1：由我方故障导致的下游 on-call 触发，从每月 12 次降到 <strong>≤3 次</strong><br>KR2：P0 故障平均恢复时间 (MTTR) 从 45 分钟降到 <strong>≤15 分钟</strong><br>KR3：季度下游团队满意度 (NSAT) 从 6.2 升到 <strong>≥8.0</strong></p>
+<p>迁移、熔断、runbook 都还要做——但它们变成达成这些<strong>结果</strong>的手段，而不是目的本身。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">压测你的 KR</div>
+<ul class="checklist">
+<li>每条 KR 是"结果"还是"待办"？（含"完成 / 上线 / 交付"动词的，多半是待办）</li>
+<li>数字有<strong>起点和终点</strong>吗？（从 X 到 Y，不是只有一个 Y）</li>
+<li>如果三条 KR 都达成，O 就<strong>一定</strong>实现了吗？（覆盖性测试）</li>
+<li>它是不是"稳赢"的？（Grove 与 Google：好 OKR 应有约 70% 达成率才算够野心）</li>
+<li>它能被诚实地<strong>证伪</strong>吗？（无法证伪的 KR 只是口号）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>Sandbagging（故意定低）。</strong>为保"100% 达成"而压低目标，把 OKR 变成绩效保险，扼杀野心。</li>
+<li><strong>KR 直接绑定个人考核。</strong>一旦 KR = 绩效分，所有人都会定保守目标。Grove 和 Google 都强调 OKR 与薪酬<strong>解耦</strong>。</li>
+<li><strong>O 写得像 KR（带死数字），KR 写得像任务。</strong>角色对调，整套就废了。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>John Doerr,《Measure What Matters》</strong>— Google OKR 的体系化，含"OKR 与绩效解耦"原则。<br><strong>Andy Grove,《High Output Management》</strong>（Ch.6）— OKR 的思想源头。</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 03</div>
+<h2>写 Strategy Memo：愿望清单 vs 真战略
+<span class="en">The Strategy Memo — Rumelt's Kernel</span></h2>
+<span class="tag">诊断</span><span class="tag">取舍</span><span class="tag">连贯行动</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">好战略不是一句鼓舞口号，也不是一张目标清单。Rumelt 说战略的内核只有三件事：<strong>诊断</strong>（这到底是什么问题）、<strong>指导方针</strong>（用什么总思路应对）、<strong>连贯行动</strong>（一组互相加强、不自相矛盾的具体动作）。缺了诊断的"战略"，都是愿望清单。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The kernel of a strategy contains three elements: a diagnosis, a guiding policy, and a set of coherent actions."</span>
+<span class="zh">"一个战略的内核包含三个要素：诊断、指导方针，以及一组连贯的行动。"</span>
+<span class="source">— Richard Rumelt,《Good Strategy Bad Strategy》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 被要求写一份团队半年技术战略 memo。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 坏战略 = 愿望清单</div>
+<p>"我们的战略是成为最可靠、最快、开发者最爱的平台——提升稳定性、提升性能、提升体验。"——全是好词，没有诊断，没有取舍，什么都要，等于什么都没说。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Rumelt 内核三段</div>
+<p><strong>诊断：</strong>"我们最大的痛不是功能不够，是下游<strong>不信任</strong>我们——上季度 60% 的跨团队 escalation 都指向我方夜间故障。这是信任问题，不是功能问题。"</p>
+<p><strong>指导方针：</strong>"本半年我们牺牲新功能速度，全力换可靠性信誉。新需求一律让位于稳定性，直到下游信任恢复。"</p>
+<p><strong>连贯行动：</strong>"(1) 冻结非紧急新 feature 两个月；(2) 把 50% 工程量投入可观测性与自动回滚；(3) 每月给下游发一次透明的可靠性报告。"——三个动作互相加强，且都服从同一方针。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">你的 memo 是真战略还是愿望清单？</div>
+<ul class="checklist">
+<li>有没有明确的<strong>诊断</strong>——一句话说清核心障碍是什么？</li>
+<li>有没有<strong>取舍</strong>？（真战略一定说了"我们不做什么"。全都要 = 没战略）</li>
+<li>三件行动互相<strong>加强</strong>，还是各自为政、甚至互相拆台？</li>
+<li>一个新人读完，知道下周该优先做什么吗？</li>
+<li>去掉所有形容词（最好、领先、卓越）后，还剩下实质吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 · 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把目标当战略。</strong>"营收翻倍 / 做到行业第一"是目标，不是战略——没说<strong>怎么</strong>做到。</li>
+<li><strong>回避取舍。</strong>不肯说"我们不做什么"，是坏战略的头号特征 (Rumelt)。</li>
+<li><strong>形容词堆砌。</strong>用"世界级""下一代"替代真实选择，读起来很燃，落地无从下手。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究显示，面对同一份战略 memo，女性作者更容易被评为"细致、执行力强"，而非"有战略眼光"——"strategic"标签的归因存在性别偏差（参见 LeanIn &amp; McKinsey《Women in the Workplace》关于晋升评语的发现）。对策：在 memo 开头用一句显性的判断句——<strong>"我判断核心问题是 X，因此我主张 Y"</strong>——把"判断"和"主张"摆到台面，逼评价者面对你的战略<strong>判断本身</strong>，而不是默认滑向"执行得不错"。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Richard Rumelt,《Good Strategy Bad Strategy》</strong>— 诊断 / 指导方针 / 连贯行动的"内核"框架。<br><strong>Will Larson,《An Elegant Puzzle》</strong>（"Vision and strategy"）— 工程团队的愿景与战略写法。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 04</div>
+<h2>接纳不确定性：方向要坚定，路径要可改
+<span class="en">Strategy Under Uncertainty — Bet, Learn, Revise</span></h2>
+<span class="tag">概率思维</span><span class="tag">近端目标</span><span class="tag">护栏</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">战略一定建立在不完整的信息上。专业不是"等看清了再定方向"，而是在雾中先定一个<strong>足够近、足够具体的近端目标</strong>，押注、执行、再按反馈修正。<strong>方向要坚定，路径要可改。</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"What makes a decision great is not that it has a great outcome. A great decision is the result of a good process."</span>
+<span class="zh">"一个决策之所以好，不在于它有好结果。好决策是好过程的产物。"</span>
+<span class="source">— Annie Duke,《Thinking in Bets》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 要定明年的技术选型方向，但某 AI 框架生态变化太快，团队吵"现在定会不会赌错"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种常见误区</div>
+<p>要么"等更明朗再说"——拖到对手已领先；要么一次押死，把可逆决策当不可逆，全员 all-in 一个还没验证的技术栈。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 概率思维 + 近端目标 + 护栏</div>
+<p>"我们不赌'哪个框架五年后赢'——那不可知。定一个 <strong>3 个月的近端目标</strong>：两个候选各做一个真实场景的 spike，用预设指标（迁移成本、社区活跃、学习曲线）打分。3 个月后用<strong>数据</strong>定，而不是现在用直觉定。"</p>
+<p>对团队再补一句："我现在的判断是 A，置信度大概 <strong>60%</strong>。如果出现 X 信号，我会改。"——公开置信度和"会改的条件"，既给方向，又不假装确定。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">雾中决策检查表</div>
+<ul class="checklist">
+<li>我是在用"等更多信息"<strong>逃避</strong>决策吗？（信息永远不会全）</li>
+<li>这个赌可逆吗？能不能拆成更小、可承受的赌？</li>
+<li>我说得出自己当前判断的<strong>置信度</strong>（大概几成）吗？</li>
+<li>我预先定义了"什么信号出现我就改"吗？（没有 = 沉没成本会绑架你）</li>
+<li>决策错了，我会复盘"<strong>过程</strong>"还是只骂"结果"？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>Resulting（Annie Duke 术语）。</strong>用结果好坏反推决策对错——好结果可能来自烂决策加运气，看结果论英雄会奖励运气、惩罚好过程。</li>
+<li><strong>"Strong opinions" 却不 "loosely held"。</strong>抓着一个判断不放、无视新信号，是沉没成本谬误的温床。</li>
+<li><strong>拿"接纳不确定"当不表态的借口。</strong>领导者仍要给一个明确的当前方向，只是公开它可改——不是和稀泥。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Annie Duke,《Thinking in Bets》</strong>— 概率思维、resulting、过程 vs 结果。<br><strong>Richard Rumelt,《Good Strategy Bad Strategy》</strong>— "proximate objective（近端目标）"：选一个近到可行的目标当抓手。</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 16 Action</h3>
+<p>本周你要做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+选你团队当前一个"方向不清"的领域。写半页，按今天的工具串起来：<strong>(1)</strong> 一句<strong>诊断</strong>（核心障碍到底是什么）；<strong>(2)</strong> 一个<strong>北极星指标</strong>候选；<strong>(3)</strong> 把它转成 1 个 O + 3 个<strong>结果式 KR</strong>（强制规则：KR 里不许出现"完成 / 上线 / 交付"动词）。<br><br>拿给团队 review，只问一个问题：<strong>"如果这三条 KR 都达成，你信我们方向就对了吗？"</strong> 如果有人犹豫，说明你的 KR 还没覆盖 O——回去补。
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>深入思考</h3>
+<details><summary>北极星指标会被团队"操纵"吗？</summary><div>Goodhart 定律："当一个指标成为目标，它就不再是个好指标。"团队会优化数字本身而非其背后的价值——比如为了"活跃下游团队数"去刷无意义的调用。两个对策：(1) 永远给北极星配护栏指标（质量、正确率）；(2) 定期回到"这个数字真的还代表用户价值吗"的元层面复盘，而不是只盯数字涨没涨。指标是地图，不是领土。</div></details>
+<details><summary>OKR 在探索型 / 研究型团队（如前沿 AI research）适用吗？</summary><div>结果式 KR 在交付型团队最有效，但在高度不确定的研究里，硬定"模型精度提升 X%"可能逼团队去做能保证达标的安全项目，而扼杀真正的探索。一种调整：研究型 OKR 的 KR 写成"学习目标"而非"成果目标"——比如"完成 3 个明确证伪/证实某假设的实验"，奖励高质量的学习而非保证的产出。框架要服从工作性质，而不是反过来。</div></details>
+<details><summary>战略该多稳定？多久重写一次？</summary><div>两个失败模式：朝令夕改（团队无所适从，没人敢长期投入）vs 抱残守缺（环境变了战略不变，撞墙还在喊口号）。经验法则：<strong>方向</strong>（诊断+指导方针）应在半年到一年内稳定，频繁变的是<strong>战术</strong>。重写的触发不是日历，而是"诊断里的关键事实是否已经失效"——如果当初的核心障碍已经不成立，就该重诊断，否则别动。</div></details>
+<details><summary>"接纳不确定"与"给团队确定感"如何平衡？</summary><div>团队需要确定性才敢投入，领导却必须对未知诚实——这是真实的张力。可行的做法是分层：对<strong>方向</strong>给确定感（"我们半年就干可靠性这一件事，这点不变"），对<strong>路径</strong>诚实地留余地（"具体用哪套方案，我们 3 个月后按数据定"）。把"不确定"限定在可改的战术层，而不是让团队感觉整个方向都在飘。</div></details>
+<details><summary>大公司里，自下而上的战略空间到底有多大？</summary><div>你的团队战略一定被上层战略约束——这不是限制，而是信息。真正的技术 leader 战略，往往是"在上层方向的缝隙里，找到一个上层没看清、但你能赢的具体战场"。与其抱怨没有自由度，不如把上层目标当作你的诊断输入：上面要的是 X，而达成 X 的真实瓶颈在我这一层是 Y——把 Y 做成你团队的战略，既向上对齐，又有自己的主张。</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 16 · 2026.06.05</footer>
+</div>
+</body>
+</html>
