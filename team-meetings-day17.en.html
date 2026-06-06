@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 17: Team Meetings</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px;padding:4px 18px}
+.deepen summary{cursor:pointer;font-weight:600;color:#5c3a18;padding:12px 0;font-size:0.98rem}
+.deepen details>div{color:#4a3a20;font-size:0.93rem;padding:4px 0 14px;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 17 · 2026.06.06</div>
+<h1>Team Meetings: Turn the Calendar From Liability Back Into Leverage</h1>
+<div class="meta"><span>Topic: Team Meetings</span><span>·</span><span>4 tools</span></div>
+<div class="subtitle">"The worst interruptions of all are meetings." — Jason Fried &amp; David Heinemeier Hansson, <em>Rework</em></div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> As a tech leader moves up, the calendar is the first thing meetings devour. But the problem is rarely "too many meetings"—it's <strong>meetings in the wrong form</strong>: progress that should have been an async update turns into a meeting, a hard problem gets squeezed into a 15-minute standup, an all-hands meant to align hearts becomes a one-way slide reading. Four things this week: manage a meeting as a <strong>tool with a cost</strong> (which meeting does which job); fix the two most-often-broken meetings (<strong>standup and all-hands</strong>); practice the <strong>craft of facilitation</strong> (let the right people speak, converge discussion into a decision); and finally, how to <strong>cut meetings systematically and backfill with async</strong>.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 01</div>
+<h2>A Meeting Is a Tool With a Cost: First Ask "What Kind of Meeting Is This?"
+<span class="en">A Meeting Is a Tool With a Cost</span></h2>
+<span class="tag">Meeting cost</span><span class="tag">Taxonomy</span><span class="tag">Default no</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Each meeting should have <strong>exactly one primary output</strong>. Before scheduling, answer: what kind of meeting is this, and what must we walk out with? If you can't say, don't hold it. A meeting's real cost = duration × people × hourly rate—an 8-person, 1-hour meeting is <strong>a full workday</strong> of capacity.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"There are two basic kinds of meetings. In one kind, a process-oriented meeting, knowledge is shared and information is exchanged... The second kind, a mission-oriented meeting, is held to solve a specific problem—and frequently produces a decision."</span>
+<span class="zh">A meeting is either to share information (process), or to solve a problem and decide (mission). Most bad meetings blur the two.</span>
+<span class="source">— Andy Grove, <em>High Output Management</em>, Ch.4</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Five Meetings, Five Outputs</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<text x="350" y="24" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Meeting type · Sole output · Mismatch symptom</text>
+<line x1="20" y1="38" x2="680" y2="38" stroke="#c4a878" stroke-width="1.5"/>
+<text x="30" y="62" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">Decision</text>
+<text x="180" y="62" font-family="Georgia" font-size="12" fill="#3a2f1c">Pick A/B + name an owner</text>
+<text x="180" y="80" font-family="Georgia" font-size="11" fill="#a04020">✗ ends with "let's schedule a follow-up"</text>
+<text x="30" y="108" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">Sync</text>
+<text x="180" y="108" font-family="Georgia" font-size="12" fill="#3a2f1c">Surface blockers / align (Standup)</text>
+<text x="180" y="126" font-family="Georgia" font-size="11" fill="#a04020">✗ round-robin reports to the manager</text>
+<text x="30" y="154" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">All-hands</text>
+<text x="180" y="154" font-family="Georgia" font-size="12" fill="#3a2f1c">Convey the why &amp; build shared context</text>
+<text x="180" y="172" font-family="Georgia" font-size="11" fill="#a04020">✗ one-way slide reading, no questions</text>
+<text x="30" y="200" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">Ideation</text>
+<text x="180" y="200" font-family="Georgia" font-size="12" fill="#3a2f1c">Produce unjudged options</text>
+<text x="180" y="218" font-family="Georgia" font-size="11" fill="#a04020">✗ critique while diverging—no one speaks</text>
+<text x="30" y="240" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">Relationship</text>
+<text x="180" y="240" font-family="Georgia" font-size="12" fill="#3a2f1c">Trust &amp; connection (1:1 / team time)</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: Your boss drops a Slack line—"Let's just grab a meeting to discuss X."</div>
+<div class="dialog bad">
+<div class="speaker">✗ The common move</div>
+<p>You immediately pull 8 people into a 1-hour meeting, no agenda, no pre-read. Half are just listening, no one knows what's actually being decided, you wander around, and it ends with "let's schedule a follow-up." Two workdays of capacity, traded for "another meeting on the books."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The better move</div>
+<p>First reply to nail the output: "Quick check—do you want this meeting to produce <strong>a decision</strong>, or just <strong>align on information</strong>?"</p>
+<p>"If we're choosing between A and B, I'll send a one-pager with background + my recommendation; attendees read it and we decide—<strong>4 people, 30 minutes</strong>. If it's just a progress sync, I'll write an update in the channel—<strong>no meeting needed</strong>."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (Before Sending the Invite)</div>
+<ul class="checklist">
+<li>Can I state the output in one line? (Decide X / Align Y / Produce Z)</li>
+<li>Does this truly need to be synchronous? Could writing it up solve it?</li>
+<li>Is every invitee necessary to that output? (Who can be removed?)</li>
+<li>Is there an agenda and pre-read? If not, don't send the invite.</li>
+<li>Is the duration set by need, or did your hand default to 60 minutes?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Defaulting to an hour.</strong> The calendar's smallest slot is 30 minutes; that's not the floor for a meeting.</li>
+<li><strong>Stuffing multiple purposes into one meeting.</strong> Lencioni's "meeting stew"—decision, brainstorm, and sync boiled together, none done well.</li>
+<li><strong>Over-inviting "just in case."</strong> Each extra person slows the decision and dilutes everyone's airtime.</li>
+<li><strong>Treating "having a meeting" as proof of progress.</strong> A meeting is a cost, not an output.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Andy Grove, <em>High Output Management</em></strong> (Ch.4)—the founding distinction between process- and mission-oriented meetings.<br><strong>Julie Zhuo, <em>The Making of a Manager</em></strong> (Ch.6 "The Art of Meetings")—five meeting purposes: decision / information / feedback / ideas / relationships.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 02</div>
+<h2>Standup vs All-Hands: Two Jobs, Don't Blur Them
+<span class="en">Standup vs All-Hands — Two Jobs, Don't Blur Them</span></h2>
+<span class="tag">Standup</span><span class="tag">All-hands</span><span class="tag">Right form</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">These are the two most-often-broken meetings. Standup degrades into "round-robin reports to the manager"; all-hands degrades into "the leader reads slides one way." The fix is to return each to its single purpose: standup exists to <strong>surface blockers and trigger collaboration</strong>; all-hands exists to <strong>convey the why and the candid truth—so people dare to ask real questions</strong>.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"The Daily Scrum is a 15-minute event for the Developers... to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary."</span>
+<span class="zh">Note: it's for the <em>developers</em>—not for the manager to collect status.</span>
+<span class="source">— Scrum Guide 2020, "The Daily Scrum"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene 1: Fix the Standup</div>
+<div class="scene">
+<div class="setup">Situation: Daily standup, engineers take turns reporting to BigCat.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Status-report style</div>
+<p>Each in turn: "Yesterday I did X, today I'll do Y, no blockers." BigCat nods and takes notes. 15 minutes drags to 30, engineers don't listen to each other, just waiting for their turn.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Walk the board, not the people</div>
+<p>Start from the rightmost card (closest to done) and ask: <strong>"What does this card need to move forward—who?"</strong> The audience shifts from "the manager" to "the work."</p>
+<p>Someone says, "Blocked waiting on the Data team's API"—you immediately: <strong>"Who can help connect with Data today? You two grab 5 minutes after this."</strong> The standup's output is <strong>a collaboration triggered</strong>, not a status log.</p>
+<p>When someone dives into implementation detail: don't say "enough"; say <strong>"That's worth unpacking, but not now—sync with X separately afterward."</strong> (parking lot)</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene 2: Fix the All-Hands</div>
+<div class="scene">
+<div class="setup">Situation: Quarterly all-hands, 45 minutes of reading number-slides, ending with "any questions?"—dead silence, adjourned.</div>
+<div class="dialog good">
+<div class="speaker">✓ Move what machines can do; keep what they can't</div>
+<p>Numbers and progress go into a doc <strong>sent async ahead of time</strong>. The live time does only the three things a machine can't replace: <strong>tell the why</strong> (why this direction), <strong>tell the hard truth</strong> (candidly name what isn't going well), and <strong>answer real questions</strong>.</p>
+<p>Collect Q&amp;A anonymously beforehand (Slido), and open with: <strong>"Let me start with the most uncomfortable one."</strong> Otherwise no one wants to be the first to ask.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (Audit Your Recurring Meetings)</div>
+<ul class="checklist">
+<li>In standup, is the speaking aimed at "the board/the work" or at "the manager"?</li>
+<li>Did the standup trigger at least one "you two talk after" collaboration?</li>
+<li>In all-hands, can pure one-way info (numbers, progress) move to async?</li>
+<li>Does the all-hands leave real Q&amp;A, with someone daring to ask a tough one?</li>
+<li>Do both meetings' durations match their output? (standup ≤ 15 min)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Standup as status report.</strong> Its value is unblocking, not informing the manager—who can just read the board.</li>
+<li><strong>Solving the problem in standup.</strong> A blocker turns into a 30-minute discussion while everyone else is held hostage. Note it; the relevant people talk afterward.</li>
+<li><strong>All-hands fully one-way.</strong> Information can be async; don't waste precious sync bandwidth reading slides.</li>
+<li><strong>All-hands that only reports good news.</strong> Good news only, and people know you're whitewashing—trust leaks out instead.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Multiple studies of meeting dynamics show women are interrupted and talked over more often in group settings, and their points are more easily "credited" to a later re-stater. As facilitator, counter it with two mechanisms: (1) <strong>round-robin speaking</strong>, so no one gets skipped; (2) when A restates a point B made five minutes earlier, reattribute it on the spot—<strong>"Right, that's exactly what B raised; let's build on her line of thought."</strong> This isn't favoritism—it's correcting signal distortion.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Scrum Guide 2020</strong> ("The Daily Scrum")—the standup is for developers, for unblocking, not the manager's status harvest.<br><strong>Claire Hughes Johnson, <em>Scaling People</em></strong>—designing communication cadence and all-hands.<br><strong>Camille Fournier, <em>The Manager's Path</em></strong>—skip-levels and company-wide communication for blind-spot scanning.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 03</div>
+<h2>The Craft of Facilitation: Let the Right People Speak, Land the Decision
+<span class="en">Facilitation — Allocate the Air, Land the Decision</span></h2>
+<span class="tag">Facilitation</span><span class="tag">Decision log</span><span class="tag">Timeboxing</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Whether a meeting goes well is 70% facilitation. The facilitator's job is not to talk most, but two things: <strong>allocate the air</strong> (who speaks, and for how long), and <strong>converge ambiguity into "decision + owner + deadline."</strong> Without these two, even great discussion evaporates.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"We don't do PowerPoint... presentations at Amazon. Instead, we write narratively structured six-page memos. We silently read one at the beginning of each meeting in a kind of 'study hall.'"</span>
+<span class="zh">Start with silent reading—so everyone in the room has actually prepared.</span>
+<span class="source">— Jeff Bezos, 2018 Amazon Letter to Shareholders</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: A Facilitation Phrasebook</div>
+<div class="scene">
+<div class="setup">Situation: BigCat facilitates a 6-person architecture decision meeting.</div>
+<div class="dialog good">
+<div class="speaker">✓ Open by naming the output + silent read</div>
+<p>"By the end today we'll pick between option A and B and name an owner. First, let's silently read this one-page background—5 minutes." (Amazon study hall: guarantees everyone in the room has actually read it.)</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Interrupt the rambler</div>
+<p>Don't say "you're talking too much"; say <strong>"I want to make sure X gets heard too—let's get his view, then come back to your point."</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Invite the silent one</div>
+<p>Don't say "why aren't you talking?" (embarrassing); say <strong>"X, you've been burned by this before—how do you see the risk in option B?"</strong> (specific invitation + a foothold).</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Converge and land it</div>
+<p>"What I'm hearing is consensus on A, with three open questions for the owner to follow up. <strong>Decision: A. Owner: you. Design doc by next Wednesday.</strong> Object now, or I'm logging it."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (Facilitating a Meeting)</div>
+<ul class="checklist">
+<li>Within the first 60 seconds, did I make "today's output" clear?</li>
+<li>Am I allocating airtime, or talking the most myself?</li>
+<li>Did anyone stay silent throughout? Did I invite them by name?</li>
+<li>Before adjourning, is there a clear <strong>decision + owner + deadline</strong>, written in the notes?</li>
+<li>Did tangents go to the parking lot, or eat the meeting's time?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>The facilitator talks the most.</strong> You're holding your own meeting, not facilitating.</li>
+<li><strong>No explicit decision.</strong> "Let's go with that for now" isn't a decision—no owner, no deadline = it didn't happen.</li>
+<li><strong>Letting the loudest / highest title set the tone.</strong> The HiPPO effect (Highest Paid Person's Opinion)—the facilitator's duty is to give data and dissent air too.</li>
+<li><strong>Notes that log the conclusion but not the owner.</strong> Three weeks later no one remembers who's on the hook.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Jeff Bezos, 2018 Letter to Shareholders</strong>—the six-page memo and "study hall" silent reading.<br><strong>Patrick Lencioni, <em>Death by Meeting</em></strong>—"mining for conflict": the facilitator must actively dig out silent disagreement.<br><strong>Priya Parker, <em>The Art of Gathering</em></strong>—the host has a duty to exercise power "gently but firmly," or the most dominant person will exercise it for you.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 04</div>
+<h2>Cut Meetings Systematically + Backfill With Async
+<span class="en">Cut Meetings Systematically, Backfill With Async</span></h2>
+<span class="tag">Cut meetings</span><span class="tag">Default no</span><span class="tag">Async-first</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Cutting meetings isn't holding two fewer; it's building an <strong>async-by-default</strong> mechanism: if it can be written down, don't meet, and reserve sync bandwidth for what truly needs it—<strong>high-emotion, high-ambiguity, real-time back-and-forth</strong> decisions. Every recurring meeting should periodically be forced to "prove itself again."</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Meetings are toxic... The worst interruptions of all are meetings. Here's why: They're usually about words and abstractions, not real things... They procreate. One meeting leads to another."</span>
+<span class="zh">Meetings are a cost; they breed more meetings. Make async the default.</span>
+<span class="source">— Jason Fried &amp; DHH, <em>Rework</em>, "Meetings are toxic"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Decision Tree: Does This Need a Meeting?</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+<rect x="250" y="14" width="200" height="44" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="350" y="34" text-anchor="middle" font-family="Georgia" font-size="12.5" fill="#5c3a18">Clear decision / output?</text>
+<text x="350" y="50" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">can't name an output</text>
+<line x1="250" y1="36" x2="120" y2="84" stroke="#c47040" stroke-width="1.5"/>
+<text x="150" y="74" font-family="Georgia" font-size="11" fill="#a04020">No</text>
+<rect x="30" y="86" width="180" height="44" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="120" y="106" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">No meeting</text>
+<text x="120" y="122" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">just send an update</text>
+<line x1="450" y1="36" x2="560" y2="84" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="520" y="74" font-family="Georgia" font-size="11" fill="#4a6a28">Yes</text>
+<rect x="430" y="86" width="250" height="50" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="555" y="108" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5c3a18">Needs real-time back-and-forth,</text>
+<text x="555" y="124" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5c3a18">or high emotion / ambiguity?</text>
+<line x1="480" y1="136" x2="300" y2="186" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="370" y="172" font-family="Georgia" font-size="11" fill="#4a6a28">No</text>
+<rect x="160" y="188" width="240" height="50" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="280" y="210" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">Async: write an RFC / doc</text>
+<text x="280" y="226" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">converge in the comments</text>
+<line x1="610" y1="136" x2="610" y2="186" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="620" y="170" font-family="Georgia" font-size="11" fill="#4a6a28">Yes</text>
+<rect x="490" y="188" width="190" height="50" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="585" y="210" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">Meet: fewest people</text>
+<text x="585" y="226" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">+ pre-read + timebox</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: BigCat's team calendar is packed with recurring meetings; the team complains they have no deep-work time.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Afraid to touch it</div>
+<p>Feels like too many meetings, but they're all "legacy" recurring ones—afraid to cut lest info be lost—so touches nothing and keeps enduring it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Rebuild in three steps</div>
+<p><strong>(1) Zero-base reset:</strong> mark every recurring meeting "paused for two weeks"; after two weeks, only restore the ones someone actively asks for (Shopify's 2023 move of deleting all recurring meetings).</p>
+<p><strong>(2) Set a no-meeting block:</strong> the team's Wednesdays go fully no-meeting to protect deep work—and you're the first to honor it.</p>
+<p><strong>(3) Backfill with async:</strong> replace the canceled weekly with a written update (each person, 3 bullets: progress / blockers / next week's focus); discussion moves to the comments.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Exit someone else's meeting gracefully</div>
+<p>"I looked at the agenda—my input isn't required here. I'll decline; just @ me in the notes for any point that needs my call." (Polite + a foothold, not silently vanishing.)</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist (Quarterly Meeting Audit)</div>
+<ul class="checklist">
+<li>For each recurring meeting on my calendar, would anyone truly suffer if it were cut? (Unsure? Pause it two weeks and see.)</li>
+<li>Does the team have a protected no-meeting deep-work block?</li>
+<li>Which recurring meetings can be downgraded to one async written update?</li>
+<li>Do my meetings all have pre-reads? (So live time is for discussion, not info transfer.)</li>
+<li>Have I modeled "it's fine to politely decline," or does the team feel declining is an offense?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Cutting only others' meetings, never the ones you convene.</strong></li>
+<li><strong>Moving a meeting to async but demanding everyone read messages "in real time."</strong> That just moves the meeting into Slack—the hive mind gets worse (Newport).</li>
+<li><strong>No-meeting day in name only.</strong> The leader is first to break it, and the rule dies.</li>
+<li><strong>Canceling the meeting but not backfilling async.</strong> Info really is lost, the team demands the meeting back—the cut fails and your credibility takes the hit.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Jason Fried &amp; DHH, <em>Rework</em> / <em>It Doesn't Have to Be Crazy at Work</em></strong>—meetings as cost, async as default.<br><strong>Cal Newport, <em>A World Without Email</em></strong>—the "hive mind" and attention capital: don't move meetings into chat apps.<br><strong>GitLab Handbook</strong>—async-first and "if it isn't written down, it didn't happen."</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 17 Action</h3>
+<p>This week, do one concrete thing—not reflection, not reading:</p>
+<div class="action">
+Pick <strong>one recurring meeting you yourself convene</strong>. Do two things: <strong>(1)</strong> Write it a one-line <strong>output statement</strong>—what must this meeting produce each time (Decide X / Align Y). If you can't write it, it should be cut or made async. <strong>(2)</strong> Run its next instance as an "<strong>async experiment</strong>": cancel the live session, send a pre-read doc instead, let people discuss async in the comments, and only book 15 minutes of sync for points that won't converge.<br><br>A week later, check: <strong>did anyone actually "lose information"?</strong> No → make it permanently async, and give that calendar slot back to the team for deep work.
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Going Deeper</h3>
+<details><summary>Should standups even exist? What about remote / async teams?</summary><div>A standup's value is quickly surfacing blockers + light sync, but for a mature, well-documented team, a daily sync can be a burden. For remote, cross-timezone teams the cost of a synchronous standup is brutal (someone has to wake at 3 a.m.); switch to an async standup—each person posts 3 bullets to a fixed channel daily, with the board visible automatically. The test isn't "Agile dogma says stand up daily" but "are blockers surfacing fast enough?" If yes, don't ritualize for ritual's sake.</div></details>
+<details><summary>Does the all-hands still matter once the company is large?</summary><div>As a company grows, the all-hands increasingly looks like one-way broadcast, and real Q&amp;A dies first. The countermeasure is layering: the big all-hands only carries "context + culture," while genuine two-way dialogue sinks down to skip-levels and department-sized meetings; keep Q&amp;A alive with anonymous tools. But be honest: past a certain scale, the all-hands' "build consensus" function inevitably decays—don't pretend a thousand-person meeting can still align hearts the way it did at thirty.</div></details>
+<details><summary>Does "async by default" sacrifice relationships and belonging?</summary><div>This is a real trade-off. Async is efficient, but it thins informal connection—the trust that grows in hallways and pre-meeting small talk. A fully async team must deliberately backfill relationship bandwidth: regular purely-social syncs, in-person off-sites. Efficiency and belonging aren't the same bandwidth. Don't use async to save meetings and then expect cohesion to hold on its own—that bill eventually comes due.</div></details>
+<details><summary>Can "allocating airtime" while facilitating become suppressing dissent?</summary><div>The line is fine. Managing the floor is to give drowned-out voices air, not to steer the meeting toward your preset conclusion. Danger sign: you're always "converging" away from directions you don't like. A self-check—are the people you interrupt and the topics you send to the parking lot systematically the ones who disagree with you? If so, you're using the facilitator's power to suppress dissent, not to allocate fairness. Good facilitators mine for conflict, not mute it.</div></details>
+<details><summary>In a big company, how far can you unilaterally cut meetings?</summary><div>What you fully control is only the meetings you convene and your team's internal cadence. Cross-functional and upper-convened meetings carry a political cost to decline (Card 4's exit phrasing softens it but won't erase it). The pragmatic path: first make your own team a model of fewer meetings—deep-work blocks, async updates, clear output statements—and let results speak. When your team is visibly more productive for it, you've earned the capital to influence the broader meeting culture. Bottom-up: prove first, then advocate.</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 17 · 2026.06.06</footer>
+</div>
+</body>
+</html>

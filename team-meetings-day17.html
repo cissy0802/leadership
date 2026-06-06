@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 17：团队会议</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px;padding:4px 18px}
+.deepen summary{cursor:pointer;font-weight:600;color:#5c3a18;padding:12px 0;font-size:0.98rem}
+.deepen details>div{color:#4a3a20;font-size:0.93rem;padding:4px 0 14px;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 17 · 2026.06.06</div>
+<h1>团队会议：把日历从负债变回杠杆</h1>
+<div class="meta"><span>主题：Team Meetings</span><span>·</span><span>4 个工具</span></div>
+<div class="subtitle">"The worst interruptions of all are meetings." — Jason Fried &amp; David Heinemeier Hansson,《Rework》</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>技术 leader 往上走，日历会先被会议吃光。但问题很少是"会太多"，而是<strong>会被错配了形态</strong>——该异步发出去的进展开成了会，该深聊的难题挤进了 15 分钟 standup，该对齐人心的 all-hands 变成单向念稿。本期四件事：先把会当成<strong>有成本的工具</strong>来管（什么会干什么活）；修好两种最常被做坏的会（<strong>standup 与 all-hands</strong>）；练<strong>主持的工艺</strong>（让对的人说话、把讨论收敛成决策）；最后是怎么系统性地<strong>减会、用 async 补位</strong>。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 01</div>
+<h2>会议是有成本的工具：先问"这是哪种会"
+<span class="en">A Meeting Is a Tool With a Cost</span></h2>
+<span class="tag">会议成本</span><span class="tag">类型学</span><span class="tag">默认拒绝</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">每个会只该有<strong>一个主要产出</strong>。开会前先回答：这是哪种会、结束时要拿到什么。说不清就别开。会议的真实成本 = 时长 × 人数 × 时薪——一个 8 人 1 小时的会，是<strong>一整个工作日</strong>的产能。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"There are two basic kinds of meetings. In one kind, a process-oriented meeting, knowledge is shared and information is exchanged... The second kind, a mission-oriented meeting, is held to solve a specific problem—and frequently produces a decision."</span>
+<span class="zh">"会议基本只有两种。一种是流程型会议，用来共享知识、交换信息……另一种是任务型会议，为解决一个具体问题而开，通常要产出一个决策。"</span>
+<span class="source">— Andy Grove,《High Output Management》Ch.4</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">五种会议，五种产出</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<text x="350" y="24" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">会议类型 · 唯一产出 · 错配症状</text>
+<line x1="20" y1="38" x2="680" y2="38" stroke="#c4a878" stroke-width="1.5"/>
+<text x="30" y="62" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">决策会</text>
+<text x="170" y="62" font-family="Georgia" font-size="12" fill="#3a2f1c">在 A/B 间定一个 + 指定 owner</text>
+<text x="170" y="80" font-family="Georgia" font-size="11" fill="#a04020">✗ 散会"再约一个 follow-up"</text>
+<text x="30" y="108" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">信息同步</text>
+<text x="170" y="108" font-family="Georgia" font-size="12" fill="#3a2f1c">暴露阻塞 / 对齐进展（Standup）</text>
+<text x="170" y="126" font-family="Georgia" font-size="11" fill="#a04020">✗ 轮流向经理汇报</text>
+<text x="30" y="154" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">全员对齐</text>
+<text x="170" y="154" font-family="Georgia" font-size="12" fill="#3a2f1c">传 why 与共识（All-hands）</text>
+<text x="170" y="172" font-family="Georgia" font-size="11" fill="#a04020">✗ 单向念 PPT，无人提问</text>
+<text x="30" y="200" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">创意发散</text>
+<text x="170" y="200" font-family="Georgia" font-size="12" fill="#3a2f1c">产出一批未评判的选项</text>
+<text x="170" y="218" font-family="Georgia" font-size="11" fill="#a04020">✗ 边发散边批评，没人敢说</text>
+<text x="30" y="240" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a8702d">关系建设</text>
+<text x="170" y="240" font-family="Georgia" font-size="12" fill="#3a2f1c">信任与连接（1:1 / 团建）</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：老板在 Slack 甩来一句"我们开个会讨论一下 X 吧"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>立刻拉 8 个人进一个 1 小时的会，没 agenda、没预读。会上一半人在听，没人知道到底要决定什么，发散一通，散会时来一句"那我们再约一个 follow-up"。两个工作日的产能，换来"又约了个会"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>先回一句确认产出："想确认这个会要的是<strong>一个决策</strong>还是<strong>对齐信息</strong>？"</p>
+<p>"如果是要在 A/B 之间拍板，我先发一页背景 + 我的推荐，参会人读完来定就行——<strong>4 个人、30 分钟</strong>够了。如果只是同步进展，我写个 update 发群里，<strong>不用开会</strong>。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表（发出 invite 前）</div>
+<ul class="checklist">
+<li>我能用一句话说清产出吗？（决定 X / 对齐 Y / 产出 Z）</li>
+<li>这件事必须同步吗？写下来发出去能不能解决？</li>
+<li>受邀的每个人，都对这个产出必要吗？（能去掉谁）</li>
+<li>有 agenda 和预读材料吗？没有就别发 invite。</li>
+<li>时长是按需要定的，还是手一滑默认了 1 小时？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>默认 1 小时。</strong>日历最小格是 30 分钟，不代表会议的下限就是 30。</li>
+<li><strong>一个会塞多个目的。</strong>Lencioni 说的 "meeting stew"——决策、头脑风暴、同步炖成一锅，哪个都做不好。</li>
+<li><strong>邀请名单宁滥勿缺。</strong>每多一个人，决策变慢，每个人的发言权被稀释。</li>
+<li><strong>把"开会"当成推进的证据。</strong>开会是成本，不是产出。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Andy Grove,《High Output Management》</strong>（Ch.4）— 流程型 vs 任务型会议的奠基区分。<br><strong>Julie Zhuo,《The Making of a Manager》</strong>（Ch.6 "The Art of Meetings"）— 五种会议目的：决策 / 信息 / 反馈 / 创意 / 关系。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 02</div>
+<h2>Standup vs All-hands：两种会，别做成同一种
+<span class="en">Standup vs All-Hands — Two Jobs, Don't Blur Them</span></h2>
+<span class="tag">Standup</span><span class="tag">All-hands</span><span class="tag">对症形态</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">这是最常被做坏的两种会。Standup 被做成"轮流向经理汇报"，All-hands 被做成"领导单向念 PPT"。修复的关键是回到各自唯一的目的：standup 是为了<strong>暴露阻塞、触发协作</strong>；all-hands 是为了<strong>传递 why 与坦诚，让人敢问真问题</strong>。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The Daily Scrum is a 15-minute event for the Developers... to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary."</span>
+<span class="zh">"每日站会是开发者的 15 分钟事件……用来检视朝 Sprint 目标的进展，并按需调整待办。"——注意：是为开发者，不是为经理。</span>
+<span class="source">— Scrum Guide 2020, "The Daily Scrum"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范一：修好 Standup</div>
+<div class="scene">
+<div class="setup">情境：每天 standup，工程师轮流对着 BigCat 报告。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 状态汇报式</div>
+<p>每人轮流："昨天做了 X，今天做 Y，没 blocker。" BigCat 点头记录。15 分钟拖成 30，工程师互相不听，只在等轮到自己。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 走看板，不走人</div>
+<p>从最右（接近完成）的卡开始，问：<strong>"这张卡要往前推，需要谁？"</strong> 发言对象从"经理"变成"工作"。</p>
+<p>有人说"卡在等 Data 团队的接口"——你立刻：<strong>"谁今天能帮他对接 Data？你俩散会后留 5 分钟。"</strong> standup 的产出是<strong>触发了一次协作</strong>，不是一份状态记录。</p>
+<p>当有人开始讲实现细节：不说"够了"；说<strong>"这个值得展开，但不是现在——你和 X 会后单独同步。"</strong>（parking lot）</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范二：修好 All-hands</div>
+<div class="scene">
+<div class="setup">情境：季度 all-hands，45 分钟念数字 PPT，最后"有问题吗"——全场沉默，散会。</div>
+<div class="dialog good">
+<div class="speaker">✓ 把机器能做的挪走，留下机器做不了的</div>
+<p>数字、进度提前写成 doc <strong>async 发出去</strong>。现场只做三件机器替代不了的事：<strong>讲 why</strong>（为什么是这个方向）、<strong>讲 hard truth</strong>（坦诚说不顺的地方）、<strong>答真问题</strong>。</p>
+<p>提问环节用匿名工具（Slido）预收集，开场你先说：<strong>"我先回答最扎心的那条。"</strong> 否则没人愿当第一个提问的人。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表（你的例会自检）</div>
+<ul class="checklist">
+<li>Standup 里，发言是冲着"看板/工作"还是冲着"经理"？</li>
+<li>Standup 有没有当场触发至少一次"你俩会后聊"的协作？</li>
+<li>All-hands 里，纯单向信息（数字、进度）能不能挪到 async？</li>
+<li>All-hands 有没有留真问答，且有人敢提 tough 问题？</li>
+<li>两个会的时长匹配产出吗？（standup ≤ 15 分钟）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>Standup 当状态汇报。</strong>它的价值是 unblock，不是让经理知情——知情看看板就行。</li>
+<li><strong>Standup 当场解决问题。</strong>发现 blocker 就拉进 30 分钟讨论，其他人全程陪绑。记下来，相关人会后聊。</li>
+<li><strong>All-hands 全程单向。</strong>信息能 async，别把宝贵的同步带宽浪费在念稿。</li>
+<li><strong>All-hands 报喜不报忧。</strong>只讲好消息，员工知道你在粉饰，信任反而流失。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+多项会议互动研究显示，女性在群体会议里更容易被打断、被抢话，观点也更容易被后来的复述者"拿走信用"。作为主持，你可以用两个机制对冲：(1) <strong>round-robin 发言</strong>，谁都不被跳过；(2) 当 A 复述了 B 五分钟前说过的点，当场归位——<strong>"对，这正是 B 刚才提的，我们沿着她的思路。"</strong> 这不是照顾，是修复信号失真。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Scrum Guide 2020</strong>（"The Daily Scrum"）— 站会是为开发者、为 unblock，而非为经理的状态采集。<br><strong>Claire Hughes Johnson,《Scaling People》</strong>— 公司沟通节奏与 all-hands 的设计。<br><strong>Camille Fournier,《The Manager's Path》</strong>— skip-level 与全员沟通的盲区扫描。</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 03</div>
+<h2>主持的工艺：让对的人说话，把讨论落成决策
+<span class="en">Facilitation — Allocate the Air, Land the Decision</span></h2>
+<span class="tag">Facilitation</span><span class="tag">决策记录</span><span class="tag">时间盒</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">一个会开得好不好，70% 在主持。主持人的活不是自己多说，是两件事：<strong>控制空气分配</strong>（谁说、说多久），和<strong>把模糊收敛成"决策 + owner + 期限"</strong>。缺这两样，再好的讨论也会蒸发。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"We don't do PowerPoint... presentations at Amazon. Instead, we write narratively structured six-page memos. We silently read one at the beginning of each meeting in a kind of 'study hall.'"</span>
+<span class="zh">"亚马逊不用 PPT 演示，而是写有叙事结构的六页备忘录。每个会开头，大家像在'自习室'里一样静读一遍。"</span>
+<span class="source">— Jeff Bezos, 2018 Amazon Letter to Shareholders</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：一套主持话术</div>
+<div class="scene">
+<div class="setup">情境：BigCat 主持一个 6 人架构决策会。</div>
+<div class="dialog good">
+<div class="speaker">✓ 开场定产出 + 静读</div>
+<p>"今天结束时，我们要在方案 A 和 B 之间定一个，并指定 owner。先一起静读这页背景，5 分钟。"（Amazon study hall：保证现场每个人真的读过）</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 打断滔滔不绝的人</div>
+<p>不说"你说得太多了"；说<strong>"我想确保 X 也讲到——我们先听他的视角，再回到你这一点。"</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 邀请沉默的人</div>
+<p>不说"你怎么不说话"（让人难堪）；说<strong>"X，这块你之前踩过坑，你怎么看 B 方案的风险？"</strong>（具体邀请 + 给台阶）</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 收敛落锤</div>
+<p>"我听到的共识是选 A，三个 open 问题留给 owner 跟进。<strong>决策：A。Owner：你。下周三前出 design doc。</strong> 有异议现在说，否则我记下了。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表（主持一个会）</div>
+<ul class="checklist">
+<li>开场 60 秒内，我说清"今天的产出"了吗？</li>
+<li>我是在分配发言权，还是自己讲得最多？</li>
+<li>有没有人全程没开口？我点名邀请了吗？</li>
+<li>散会前有没有明确的<strong>决策 + owner + 期限</strong>，并写进纪要？</li>
+<li>跑题的内容进了 parking lot，还是吞掉了会议时间？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>主持人是全场话最多的人。</strong>你在开自己的会，不是在主持。</li>
+<li><strong>没有显式决策。</strong>"那就先这样吧"不是决策——没 owner、没期限 = 没发生。</li>
+<li><strong>让最大声 / 最高 title 的人定调。</strong>HiPPO 效应（Highest Paid Person's Opinion）：主持的职责，是让数据和异议也有空气。</li>
+<li><strong>纪要只记结论不记 owner。</strong>三周后没人记得谁该做。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Jeff Bezos, 2018 Letter to Shareholders</strong>— 六页备忘录与"自习室"静读。<br><strong>Patrick Lencioni,《Death by Meeting》</strong>— "mining for conflict"：主持人有义务主动挖出沉默的分歧。<br><strong>Priya Parker,《The Art of Gathering》</strong>— 主持人有义务"温和而坚定地行使权力"，否则最强势者会替你行使。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">TOOL 04</div>
+<h2>系统性减会 + Async 补位
+<span class="en">Cut Meetings Systematically, Backfill With Async</span></h2>
+<span class="tag">减会</span><span class="tag">默认拒绝</span><span class="tag">Async-first</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">减会不是少开两个，而是建立<strong>默认异步</strong>的机制：能写下来的就别开会，把同步带宽留给真正需要它的事——<strong>高情绪、高歧义、需要实时来回</strong>的决策。每个 recurring 会都该定期被迫"重新证明自己"。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Meetings are toxic... The worst interruptions of all are meetings. Here's why: They're usually about words and abstractions, not real things... They procreate. One meeting leads to another."</span>
+<span class="zh">"会议是有毒的……最糟糕的打断就是会议。因为它们通常关乎措辞和抽象，而非真实的东西……它们还会繁殖：一个会引出另一个会。"</span>
+<span class="source">— Jason Fried &amp; DHH,《Rework》"Meetings are toxic"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">决策树：这事要开会吗？</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+<rect x="250" y="14" width="200" height="44" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="350" y="34" text-anchor="middle" font-family="Georgia" font-size="12.5" fill="#5c3a18">有明确的决策 / 产出？</text>
+<text x="350" y="50" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">说不清产出</text>
+<line x1="250" y1="36" x2="120" y2="84" stroke="#c47040" stroke-width="1.5"/>
+<text x="150" y="74" font-family="Georgia" font-size="11" fill="#a04020">否</text>
+<rect x="30" y="86" width="180" height="44" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="120" y="106" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5a3818">不开会</text>
+<text x="120" y="122" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">发个 update 就好</text>
+<line x1="450" y1="36" x2="560" y2="84" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="520" y="74" font-family="Georgia" font-size="11" fill="#4a6a28">是</text>
+<rect x="430" y="86" width="250" height="50" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="555" y="108" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5c3a18">需要实时来回，或</text>
+<text x="555" y="124" text-anchor="middle" font-family="Georgia" font-size="12" fill="#5c3a18">高情绪 / 高歧义？</text>
+<line x1="480" y1="136" x2="300" y2="186" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="370" y="172" font-family="Georgia" font-size="11" fill="#4a6a28">否</text>
+<rect x="160" y="188" width="240" height="50" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="280" y="210" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">Async：写 RFC / doc</text>
+<text x="280" y="226" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">评论区收敛</text>
+<line x1="610" y1="136" x2="610" y2="186" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="620" y="170" font-family="Georgia" font-size="11" fill="#4a6a28">是</text>
+<rect x="490" y="188" width="190" height="50" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="585" y="210" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">开会：最小人数</text>
+<text x="585" y="226" text-anchor="middle" font-family="Georgia" font-size="12" fill="#2a3a18">+ 预读 + 时间盒</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 团队日历被 recurring 会塞满，团队抱怨没有 deep work 时间。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 不敢动</div>
+<p>感觉会太多，但都是"历史遗留"的例会，砍了怕漏信息，于是一个都不动，继续忍。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 三步重建</div>
+<p><strong>(1) 清零重建：</strong>把所有 recurring 会标记"暂停两周"，两周后只恢复真有人主动要求的（Shopify 2023 删光 recurring 会的做法）。</p>
+<p><strong>(2) 设无会时段：</strong>团队周三全天 no-meeting，保护 deep work——而且你自己第一个遵守。</p>
+<p><strong>(3) Async 补位：</strong>取消的周会，用一份每周书面 update 替代（每人 3 bullets：进展 / 阻塞 / 下周重点），讨论挪到评论区。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 优雅退出别人的会</div>
+<p>"我看了 agenda，这个会我的输入不是必需的——我先 decline，纪要里 @我需要我拍板的点就行。"（礼貌 + 给台阶，不是默默消失）</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表（季度减会盘点）</div>
+<ul class="checklist">
+<li>日历上每个 recurring 会，砍掉真会有人受损吗？（不确定就暂停两周试）</li>
+<li>团队有受保护的 no-meeting 深度工作时段吗？</li>
+<li>哪些周期会议可以降级成一份 async 书面 update？</li>
+<li>我的会议都有预读材料吗？（让现场时间用于讨论，而非信息搬运）</li>
+<li>我有没有示范"可以礼貌 decline"，还是团队觉得拒绝会是冒犯？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>减会只砍别人的，自己召集的舍不得动。</strong></li>
+<li><strong>把会改 async，却要求所有人"实时"读消息。</strong>那只是把会议搬进 Slack，hive mind 更糟（Newport）。</li>
+<li><strong>No-meeting day 名存实亡。</strong>leader 自己第一个破例，规则就死了。</li>
+<li><strong>取消会议但不补 async。</strong>信息真丢了，团队要求恢复会——减会失败，信用还受损。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Jason Fried &amp; DHH,《Rework》《It Doesn't Have to Be Crazy at Work》</strong>— 会议是成本，async 为默认。<br><strong>Cal Newport,《A World Without Email》</strong>— "hive mind"与注意力资本：别把会议搬进聊天软件。<br><strong>GitLab Handbook</strong>— async-first 与"没记录就等于没发生"。</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 17 Action</h3>
+<p>本周你要做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+选你日历上<strong>一个你自己召集的 recurring 会</strong>。做两件事：<strong>(1)</strong> 给它写一句<strong>产出陈述</strong>——这个会每次到底要产生什么（决定 X / 对齐 Y）。写不出来，说明它该砍或该改 async。<strong>(2)</strong> 把它的下一次开成"<strong>async 实验</strong>"：取消现场，改发一份预读 doc + 让大家在评论区 async 讨论，只有收敛不了的点才约 15 分钟同步。<br><br>一周后看：<strong>有没有人真的"信息丢了"？</strong> 没有 → 永久改 async，把那格日历还给团队做 deep work。
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>深入思考</h3>
+<details><summary>Standup 到底该不该有？远程 / 异步团队呢？</summary><div>站会的价值是快速暴露阻塞 + 轻量同步，但对成熟、文档化好的团队，每日同步可能是负担。远程跨时区团队同步 standup 的成本极高（有人得半夜爬起来），可改 async standup——每天往固定频道写 3 bullets，看板自动可见。判断标准不是"敏捷教条要求每天站"，而是"团队当前的阻塞暴露得够快吗"。够快，就别为仪式而仪式。</div></details>
+<details><summary>公司变大后，All-hands 还有意义吗？</summary><div>公司一大，all-hands 越来越像单向广播，真问答先死掉。对策是分层：大 all-hands 只承担"传 context + 文化"，真正的双向对话下沉到 skip-level 和部门级小会；用匿名提问工具给问答续命。但要诚实承认：超过某个规模，all-hands 的"建立共识"功能必然衰减——别假装一场千人会还能像三十人时那样对齐人心。</div></details>
+<details><summary>"默认 async"会不会牺牲关系与归属感？</summary><div>这是真实的 trade-off。Async 高效，但稀释了非正式连接——茶水间、会前闲聊里长出来的信任。纯 async 团队必须刻意补关系带宽：定期的纯社交同步、面对面 off-site。效率和归属不是同一种带宽。别用 async 省了会议，又指望团队凝聚力自己不掉——那笔账迟早要还。</div></details>
+<details><summary>主持时"控制发言分配"会不会变成压制异议？</summary><div>边界很细。控场是为了让被淹没的声音有空气，不是让会议按你预设的方向走。危险信号：你总在"收敛"自己不爱听的方向。一个自检——你打断的人、放进 parking lot 的话题，是不是系统性地都是反对你的那些？如果是，你在用主持权压制异议，而不是分配公平。好的主持人会主动 mine for conflict，而不是 mute it。</div></details>
+<details><summary>大公司里，你能单方面减会到什么程度？</summary><div>你能完全掌控的，只有自己召集的会和团队内部节奏。跨部门、上层召集的会，你 decline 是有政治成本的（Card 4 的退出话术能缓冲，但消不掉）。务实路线：先把自己团队内部做成减会样板——deep work 时段、async update、清晰的产出陈述——用产出说话。当你的团队因此明显更高产，你才攒下资本去影响更大范围的会议文化。自下而上：先证明，再倡导。</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 17 · 2026.06.06</footer>
+</div>
+</body>
+</html>
