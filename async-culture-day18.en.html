@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 18: Async Culture &amp; Documentation-First</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:12px;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details div{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 18 · 2026.06.07</div>
+<h1>Async Culture &amp; Documentation-First: Make Meetings The Exception</h1>
+<div class="meta"><span>Topic: Async Culture &amp; Documentation-First</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in." — Paul Graham</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Synchronous meetings are the most expensive — and most abused — resource in a large company. An 8-person, 1-hour meeting is 8 work-hours, and that's before you count the shattered blocks of focus time. <strong>Doc-first isn't a trick for fewer meetings; it's an organizational design that separates "thinking" from "broadcasting"</strong>: write the decision down clearly, let people read and comment asynchronously, and reserve meetings for what truly needs high bandwidth — conflict, ambiguity, empathy. This week's four principles: replace a meeting with a one-page memo, let decisions take shape through RFCs, leave the "why" behind with ADRs, and systematically cut your meeting load. None of this is remote-only — it holds for any tech lead drowning in meetings.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Writing-First: A Memo Instead Of A Meeting
+<span class="en">The Memo Over The Meeting</span></h2>
+<span class="tag">Doc-first</span><span class="tag">Narrative memo</span><span class="tag">Silent reading</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">Write important decisions down before you meet. <strong>Writing forces fuzzy thinking into clear logic</strong> — a slide deck can be bluffed with charisma; a coherent one-page narrative cannot. A meeting is for "discussion after reading," not for someone reading their script aloud.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The reason writing a good four-page memo is harder than 'writing' a twenty-page PowerPoint is because the narrative structure of a good memo forces better thought and better understanding of what's more important than what."</span>
+<span class="source">— Jeff Bezos, Amazon 2017 Shareholder Letter</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Practice</div>
+<div class="scene">
+<div class="setup">Scenario: You want to push an architecture-migration decision and have booked a 1-hour review with 8 stakeholders.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The Usual Way</div>
+<p>You make 20 slides and walk through them. The first 40 minutes are background; you reach the key trade-off with 10 minutes left — and time's up. Half the room never read the background and is just following your narration. <strong>Real objections never surface.</strong> You "seem aligned" when it ends; a week later three people are each doing their own thing.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Amazon "study hall" style</div>
+<p><strong>Before:</strong> Write a 4-page narrative memo (context → proposal → rejected alternatives → risks → open questions), send it 24 hours ahead.</p>
+<p><strong>Open with:</strong> "Let's read silently for 15 minutes and comment inline as we go. Then we'll jump straight to the contested parts."</p>
+<p><strong>Result:</strong> Everyone is on the same information baseline. The 60 minutes go entirely to trade-offs and objections, not information broadcast. The comments double as a decision record.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Skeleton Of A One-Pager (Checklist)</div>
+<ul class="checklist">
+<li><strong>Context/problem:</strong> Can someone outside this area finish it and understand "why now"?</li>
+<li><strong>Proposal:</strong> Can you state "what we recommend" in one sentence?</li>
+<li><strong>Rejected alternatives:</strong> Did you write "why not B and C"? (Most often skipped, most valuable.)</li>
+<li><strong>Risks &amp; open questions:</strong> Honestly list what's unresolved, not just the good news.</li>
+<li><strong>Does it stand alone without slides?</strong> The doc must exist without the presenter.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Turning slides into a "doc."</strong> Stacked bullets aren't narrative. Write full sentences and paragraphs — that's what exposes the logic.</li>
+<li><strong>Sending the doc but nobody reads it.</strong> That's why you read silently in the meeting — don't assume; give time to read.</li>
+<li><strong>Using docs to hide muddled thinking.</strong> The pain of doc-first is exactly this: if you can't write it clearly, you haven't thought it clearly. That's the value.</li>
+<li><strong>Writing long docs for small things.</strong> Reversible, two-way-door decisions need one Slack message. Don't be dogmatic.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research repeatedly shows women are more often interrupted in meetings and have ideas re-attributed to male colleagues. <strong>A writing culture is a structural corrective</strong>: ideas live in a doc with a name and timestamp, so who proposed what is unambiguous — it doesn't go to whoever is loudest. As a leader, reinforce this deliberately: when you cite something in the meeting, name the source — "This proposal is Priya's, in section 2; let's build on her thread." Anchor credit to the written word.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Jeff Bezos, Amazon 2017 Shareholder Letter</strong> — origin of the six-page narrative memo, the "no PowerPoint" rule, and silent reading.<br><strong>Camille Fournier,《The Manager's Path》</strong> — writing as a core leverage point for senior engineering leaders.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>RFC Culture: Decisions That Form In The Open
+<span class="en">Request For Comments</span></h2>
+<span class="tag">RFC</span><span class="tag">Design doc</span><span class="tag">Async review</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">An RFC (Request for Comments) / design doc is a proposal that is <strong>public, asynchronously commentable, and has a clear lifecycle</strong>. It turns "a few people deciding in a room" into "a participatory, traceable decision process" — and it's the lowest-cost way to align at scale.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The most important section… is the one that describes considered alternative designs and trade-offs. Many design decisions are easier to understand when reading about which alternatives were explored and why they were not chosen."</span>
+<span class="source">— Malte Ubl, "Design Docs at Google" (2020)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Lifecycle Of An RFC</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="55" width="120" height="60" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="160" y="55" width="130" height="60" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="320" y="55" width="130" height="60" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="480" y="55" width="120" height="60" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="630" y="55" width="60" height="60" rx="6" fill="#f3e9d2" stroke="#8a6d3b" stroke-width="2"/>
+<text x="70" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Draft</text>
+<text x="70" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">author writes</text>
+<text x="225" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Comment</text>
+<text x="225" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">async · time-boxed</text>
+<text x="385" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">Decided</text>
+<text x="385" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#4a6a28">named DRI</text>
+<text x="540" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Build</text>
+<text x="540" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">link to ADR</text>
+<text x="660" y="82" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#6b4a1f">Archive</text>
+<text x="660" y="100" text-anchor="middle" font-family="Georgia" font-size="9" fill="#8a6d3b">searchable</text>
+<text x="145" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
+<text x="305" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
+<text x="465" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
+<text x="615" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
+<text x="350" y="35" text-anchor="middle" font-family="Georgia" font-size="11" fill="#a04020">Key: time-box the comment window, or it stays a draft forever</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Practice</div>
+<div class="scene">
+<div class="setup">Scenario: A senior engineer corners you to verbally sell you on adopting a new framework.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Deciding verbally on the spot</div>
+<p>Won over by his enthusiasm, you nod: "Sounds good, do it." Two weeks later two other teams surface a conflict — they never knew, and the decision left no trace to trace back to.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Route it into an RFC</div>
+<p>"This is worth doing properly. <strong>Write a one-page RFC</strong>: the problem, your proposal, two alternatives you considered and rejected, and the impact on other teams. Open comments for 3 working days and @ the Platform and Data teams."</p>
+<p>"If there are no blocking objections after three days, we approve. <strong>This is sturdier than convincing me alone — you're convincing everyone affected, and it's on the record.</strong>"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist For A Good RFC</div>
+<ul class="checklist">
+<li>Title + one-line summary: a glance tells you what's being proposed.</li>
+<li>An explicit <strong>comment deadline</strong> and <strong>decision-maker (DRI)</strong> — not "thoughts welcome."</li>
+<li>"Alternatives considered" as its own section — the highest-value part of an RFC.</li>
+<li>Explicitly @ every affected team, instead of assuming they'll find out.</li>
+<li>After the decision, set status to Decided and link to the ADR / implementation ticket.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>An RFC with no deadline.</strong> An infinite comment window = decision paralysis. Doc-first doesn't mean slow; time-box it.</li>
+<li><strong>No DRI.</strong> "What does everyone think?" means no one owns it, and you end up back in a room.</li>
+<li><strong>Treating the RFC as a rubber stamp.</strong> If objections are always ignored, no one comments seriously the second time.</li>
+<li><strong>RFC-ing everything.</strong> Reserve RFCs for "architecturally significant" or cross-team decisions; don't wrap trivia in process.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Malte Ubl, "Design Docs at Google" (2020)</strong> — design-doc structure, especially the "alternatives" section.<br><strong>Will Larson,《An Elegant Puzzle》</strong> — using RFCs and architecture reviews to keep consistency during hypergrowth.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Decision Records (ADR): Leave The "Why" Behind
+<span class="en">Capturing The Why</span></h2>
+<span class="tag">ADR</span><span class="tag">Decision log</span><span class="tag">Institutional memory</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">Code records "what was done"; an ADR (Architecture Decision Record) records <strong>"why we decided, the context at the time, and what we gave up."</strong> Six months on, no one remembers why the other path wasn't taken — the ADR is the organization's defense against forgetting.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"We will keep a collection of records for 'architecturally significant' decisions… Each record describes a set of forces and a single decision in response to those forces. We will keep ADRs in the project repository."</span>
+<span class="source">— Michael Nygard, "Documenting Architecture Decisions" (2011)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Practice</div>
+<div class="scene">
+<div class="setup">Scenario: Six months ago you decided to build a lightweight queue instead of using Kafka. Today a new staff engineer challenges it in the channel: "This obviously should be Kafka — who made this call?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ No record</div>
+<p>No one remembers the full reasoning. You defend it from memory, which sounds like backfilling; the team starts doubting the decision, and someone wants to rip it out and redo it — paying the sunk cost all over again.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Point to the ADR</div>
+<p>"See <strong>ADR-014</strong>. The constraints then: a 3-person team, &lt; 1k msgs/s, and zero headcount to operate Kafka. In that context, building was right."</p>
+<p>"<strong>The scale has changed now — feel free to write a new ADR that supersedes it</strong>, but argue from today's constraints, not 'that was dumb.'" The ADR pulls the argument from "who was wrong" back to "have the constraints changed."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Minimal Structure Of An ADR (Checklist)</div>
+<ul class="checklist">
+<li><strong>Context:</strong> the constraints, scale, headcount, time pressure at the time — the most critical section.</li>
+<li><strong>Decision:</strong> what we decided to do, in one clear sentence.</li>
+<li><strong>Consequences:</strong> the benefits, the costs, and the risks we accepted.</li>
+<li><strong>Status:</strong> Proposed / Accepted / Superseded by ADR-XXX.</li>
+<li>Numbered + in the repo (write only for hard-to-reverse decisions; skip reversible ones).</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Recording the conclusion, not the context.</strong> "We use Postgres" is worthless; "3-person team, need transactions, team knows Postgres best" is valuable.</li>
+<li><strong>Editing it later.</strong> An ADR is immutable — if the decision changes, write a new one and mark the old one superseded, or you lose the history.</li>
+<li><strong>Chasing perfect format.</strong> A 5-line ADR beats none. The lower the bar, the more people write them.</li>
+<li><strong>ADRs for trivia.</strong> Only "architecturally significant" decisions — those affecting structure, dependencies, and hard to reverse.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Michael Nygard, "Documenting Architecture Decisions" (2011)</strong> — the original source of the ADR concept.<br><strong>Will Larson,《An Elegant Puzzle》</strong> — building decision records into how an engineering org operates.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Cutting Meeting Load: Sync As A Scarce Resource
+<span class="en">Async By Default</span></h2>
+<span class="tag">Async-default</span><span class="tag">Maker schedule</span><span class="tag">Fewer meetings</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">Default to async; <strong>a meeting is an escalation, not the default.</strong> Use sync only for what genuinely needs high bandwidth: conflict, ambiguity, emotion, brainstorming. If it can be written clearly, don't meet — before booking, ask "could this be a doc?"</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"When you're operating on the maker's schedule, meetings are a disaster. A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in."</span>
+<span class="source">— Paul Graham, "Maker's Schedule, Manager's Schedule" (2009)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Decision: Does This Need A Meeting?</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="250" y="10" width="200" height="44" rx="6" fill="#f3e9d2" stroke="#5c3a18" stroke-width="2"/>
+<text x="350" y="30" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#5c3a18">Someone books a meeting</text>
+<text x="350" y="46" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">don't accept yet</text>
+<rect x="230" y="80" width="240" height="44" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="350" y="100" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Need high bandwidth?</text>
+<text x="350" y="116" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">conflict/ambiguity/empathy/brainstorm</text>
+<rect x="20" y="160" width="200" height="70" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="120" y="185" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#4a6a28">No → write it</text>
+<text x="120" y="205" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#2a3a18">doc / RFC / Loom</text>
+<text x="120" y="220" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#2a3a18">resolve via async comments</text>
+<rect x="480" y="160" width="200" height="70" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="580" y="182" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">Yes → meet</text>
+<text x="580" y="201" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#5a3818">agenda · pre-read</text>
+<text x="580" y="216" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#5a3818">fewest people · land a conclusion</text>
+<line x1="300" y1="124" x2="120" y2="160" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="400" y1="124" x2="580" y2="160" stroke="#a8702d" stroke-width="1.5"/>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Practice</div>
+<div class="scene">
+<div class="setup">Scenario: Your team's calendar is packed with meetings and engineers complain they have no uninterrupted time to write code.</div>
+<div class="dialog good">
+<div class="speaker">✓ Systematic moves to cut meetings</div>
+<p><strong>1. No-Meeting Day:</strong> "Wednesdays are No-Meeting Days for the whole team. I'll clear mine first to set the example."</p>
+<p><strong>2. Kill recurring meetings:</strong> "Cancel all recurring meetings for two weeks; whoever truly needs one adds it back." Most won't get re-added.</p>
+<p><strong>3. Status goes async:</strong> "Daily standup becomes async — post three lines each morning: yesterday/today/blockers. Only blockers trigger a sync."</p>
+<p><strong>4. Set the rule:</strong> "A meeting invite must carry an agenda and a pre-read; without them, you have the right to decline."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Meeting-Cutting Checklist</div>
+<ul class="checklist">
+<li>Is there a doc that could replace this meeting? (Write first; meet only if it won't write clearly.)</li>
+<li>Does every meeting have an agenda + pre-read + a clear "what this meeting must produce"?</li>
+<li>Are invitees truly needed, or pulled in "just in case"? Trim to the minimum.</li>
+<li>Is there protected focus time for the team (no-meeting day / core focus block)?</li>
+<li>Are recurring meetings periodically zeroed out and rebuilt on demand?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating async as "never sync."</strong> For conflict, sensitive feedback, and empathy, forcing text is cold and inefficient. Async is the default, not dogma.</li>
+<li><strong>Cutting meetings but shifting the load to "ping anytime."</strong> Replacing sync meetings with all-day Slack bombardment destroys focus just the same. Async means "no need to reply instantly."</li>
+<li><strong>No-meeting day in name only.</strong> If you're the first to break it, the rule dies that day.</li>
+<li><strong>Cutting 1:1s.</strong> 1:1s are relationship and trust; they can't be made async (see Day 1). Cut the status meetings.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"Office housework" — taking minutes, booking rooms, chasing status — falls disproportionately on women over time and rarely converts into promotion capital. <strong>When you shift to a written/async culture, fix that distribution while you're at it</strong>: make the doc DRI and the note-taker rotate by role (written into the process, not "whoever volunteers"), instead of defaulting to "the woman on the team will jot it down." Making invisible labor visible and rotatable is itself fairness by design.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Paul Graham, "Maker's Schedule, Manager's Schedule" (2009)</strong> — why uninterrupted blocks matter for makers.<br><strong>Jason Fried &amp; DHH,《It Doesn't Have to Be Crazy at Work》</strong> — "meetings as a last resort" and async-default culture.<br><strong>GitLab Handbook</strong> — "handbook-first": the extreme of writing everything down by default.</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 18 Action</h3>
+<p>Do one concrete thing this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Pick one recurring meeting on your calendar this week</strong> (the one that most resembles a "status broadcast"). <strong>Replace it with an async doc</strong>: send it ahead, give 24 hours of async comments, and at the time hold only a 15-minute mini-sync on the "still contested" comments (or skip it entirely).<br><br>Afterward, note two lines: <strong>(1) how many minutes of sync time it dropped from and to; (2) whether the decision quality was better or worse.</strong><br><br>Reflection: which of your team's meetings are really using sync time to compensate for "no one being willing to write things down clearly"?
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Going Deeper</h3>
+<details><summary>Does doc-first break down in teams with weak writing culture or mostly non-native English speakers?</summary><div>It gets markedly harder. Narrative memos demand writing ability, and forcing them can disadvantage people who are strong technically but weak at expression, while amplifying native speakers' advantage. The fix isn't to abandon it but to lower the bar: provide templates, accept bullets + short video (Loom) hybrids, use AI to polish, and make explicit that "we judge content, not prose." Culture is grown gradually, not mandated overnight.</div></details>
+<details><summary>Does over-doing async sacrifice weak ties and serendipitous information flow?</summary><div>Yes. Hallway run-ins and pre-meeting small talk seed creative collisions and trust — pure async can turn an org into an efficient but disconnected machine. So async is the default, not the entirety: deliberately keep a small number of high-bandwidth occasions (team socials, brainstorms, agenda-less rambles), and use sync for what async does badly — building relationships, handling emotion, sparking ideas.</div></details>
+<details><summary>In a politicized big company where "meetings = visibility" and "docs go unread," is doc-first realistic for a single tech lead?</summary><div>Pushing it top-down company-wide isn't realistic, but within your own team's boundary it is. Strategy: build a model in the area you control (your meetings all carry pre-reads, your decisions all have ADRs) and let results speak; upward, use docs as a managing-up tool (your boss would rather read a one-page memo than be pulled into a meeting). Culture spreads from local demonstration, not from edicts.</div></details>
+<details><summary>Won't RFC/ADR maintenance eventually become "doc debt" no one updates?</summary><div>A real risk. The key distinction: an ADR is an immutable historical snapshot — it's not supposed to be updated (when the decision changes, you write a new one), so it has almost no maintenance cost; that's its advantage over "living docs." What becomes debt are the living docs that try to "stay current." Principle: prefer immutable records (decisions, meeting notes) over living docs; living docs need a named owner and a review cadence, or don't create them.</div></details>
+<details><summary>Could cutting meetings backfire on a manager's own influence ("being in meetings" is also how you're seen)?</summary><div>This is an honest gray area. In many orgs, showing up in the room = political capital, and someone who works purely async can go "invisible." The cost is real: you may be efficient but unnoticed by leadership. A pragmatic balance — invest the time you save into a few high-leverage sync occasions (key reviews, cross-functional, upward reporting) and be "seen" there at high quality; meanwhile let your team's output (docs, decision records) be the evidence of your influence. Don't meet just to be present, but don't naively assume pure output gets noticed on its own.</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 18 · 2026.06.07</footer>
+</div>
+
+</body>
+</html>
