@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 19: Conflict Resolution</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:12px;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details div{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 19 · 2026.06.09</div>
+<h1>Conflict Resolution: Don't Fight the Fire — Teach Them to Fight It</h1>
+<div class="meta"><span>Topic: Conflict Resolution</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"The quality of our lives depends not on whether or not we have conflicts, but on how we respond to them." — Thomas Crum</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> Conflict on your team is not a management failure — its absence is. <strong>There are two real failures: suppressing healthy "argument about the work," or letting "resentment of the person" fester.</strong> Worse is the manager's instinct — rushing in as judge or messenger, so the team never learns to handle conflict itself and you stay trapped in the middle forever. This week's four principles run in order: first <strong>diagnose</strong> which kind of conflict it is, then act as a <strong>mediator</strong> not a judge, default to handing conflict <strong>back to the people involved</strong>, and finally draw the line on when you <strong>must escalate</strong>. Conflict handling isn't smoothing things over — it's installing a protocol the team can run on its own.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Diagnose First: Is This About the Work, or the Person?
+<span class="en">Task Conflict vs. Relationship Conflict</span></h2>
+<span class="tag">Diagnose</span><span class="tag">Task Conflict</span><span class="tag">Relationship Conflict</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Classify before you intervene. <strong>Task conflict — about "what to do, how to do it" — is healthy; protect it, even mine for it. Relationship conflict — "I just can't stand you" — is toxic; cool it early.</strong> The real danger isn't the argument; it's an unresolved task disagreement rotting into a personal grudge.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"When team members do not openly debate and disagree about important ideas, they often turn to back-channel personal attacks, which are far nastier and more harmful than any heated argument over issues."</span>
+<span class="source">— Patrick Lencioni, <em>The Five Dysfunctions of a Team</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Diagnostic Matrix: Classify, Then Choose the Move</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="30" x2="350" y2="270" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="40" y1="150" x2="660" y2="150" stroke="#a8702d" stroke-width="1.5"/>
+<text x="195" y="22" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">About the work (task / process)</text>
+<text x="505" y="22" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">About the person (relationship)</text>
+<text x="28" y="90" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#8a6d3b" transform="rotate(-90 28 90)">High heat</text>
+<text x="28" y="215" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#8a6d3b" transform="rotate(-90 28 215)">Low heat</text>
+<text x="195" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">Facilitate</text>
+<text x="195" y="102" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Give a decision mechanism:</text>
+<text x="195" y="120" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">write it up, set a decider, decide on time</text>
+<text x="505" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">Intervene now / Separate</text>
+<text x="505" y="102" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">Cool them apart, then 1:1</text>
+<text x="505" y="120" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">each — no public showdown</text>
+<text x="195" y="205" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">Let it run</text>
+<text x="195" y="227" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Healthy debate — don't suppress;</text>
+<text x="195" y="245" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">just time-box and close it out</text>
+<text x="505" y="205" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#c47040">Name it privately</text>
+<text x="505" y="227" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">A quiet word with each before</text>
+<text x="505" y="245" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">it grows — don't wait</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: Two senior engineers keep clashing over "monolith vs. microservices" in PR comments and design reviews, and the wording is turning barbed ("you clearly haven't read that paper").</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>You rule from the chair: "We're going microservices, stop arguing." You've both suppressed a healthy technical debate and ignored the personal venom that's already leaked in. The loser remembers not the technical verdict, but "the boss plays favorites."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better (handle the two layers)</div>
+<p><strong>Task layer (protect it):</strong> "This is worth thinking through. Each of you write half a page with trade-offs; I'll be the decider Thursday. Until then it's open debate."</p>
+<p><strong>Relationship layer (cool it privately):</strong> A word with each afterward: "Argue the tech however hard you like. But that 'you haven't read the paper' line was at the person, not the work — next time, fire at the proposal, not the person."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Diagnostic Checklist (ask before intervening)</div>
+<ul class="checklist">
+<li>Are they fighting over "which option is right," or over "who is the right person"? Protect the first, cool the second.</li>
+<li>Is the language "this design has a problem" or "you always..."? Pronouns sliding from <em>it</em> to <em>you</em> is the alarm.</li>
+<li>One heated discussion, or the same pair clashing for the Nth time over different trivia? The latter is usually already relational.</li>
+<li>Are bystanders energized (healthy) or starting to take sides and avoid (toxic)?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Suppressing all conflict as bad.</strong> A team with no task conflict isn't harmonious — no one dares tell the truth.</li>
+<li><strong>Ruling instead of giving a mechanism.</strong> Snap rulings are easy, but each one creates a "loser," and next time no one voices dissent openly.</li>
+<li><strong>Watching volume, not the nature of the conflict.</strong> A quiet relational cold war is far more dangerous than a loud technical debate.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Patrick Lencioni, <em>The Five Dysfunctions of a Team</em></strong> — "Fear of Conflict": distinguishing productive ideological conflict from destructive politics.<br><strong>Karen Jehn (academic research, 1995)</strong> — the task / process / relationship conflict trichotomy; the empirical source for "moderate task conflict helps, relationship conflict almost always harms."</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Mediator, Not Judge: The Joint-Meeting Script
+<span class="en">Positions vs. Interests</span></h2>
+<span class="tag">Mediation</span><span class="tag">Joint Meeting</span><span class="tag">Positions vs. Interests</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">When the parties can't resolve it and come to you, your role isn't to decide who's right (a judge always makes a loser) — it's to help them get past their <strong>positions</strong> to the <strong>interests</strong> underneath. The flow: talk to each alone first, then together.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Separate the people from the problem. Focus on interests, not positions."</span>
+<span class="source">— Roger Fisher &amp; William Ury, <em>Getting to Yes</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: How to Open the Three-Way</div>
+<div class="scene">
+<div class="setup">Situation: Your engineer and a PM are at a standstill over "should we jump the queue for this request"; each has come to you separately, and you decide to hold a three-way.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Judge mode</div>
+<p>You pull them into a room, let each state their case, then pronounce: "We go with the PM this time." You've solved this one instance but planted two problems: the loser isn't convinced, and next time they'll come to you to be judged again.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Mediator script</div>
+<p><strong>Frame the open:</strong> "I'm not here to decide who's right. The goal is that you both walk out with a next step you can each live with. Rule: speak your own observations and needs; don't define the other person."</p>
+<p><strong>Restate interests (the key move):</strong> "What I'm hearing — you (engineer) care about not letting tech debt spiral; you (PM) care that the client sees progress this week. Do those really conflict, or is it just sequencing?"</p>
+<p><strong>Hand the solution back:</strong> "Given those two needs, you two propose a plan; I'll confirm the resources."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Joint-Meeting Checklist</div>
+<ul class="checklist">
+<li>Before the joint meeting, did I hear each one alone first? (Let emotion vent privately, not blow up live.)</li>
+<li>Did I open by stating clearly "I'm not here to judge," setting the frame?</li>
+<li>Can I restate each side's <strong>interests</strong> (not positions) in neutral language?</li>
+<li>Did they propose the plan, or did I think it up for them? (Thinking it up = back to being judge.)</li>
+<li>Is there a concrete, written next step and a check-back time at the end?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Skipping the one-on-ones, going straight to a showdown.</strong> Unvented emotion at the table turns mediation into a brawl.</li>
+<li><strong>Stopping at the position layer.</strong> "He wants A, I want B" — positions are inherently opposed; interests often aren't, no one just dug to the bottom.</li>
+<li><strong>Can't resist giving the solution.</strong> The moment you give one, you're the judge again, and they stop practicing self-resolution.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women managers are often assumed to be the natural "peacemaker / office mom," with mediation treated as expected emotional labor — no credit for doing it, called "cold" for not. Countermeasures: explicitly <strong>frame mediation as leadership work</strong>, not a favor, and rotate the facilitator role when possible; and when you need to firmly close things out, open with a line that frames authority ("As the owner of this, I'll set the rules"), shrinking the space to label a woman leading as "aggressive."
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Roger Fisher &amp; William Ury, <em>Getting to Yes</em></strong> — the four principles of principled negotiation: separate people from problem, focus on interests, invent options, insist on objective criteria.<br><strong>Camille Fournier, <em>The Manager's Path</em></strong> ("Managing People / Conflict") — practical limits on a manager mediating others' conflict.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Give It Back: You Are Not the Messenger
+<span class="en">Direct Conversation, Coached</span></h2>
+<span class="tag">Hand It Back</span><span class="tag">Direct Talk</span><span class="tag">Coaching</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">The default move is handing conflict <strong>back to the people involved</strong>. When someone comes to complain about a colleague, your first line is always: "Have you talked to them directly?" The more willing you are to be messenger and judge, the less the team learns to handle conflict — and the more permanently you're stuck in the middle.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"At the heart of almost all chronic problems in our organizations lie crucial conversations — ones that we're either not holding or not holding well."</span>
+<span class="source">— Patterson, Grenny et al., <em>Crucial Conversations</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Kick the Ball Back — But Hand Them the Gear</div>
+<div class="scene">
+<div class="setup">Situation: Report A comes to your 1:1 fuming that colleague B never gets to his PRs and is dragging down his progress.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Being the messenger</div>
+<p>"Sure, I'll have a word with B." Now B feels reported on, A never learns to speak up, and next time he routes around B straight to you. You become the relay station for every friction on the team.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Hand it back + coach</div>
+<p><strong>First, check if they've talked:</strong> "Sounds like it's really affecting you. Have you told B directly what impact this has on you?" (Usually the answer is "no.")</p>
+<p><strong>Help him prep the opening:</strong> "Then let's think about how to say it. Try: 'B, I really need your reviews — two PRs have been stuck three days this week, can we set a fixed slot?' On the issue, state the impact, offer a fix."</p>
+<p><strong>Leave a step:</strong> "Talk to him first. If it still doesn't work after that, we'll figure out the next step together — I can sit down with you both if needed, but I won't speak for you."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Hand It Back, or Step In?</div>
+<ul class="checklist">
+<li>Have the parties <strong>talked directly</strong>? If not → default to handing it back first.</li>
+<li>Is this a skill problem (doesn't know how to open) or a will problem (afraid/unwilling)? Coach the first, probe the second.</li>
+<li>When handing it back, did I give him a <strong>concrete script</strong>, not a hollow "go communicate"?</li>
+<li>Did I make clear that "handing back" isn't "I'm out" — I'm still the backstop?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Enjoying being the central node.</strong> Everyone coming to you feels like being needed — but that's organizational dependency, not influence.</li>
+<li><strong>"Handing back" becomes dumping.</strong> Saying "sort it out yourselves" with no tools and no backstop is avoidance, not delegation.</li>
+<li><strong>Defending or convicting the absent party.</strong> B isn't there; don't apologize or excuse for him — focus only on the next step A can control.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Patterson, Grenny, McMillan, Switzler, <em>Crucial Conversations</em></strong> — how to safely discuss high-stakes, high-emotion, disagreement-heavy topics.<br><strong>Kim Scott, <em>Radical Candor</em></strong> — "go to the source": the principle of refusing to relay messages and refusing triangulation.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Escalation: When to Switch From Hands-Off to Hands-On
+<span class="en">Clean Escalation</span></h2>
+<span class="tag">Escalation</span><span class="tag">Red Lines</span><span class="tag">Clean Escalation</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">"Let them solve it" has limits. The moment it touches <strong>values / harassment / safety</strong>, repeated mediation fails, it harms third parties or delivery, or there's a severe <strong>power imbalance</strong>, you must step in — even escalate. And escalation must be "clean": both parties informed, both sides' facts presented, never moving behind one's back.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Clean escalation: when two people can't agree, they go to the boss together and present both sides fairly — rather than racing to plead their case behind the other's back."</span>
+<span class="source">— Kim Scott, <em>Radical Candor</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Escalation Ladder: Lightest to Heaviest</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 290" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="20" width="620" height="42" rx="5" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="56" y="40" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">① The parties talk directly</text>
+<text x="56" y="56" font-family="Georgia" font-size="11" fill="#2a3a18">Default start. You only offer scripts and encouragement.</text>
+<rect x="40" y="72" width="620" height="42" rx="5" fill="#eef0e0" stroke="#7a8a4a" stroke-width="1.5"/>
+<text x="56" y="92" font-family="Georgia" font-size="13" font-weight="700" fill="#5a6a2a">② You coach (1:1)</text>
+<text x="56" y="108" font-family="Georgia" font-size="11" fill="#2a3a18">Trigger: they talked but got stuck. Help one side prep the conversation.</text>
+<rect x="40" y="124" width="620" height="42" rx="5" fill="#f3e9d2" stroke="#a8702d" stroke-width="1.5"/>
+<text x="56" y="144" font-family="Georgia" font-size="13" font-weight="700" fill="#8a5a1d">③ You mediate (three-way)</text>
+<text x="56" y="160" font-family="Georgia" font-size="11" fill="#5a3818">Trigger: good faith but talks broke down. Use the Card 2 script.</text>
+<rect x="40" y="176" width="620" height="42" rx="5" fill="#f7e2cc" stroke="#c47040" stroke-width="1.5"/>
+<text x="56" y="196" font-family="Georgia" font-size="13" font-weight="700" fill="#a85a28">④ You rule and record</text>
+<text x="56" y="212" font-family="Georgia" font-size="11" fill="#5a3818">Trigger: mediation failed but a conclusion is required. State basis, write it down.</text>
+<rect x="40" y="228" width="620" height="46" rx="5" fill="#f5d8d0" stroke="#b03a2a" stroke-width="2"/>
+<text x="56" y="248" font-family="Georgia" font-size="13" font-weight="700" fill="#a02818">⑤ Escalate to HR / your manager (red line)</text>
+<text x="56" y="265" font-family="Georgia" font-size="11" fill="#7a2018">Trigger: harassment / discrimination / safety / persistent demeaning. Escalate now, cleanly.</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Clean Escalation vs. Dirty Escalation</div>
+<div class="scene">
+<div class="setup">Situation: After repeated mediation, one party keeps demeaning the other in meetings, and a gendered remark has surfaced. This crosses a red line.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Dirty escalation / continued tolerance</div>
+<p>Either look away and keep urging "just work it out yourselves" (tolerating a red line); or run to HR behind the person's back — they have no idea, and the blowback later is worse.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Clean escalation script</div>
+<p>To their face, to both (or at least the escalated party): <strong>"That kind of remark goes beyond a technical disagreement — it touches a line of respect. I'm taking this to HR, because X. I'll present both sides honestly, and I'll keep you informed at every step."</strong></p>
+<p>Escalation = moving up transparently, not stabbing back in secret.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Red-Line Checklist for Mandatory Escalation</div>
+<ul class="checklist">
+<li>Does it involve harassment, discrimination, personal safety, or legal risk? → Any one hit, escalate now; no more "hands off."</li>
+<li>Is it the same pair, same type of issue, <strong>repeatedly</strong> mediated with no improvement? (Three strikes.)</li>
+<li>Has the conflict spilled over, harming a third party or dragging team delivery?</li>
+<li>Is there a severe power imbalance (level, numbers, seniority) where the weaker side can't talk as an equal?</li>
+<li>When escalating, did I do "both informed + both sides' facts carried up"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + Female Leader's Note</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "maturity = absorb everything yourself" as a virtue.</strong> On red-line issues, not escalating is dereliction, not magnanimity.</li>
+<li><strong>Escalating but keeping one side in the dark.</strong> Dirty escalation destroys both people's trust in you — worse than not escalating.</li>
+</ul>
+</div>
+<div class="female" style="margin-top:14px">
+<span class="female-label">Female Leader's Note</span>
+When a woman manager escalates or rules firmly, it's more often read as "she can't handle her own team" (a competence challenge), while the same move by a man reads as "decisive." Countermeasure: state the <strong>objective trigger</strong> up front ("per the company code of conduct, this kind of remark must be reported"), anchoring the action to a rule rather than your emotion, shrinking the room to attribute it to "emotional / can't manage people."
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Kim Scott, <em>Radical Candor</em></strong> — "clean escalation" and refusing triangulation.<br><strong>Will Larson, <em>An Elegant Puzzle</em></strong> — when to escalate a personal conflict into a process/org problem, and the cost trade-offs of a manager stepping in.</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 19 Action</h3>
+<p>Do one concrete thing this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Pick one low-grade, not-yet-exploded conflict on your team</strong> (the A-grumbling-about-B kind). Next time a party comes to vent, <strong>don't take it on to solve</strong>; use Card 3's two steps: first ask "Have you talked to them directly?", then help him write out the first opening line <strong>word for word</strong> (on the issue, state the impact, offer a fix).<br><br>Afterward, note two lines: <strong>(1) Did he end up talking to them himself; (2) Did I resist the urge to "go say it" myself.</strong><br><br>Reflection: How much of the friction on your team exists because everyone defaults to "go to the boss" as safer than "talk directly"? What safety gap does that expose?
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Going Deeper</h3>
+<details><summary>In high-context, face-saving cultures, does encouraging "direct confrontation" misfire?</summary><div>Importing Western direct confrontation wholesale can make people lose face publicly and damage relationships. But "on the issue, not the person + talk privately first" is precisely its safe variant: no public debate required — go one-on-one, leave a graceful exit, use writing. The core is unchanged: task disagreements need an outlet, relational sparks need cooling; only the channel shifts — more private, more face-saving, more reliance on go-betweens. Don't mistake "reticence" for "no conflict."</div></details>
+<details><summary>Isn't "let them solve it themselves" a privileged view that ignores power imbalance?</summary><div>A real blind spot. Telling a junior, minority, or contract worker to "go directly to" someone whose word carries weight can make the weaker party bear the risk alone. That's why Card 4 lists "severe power imbalance" as an escalation trigger. The test: can both sides talk with roughly equal safety? If not, don't toss out "work it out yourselves" — facilitate or backstop, taking part of the weaker side's risk onto yourself.</div></details>
+<details><summary>In fully remote / async teams, conflict signals are weaker — how do you catch it early?</summary><div>Remote hides the "relational cold war" deeper: no hallway faces, no silence in the room. Signals shift to: cooling tone in PR comments, barbs in @-mentions, two people suddenly using only public channels and no more DMs, someone going quiet in meetings. The counter is active probing — ask directly in 1:1s, "How's working with X going lately?" — and steer decision debates onto visible written channels, giving task conflict a structured outlet so it doesn't slip into the dark.</div></details>
+<details><summary>If one party is a high-performing "star" and the other ordinary, should you treat them evenly?</summary><div>The most honest gray zone. Favoring the star corrodes fairness (everyone's watching how you handle it) and eventually drives out the backbone; but pretending performance differences don't exist isn't real either. Pragmatic approach: enforce the "behavioral floor" (respect, no demeaning) with zero difference — the star can't cross it either; on "contribution weight," acknowledge differences honestly, but via transparent standards, not favoritism. Once the team decides "the star can do whatever," you lose everyone but the star.</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 19 · 2026.06.09</footer>
+</div>
+</body>
+</html>

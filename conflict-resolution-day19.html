@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 19：处理团队冲突</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:12px;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details div{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 19 · 2026.06.09</div>
+<h1>处理团队冲突：别灭火，教他们自己灭火</h1>
+<div class="meta"><span>主题：Conflict Resolution</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"The quality of our lives depends not on whether or not we have conflicts, but on how we respond to them." — Thomas Crum</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>团队里有冲突不是管理失败，没有冲突才是。<strong>真正的失败有两种：把健康的"对事之争"压下去，或者把"对人之恨"放任发酵。</strong>更糟的是 manager 的本能反应——冲过去当裁判、当传话筒，结果团队学不会自己处理，你被永久困在中间。本周四个原则按顺序走：先<strong>诊断</strong>是哪种冲突，再当<strong>调解者</strong>而非裁判，默认把冲突<strong>还给当事人</strong>，最后划清何时必须<strong>升级介入</strong>。冲突处理不是和稀泥，是给团队装一套自己能跑的协议。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>先诊断：这是"对事"还是"对人"的冲突
+<span class="en">Diagnose First — Task Conflict vs. Relationship Conflict</span></h2>
+<span class="tag">诊断</span><span class="tag">任务冲突</span><span class="tag">关系冲突</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">介入之前先分类。<strong>关于"做什么、怎么做"的任务冲突是健康的，要保护甚至主动挖掘；关于"我就是看不惯你"的关系冲突有毒，要尽早降温。</strong>最危险的不是争吵，是没被处理的任务分歧溃烂成私人恩怨。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"When team members do not openly debate and disagree about important ideas, they often turn to back-channel personal attacks, which are far nastier and more harmful than any heated argument over issues."</span>
+<span class="zh">"当团队成员不公开辩论、不就重要议题表达异议时，他们往往转向背后的人身攻击——那比任何就事论事的激烈争论都更恶毒、更具破坏性。"</span>
+<span class="source">— Patrick Lencioni,《The Five Dysfunctions of a Team》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">诊断矩阵：分类后再决定动作</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="30" x2="350" y2="270" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="40" y1="150" x2="660" y2="150" stroke="#a8702d" stroke-width="1.5"/>
+<text x="195" y="22" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">对事（任务 / 流程）</text>
+<text x="505" y="22" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">对人（关系 / 情绪）</text>
+<text x="28" y="90" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#8a6d3b" transform="rotate(-90 28 90)">强度高</text>
+<text x="28" y="215" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#8a6d3b" transform="rotate(-90 28 215)">强度低</text>
+<text x="195" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">引导 / Facilitate</text>
+<text x="195" y="102" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">给决策机制：写清方案、</text>
+<text x="195" y="120" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">设 decider、按时拍板</text>
+<text x="505" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">立刻介入 / Separate</text>
+<text x="505" y="102" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">先分开降温，再分别</text>
+<text x="505" y="120" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">1:1，别当众对质</text>
+<text x="195" y="205" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">放手 / Let it run</text>
+<text x="195" y="227" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">健康的辩论，别压制，</text>
+<text x="195" y="245" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">必要时只做计时与收口</text>
+<text x="505" y="205" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#c47040">私下点一句 / Name it</text>
+<text x="505" y="227" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">在变大前各敲一句，</text>
+<text x="505" y="245" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">别等它升温</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：两位资深工程师为"单体 vs 微服务"在 PR 评论和设计会上反复对线，措辞开始夹枪带棒（"你显然没读过那篇论文"）。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>你在会上直接拍板："就用微服务，别吵了。"——既压制了一场健康的技术辩论，又没处理已渗出的私人火药味。输的那位记住的不是技术结论，是"老板偏心"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（分两层处理）</div>
+<p><strong>任务层（保护它）：</strong>"这个分歧值得想清楚。两位各写半页方案，列 trade-off，周四我做 decider。在那之前都是开放辩论。"</p>
+<p><strong>关系层（私下降温）：</strong>会后分别找两人各一句："技术上你们怎么争我都欢迎。但刚才那句'你没读过论文'，是对人不对事了——下次对方案开火，别对人。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">诊断检查表（介入前问自己）</div>
+<ul class="checklist">
+<li>他们在争"哪个方案对"，还是在争"谁是对的人"？前者保护，后者降温。</li>
+<li>用词是"这个设计有问题"，还是"你这人总是"？代词从 it 滑向 you 就是警报。</li>
+<li>这是一次性的激烈讨论，还是同一对人第 N 次为不同小事开火？后者多半已是关系冲突。</li>
+<li>旁观的人是被激发（健康）还是开始站队、回避（中毒）？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把所有冲突一律压下去。</strong>没有任务冲突的团队不是和谐，是没人敢说真话。</li>
+<li><strong>用拍板代替决策机制。</strong>临场拍板省事，但每次都制造一个"输家"，下次没人愿公开表达异议。</li>
+<li><strong>只看声音大小，不看冲突性质。</strong>安静的关系冷战，比吵闹的技术辩论危险得多。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Patrick Lencioni,《The Five Dysfunctions of a Team》</strong>— "Fear of Conflict" 一节：区分 productive ideological conflict 与 destructive politics。<br><strong>Karen Jehn（学术研究, 1995）</strong>— task / process / relationship conflict 的三分法，任务冲突适度有益、关系冲突几乎总是有害的实证来源。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>别当裁判，当调解者：双方面谈的脚本
+<span class="en">Mediator, Not Judge — The Joint-Meeting Script</span></h2>
+<span class="tag">调解</span><span class="tag">双方面谈</span><span class="tag">立场 vs 利益</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">当事人解决不了来找你时，你的角色不是判谁对（裁判一定制造输家），而是帮他们越过各自的<strong>立场（position）</strong>，看见底下的<strong>利益（interest）</strong>。流程是：先各自单独谈，再合谈。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Separate the people from the problem. Focus on interests, not positions."</span>
+<span class="zh">"把人和问题分开。聚焦利益，而非立场。"</span>
+<span class="source">— Roger Fisher &amp; William Ury,《Getting to Yes》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：三方坐下来怎么开</div>
+<div class="scene">
+<div class="setup">情境：你的工程师和一位 PM 为"该不该插队做某需求"互不相让，分别来找过你，你决定开一次三方面谈。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 裁判式</div>
+<p>把两人叫进会议室，让他们当场各说一遍，然后你宣判："这次按 PM 的来。"——你解决了这一件事，但埋下两个隐患：输家不服，且两人下次还是会来找你裁。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 调解式脚本</div>
+<p><strong>开场设框：</strong>"今天我不是来判谁对。目标是你俩走出这间屋子时，对下一步有一个都能接受的方案。规则：说自己的观察和需要，别替对方下定义。"</p>
+<p><strong>复述利益（关键动作）：</strong>"我听到的是——你（工程师）在意别让技术债失控；你（PM）在意客户这周必须看到进展。这两件事真冲突吗，还是只是顺序问题？"</p>
+<p><strong>交还方案：</strong>"基于这两个需要，你们提一个方案，我来确认资源。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">双方面谈检查表</div>
+<ul class="checklist">
+<li>合谈前，我有没有先分别单独听一遍？（让情绪先在私下释放，别在三方现场爆）</li>
+<li>开场我有没有明确"我不是来判对错的"，把框架立好？</li>
+<li>我能不能用中立语言复述出双方各自的<strong>利益</strong>（而不是立场）？</li>
+<li>方案是他们提的，还是我替他们想的？（替他们想 = 又变回裁判）</li>
+<li>结束时有没有一个具体的、写下来的 next step 和复查时间？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>跳过单独谈，直接三方对质。</strong>带着未释放的情绪上桌，调解变互撕。</li>
+<li><strong>停在立场层。</strong>"他要 A，我要 B"——立场天然对立；利益常常并不对立，只是没人翻到底层。</li>
+<li><strong>自己忍不住给方案。</strong>你一给方案，就重新成了裁判，他们也不再练习自己解决。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+女性 manager 常被默认是天然的"和事佬 / 办公室妈妈"，调解被当成理所当然的情绪劳动——做了不加分，不做反被说"冷漠"。对策：把调解明确<strong>定义为 leadership 工作</strong>而非情分，必要时轮换 facilitator 角色；主持需强硬收口时，先用一句框定权威（"作为这件事的 owner，我来定规则"），压缩女性主导被贴"aggressive"标签的空间。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Roger Fisher &amp; William Ury,《Getting to Yes》</strong>— 原则式谈判四原则：人与问题分开、聚焦利益、创造多种选项、坚持客观标准。<br><strong>Camille Fournier,《The Manager's Path》</strong>（"Managing People / Conflict"）— manager 调解他人冲突的实操边界。</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>让他们自己解决：你不是传话筒
+<span class="en">Give It Back — You Are Not the Messenger</span></h2>
+<span class="tag">还给当事人</span><span class="tag">直接沟通</span><span class="tag">教练</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">默认动作是把冲突<strong>还给当事人</strong>。有人来跟你抱怨同事，你的第一句永远是："你直接跟他说了吗？"你越愿意当传话筒和裁判，团队越学不会自己处理冲突，你越被永久困在中间。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"At the heart of almost all chronic problems in our organizations lie crucial conversations — ones that we're either not holding or not holding well."</span>
+<span class="zh">"组织里几乎所有慢性问题的核心，都藏着一些关键对话——要么我们没有去谈，要么谈得很糟。"</span>
+<span class="source">— Patterson, Grenny 等,《Crucial Conversations》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：把球踢回去，但给他装备</div>
+<div class="scene">
+<div class="setup">情境：下属 A 来你 1:1 上抱怨同事 B 老是不回 PR、拖累他进度，语气里全是火。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 当传话筒</div>
+<p>"行，我去跟 B 说一下。"——B 觉得被告了状，A 学不会开口，下次还是绕过 B 直接找你。你成了团队所有摩擦的中转站。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 还回去 + 教练</div>
+<p><strong>先确认是否谈过：</strong>"听起来挺影响你。你直接跟 B 说过这件事对你的影响吗？"（多数答案是"没有"）</p>
+<p><strong>帮他准备开口：</strong>"那先想想怎么说。试试：'B，你的 review 我很需要——这周两个 PR 卡了三天，能不能约个固定时段？'对事、说影响、给方案。"</p>
+<p><strong>留台阶：</strong>"你先跟他谈。谈完还不行，我们再一起想下一步——必要时我帮你们一起坐下来，但不替你说。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：该还回去，还是该你出手？</div>
+<ul class="checklist">
+<li>当事人之间<strong>直接谈过</strong>了吗？没谈过 → 默认先还回去。</li>
+<li>这是能力问题（不会开口）还是意愿问题（不敢/不想）？前者教练，后者探因。</li>
+<li>把冲突还回去时，我有没有给他<strong>具体话术</strong>，而不是一句空洞的"你去沟通一下"？</li>
+<li>我有没有说清"还回去"不等于"不管了"——我仍是后盾？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>享受当中心节点。</strong>所有人都来找你会让你感觉被需要——但这是组织依赖症，不是影响力。</li>
+<li><strong>"还回去"变成甩锅。</strong>只说"你们自己解决"却不给工具、不留后盾，是逃避不是授权。</li>
+<li><strong>替缺席的一方辩护或定罪。</strong>B 不在场，你不替他认错也不替他开脱，只聚焦 A 能控制的下一步。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Patterson, Grenny, McMillan, Switzler,《Crucial Conversations》</strong>— 如何安全地谈高风险、高情绪、有分歧的话题。<br><strong>Kim Scott,《Radical Candor》</strong>— "go to the source"：拒绝替人传话与三角化（triangulation）的原则。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>升级原则：何时从"放手"切到"必须介入"
+<span class="en">Escalation — When to Switch From Hands-Off to Hands-On</span></h2>
+<span class="tag">升级</span><span class="tag">红线</span><span class="tag">Clean Escalation</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">"让他们自己解决"有边界。一旦触及<strong>价值观 / 骚扰 / 安全</strong>、反复调解无效、伤及第三方或交付、或双方<strong>权力严重不对等</strong>，你必须介入甚至上报。升级要"干净"——双方知情、两边事实都呈现，绝不背着一方动作。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Clean escalation: when two people can't agree, they go to the boss together and present both sides fairly — rather than racing to plead their case behind the other's back."</span>
+<span class="zh">"干净升级：两人谈不拢时，一起去找上级、公平地呈现双方观点——而不是抢着背着对方去告状。"</span>
+<span class="source">— Kim Scott,《Radical Candor》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">升级阶梯：从最轻到最重</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 290" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="20" width="620" height="42" rx="5" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<text x="56" y="40" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">① 当事人直接谈</text>
+<text x="56" y="56" font-family="Georgia" font-size="11" fill="#2a3a18">默认起点。你只提供话术与鼓励。</text>
+<rect x="40" y="72" width="620" height="42" rx="5" fill="#eef0e0" stroke="#7a8a4a" stroke-width="1.5"/>
+<text x="56" y="92" font-family="Georgia" font-size="13" font-weight="700" fill="#5a6a2a">② 你做教练（1:1）</text>
+<text x="56" y="108" font-family="Georgia" font-size="11" fill="#2a3a18">触发：谈过但卡住。帮其中一方准备对话。</text>
+<rect x="40" y="124" width="620" height="42" rx="5" fill="#f3e9d2" stroke="#a8702d" stroke-width="1.5"/>
+<text x="56" y="144" font-family="Georgia" font-size="13" font-weight="700" fill="#8a5a1d">③ 你做调解（三方面谈）</text>
+<text x="56" y="160" font-family="Georgia" font-size="11" fill="#5a3818">触发：双方善意但谈崩。用 Card 2 脚本。</text>
+<rect x="40" y="176" width="620" height="42" rx="5" fill="#f7e2cc" stroke="#c47040" stroke-width="1.5"/>
+<text x="56" y="196" font-family="Georgia" font-size="13" font-weight="700" fill="#a85a28">④ 你裁决并记录</text>
+<text x="56" y="212" font-family="Georgia" font-size="11" fill="#5a3818">触发：调解无果但必须有结论。说明依据，留书面。</text>
+<rect x="40" y="228" width="620" height="46" rx="5" fill="#f5d8d0" stroke="#b03a2a" stroke-width="2"/>
+<text x="56" y="248" font-family="Georgia" font-size="13" font-weight="700" fill="#a02818">⑤ 上报 HR / 上级（红线）</text>
+<text x="56" y="265" font-family="Georgia" font-size="11" fill="#7a2018">触发：骚扰 / 歧视 / 安全 / 持续贬低。立刻、干净地升级。</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：干净升级 vs 肮脏升级</div>
+<div class="scene">
+<div class="setup">情境：反复调解后，一方仍在会上持续贬低另一方，且出现了带性别色彩的言论。这已触及红线。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 肮脏升级 / 继续纵容</div>
+<p>要么装没看见、继续劝"你们自己消化"（纵容红线）；要么背着当事人私下跑去找 HR——对方毫不知情，事后反弹更大。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 干净升级脚本</div>
+<p>当面、对双方（或至少对被升级方）说清楚：<strong>"刚才那类言论已经超出技术分歧，涉及尊重底线。我要把这件事升级到 HR，原因是 X。我会如实呈现两边的说法，也会让你知道每一步。"</strong></p>
+<p>升级 = 透明地往上走，不是偷偷往后捅。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">必须升级的红线检查表</div>
+<ul class="checklist">
+<li>是否涉及骚扰、歧视、人身安全或法律风险？→ 任意一条命中，立刻上报，不再"放手"。</li>
+<li>是否同一对人、同一类问题<strong>反复</strong>调解仍无改善？（事不过三）</li>
+<li>冲突是否已外溢、伤及第三方或拖累团队交付？</li>
+<li>双方是否权力严重不对等（级别、人数、资历），弱势方不可能平等对话？</li>
+<li>升级时，我做到"双方知情 + 两边事实都带上"了吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"成熟 = 自己消化一切"当美德。</strong>红线问题上不升级，是失职，不是大度。</li>
+<li><strong>升级却把一方蒙在鼓里。</strong>肮脏升级会摧毁两个人对你的信任，比不升级更糟。</li>
+</ul>
+</div>
+<div class="female" style="margin-top:14px">
+<span class="female-label">Female Leader's Note</span>
+女性 manager 升级或强硬裁决时，更易被解读为"她搞不定自己的团队"（能力质疑），同样动作的男性却常被读作"果断"。对策：把<strong>客观触发条件</strong>讲在前面（"按公司行为准则，这类言论必须上报"），让动作挂靠规则而非你的情绪，压缩被归因为"情绪化 / 管不住人"的空间。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Kim Scott,《Radical Candor》</strong>— "clean escalation" 与拒绝三角化。<br><strong>Will Larson,《An Elegant Puzzle》</strong>— 何时把个人冲突升级为流程/组织问题，以及 manager 介入的成本权衡。</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 19 Action</h3>
+<p>本周做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>挑一个团队里当前低烧、还没爆的小冲突</strong>（A 在背后嘀咕 B 那种）。下次当事人来 vent 时，<strong>不要接过来解决</strong>，用 Card 3 的两步：先问"你直接跟他说了吗？"，再帮他把开口的第一句话<strong>逐字写出来</strong>（对事、说影响、给方案）。<br><br>事后记两行：<strong>(1) 他最终自己去谈了吗；(2) 我有没有忍住"我去说"的冲动</strong>。<br><br>反思题：你团队里有多少摩擦，是因为大家默认"找老板"比"直接谈"更安全？这暴露了什么安全感缺口？
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>深入思考</h3>
+<details><summary>在"以和为贵、讲面子"的高语境文化里，鼓励"直接对线"会不会水土不服？</summary><div>硬搬西方的 direct confrontation 可能让人当众丢面子、伤关系。但"对事不对人 + 私下先谈"恰恰是它的安全变体：不必公开辩论，可以一对一、给台阶、用书面。核心不变——任务分歧要有出口，关系火药要降温；变的只是渠道：更私下、更重 face-saving、更靠中间人铺垫。别把"含蓄"误读成"没有冲突"。</div></details>
+<details><summary>"让他们自己解决"会不会其实是一种特权视角，忽略了权力不对等？</summary><div>是真实盲点。让初级、少数群体或合同工去"直接找"说话有分量的对方，可能让弱势方独自担风险。所以 Card 4 把"权力严重不对等"列为升级触发。判断标准：双方能否在大致平等的安全感下对话？不能，就别甩"你们自己谈"，而由你 facilitate 或托底——把弱势方的部分风险接到自己身上。</div></details>
+<details><summary>纯远程 / 异步团队里，冲突信号更弱，怎么早发现？</summary><div>远程把"关系冷战"藏得更深：没有走廊脸色和会议室的沉默。信号转移到：PR 措辞变冷、@里夹刺、某两人只走公开频道不再私聊、会上一方突然不发言。对策是主动探针——1:1 里直接问"你和 X 最近合作顺吗"，并把决策辩论引到可见的书面渠道，让任务冲突有结构化出口，减少它转入暗处。</div></details>
+<details><summary>如果冲突一方是高绩效"明星"，另一方普通，该不该一碗水端平？</summary><div>最诚实的灰色地带。偏袒明星会腐蚀公平感（所有人都在看你怎么处理），最终赶走中坚；但假装绩效无差异也不真实。务实做法：对"行为底线"（尊重、不贬低）零差别执法，明星也不能越线；"贡献权重"可承认差异，但靠透明标准而非偏心。一旦团队认定"明星可以为所欲为"，你失去的是除明星外的所有人。</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 19 · 2026.06.09</footer>
+</div>
+</body>
+</html>
