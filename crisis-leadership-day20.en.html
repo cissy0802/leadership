@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 20: Leading Under Pressure</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:46px}
+.deepen h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1px;margin-bottom:14px;border-bottom:1px solid #c4a878;padding-bottom:8px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;padding:4px 0;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;padding:12px 18px;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details[open] summary{border-bottom:1px dashed #e6d9bf}
+.deepen .think{padding:12px 18px;font-size:0.93rem;color:#4a3a20}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 20 · 2026.06.10</div>
+<h1>Leading Under Pressure: Every Word You Say Is Amplified 10x</h1>
+<div class="meta"><span>Topic: Leading Under Pressure</span><span>·</span><span>4 Scenes</span></div>
+<div class="subtitle">"A healthy company culture encourages people to share bad news." — Ben Horowitz</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Your everyday management craft gets rewritten the moment pressure hits. A production incident, layoffs, a cancelled project, a collapse of trust — in these moments every word you say is amplified tenfold, and your team remembers it for life. A crisis doesn't test how smart you are; it tests <strong>your composure, honesty, and cadence</strong>. A leader who panics and dodges accountability turns a containable incident into long-term attrition. This week covers four scenes: communicating in the first hour of an incident, delivering layoffs and bad news, running a blameless postmortem that turns failure into an asset, and managing the aftershock — rebuilding trust while keeping yourself intact.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 01</div>
+<h2>The First Hour: Cadence Before Answers
+<span class="en">Communicate Rhythm, Not Conclusions</span></h2>
+<span class="tag">Crisis Comms</span><span class="tag">Incident Response</span><span class="tag">Transparency</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">In a crisis, what your team fears most isn't bad news — it's <strong>silence and uncertainty</strong>. In the first hour you don't need answers; you need to give three things: known facts, scope of impact, and the time of the next update.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"A healthy company culture encourages people to share bad news. A company that discusses its problems freely and openly can quickly solve them; a company that covers them up frustrates everyone involved."</span>
+<span class="source">— Ben Horowitz,《The Hard Thing About Hard Things》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: A P0 production incident — the payment API is timing out at scale. Your boss and your team are both asking "when will it be fixed?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>"Should be soon, we're looking into it." — Vague, no next sync point. Or: you go heads-down fixing and say nothing. Or, to reassure people, you over-promise: "It'll be back within 30 minutes" — and then miss it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p><strong>Structured external update (every ~25 min):</strong> "[Incident update 14:05] <strong>Symptom</strong>: ~30% of payment API requests timing out, blocking checkout. <strong>Cause</strong>: still being diagnosed, suspect DB connection pool exhaustion (unconfirmed). <strong>In progress</strong>: rolling back last deploy + scaling up. <strong>Next update: 14:30, with or without progress.</strong>"</p>
+<p><strong>Internal division of labor:</strong> "No blame right now, restore first. A, you check logs; B, you prep the rollback; I'll handle all external comms — you two focus on the fix, don't answer any chat, route everything to me."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">First-Hour Checklist</div>
+<ul class="checklist">
+<li>Does every update state a "next update time"?</li>
+<li>Have I clearly separated "confirmed facts" from "speculation"?</li>
+<li>Have I named a single external spokesperson so engineers aren't interrupted?</li>
+<li>Have I over-promised a recovery time I'm not sure of?</li>
+<li>Is my tone steady? (Emotion travels through text.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Note For Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Hiding bad news, delaying escalation.</strong> The later you say it, the fewer options remain and the more trust erodes.</li>
+<li><strong>Using words like "should be" or "probably soon."</strong> Vagueness is more anxiety-inducing than bad news.</li>
+<li><strong>No single information channel.</strong> Engineers chased across five chats fix slower, not faster.</li>
+<li><strong>Starting to assign blame mid-crisis.</strong> You instantly shut everyone's mouth and lose access to the truth.</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+Women leaders who stay calm in a crisis are often read as "cold, lacking empathy," yet showing concern gets read as "panicking, too emotional" — the double bind sharpens under pressure. The counter: use <strong>verb-first factual updates</strong> ("rolling back," "scaling up") so the cadence itself signals composure, rather than relying on tone to earn trust. A stream of facts is neutral — it leaves no room for the stereotype.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Exercise:</strong> Write yourself a "crisis update template" (4 lines: Symptom / Impact / In progress / Next update time) and save it in your notes for the next incident.<br><strong>Reflection:</strong> In your last crisis, how much of your team's anxiety came from the problem itself, and how much from your failure to update them in time?</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 02</div>
+<h2>Delivering Layoffs &amp; Bad News: Fast, Clear, With Dignity
+<span class="en">Don't Nibble</span></h2>
+<span class="tag">Layoffs</span><span class="tag">Bad News</span><span class="tag">Accountability</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">Bad news should be delivered <strong>all at once, with clear reasons, in person</strong>. News drip-fed in pieces destroys trust — and the people who stay care more about how you treat the people who leave than the leavers do.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"If you are going to eat shit, don't nibble."</span>
+<span class="zh">(Bad news and painful decisions should be made decisively and all at once — don't drip them out in batches.)</span>
+<span class="source">— Ben Horowitz,《The Hard Thing About Hard Things》("The Right Way to Lay People Off")</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: Two roles on your team are being cut. You have to face both "the person being let go" and "the people who stay."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>"Due to some external factors and a strategic realignment, the company has made some difficult decisions…" — corporate-speak, passive voice (who made the decision?), no eye contact. Or you let HR deliver it. Or you dress the layoff up as "a better opportunity for you."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ To the person being let go (in person, privately, clear within 5 min)</div>
+<p>"I have a hard message. Due to a shift in business direction, the company has decided to eliminate this role. <strong>Your position is affected; your last day is [date]</strong>. I want to be explicit: <strong>this is not a performance issue</strong> — it's a business decision. Your severance is [Y], and I'll fully support you with references and intros. Let's talk through next steps now."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ To the team that stays (same day, in person)</div>
+<p>"Today we lost A and B. This was my decision and the company's — <strong>not their fault</strong> — driven by a contraction in business direction. I know your biggest worry is 'is there a next round?' What I know right now is [Z], and I'll tell you the moment that changes. Now — ask me anything."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Pre-Announcement Checklist</div>
+<ul class="checklist">
+<li>Am I delivering this in person, or handing it to HR / a mass email?</li>
+<li>Did I explicitly say "this is not your fault," or gloss over it?</li>
+<li>Is it all said at once, or did I leave a "maybe another round" cloud hanging?</li>
+<li>Have I reserved time to answer questions and steady the people who stay?</li>
+<li>The severance and references I promised — can I actually deliver them?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Hiding behind passive voice and corporate-speak.</strong> "Decisions were made" — the team instantly senses you're dodging.</li>
+<li><strong>Packaging the layoff as "a better opportunity for you."</strong> It insults their intelligence and the gravity of the moment.</li>
+<li><strong>Caring only about the leavers, ignoring the survivors.</strong> Unaddressed fear and survivor guilt triggers a wave of attrition.</li>
+<li><strong>Falling apart yourself.</strong> Making the person you just laid off comfort you is the most ungrounded scene of all.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Exercise:</strong> Imagine you have to announce a piece of bad news tomorrow. Write three sentences — <strong>what it is, why, and what happens next</strong> — then delete every passive construction and buffer word.<br><strong>Reflection:</strong> Of all the bad news you've received, which delivery do you still remember (good or bad)? Which kind of leader do you want to be?</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 03</div>
+<h2>Blameless Postmortems: Attack the Problem, Not the Person
+<span class="en">Turn Failure Into an Asset</span></h2>
+<span class="tag">Postmortem</span><span class="tag">Psych Safety</span><span class="tag">Systems Thinking</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">The purpose of a postmortem is to <strong>fix the system, not find the culprit</strong>. The moment you start assigning blame, people will hide things next time — what you lose is the whole organization's ability to tell the truth.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Blameless postmortems are a tenet of SRE culture. You can't 'fix' people, but you can fix systems and processes to better support people making the right choices."</span>
+<span class="source">— Google,《Site Reliability Engineering》Ch.15 "Postmortem Culture"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Three-Part Structure of a Blameless Postmortem</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="40" width="200" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="250" y="40" width="200" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="480" y="40" width="200" height="120" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="120" y="68" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">1 · Timeline</text>
+<text x="120" y="92" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Timestamped facts</text>
+<text x="120" y="112" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">"what happened, when"</text>
+<text x="120" y="138" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">no "who erred"</text>
+<text x="350" y="68" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">2 · Factors</text>
+<text x="350" y="92" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">Ask 5 whys</text>
+<text x="350" y="112" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">which guardrails /</text>
+<text x="350" y="130" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">alerts / checks missing</text>
+<text x="580" y="68" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">3 · Action items</text>
+<text x="580" y="92" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">each has an owner</text>
+<text x="580" y="112" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">+ deadline</text>
+<text x="580" y="132" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">systemic, not "be careful"</text>
+<text x="232" y="105" text-anchor="middle" font-family="Georgia" font-size="20" fill="#a8702d">→</text>
+<text x="462" y="105" text-anchor="middle" font-family="Georgia" font-size="20" fill="#a8702d">→</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: An incident was caused by an engineer accidentally deleting a config. In the postmortem, everyone's eyes drift toward them.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>"Who ran this? This kind of rookie mistake can't happen again — everyone, pay more attention." — pins the individual, moralizes it; what the room learns is "next time, don't get caught."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>"Today we're not asking 'who.' We're asking <strong>'why does this system let a single slip cause this much damage?'</strong> If it were anyone in this room, at that hour, under that pressure — would they have made the same mistake? If yes, it's a system problem."</p>
+<p>"The timeline is laid out. Now look: why was there no <strong>confirmation step</strong> before deleting a config? Why did the alert fire 8 minutes late?" → Every output is a system improvement; not one is "be more careful."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist for a Solid Postmortem</div>
+<ul class="checklist">
+<li>Is there an objective, timestamped timeline (facts only)?</li>
+<li>Did root cause stop at "human error," or keep digging (the 5 whys)?</li>
+<li>Does each action item have an owner + deadline and is it systemic?</li>
+<li>Is the doc public and searchable by everyone (not locked in a corner)?</li>
+<li>Did any blaming language appear? There should be none.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>"Blameless" in words, sidelining the person in deeds.</strong> Once is enough — everyone sees it, and from then on they hide things.</li>
+<li><strong>Action items that say "be more careful."</strong> Not executable, not verifiable — same as writing nothing.</li>
+<li><strong>Only running postmortems after big incidents.</strong> Never reviewing near misses means forfeiting the cheapest learning there is.</li>
+<li><strong>The leader leading the blame.</strong> The tone you set is the team's ceiling.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Exercise:</strong> Find a recent small mistake (even one never reviewed) and write a 10-line mini-postmortem using the three-part structure, producing at least one systemic action item.<br><strong>Reflection:</strong> Does your team dare to volunteer "I screwed up" right now? If not, which past blame-session taught them to keep quiet?</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 04</div>
+<h2>Aftershock: Rebuild Trust, Keep Yourself Intact
+<span class="en">After the Crisis — Rebuild &amp; Self-Command</span></h2>
+<span class="tag">Aftermath</span><span class="tag">Survivors</span><span class="tag">Inner Order</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle In One Line</div>
+<div class="principle">The real test of a crisis comes <strong>afterward</strong>. Survivor panic, cracks in trust, your own exhaustion — handled badly, one crisis becomes long-term attrition. And remember: your composure is contagious, and so is your panic.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"You have power over your mind—not outside events. Realize this, and you will find strength."</span>
+<span class="source">— Marcus Aurelius,《Meditations》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: The first team weekly after layoffs / a major incident. The mood is heavy; no one speaks.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two common moves</div>
+<p>Pretending nothing happened and going straight into the project agenda; or the opposite — over-apologizing, spiraling in self-doubt, and dragging the whole team into your emotional whirlpool.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move</div>
+<p>"I know this past week was hard, and I won't pretend it didn't happen. A few <strong>facts</strong>: A and B leaving does not change our core goals; as of now I see no signal of further layoffs next quarter, and I'll say so the moment that changes. Today we'll decide just one thing — <strong>lower the priority on X so everyone can catch their breath.</strong>"</p>
+<p><strong>Afterward, privately:</strong> one-on-one with each key member, ask one question — "Are you okay? What do I need to do so you can settle in and do your work with peace of mind?"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Aftershock Checklist</div>
+<ul class="checklist">
+<li>Did I openly acknowledge that the crisis happened (rather than play it down)?</li>
+<li>Is the safety I'm offering grounded in facts, or an empty promise of "it won't happen again"?</li>
+<li>Did I check in one-on-one with the key people at high risk of leaving?</li>
+<li>Do I have a pressure outlet (mentor / peer / coach), instead of dumping anxiety on the team?</li>
+<li>Did I slow the cadence temporarily to give the team a recovery period?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Note For Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Sprinting "full speed" to catch up right after a crisis.</strong> A traumatized team grinding on buys you the next attrition wave.</li>
+<li><strong>Empty reassurance like "we'll be fine."</strong> The instant reality contradicts it, trust drops to zero.</li>
+<li><strong>Toughing it out until you break.</strong> A leader's loss of control rebounds onto the whole team.</li>
+<li><strong>Fixing the business but ignoring the people.</strong> System restored, morale not — that's not a recovery.</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+<strong>The "glass cliff":</strong> research by Ryan &amp; Haslam found that women and minorities are more likely to be appointed to leadership in crisis, downturn, and high-risk moments — where the odds of success are already low, and failure gets blamed on the individual. Spot it: when you're "entrusted with a big mission" to take over a mess, ask first — <strong>do I have the resources and authority to match, or am I just someone to hold accountable when it blows up?</strong> Before accepting, get the resource commitments in writing.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Exercise:</strong> Build yourself a "pressure-release list" — when a crisis hits, who you'll talk to and which action returns you to calm (a walk / writing it down / sleeping on it before replying). This week, confirm who that "person you can call" is.<br><strong>Reflection:</strong> After your last crisis, did your team grow tighter or start to leave? The difference lies in what you did afterward.</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 20 Action</h3>
+<p>Do one concrete thing this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Write two one-page templates:</strong><br><br>
+<strong>(1) Crisis update template</strong> (Card 1): four lines — Symptom / Impact / In progress / Next update time.<br>
+<strong>(2) Personal pressure-release list</strong> (Card 4): when crisis hits, who your "person to call" is and the one action that returns you to calm.<br><br>
+Keep both somewhere you can open instantly. A crisis never books an appointment — it tests the reflexes you prepared <strong>in advance</strong>, not your in-the-moment cleverness.
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Go Deeper</h3>
+<details>
+<summary>Is there a ceiling on "transparency" in crisis comms? What should the team know, what should you filter?</summary>
+<div class="think">Transparency doesn't mean dumping all your raw anxiety on the team. The rule: share "confirmed facts" and "what we're doing," filter out "unconfirmed speculation" and "your own panic." The team needs actionable information and a steady cadence, not your real-time emotional stream. But filtering isn't concealment — once a piece of bad news is confirmed, delaying it only devalues trust. The test: will this information help them make a better decision? If yes, say it; if it only adds anxiety they can't act on, process it first and deliver it as a conclusion.</div>
+</details>
+<details>
+<summary>In a big-company blame culture, can a single manager build local blamelessness within their own team?</summary>
+<div class="think">Yes, but with limits. You control the language in your postmortems, how action items are written, and the promise that "whoever erred, it absolutely won't affect their performance review" — enough to build a microclimate inside the team. The limit: when an incident escalates cross-team and must be reported upward, the upper layers' blame culture can pierce your protection. Here the manager's role is "firewall" — absorb upward, protect downward, keep the blame outside the team's door. But this carries a political cost; you need enough credibility reserve to withstand it.</div>
+</details>
+<details>
+<summary>"Wartime" command-and-control works in a crisis — but how do you switch back to peacetime afterward?</summary>
+<div class="think">Horowitz's wartime/peacetime distinction reminds us: centralizing, breaking protocol, and compressing debate are necessary in a crisis, but they leave aftereffects — the team gets used to being directed, and autonomy atrophies. The key to switching back is to declare "the crisis is over" explicitly: say in a meeting, "we're returning to normal cadence, decision rights go back to you," and proactively give away the first decision. The real danger is mistaking temporary wartime for a permanent personality — many leaders can't go back, because centralizing becomes addictive and the team has learned to wait for orders.</div>
+</details>
+<details>
+<summary>East Asian norms of "report good news, not bad" and "saving face for superiors" vs. blameless / share bad news — how to reconcile?</summary>
+<div class="think">Transplanting Western blameless scripts directly can fail in a face-conscious culture — publicly "asking why" can be experienced as humiliation. The path to reconcile: take "attack the problem, not the person" even further — name no one in the review, speak only of systems and the timeline; privately reassure the individual ("this review won't affect you") before the meeting; use "we" not "you." Cultural adaptation isn't abandoning blamelessness — it's protecting the individual's face more carefully so the cost of telling the truth stays low. The leader publicly owning their own mistakes is the fastest key to unlocking that culture.</div>
+</details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 20 · 2026.06.10</footer>
+</div>
+</body>
+</html>

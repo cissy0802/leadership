@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 20：高压时刻领导</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:46px}
+.deepen h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1px;margin-bottom:14px;border-bottom:1px solid #c4a878;padding-bottom:8px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;padding:4px 0;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;padding:12px 18px;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details[open] summary{border-bottom:1px dashed #e6d9bf}
+.deepen .think{padding:12px 18px;font-size:0.93rem;color:#4a3a20}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 20 · 2026.06.10</div>
+<h1>高压时刻领导：危机里你说的每句话都被放大十倍</h1>
+<div class="meta"><span>主题：Leading Under Pressure</span><span>·</span><span>4 个场景</span></div>
+<div class="subtitle">"A healthy company culture encourages people to share bad news." — Ben Horowitz</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>平时的管理工艺，到了高压时刻全部要重写。线上事故、裁员、项目被砍、团队信任崩塌——这些时刻你说的每句话会被放大十倍，团队记一辈子。危机不考验你的聪明，<strong>考验你的镇定、诚实和节奏</strong>。一个慌乱、回避担当的 leader，会把一次本可控的事故拖成长期的人才流失。本周拆四个场景：事故第一小时的沟通、宣布裁员/坏消息、blameless 复盘把失败变学习、以及余震期怎么重建信任并守住自己。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 01</div>
+<h2>危机第一小时：先给节奏，不急着给答案
+<span class="en">The First Hour — Cadence Before Answers</span></h2>
+<span class="tag">危机沟通</span><span class="tag">事故响应</span><span class="tag">透明度</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">危机里团队最怕的不是坏消息，是<strong>沉默和不确定</strong>。第一小时你不需要有答案，你需要给出三样东西：已知事实、影响范围、下次更新时间。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"A healthy company culture encourages people to share bad news. A company that discusses its problems freely and openly can quickly solve them; a company that covers them up frustrates everyone involved."</span>
+<span class="zh">"健康的公司文化鼓励人们分享坏消息。能公开自由讨论问题的公司能迅速解决它们；掩盖问题的公司只会让所有人受挫。"</span>
+<span class="source">— Ben Horowitz,《The Hard Thing About Hard Things》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：线上 P0 事故，支付接口大面积超时。老板和团队都在追问"什么时候能修好"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>"应该快了，我们正在看。" —— 模糊、没有下次同步点；或者自己闷头修不对外说一个字；或者为了安抚而过度承诺"半小时内一定恢复"，结果打脸。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p><strong>对外结构化更新（每 25 分钟一条）：</strong>「【事故更新 14:05】<strong>现象</strong>：支付接口约 30% 请求超时，影响下单。<strong>原因</strong>：仍在定位，初步怀疑 DB 连接池耗尽（未确认）。<strong>正在做</strong>：回滚上次发布 + 扩容。<strong>下次更新：14:30，无论有无进展。</strong>」</p>
+<p><strong>对内分工：</strong>"现在不追责，先恢复。A 你查日志，B 你准备回滚，我对外沟通——你们专心修，别回任何群消息，所有对外我来。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">第一小时检查表</div>
+<ul class="checklist">
+<li>我的每条更新有没有写明"下次更新时间"？</li>
+<li>我有没有把"已确认的事实"和"猜测"分开标注？</li>
+<li>我有没有指定单一对外出口，让工程师免于被各方追问？</li>
+<li>我有没有过度承诺一个自己并不确定的恢复时间？</li>
+<li>我打字的语气是不是稳的？（情绪会透过文字传染）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>报喜不报忧、拖延上报。</strong>坏消息越晚说，可选项越少，信任损耗越大。</li>
+<li><strong>用"应该""可能快了"这种词。</strong>模糊比坏消息更让人焦虑。</li>
+<li><strong>没设单一信息出口。</strong>工程师边修边被五个群追问，修复反而更慢。</li>
+<li><strong>危机中开始追责。</strong>当场关闭了所有人说真话的口，你会拿不到真实信息。</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+女性领导者在危机中表现冷静常被读作"冷漠、缺乏同理心"，表现关切又被读作"慌了、太情绪化"——双重 bind 在高压下更尖锐。对策：用<strong>动词开头的事实更新</strong>（"正在回滚""已扩容"）让节奏本身传递镇定，而不是靠语气去争取信任。事实流是中性的，它不给刻板印象留下解读空间。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>习作：</strong>给自己写一个"危机更新模板"（4 行：现象 / 影响 / 正在做 / 下次更新时间），存进备忘录，下次事故直接套用。<br><strong>思考：</strong>你上一次危机里，团队的焦虑有多少来自问题本身，多少其实来自你没有及时同步？</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 02</div>
+<h2>宣布裁员 / 坏消息：快、清楚、有尊严
+<span class="en">Delivering Layoffs &amp; Bad News</span></h2>
+<span class="tag">裁员</span><span class="tag">坏消息</span><span class="tag">担当</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">坏消息要<strong>一次讲完、讲清原因、亲自传达</strong>。挤牙膏式的坏消息摧毁信任——留下来的人比离开的人更在意你怎么对待离开的人。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"If you are going to eat shit, don't nibble."</span>
+<span class="zh">"如果你注定要吃下这口苦，就别一点点啃——一口吞下去。"（坏消息和痛苦的决定，要果断、一次性做完，别分批拖延。）</span>
+<span class="source">— Ben Horowitz,《The Hard Thing About Hard Things》（"The Right Way to Lay People Off"）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：团队要砍掉 2 个岗位，你需要分别面对"被裁者"和"留下来的人"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>"由于一些外部原因和战略调整，公司做出了一些艰难的决定……" —— 官腔、被动语态（谁做的决定？）、不敢看人；或让 HR 代为宣布；或假装这是"对你更好的机会"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 对被裁者（亲自、单独、5 分钟内说清）</div>
+<p>"我有个艰难的消息。由于业务方向调整，公司决定不再保留这个岗位，<strong>你的职位受影响，最后工作日是 X 月 X 日</strong>。我要明确说：<strong>这不是你绩效的问题</strong>，是业务决定。补偿是 Y，推荐信和内推我会全力帮你。我们现在谈接下来的安排。"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 对留下来的团队（当天、面对面）</div>
+<p>"今天我们失去了 A 和 B。这是我和公司的决定，<strong>不是他们的错</strong>，原因是业务方向收缩。我知道你们最担心的是'还有没有下一轮'——目前我所知道的是 Z，一有变化我第一时间告诉你们。现在，你们可以问我任何问题。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">宣布前检查表</div>
+<ul class="checklist">
+<li>我是亲自传达，还是甩给了 HR / 一封群发邮件？</li>
+<li>我有没有明确说"这不是你的错"，还是含糊带过？</li>
+<li>是一次说完，还是留了"可能还有下一轮"的悬念折磨大家？</li>
+<li>我有没有为留下的人预留答疑、稳定军心的时间？</li>
+<li>补偿、推荐这些承诺，我是否真的能兑现？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>用被动语态和官腔回避担当。</strong>"做出了一些决定"——团队会立刻察觉你在推卸。</li>
+<li><strong>把裁员包装成"对你更好的机会"。</strong>侮辱对方智商，也侮辱了这件事的严肃性。</li>
+<li><strong>只顾被裁者，忽略幸存者。</strong>留下的人的恐慌和负罪感（survivor guilt）无人安抚，会引发后续离职潮。</li>
+<li><strong>自己情绪崩溃。</strong>让被裁的人反过来安慰你，是最失重的场面。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>习作：</strong>假设明天要你宣布一个坏消息，先写下三句话——<strong>是什么、为什么、接下来怎么办</strong>——然后删掉所有被动语态和缓冲废话。<br><strong>思考：</strong>你过去接到的坏消息里，哪一种传达方式让你至今记得（无论好坏）？你想成为哪一种 leader？</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 03</div>
+<h2>Blameless Postmortem：对事不对人，把失败变资产
+<span class="en">Blameless Postmortems</span></h2>
+<span class="tag">复盘</span><span class="tag">心理安全</span><span class="tag">系统思维</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">复盘的目的是<strong>修系统，不是找罪人</strong>。一旦开始追责，下次大家就会瞒报——你失去的是整个组织"说真话"的能力。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Blameless postmortems are a tenet of SRE culture. You can't 'fix' people, but you can fix systems and processes to better support people making the right choices."</span>
+<span class="zh">"无指责复盘是 SRE 文化的核心信条。你无法'修好'人，但你可以修系统和流程，让人更容易做出正确的选择。"</span>
+<span class="source">— Google,《Site Reliability Engineering》Ch.15 "Postmortem Culture"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Blameless 复盘的三段结构</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="40" width="200" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="250" y="40" width="200" height="120" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="480" y="40" width="200" height="120" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="120" y="68" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">1 · 客观时间线</text>
+<text x="120" y="92" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">带时间戳的事实</text>
+<text x="120" y="112" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">"几点发生了什么"</text>
+<text x="120" y="138" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">不写"谁犯错"</text>
+<text x="350" y="68" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">2 · 贡献因素</text>
+<text x="350" y="92" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">连问 5 个为什么</text>
+<text x="350" y="112" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">缺了哪些护栏 /</text>
+<text x="350" y="130" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">告警 / 二次确认</text>
+<text x="580" y="68" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">3 · 行动项</text>
+<text x="580" y="92" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">每项有 owner</text>
+<text x="580" y="112" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">+ deadline</text>
+<text x="580" y="132" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">系统改进，非"以后小心"</text>
+<text x="232" y="105" text-anchor="middle" font-family="Georgia" font-size="20" fill="#a8702d">→</text>
+<text x="462" y="105" text-anchor="middle" font-family="Georgia" font-size="20" fill="#a8702d">→</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一次事故是某工程师误删了配置导致。复盘会上，大家的眼神都飘向他。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>"这次是谁操作的？这种低级错误以后不能再犯了，大家都长点心。" —— 锁定个人、道德化，全场学到的是"下次别让人发现"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>"我们今天不问'谁'，问<strong>'为什么这个系统允许一次手滑就造成这么大影响'</strong>。换成在座任何一个人，在那个时间、那个压力下，会不会也犯同样的错？如果会，那它就是系统问题。"</p>
+<p>"时间线已经拉出来了。现在看：删配置这一步本该有的<strong>二次确认</strong>为什么没有？告警为什么晚了 8 分钟？" → 产出的全是系统改进，没有一条是"以后更仔细"。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">一份合格 Postmortem 的检查表</div>
+<ul class="checklist">
+<li>有没有客观时间线（带时间戳，只陈述事实）？</li>
+<li>根因有没有停在"人为失误"就不挖了？（继续追问 5 个为什么）</li>
+<li>每个 action item 有没有 owner + deadline，且是系统性的？</li>
+<li>文档是否公开、全员可检索（而不是锁在某个角落）？</li>
+<li>整场有没有出现指责性语言？一句都不该有。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>嘴上 blameless，行动上当事人被边缘化、影响绩效。</strong>一次就够，全员看在眼里，从此瞒报。</li>
+<li><strong>action item 写"以后更仔细"。</strong>不可执行、不可验证，等于没写。</li>
+<li><strong>只在大事故后复盘。</strong>小信号、险些出事（near miss）从不复盘，等于放弃最便宜的学习。</li>
+<li><strong>领导带头追责。</strong>你定的调子就是团队的天花板。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>习作：</strong>找最近一次小失误（哪怕当时没复盘），用上面的三段结构补一份 10 行 mini-postmortem，至少产出 1 个系统性 action item。<br><strong>思考：</strong>你的团队现在敢不敢主动说"我搞砸了"？如果不敢，是哪一次追责教会了他们闭嘴？</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">SCENE 04</div>
+<h2>余震管理：重建信任，守住你自己
+<span class="en">After the Crisis — Rebuild &amp; Self-Command</span></h2>
+<span class="tag">危机善后</span><span class="tag">幸存者</span><span class="tag">内心秩序</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">危机的真正考验在<strong>事后</strong>。幸存者的恐慌、信任的裂痕、你自己的耗竭——处理不好，一次危机会变成长期的人才流失。同时记住：你的镇定会传染，你的慌乱也会。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"You have power over your mind—not outside events. Realize this, and you will find strength."</span>
+<span class="zh">"你能掌控的是你的心智，而非外部事件。认清这一点，你便找到了力量。"</span>
+<span class="source">— Marcus Aurelius,《沉思录》（Meditations）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：裁员 / 大事故之后，第一次团队周会。气氛凝重，没人说话。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种常见做法</div>
+<p>装作什么都没发生，直接进入项目议程；或者反过来，过度道歉、自我怀疑，把整个团队拖进情绪漩涡。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>"我知道过去这周很难，我不会假装它没发生。给大家几个<strong>事实</strong>：A 和 B 的离开不影响我们的核心目标；下一季度我目前没有看到进一步裁员的信号，有变化我第一时间说。今天我们只定一件事——<strong>把 X 的优先级降下来，让大家先喘口气。</strong>"</p>
+<p><strong>会后私下：</strong>对每个核心成员一对一，问一句"你还好吗？需要我做什么，能让你安心留下来做事？"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">余震期检查表</div>
+<ul class="checklist">
+<li>我有没有公开承认危机发生过（而不是装没事）？</li>
+<li>我给的安全感是基于事实，还是空头保证"不会再有了"？</li>
+<li>我有没有单独 check-in 那些高风险流失的骨干？</li>
+<li>我自己有没有一个卸压出口（导师 / 同级 / 教练），而不是把焦虑倒给团队？</li>
+<li>我有没有把节奏暂时调慢，给团队一个恢复期？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>危机后立刻"全速冲刺"补进度。</strong>团队带着创伤硬扛，换来后续的离职潮。</li>
+<li><strong>用"我们会没事的"这种空保证。</strong>一旦被现实打脸，信任直接归零。</li>
+<li><strong>自己硬撑到崩溃。</strong>领导的情绪失控会反噬整个团队。</li>
+<li><strong>只盯业务恢复，忽略人的恢复。</strong>系统恢复了，人心没恢复，等于没恢复。</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+<strong>"玻璃悬崖"（glass cliff）</strong>：Ryan &amp; Haslam 的研究发现，女性和少数族裔更容易在危机、衰退、高风险时刻被推上领导位——成功概率本就低，一旦失败又被归咎于个人能力。识别它：当你被"委以重任"接手一个烂摊子时，先问清楚——<strong>我拿到了相应的资源和授权吗？还是只是需要一个出事时可以问责的人？</strong>接下之前，把资源承诺白纸黑字写下来。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>习作：</strong>给自己建一个"卸压清单"——危机来时你会找谁说话、做哪个动作让自己回到镇定（散步 / 写下来 / 睡一觉再回邮件）。本周先确认那个"可以打电话的人"是谁。<br><strong>思考：</strong>上一次危机之后，你的团队是更紧密了，还是开始流失？差别就在你事后做了什么。</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 20 Action</h3>
+<p>本周做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>写两份模板，各占一页：</strong><br><br>
+<strong>(1) 危机更新模板</strong>（Card 1）：四行——现象 / 影响 / 正在做 / 下次更新时间。<br>
+<strong>(2) 个人卸压清单</strong>（Card 4）：危机来临时，你的"可以打电话的人"是谁、你让自己回到镇定的那个动作是什么。<br><br>
+两份都存进随手能打开的地方。危机不会预约——它考验的是你<strong>提前</strong>准备好的反射，而不是临场的聪明。
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>深入思考</h3>
+<details>
+<summary>危机沟通的"透明度"有上限吗？什么该让团队知道，什么该过滤？</summary>
+<div class="think">透明不等于把所有原始焦虑都倒给团队。原则：分享"已确认的事实"和"我们正在做什么"，过滤掉"尚未坐实的猜测"和"你自己的恐慌"。团队需要的是可据以行动的信息和稳定的节奏，不是你的实时情绪流。但过滤不等于隐瞒——一旦某个坏消息确定了，拖延只会让信任贬值。判准：这条信息能帮他们做更好的决定吗？能就说；只会徒增焦虑且无法行动，就先消化再以结论形式给出。</div>
+</details>
+<details>
+<summary>大公司追责文化盛行，单个 manager 能在自己团队内建立局部 blameless 吗？</summary>
+<div class="think">能，但有边界。你可以控制复盘会的语言、action item 的写法、以及"谁犯错绝不影响其绩效"这一承诺——这些足以在团队内部建立小气候。边界在于：当事故上升到跨团队、需要对上级汇报时，上层的追责文化可能穿透你的保护。这时 manager 的角色是"防火墙"——对上承担、对下保护，把指责挡在团队门外。但这有政治成本，你需要足够的信用储备才扛得住。</div>
+</details>
+<details>
+<summary>"wartime"强硬集权的领导风格危机里有效，危机过去后怎么切回 peacetime？</summary>
+<div class="think">Horowitz 的 wartime/peacetime 区分提醒我们：危机里集权、违反流程、压缩讨论是必要的，但它会留下后遗症——团队习惯了被指挥，自主性萎缩。切回的关键是显式宣告"危机结束了"：在某次会上明确说"我们回到正常节奏，决策权交还给你们"，并主动把第一个决定让出去。最危险的是把临时的 wartime 当成了永久人格——很多 leader 危机后回不去，因为集权让自己上瘾，团队也学会了等指令。</div>
+</details>
+<details>
+<summary>东亚职场"报喜不报忧""为尊者讳"的传统，和 blameless / share bad news 如何调和？</summary>
+<div class="think">直接移植西方 blameless 话术，在面子文化里可能水土不服——公开"追问为什么"会被当事人体验为当众羞辱。调和路径：把"对事不对人"做得更彻底，复盘时完全不点名、只说系统和时间线；私下先给当事人定心丸（"这次复盘不会影响你"）再开会；用"我们"而非"你"。文化适配不是放弃 blameless，而是更小心地保护当事人的面子，让说真话的成本足够低。leader 带头自曝自己的失误，是打开这个文化最快的钥匙。</div>
+</details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 20 · 2026.06.10</footer>
+</div>
+</body>
+</html>
