@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 24: Envy & Comparison</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:46px}
+.deepen h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1px;margin-bottom:14px;border-bottom:1px solid #c4a878;padding-bottom:8px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;padding:4px 0;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;padding:12px 18px;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details[open] summary{border-bottom:1px dashed #e6d9bf}
+.deepen .think{padding:12px 18px;font-size:0.93rem;color:#4a3a20}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888;margin-top:40px;border-top:1px solid #c4a878}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 24 · 2026.06.14</div>
+<h1>Envy &amp; Comparison: Decode the Sting Into Intel, Not Poison</h1>
+<div class="meta"><span>Topic: Envy &amp; Comparison</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Beggars do not envy millionaires, though of course they will envy other beggars who are more successful." — Bertrand Russell</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> the sinking sting when a peer is promoted ahead of you is not a character flaw — it's an <strong>ancient targeting system</strong> doing its job, and it locks specifically onto "people who should be just like me." Suppressing it doesn't work; indulging it turns you into the person who quietly disparages others. This week is no "be happy for them" sermon. Instead, treat envy as intel to be decoded: it points precisely at what you actually want but have never said out loud. Four principles: see why envy targets peers, translate it into an action signal, deliberately reset your reference frame, and train mudita (sympathetic joy) — a muscle you can build.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Envy Targets Your Equals, Not Your Betters
+<span class="en">First, See Its Targeting System</span></h2>
+<span class="tag">Human Mechanism</span><span class="tag">Peer Comparison</span><span class="tag">Name It First</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">A peer getting promoted stings more than the CEO's eight-figure package — not because you're petty, but because envy only fires at people in your own weight class. Acknowledge this mechanism, and you stop misreading "I'm envious" as "I'm a bad person" — which would trap you in a second layer of self-attack.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"We envy those who are near us in time, place, age, and reputation... for it is with these that we are in competition. Hence the saying, 'Kin can feel envy too.'"</span>
+<span class="zh">Envy is felt toward those close to us — in time, place, age, standing — precisely because that is where competition lives.</span>
+<span class="source">— Aristotle, <em>Rhetoric</em>, Book II, ch. 10</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene Demo</div>
+<div class="scene">
+<div class="setup">Setup: BigCat and same-level TLM "Wang" are nominated together for senior manager. Wang clears the bar; BigCat is bumped to next cycle.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common reaction (malicious envy takes over)</div>
+<p>You start poking holes in Wang's promotion — privately, then over drinks: "He just has slick decks and manages up well." Then you quietly distance yourself and get less cooperative. <strong>You've converted the sting into disparagement</strong> — three minutes of relief, at the cost of your judgment and reputation.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The fix (name it, then locate it)</div>
+<p>Say the full sentence to yourself, privately: "<strong>I'm envious of Wang, and it hurts this much precisely because he's my reference point.</strong>" Once named, the sting turns from "diffuse irritation" into "a thing I can work on." Then locate it: is it the title, the bigger scope he got, or the boss praising him in public? Break the vague pain into specific items — that's the entry point for the decoding in Card 2.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Honest Self-Audit (when envy flares)</div>
+<ul class="checklist">
+<li>Is my target someone in my exact "weight class"? (That just means the mechanism is working — not that I've turned bad.)</li>
+<li>Have I slipped into a second layer of harm — attacking myself for "even being envious"?</li>
+<li>Do I want to pull the other person down, or pull myself up? (This fork decides everything.)</li>
+<li>If a total stranger outside the company got promoted, would it hurt this much? If not → the pain is about my reference frame, not the event.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Denial.</strong> "I'm not envious, I just think the calibration was unfair." Unnamed envy drives your behavior from behind — far more dangerous than admitting it.</li>
+<li><strong>Second-layer self-attack.</strong> Escalating "I'm envious" into "I'm a small-minded person," then burning more energy on self-flagellation than the envy itself cost.</li>
+<li><strong>Performing grace on the spot.</strong> Saying "I'm so happy for you" while your body language is rigid — the mixed signal the other person receives is worse.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+The "tiara syndrome" (Sandberg, citing Frohlinger in <em>Lean In</em>): women more often quietly do great work and <strong>wait to be noticed</strong>, while the peer who self-advocates gets seen and promoted first. If you keep envying peers who "rise faster despite working less hard than me," don't attribute it solely to unfairness — also check one controllable variable: have I made my output and my promotion ambition clearly visible to the decision-makers? Here, envy is a reminder: visibility is part of the job.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Aristotle, <em>Rhetoric</em>, Book II, ch. 10</strong> — the earliest systematic account of envy targeting "those near us."<br><strong>Bertrand Russell, <em>The Conquest of Happiness</em>, ch. 6 "Envy"</strong> — defines envy as a disease of comparison, not greed.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Envy Is Intel, Not Poison: Watch Which Exit It Takes
+<span class="en">Benign vs. Malicious Envy</span></h2>
+<span class="tag">Benign vs. Malicious</span><span class="tag">Signal Decoding</span><span class="tag">Move Up, Not Pull Down</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Envy itself is neutral energy; poison or fuel depends on the exit. <strong>Malicious envy</strong> wants to pull the other person down; <strong>benign envy</strong> wants to pull yourself up. Same force — which exit you steer it toward decides whether it corrodes you or drives you.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Benign envy is related to a moving-up motivation, whereas malicious envy is related to a pulling-down motivation."</span>
+<span class="zh">Benign envy is tied to a "move up to their level" motivation; malicious envy is tied to a "pull them down" motivation.</span>
+<span class="source">— van de Ven, Zeelenberg &amp; Pieters, "Leveling Up and Down," <em>Emotion</em> (2009)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Two Envies: Same Energy, Two Exits</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="195" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="195" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">✗ Malicious · Pull Down</text>
+<text x="35" y="80" font-family="Georgia" font-size="12" fill="#5a3818">· Focus on them: "why him?"</text>
+<text x="35" y="104" font-family="Georgia" font-size="12" fill="#5a3818">· Poke holes, spread gossip</text>
+<text x="35" y="128" font-family="Georgia" font-size="12" fill="#5a3818">· Snipe in reviews, block them</text>
+<text x="35" y="152" font-family="Georgia" font-size="12" fill="#5a3818">· Result: they're fine, you're not</text>
+<text x="35" y="176" font-family="Georgia" font-size="12" fill="#5a3818">· Energy burned, you don't move</text>
+<text x="35" y="200" font-family="Georgia" font-size="12" fill="#5a3818">· More you dwell, more it hurts</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">✓ Benign · Move Up</text>
+<text x="375" y="80" font-family="Georgia" font-size="12" fill="#2a3a18">· Focus on you: "I want X"</text>
+<text x="375" y="104" font-family="Georgia" font-size="12" fill="#2a3a18">· Name the one thing you envy</text>
+<text x="375" y="128" font-family="Georgia" font-size="12" fill="#2a3a18">· Ask them "how did you do it?"</text>
+<text x="375" y="152" font-family="Georgia" font-size="12" fill="#2a3a18">· Turn it into a this-week action</text>
+<text x="375" y="176" font-family="Georgia" font-size="12" fill="#2a3a18">· Result: the gap becomes a map</text>
+<text x="375" y="200" font-family="Georgia" font-size="12" fill="#2a3a18">· Energy becomes fuel, you move</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene Demo: Translate Envy Into "I Want X"</div>
+<div class="scene">
+<div class="setup">Setup: after Wang's promotion, BigCat keeps replaying it, even at bedtime.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Letting it stay an emotion</div>
+<p>"It's unfair / he just got lucky / maybe I'm not good enough" — these are all closed loops. They circle and drain you while <strong>producing zero next steps</strong>. This is the signature language of the malicious exit.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Three-step decode (emotion → intel → action)</div>
+<p><strong>① Name:</strong> "I'm envious." <strong>② Decode:</strong> "What I actually envy isn't the title — it's that he got that high-visibility cross-team workstream." <strong>③ Convert to action:</strong> "So next week I'll tell my boss: in the next planning I want to own a cross-team line — that's the missing piece in my promotion case."</p>
+<p>Here envy does the one useful thing it can: <strong>it tells you precisely what you want but have never gone after.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Decode Checklist (turn the sting into intel)</div>
+<ul class="checklist">
+<li>What is the one specific thing I envy? (title / scope / boss's recognition / pay / autonomy — force yourself to pick the sharpest one)</li>
+<li>Is this something I truly want, or only because "others have it, so I should too"? (See Card 3)</li>
+<li>If it's truly mine to want, what's the next action to get it? (Must be doable this week.)</li>
+<li>Is there a concrete skill in this person I could ask them to teach me?</li>
+<li>Have I mistaken "decoding" for "finding fault with them"? That's the malicious exit — stop immediately.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Stopping at "it's unfair."</strong> Even if it truly is unfair, stopping here only hurts you; decode first, then decide separately whether to advocate for fairness (a different task).</li>
+<li><strong>Decoding into an action list, then not acting.</strong> "Figuring it out" isn't change; the envy comes back unchanged.</li>
+<li><strong>Envying something you don't actually want.</strong> Many people suffer for months over a title they never aspired to — that's not benign envy, it's hijacked desire.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>van de Ven, Zeelenberg &amp; Pieters, "Leveling Up and Down," <em>Emotion</em> (2009)</strong> — the empirical distinction between benign and malicious envy.<br><strong>Joseph Epstein, <em>Envy</em> (2003)</strong> — "Of the seven deadly sins, only envy is no fun at all." It doesn't even give you a moment's pleasure — all the more reason to convert it early.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Reset Your Reference Frame on Purpose
+<span class="en">The Cheapest Lever to Reclaim Emotional Sovereignty</span></h2>
+<span class="tag">Reference Frame</span><span class="tag">Social Comparison</span><span class="tag">Mimetic Desire</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">The intensity of envy doesn't depend on your absolute situation — it depends on whom you pick as your reference frame. The big company hands you a default coordinate system ("everyone at my level + the most dazzling people on Blind") — a system optimized for the rat race, where someone is always above you. <strong>Swapping it out is the cheapest lever you have.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Beggars do not envy millionaires, though of course they will envy other beggars who are more successful."</span>
+<span class="zh">A beggar won't envy a millionaire, but he will surely envy a beggar who collects more than he does.</span>
+<span class="source">— Bertrand Russell, <em>The Conquest of Happiness</em>, ch. 6 "Envy"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene Demo: Audit and Replace Your Reference Frame</div>
+<div class="scene">
+<div class="setup">Setup: BigCat habitually scrolls levels.fyi, Blind, and LinkedIn, seeing classmates who are already staff or already run teams of dozens — and stays chronically dissatisfied.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The default coordinate (optimized for discontent)</div>
+<p>Using "the fastest-rising person at my level in the whole company" as the yardstick. This yardstick guarantees you stay behind — because the reference target auto-updates to the next stronger person. <strong>You're racing a shadow that keeps moving up.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Deliberately reset to three coordinates</div>
+<p><strong>Compare vertically:</strong> against yourself three years ago — back when you couldn't even run this team. <strong>Narrow the horizontal:</strong> from "everyone at my level" down to "three to five people I genuinely respect and whose full picture I actually know." <strong>Exit the comparison feeds:</strong> set Blind and levels.fyi to require opening on purpose, not default doomscrolling. Then ask: do I want that title because I truly want it, <strong>or because everyone else wants it?</strong> Many career desires are borrowed.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Reference-Frame Audit</div>
+<ul class="checklist">
+<li>Whom am I using as a yardstick right now? Do I know their full picture, or only their highlight reel?</li>
+<li>Is my yardstick fixed, or does it auto-update to "the next stronger person"? (The latter is a perpetual trap.)</li>
+<li>Which information channels keep feeding me comparison? Which can be set to "open on purpose" rather than "scroll into"?</li>
+<li>If no one were there to compare against, would I still want this? (Distinguish true desire from mimetic desire.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking "reframing" for self-soothing.</strong> Downward comparison (finding people worse off) only numbs short-term and stalls long-term growth. Swap to a <strong>meaningful</strong> yardstick, not a weaker one.</li>
+<li><strong>Comparing their highlights to your backstage.</strong> You see the post about the promotion, not the seventh draft of the case rewritten at 2am.</li>
+<li><strong>Switching comparison off entirely.</strong> Moderate upward comparison is growth fuel; the goal is to regulate the dose, not cut the power.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Bertrand Russell, <em>The Conquest of Happiness</em>, ch. 6</strong> — envy springs from comparison, not scarcity.<br><strong>Leon Festinger, Social Comparison Theory (1954)</strong> — without objective standards, people use others as the yardstick; the split between upward and downward comparison.<br><strong>René Girard, <em>Deceit, Desire, and the Novel</em></strong> — mimetic desire: we often desire something only because another desires it.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Sympathetic Joy Is a Trainable Muscle
+<span class="en">Mudita — The True Opposite of Envy</span></h2>
+<span class="tag">Mudita</span><span class="tag">Action First</span><span class="tag">Specific Congratulation</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">The opposite of envy isn't "suppressing envy" — it's <strong>mudita (sympathetic joy)</strong>: the capacity to be genuinely glad at someone else's good fortune. This isn't a moral demand; it's a trainable muscle. And what it directly reduces is <strong>your own</strong> suffering, not something you do for the other person.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Sympathetic joy (muditā) has the destruction of boredom as its success... its near enemy is joy based on home life, and its far enemy is aversion — but jealousy is what most opposes it."</span>
+<span class="zh">Sympathetic joy's "far enemy" is jealousy: where mudita flourishes, envy finds nowhere to land.</span>
+<span class="source">— Buddhaghosa, <em>Visuddhimagga</em>, ch. IX (the four immeasurables · sympathetic joy)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene Demo: First Time You See Wang After the Promotion</div>
+<div class="scene">
+<div class="setup">Setup: after Wang's promotion, you run into him in the team channel and in the hallway. First time face to face.</div>
+<div class="dialog bad">
+<div class="speaker">✗ A forced courtesy</div>
+<p>You squeeze out a dry "Congrats," then quickly change the subject or find an excuse to leave. The other person <strong>can feel the reluctance completely</strong> — it damages the relationship more than saying nothing, and reinforces your inner script: "I can't be happy for him."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Action first (emotion follows)</div>
+<p>Specific congratulation + sincere question: "Congrats — I always thought that cross-team line was brutal to push. <strong>How did you get those stakeholders aligned? I want to learn.</strong>"</p>
+<p>The key mechanism: <strong>mudita isn't waiting until the feeling arrives to act — it's acting first, and letting the feeling get pulled along.</strong> A specific congratulation rewires your brain, steering envy's energy into learning. A note that names "the one specific thing he did right" carries ten times the weight of a generic "congrats."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Sympathetic-Joy Drill (run it each time envy flares)</div>
+<ul class="checklist">
+<li>Send a <strong>specific</strong> congratulation: name the one thing they did right, not a generic "congrats."</li>
+<li>Swap "why him?" for a question: "How did you pull off X?" — same energy, turned into learning.</li>
+<li>Express it publicly rather than privately (public mudita has the strongest rewiring effect on you).</li>
+<li>Notice afterward: after sending that note, did my sting lighten or deepen? (Most people find it lightens.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Waiting until you "genuinely want to congratulate" before acting.</strong> That moment may never come. Act first; the emotion is the dependent variable.</li>
+<li><strong>Turning mudita into self-negation.</strong> "Being happy for him" doesn't mean "admitting I'm worse." Mudita and continuing to pursue what you want coexist fine.</li>
+<li><strong>Performative mudita.</strong> Gushing in the channel while still undercutting in private — that's not mudita, it's political theater, and it's seen through fast.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Buddhaghosa, <em>Visuddhimagga</em>, ch. IX</strong> — among the four immeasurables, the "far enemy" of mudita is explicitly named as jealousy.<br><strong>Sharon Salzberg, <em>Lovingkindness</em> (1995)</strong> — treats sympathetic joy as something to be systematically trained, not an innate trait.</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 24 Action</h3>
+<p>Pick a peer who has genuinely made you envious lately (as specific as possible — ideally the one promoted ahead of you):</p>
+<div class="action">
+<strong>Step 1 (decode):</strong> Write down the <strong>specific</strong> thing you envy — not "he got promoted," but "he got X scope / the boss praised his Y in public."<br><br>
+<strong>Step 2 (convert to action):</strong> Translate that one item into <strong>an action you can take this week</strong> (e.g., tell my boss which line I want to own / which visibility gap I want to close).<br><br>
+<strong>Step 3 (mudita):</strong> Send that person a <strong>specific</strong> congratulation or question — name the thing they did right, or ask "how did you do it?"<br><br>
+Reflection: after these three steps, did your sting lighten or deepen? If it persists, is it because the thing you envy isn't actually something you want?
+</div>
+</div>
+
+<div class="deepen">
+<h3>Going Deeper</h3>
+<details>
+<summary>Isn't "benign envy" just a respectable cover story for malicious envy? How do you honestly tell which exit you're taking?</summary>
+<div class="think">A workable test: see where your energy finally lands — <strong>on whom</strong>. Pointing at "what I do next" is benign; pointing at "how to prove he doesn't deserve it" is malicious. Add a time test: benign envy fades as you start acting; malicious envy grows as you keep chewing on it. If you've "figured it out" but get angrier the more you think, you've likely slid into malicious — stop analyzing and go do the action in Card 4.</div>
+</details>
+<details>
+<summary>In a stack-ranking org, a peer's success really does crowd out my resources — isn't "sympathetic joy" naïve there?</summary>
+<div class="think">Honestly: in a zero-sum structure, envy is partly a <strong>legitimate signal of real conflict of interest</strong>. Separate two things: judging structural unfairness (whether to speak up about calibration or transparency) is a tactical problem worth handling rationally; private resentment toward a specific peer is another matter — it drains you but changes nothing structural. Mudita doesn't ask you to pretend the structure is fair; it only asks you not to misfire your frustration with the structure onto a person who's stuck inside it too.</div>
+</details>
+<details>
+<summary>In East Asian "face" cultures, openly expressing envy is strongly suppressed — does that make it more hidden and harder to handle?</summary>
+<div class="think">Very likely. Suppression doesn't remove envy; it drives it from "nameable" underground, into passive aggression and undercurrents beneath surface harmony (echoes Day 21). The culturally adapted move isn't talking about it American-direct, but giving it a dignified <strong>conversion exit</strong>: replace "I envy you" with "let me ask your advice" — asking is socially graceful in East Asian cultures, and it happens to be the behavioral form of benign envy.</div>
+</details>
+<details>
+<summary>At what point should the answer be not adjusting your mindset, but changing your environment?</summary>
+<div class="think">When you've seriously decoded and acted, yet find that what you truly want is <strong>structurally unattainable in this org</strong> (the track is sealed, the ladder is occupied, the values simply don't honor what you care about), persistent envy is no longer an inner demon to train away — it's a clear-eyed signal about "whether to leave" (echoes Day 23's Plan B). Here envy is a compass, pointing at what you want but can't get — and the answer may lie elsewhere. Train yourself enough to judge calmly first, then decide to stay or go.</div>
+</details>
+</div>
+
+<footer>BigCat · Leadership Daily · Day 24 · 2026.06.14</footer>
+</div>
+
+</body>
+</html>

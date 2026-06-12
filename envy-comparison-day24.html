@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 24：嫉妒与比较</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:46px}
+.deepen h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1px;margin-bottom:14px;border-bottom:1px solid #c4a878;padding-bottom:8px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;padding:4px 0;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;padding:12px 18px;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details[open] summary{border-bottom:1px dashed #e6d9bf}
+.deepen .think{padding:12px 18px;font-size:0.93rem;color:#4a3a20}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888;margin-top:40px;border-top:1px solid #c4a878}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 24 · 2026.06.14</div>
+<h1>嫉妒与比较：把刺痛拆成情报，而不是毒药</h1>
+<div class="meta"><span>主题：Envy &amp; Comparison</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"乞丐不嫉妒百万富翁，但他一定嫉妒收入更高的乞丐。" — Bertrand Russell</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>同侪先你一步晋升时那阵下沉的刺痛，不是你人品有问题，是一套<strong>古老的瞄准系统</strong>在工作——它专门锁定"本该和我一样的人"。压抑没用，纵容会让你变成在背后阴阳别人的那个人。本周不灌"要为别人高兴"的鸡汤，而是把嫉妒当一份待解码的情报：它精确指向你真正想要、却没说出口的东西。四个原则：看清嫉妒为何专挑同侪、把它翻译成行动信号、主动重选参照系、训练 mudita（随喜）这块可练的肌肉。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>嫉妒专挑同侪：先看清它的瞄准系统
+<span class="en">Envy Targets Your Equals, Not Your Betters</span></h2>
+<span class="tag">人性机制</span><span class="tag">同侪比较</span><span class="tag">先承认</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">同侪先升职，比 CEO 拿天价年薪更刺痛你——不是你小气，是嫉妒天生只对"和你同一量级的人"发作。先承认这套机制，你才不会把"我嫉妒"误读成"我是坏人"，进而陷入第二层的自我攻击。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"We envy those who are near us in time, place, age, and reputation... for it is with these that we are in competition. Hence the saying, 'Kin can feel envy too.'"</span>
+<span class="zh">"我们嫉妒的是那些在时间、地点、年龄、声望上与我们相近的人……因为竞争正发生在他们之间。所以古语说，'连亲族之间也会有嫉妒。'"</span>
+<span class="source">— Aristotle,《修辞学》Rhetoric 第二卷第 10 章</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 与同级 TLM 老王本季同时被提名升 senior manager，结果老王过了，BigCat 被压到下一轮。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见反应（恶性嫉妒上头）</div>
+<p>在心里、乃至饭局上给老王的晋升"找水分"："他不就是 PPT 漂亮、会向上管理嘛。"然后悄悄疏远、协作上不那么配合。<strong>你把刺痛转成了贬低</strong>——舒服三分钟，代价是判断力和口碑。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（先命名，再定位）</div>
+<p>私下对自己说一句完整的话："<strong>我在嫉妒老王，正因为他是我的参照点，才这么疼。</strong>"承认它，刺痛就从"弥漫的烦躁"变成"一个可处理的对象"。接着定位：我疼的是 title、是他拿到的更大 scope、还是老板当众认可了他？把模糊的痛拆成具体的项——这是 Card 2 解码的入口。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">诚实自检表（嫉妒上头时问自己）</div>
+<ul class="checklist">
+<li>我嫉妒的对象，是不是恰好和我"同一量级"？（这正说明机制在正常工作，不是我变坏了）</li>
+<li>我有没有进入第二层伤害——因为"我居然在嫉妒"而攻击自己？</li>
+<li>我是想把对方拉下来，还是想把自己提上去？（这两条岔路决定一切）</li>
+<li>如果升的是公司外一个陌生人，我会这么疼吗？没有 → 说明疼的是"参照系"，不是事件本身。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>否认。</strong>"我才没嫉妒，我只是觉得这次评得不公。"——未命名的嫉妒会从背后驱动你的行为，比承认它危险得多。</li>
+<li><strong>第二层自我攻击。</strong>把"我嫉妒"升级成"我是个心胸狭隘的人"，结果用来内耗的能量比嫉妒本身还多。</li>
+<li><strong>当场表演大度。</strong>嘴上"我特别为你高兴"，身体语言全是僵硬——对方收到的是更糟的混合信号。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"皇冠综合症"（tiara syndrome，Sandberg 在《Lean In》引用 Frohlinger）：女性更容易默默把活干好、<strong>等着被发现</strong>，而会自我倡导的同侪先被看见、先升职。若你反复嫉妒"不如我努力却升得更快"的同侪，先别只归因于不公，也查一个可控变量：我有没有让决策者清楚知道我的产出和晋升意愿？嫉妒在这里是提醒：可见度也是工作的一部分。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Aristotle,《修辞学》第二卷第 10 章</strong>——嫉妒针对"相近之人"的最早系统论述。<br><strong>Bertrand Russell,《幸福之路》（The Conquest of Happiness）第 6 章 "Envy"</strong>——把嫉妒定义为一种比较病，而非贪婪。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>嫉妒是情报，不是毒药：看它流向哪个出口
+<span class="en">Envy as Information — Benign vs. Malicious</span></h2>
+<span class="tag">良性 vs 恶性</span><span class="tag">信号解码</span><span class="tag">向上而非拉下</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">嫉妒本身是中性能量，毒还是燃料取决于出口。<strong>恶性嫉妒</strong>想把对方拉下来；<strong>良性嫉妒</strong>想把自己提上去。同一股劲，你导向哪个出口，决定它腐蚀你还是推动你。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Benign envy is related to a moving-up motivation, whereas malicious envy is related to a pulling-down motivation."</span>
+<span class="zh">"良性嫉妒关联的是'向上看齐'的动机，恶性嫉妒关联的是'把对方拉下'的动机。"</span>
+<span class="source">— van de Ven, Zeelenberg &amp; Pieters,《Leveling Up and Down》, Emotion (2009)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">两种嫉妒：同一股能量，两个出口</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="195" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="195" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">✗ 恶性嫉妒 · 拉下</text>
+<text x="35" y="80" font-family="Georgia" font-size="12" fill="#5a3818">· 焦点在对方："他凭什么"</text>
+<text x="35" y="104" font-family="Georgia" font-size="12" fill="#5a3818">· 找对方的水分、传闲话</text>
+<text x="35" y="128" font-family="Georgia" font-size="12" fill="#5a3818">· 在评审里阴阳、卡协作</text>
+<text x="35" y="152" font-family="Georgia" font-size="12" fill="#5a3818">· 结果：对方没变，你口碑塌</text>
+<text x="35" y="176" font-family="Georgia" font-size="12" fill="#5a3818">· 能量消耗，自己原地不动</text>
+<text x="35" y="200" font-family="Georgia" font-size="12" fill="#5a3818">· 越想越疼，零产出</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">✓ 良性嫉妒 · 向上</text>
+<text x="375" y="80" font-family="Georgia" font-size="12" fill="#2a3a18">· 焦点在自己："我想要 X"</text>
+<text x="375" y="104" font-family="Georgia" font-size="12" fill="#2a3a18">· 拆出具体羡慕的那一项</text>
+<text x="375" y="128" font-family="Georgia" font-size="12" fill="#2a3a18">· 向对方请教"你怎么做到的"</text>
+<text x="375" y="152" font-family="Georgia" font-size="12" fill="#2a3a18">· 转成一个本周可做的动作</text>
+<text x="375" y="176" font-family="Georgia" font-size="12" fill="#2a3a18">· 结果：差距变成路线图</text>
+<text x="375" y="200" font-family="Georgia" font-size="12" fill="#2a3a18">· 能量变燃料，自己前进</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：把嫉妒翻译成一句"我想要 X"</div>
+<div class="scene">
+<div class="setup">情境：老王升职后，BigCat 反复在心里过这件事，睡前都在想。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 让它停在情绪</div>
+<p>"真不公平 / 他就是运气好 / 我是不是不行"——这些句子全是闭环，绕来绕去消耗你，却<strong>不产出任何下一步</strong>。这是恶性出口的典型语言。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 三步解码（情绪→信息→动作）</div>
+<p><strong>① 命名：</strong>"我嫉妒。" <strong>② 解码：</strong>"我羡慕的不是 title，是他拿到了那条跨团队的高可见度项目线。" <strong>③ 转动作：</strong>"那我下周就跟老板提：下个 planning 我想 own 一条跨团队的线，这是我升职档案缺的一块。"</p>
+<p>嫉妒在这里完成了它唯一有用的功能：<strong>精确告诉你，你想要什么却一直没去争取。</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">解码检查表（把刺痛转成情报）</div>
+<ul class="checklist">
+<li>我羡慕的到底是哪一件具体的事？（title / scope / 老板认可 / 薪资 / 自由度——逼自己选一个最痛的）</li>
+<li>这件事是我真正想要的，还是只因为"别人有所以我也该有"？（见 Card 3）</li>
+<li>如果它是我真想要的，获取它的下一个动作是什么？（必须是本周能做的）</li>
+<li>对方身上有没有一个我可以直接请教的具体能力？</li>
+<li>我有没有把"解码"误写成"找对方的不是"？后者是恶性出口，立即停。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>停在"不公平"。</strong>就算真的不公平，停在这里也只伤你自己；先解码、再决定要不要为公平发声（那是另一件事）。</li>
+<li><strong>把解码做成行动清单后却不做。</strong>"想通了"不等于变了，嫉妒会原样回来。</li>
+<li><strong>羡慕一个你其实并不想要的东西。</strong>很多人为一个自己根本不向往的 title 痛苦数月——那不是良性嫉妒，是被裹挟的欲望。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>van de Ven, Zeelenberg &amp; Pieters,《Leveling Up and Down》, Emotion (2009)</strong>——良性 / 恶性嫉妒的实证区分。<br><strong>Joseph Epstein,《Envy》(2003)</strong>："七宗罪里，唯有嫉妒毫无乐趣可言"——它连片刻的快感都不给，所以更值得尽早转化。</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>主动重选参照系：夺回情绪主权最便宜的杠杆
+<span class="en">Choosing Your Reference Frame on Purpose</span></h2>
+<span class="tag">参照系</span><span class="tag">社会比较</span><span class="tag">模仿欲望</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">嫉妒的强度不取决于你的绝对处境，取决于你拿谁当参照系。大公司默认塞给你的坐标是"同 level 的所有人 + Blind 上最风光的那些"——一个为内卷优化过的坐标，永远有人在你之上。<strong>换掉它，是你能动用的最便宜的杠杆。</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Beggars do not envy millionaires, though of course they will envy other beggars who are more successful."</span>
+<span class="zh">"乞丐不会嫉妒百万富翁，但他一定会嫉妒比自己讨得多的乞丐。"</span>
+<span class="source">— Bertrand Russell,《幸福之路》第 6 章 "Envy"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：审计并替换你的参照系</div>
+<div class="scene">
+<div class="setup">情境：BigCat 习惯性刷 levels.fyi、Blind、领英，看到同届同学已经 staff / 已经管几十人，慢性不满。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 默认坐标（为不满优化）</div>
+<p>把"全公司同 level 里最快升的那个人"当标尺。这个标尺保证你永远落后——因为参照对象会自动更新成下一个更强的人。<strong>你在和一个不断上移的影子赛跑。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 主动重选三个坐标</div>
+<p><strong>纵向比：</strong>和三年前的自己比——当时你连这个团队都带不了。<strong>收窄横向比：</strong>从"所有同 level"缩到"三五个我真正敬重、且了解其全貌的人"。<strong>退出制造比较的渠道：</strong>把 Blind、levels.fyi 设成需主动打开，而非 default 刷屏。再追问一句：我想要那个 title，是真想要，<strong>还是因为别人都在要</strong>？很多职场欲望是借来的。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">参照系审计表</div>
+<ul class="checklist">
+<li>我此刻拿谁当标尺？这个人我了解的是全貌，还是只看到他的高光剪辑？</li>
+<li>我的标尺是固定的，还是会自动更新成"下一个更强的人"？（后者是个永动陷阱）</li>
+<li>哪些信息渠道在持续给我喂比较？哪些可以设成"主动打开"而非"被动刷到"？</li>
+<li>这个欲望要是没人和我比，我还想要吗？（区分真欲望与模仿欲望）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>误把"换参照系"当自我安慰。</strong>下行比较（找不如你的人）只能短期止痛，长期让你停止成长。换的是<strong>有意义的标尺</strong>，不是更弱的标尺。</li>
+<li><strong>拿别人的高光比自己的幕后。</strong>你看到的是他升职那条朋友圈，看不到他凌晨改的第七版述职。</li>
+<li><strong>彻底关掉比较。</strong>适度的向上比较是成长燃料，目标是调节剂量，不是断电。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Bertrand Russell,《幸福之路》第 6 章</strong>——嫉妒源于比较而非匮乏。<br><strong>Leon Festinger, 社会比较理论 (1954)</strong>——人在缺乏客观标准时，会拿他人作标尺；上行 / 下行比较的分野。<br><strong>René Girard,《浪漫的谎言与小说的真实》</strong>——模仿欲望（mimetic desire）：我们常常是因为别人渴望，才去渴望。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>随喜是可练的肌肉：嫉妒的真正反面
+<span class="en">Mudita — Training Sympathetic Joy</span></h2>
+<span class="tag">随喜 Mudita</span><span class="tag">行为先行</span><span class="tag">具体祝贺</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">嫉妒的反面不是"压住嫉妒"，是 <strong>mudita（随喜）</strong>——为他人的好事真心高兴的能力。这不是道德要求，是一块可训练的肌肉；而且练它直接减少的是<strong>你自己</strong>的痛苦，不是为了对方。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Sympathetic joy (muditā) has the destruction of boredom as its success, and the production of merriment as its failure; its near enemy is joy based on home life, and its far enemy is aversion — but jealousy is what most opposes it."</span>
+<span class="zh">"随喜（muditā）以消除厌烦为成就……它的'远敌'是嫉妒：随喜兴盛之处，嫉妒便无处落脚。"</span>
+<span class="source">— Buddhaghosa,《清净道论》Visuddhimagga 第九章（四无量心 · 随喜）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：升职后第一次见到老王</div>
+<div class="scene">
+<div class="setup">情境：老王升职后，团队群里、走廊里你都会碰到他。第一次面对面。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 勉强的客套</div>
+<p>挤出干巴巴一句"恭喜啊"，然后迅速转移话题或借故走开。对方<strong>百分百能感到那份勉强</strong>——比不说还伤关系，也强化了你"我做不到为他高兴"的内心剧本。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 行为先行（情绪随后跟上）</div>
+<p>具体祝贺 + 真诚请教："恭喜，那条跨团队的线我一直觉得超难推，<strong>你当初是怎么把那几个 stakeholder 谈拢的？我想学。</strong>"</p>
+<p>关键机制：<strong>随喜不是等情绪到位才行动，是先做出行为、情绪随后被带动。</strong>具体的祝贺会反向训练你的大脑，把嫉妒的能量导成学习。一个点名"他做对了哪件具体事"的祝贺，比泛泛的"恭喜"重十倍。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">随喜练习表（每次嫉妒发作时走一遍）</div>
+<ul class="checklist">
+<li>发一条<strong>具体</strong>的祝贺：点名对方做对的那一件事，而不是泛泛"恭喜"。</li>
+<li>把"他凭什么"换成一句请教："你是怎么做到 X 的？"——同一股能量，转成学习。</li>
+<li>当众而非私下表达（公开随喜对自己的反向训练效果最强）。</li>
+<li>事后觉察：发完那条消息，我的刺痛是轻了还是重了？（多数人会发现轻了）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>等"真心想祝贺了"再行动。</strong>那一刻可能永远不来。行为先行，情绪是跟随变量。</li>
+<li><strong>把随喜做成自我否定。</strong>"为他高兴"不等于"承认我不如他"。随喜和你继续争取自己想要的，完全可以并存。</li>
+<li><strong>表演式随喜。</strong>群里热情刷屏、私下照旧拆台——这不是 mudita，是政治表演，且很快被看穿。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Buddhaghosa,《清净道论》第九章</strong>——四无量心中，随喜（muditā）的"远敌"明确列为嫉妒。<br><strong>Sharon Salzberg,《Lovingkindness》(1995)</strong>——把随喜作为可系统训练的禅修，而非天生性格。</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 24 Action</h3>
+<p>挑一个最近真切让你嫉妒过的同侪（越具体越好，最好就是那个先你升职的人）：</p>
+<div class="action">
+<strong>第一步（解码）：</strong>写下你<strong>具体</strong>羡慕的那一项——不是"他升职了"，而是"他拿到了 X scope / 老板当众认可了他的 Y"。<br><br>
+<strong>第二步（转动作）：</strong>把这一项翻译成一个<strong>本周可做的动作</strong>（例：跟老板提我想 own 哪条线 / 补哪块可见度）。<br><br>
+<strong>第三步（随喜）：</strong>给那个人发一条<strong>具体</strong>的祝贺或请教消息——点名他做对的那件事，或问"你是怎么做到的"。<br><br>
+反思题：这三步走完，你的刺痛是轻了还是重了？如果还在，是因为你羡慕的那件事，其实你并不真想要？
+</div>
+</div>
+
+<div class="deepen">
+<h3>深入思考</h3>
+<details>
+<summary>"良性嫉妒"会不会只是给"恶性嫉妒"找的体面说辞？怎么诚实判断自己在哪个出口？</summary>
+<div class="think">看能量最终落在<strong>谁身上</strong>：指向"我下一步做什么"是良性，指向"怎么证明他不配"是恶性。再加时间判据：良性随行动而衰减，恶性随反复咀嚼而增强。若想通了却越想越气，多半已滑向恶性，该停止分析、直接去做 Card 4 的行为动作。</div>
+</details>
+<details>
+<summary>在强制排名（stack ranking）的组织里，同侪的成功确实挤占我的资源——这时"随喜"是不是天真？</summary>
+<div class="think">诚实说：零和结构里，嫉妒部分是<strong>对真实利益冲突的合理信号</strong>。要分开两件事：对结构不公的判断（该不该为校准、透明度发声）是值得理性处理的战术问题；对具体同侪的私人怨恨是另一回事，它消耗你却改变不了结构。随喜不要你假装结构公平，只要你别把对结构的不满，错投到一个同样身处其中的人身上。</div>
+</details>
+<details>
+<summary>东亚"面子"文化强烈压抑公开表达嫉妒，是不是反而让它更隐蔽、更难处理？</summary>
+<div class="think">很可能。压抑不消除嫉妒，只是把它从"可命名"赶进地下，变成被动攻击、表面和谐下的暗流（呼应 Day 21）。文化适配的做法不是美式直球地谈论它，而是给一个体面的<strong>转化出口</strong>：用"向你请教"代替"我嫉妒你"——请教在东亚文化里得体，恰好就是良性嫉妒的行为形态。</div>
+</details>
+<details>
+<summary>嫉妒到什么程度，该考虑的不是调节心态，而是换环境？</summary>
+<div class="think">当你认真解码、也行动了，却发现真正想要的东西在<strong>这个组织里结构性地拿不到</strong>（赛道封死、通道被占满、价值观不认你看重的），持续的嫉妒就不再是心魔，而是关于"是否该离开"的清醒信号（呼应 Day 23 的 Plan B）。它此时是指南针，指向你想要却得不到的——答案可能在别处。先修炼到能冷静判断，再决定走或留。</div>
+</details>
+</div>
+
+<footer>BigCat · Leadership Daily · Day 24 · 2026.06.14</footer>
+</div>
+
+</body>
+</html>
