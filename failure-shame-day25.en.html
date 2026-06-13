@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 25: Failure &amp; Shame</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:46px}
+.deepen h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1px;margin-bottom:14px;border-bottom:1px solid #c4a878;padding-bottom:8px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;padding:4px 0;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;padding:12px 18px;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details[open] summary{border-bottom:1px dashed #e6d9bf}
+.deepen .think{padding:12px 18px;font-size:0.93rem;color:#4a3a20}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888;margin-top:40px;border-top:1px solid #c4a878}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 25 · 2026.06.15</div>
+<h1>Failure &amp; Shame: Pry the Failure Out of Your Identity</h1>
+<div class="meta"><span>Topic: Failure &amp; Shame</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Shame corrodes the very part of us that believes we are capable of change." — Brené Brown</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> After a public failure, what truly tortures you is usually not the failure itself but <strong>shame</strong>—which quietly swaps "I screwed up one thing" for "I am the kind of person who fails." Once that swap is done, you instinctively hide, downplay, avoid—and hiding is exactly what keeps the root cause from being dug out, so the failure recurs. This week skips the "failure is the mother of success" pep talk and hands you four tools: separate shame from guilt (this decides whether you can fix it), manage the narrative and rebuild trust after a public failure, turn failure into a callable asset with a "CV of failures," and see the honest timeline of recovery—which is neither a full reset after one sleep nor the end of the world.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Shame vs. Guilt: The Distinction Decides Whether You Can Repair It
+<span class="en">Guilt Says &ldquo;I Did Bad&rdquo;; Shame Says &ldquo;I Am Bad&rdquo;</span></h2>
+<span class="tag">Human wiring</span><span class="tag">Name it first</span><span class="tag">Repairability</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">Guilt says "I did one thing wrong"—it points at a behavior, is repairable, and drives correction. Shame says "I am a mistake"—it points at the self, paralyzes, and only drives hiding. The first thing to do after failing isn't to reflect; it's to <strong>identify which one you're trapped in</strong>—because shame makes you hide, and hiding makes the failure recur.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"Guilt is adaptive and helpful—it's holding something we've done up against our values and feeling discomfort. Guilt: I did something bad. Shame: I am bad."</span>
+<span class="source">— Brené Brown, <em>Daring Greatly</em>, Ch.3</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Diagram: one failure, two forks</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="190" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="190" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">GUILT (usable)</text>
+<text x="35" y="80" font-family="Georgia" font-size="12.5" fill="#2a3a18">· Points at the BEHAVIOR: I did X wrong</text>
+<text x="35" y="104" font-family="Georgia" font-size="12.5" fill="#2a3a18">· Repairable by a concrete action</text>
+<text x="35" y="128" font-family="Georgia" font-size="12.5" fill="#2a3a18">· Can apologize, improve, let go</text>
+<text x="35" y="152" font-family="Georgia" font-size="12.5" fill="#2a3a18">· Drives: approach, correct</text>
+<text x="35" y="182" font-family="Georgia" font-size="12.5" fill="#2a3a18" font-weight="700">→ Pushes you to solve it</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">SHAME (paralyzing)</text>
+<text x="375" y="80" font-family="Georgia" font-size="12.5" fill="#5a3818">· Points at the SELF: I am a mistake</text>
+<text x="375" y="104" font-family="Georgia" font-size="12.5" fill="#5a3818">· Unrepairable (you can fix acts, not "self")</text>
+<text x="375" y="128" font-family="Georgia" font-size="12.5" fill="#5a3818">· Wants to disappear, to hide</text>
+<text x="375" y="152" font-family="Georgia" font-size="12.5" fill="#5a3818">· Drives: withdraw, conceal</text>
+<text x="375" y="182" font-family="Georgia" font-size="12.5" fill="#5a3818" font-weight="700">→ Makes the failure recur</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: BigCat's team ships a feature that triggers a P1 incident, and the VP names him in the incident channel.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Shame reaction (slides into self-attack)</div>
+<p>Replays it all night, can't sleep, avoids the VP by day, stays vague in the postmortem and downplays his own role—because <strong>admitting it = confirming "I'm not good enough."</strong> Result: the root cause never surfaces, and a similar incident hits again three months later. Shame protects your face at the cost of the problem itself.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Guilt reaction (anchored to behavior)</div>
+<p>Say one complete sentence to yourself: "<strong>I missed [requiring a canary before release] at this step. That's my responsibility. I've already done [added a canary gate] to prevent recurrence.</strong>" Anchor the pain to one concrete decision—admittable, fixable, releasable. Note: not easier, but more <strong>workable</strong>.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Distinction self-check (when failure floods you)</div>
+<ul class="checklist">
+<li>Am I telling myself "I screwed up this thing," or "I'm just useless"? (The latter is shame's fingerprint.)</li>
+<li>Can this be repaired by a concrete action? If you can name one → guilt track; if you can name none → you've slid into shame.</li>
+<li>Right now, do I want more to fix it, or to disappear and hide myself?</li>
+<li>If the same thing happened to a colleague I respect, would I judge them "not good enough"? If not → you're holding a double standard against yourself.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking shame for humility or accountability.</strong> Endless self-blame looks responsible but is paralysis—it produces no repair action.</li>
+<li><strong>Downplaying instead of owning.</strong> That's shame's hiding mechanism at work, and onlookers see straight through it.</li>
+<li><strong>Letting one bout of guilt fester into global shame.</strong> "This one thing went wrong" ferments into "my whole career is a failure."</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">A note for women leaders</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Attribution research shows that after failure, women more often attribute it to "ability" (internal, stable, fixed) while men more often attribute it to "luck/situation" (external, changeable). This makes women slide more easily from guilt into shame, compounded and amplified by imposter syndrome. The counter is to deliberately do <strong>"behavioral and situational attribution"</strong>: right after a failure, write down the concrete external factors plus your own concrete, changeable behaviors—use ink to fight the auto-narration of "it's my ability that's lacking."
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Brené Brown, <em>Daring Greatly</em></strong> (Ch. 3, "Understanding and Combating Shame")—the foundational guilt-vs-shame distinction.<br><strong>Brené Brown, <em>I Thought It Was Just Me</em></strong>—a more systematic version of the four elements of "shame resilience."</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Rebuilding After Public Failure: Your Narrative, Not the Failure, Sets Your Reputation
+<span class="en">After a Public Failure, You Own the Narrative</span></h2>
+<span class="tag">Narrative</span><span class="tag">Ownership</span><span class="tag">Rebuild trust</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">After a public failure, what decides your reputation is not the size of the failure but your narrative in the next <strong>72 hours</strong>. Silence and blame-shifting both get auto-filled by onlookers into the worst version; a proactive, specific, accountable postmortem can instead raise trust—because what people trust is never "the person who never errs" but "the person who can take the hit and clean it up."</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"By far the most difficult skill I learned as CEO was the ability to manage my own psychology."</span>
+<span class="source">— Ben Horowitz, <em>The Hard Thing About Hard Things</em>, Ch.6</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: the postmortem email to your VP and team</div>
+<div class="scene">
+<div class="setup">Context: after that P1 incident settles, you must send a postmortem.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Defensive (blame-shift + self-protect)</div>
+<p>"This incident was <strong>mainly because</strong> the upstream team didn't notify us in time, plus test and prod were inconsistent—we actually did our best." Everyone reads that you're protecting yourself. Trust drops: you've proven that under fire you reach for a scapegoat first.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Ownership narrative (email skeleton)</div>
+<p><strong>Subject:</strong> [Feature X] P1 Postmortem — My Responsibility &amp; Fixes<br>
+<strong>1. What happened</strong> (facts, no gloss)<br>
+<strong>2. Where my decision went wrong</strong> (specific to "me")<br>
+<strong>3. Real impact</strong> (honestly quantified, not minimized)<br>
+<strong>4. Bleeding stopped + root-cause fix in progress</strong><br>
+<strong>5. The process I changed so it can't recur</strong></p>
+<p>Composed, not groveling: own the responsibility but don't flagellate yourself—self-flagellation looks humble but is really begging the reader for comfort, pushing the emotional burden onto them.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Public-failure narrative checklist</div>
+<ul class="checklist">
+<li>In my narrative, does first-person "I (am responsible)" appear at least as often as I push it onto others?</li>
+<li>Did I put "this was my lapse" and "this is my fix plan" <strong>together</strong>? (Apology with no plan = theater; plan with no ownership = coldness.)</li>
+<li>Did I honestly quantify real impact, rather than blur it with vague words ("a small impact")?</li>
+<li>Did I speak up proactively within 72 hours, rather than wait to be asked?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Over-apologizing, self-flagellating.</strong> It forces onlookers to comfort you instead—you've outsourced the emotional labor.</li>
+<li><strong>The "sandwich" that buries responsibility between two layers of excuses.</strong> Readers remember only the excuses.</li>
+<li><strong>Owning it privately, silent publicly.</strong> Those in the know conclude you're just covering yourself (CYA), not truly accountable.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">A note for women leaders</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women owning a failure publicly face a double bind: own it too cleanly and you're read as "clearly not up to it"; don't own it and you're tagged "irresponsible." Research shows that for the same mistake, women's likability and competence often take a larger hit after apologizing than men's. The counter: shift the narrative's center of gravity from "apology" to "<strong>diagnosis + fix plan</strong>"—show more command, perform less remorse. One clean apology is enough; the main act is "here's how I'll fix it."
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Ben Horowitz, <em>The Hard Thing About Hard Things</em></strong> (Ch. 6, "The Struggle")—managing your own psychology and owning failure publicly.<br><strong>Carol Dweck, <em>Mindset</em></strong>—growth mindset reframes failure from "verdict" to "data."</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The CV of Failures: Turn a Hidden Wound Into a Callable Asset
+<span class="en">The CV of Failures</span></h2>
+<span class="tag">Survivorship bias</span><span class="tag">Reframe</span><span class="tag">Model vulnerability</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">Everyone else's LinkedIn lists only wins, so you wrongly conclude you're the only one failing—this is <strong>self-poisoning by survivorship bias</strong>. Write yourself a "CV of failures," putting each failure side by side with the concrete capability it taught you, and failure turns from a scar to cover into an asset you can call on anytime.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"A failure résumé forces you to reflect on—and to own—the biggest risks you've taken and what each one taught you. It makes your setbacks productive."</span>
+<span class="source">— Tina Seelig, <em>What I Wish I Knew When I Was 20</em>, Ch.5</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: an engineer on your team led a project last quarter that failed, and now won't take on anything new.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Comfort by denial</div>
+<p>"Don't overthink it, that project was no big deal, you're great." You've denied his real experience; he knows you're being polite and feels more isolated. Pep talk doesn't dissolve shame.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Unpack together + model vulnerability first</div>
+<p>"Let's unpack that failure together. <strong>First</strong>, which specific decision was wrong? <strong>Second</strong>, what exactly did you learn that someone who never stepped on this landmine wouldn't know? Write it down—that's the invisible but most valuable line on your résumé."</p>
+<p>Then tell <strong>your own</strong> failure and what it taught you. When the leader models vulnerability first, the report dares to treat failure as material, not as a forbidden zone.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">CV-of-failures template (three columns per row)</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="200" height="44" rx="5" fill="#5c3a18"/>
+<rect x="232" y="20" width="200" height="44" rx="5" fill="#a8702d"/>
+<rect x="444" y="20" width="236" height="44" rx="5" fill="#5c8a3a"/>
+<text x="120" y="48" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#f5e8c8">① The failure (no gloss)</text>
+<text x="332" y="48" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#fff7e8">② Its real cost then</text>
+<text x="562" y="48" text-anchor="middle" font-family="Georgia" font-size="12.5" font-weight="700" fill="#eef7e2">③ The capability others lack</text>
+<rect x="20" y="74" width="200" height="50" rx="5" fill="#fcf6e8" stroke="#e6d9bf"/>
+<rect x="232" y="74" width="200" height="50" rx="5" fill="#fcf6e8" stroke="#e6d9bf"/>
+<rect x="444" y="74" width="236" height="50" rx="5" fill="#fcf6e8" stroke="#e6d9bf"/>
+<text x="35" y="95" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Led project slipped 6 mo,</text>
+<text x="35" y="113" font-family="Georgia" font-size="11.5" fill="#8a6d3b">cut, team disbanded</text>
+<text x="247" y="95" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Credibility hit, missed</text>
+<text x="247" y="113" font-family="Georgia" font-size="11.5" fill="#3a2f1c">that year's promo window</text>
+<text x="459" y="95" font-family="Georgia" font-size="11.5" fill="#2a3a18">Can smell "scope creep" early</text>
+<text x="459" y="113" font-family="Georgia" font-size="11.5" fill="#2a3a18">— now I call a stop in time</text>
+<rect x="20" y="134" width="200" height="46" rx="5" fill="#fcf6e8" stroke="#e6d9bf"/>
+<rect x="232" y="134" width="200" height="46" rx="5" fill="#fcf6e8" stroke="#e6d9bf"/>
+<rect x="444" y="134" width="236" height="46" rx="5" fill="#fcf6e8" stroke="#e6d9bf"/>
+<text x="35" y="163" font-family="Georgia" font-size="11.5" fill="#8a6d3b">…(write at least 2 more rows)</text>
+<text x="247" y="163" font-family="Georgia" font-size="11.5" fill="#8a6d3b">…</text>
+<text x="459" y="163" font-family="Georgia" font-size="11.5" fill="#8a6d3b">…this column is your moat</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Write-your-CV-of-failures checklist</div>
+<ul class="checklist">
+<li>Can I write at least 3 real failures, each with one line on "the concrete capability it taught me"?</li>
+<li>Among those lessons, is any one that "someone who never stepped on this landmine simply wouldn't know"? That's your moat.</li>
+<li>Did I attribute the failure to a behavior/decision, not to "me as a person"? (Echoes Card 1.)</li>
+<li>Am I willing, in the right setting, to tell one or two of them to a report? (Leader models vulnerability → team psychological safety.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Writing it as a self-comforting diary.</strong> No transferable capability extracted = might as well not write it.</li>
+<li><strong>Listing only safe, small failures.</strong> Dodging the one that really hurts—the one with the richest lesson.</li>
+<li><strong>Locking it in a drawer once written.</strong> Half the value is in writing it; half is in <strong>selectively telling it to the right people</strong>.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Tina Seelig, <em>What I Wish I Knew When I Was 20</em></strong>—origin of the Stanford "failure résumé" exercise.<br><strong>Melanie Stefan, <em>Nature</em> 468, 467 (2010)</strong> proposed the concept; Princeton professor <strong>Johannes Haushofer (2016)</strong> went viral by publishing his own "CV of Failures"—proof that a page full of rejections is the norm.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>The Honest Timeline of Recovery: Neither a Full Reset Nor the End of the World
+<span class="en">The Honest Timeline of Recovery — The Three P&rsquo;s</span></h2>
+<span class="tag">Recovery curve</span><span class="tag">The three P's</span><span class="tag">Calibrate time</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in one line</div>
+<div class="principle">Recovery after failure is neither "full reset after one sleep" nor "career's over." It follows a real curve: the initial acute pain fades <strong>faster than you expect</strong>, but rebuilding trust and self-narrative in full takes months. Give it time, but don't give it "forever." Seligman's three P's—<strong>personalization, pervasiveness, permanence</strong>—are precisely the three amplifiers that misread a temporary dip as a permanent verdict.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In their words</div>
+<div class="quote">
+<span class="en">"Three P's can stunt recovery: personalization—the belief that we are at fault; pervasiveness—the belief that an event will affect all areas of our life; and permanence—the belief that the aftermath will last forever."</span>
+<span class="source">— Sheryl Sandberg &amp; Adam Grant, <em>Option B</em>, Ch.1 (citing Martin Seligman)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Recovery curve: three scripts</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 290" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="40" x2="60" y2="245" stroke="#8a6d3b" stroke-width="1.5"/>
+<line x1="60" y1="245" x2="660" y2="245" stroke="#8a6d3b" stroke-width="1.5"/>
+<text x="28" y="50" font-family="Georgia" font-size="11" fill="#8a6d3b">high</text>
+<text x="30" y="240" font-family="Georgia" font-size="11" fill="#8a6d3b">low</text>
+<text x="14" y="170" font-family="Georgia" font-size="11" fill="#8a6d3b" transform="rotate(-90 14 170)">self-narrative / confidence</text>
+<text x="86" y="265" font-family="Georgia" font-size="11" fill="#8a6d3b">event</text>
+<text x="225" y="265" font-family="Georgia" font-size="11" fill="#8a6d3b">days</text>
+<text x="385" y="265" font-family="Georgia" font-size="11" fill="#8a6d3b">weeks</text>
+<text x="555" y="265" font-family="Georgia" font-size="11" fill="#8a6d3b">months</text>
+<path d="M90,90 Q140,120 180,95 T640,80" fill="none" stroke="#5c8a3a" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="455" y="70" font-family="Georgia" font-size="11.5" fill="#4a6a28">Pep-talk myth: reset in a week</text>
+<path d="M90,90 Q150,225 210,228 T640,230" fill="none" stroke="#b85c3a" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="440" y="222" font-family="Georgia" font-size="11.5" fill="#a04020">Doom fantasy: never recover</text>
+<path d="M90,90 Q150,210 200,205 Q300,198 390,165 Q500,128 640,112" fill="none" stroke="#5c3a18" stroke-width="3"/>
+<circle cx="640" cy="112" r="4" fill="#5c3a18"/>
+<text x="405" y="150" font-family="Georgia" font-size="12" font-weight="700" fill="#5c3a18">Real: acute pain fades → slow rebuild</text>
+<text x="500" y="103" font-family="Georgia" font-size="11" fill="#5c3a18">new spot + lesson</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: unpack the inner monologue, one P at a time</div>
+<div class="scene">
+<div class="setup">Context: three weeks after the incident, you still replay it daily, and it's starting to warp your judgment on new projects.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Inner monologue (all three P's on)</div>
+<p>"I'll never hold my head up again (permanence) / the whole team now thinks I'm incompetent (pervasiveness) / this is entirely my fault (personalization)." Stacked, they blow up one incident into a verdict on the entire self.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Counter-script (write down each P)</div>
+<p><strong>Anti-permanence:</strong> "In three months, how much weight will this still carry in most people's memory?" Write your honest estimate.<br>
+<strong>Anti-pervasiveness:</strong> List the areas <strong>not</strong> touched by this failure—my technical judgment, my relationship with Team B, my life at home—all still intact.<br>
+<strong>Anti-personalization:</strong> Separate "my part of the responsibility" from "the system/luck part," and own only the former, not the whole causal chain.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Calibrate-your-recovery checklist</div>
+<ul class="checklist">
+<li>Did I give myself a "specific and bounded" mourning period, rather than wallowing indefinitely or forcing a fake "I'm fine"?</li>
+<li>Which P is amplifying it right now? Name it explicitly.</li>
+<li>Looking back a week later, a month later—is the pain actually fading? (If not at all, you may need outside help.)</li>
+<li>Did I write "what I learned this time" into the postmortem, so the failure leaves an asset, not just a scar?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common mistakes (with an honest trade-off)</div>
+<div class="pitfall">
+<ul>
+<li><strong>Forcing a "full reset."</strong> Suppressed, undigested shame detonates in the next similar situation.</li>
+<li><strong>Reading "recovery" as "back to before the failure."</strong> Real recovery is arriving at a <strong>new spot</strong> carrying the lesson, not retreating to the origin.</li>
+<li><strong>An honest line:</strong> some failures do have real consequences—a lost stretch of trust, a missed promotion round, even being forced out. Recovery doesn't mean "zero cost"; it means <strong>keeping the cost within its proper bounds, not letting it spread into a verdict on the whole self</strong>.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key references</div>
+<div class="ref"><strong>Sheryl Sandberg &amp; Adam Grant, <em>Option B</em></strong> (Ch. 1)—operationalizing the three P's and resilience.<br><strong>Martin Seligman, <em>Learned Optimism</em></strong>—the research source of the three P's (explanatory style).<br><strong>Daniel Gilbert, <em>Stumbling on Happiness</em></strong>—"impact bias": we systematically overestimate how long negative events affect us.</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Reflection</h3>
+<p>Do one concrete thing this week, not just reflect:</p>
+<div class="action">
+<strong>Write a "CV of failures" for your eyes only.</strong> Pick 3 real failures from your career; for each, write three lines: (1) what concretely happened (no gloss); (2) its real cost at the time; (3) what it gave you that someone who never stepped on this landmine wouldn't have.<br><br>Then pick one you've "already recovered from and can recount calmly," and tell it to a report in a 1:1 this week—as an experiment in <strong>a leader modeling vulnerability</strong>. Watch how the air changes.
+</div>
+<p style="margin-top:16px"><strong>Reflection:</strong> Observe your inner narrative once this week—when a failure comes to mind, does your head play "I did X wrong" (guilt) or "I'm just not good enough" (shame)? Just name it; don't judge yet.</p>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Go Deeper</h3>
+<details>
+<summary>1. In East Asian "face" cultures, is the shame cost of public failure systematically higher? How does that change when "owning it publicly" is the right strategy?</summary>
+<div class="think">In collectivist, high-context cultures, failure is more readily read as "dragging the group down," so the social punishment of losing face is heavier and the room to maneuver smaller. So "owning it = showing accountability," highly effective in the West, may read in some East Asian orgs as "confirming incompetence." Localize: owning responsibility is fine, but put the weight on "the fix plan" and "restitution to the collective," and dial down public displays of personal emotion.</div>
+</details>
+<details>
+<summary>2. Under what conditions is "failure is the mother of success" true, and when is it dangerous pep talk?</summary>
+<div class="think">Failure only has learning value when it's "reviewable, lesson-extractable, and the system lets you try again." In zero-tolerance, one-strike environments (high-risk surgery, compliance roles, the white heat of a political fight), romanticizing failure is dangerous. The key is to separate "low-cost, reversible" from "high-cost, irreversible" failure—encourage many tries of the former, avoid the latter at all costs. Conflate them and you either freeze people or make them recklessly bet what shouldn't be bet.</div>
+</details>
+<details>
+<summary>3. Does a leader disclosing their own failure add to or subtract from team psychological safety? Where's the line?</summary>
+<div class="think">Moderate vulnerability (a "past-tense" failure you've recovered from, with a clear lesson) lowers the team's perfectionism fear—a high-leverage move. But a "present-tense" failure still shaking your own confidence, if exposed too early, makes the team anxious—they need a sense of stability. Principle: tell failure as teaching material; don't make the team your emotional dumping ground. Past tense, not present.</div>
+</details>
+<details>
+<summary>4. How do you tell "truly digested" from "evasively turning the page fast"?</summary>
+<div class="think">The test: can you recount the failure <strong>calmly, concretely, without defensiveness</strong>, and state what you learned? If raising it spikes your heart rate—rage or collapse—or you refuse to touch it at all, that's mostly suppression, not digestion: the shame is still buried and will detonate in the next similar situation. The mark of true digestion is that the failure has gone from forbidden zone to callable material: you can proactively use it to teach others, instead of being taught by it.</div>
+</details>
+</div>
+
+<footer>BigCat · Leadership Daily · Day 25 · 2026.06.15</footer>
+</div>
+</body>
+</html>
