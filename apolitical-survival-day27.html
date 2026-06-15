@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 27：不玩政治者的生存</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:46px}
+.deepen h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1px;margin-bottom:14px;border-bottom:1px solid #c4a878;padding-bottom:8px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;padding:4px 0;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;padding:12px 18px;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details[open] summary{border-bottom:1px dashed #e6d9bf}
+.deepen .think{padding:12px 18px;font-size:0.93rem;color:#4a3a20}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888;margin-top:40px;border-top:1px solid #c4a878}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 27 · 2026.06.17</div>
+<h1>不玩政治者的生存：拒绝玩，不等于不被玩</h1>
+<div class="meta"><span>主题：Survival for the Apolitical</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"The price good men pay for indifference to public affairs is to be ruled by evil men." — 归于柏拉图 / 伯里克利</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>很多技术人有一种道德洁癖——政治是肮脏的，我只管把活干好。本周诚实地拆这个信念：<strong>拒绝参与不是中立，而是把决定权拱手让给愿意参与的人，代价由你和你的团队承担</strong>。但这不等于要你变成 schemer。本周给政治冷感者一条务实的生存线：认清不参与的真实代价、找到「最低限度政治参与」的可执行清单、看清「用作品说话」在哪里有效在哪里失效、以及最优雅的解法——<strong>借盟友与代理人之口，而不是自己吹号</strong>。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>政治冷感的真实代价：中立是一种幻觉
+<span class="en">The Real Cost of Opting Out</span></h2>
+<span class="tag">代价</span><span class="tag">中立的幻觉</span><span class="tag">just-world</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">在资源有限的组织里，不参与分配的人不会得到「公平」的默认值——只会得到剩下的。你的沉默不是清高，是把团队的 headcount、晋升名额、好项目，让给了在房间里发声的人。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The price good men pay for indifference to public affairs is to be ruled by evil men."</span>
+<span class="zh">「好人对公共事务漠不关心所付的代价，就是被坏人统治。」</span>
+<span class="source">— 长期归于柏拉图 / 伯里克利（广为引用，原始出处存疑）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 在公司年度 planning 的资源分配会上，要为团队争两个 headcount。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>BigCat 想：「我团队交付质量全组最高，<strong>数据会替我说话</strong>。」会上只甩了一个 dashboard 链接，就闭麦了。结果两个 headcount 给了那个 PPT 讲得最响、跟 VP 走得最近的隔壁组。回去还得跟下属解释为什么又没招到人。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>会前一周，BigCat 私下找到掌握决策权的总监，<strong>用对方的语言</strong>讲清楚：「我这两个 headcount 投在 X 项目，直接关系到你 Q3 那个 OKR——没有它，那条线在年底会塌。」</p>
+<p>会上他不是去「争」，是去<strong>确认一个已经预热好的共识</strong>。决策者早被说服，公开会议只是走流程。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：认清你正在付的代价</div>
+<ul class="checklist">
+<li>最近一次资源分配 / 晋升讨论，你是「被通知结果」还是「参与了过程」？</li>
+<li>你团队上一个晋升名额，是你争来的，还是默认轮到的？</li>
+<li>你能说出 3 个决定你团队命运、但你从不在场的会议吗？</li>
+<li>你把「不争」叫做正直——但这个代价，最终是你承担，还是信任你的下属承担？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「不参与」等同于「中立」。</strong>组织里没有中立，只有缺席——而缺席默认投了「维持现状」一票。</li>
+<li><strong>等着被发现。</strong>资源分配不是考试，没人因为你卷面分高就主动给你加分。</li>
+<li><strong>把政治窄化为「拍马屁」，</strong>于是连正当的发声都一并拒绝了。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究显示女性更常被期待「不争抢、顾全大局」，主动争取资源时更易被贴上 <strong>aggressive</strong> 标签（likability penalty）。这意味着沉默的成本对女性领导者其实<strong>更高</strong>：你不争，资源默认流向更敢争的人，而你的团队买单。但解法不是硬着头皮去争抢、再去吃那层 likability 税——而是 Card 4 的「借力」：用盟友背书绕开它。
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>最低限度的政治参与：政治的 MVP
+<span class="en">Minimum Viable Politics</span></h2>
+<span class="tag">MVP 政治</span><span class="tag">弱连接</span><span class="tag">pre-wire</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">你不需要变成 operator，但有三件低成本、不违背良心的事是生存底线：<strong>让对的人知道你在做什么、维护几条跨部门弱连接、在关键决策前做 pre-wire（预先沟通）</strong>。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Those to whom we are weakly tied are more likely to move in circles different from our own and will thus have access to information different from that which we receive."</span>
+<span class="zh">「与我们弱连接的人，更可能身处不同的圈子，因而掌握着我们接触不到的信息。」</span>
+<span class="source">— Mark Granovetter,《The Strength of Weak Ties》(1973)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 要在 30 人的架构评审会上，推一个有争议的技术方向。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>在评审会上<strong>第一次</strong>抛出方案。当场被另一个 staff 工程师挑战一个他没准备的点，措手不及，方案被打回。三周白费。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（pre-wire）</div>
+<p>会前 3 天，分别用 15 分钟约那个<strong>最可能反对</strong>的 staff 工程师和那个<strong>权重最高</strong>的决策者：「我想先听听你对这个方向的顾虑，免得会上你被 surprise。」</p>
+<p>会上你已经知道反对点在哪、并提前回应了；反对者也已经被私下听见、有尊严地表达过。<strong>决策会于是变成确认会。</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：最低限度政治清单</div>
+<ul class="checklist">
+<li>决定你工作的 5 个关键决策者，你能各点出一次最近的非正式接触吗？</li>
+<li>重要决策会前，你做 pre-wire 了吗——至少 wire 那个最可能反对的人？</li>
+<li>你每月有没有至少 2 次跨部门的「无议程」弱连接维护（咖啡、Slack 问候）？</li>
+<li>你团队的成果，对的人（你老板的老板）知道吗，还是只埋在你的 dashboard 里？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 pre-wire 当成「操纵」。</strong>它不是——它是让人能在私下、有尊严地表达异议，而不是在公开场合被迫硬表态。</li>
+<li><strong>弱连接平时不养，临时抱佛脚。</strong>只在需要帮忙时才出现的人，没人愿意帮。</li>
+<li><strong>只 wire 支持者，不 wire 反对者。</strong>真正的风险在反对者那里——他们才是你该提前坐下来谈的人。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>「用作品说话」的边界：作品不会自己长腿
+<span class="en">Where "Let the Work Speak" Breaks Down</span></h2>
+<span class="tag">能力≠可见</span><span class="tag">meritocracy 神话</span><span class="tag">翻译</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">「做好工作自然被看见」是部分真相，也是部分陷阱。好作品是<strong>必要</strong>条件，不是<strong>充分</strong>条件——它不会自己走进决策者的脑子。你得把它翻译成对方在意的语言、放在对的场合。但反过来，过度自我推销同样反效果。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"We commonly mistake confidence for competence, and assume that those who exhibit the former must also possess the latter."</span>
+<span class="zh">「我们常把自信误认作能力，假定展现出自信的人必然也具备能力。」</span>
+<span class="source">— Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 在半年一次的 calibration（校准 / 述职）上汇报团队战果。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>述职塞满技术细节：「我们把 P99 延迟从 200ms 降到 80ms，重构了 X 服务的存储层……」。calibration 室里多数是非技术的评委，听不懂、记不住，你的贡献被默默打了折。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（翻译成决策者的语言）</div>
+<p>同一件事：「这次重构让我们扛住了大促当天 3 倍流量——没有它，那天会 down 机，直接损失约 ¥X，还要赔 SLA。」</p>
+<p><strong>一句决策者能复述给他老板的话，胜过十张架构图。</strong>「用作品说话」真正生效的三个条件：① 被翻译成 audience 的语言；② 出现在对的场合（不是埋在 wiki）；③ 有人愿意替你复述。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：让作品真的会说话</div>
+<ul class="checklist">
+<li>你最近一次汇报，非技术的人能用一句话复述你的贡献吗？</li>
+<li>你的关键成果，有没有翻译成「钱 / 风险 / 用户」三种语言之一？</li>
+<li>你是否误把「我没空自我推销」当美德，而非一种可见性缺失？</li>
+<li>除了你自己，有没有第三个人会主动提起你的贡献？（若没有，见 Card 4）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>用过程的复杂度证明价值。</strong>技术人的通病——可决策者只关心结果的影响，不关心你写了多少行代码。</li>
+<li><strong>把「自我推销」和「让作品被正确理解」混为一谈，</strong>于是因为反感前者，连后者也一起不做了。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+这里有真实的双重 bind。研究（Bowles & Babcock 等）显示女性自我推销时更易触发 backlash——「能干但不讨喜」。所以对女性，<strong>「用作品说话」失效得更彻底</strong>（作品不会自动说话），可「大声推销自己」的反弹又更大。出路不是更使劲推销，而是 Card 4：建一个会替你说话的盟友 / sponsor 网络，让第三方背书绕开这层 likability 税——别人夸你，不算你不讨喜。
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>借力盟友与代理人：让别人替你吹号
+<span class="en">Win Through Allies and Proxies</span></h2>
+<span class="tag">借力</span><span class="tag">sponsor</span><span class="tag">第三方背书</span><span class="tag">孙子</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">政治冷感者最优雅的生存术：不自己吹号，让别人替你说。<strong>一个会在你不在场的房间替你背书的盟友，胜过你自己的十次自夸。</strong>但这是互惠的——你得先成为别人的代理人。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"不战而屈人之兵，善之善者也。"</span>
+<span class="zh">不靠正面硬拼就让对方就范，才是高明中的高明。借势、借人、借共识，胜过亲自上阵叫喊。</span>
+<span class="source">— 《孙子兵法 · 谋攻篇》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Mentor vs Sponsor vs Ally：你缺的是哪一种？</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="30" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="250" y="30" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2.5"/>
+<rect x="480" y="30" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="120" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Mentor</text>
+<text x="120" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">给你建议</text>
+<text x="35" y="112" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 跟你谈话</text>
+<text x="35" y="135" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 当面指点</text>
+<text x="35" y="158" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 不押信用</text>
+<text x="35" y="188" font-family="Georgia" font-size="11.5" fill="#a04020">价值：成长</text>
+<text x="35" y="210" font-family="Georgia" font-size="11.5" fill="#a04020">易得，常过剩</text>
+<text x="350" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Sponsor</text>
+<text x="350" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">替你争取</text>
+<text x="265" y="112" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 你不在的房间</text>
+<text x="265" y="135" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 替你点名</text>
+<text x="265" y="158" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 押上自己信用</text>
+<text x="265" y="188" font-family="Georgia" font-size="11.5" fill="#4a6a28">价值：晋升</text>
+<text x="265" y="210" font-family="Georgia" font-size="11.5" fill="#4a6a28">稀缺，最关键</text>
+<text x="580" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Ally</text>
+<text x="580" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">利益共担</text>
+<text x="495" y="112" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 平级 / 跨组</text>
+<text x="495" y="135" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 共同诉求</text>
+<text x="495" y="158" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· 会上附议</text>
+<text x="495" y="188" font-family="Georgia" font-size="11.5" fill="#4a6a28">价值：共识</text>
+<text x="495" y="210" font-family="Georgia" font-size="11.5" fill="#4a6a28">靠互惠经营</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话（sponsor）</div>
+<div class="quote">
+<span class="en">"A mentor will talk with you; a sponsor will talk about you."</span>
+<span class="zh">「mentor 跟你谈，sponsor 替你谈——在你不在的房间里。」</span>
+<span class="source">— Sylvia Ann Hewlett,《Forget a Mentor, Find a Sponsor》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 想推一个跨团队的技术标准化，但自己没有跨团队职权。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>自己发长邮件、到处开会推销。被视为「越界」「抢地盘」，<strong>越用力越招反感</strong>，最后不了了之。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（先给价值，再借口）</div>
+<p>找到另外两个组里早受够现状的 tech lead，<strong>先帮他们解决一个他们的痛点</strong>（互惠在先），再让他们在各自组里、在你不在的场合提出这个需求。</p>
+<p>当三个组「自发」表达同一诉求，它就不再是 BigCat 的地盘扩张，而是<strong>组织共识</strong>。</p>
+<p><strong>请人背书的话术：</strong>别说「帮我背书一下」；说「你那个 X 问题，我这边能帮你 Y。顺便——咱俩在 Z 上的痛点是同一个，下次评审你提、我附议，比我一个人喊管用。」</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：经营你的代理人网络</div>
+<ul class="checklist">
+<li>你能列出 3 个会在你不在场时替你说话的人吗？（是 sponsor，不只是 mentor）</li>
+<li>过去一个月，你主动为别人背书 / 解困几次？（互惠是前置，不是回报）</li>
+<li>你想推的事，有没有让一个「利益相关但非你下属」的人替你提出？</li>
+<li>你的 sponsor 知道你下一步想要什么吗（晋升？换项目？），还是只泛泛欣赏你？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把盟友关系当单向索取，</strong>只在需要时出现。互惠的规矩是：先付出，账才立得住。</li>
+<li><strong>混淆 mentor 和 sponsor。</strong>你有一堆愿意「给你建议」的人，却没有一个愿意「押上自己信用替你争」的人。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Hewlett 的研究有个尖锐发现：女性更容易获得 mentor（被给建议），却更缺 sponsor（被真正提携）——<strong>over-mentored, under-sponsored</strong>。如果你已经收集了一堆「人生导师」却始终没晋升，问题可能不是建议不够，而是没人在关键的房间里替你押注。主动求 <strong>sponsorship</strong> 而非更多 mentorship，是破局的关键一步。
+</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · 思考题</h3>
+<p>本周做一件具体的事，不只是反思：</p>
+<div class="action">
+<strong>挑一个你下周要过的、有争议或要资源的决策</strong>，会前做两步：<br><br>
+<strong>(1) Pre-wire（Card 2）：</strong>列出会上权重最高 + 最可能反对的两个人，各约 15 分钟提前 1:1，先听他们的顾虑。<br>
+<strong>(2) 借代理人（Card 4）：</strong>在关系网里找一个「利益相关但非你下属」的人，把你的诉求翻译成<strong>他也受益</strong>的版本，请他在会上附议（或独立提出）。<br><br>会后记一行：有 pre-wire 的议题 vs 没 wire 的议题，哪个推进更顺？
+</div>
+<p style="margin-top:16px"><strong>思考题：</strong>你最引以为傲的「我从不玩政治」，到底是一种正直，还是一种逃避——逃避一种你不擅长、于是被你合理化为「肮脏」的能力？而这份逃避的代价，最终是你自己承担，还是你团队替你承担？</p>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>深入思考</h3>
+<details>
+<summary>1. 「最低限度政治参与」的底线，会不会随组织毒性升高而被迫抬高？在极度政治化的公司，MVP 政治够用吗？</summary>
+<div class="think">会。MVP 政治预设了组织底色还算健康、规则大体可预期。在零和、派系林立的高毒组织里，最低限度可能不足以自保——但这时正确的动作往往不是「玩得更狠」，而是评估退场（Hirschman 的 exit / voice / loyalty）。本周的清单是<strong>生存底线，不是万能药</strong>；当你发现底线投入的边际回报持续为负、且开始为了留下而牺牲价值观时，优雅退场本身就是一种政治智慧。</div>
+</details>
+<details>
+<summary>2. 「借盟友之口」与「操纵」的道德边界在哪？让三个组「自发」表达同一诉求，算共识构建还是 astroturfing（伪草根）？</summary>
+<div class="think">边界在于<strong>真实性与同意</strong>。如果三个组确实共享那个痛点、是被你点醒后自愿表达，那是共识构建——你做的是把已存在的利益 surface 出来。如果你制造虚假痛点、或用信息不对称诱导他们违背自身利益表态，那是操纵。检验问题：如果他们事后知道全过程，会觉得「被利用」还是「被代表」？灰色地带真实存在，成本是你的信用——一旦被识破为操纵，盟友网络会比建立时塌得更快。</div>
+</details>
+<details>
+<summary>3. 技术能力极强的「超级个体」，能不能靠不可替代性豁免于政治？</summary>
+<div class="think">短期可以，长期是脆弱的护城河。不可替代性给你议价权，但它依赖两个假设：你持续是最强的那个、且组织持续需要那项能力——两者都会随时间和重组失效。更危险的是，纯靠不可替代性的人往往没建盟友网络；一旦那项能力被商品化（被 AI 或新人替代），你会发现自己很强却很孤立，没人替你说话。<strong>能力是杠杆，不是豁免权。</strong></div>
+</details>
+<details>
+<summary>4. 这套「生存术」是否本身预设了一个已经病了的组织？真正健康的组织里，是不是就不需要这些？</summary>
+<div class="think">部分是。组织越健康（信息透明、晋升标准清晰、决策可追溯），政治的必要性越低，「用作品说话」越接近真相。但「完全不需要政治」的组织不存在——只要资源有限、人有偏好、决策靠人做，影响力的经营就永远存在，区别只是程度与形态。健康组织里它表现为「正当的影响力与对齐」，毒性组织里它退化为「派系与零和博弈」。目标不是消灭政治，而是把自己的参与稳稳维持在「正当影响力」这一端。</div>
+</details>
+</div>
+
+<footer>BigCat · Leadership Daily · Day 27 · 2026.06.17</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 27: Survival for the Apolitical</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:46px}
+.deepen h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1px;margin-bottom:14px;border-bottom:1px solid #c4a878;padding-bottom:8px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;padding:4px 0;border-left:3px solid #a8702d}
+.deepen summary{cursor:pointer;padding:12px 18px;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details[open] summary{border-bottom:1px dashed #e6d9bf}
+.deepen .think{padding:12px 18px;font-size:0.93rem;color:#4a3a20}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888;margin-top:40px;border-top:1px solid #c4a878}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 27 · 2026.06.17</div>
+<h1>Survival for the Apolitical: Refusing to Play Isn't the Same as Not Being Played</h1>
+<div class="meta"><span>Topic: Survival for the Apolitical</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"The price good men pay for indifference to public affairs is to be ruled by evil men." — commonly attributed to Plato / Pericles</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> Many engineers carry a kind of moral fastidiousness — politics is dirty, I just do good work. This week we honestly dismantle that belief: <strong>refusing to participate is not neutrality; it hands the decision to those who do participate, and the cost is paid by you and your team.</strong> But that doesn't mean becoming a schemer. Here is a pragmatic survival line for the politically averse: see the real cost of opting out, find an executable "minimum viable politics" checklist, understand where "let the work speak" works and where it fails, and the most elegant solution of all — <strong>win through allies and proxies rather than blowing your own horn.</strong>
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The Real Cost of Opting Out: Neutrality Is an Illusion
+<span class="en">中立是一种幻觉</span></h2>
+<span class="tag">cost</span><span class="tag">illusion of neutrality</span><span class="tag">just-world</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">In an organization with finite resources, those who don't take part in the allocation don't get the "fair" default — they get whatever is left. Your silence isn't high-mindedness; it hands your team's headcount, promotion slots, and good projects to whoever speaks up in the room.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The price good men pay for indifference to public affairs is to be ruled by evil men."</span>
+<span class="zh">Indifference is not free — it is paid for in being governed by the worst, not the best.</span>
+<span class="source">— long attributed to Plato / Pericles (widely cited; original source uncertain)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: BigCat is fighting for two headcount at the company's annual planning resource-allocation meeting.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The common move</div>
+<p>BigCat thinks: "My team has the highest delivery quality in the org — <strong>the data will speak for me</strong>." In the meeting he drops a dashboard link and goes silent. The two headcount go to the neighboring team whose lead gave the loudest deck and is closest to the VP. Now he has to explain to his reports why, again, there's no new hire.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The better move</div>
+<p>A week before, BigCat privately finds the director who holds the decision and, <strong>in the director's own language</strong>, makes it clear: "These two headcount go into project X, which directly drives your Q3 OKR — without them, that line collapses by year-end."</p>
+<p>In the meeting he isn't there to "fight" — he's there to <strong>confirm a consensus he already warmed up</strong>. The decider was persuaded long before; the public meeting is a formality.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: See the Cost You're Already Paying</div>
+<ul class="checklist">
+<li>In the last resource or promotion discussion, were you "notified of the outcome" or did you "take part in the process"?</li>
+<li>Your team's last promotion slot — did you fight for it, or did it just come up by default?</li>
+<li>Can you name 3 meetings that decide your team's fate but that you're never in?</li>
+<li>You call "not fighting" integrity — but who actually bears that cost, you or the reports who trust you?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Female Leader's Note</div>
+<div class="pitfall">
+<ul>
+<li><strong>Equating "not participating" with "neutrality."</strong> There is no neutrality in an org, only absence — and absence defaults to a vote for the status quo.</li>
+<li><strong>Waiting to be discovered.</strong> Resource allocation isn't an exam; no one adds points because your paper scored high.</li>
+<li><strong>Narrowing politics to "flattery,"</strong> and so refusing even legitimate advocacy.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research shows women are more often expected to "not grab, to put the whole first," and are more readily labeled <strong>aggressive</strong> when they actively claim resources (the likability penalty). That means the cost of silence is in fact <strong>higher</strong> for female leaders: don't fight, and resources flow to those who do, while your team pays. The fix isn't to grit your teeth and grab harder and eat that likability tax — it's the "leverage" of Card 4: route the advocacy through allies.
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Minimum Viable Politics
+<span class="en">政治的 MVP</span></h2>
+<span class="tag">MVP politics</span><span class="tag">weak ties</span><span class="tag">pre-wire</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">You don't need to become an operator, but three low-cost, conscience-clean things are the survival floor: <strong>let the right people know what you're doing, maintain a few cross-org weak ties, and pre-wire key decisions before the meeting.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Those to whom we are weakly tied are more likely to move in circles different from our own and will thus have access to information different from that which we receive."</span>
+<span class="zh">Weak ties reach circles your inner circle can't — which is exactly why they carry the information you'd otherwise miss.</span>
+<span class="source">— Mark Granovetter, "The Strength of Weak Ties" (1973)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: BigCat wants to push a contentious technical direction in a 30-person architecture review.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The common move</div>
+<p>He floats the proposal <strong>for the first time</strong> in the review. A staff engineer challenges a point he hasn't prepared for; caught off guard, the proposal is sent back. Three weeks wasted.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The better move (pre-wire)</div>
+<p>Three days before, he books 15 minutes each with the staff engineer <strong>most likely to object</strong> and the decider with <strong>the most weight</strong>: "I'd like to hear your concerns first, so you're not surprised in the room."</p>
+<p>By meeting time he knows where the objection is and has pre-addressed it; the objector has already been heard privately, with dignity. <strong>The decision meeting becomes a confirmation meeting.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: The Minimum Politics List</div>
+<ul class="checklist">
+<li>For the 5 deciders who shape your work, can you name a recent informal touchpoint with each?</li>
+<li>Before an important decision meeting, did you pre-wire — at least the person most likely to object?</li>
+<li>Do you have at least 2 "no-agenda" cross-org weak-tie touches a month (coffee, a Slack hello)?</li>
+<li>Do the right people (your boss's boss) know your team's wins, or are they buried in your dashboard?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating pre-wire as "manipulation."</strong> It isn't — it lets someone voice dissent privately and with dignity, instead of being forced to take a hard stand in public.</li>
+<li><strong>Not tending weak ties, then scrambling.</strong> People who only show up when they need a favor get no favors.</li>
+<li><strong>Wiring only supporters, not objectors.</strong> The real risk lives with the objectors — they're exactly the ones to sit down with early.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Where "Let the Work Speak" Breaks Down: Work Doesn't Grow Legs
+<span class="en">作品不会自己长腿</span></h2>
+<span class="tag">competence≠visibility</span><span class="tag">meritocracy myth</span><span class="tag">translation</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">"Do good work and you'll be seen" is part truth, part trap. Good work is <strong>necessary</strong>, not <strong>sufficient</strong> — it won't walk itself into a decider's head. You have to translate it into the language they care about and put it in the right place. But the reverse is also true: over-promoting yourself backfires.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"We commonly mistake confidence for competence, and assume that those who exhibit the former must also possess the latter."</span>
+<span class="zh">Confidence and competence are not the same thing — and conflating them is how the wrong people rise.</span>
+<span class="source">— Tomas Chamorro-Premuzic, "Why Do So Many Incompetent Men Become Leaders?"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: BigCat reports his team's wins at the semiannual calibration / review.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The common move</div>
+<p>His report is stuffed with technical detail: "We cut P99 latency from 200ms to 80ms and refactored the storage layer of service X..." Most reviewers in the calibration room are non-technical — they don't follow it, don't remember it, and his contribution is quietly discounted.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The better move (translate into the decider's language)</div>
+<p>Same thing: "This refactor let us absorb 3x peak traffic on the big-sale day — without it the site goes down, a direct loss of about ¥X plus SLA penalties."</p>
+<p><strong>One sentence a decider can repeat to their own boss beats ten architecture diagrams.</strong> The three conditions for "let the work speak" to actually fire: ① translated into the audience's language; ② placed in the right venue (not buried in a wiki); ③ someone willing to repeat it for you.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Make the Work Actually Speak</div>
+<ul class="checklist">
+<li>Could a non-technical person repeat your contribution in one sentence after your last report?</li>
+<li>Have you translated your key win into one of three languages — money / risk / users?</li>
+<li>Are you mistaking "I have no time to self-promote" for a virtue, rather than a visibility gap?</li>
+<li>Besides you, is there a third person who would bring up your contribution unprompted? (If not, see Card 4.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Female Leader's Note</div>
+<div class="pitfall">
+<ul>
+<li><strong>Proving value through process complexity.</strong> The engineer's affliction — but deciders care about the impact of the result, not how many lines you wrote.</li>
+<li><strong>Conflating "self-promotion" with "making the work understood,"</strong> and so, out of distaste for the former, doing neither.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+There's a real double bind here. Research (Bowles & Babcock et al.) shows women face more backlash when they self-promote — "competent but unlikable." So for women, <strong>"let the work speak" fails even harder</strong> (work doesn't speak on its own), yet "loudly promoting myself" rebounds more. The way out isn't to push harder, but Card 4: build an ally / sponsor network that speaks for you, so third-party endorsement routes around the likability tax — when others praise you, it doesn't count against your likability.
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Win Through Allies and Proxies: Let Others Blow Your Horn
+<span class="en">让别人替你吹号</span></h2>
+<span class="tag">leverage</span><span class="tag">sponsor</span><span class="tag">third-party endorsement</span><span class="tag">Sun Tzu</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">The most elegant survival craft for the politically averse: don't blow your own horn — let others speak for you. <strong>One ally who backs you in a room you're not in beats ten of your own boasts.</strong> But it's reciprocal — you have to first become someone else's proxy.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"To subdue the enemy without fighting is the acme of skill."</span>
+<span class="zh">Winning without a frontal fight — by borrowing momentum, people, and consensus — beats charging in and shouting alone.</span>
+<span class="source">— Sun Tzu, The Art of War, "Attack by Stratagem"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Mentor vs Sponsor vs Ally: Which Are You Missing?</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="30" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="250" y="30" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2.5"/>
+<rect x="480" y="30" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="120" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Mentor</text>
+<text x="120" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">advises you</text>
+<text x="35" y="112" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· talks with you</text>
+<text x="35" y="135" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· coaches in person</text>
+<text x="35" y="158" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· no credit at stake</text>
+<text x="35" y="188" font-family="Georgia" font-size="11.5" fill="#a04020">value: growth</text>
+<text x="35" y="210" font-family="Georgia" font-size="11.5" fill="#a04020">easy, often surplus</text>
+<text x="350" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Sponsor</text>
+<text x="350" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">fights for you</text>
+<text x="265" y="112" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· rooms you're not in</text>
+<text x="265" y="135" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· names you</text>
+<text x="265" y="158" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· stakes own credit</text>
+<text x="265" y="188" font-family="Georgia" font-size="11.5" fill="#4a6a28">value: promotion</text>
+<text x="265" y="210" font-family="Georgia" font-size="11.5" fill="#4a6a28">scarce, the crux</text>
+<text x="580" y="60" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Ally</text>
+<text x="580" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">shared interest</text>
+<text x="495" y="112" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· peer / cross-org</text>
+<text x="495" y="135" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· common cause</text>
+<text x="495" y="158" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· seconds you in room</text>
+<text x="495" y="188" font-family="Georgia" font-size="11.5" fill="#4a6a28">value: consensus</text>
+<text x="495" y="210" font-family="Georgia" font-size="11.5" fill="#4a6a28">built on reciprocity</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words (sponsor)</div>
+<div class="quote">
+<span class="en">"A mentor will talk with you; a sponsor will talk about you."</span>
+<span class="zh">A mentor talks with you; a sponsor talks about you — in the rooms you aren't in.</span>
+<span class="source">— Sylvia Ann Hewlett, "Forget a Mentor, Find a Sponsor"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: BigCat wants to drive a cross-team technical standardization, but has no cross-team authority.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The common move</div>
+<p>He sends long emails and pitches in meeting after meeting. He's seen as "overstepping," "grabbing turf" — <strong>the harder he pushes, the more resistance he draws</strong> — and it fizzles out.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The better move (give value first, then borrow voice)</div>
+<p>He finds two tech leads in other orgs already fed up with the status quo, <strong>first solves a pain point of theirs</strong> (reciprocity first), then has them raise the need in their own orgs, in rooms he isn't in.</p>
+<p>When three orgs "spontaneously" voice the same need, it's no longer BigCat's turf grab — it's <strong>organizational consensus</strong>.</p>
+<p><strong>The ask, scripted:</strong> Don't say "back me up." Say: "Your problem X — I can help you with Y. By the way, we share the same pain on Z; next review, you raise it and I'll second it — that lands better than me shouting alone."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Tend Your Proxy Network</div>
+<ul class="checklist">
+<li>Can you name 3 people who'd speak for you when you're not in the room? (Sponsors, not just mentors.)</li>
+<li>In the past month, how many times did you back / unblock someone else? (Reciprocity is the deposit, not the return.)</li>
+<li>For what you want to push, did you have a "stakeholder who isn't your report" raise it for you?</li>
+<li>Does your sponsor know what you want next (promotion? a project change?), or just admire you vaguely?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Female Leader's Note</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating alliances as one-way extraction,</strong> showing up only when in need. The rule of reciprocity: give first, then the account holds.</li>
+<li><strong>Confusing mentor and sponsor.</strong> You have a pile of people willing to "give advice," but not one willing to "stake their own credit to fight for you."</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Hewlett's research has a sharp finding: women more easily get mentors (advice) but lack sponsors (real advancement) — <strong>over-mentored, under-sponsored</strong>. If you've collected a stack of "life coaches" but still haven't been promoted, the problem may not be too little advice — it's that no one is betting on you in the room that matters. Actively seeking <strong>sponsorship</strong>, not more mentorship, is the key move to break through.
+</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Reflection</h3>
+<p>Do one concrete thing this week, not just reflect:</p>
+<div class="action">
+<strong>Pick a contentious or resource-related decision you'll run next week</strong> and do two steps before the meeting:<br><br>
+<strong>(1) Pre-wire (Card 2):</strong> List the two people with the most weight and most likely to object; book 15 minutes each in advance to hear their concerns first.<br>
+<strong>(2) Borrow a proxy (Card 4):</strong> In your network, find a "stakeholder who isn't your report," translate your ask into a version <strong>they also benefit from</strong>, and ask them to second it (or raise it independently) in the meeting.<br><br>Afterward, note one line: the item that was pre-wired vs the one that wasn't — which moved more smoothly?
+</div>
+<p style="margin-top:16px"><strong>Reflection:</strong> Your proudest line, "I never play politics" — is it integrity, or avoidance: avoiding a skill you're not good at, then rationalizing it as "dirty"? And the cost of that avoidance — do you bear it, or does your team bear it for you?</p>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Go Deeper</h3>
+<details>
+<summary>1. Does the "minimum" in minimum viable politics get forced upward as an org grows more toxic? In a deeply political company, is MVP politics enough?</summary>
+<div class="think">Yes. MVP politics presumes a reasonably healthy baseline with broadly predictable rules. In a zero-sum, faction-ridden, high-toxicity org, the minimum may not be enough to protect yourself — but the right move then is usually not "play harder," it's to weigh exit (Hirschman's exit / voice / loyalty). This week's list is a <strong>survival floor, not a cure-all</strong>; when the marginal return on that floor stays negative and you start sacrificing values to stay, a graceful exit is itself a form of political wisdom.</div>
+</details>
+<details>
+<summary>2. Where's the moral line between "borrowing an ally's voice" and "manipulation"? Three orgs "spontaneously" voicing the same need — consensus-building or astroturfing?</summary>
+<div class="think">The line is <strong>authenticity and consent</strong>. If the three orgs genuinely share the pain and voice it willingly after you surfaced it, that's consensus-building — you surfaced an interest that already existed. If you manufacture a false pain, or use information asymmetry to get them to speak against their own interest, that's manipulation. Test question: if they knew the whole process afterward, would they feel "used" or "represented"? The gray zone is real, and the cost is your credibility — once you're read as a manipulator, the ally network collapses faster than it was built.</div>
+</details>
+<details>
+<summary>3. Can an extremely capable "super-individual" be exempt from politics through sheer indispensability?</summary>
+<div class="think">Short term yes, long term it's a fragile moat. Indispensability gives you bargaining power, but it rests on two assumptions: that you stay the strongest, and that the org keeps needing that capability — both decay with time and reorgs. More dangerous: people who rely purely on indispensability often build no ally network; once the capability is commoditized (replaced by AI or a new hire), you find yourself strong but isolated, with no one to speak for you. <strong>Capability is leverage, not an exemption.</strong></div>
+</details>
+<details>
+<summary>4. Does this "survival craft" presuppose an already-sick org? In a truly healthy organization, would none of this be needed?</summary>
+<div class="think">Partly. The healthier the org (transparent information, clear promotion standards, traceable decisions), the lower the necessity of politics and the closer "let the work speak" gets to truth. But an org needing "no politics at all" doesn't exist — as long as resources are finite, people have preferences, and humans make decisions, the cultivation of influence persists; only the degree and form change. In a healthy org it shows up as "legitimate influence and alignment"; in a toxic one it degrades into "factions and zero-sum games." The goal isn't to abolish politics, but to keep your own participation firmly at the "legitimate influence" end.</div>
+</details>
+</div>
+
+<footer>BigCat · Leadership Daily · Day 27 · 2026.06.17</footer>
+</div>
+</body>
+</html>
