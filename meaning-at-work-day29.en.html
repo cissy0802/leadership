@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 29: Meaning at Work</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;border-left:3px solid #a8702d;padding:0 18px}
+.deepen summary{cursor:pointer;padding:14px 0;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details div{padding:0 0 16px;font-size:0.93rem;color:#4a3a20}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 29 · 2026.06.19</div>
+<h1>Meaning at Work: When the Company Can't Supply It, How You Make Your Own</h1>
+<div class="meta"><span>Topic: Meaning at Work</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Those who have a 'why' to live can bear with almost any 'how'." — Nietzsche, quoted by Viktor Frankl</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> at your level, what wears people down is usually not difficulty but <strong>meaninglessness</strong>—a reorg that erases your team's mission, six months on a compliance migration nobody reads, being flat-out busy yet unable to say "who did I create something for?" The self-help line is "find your passion," as if meaning were treasure buried somewhere waiting to be dug up. This week rejects that metaphor: <strong>meaning is not discovered, it is constructed</strong>. Four tools: diagnose with the three sources where meaning is actually missing, handle "bullshit-job" moments without self-deception, rewrite your role through job crafting, and—most fundamentally—stop outsourcing your meaning to the company, a client that can change anytime. Honesty first: some roles are structurally short on meaning; this week won't pretend every job can be reframed into a calling.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The Three Sources: Autonomy, Mastery, Purpose—Diagnose Which Is Missing
+<span class="en">Autonomy · Mastery · Purpose — Diagnose Which One Is Missing</span></h2>
+<span class="tag">Three sources</span><span class="tag">Diagnosis</span><span class="tag">Drive</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">"It's meaningless" is a symptom, not a diagnosis. Break it into three sources—<strong>autonomy</strong> (can I call my own shots), <strong>mastery</strong> (am I getting stronger), <strong>purpose</strong> (who is this useful to)—and one question tells you which is missing. The three deficits call for completely different prescriptions.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Human beings have an innate drive to be autonomous, self-determined, and connected to one another. And when that drive is liberated, people achieve more and live richer lives."</span>
+<span class="source">— Daniel Pink, <em>Drive</em>, Part Two</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Three-Source Diagnostic</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="30" width="210" height="180" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="245" y="30" width="210" height="180" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="470" y="30" width="210" height="180" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="125" y="58" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Autonomy</text>
+<text x="125" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">"Can I call my shots?"</text>
+<text x="35" y="112" font-family="Georgia" font-size="11.5" fill="#5a3818">Sign: everything needs</text>
+<text x="35" y="131" font-family="Georgia" font-size="11.5" fill="#5a3818">sign-off, micromanaged</text>
+<text x="35" y="160" font-family="Georgia" font-size="11.5" fill="#4a6a28">Rx: win an autonomous</text>
+<text x="35" y="179" font-family="Georgia" font-size="11.5" fill="#4a6a28">turf (scope/how/timing)</text>
+<text x="350" y="58" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Mastery</text>
+<text x="350" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">"Am I getting stronger?"</text>
+<text x="260" y="112" font-family="Georgia" font-size="11.5" fill="#5a3818">Sign: repetitive, zero</text>
+<text x="260" y="131" font-family="Georgia" font-size="11.5" fill="#5a3818">growth, too easy</text>
+<text x="260" y="160" font-family="Georgia" font-size="11.5" fill="#4a6a28">Rx: raise difficulty /</text>
+<text x="260" y="179" font-family="Georgia" font-size="11.5" fill="#4a6a28">new stack / set a yardstick</text>
+<text x="575" y="58" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">Purpose</text>
+<text x="575" y="80" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">"Useful to whom?"</text>
+<text x="485" y="112" font-family="Georgia" font-size="11.5" fill="#5a3818">Sign: don't know who</text>
+<text x="485" y="131" font-family="Georgia" font-size="11.5" fill="#5a3818">the user even is</text>
+<text x="485" y="160" font-family="Georgia" font-size="11.5" fill="#4a6a28">Rx: connect output to a</text>
+<text x="485" y="179" font-family="Georgia" font-size="11.5" fill="#4a6a28">real person / meet one</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: a senior engineer says in a 1:1, "Lately I'm just hauling bricks, it's meaningless." That sentence tells you nothing.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Straight pep talk</div>
+<p>"What you do really matters, it's a huge contribution to the company, hang in there." — You haven't heard what's missing, and you've handed him nothing actionable. He won't level with you next time.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Probe each of the three sources</div>
+<p>"I want to figure out which kind of 'meaningless' this is. <strong>One</strong>—someone else dictates how you do it and you have no room (autonomy)? <strong>Two</strong>—it's too familiar, you're not getting stronger (mastery)? <strong>Or three</strong>—you don't know who this work helps (purpose)?"</p>
+<p>(He says "mostly the second, I could do it with my eyes closed.") "Then this is a mastery problem, not an attitude problem. Next quarter I'll give you something you haven't touched—mentor a junior to multiply your leverage, or take on that real-time pipeline neither of us knows. You pick."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Diagnostic Checklist (for yourself or a report)</div>
+<ul class="checklist">
+<li>Autonomy: over the past month, how many calls did I make myself vs. were approved/assigned to me?</li>
+<li>Mastery: can I name one new skill I learned this year? Or am I living off what I learned three years ago?</li>
+<li>Purpose: can I name the specific "who" whose week got better because of my work?</li>
+<li>Which of the three scores lowest? That's the one to act on—don't pile more onto the high-scoring ones.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Patching all three at once.</strong> A meaning gap is almost always just one or two. Blindly "giving autonomy AND adding challenge AND preaching vision" hits nothing.</li>
+<li><strong>Treating purpose as a vision pitch.</strong> Purpose isn't a mission slide; it's "my code saved that support agent two hours of overtime"—a touchable connection.</li>
+<li><strong>Plugging meaning with money.</strong> A raise can briefly mask any of the three, but Pink's core point is exactly this: external rewards can't replace internal drive—once the money's spent, the gap remains.</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+Women are more often assigned "office housework" (note-taking, coordinating, organizing events)—work high on "purpose" but low on "mastery," which keeps you in place while looking "very engaged." When diagnosing reports (women especially), don't be fooled by high compliance: <strong>compliant ≠ growing</strong>. Ask the mastery question directly: "Which of these makes you more valuable three years from now?"
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> score your current role 1–5 on autonomy/mastery/purpose. Fix your eyes only on the lowest, and write one concrete change you can make this month.<br><strong>Reflect:</strong> last time you felt "it's meaningless," which one was actually missing—and did you patch the wrong one?</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Bullshit-Job Moments: Tell "Pointless" From "Hard"—No Self-Deception, No Grinding On
+<span class="en">Bullshit-Job Moments — Tell Pointless From Hard</span></h2>
+<span class="tag">Bullshit Jobs</span><span class="tag">Honesty</span><span class="tag">Minimum input</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Not everything that pains you "carries deep meaning." Some tasks <strong>are simply pointless</strong>—compliance theater, filling in cells of a report no one reads. Admitting a task is meaningless isn't slacking; it means you <strong>honestly give it the minimum necessary input</strong> and return the saved energy to what actually has leverage.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"A bullshit job is a form of paid employment that is so completely pointless, unnecessary, or pernicious that even the employee cannot justify its existence."</span>
+<span class="source">— David Graeber, <em>Bullshit Jobs</em>, Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: compliance requires every team to file a monthly "risk self-assessment," and in three years you're certain no one has read one. A report complains it's pure waste.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Pretend it has meaning</div>
+<p>"This is actually important, it shows we care about quality, fill it in seriously." — The team knows you're saying something you don't believe; from now on all your "this is important" credit is discounted, including the things that truly are.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Honest tiering + minimum input</div>
+<p>"I agree this form probably goes unread—it's a compliance paper-trail ritual, not real risk management. So: <strong>15 minutes, ship it, no gold-plating</strong>. I'll build a template; copy it and change three lines."</p>
+<p>"Real risk review happens in our monthly incident review—that one I need you to take seriously. Save your energy for there." (Meanwhile I'll ask compliance: can it be quarterly, can it be auto-generated—cut it if we can.)</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">"Is This a Bullshit Job?"—Four Questions</div>
+<ul class="checklist">
+<li>If this stopped next month, who'd actually be affected? Can't name a specific person = danger sign.</li>
+<li>Is it "pointless," or just "hard/dull but useful"? Don't flee the latter; don't glorify the former.</li>
+<li>Can I kill it, automate it, or only lower the input? Try the three paths from highest cost to lowest.</li>
+<li>Does the team's input on it match its real value? Or are we putting our hearts into a fake thing?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Misjudging "hard" as "bullshit."</strong> Lots of high-value work is dull and unrewarding early on (foundations, docs, paying down debt). The opposite of honesty isn't only self-deception—it's also making excuses to avoid things.</li>
+<li><strong>Being a megaphone.</strong> Forwarding the pointless task from above as-is with "nothing I can do"—you've forfeited the one value a leader adds: absorbing it and reducing the cost.</li>
+<li><strong>Real heart into a fake thing.</strong> Perfectionism on a task you know is meaningless is the biggest hidden killer of your sense of meaning.</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+Pointless "maintenance" tasks (ordering lunch, taking minutes, chasing action items) default onto women more, and the social cost of declining is higher for her. The fix isn't shouldering it alone or flatly refusing, but <strong>institutionalized rotation</strong>: put these tasks on a team-wide rota so "who does the housework" becomes a rule, not something riding each time on someone's goodwill or reluctance to say no.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> list your team's 3 weekly routine outputs; for each ask "who's affected if it stops." Pick the most bullshit-like one and this week either cut it or drop it to minimum input.<br><strong>Reflect:</strong> is there one thing you do to "look diligent" rather than "be useful"? For whose eyes?</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Meaning Is Made: Rewrite Your Role Through Job Crafting
+<span class="en">Meaning Is Crafted — Job Crafting, Not Job Waiting</span></h2>
+<span class="tag">Job Crafting</span><span class="tag">Active construction</span><span class="tag">Three rewrites</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Meaning isn't handed to you; you reshape it within the boundaries of your role. Three levers: change the <strong>tasks</strong> (do more of what lights you up, less of what drains you), change the <strong>relationships</strong> (more contact with people who give you energy), change the <strong>cognition</strong> (redefine what this job "is really about").</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"We define job crafting as the physical and cognitive changes individuals make in the task or relational boundaries of their work."</span>
+<span class="source">— Wrzesniewski &amp; Dutton, <em>Academy of Management Review</em>, 2001</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: an engineer rotates into the quarter's on-call/platform maintenance—all firefighting and shifts—and feels his career has stalled for six months. The classic "hospital cleaner" study says: same job, some treat it as drudgery, others as part of healing.</div>
+<div class="dialog good">
+<div class="speaker">✓ Land each of the three levers</div>
+<p><strong>Cognition:</strong> "Don't see it as 'shift drudgery.' Redefine: this quarter you're the <strong>guardian of system reliability</strong>—you understand best where things break. That's the most valuable hands-on experience on the SRE track."</p>
+<p><strong>Tasks:</strong> "Beyond firefighting, keep 20%: distill the incidents you fixed into a runbook + three automated alerts. In six months what you hand over isn't 'I did the shifts' but 'I cut the next person's pain in half.'"</p>
+<p><strong>Relationships:</strong> "While firefighting you're dealing with every team in the company—a network others can't build in a year. Deliberately get to know each person who comes to you."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Job Crafting Three-Lever Worksheet</div>
+<ul class="checklist">
+<li>Tasks: this quarter, can I <strong>add</strong> one thing that lights me up and <strong>shed/delegate</strong> one that drains me?</li>
+<li>Relationships: which two people energize me on contact? Can I create more collaboration surface with them?</li>
+<li>Cognition: given a bigger definition, what is my work "about"? (gatekeeper / coach / translator)</li>
+<li>Boundaries: can these rewrites happen within my current authority? (crafting is reshaping within boundaries, not demanding a transfer)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating crafting as job-hopping.</strong> Its power is precisely that you reshape within existing boundaries—no new job, no boss's sign-off. Use up the freedom inside your boundaries first.</li>
+<li><strong>Only changing cognition, not tasks.</strong> Pure "think about it differently" while the actual work is unchanged is self-soothing; it fades in weeks. Cognitive reframing needs a task/relationship anchor.</li>
+<li><strong>Only adding, never shedding.</strong> Adding the lighting-up work without shedding the draining work just makes you more tired. Crafting must be two-way, or it's just unpaid overtime.</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+"Changing tasks" has a gender trap: the tasks women add voluntarily are more often high-visibility, low-payoff support work rather than the core projects that raise your professional leverage. When crafting, calibrate deliberately—the thing you <strong>add</strong>, does it make you more valuable, or just more needed? The two are very different.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> take your least meaningful current duty and write one rewrite per lever (add/shed a task, connect a person, swap the definition); this week land one cognition and one task change.<br><strong>Reflect:</strong> if you redefined your work in one bigger sentence, what would you say it's "about"?</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Don't Outsource Meaning to the Company: Diversify the Supply
+<span class="en">Don't Outsource Your Meaning — Diversify the Supply</span></h2>
+<span class="tag">Don't outsource</span><span class="tag">Meaning portfolio</span><span class="tag">Antifragile</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Betting 100% of life's meaning on the mission the company hands you is a single point of failure: one reorg, one strategy pivot, and the client writes your meaning off with a stroke. <strong>Meaning supply should be a portfolio</strong>—craft, the people you grow, outside community, family—multi-sourced, so a single org change doesn't bankrupt you spiritually.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Ultimately, man should not ask what the meaning of his life is, but rather must recognize that it is he who is asked. Each man is questioned by life; and he can only answer to life by answering for his own life."</span>
+<span class="source">— Viktor Frankl, <em>Man's Search for Meaning</em>, Part Two</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: a reorg folds the project you nurtured for two years and were proud of into another department and changes its direction. You and an equally invested report both feel hollowed out.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Pin all meaning on the project</div>
+<p>"Everything we did was wasted, this company doesn't care at all." — Hidden in this is a dangerous premise: your meaning = this project's survival. Once that premise holds, any company change can destroy you. That's not the company's problem; it's that your meaning structure is too brittle.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Re-anchor meaning to sources a reorg can't delete</div>
+<p>"The project got redirected; the two years of work were real, and I'm hurting too. But I want to re-anchor the meaning: projects change, <strong>the capability I grew can't be taken from me</strong>, the people I mentored can't, and the method we worked out is still used by other teams."</p>
+<p>"Orgs change constantly—that's normal, not betrayal. What we control is building meaning on <strong>what we can carry with us</strong>—craft, people, reputation—not on any one project that can be reorganized away at any time."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Meaning-Portfolio Checklist</div>
+<ul class="checklist">
+<li>What share of my sense of meaning is pinned on "the current project/title"? Over 70% = single point of failure.</li>
+<li>List at least three independent sources: craft, mentoring, outside community/writing, family. Is each still alive?</li>
+<li>If the project is cut tomorrow, what can't the company take? (capability, relationships, reputation, work) That's the foundation.</li>
+<li>Do I have one meaning source that doesn't depend at all on my employer's approval? (open source, community, teaching, family)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Misreading "don't outsource" as "don't invest."</strong> It's not telling you to go cold. It's precisely because you're invested that you must diversify sources—so you can throw yourself in fully without fearing loss.</li>
+<li><strong>Waiting for the company to hand you a vision.</strong> A vision slide is the company's answer; Frankl's core is that meaning is your answer to life, not something to wait for. Passive waiting is itself outsourcing.</li>
+<li><strong>Using busyness to cover emptiness.</strong> Filling the calendar is the most common way to dodge "why am I doing this." Busy ≠ meaningful—sometimes the opposite.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> draw a "meaning pie chart," slicing your current sense of meaning by source (current project/craft/mentoring/outside/family). If any slice exceeds half, water a different source this week.<br><strong>Reflect:</strong> if your title and project were gone tomorrow, could you still name three things that make you feel "these years weren't wasted"?</div>
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Going Deeper</h3>
+<details><summary>Could "meaning is constructed" become a tool for employees to self-soothe and let bad organizations off the hook?</summary><div>That's a real risk. "Go craft your own meaning" can degrade into management's excuse-making—structural meaninglessness (bureaucratic bloat, bad incentives, doomed projects) shouldn't be something individuals digest with mindset. So this week's stance is two-layered: <strong>for the individual</strong>, constructing meaning is agency you can take back—don't hand it all over; <strong>for the leader (you)</strong>, the opposite—your job is to reduce the team's bullshit work at the source and supply real autonomy and purpose, not to toss off "go find meaning yourself." Employees shouldn't wait passively, leaders shouldn't dodge—both must hold for it to be honest.</div></details>
+<details><summary>Do the three sources carry the same weight across cultures and career stages?</summary><div>No. Early in a career "mastery" weighs heaviest—meaning comes mainly from getting stronger; senior, it shifts to "purpose" and "autonomy," because the skill curve flattens and drive comes from influence and control. Culturally, collectivist environments ignite people more through "purpose/connection," while individualist ones weight "autonomy" more. When diagnosing reports, don't apply your own current weighting—what a newcomer most lacks may be exactly the one you stopped lacking long ago.</div></details>
+<details><summary>Are some roles structurally unable to provide meaning? Is "construction" still useful then?</summary><div>Honestly: yes. Assembly-line, tightly scripted roles where you never see a beneficiary leave genuinely little crafting room, and pretending every job can be reframed into a calling is another kind of self-help. Two more realistic paths: one, move the center of gravity of meaning clearly outside work (the Card 4 portfolio idea), demoting the job to "a means to buy freedom" rather than "a source of meaning"—that's clarity, not failure; two, acknowledge it's structurally short on meaning and start a planned exit. Recognizing "this really can't be crafted" is its own wisdom.</div></details>
+<details><summary>As a leader, how do you give a team "purpose" without it becoming empty cheerleading?</summary><div>The difference is <strong>specificity and follow-through</strong>. Cheerleading is abstract, grand, forever in the future, and never tested ("we're changing the world"); real purpose is specific, touchable, and closes the loop: take an engineer to watch a real user suffer less because of their feature, read a beneficiary customer's own words in review, let the data say "that metric actually moved after launch." <strong>A sense of purpose comes from seeing your output land on a real person</strong>, not from hearing a vision speech.</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 29 · 2026.06.19</footer>
+</div>
+</body>
+</html>
