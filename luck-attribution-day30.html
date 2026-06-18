@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 30：运气与归因</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;border-left:3px solid #a8702d;padding:0 18px}
+.deepen summary{cursor:pointer;padding:14px 0;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details div{padding:0 0 16px;font-size:0.93rem;color:#4a3a20}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 30 · 2026.06.20</div>
+<h1>运气与归因：把成功里运气那一份诚实记下来</h1>
+<div class="meta"><span>主题：Luck &amp; Attribution</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Success = talent + luck. Great success = a little more talent + a lot of luck." — Daniel Kahneman</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>你越往上走，越容易相信"我走到这一步是因为我厉害"。这不全错——但<strong>自利归因</strong>（self-serving bias）是出厂设置，它会系统性地夸大你的功劳、缩小运气与时机的份额。本周不是要你假谦虚，而是<strong>校准</strong>：成功 = 才能 + 运气，能不能把这两份分清，直接决定你下一步的决策质量、学习速度，以及别人对你的信任。四件工具：估清运气的真实占比、把幸存者偏差的镜子照向自己、把谦卑当工具而非美德、把运气写进每次复盘。诚实在先：运气消除不了，能做的只是别把它误记成实力。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>成功 = 才能 + 运气：先承认归因是有偏的
+<span class="en">Self-Serving Bias — You Over-Claim by Default</span></h2>
+<span class="tag">自利归因</span><span class="tag">Kahneman</span><span class="tag">校准</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">"我做到了"几乎总是"我做对了 + 运气帮了忙"的合体。大脑默认把成功记在自己账上、把失败推给环境——这叫<strong>自利归因</strong>，不是品德问题，是认知出厂设置。它最大的危害是让你<strong>高估成功的可复制性</strong>。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Success = talent + luck. Great success = a little more talent + a lot of luck."</span>
+<span class="zh">"成功 = 才能 + 运气。巨大的成功 = 多一点才能 + 大量的运气。"</span>
+<span class="source">— Daniel Kahneman,《Thinking, Fast and Slow》Ch.19</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你带的项目大获成功，复盘会上轮到你做总结。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 把运气写进方法论</div>
+<p>"这是团队执行力和架构选型的胜利，方法论可复制，下个项目照搬。" —— 但真相里有一半是隔壁竞品那季度内讧、关键客户预算恰好到位、核心工程师恰好没被挖走。下个项目没这些加持，照搬翻车。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 分两栏再沉淀</div>
+<p>"成了。先分两栏：<strong>哪些是我们真做对了</strong>（结构化复用），<strong>哪些是运气</strong>——competitor 内讧、预算窗口、人没流失。后者下次未必有，不写进方法论。能复制的那栏，才是我们真正的能力。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：区分实力与运气</div>
+<ul class="checklist">
+<li>这次结果里，有没有"我无法控制、也没预测到"的外部因素帮了忙？</li>
+<li>同样的决策，换一个时间点 / 市场 / 老板，还会赢吗？</li>
+<li>我归功给自己时，用的主语是"我"，还是"我们 + 时机"？</li>
+<li>失败时我是不是反过来全推给环境？归因的标准两边要一致。</li>
+<li>如果让对手来复盘我这次赢，他会强调哪条我没提的运气？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>赢谈实力、输谈运气。</strong>这种双标团队一眼看穿，你的复盘就失去可信度。</li>
+<li><strong>把一次性运气和可复制实力混进同一个叙事。</strong>结果是沉淀出错误的方法论，组织照着踩坑。</li>
+<li><strong>用结果反推决策质量。</strong>"赢了所以当初判断对"——这是最贵的误判，见 Card 4。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Elliot Aronson,《The Social Animal》</strong>— self-serving bias 与基本归因谬误（fundamental attribution error）。<br><strong>Robert Frank,《Success and Luck》</strong>— 运气在精英叙事中被系统性低估的实证。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>幸存者偏差，照向自己
+<span class="en">Turn Survivorship Bias on Yourself</span></h2>
+<span class="tag">幸存者偏差</span><span class="tag">Wald</span><span class="tag">Taleb</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">你听到的所有"成功经验"都来自活下来的人。沉默的失败样本不写书、不做分享、不在你的晋升评审里。<strong>最危险的幸存者不是别人，是你自己</strong>——平行宇宙里很多个"你"做了同样的决策，但输了。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Mild success can be explainable by skills and labor. Wild success is attributable to variance."</span>
+<span class="zh">"小成功能用技能和努力解释，狂胜则要归于方差（运气）。"</span>
+<span class="source">— Nassim Taleb,《Fooled by Randomness》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">经典案例：Wald 的飞机</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="340" cy="115" rx="150" ry="46" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<rect x="250" y="96" width="180" height="38" rx="8" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<polygon points="430,100 510,115 430,130" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<polygon points="300,80 360,80 330,40" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<polygon points="300,150 360,150 330,190" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<circle cx="300" cy="110" r="5" fill="#b85c3a"/>
+<circle cx="350" cy="122" r="5" fill="#b85c3a"/>
+<circle cx="395" cy="108" r="5" fill="#b85c3a"/>
+<circle cx="330" cy="60" r="5" fill="#b85c3a"/>
+<circle cx="320" cy="170" r="5" fill="#b85c3a"/>
+<circle cx="270" cy="118" r="5" fill="#b85c3a"/>
+<circle cx="220" cy="115" r="7" fill="#5c8a3a"/>
+<text x="135" y="118" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">真正该</text>
+<text x="135" y="136" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">加装甲处</text>
+<line x1="175" y1="115" x2="210" y2="115" stroke="#5c8a3a" stroke-width="2"/>
+<text x="585" y="70" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#a04020">● 返航机弹孔</text>
+<text x="585" y="92" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#a04020">（看得见）</text>
+<text x="585" y="150" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#4a6a28">● 致命部位</text>
+<text x="585" y="172" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#4a6a28">（中弹的没回来）</text>
+</svg>
+</div>
+<div class="scene">
+<div class="setup">二战：军方想给弹孔最密的部位加装甲。统计学家 <strong>Abraham Wald</strong> 说你看反了——你只统计了<strong>飞回来</strong>的飞机；这些部位中弹还能返航，说明它们不致命。真正要加固的是返航机上几乎没弹孔的地方（引擎），因为中弹那里的飞机根本没回来。</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你读"10x 工程师"成长帖、听某 Staff 的晋升复盘，准备照着抄。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 把幸存者路径当配方</div>
+<p>"他这么做升上去了，我照做就行。" —— 你没看到几百个做了同样的事却没升的人，他们的路径里缺的那一块，往往恰恰是运气。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 主动找反样本</div>
+<p>"我去找几个做了类似选择、但没成的人聊聊——问他们到底差在哪。<strong>差的那部分若是我控制不了的，就是运气，不是我能复制的动作。</strong>"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：把镜子转过来</div>
+<ul class="checklist">
+<li>我在学的这个"成功案例"，对应的失败样本在哪？我找过吗？</li>
+<li>这条建议是不是只在"已经成功的人"嘴里出现？</li>
+<li>如果我做对了一切但还是输，最可能栽在哪个我控制不了的变量？</li>
+<li>我给别人建议时，有没有把自己的运气包装成"只要努力就行"？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把别人的幸存路径当确定算法。</strong>同样动作 + 没有运气 = 完全不同的结局。</li>
+<li><strong>忘了自己也是幸存样本。</strong>过去赢过几次就重仓下注，忽略方差迟早回归。</li>
+<li><strong>只研究赢家、不解剖输家。</strong>输家的信息密度往往更高——他们告诉你哪里真会死。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>谦卑是工具，不是美德表演
+<span class="en">Humility as Calibration, Not Performance</span></h2>
+<span class="tag">校准</span><span class="tag">自信≠能力</span><span class="tag">实用谦卑</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">实用的谦卑不是嘴上"我运气好啦"的客套，是一个<strong>准确的自我模型</strong>——知道自己实力的边界在哪。校准准的人决策更稳、学得更快、更被信任，也更少被嫉妒针对。谦卑的反面不是自信，是<strong>失真</strong>。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The real reason... is our inability to distinguish between confidence and competence."</span>
+<span class="zh">"真正的原因……是我们分不清自信与能力。"</span>
+<span class="source">— Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：评审会上有人问"这个方案最大的风险在哪"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 虚高自信</div>
+<p>"没什么大风险，我们考虑得很周全。" —— 一旦翻车，信用一次清零；而且团队里真懂的人当场就知道你在虚张声势。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 暴露边界 = 校准</div>
+<p>"三块我有把握，两块我不确定——上线延迟那块我没经验，想拉 X 一起看。" 暴露边界不是示弱，<strong>它让别人能相信你说"有把握"的时候是真的有把握。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 归功时具体点名运气与他人</div>
+<p>不说"这都是我推动的"；说"结构是我定的，但能落地靠 X 顶住了上线，也赶上了好窗口。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：校准自检</div>
+<ul class="checklist">
+<li>我能说出自己最近一个判断错在哪、为什么吗？（说不出 = 校准差）</li>
+<li>被问风险时，我先讲信心，还是先讲不确定的部分？</li>
+<li>我归功时，有没有具体点到运气和他人，而不是泛泛"靠大家"？</li>
+<li>我的自信程度，和过往真实命中率匹配吗？还是一律"很有把握"？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把谦卑做成表演。</strong>"我哪有那么厉害啦"——假谦虚比自负更招人烦，也是一种失真。</li>
+<li><strong>谦卑过头变成不敢拍板。</strong>校准不是不决策，是<strong>带着误差条决策</strong>：说清把握几成，然后照样拍。</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+"多谈运气、少居功"这条处方，是开给<strong>系统性高估自己</strong>的人（往往是默认自信的那一类）。但研究显示，女性更常把成功归于运气/他人、把失败归于自己，旁人也更容易说女性的成功"靠运气、靠帮忙"。如果你本就系统性<strong>低</strong>估自己，校准的方向恰恰相反：准确地说出"这是我的能力"。谦卑 = 校准，不是自我抹除——<strong>该居的功要居</strong>。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</strong>— 自信被误当能力的代价。<br><strong>Adam Grant,《Think Again》</strong>— "confident humility"：对能力有信心、对当下判断保持可被推翻。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>把运气写进复盘：分开决策质量与结果
+<span class="en">Write Luck Into the Postmortem — Separate Decision From Outcome</span></h2>
+<span class="tag">Resulting</span><span class="tag">决策复盘</span><span class="tag">Annie Duke</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">最贵的错误是"赢了就以为当初判断对、输了就骂当初判断错"——Annie Duke 叫它 <strong>resulting</strong>（以结果论决策）。好结果可能来自坏决策（走运），坏结果可能来自好决策（背运）。复盘要分两个轴：<strong>决策质量 × 结果</strong>。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Resulting: our tendency to equate the quality of a decision with the quality of its outcome."</span>
+<span class="zh">"Resulting：我们倾向于把决策的好坏，等同于结果的好坏。"</span>
+<span class="source">— Annie Duke,《Thinking in Bets》Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">决策 × 结果 四象限</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg">
+<text x="340" y="20" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">结果 →</text>
+<text x="20" y="145" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b" transform="rotate(-90 20 145)">决策质量 ↑</text>
+<text x="220" y="42" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">结果好</text>
+<text x="500" y="42" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#a04020">结果坏</text>
+<rect x="90" y="55" width="260" height="95" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="360" y="55" width="260" height="95" rx="6" fill="#f3e9d2" stroke="#a8702d" stroke-width="2"/>
+<rect x="90" y="160" width="260" height="95" rx="6" fill="#f5e6d0" stroke="#c47040" stroke-width="2"/>
+<rect x="360" y="160" width="260" height="95" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="220" y="90" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">应得的胜利</text>
+<text x="220" y="113" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">好决策 + 好结果</text>
+<text x="220" y="133" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">沉淀方法论</text>
+<text x="490" y="90" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a8702d">背运</text>
+<text x="490" y="113" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">好决策 + 坏结果</text>
+<text x="490" y="133" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">别 blame 决策者</text>
+<text x="220" y="195" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#c47040">走运（危险）</text>
+<text x="220" y="218" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">坏决策 + 好结果</text>
+<text x="220" y="238" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">最容易被错误奖励</text>
+<text x="490" y="195" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#b85c3a">应得的失败</text>
+<text x="490" y="218" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">坏决策 + 坏结果</text>
+<text x="490" y="238" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">真正要改进的</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一次冒险的技术选型上线后大成功，团队想"以后都这么干"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 结果好 → 决策一定对</div>
+<p>"成了！这套赌法很灵，制度化、以后默认这么干。" —— 你正在把一个落在"走运"格的决策，错误地奖励成了方法论。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 奖励决策质量，不只奖励结果</div>
+<p>"结果很好，但当初信息下这是个<strong>高方差赌注</strong>，赌赢了不代表流程对。下次同样情况，我们还接受这个失败概率吗？" 反过来：一个考虑周全的决策因黑天鹅失败了，<strong>别 blame 决策者</strong>（接回 blameless postmortem）。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：复盘时问对问题</div>
+<ul class="checklist">
+<li>我问的是"结果如何"，还是"当初的决策在当时信息下合不合理"？</li>
+<li>这次结果落在 2×2 哪一格——应得的胜利，还是走运？</li>
+<li>有没有人因为"赌赢了"，被奖励了一个其实很糟的决策？</li>
+<li>失败复盘里，我有没有把不可控的运气和可改进的决策分开记？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只看结果发奖惩。</strong>等于鼓励赌博、惩罚那些正确但不走运的冒险——团队会学会"宁可平庸地对，也不要聪明地冒险"。</li>
+<li><strong>把所有失败都归运气（逃避）或都归决策（过度自责）。</strong>两个轴要分开记，才看得清。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Annie Duke,《Thinking in Bets》</strong>（Ch.1 "Life Is Poker, Not Chess"）— resulting 与决策日志。<br><strong>Daniel Kahneman,《Thinking, Fast and Slow》</strong>（Ch.19 "The Illusion of Understanding"）— 后见之明偏差如何扭曲复盘。</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 30 Action</h3>
+<p>本周做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>挑你最近一次明显的成功</strong>，开一个两栏文档：左栏"实力"，右栏"运气"。<strong>逼自己往运气栏写够 3 条</strong>——必须是你当时无法控制、也没预测到的外部因素（时机、别人的失误、资源窗口、关键人没流失）。<br><br>然后只把"实力"栏的内容当作可复制的方法论沉淀给团队。<br><br><strong>思考题：</strong>如果把过去三年你最得意的三件成就，各扣掉一个关键的运气因素，还剩几件成立？
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>深入思考</h3>
+<details><summary>一直强调运气，会不会消解努力的动机、滑向宿命论？</summary><div>不会，前提是分清两件事：运气决定<strong>结果的方差</strong>，努力和决策质量决定<strong>结果分布的位置</strong>。你控制不了某一次骰子点数，但你能控制玩多少把、每把下注是否合理——长期下来实力仍然主导。承认运气不是躺平的理由，而是为了把精力放在真正可控的决策质量上，同时在单次结果上对自己和他人都宽容一点。宿命论是"反正都靠运气"；校准是"运气我认，决策我负责"。</div></details>
+<details><summary>在一个"赢者通吃、只看结果"的考核体系里，谈运气和决策质量会不会让自己吃亏？</summary><div>会有现实张力。对上汇报时，赤裸地说"我们运气好"可能被解读为不自信或推卸——所以对外用"可控因素 / 外部因素"这种中性框架，把运气讲成风险管理而非自我贬低。但对内、对自己的复盘必须诚实，否则你会把走运误当能力，迟早在没运气时翻车。策略是分层：<strong>对外做归因的政治翻译，对内做归因的科学校准</strong>，两者不矛盾。</div></details>
+<details><summary>运气和实力的占比，在不同领域一样吗？</summary><div>不一样，关键变量是"方差"和"反馈周期"。低方差、快反馈的领域（如打字速度、短周期的工程交付）实力占比高，练就能稳定见效；高方差、慢反馈的领域（创业、押注式技术选型、市场时机）运气占比大得多，一两次成败几乎不能说明能力。判断一个领域该多信运气，就看"同样的人重复做 100 次，结果分布有多宽"——越宽，越要在单次结果上压低对实力的归因。</div></details>
+<details><summary>作为 leader，怎么奖励"好决策但坏结果"而不被上面质疑"为失败开脱"？</summary><div>关键是<strong>提前</strong>而非事后建立标准。在决策当下就记录：当时已知信息、考虑过的备选、预估的成功概率与失败成本。结果出来后，拿这份记录对照——如果决策在当时信息下合理，就明确区分"决策对、运气背"，并把它和"决策本身就草率"的失败区别对待。对上的话术不是"这次失败不怪他"，而是"这是个我们事前认可的合理赌注，输在不可控变量；要改的是对冲，不是惩罚拍板的人"。有了事前记录，这就不是开脱，是治理。</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 30 · 2026.06.20</footer>
+</div>
+</body>
+</html>

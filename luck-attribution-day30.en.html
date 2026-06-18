@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 30: Luck &amp; Attribution</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepen{margin-top:50px}
+.deepen h3{font-size:1.15rem;color:#5c3a18;letter-spacing:1px;margin-bottom:16px;border-bottom:1px solid #c4a878;padding-bottom:10px}
+.deepen details{background:#fffaf0;border-radius:4px;margin-bottom:10px;border-left:3px solid #a8702d;padding:0 18px}
+.deepen summary{cursor:pointer;padding:14px 0;font-weight:600;color:#5c3a18;font-size:0.98rem}
+.deepen details div{padding:0 0 16px;font-size:0.93rem;color:#4a3a20}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 30 · 2026.06.20</div>
+<h1>Luck &amp; Attribution: Honestly Record Luck's Share of Your Success</h1>
+<div class="meta"><span>Topic: Luck &amp; Attribution</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Success = talent + luck. Great success = a little more talent + a lot of luck." — Daniel Kahneman</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> The higher you climb, the easier it is to believe "I got here because I'm good." Not entirely wrong — but <strong>self-serving bias</strong> is factory default: it systematically inflates your contribution and shrinks the share of luck and timing. This week isn't about false modesty; it's about <strong>calibration</strong>: success = talent + luck, and whether you can tell those two apart directly determines your next decision's quality, your learning speed, and how much others trust you. Four tools: estimate luck's true share, turn the survivorship-bias mirror on yourself, treat humility as a tool not a virtue, and write luck into every postmortem. Honesty first: luck can't be eliminated — all you can do is stop misfiling it as skill.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Success = Talent + Luck: Admit Your Attribution Is Biased
+<span class="en">Self-Serving Bias — You Over-Claim by Default</span></h2>
+<span class="tag">Self-Serving Bias</span><span class="tag">Kahneman</span><span class="tag">Calibration</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">"I did it" is almost always "I did it right + luck helped" fused together. The brain defaults to crediting itself for success and blaming the situation for failure — that's <strong>self-serving bias</strong>. Not a character flaw, a cognitive default. Its biggest harm: it makes you <strong>overestimate how repeatable your success is</strong>.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Success = talent + luck. Great success = a little more talent + a lot of luck."</span>
+<span class="source">— Daniel Kahneman,《Thinking, Fast and Slow》Ch.19</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: A project you led was a big win, and it's your turn to give the wrap-up at the retro.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Writing luck into the playbook</div>
+<p>"This was a win of execution and architecture. The methodology is repeatable — copy it onto the next project." But half the truth is: a competitor imploded that quarter, a key client's budget happened to land, a core engineer happened not to get poached. The next project, without those tailwinds, crashes.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Split two columns before codifying</div>
+<p>"We won. First, two columns: <strong>what we genuinely did right</strong> (codify it), and <strong>what was luck</strong> — the competitor's mess, the budget window, no attrition. The latter may not recur; keep it out of the playbook. Only the repeatable column is our real capability."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Separate Skill From Luck</div>
+<ul class="checklist">
+<li>Was there a factor in this outcome I couldn't control and didn't predict?</li>
+<li>Same decision, different timing / market / boss — would it still have won?</li>
+<li>When I credit myself, is the subject "I" or "we + timing"?</li>
+<li>When I fail, do I flip and blame the environment? Use one consistent standard for both.</li>
+<li>If a rival ran the retro on my win, which luck factor would they stress that I left out?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Skill when you win, luck when you lose.</strong> The team sees this double standard instantly, and your retros lose credibility.</li>
+<li><strong>Mixing one-off luck with repeatable skill in one narrative.</strong> The org codifies a flawed methodology and walks into the same trap.</li>
+<li><strong>Back-inferring decision quality from the result.</strong> "We won, so the call was right" — the most expensive misjudgment. See Card 4.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Elliot Aronson,《The Social Animal》</strong>— self-serving bias and the fundamental attribution error.<br><strong>Robert Frank,《Success and Luck》</strong>— evidence that luck is systematically underweighted in meritocratic narratives.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Turn Survivorship Bias on Yourself
+<span class="en">Turn Survivorship Bias on Yourself</span></h2>
+<span class="tag">Survivorship Bias</span><span class="tag">Wald</span><span class="tag">Taleb</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Every "success story" you hear comes from someone who survived. The silent failures don't write books, don't give talks, don't sit on your promo panel. <strong>The most dangerous survivor isn't someone else — it's you.</strong> In parallel universes, many versions of "you" made the same call and lost.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Mild success can be explainable by skills and labor. Wild success is attributable to variance."</span>
+<span class="source">— Nassim Taleb,《Fooled by Randomness》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Classic Case: Wald's Planes</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="340" cy="115" rx="150" ry="46" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<rect x="250" y="96" width="180" height="38" rx="8" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<polygon points="430,100 510,115 430,130" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<polygon points="300,80 360,80 330,40" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<polygon points="300,150 360,150 330,190" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
+<circle cx="300" cy="110" r="5" fill="#b85c3a"/>
+<circle cx="350" cy="122" r="5" fill="#b85c3a"/>
+<circle cx="395" cy="108" r="5" fill="#b85c3a"/>
+<circle cx="330" cy="60" r="5" fill="#b85c3a"/>
+<circle cx="320" cy="170" r="5" fill="#b85c3a"/>
+<circle cx="270" cy="118" r="5" fill="#b85c3a"/>
+<circle cx="220" cy="115" r="7" fill="#5c8a3a"/>
+<text x="135" y="118" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">Where armor</text>
+<text x="135" y="136" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">truly belongs</text>
+<line x1="178" y1="115" x2="210" y2="115" stroke="#5c8a3a" stroke-width="2"/>
+<text x="588" y="70" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#a04020">● Hits on returners</text>
+<text x="588" y="92" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#a04020">(visible)</text>
+<text x="588" y="150" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#4a6a28">● Fatal spot</text>
+<text x="588" y="172" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#4a6a28">(those hit didn't return)</text>
+</svg>
+</div>
+<div class="scene">
+<div class="setup">WWII: The military wanted to armor the spots with the densest bullet holes. Statistician <strong>Abraham Wald</strong> said they had it backwards — they'd only counted the planes that <strong>came back</strong>. Hits there clearly weren't fatal. Armor the places returning planes had almost no holes (the engines), because the planes hit there never made it home.</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: You read a "10x engineer" growth post, hear a Staff engineer's promo retro, and plan to copy it.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Treat the survivor's path as a recipe</div>
+<p>"He did this and got promoted, so I'll do the same." You never saw the hundreds who did the same things and didn't get promoted — and the piece their path was missing is often, precisely, luck.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Actively hunt counter-samples</div>
+<p>"Let me talk to a few people who made similar choices but didn't make it — and ask exactly what was missing. <strong>If the missing piece was outside their control, that's luck, not a move I can copy.</strong>"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Turn the Mirror Around</div>
+<ul class="checklist">
+<li>The "success case" I'm studying — where's its matching failure sample? Have I looked?</li>
+<li>Does this advice only ever come from the mouths of people who already succeeded?</li>
+<li>If I did everything right and still lost, which uncontrollable variable would sink me?</li>
+<li>When I advise others, am I dressing my luck up as "just work hard"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating a survivor's path as a deterministic algorithm.</strong> Same moves + no luck = a completely different ending.</li>
+<li><strong>Forgetting you're a survivor sample too.</strong> A few past wins, then over-betting — variance reverts eventually.</li>
+<li><strong>Studying only winners, never dissecting losers.</strong> Losers carry higher information density: they tell you where it actually kills you.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Humility Is a Tool, Not a Virtue Performance
+<span class="en">Humility as Calibration, Not Performance</span></h2>
+<span class="tag">Calibration</span><span class="tag">Confidence≠Competence</span><span class="tag">Practical Humility</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Practical humility isn't the throwaway "oh, I just got lucky." It's an <strong>accurate self-model</strong> — knowing where the edge of your competence is. Well-calibrated people decide more steadily, learn faster, earn more trust, and draw less envy. The opposite of humility isn't confidence — it's <strong>distortion</strong>.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The real reason... is our inability to distinguish between confidence and competence."</span>
+<span class="source">— Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: In a review, someone asks "Where's the biggest risk in this plan?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Inflated confidence</div>
+<p>"No real risk, we've thought it through." If it crashes, your credit zeroes out in one shot — and the people in the room who actually know can already tell you're bluffing.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Exposing the edge = calibration</div>
+<p>"Three parts I'm confident in, two I'm not — the launch-latency piece I have no experience with, so I want X to look at it with me." Exposing the edge isn't weakness; <strong>it lets people believe you when you do say "I'm confident."</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Name luck and others specifically when crediting</div>
+<p>Not "I drove all of this." Say: "I set the structure, but it shipped because X held the launch together — and we caught a good window."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Calibration Self-Check</div>
+<ul class="checklist">
+<li>Can I name a recent judgment I got wrong, and why? (If not = poorly calibrated.)</li>
+<li>Asked about risk, do I lead with confidence or with the uncertain parts?</li>
+<li>When crediting, do I name luck and specific people, not just a vague "everyone"?</li>
+<li>Does my confidence level match my actual past hit rate, or is it always "very sure"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes + A Note for Women Leaders</div>
+<div class="pitfall">
+<ul>
+<li><strong>Performing humility.</strong> "Oh I'm not that good" — false modesty is more grating than arrogance, and it's also a distortion.</li>
+<li><strong>Over-humbling into indecision.</strong> Calibration isn't refusing to decide; it's <strong>deciding with error bars</strong>: state your odds, then still make the call.</li>
+</ul>
+</div>
+<div class="female" style="margin-top:12px">
+<span class="female-label">Female Leader's Note</span>
+The "credit luck more, claim less" prescription is written for people who <strong>over</strong>estimate themselves (often the default-confident type). But research shows women more often attribute success to luck/others and failure to themselves, and observers more readily say a woman's success was "luck or help." If you already <strong>under</strong>estimate yourself, calibration runs the opposite way: accurately say "this was my competence." Humility = calibration, not self-erasure — <strong>claim the credit that is actually yours</strong>.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</strong>— the cost of mistaking confidence for competence.<br><strong>Adam Grant,《Think Again》</strong>— "confident humility": faith in your ability, openness to being wrong about the current call.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Write Luck Into the Postmortem: Separate Decision From Outcome
+<span class="en">Write Luck Into the Postmortem — Separate Decision From Outcome</span></h2>
+<span class="tag">Resulting</span><span class="tag">Decision Retro</span><span class="tag">Annie Duke</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">The most expensive error is "won, so the call was right; lost, so the call was wrong" — Annie Duke calls it <strong>resulting</strong> (judging a decision by its outcome). A good outcome can come from a bad decision (luck), a bad outcome from a good decision (bad luck). Postmortems need two axes: <strong>decision quality × outcome</strong>.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Resulting: our tendency to equate the quality of a decision with the quality of its outcome."</span>
+<span class="source">— Annie Duke,《Thinking in Bets》Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Decision × Outcome Quadrant</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 270" xmlns="http://www.w3.org/2000/svg">
+<text x="340" y="20" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b">Outcome →</text>
+<text x="20" y="150" text-anchor="middle" font-family="Georgia" font-size="12" fill="#8a6d3b" transform="rotate(-90 20 150)">Decision quality ↑</text>
+<text x="220" y="42" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">Good outcome</text>
+<text x="490" y="42" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#a04020">Bad outcome</text>
+<rect x="90" y="55" width="260" height="95" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="360" y="55" width="260" height="95" rx="6" fill="#f3e9d2" stroke="#a8702d" stroke-width="2"/>
+<rect x="90" y="160" width="260" height="95" rx="6" fill="#f5e6d0" stroke="#c47040" stroke-width="2"/>
+<rect x="360" y="160" width="260" height="95" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="220" y="90" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">Earned win</text>
+<text x="220" y="113" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Good decision + good outcome</text>
+<text x="220" y="133" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Codify the method</text>
+<text x="490" y="90" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a8702d">Bad luck</text>
+<text x="490" y="113" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Good decision + bad outcome</text>
+<text x="490" y="133" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Don't blame the decider</text>
+<text x="220" y="195" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#c47040">Dumb luck (danger)</text>
+<text x="220" y="218" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Bad decision + good outcome</text>
+<text x="220" y="238" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Most wrongly rewarded</text>
+<text x="490" y="195" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#b85c3a">Earned loss</text>
+<text x="490" y="218" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">Bad decision + bad outcome</text>
+<text x="490" y="238" text-anchor="middle" font-family="Georgia" font-size="11.5" fill="#3a2f1c">The one to actually fix</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: A risky tech choice was a big success after launch, and the team wants to "always do it this way."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Good outcome → decision must be right</div>
+<p>"It worked! This bet pays off — let's make it the default." You're rewarding a decision that landed in the "dumb luck" quadrant by promoting it into the playbook.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Reward decision quality, not just outcome</div>
+<p>"The result is great, but on the information we had this was a <strong>high-variance bet</strong>. Winning it doesn't make the process right. Next time, same situation — do we still accept this failure probability?" And conversely: when a well-reasoned decision fails on a black swan, <strong>don't blame the decider</strong> (back to blameless postmortem).</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Ask the Right Question at the Retro</div>
+<ul class="checklist">
+<li>Am I asking "how did it turn out" or "was the decision reasonable on the information we had then"?</li>
+<li>Which quadrant did this land in — earned win or dumb luck?</li>
+<li>Did anyone get rewarded for a genuinely bad decision just because the bet paid off?</li>
+<li>In a failure retro, did I separately log uncontrollable luck and improvable decisions?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Rewarding and punishing purely on outcome.</strong> You encourage gambling and punish correct-but-unlucky risks — the team learns "better mediocre-and-right than smart-and-bold."</li>
+<li><strong>Blaming all failure on luck (evasion) or all on the decision (over-self-blame).</strong> Log the two axes separately to see clearly.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Annie Duke,《Thinking in Bets》</strong>(Ch.1 "Life Is Poker, Not Chess") — resulting and decision journals.<br><strong>Daniel Kahneman,《Thinking, Fast and Slow》</strong>(Ch.19 "The Illusion of Understanding") — how hindsight bias distorts retros.</div>
+</div>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 30 Action</h3>
+<p>Do one concrete thing this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Pick a recent, clear success of yours</strong> and open a two-column doc: left "Skill," right "Luck." <strong>Force yourself to write at least 3 items in the Luck column</strong> — things you couldn't control and didn't predict (timing, someone else's mistake, a resource window, a key person not leaving).<br><br>Then codify only the "Skill" column for your team as repeatable methodology.<br><br><strong>Reflection:</strong> If you removed one key luck factor from each of your three proudest achievements of the last three years, how many would still stand?
+</div>
+</div>
+
+<!-- ============ Deepen ============ -->
+<div class="deepen">
+<h3>Go Deeper</h3>
+<details><summary>Does constantly stressing luck kill motivation and slide into fatalism?</summary><div>No — as long as you separate two things: luck governs the <strong>variance</strong> of outcomes; effort and decision quality govern <strong>where the distribution sits</strong>. You can't control one roll of the dice, but you can control how many hands you play and whether each bet is sound — over time, skill still dominates. Acknowledging luck isn't a license to coast; it's a way to put energy where it's truly controllable, while staying gentle with yourself and others on any single result. Fatalism says "it's all luck"; calibration says "I own the luck and I'm accountable for the decision."</div></details>
+<details><summary>In a winner-take-all, outcome-only review system, does talking about luck and decision quality just cost me?</summary><div>There's a real tension. Reporting up, baldly saying "we got lucky" can read as low confidence or dodging — so externally use a neutral frame like "controllable vs. external factors," casting luck as risk management, not self-deprecation. But your internal, personal retro must be honest, or you'll misfile luck as skill and crash the day the luck runs out. The strategy is layered: <strong>do the political translation of attribution externally, and the scientific calibration of attribution internally</strong>. The two don't conflict.</div></details>
+<details><summary>Is the skill-to-luck ratio the same across fields?</summary><div>No — the key variables are variance and feedback cycle length. Low-variance, fast-feedback fields (typing speed, short-cycle engineering delivery) are skill-heavy: practice reliably shows up. High-variance, slow-feedback fields (startups, bet-style tech choices, market timing) are far more luck-loaded; one or two outcomes say almost nothing about ability. To judge how much a field should trust luck, ask "if the same person did this 100 times, how wide is the outcome distribution?" The wider it is, the more you should discount skill in any single result.</div></details>
+<details><summary>As a leader, how do I reward "good decision, bad outcome" without being accused of "excusing failure"?</summary><div>The key is setting the standard <strong>beforehand</strong>, not after. At decision time, record: the information known, the options considered, the estimated success probability and failure cost. When the result lands, compare against that record — if the decision was sound on the information at hand, clearly distinguish "right call, bad luck" from a failure that was simply careless. The line for your boss isn't "this failure isn't his fault," but "this was a bet we endorsed in advance, lost to an uncontrollable variable; what we fix is the hedge, not the person who made the call." With a pre-record, that's not excuse-making — it's governance.</div></details>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 30 · 2026.06.20</footer>
+</div>
+</body>
+</html>
