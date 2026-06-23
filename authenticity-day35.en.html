@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 35: The Cost of Authenticity</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:40px}
+.deep details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;padding:4px 18px;margin-bottom:12px}
+.deep summary{cursor:pointer;font-weight:600;color:#5c3a18;padding:12px 0;font-size:0.98rem}
+.deep details div{padding:6px 0 14px;color:#4a3a20;font-size:0.93rem;border-top:1px dashed #e6d9bf}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 35 · 2026.06.25</div>
+<h1>The Cost of Authenticity: Masks, Calibration, and the Line You Don't Cross</h1>
+<div class="meta"><span>Topic: The Cost of Authenticity</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"'Be yourself' is terrible advice." — Adam Grant, NYT, 2016</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> "Be yourself" is enshrined as a workplace virtue, but it's the most dangerous half-truth. The persona <strong>isn't hypocrisy — it's a social interface</strong>: without it, every meeting becomes an emotional dump. So the question is never "mask or no mask," but: <strong>which one, how tight, and when must it come off</strong>. Four principles this week: the social function of the mask (front/back stage), calibrating authenticity (neither chameleon nor stone), the <strong>line you don't cross</strong> on values, and the risk of the mask <strong>fusing to your face</strong> — the persona swallowing the self.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>The Persona Is an Interface, Not a Lie
+<span class="en">人格面具不是虚伪，是社会接口</span></h2>
+<span class="tag">Front/Back Stage</span><span class="tag">Dramaturgy</span><span class="tag">Professionalism</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Separate the <strong>front stage (your role)</strong> from the <strong>back stage (you with the mask off)</strong>. Mixing them — dragging back-stage emotion onto the front, or bringing the front-stage mask home — is an accident. <strong>Professionalism ≠ hypocrisy</strong>; it's the interface society gives to emotion.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"The self ... is a dramatic effect arising diffusely from a scene that is presented."</span>
+<span class="zh">The self is produced by the scene we stage, not prior to it.</span>
+<span class="source">— Erving Goffman, <em>The Presentation of Self in Everyday Life</em> (1959)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Front / Back / Off Stage: Where Each Line Belongs</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="30" width="210" height="180" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="245" y="30" width="210" height="180" rx="6" fill="#f8f0dd" stroke="#a8702d" stroke-width="2"/>
+<rect x="470" y="30" width="210" height="180" rx="6" fill="#f3e8f0" stroke="#8a3a6a" stroke-width="2"/>
+<text x="125" y="58" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">FRONT</text>
+<text x="125" y="78" text-anchor="middle" font-family="Georgia" font-size="11" fill="#6b8a4b">audience present</text>
+<text x="35" y="106" font-family="Georgia" font-size="11.5" fill="#2a3a18">· all-hands, cross-team</text>
+<text x="35" y="128" font-family="Georgia" font-size="11.5" fill="#2a3a18">· role language, neutral</text>
+<text x="35" y="150" font-family="Georgia" font-size="11.5" fill="#2a3a18">· bounded honesty</text>
+<text x="35" y="178" font-family="Georgia" font-size="11.5" fill="#2a3a18">→ mask is the job</text>
+<text x="350" y="58" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#8a5a1d">BACK</text>
+<text x="350" y="78" text-anchor="middle" font-family="Georgia" font-size="11" fill="#a8702d">peers / boss / mentor</text>
+<text x="260" y="106" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· your 1:1 with boss</text>
+<text x="260" y="128" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· trusted peer, coach</text>
+<text x="260" y="150" font-family="Georgia" font-size="11.5" fill="#3a2f1c">· process real dissent</text>
+<text x="260" y="178" font-family="Georgia" font-size="11.5" fill="#3a2f1c">→ half off</text>
+<text x="575" y="58" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#7a2a5a">OFF</text>
+<text x="575" y="78" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a3a6a">know you, not title</text>
+<text x="485" y="106" font-family="Georgia" font-size="11.5" fill="#4a1f3a">· family, old friends</text>
+<text x="485" y="128" font-family="Georgia" font-size="11.5" fill="#4a1f3a">· you outside the firm</text>
+<text x="485" y="150" font-family="Georgia" font-size="11.5" fill="#4a1f3a">· identity beyond role</text>
+<text x="485" y="178" font-family="Georgia" font-size="11.5" fill="#4a1f3a">→ mask fully off</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: A reorg you privately oppose is final, and next week's all-hands has you delivering it to the team.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Back stage on the front stage</div>
+<p>You frown publicly and mutter, "Well, it's decided up top, so we'll comply." The team instantly smells your unease — you think this is "authenticity"; what they read is "even my boss doesn't believe in this; the ship is sinking." Morale collapses before the structure does.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Front and back kept separate</div>
+<p><strong>Front (bounded honesty + ownership):</strong> "This decision wasn't mine, and I'm still digesting parts of it. But my job is to help us win inside the new structure — so here are the three things I'll be doing next…"</p>
+<p><strong>Back (where real dissent goes):</strong> Your frustration and critique belong in <strong>your own</strong> 1:1 with your manager, or with a trusted mentor — not the team channel.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>This sentence / this emotion — does it belong front, back, or off stage? Did I put it in the right place?</li>
+<li>Who is my "back stage"? How many people can I take the mask off with? (Fewer than 2 is a risk.)</li>
+<li>Did I carry the front-stage manager mask home unchanged?</li>
+<li>Is my "professional neutrality" being misread as coldness or dishonesty? Do I need one line of bounded honesty?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Dumping "all my truth" as a virtue.</strong> Taking the mask off on the wrong stage isn't sincerity — it's a lack of boundaries.</li>
+<li><strong>Having no back stage at all.</strong> Wearing one mask 24/7, with nowhere to take it off, eventually cracks at the worst moment.</li>
+<li><strong>Mistaking the performance for your whole self.</strong> This is the setup for Card 4 — wear the front long enough and you forget what the back looks like.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Erving Goffman, <em>The Presentation of Self in Everyday Life</em></strong> — dramaturgy: the foundational account of front/back stage.<br><strong>C. G. Jung, <em>Two Essays on Analytical Psychology</em> (CW7)</strong> — the "persona" as the compromise between individual and society.</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> Draw a "back-stage map" — list the people you can take the mask off with. Count them.<br><strong>Reflection:</strong> When did you last misfire front-stage emotion onto the wrong stage (team channel, public forum)? What did it cost?</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Adaptive Authenticity — Neither Chameleon Nor Stone
+<span class="en">真实的分寸：适应性真实</span></h2>
+<span class="tag">Calibration</span><span class="tag">Authenticity Paradox</span><span class="tag">Style vs Values</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Authenticity isn't all-or-nothing. As long as your <strong>values hold constant</strong>, adjusting the style, warmth, and pace of your expression is maturity, not betrayal. Beware using "that's just who I am" as an <strong>excuse to refuse growth</strong>.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Because going against our natural inclinations can make us feel like impostors, we tend to latch on to authenticity as an excuse for sticking with what's comfortable."</span>
+<span class="zh">Authenticity can become an excuse for staying in your comfort zone.</span>
+<span class="source">— Herminia Ibarra, <em>The Authenticity Paradox</em> (HBR, 2015)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: A report probes you privately — "You think this deadline is unreasonable too, right?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both extremes fail</div>
+<p><strong>Mask fully off:</strong> "Totally — leadership has no clue about engineering, it's a joke." → You've leaked back-stage emotion to a report and undercut the decision you must execute.</p>
+<p><strong>Mask welded shut:</strong> "It's not unreasonable, totally doable." → Jarringly fake; they know you're reading a script, and trust drains.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Calibrated: truth + boundary + direction</div>
+<p>"The deadline is tight, and I raised my concerns (<strong>truth</strong>). But it's now a fixed constraint, so our question isn't 'is it fair' but 'what trade-off lets us deliver within it' (<strong>boundary</strong>) — I'd lean toward cutting X to protect Y. What do you think? (<strong>direction</strong>)"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Am I adjusting my <strong>style</strong>, or my <strong>underlying values</strong>? (Former is fine, latter is a red flag.)</li>
+<li>In this setting, am I "performing" more and more, or growing more at ease? (The trend matters more than the moment.)</li>
+<li>If this were recorded and played to someone I respect, would I be ashamed?</li>
+<li>Am I using "being myself" to dodge a new behavior I should be learning? (The Ibarra test.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Smearing "style adaptation" as "hypocrisy."</strong> Using the same pace and wording for an intern and a VP isn't sincerity — it's failure to read the room.</li>
+<li><strong>Treating "being myself" as a disclaimer.</strong> "I'm just blunt, get used to it" is often a fig leaf for refusing feedback.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+A woman's "authenticity bandwidth" is systematically narrower — the <strong>likability vs competence</strong> double bind kicks in: a man's expressed anger reads as "decisive," the same from a woman reads as "emotional, hard to work with." So "fully be yourself" is often pricier advice for women. The countermove isn't to be faker, but to <strong>choose battles</strong> more strategically: hold the non-negotiable values, and treat adjustable style (warmth, wording, timing) as a tool, not a concession.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Herminia Ibarra, <em>Act Like a Leader, Think Like a Leader</em></strong> — the "authenticity paradox" and adaptive authenticity.<br><strong>Brené Brown, <em>Daring Greatly</em></strong> — vulnerability needs boundaries: "Vulnerability is based on mutuality and requires boundaries and trust."</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> Pick a behavior you defend with "that's just who I am" and ask: is this a value, or a skill I haven't learned yet?<br><strong>Reflection:</strong> The last time you "adjusted your style," did it feel like growth or self-betrayal? Where does that gut difference come from?</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Line You Don't Cross: Style Is Adjustable, Values Aren't for Sale
+<span class="en">那条不能越的线</span></h2>
+<span class="tag">Emotional Labor</span><span class="tag">Surface Acting</span><span class="tag">The Red Line</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Adaptive authenticity has an end. Distinguish <strong>surface acting</strong> (your face doesn't match your insides, but you aren't fooling yourself) from <strong>selling out your values</strong> (being asked to actively lie, or to enthusiastically endorse something you believe is harmful or dishonest). The first is the daily cost of emotional labor; the second crosses the line — and the price isn't face, it's conscience.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Emotional labor ... requires one to induce or suppress feeling in order to sustain the outward countenance that produces the proper state of mind in others."</span>
+<span class="zh">Emotional labor: managing your own feelings to produce a desired state in others.</span>
+<span class="source">— Arlie Hochschild, <em>The Managed Heart</em> (1983), p.7</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">From Adaptation to Betrayal: Where the Red Line Sits</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="40" width="150" height="60" rx="5" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<rect x="178" y="40" width="150" height="60" rx="5" fill="#f3e9d2" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="336" y="40" width="150" height="60" rx="5" fill="#f8e8d8" stroke="#c47040" stroke-width="1.5"/>
+<rect x="510" y="40" width="170" height="60" rx="5" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="95" y="64" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">Authentic</text>
+<text x="95" y="84" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#4a6a28">say what you think</text>
+<text x="253" y="64" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#8a5a1d">Style adapt</text>
+<text x="253" y="84" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#8a5a1d">same point, new tone</text>
+<text x="411" y="60" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#a8702d">Surface acting</text>
+<text x="411" y="78" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#a8702d">emotional labor</text>
+<text x="411" y="92" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#a8702d">not self-deception</text>
+<text x="595" y="64" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#a04020">Betrayal</text>
+<text x="595" y="84" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#a04020">actively lying</text>
+<line x1="498" y1="20" x2="498" y2="120" stroke="#b85c3a" stroke-width="2.5" stroke-dasharray="6,4"/>
+<text x="498" y="15" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">RED LINE</text>
+<text x="498" y="138" text-anchor="middle" font-family="Georgia" font-size="10" fill="#a04020">asked to lie / endorse what you know is harmful = crossed</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: Your boss wants you to "enthusiastically endorse" a policy you're sure will hurt users and the team.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Full performance</div>
+<p>You sell it hard with a beaming face, then can't sleep. After a few rounds, the person in the mirror feels like a stranger — this isn't emotional labor, it's chronic self-betrayal.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Three steps to hold the line</div>
+<p><strong>(1) Escalate dissent back stage first</strong> (disagree through Card 1's back-stage channel).</p>
+<p><strong>(2) If overruled, do "honest execution," not "enthusiastic endorsement":</strong> "This is the company's direction, and I'll make sure we execute it well and fairly." — no lying, no fake enthusiasm, no speaking for it in words you don't believe.</p>
+<p><strong>(3) If asked to actively lie</strong> (hide a decided layoff, falsify data), that's the red line: keep a written record, escalate again, and if needed invoke Exit / Voice (see Day 28).</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Have I Crossed the Line?</div>
+<ul class="checklist">
+<li>Am I being asked to "adjust style," or to "actively say something I know is false"?</li>
+<li>What's harmed — <strong>my comfort</strong>, or <strong>someone else's interests</strong>? (The latter weighs far more.)</li>
+<li>Would I dare leave a written trail of this? (If not = a signal.)</li>
+<li>A year from now, is this "professional maturity" or "the moment I started to rot"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Escalating every discomfort into a "moral crisis."</strong> Surface acting is a normal cost of work, not always a line crossed — abusing the red line paralyzes you.</li>
+<li><strong>Crossing the line, then self-absolving with "I just followed orders."</strong> There's a real moral distance between actively lying and passively complying — don't pretend there isn't.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Emotional labor (Hochschild's original subjects were flight attendants, mostly women) is systematically loaded more onto women and minorities — defaulted into being "warmer, smoother, less edgy." That means their <strong>surface-acting quota is higher and their buffer to the red line is thinner</strong>. Recognizing this isn't a complaint — it's setting your line earlier, knowing your starting point sits closer to the edge.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Arlie Hochschild, <em>The Managed Heart</em></strong> — emotional labor, surface vs deep acting, and the cost of emotional dissonance.<br><strong>Epictetus, <em>Enchiridion</em> 17</strong> — "Remember you are an actor in a play: to play your assigned role well is your business; to choose the role is not." — the Stoic boundary between playing a part and keeping the self.</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> Next time you face a decision you must execute but don't fully believe, practice the "honest execution" phrasing — say only the truth you hold + execute fairly, no fake enthusiasm.<br><strong>Reflection:</strong> Can you write your red line in one sentence? If not, it isn't yet clear enough to hold under pressure.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>When the Mask Fuses to the Face: the Persona Swallows the Self
+<span class="en">面具焊死在脸上</span></h2>
+<span class="tag">Self-Alienation</span><span class="tag">Burnout</span><span class="tag">Identity Single Point</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">The mask's greatest danger isn't being seen through by others — it's <strong>believing it yourself</strong>. Long-term surface acting leads to emotional dissonance, burnout, and alienation from the real self — and once the title is gone, there's nothing left inside (echoing Day 22).</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"The danger is that [people] become identical with their personas — the professor with his textbook, the tenor with his voice."</span>
+<span class="zh">The danger is fusing with the persona until nothing of the self remains.</span>
+<span class="source">— C. G. Jung, <em>Two Essays on Analytical Psychology</em> (CW7)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Four Warning Signs</div>
+<div class="scene">
+<div class="setup">Situation: One day BigCat realizes — the mask won't come off.</div>
+<div class="dialog bad">
+<div class="speaker">⚠ Signs of fusion</div>
+<p>· In meetings you can no longer tell <strong>which view you actually believe</strong> — only the auto-playing manager stance remains.<br>· You can't switch off the "manager voice" at home, "aligning" and "retro-ing" with family.<br>· Asked what <strong>you</strong> want, your mind goes blank.<br>· You only feel you exist inside the job title.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Maintenance (physically switch front/back)</div>
+<p>· <strong>Keep off-stage relationships:</strong> people who know you, not your title — old friends, family, a mentor outside the firm.<br>· <strong>Audit regularly:</strong> "If this role vanished tomorrow, what of me remains?"<br>· <strong>Keep a "mask-off" ritual:</strong> the commute, exercise, writing — a physical gate between front and back.<br>· <strong>Keep an exit ramp:</strong> don't stake your whole identity on a role that demands a permanently tight mask.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>How many people know me <strong>without my title</strong>? (This is the health metric for "persona hasn't swallowed self.")</li>
+<li>When did I last voice a view that was "risky to me but true"?</li>
+<li>Can I tell apart "I'm just tired" from "I no longer believe in what I'm doing"?</li>
+<li>Do I have a fixed "mask-off" ritual that actually lets the front stage clock out?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Misreading burnout as "not trying hard enough" and adding more performance.</strong> This speeds the fusion, doesn't loosen it.</li>
+<li><strong>Waiting for collapse to discover the mask won't come off.</strong> Self-alienation is gradual — no alarm, just one day's hollowness.</li>
+<li><strong>Rationalizing total alienation as "this is just professionalism."</strong> Professionalism is separating front and back, not being only the front.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>C. G. Jung</strong> — identification with the persona and the resulting hollowing-out.<br><strong>Arlie Hochschild, <em>The Managed Heart</em></strong> — long-term emotional dissonance leading to burnout and self-estrangement.<br>Echoes <strong>Day 22 (Identity Beyond Title)</strong> and <strong>Day 11 (Stoic Survival)</strong>.</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> Set a clear "mask-off" ritual (a song, a walk, three non-work lines before closing the laptop) and run it daily this week.<br><strong>Reflection:</strong> If your title vanished tomorrow, which three people would still meet you? If you can't name three, is your identity staked too narrowly?</div>
+</div>
+</div>
+
+<!-- ============ Deep Thinking ============ -->
+<div class="deep">
+<div class="section-label" style="margin-bottom:14px">Deeper Questions</div>
+
+<details>
+<summary>1. Where's the line between "adaptive authenticity" and "unprincipled opportunism"? Could it become a fig leaf for being a weathervane?</summary>
+<div>The dividing line is whether the <strong>constant — your values — moved</strong>. Adaptive authenticity adjusts only style (warmth, wording, timing); values hold. Opportunism is when position and values themselves drift with self-interest. A test: lay out your "stances" before different people over the past six months — is the <strong>substance</strong> consistent and only the <strong>expression</strong> varying? Then it's maturity. If the substance itself flips with the other party's power, it's already opportunism.</div>
+</details>
+
+<details>
+<summary>2. East Asian high-context, collectivist cultures default more to front/back separation — does the Western "be yourself" narrative even transplant?</summary>
+<div>Largely, yes. East Asian workplaces already make the "polite talk / true talk" and "internal / external" distinction explicit — front/back separation is learned young, and "be yourself" can read as naïve or even rude there; the Western "authentic self" narrative presupposes a more individualist view of the self. But don't dismiss this week's frame on that basis — Goffman's dramaturgy is descriptive and cross-cultural; what truly varies by culture is <strong>where the red line sits and what the back stage is made of</strong>. The framework is universal; the calibration is local.</div>
+</details>
+
+<details>
+<summary>3. The higher you climb, the thicker the mask must be? Is "authenticity" a luxury at the C-level?</summary>
+<div>The mask is indeed thicker — more audience, more leverage per sentence, less back stage (no one above, peers are rivals). But "authenticity is a luxury" is a dangerous self-soothing. What's scarce at the top isn't authenticity but <strong>credible, selective authenticity</strong>: revealing one real vulnerability or dissent at the right moment is the highest-grade trust currency (the very mechanism behind "leaders go first" in Day 21's psychological safety). The C-level task isn't a thicker mask — it's knowing more precisely <strong>where it should be thin</strong>, and preserving a tiny true back stage.</div>
+</details>
+
+<details>
+<summary>4. In the remote / async era, the physical front/back boundary dissolves (meetings from home) — does this make the mask harder or easier to maintain?</summary>
+<div>Harder, overall. Physical space used to be the natural mask-off gate — the commute, the office door, changing clothes at home. Working from home plants the front stage in your bedroom; the "off-stage" space gets colonized — one hidden source of remote burnout. One offset: kill the camera and you're off-stage instantly, faster than in person. The conclusion is that the boundary shifts from "default by space" to "must be designed on purpose" — mask-off rituals, physical zoning, a clear logoff time go from optional to a necessity for preserving the self.</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 35 Action</h3>
+<p>Do two things this week — one inward inventory, one outward experiment:</p>
+<div class="action">
+<strong>(1) Inventory your back stage:</strong> List 3 people who know you without your title — people you can take the mask off with. If you can't reach 3, reach out to one this week (a call, a meal, anything).<br><br>
+<strong>(2) Run an "honest execution" experiment:</strong> Pick a decision you must execute but don't fully believe, and practice Card 3's phrasing — say only the truth you hold + execute fairly, with <strong>no</strong> fake enthusiasm and <strong>no</strong> public venting. Then note: compared to "full performance" or "covert venting," is this middle path more sustainable?
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 35 · 2026.06.25</footer>
+</div>
+</body>
+</html>
