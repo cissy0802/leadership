@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 36: Team Building & Cohesion</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+details{margin:10px 0;background:#f8f0dd;border-radius:4px;border-left:3px solid #a8702d}
+details summary{padding:12px 16px;cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.96rem}
+details div{padding:0 16px 14px;font-size:0.92rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 36 · 2026.06.26</div>
+<h1>Team Building &amp; Cohesion: Rituals, Celebration, and Belonging Without Exclusion</h1>
+<div class="meta"><span>Topic: Team Building &amp; Cohesion</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Belonging cues are behaviors that create safe connection in groups." — Daniel Coyle</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> "Cohesion" usually gets translated into "one expensive off-site" or "Friday drinks." But cohesion isn't bought with an event — it's the <strong>compound interest of countless small mechanisms</strong>, and many default "team-building" defaults quietly exclude part of the team. Four things this week: turning abstract cohesion into repeatable <strong>rituals</strong>, designing <strong>off-sites</strong> that do only what must be done in person, why "celebrating success" often backfires, and the real cohesion of diverse teams where <strong>belonging ≠ sameness</strong>.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Rituals: Make "Cohesion" a Repeatable Mechanism
+<span class="en">Cohesion Is Compounded, Not Bought</span></h2>
+<span class="tag">ritual</span><span class="tag">belonging</span><span class="tag">cadence</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Cohesion isn't bought with one event — it's the <strong>compound interest</strong> of countless small rituals. A one-off activity decays within two weeks; only <strong>repeatable rituals</strong> become a team's muscle memory and belonging signal.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Belonging cues are behaviors that create safe connection in groups… they are not about character or discipline, but about establishing relationships."</span>
+<span class="zh">Belonging cues are the behaviors that build safe connection inside a group — not a matter of character or discipline, but of building relationship.</span>
+<span class="source">— Daniel Coyle, <em>The Culture Code</em>, Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Three-Tier Cadence of Rituals</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="240" y="20" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="460" y="20" width="220" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="120" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">High freq · daily/weekly</text>
+<text x="120" y="70" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">micro-rituals · ~free</text>
+<text x="35" y="100" font-family="Georgia" font-size="12" fill="#3a2f1c">· standup opener:</text>
+<text x="35" y="120" font-family="Georgia" font-size="12" fill="#3a2f1c">  a win / a blocker</text>
+<text x="35" y="145" font-family="Georgia" font-size="12" fill="#3a2f1c">· Friday demo +</text>
+<text x="35" y="165" font-family="Georgia" font-size="12" fill="#3a2f1c">  failure share</text>
+<text x="35" y="190" font-family="Georgia" font-size="12" fill="#3a2f1c">· week-1 welcome</text>
+<text x="35" y="208" font-family="Georgia" font-size="12" fill="#3a2f1c">  ritual</text>
+<text x="340" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">Mid freq · monthly/qtr</text>
+<text x="340" y="70" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">small rituals · low cost</text>
+<text x="255" y="100" font-family="Georgia" font-size="12" fill="#3a2f1c">· team lunch</text>
+<text x="255" y="120" font-family="Georgia" font-size="12" fill="#3a2f1c">  (within work hrs)</text>
+<text x="255" y="145" font-family="Georgia" font-size="12" fill="#3a2f1c">· retro</text>
+<text x="255" y="170" font-family="Georgia" font-size="12" fill="#3a2f1c">· milestone toast</text>
+<text x="255" y="195" font-family="Georgia" font-size="12" fill="#3a2f1c">· peer kudos</text>
+<text x="570" y="48" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#5c3a18">Low freq · half-yr/yr</text>
+<text x="570" y="70" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">big rituals · high cost</text>
+<text x="475" y="100" font-family="Georgia" font-size="12" fill="#3a2f1c">· off-site</text>
+<text x="475" y="120" font-family="Georgia" font-size="12" fill="#3a2f1c">· annual review</text>
+<text x="475" y="145" font-family="Georgia" font-size="12" fill="#3a2f1c">· team narrative /</text>
+<text x="475" y="165" font-family="Georgia" font-size="12" fill="#3a2f1c">  shared language</text>
+<text x="475" y="195" font-family="Georgia" font-size="12" font-style="italic" fill="#a04020">decays fastest</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: the team feels like "everyone doing their own thing, not one team," and you want to fix it.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>Say in a meeting: "We need more cohesion, let's talk more." — an abstract call with no vehicle; next week, nothing changes. Or book an escape room + dinner: lively that night, back to zero in two weeks.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: inject one high-frequency micro-ritual</div>
+<p><strong>Attach a ritual to a high-frequency vehicle.</strong> "Starting this week, we add 60 seconds to Monday standup: each person, one line — a small win + one blocker you'd like help on. I'll go first."</p>
+<p><strong>Why it works:</strong> it's <strong>repeatable, low-cost, and forces everyone to speak</strong> (turn-taking is a core belonging cue, per Coyle). In three months it's part of the team's identity — far higher compound interest than a one-off.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Real Ritual or Theater?</div>
+<ul class="checklist">
+<li>Is it <strong>repeatable</strong>? (One-off = event, not ritual.)</li>
+<li>Does <strong>everyone</strong> get a place to speak/participate, or do extroverts dominate?</li>
+<li>Is it <strong>within work hours</strong>, or does it default to eating into personal time?</li>
+<li>Does the leader <strong>go first and keep showing up</strong>, or disappear after launching it?</li>
+<li>Does it carry real content (wins, blockers, thanks) rather than hollow ceremony?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating team-building as a one-time purchase.</strong> Budget goes to the annual blowout while the nearly-free weekly micro-rituals — which compound more — are ignored.</li>
+<li><strong>Rituals carried by extroverts.</strong> "Everyone just chat" really means a few people chat; introverts get more marginal. Structured turn-taking is fairer.</li>
+<li><strong>Absent after launching.</strong> Skip the Friday demo three times and the ritual dies. Its authority comes from the leader's consistency.</li>
+<li><strong>Going through the motions.</strong> A ritual no one takes seriously is worse than none — it teaches "our rituals are theater."</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+The most common "cohesion" rituals — after-work drinks, weekend sports — systematically exclude people with caregiving duties (often women) and those who don't drink or have religious/health constraints. Yet core networks and trust are precisely what form in these informal settings, so the excluded pay a hidden tax in <strong>promotion and information</strong>. The fix: put core trust-building rituals <strong>inside work hours</strong>, and make after-hours activities an optional add-on, not the default main stage.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> pick an existing high-frequency meeting (standup or weekly), inject a 60-second micro-ritual (win + blocker / mutual kudos), go first yourself, and run it for four weeks straight.<br><strong>Reflection:</strong> in your team's current "team-building," what quietly excludes certain people? Who has never shown up?</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Off-site Design: Do Only What's Worth Doing In Person
+<span class="en">Spend In-Person Time Wisely</span></h2>
+<span class="tag">off-site</span><span class="tag">high-bandwidth</span><span class="tag">agenda design</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">An off-site's most expensive resource is <strong>synchronous, co-present time</strong>. Evict from the agenda anything that can be done async (status readouts, OKR recitals); keep only the <strong>high-bandwidth, relational, divergent</strong> work — the stuff that only happens when people are physically together.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Ninety percent of what makes a gathering successful is put in place beforehand… The way a group is gathered determines how it gathers."</span>
+<span class="zh">Whether a gathering succeeds is ninety percent decided by what you design beforehand. How you bring a group together determines how they will be together.</span>
+<span class="source">— Priya Parker, <em>The Art of Gathering</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">What Earns In-Person Time?</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="20" x2="350" y2="230" stroke="#c4a878" stroke-width="1.5"/>
+<line x1="40" y1="125" x2="680" y2="125" stroke="#c4a878" stroke-width="1.5"/>
+<text x="350" y="14" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">high bandwidth / relational ↑</text>
+<text x="350" y="246" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">low bandwidth / transactional ↓</text>
+<rect x="55" y="35" width="280" height="80" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="195" y="60" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">✓ Do in person (top value)</text>
+<text x="195" y="82" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">hard talks · trust-building · cross-team</text>
+<text x="195" y="100" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">brainstorm · strategy · play</text>
+<rect x="365" y="35" width="280" height="80" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="505" y="60" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a8702d">△ Can, but with care</text>
+<text x="505" y="82" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">deep decisions · retro · roadmap</text>
+<text x="505" y="100" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">(needs full pre-reads to be efficient)</text>
+<rect x="55" y="135" width="280" height="80" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="195" y="160" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">✗ Don't waste in person</text>
+<text x="195" y="182" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">round-robin status · OKR recital</text>
+<text x="195" y="200" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">one-way slides · broadcasts</text>
+<rect x="365" y="135" width="280" height="80" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="505" y="160" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">✗ Make it async</text>
+<text x="505" y="182" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">anything a doc can carry</text>
+<text x="505" y="200" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">admin notices · training recordings</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: you're planning a two-day team off-site and laying out the agenda.</div>
+<div class="dialog bad">
+<div class="speaker">✗ A failing agenda</div>
+<p>Day 1 AM: 6 squads each do a 30-min progress readout (= 3 hours of one-way slides). PM: leadership recites next-quarter OKRs. Day 2: trust falls + rafting. — Everyone flew in to do what could've been async; the only thing they remember is the rafting.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better agenda</div>
+<p><strong>Before:</strong> status/OKRs become pre-reads to be read in advance. First line of the off-site: "We won't re-read the doc today — we assume everyone read it."</p>
+<p><strong>Day 1:</strong> break into groups to attack a real problem ("how do we pay down our biggest tech debt next year?") with an actionable conclusion. <strong>Day 2:</strong> large blocks of <strong>unstructured time</strong> — meals, walks, casual pairing. "Nothing scheduled" is exactly where relationships form.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Off-site Agenda Health Check</div>
+<ul class="checklist">
+<li>Run every item past: "Must this be in person? Can it be async?" — if async, cut it.</li>
+<li>Is there a <strong>clear output</strong> (a decision, roadmap, shared agreement), or just "getting together"?</li>
+<li>Did you leave <strong>unstructured time</strong>? Relationships form between agenda items, not inside them.</li>
+<li>Are pre-reads <strong>sent in advance</strong> with an explicit "assume you've read it"?</li>
+<li>Can everyone take part in the activities? (Not gated on alcohol, fitness, or a particular cultural background.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Off-site as a giant status meeting.</strong> Flying people in to do what's async-able wastes the most expensive resource.</li>
+<li><strong>Packed to the minute.</strong> A fully-booked schedule looks efficient but squeezes out the one thing only in-person can deliver: free conversation.</li>
+<li><strong>No output.</strong> "Just getting together is enough" — an off-site with no conclusion evaporates within three days.</li>
+<li><strong>Activities serving only one type.</strong> High-intensity sports and late-night drinking turn part of the team into spectators — manufacturing distance instead.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> take your next (or last) off-site agenda and score each item: in-person-required / async-able. Move out every "async-able" item, and convert the freed time into a block of unstructured time.<br><strong>Reflection:</strong> from your team's last in-person gathering, what actually survived three months later — the agenda content, or some casual conversation?</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Counterintuitive Side of Celebration: Celebrate Progress, Not Only Outcomes
+<span class="en">Celebrate Progress, Not Only Outcomes</span></h2>
+<span class="tag">celebration</span><span class="tag">recognition</span><span class="tag">motivation</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Celebrating only big wins teaches the team "you're only worth noticing when you've won." <strong>Celebrating progress, effort, and intelligent failures</strong> is what drives sustainable motivation — and recognition must be <strong>specific</strong>; a vague "good job" does almost nothing.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Of all the things that can boost emotions, motivation, and perceptions during a workday, the single most important is making progress in meaningful work."</span>
+<span class="zh">Of everything that can lift emotion, motivation, and perception during a workday, the single most important is making progress on meaningful work.</span>
+<span class="source">— Teresa Amabile, <em>The Progress Principle</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: the team has been grinding on a hard three-month project; midway, someone cracked a key bottleneck, but the whole thing hasn't shipped yet.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>Wait until the project finally ships to throw a party. The mid-way breakthrough goes unmentioned; the person who cracked it feels "nobody noticed." A failed experiment gets quietly buried, and the team learns nothing from it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: specific + timely + celebrate the process</div>
+<p><strong>Name it in that week's meeting:</strong> "Special call-out to Lin — she cracked the concurrency deadlock that stalled us for three weeks. <strong>Specifically</strong>: she didn't route around it; she wrote a minimal repro to pin the root cause. I'd love everyone to learn that approach."</p>
+<p><strong>Celebrate intelligent failure:</strong> "Also, Wei's caching proposal that got killed — he spent one day proving it wouldn't work, saving us a sprint. <strong>That kind of fail-fast is worth celebrating.</strong>"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Is Your Recognition Effective?</div>
+<ul class="checklist">
+<li>Is it <strong>specific</strong>? Spell out what was done and why it was good — not "nice work."</li>
+<li>Is it <strong>timely</strong> — in the week it happened, not saved up for the quarterly wrap?</li>
+<li>Does it celebrate <strong>process and progress</strong>, not only the final outcome?</li>
+<li>Does it make room for <strong>"intelligent failures"</strong> (fast, low-cost, with learning)?</li>
+<li>Does recognition reach the <strong>behind-the-scenes contributors</strong>, or only the visible ones?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Celebrating only the final big win.</strong> No recognition mid-project means no fuel during the uphill stretch when the team needs it most.</li>
+<li><strong>Vague praise.</strong> "Everyone's great" means no one was seen — specificity is the currency of recognition.</li>
+<li><strong>Treating all failure as bad.</strong> Punishing every failure teaches the team to avoid risk and hide problems (see Day 21).</li>
+<li><strong>Rewarding only the visible.</strong> The firefighter takes the stage while the quiet fire-preventer stays silent — you're rewarding crisis-making, not crisis-prevention.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> this week, give one <strong>specific</strong> public recognition — name a person, spell out what they did and why the approach is worth learning. Bonus: name one "intelligent failure."<br><strong>Reflection:</strong> who on your team is a "quiet fire-preventer" — never creating crises, so never seen? When did you last recognize them?</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Real Cohesion in Diverse Teams: Belonging ≠ Sameness
+<span class="en">Cohesion Without Conformity</span></h2>
+<span class="tag">belonging</span><span class="tag">inclusion</span><span class="tag">culture add</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Cohesion isn't grinding everyone into the same shape. Aim for <strong>culture add</strong>, not <strong>culture fit</strong>; real belonging means <strong>"I don't have to pretend to be someone else to belong here."</strong> Homogenized "cohesion" is both brittle and creativity-killing.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Diversity is being invited to the party; inclusion is being asked to dance."</span>
+<span class="zh">Diversity is being invited to the party; inclusion is being asked to dance.</span>
+<span class="source">— Vernā Myers</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: your team's "culture" is built on heavy inside jokes, sports metaphors, and late-night gaming. A new colleague (different background) can never break in and grows quieter in meetings.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common misdiagnosis</div>
+<p>"He's not fitting in well — maybe a culture-fit issue." — misdiagnosing "different from us" as "not a fit," pinning the problem on the individual and treating team culture as an unchangeable constant.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: expand the shared language, don't demand assimilation</div>
+<p><strong>Ask him privately:</strong> "A lot of the team's jokes and activities may make it hard to jump in. <strong>Which ones make you feel left out?</strong> I want to adjust — not have you adapt to everything."</p>
+<p><strong>Structural backfill:</strong> in meetings, actively make space — "On this one I want to hear from people who haven't spoken yet." Move some of the airtime away from the loudest. <strong>Belonging comes from being needed, not tolerated.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Is Your Team Inclusive or Assimilating?</div>
+<ul class="checklist">
+<li>Does the team "culture" require newcomers to <strong>give up themselves</strong> to fit in? (Assimilation signal.)</li>
+<li>Are informal information and trust concentrated in <strong>one homogeneous clique</strong>?</li>
+<li>Is airtime monopolized by the <strong>loudest few</strong>? Do you actively backfill?</li>
+<li>When you say "culture fit," does it really mean "like us"? Can you swap it for culture add?</li>
+<li>Do the team's jokes/activities presume a shared background (sports, alcohol, a particular upbringing)?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Equating "cohesion" with "thinking alike."</strong> Homogeneous teams decide fast but have big blind spots and lack constructive conflict (see Day 19).</li>
+<li><strong>"Culture fit" as an all-purpose veto.</strong> Often a polite wrapper for "I don't like / don't know you," systematically screening out diversity.</li>
+<li><strong>Dumping the integration burden on newcomers.</strong> "He should be more proactive" — but culture is built by the team, and backfilling is the leader's job.</li>
+<li><strong>Diverse on the surface, assimilating underneath.</strong> Hiring different backgrounds yet requiring them to act exactly like the mainstream is a more hidden form of exclusion.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"Getting interrupted and having ideas re-credited" is the most common quiet exclusion of minorities (especially women). Two moves you can use immediately: <strong>(1) amplification</strong> — when someone's point is ignored and later restated by another, return credit on the spot: "That's exactly the point Mei made five minutes ago." <strong>(2) Counter-interruption</strong> — "Hold on, let her finish." Note: when a female leader does this herself, she's sometimes labeled "playing favorites," so apply it <strong>evenly to everyone who gets interrupted</strong>, making it a rule rather than a preference.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="ref"><strong>Action:</strong> in your next meeting, deliberately "backfill": when a quiet person's point is overlooked, return the credit ("back to what X said earlier…"), and give one specific recognition. Watch the effect on discussion quality and that person's engagement.<br><strong>Reflection:</strong> if your team's "culture" were described in one sentence, what shared background does it presume? Who is naturally inside the circle, and who has to work hard to get in?</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="card">
+<div class="section-label" style="margin-bottom:14px">Going Deeper</div>
+
+<details>
+<summary>1. Where's the line between ritual and "forced fun"? When does team-building become a burden?</summary>
+<div>The dividing line is <strong>autonomy and authenticity</strong>. Once it becomes "perform happiness on command" (mandatory icebreakers, compulsory after-work events), a ritual turns from a binding agent into a tax of emotional labor. Test: does it give participants <strong>room to opt out and customize</strong>, and does it carry real content? Swap "must be happy" for "have a real place," and the burden disappears.</div>
+</details>
+
+<details>
+<summary>2. Remote/distributed teams have limited physical rituals and off-sites — how do you build cohesion?</summary>
+<div>The principle holds; the vehicle must be redesigned. High-frequency micro-rituals matter more (an async wins channel, a couple minutes of small talk to open a video call, written kudos), because you've lost the natural connection of hallway run-ins; off-sites shift to "truly gather once every half-year" and do only what's in-person-exclusive. Key insight: remotely, belonging <strong>won't grow on its own — it must be deliberately designed.</strong> The connection the in-person era got for free from physical co-presence, the remote era must pay for on purpose.</div>
+</details>
+
+<details>
+<summary>3. Won't "celebrating failure" slide into "rewarding failure" and lowering the bar?</summary>
+<div>The key distinction is the <strong>type of failure</strong> (Amy Edmondson): worth celebrating are <strong>"intelligent failures"</strong> — exploratory failures at the boundary of the unknown, low-cost, fast, with clear learning; not worth celebrating are failures from negligence, rule-breaking, or repeating the same mistake. Conflating the two and applauding all failure is what lowers the bar. You're not celebrating "losing," but "learning at the lowest possible cost."</div>
+</details>
+
+<details>
+<summary>4. "Culture add" sounds politically correct — but doesn't a team need some minimum of shared values?</summary>
+<div>It does, and that's precisely the premise of culture add, not a contradiction. Separate two layers: <strong>core values</strong> (integrity, commitment to quality, mutual respect) should be unified — that's the foundation of cohesion; <strong>style, background, ways of thinking, expression</strong> should be diverse — that's the source of innovation. The error of culture fit is mistaking the latter (whether you're like us) for the former (whether we share values) when screening people. In a line: <strong>converge on values, diverge on style.</strong></div>
+</details>
+
+<details>
+<summary>5. As a tech lead manager who's introverted and not a natural socializer, how do you build cohesion?</summary>
+<div>Cohesion doesn't rely on a leader's charisma or extroversion — it relies on <strong>mechanism design</strong>. Introverts are often better at designing structured, everyone-has-a-place rituals, and more attuned to the experience of the excluded. You don't need to be the party host; what you need is to design repeatable micro-rituals, protect the quiet's airtime, and give specific (not performative) recognition — these are <strong>design work, not performance work</strong>, exactly an engineer's strength.</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 36 Action</h3>
+<p>Do two things this week — one builds a mechanism, one covers a blind spot:</p>
+<div class="action">
+<strong>(1) Inject one high-frequency micro-ritual:</strong> pick standup or the weekly meeting, add a 60-second structured beat (each person, a win + blocker, or mutual kudos), go first yourself, and run it for four weeks straight — not a one-off event, but planting a ritual that compounds.<br><br>
+<strong>(2) Run a "backfill" experiment:</strong> in a meeting, deliberately return airtime to someone overlooked/interrupted ("back to what X said earlier…"), and give one specific recognition. Record: did discussion quality and that person's engagement change?
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 36 · 2026.06.26</footer>
+</div>
+</body>
+</html>

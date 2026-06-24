@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 36：团队建设与凝聚</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+details{margin:10px 0;background:#f8f0dd;border-radius:4px;border-left:3px solid #a8702d}
+details summary{padding:12px 16px;cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.96rem}
+details div{padding:0 16px 14px;font-size:0.92rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 36 · 2026.06.26</div>
+<h1>团队建设与凝聚：仪式、庆祝与不被排除的归属</h1>
+<div class="meta"><span>主题：Team Building &amp; Cohesion</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Belonging cues are behaviors that create safe connection in groups." — Daniel Coyle</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>"凝聚力"常被翻译成"一次昂贵的 off-site"或"周五下班喝酒"。但凝聚不是活动买来的，它是<strong>无数小机制日积月累的复利</strong>，而且很多默认的"团建"恰恰在悄悄排除一部分人。本周拆四件事：把抽象的凝聚变成可重复的<strong>仪式</strong>、只做线下才值得做的 <strong>off-site 设计</strong>、为什么"庆祝成功"常适得其反、以及多元团队里"归属 ≠ 同质"的真凝聚。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>团队仪式：把"凝聚"变成可重复的机制
+<span class="en">Rituals — Cohesion Is Compounded, Not Bought</span></h2>
+<span class="tag">仪式</span><span class="tag">归属</span><span class="tag">节奏</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">凝聚不是一次团建买来的，是无数个小仪式的<strong>复利</strong>。一次性活动的效果两周内衰减；<strong>可重复的仪式</strong>才形成团队的肌肉记忆和归属信号。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Belonging cues are behaviors that create safe connection in groups… they are not about character or discipline, but about establishing relationships."</span>
+<span class="zh">"归属信号是那些在群体中建立安全连接的行为……它们无关性格或纪律，而关乎建立关系。"</span>
+<span class="source">— Daniel Coyle,《The Culture Code》Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">仪式的三层节奏</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="240" y="20" width="200" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<rect x="460" y="20" width="220" height="200" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="120" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">高频 · 每日/每周</text>
+<text x="120" y="70" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">微仪式 · 几乎免费</text>
+<text x="35" y="100" font-family="Georgia" font-size="12" fill="#3a2f1c">· standup 开头</text>
+<text x="35" y="120" font-family="Georgia" font-size="12" fill="#3a2f1c">  一句 win/卡点</text>
+<text x="35" y="145" font-family="Georgia" font-size="12" fill="#3a2f1c">· 周五 demo + </text>
+<text x="35" y="165" font-family="Georgia" font-size="12" fill="#3a2f1c">  失败分享</text>
+<text x="35" y="190" font-family="Georgia" font-size="12" fill="#3a2f1c">· 新人第一周</text>
+<text x="35" y="208" font-family="Georgia" font-size="12" fill="#3a2f1c">  欢迎仪式</text>
+<text x="340" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">中频 · 每月/每季</text>
+<text x="340" y="70" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">小仪式 · 低成本</text>
+<text x="255" y="100" font-family="Georgia" font-size="12" fill="#3a2f1c">· 团队午餐</text>
+<text x="255" y="120" font-family="Georgia" font-size="12" fill="#3a2f1c">  (工作时间内)</text>
+<text x="255" y="145" font-family="Georgia" font-size="12" fill="#3a2f1c">· 复盘 retro</text>
+<text x="255" y="170" font-family="Georgia" font-size="12" fill="#3a2f1c">· 里程碑小庆祝</text>
+<text x="255" y="195" font-family="Georgia" font-size="12" fill="#3a2f1c">· 互相致谢</text>
+<text x="570" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">低频 · 每半年/年</text>
+<text x="570" y="70" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">大仪式 · 高投入</text>
+<text x="475" y="100" font-family="Georgia" font-size="12" fill="#3a2f1c">· Off-site</text>
+<text x="475" y="120" font-family="Georgia" font-size="12" fill="#3a2f1c">· 年度回顾</text>
+<text x="475" y="145" font-family="Georgia" font-size="12" fill="#3a2f1c">· 团队叙事/</text>
+<text x="475" y="165" font-family="Georgia" font-size="12" fill="#3a2f1c">  共同语言重申</text>
+<text x="475" y="195" font-family="Georgia" font-size="12" font-style="italic" fill="#a04020">效果最易衰减</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你觉得团队"各干各的、不像一个团队"，想改善。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>在会上说:"我们要更有凝聚力,大家多交流。"——抽象号召、没有载体,下周一切照旧。或者订一场密室逃脱+晚饭,当晚热烈,两周后归零。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法：设计一个高频微仪式</div>
+<p><strong>选一个高频载体注入仪式。</strong>"从这周起，周一 standup 我们加 60 秒：每人一句——上周一个小 win + 一个想求助的卡点。我先来。"</p>
+<p><strong>为什么有效：</strong>它<strong>可重复、低成本、强制每人发声</strong>（turn-taking 是 Coyle 说的核心归属信号）。三个月后它已是团队身份的一部分——复利远高于一次性团建。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：你的仪式是真仪式还是表演？</div>
+<ul class="checklist">
+<li>它<strong>可重复</strong>吗?(一次性=活动,不是仪式)</li>
+<li>它让<strong>每个人</strong>都有发声位置吗?还是只有外向者主导?</li>
+<li>它在<strong>工作时间内</strong>吗?还是默认侵占私人时间?</li>
+<li>领导者自己<strong>带头并持续</strong>参与吗?还是发起后就缺席?</li>
+<li>它承载真实内容(win、卡点、致谢)还是空洞走过场?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把团建当一次性采购。</strong>预算花在年度大活动,忽视几乎免费、复利更高的每周微仪式。</li>
+<li><strong>仪式靠外向者撑。</strong>"大家随便聊"实际只有几个人聊,内向者更边缘——结构化轮流才公平。</li>
+<li><strong>发起后自己缺席。</strong>你三次不来周五 demo,仪式就死了。它的权威来自领导者的一致性。</li>
+<li><strong>仪式僵化走过场。</strong>没人再认真对待的仪式比没有更糟——它教大家"我们的仪式就是表演"。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+最常见的"凝聚"仪式——下班喝酒、周末打球——系统性排除有照护责任的人（多为女性）和不喝酒、有宗教/健康限制的人。而核心人脉与信任恰恰常在这些非正式场合建立，被排除者因此在<strong>晋升和信息</strong>上吃暗亏。对策：把建立信任的核心仪式放在<strong>工作时间内</strong>，下班活动作为可选加项而非默认主场。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>选一个已有的高频会议（standup 或周会），注入一个 60 秒微仪式（win+卡点 / 互相致谢），自己带头，连做四周。<br><strong>思考题：</strong>你团队现有的"团建"里，有哪些其实在悄悄排除某些人？谁从没出现过？</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Off-site 设计：只做线下才值得做的事
+<span class="en">Designing Off-sites — Spend In-Person Time Wisely</span></h2>
+<span class="tag">Off-site</span><span class="tag">高带宽</span><span class="tag">议程设计</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Off-site 最贵的资源是<strong>同步在场的时间</strong>。把能异步做的（状态汇报、OKR 宣读）赶出议程；线下只保留<strong>高带宽、关系性、发散性</strong>的事——把人聚在一起才做得成的事。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Ninety percent of what makes a gathering successful is put in place beforehand… The way a group is gathered determines how it gathers."</span>
+<span class="zh">"一场聚会成功与否，九成取决于事前的设计……你以什么方式把一群人聚起来，决定了他们将如何相处。"</span>
+<span class="source">— Priya Parker,《The Art of Gathering》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">什么值得占用线下时间？</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<line x1="350" y1="20" x2="350" y2="230" stroke="#c4a878" stroke-width="1.5"/>
+<line x1="40" y1="125" x2="680" y2="125" stroke="#c4a878" stroke-width="1.5"/>
+<text x="350" y="14" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">高带宽 / 关系性 ↑</text>
+<text x="350" y="246" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">低带宽 / 事务性 ↓</text>
+<rect x="55" y="35" width="280" height="80" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="195" y="60" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">✓ 线下做（最高价值）</text>
+<text x="195" y="82" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">难对话 · 信任建立 · 跨团队</text>
+<text x="195" y="100" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">头脑风暴 · 战略发散 · 玩</text>
+<rect x="365" y="35" width="280" height="80" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
+<text x="505" y="60" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a8702d">△ 可线下但慎用</text>
+<text x="505" y="82" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">深度决策 · 复盘 · 共创路线图</text>
+<text x="505" y="100" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">(需充分预读才高效)</text>
+<rect x="55" y="135" width="280" height="80" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="195" y="160" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">✗ 别浪费线下</text>
+<text x="195" y="182" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">逐人状态汇报 · OKR 宣读</text>
+<text x="195" y="200" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">单向幻灯片 · 信息广播</text>
+<rect x="365" y="135" width="280" height="80" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="505" y="160" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">✗ 改异步</text>
+<text x="505" y="182" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">文档可承载的一切</text>
+<text x="505" y="200" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">行政通知 · 培训录像</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你要办一次两天的团队 off-site，正在排议程。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 失败议程</div>
+<p>Day1 上午:6 个 squad 各做 30 分钟进度汇报(=3 小时单向幻灯片)。下午:管理层宣读下季 OKR。Day2:信任背摔+漂流。——大家飞过来做了本可异步做的事,唯一记得的是漂流。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后议程</div>
+<p><strong>会前：</strong>状态/OKR 写成预读文档要求读完。off-site 第一句话:"今天不复述文档,假设大家都读了。"</p>
+<p><strong>Day1：</strong>分组攻一个真问题("明年最大的技术债怎么还"),产出可执行结论。<strong>Day2：</strong>大段<strong>非结构化时间</strong>——吃饭、散步、随意配对聊。"什么都不安排"恰恰是关系建立发生的地方。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：Off-site 议程体检</div>
+<ul class="checklist">
+<li>每个议程项都过一遍:"这必须线下吗?异步能不能做?"——能就删。</li>
+<li>有<strong>明确产出</strong>吗?(决策、路线图、共识)还是只是"聚一聚"?</li>
+<li>留出<strong>非结构化时间</strong>了吗?关系不在议程里建立,在议程之间。</li>
+<li>预读材料是否<strong>提前发出</strong>并明确"假设读过"?</li>
+<li>活动是否人人能参与?(不靠酒精、不靠体能、不靠某种文化背景)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 off-site 当大型状态会。</strong>飞人聚齐却做异步能做的事,是对最贵资源的浪费。</li>
+<li><strong>排满到没有缝隙。</strong>分钟级排满显得高效,却挤掉了唯一只能线下发生的:自由交谈。</li>
+<li><strong>无产出。</strong>"聚一聚就好"——没有结论的 off-site 回去三天就蒸发。</li>
+<li><strong>活动只服务一类人。</strong>高强度运动、深夜酒局把一部分人变成旁观者,反而制造隔阂。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>拿出你下一次（或上一次）off-site 议程，对每一项打分：线下必需 / 可异步。把所有"可异步"项移出，腾出的时间换成一段非结构化时间。<br><strong>思考题：</strong>你团队上一次线下聚会，三个月后真正留下来的是什么？是议程内容，还是某次随意的对话？</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>庆祝的反直觉：庆祝进展与努力，不只庆祝结果
+<span class="en">Celebrate Progress, Not Only Outcomes</span></h2>
+<span class="tag">庆祝</span><span class="tag">认可</span><span class="tag">动力</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">只庆祝大胜利,等于教团队"只有赢了才值得被看见"。<strong>庆祝进展、努力与聪明的失败</strong>才驱动可持续动力——而且认可必须<strong>具体</strong>,泛泛的"干得好"几乎无效。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Of all the things that can boost emotions, motivation, and perceptions during a workday, the single most important is making progress in meaningful work."</span>
+<span class="zh">"在一个工作日里，所有能提振情绪、动力和认知的因素中，最重要的一个，是在有意义的工作上取得进展。"</span>
+<span class="source">— Teresa Amabile,《The Progress Principle》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：团队啃了三个月的难项目，中途有人攻克了一个关键瓶颈，但整体还没上线。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>等到项目最终上线那天才办庆功宴。中途的瓶颈突破无人提及；那位攻克者觉得"没人注意到"。一个失败的实验被悄悄掩盖，团队学不到东西。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法：具体 + 及时 + 庆祝过程</div>
+<p><strong>当周周会就点名：</strong>"特别说一下 Lin——她搞定了卡了三周的并发死锁。<strong>具体说</strong>:她没绕过去,而是写了最小复现脚本定位根因,这方法我希望大家都学。"</p>
+<p><strong>庆祝聪明的失败：</strong>"还有 Wei 那个被否掉的缓存方案——他用一天验证它不可行,省了我们一个 sprint。<strong>这种早死的失败值得庆祝。</strong>"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：你的认可有效吗？</div>
+<ul class="checklist">
+<li><strong>具体</strong>吗？说清做了什么、为什么好——而不是"干得漂亮"。</li>
+<li><strong>及时</strong>吗？在事发当周，而不是攒到季度总结。</li>
+<li>是否庆祝<strong>过程和进展</strong>，不只是最终结果？</li>
+<li>是否给<strong>"聪明的失败"</strong>留了位置？（快速、低成本、有学习的失败）</li>
+<li>认可是否覆盖<strong>幕后贡献者</strong>？还是只有出风头的人被看见？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只庆祝终局大胜。</strong>长项目中途无认可,团队在最需要燃料的爬坡期得不到燃料。</li>
+<li><strong>泛泛表扬。</strong>"大家都很棒"等于谁都没被看见——具体性才是认可的货币。</li>
+<li><strong>把失败一律视为坏事。</strong>惩罚一切失败=教团队不敢冒险、隐藏问题(参见 Day 21)。</li>
+<li><strong>只奖励显眼者。</strong>救火的上台,默默防火的沉默——你在奖励制造危机而非预防危机。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>本周公开做一次<strong>具体</strong>的认可——点名一个人,说清他做了什么、为什么这个方式值得学。额外加分:点名一次"聪明的失败"。<br><strong>思考题：</strong>你团队里谁是"默默防火"型——从不制造危机所以从不被看见的人?你上次认可他是什么时候?</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>多元团队的真凝聚：归属 ≠ 同质
+<span class="en">Cohesion Without Conformity — Belonging ≠ Sameness</span></h2>
+<span class="tag">归属</span><span class="tag">包容</span><span class="tag">culture add</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">凝聚不是把所有人磨成一个样。要 <strong>culture add（文化增益）</strong>而非 <strong>culture fit（文化契合）</strong>;真正的归属感是<strong>"我不必假装成别人,也属于这里"</strong>。同质化的"凝聚"既脆,又扼杀创新。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Diversity is being invited to the party; inclusion is being asked to dance."</span>
+<span class="zh">"多样性是被邀请进入派对;包容是被邀请共舞。"</span>
+<span class="source">— Vernā Myers</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境:你团队的"文化"建立在大量内部梗、体育比喻、深夜联机游戏上。新来的同事(不同背景)始终插不进去,在会上越来越沉默。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见误判</div>
+<p>"他融入得不太好,可能 culture fit 不行。"——把"和我们不一样"误诊为"不合适",问题归到个人,默认团队文化是不可动的常量。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法:扩展共同语言,而非要求同化</div>
+<p><strong>私下问他:</strong>"团队的很多梗和活动可能让你不容易加入。<strong>哪些让你觉得被排在外面?</strong>我想调整,不是让你来适应一切。"</p>
+<p><strong>结构性补位:</strong>会上主动腾空间——"这问题我想先听还没说过的人。"把发言权从最响的人手里挪一部分出来。<strong>归属来自被需要,不是被容忍。</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表:你的团队是包容还是同化?</div>
+<ul class="checklist">
+<li>团队"文化"是否要求新人<strong>放弃自己</strong>才能融入?(同化信号)</li>
+<li>非正式信息和信任是否集中在<strong>某个同质小圈子</strong>里?</li>
+<li>发言权是否被<strong>最响的几个人</strong>垄断?你有没有主动补位?</li>
+<li>你说的"culture fit",真意是不是"像我们"?能否换成 culture add?</li>
+<li>团队的梗/活动是否预设了某种<strong>共同背景</strong>(体育、酒、特定经历)?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"凝聚"等同于"想法一致"。</strong>同质团队决策快但盲区大,缺建设性冲突(参见 Day 19)。</li>
+<li><strong>"culture fit"当万能否决理由。</strong>它常是"我不喜欢/不熟悉"的体面包装,系统性筛掉多样性。</li>
+<li><strong>把融入责任全压给新人。</strong>"他要主动点"——但文化是团队建的,补位是领导的活。</li>
+<li><strong>表面多元,实质同化。</strong>招进不同背景的人,却要求他们和主流一模一样——更隐蔽的排除。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"会上被打断、被抢功"是少数群体(尤其女性)最普遍的隐性排除。两个可立即用的动作:<strong>(1) amplification(放大)</strong>——当某人的观点被忽视、稍后又被别人重述时当场归还:"这正是 Mei 五分钟前提的点。"<strong>(2) 反打断</strong>——"等一下,让她说完。"注意:女性领导者自己做这件事有时会被贴"偏袒"标签,所以更要<strong>对所有被打断者一视同仁</strong>,让它成为规则而非偏好。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="ref"><strong>动作：</strong>下次团队会议,刻意做一次"补位":当一个安静的人的观点被忽略,主动归还信用("回到 X 刚才说的……")。观察对讨论质量的影响。<br><strong>思考题：</strong>你团队的"文化"如果用一句话描述,它预设了什么样的共同背景?谁天然在圈内,谁需要费力才能进?</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="card">
+<div class="section-label" style="margin-bottom:14px">深入思考</div>
+
+<details>
+<summary>1. 仪式与"强制快乐"的边界在哪?团建什么时候反而成了负担?</summary>
+<div>分界线是<strong>自主性与真实性</strong>。一旦变成"强制表演开心"(被迫的破冰、必须参加的下班局),仪式就从凝聚剂变成情绪劳动的税。测试:它是否给参与者<strong>退出和定制的余地</strong>、是否承载真实内容?把"必须开心"换成"有真实位置",负担感就消失。</div>
+</details>
+
+<details>
+<summary>2. 远程/分布式团队,物理仪式和 off-site 受限,凝聚怎么建?</summary>
+<div>原理不变,载体重设计。高频微仪式更重要(异步 win 频道、视频会开头闲聊、文字致谢),因为缺了走廊偶遇这种自然连接;off-site 改为"每半年真正聚齐一次"且只做线下独有的事。关键认知:远程下归属<strong>不会自发生长,必须主动设计</strong>——线下时代靠物理共处免费获得的连接,远程时代要刻意付费购买。</div>
+</details>
+
+<details>
+<summary>3. "庆祝失败"会不会滑向"奖励失败"、降低标准?</summary>
+<div>关键区分是<strong>失败的类型</strong>(Amy Edmondson):值得庆祝的是<strong>"聪明的失败"</strong>——不确定边界上的、低成本、快速、有明确学习的探索性失败;不该庆祝的是疏忽、违规、重复同样错误的失败。混淆两者、对一切失败都鼓掌才会降标准。庆祝的不是"输了",是"以最低代价学到了"。</div>
+</details>
+
+<details>
+<summary>4. culture add 听起来政治正确,但团队不需要最低限度的共同价值吗?</summary>
+<div>需要,而这恰是 culture add 的前提而非矛盾。分两层:<strong>核心价值观</strong>(诚信、对质量的承诺、互相尊重)应统一,这是凝聚地基;<strong>风格、背景、思维、表达</strong>应多元,这是创新来源。culture fit 的错误是把后者(像不像我们)误当成前者(共不共享价值)来筛人。一句话:<strong>价值上求同,风格上存异。</strong></div>
+</details>
+
+<details>
+<summary>5. tech lead manager 自己内向、不擅社交,如何建团队凝聚?</summary>
+<div>凝聚不靠领导者的魅力或外向程度,靠<strong>机制设计</strong>。内向者反而常更擅长设计结构化、人人有位的仪式,也更敏感于被排除者的体验。你不需要当派对主持人,你要做的是:设计可重复的微仪式、保护安静者的发言权、做具体而非表演式的认可——这些是<strong>设计活,不是表演活</strong>,正是技术人的长处。</div>
+</details>
+
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 36 Action</h3>
+<p>本周做两件事,一件建机制,一件补盲区:</p>
+<div class="action">
+<strong>(1) 注入一个高频微仪式:</strong>选 standup 或周会,加一个 60 秒结构化环节(每人一句 win+卡点,或互相致谢),自己带头连做四周——不是办一次活动,是种下一个会复利的仪式。<br><br>
+<strong>(2) 做一次"补位"实验:</strong>会上刻意把发言权还给被忽略/被打断的人("回到 X 刚才的点……"),并做一次具体认可。记录:讨论质量和那人的参与度有无变化?
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 36 · 2026.06.26</footer>
+</div>
+</body>
+</html>
