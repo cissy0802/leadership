@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 37: Leadership Style</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #a8702d}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{margin-bottom:12px;border-bottom:1px dashed #e6d9bf;padding-bottom:12px}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem;padding:6px 0}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details>div{margin-top:10px;font-size:0.93rem;color:#4a3a20;padding:8px 14px;background:#f8f0dd;border-radius:4px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 37 · 2026.06.27</div>
+<h1>Leadership Style: Style Is a Toolkit, Not a Personality</h1>
+<div class="meta"><span>Topic: Leadership Style</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Leadership style is not a function of personality but a strategic choice." — Daniel Goleman</div>
+</header>
+
+<div class="intro">
+<strong>This week's thesis:</strong> Many people treat "leadership style" as personality — "I'm just a blunt person." That's the biggest misconception: <strong>style is a switchable toolkit, not a personality welded on at the factory.</strong> Goleman's data on 3,871 executives proves that leaders who use only one style perform worst, while those who fluidly switch among four or more perform best. Four things this week: switching the six styles by situation, adjusting your gear to people of different maturity, the dosage of vulnerability, and avoiding the "authenticity paradox." The core isn't "be yourself" — it's <strong>widening the bandwidth of "yourself."</strong>
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Switch the Six Styles by Situation: Don't Hit Every Nail With One Hammer
+<span class="en">Six Styles, Switched by Situation</span></h2>
+<span class="tag">Style Library</span><span class="tag">Situation</span><span class="tag">Goleman</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">The worst leader uses one style for life and calls it "being authentic." The best leader is like a golfer — <strong>pulling the right club out of the bag for this particular shot</strong>. Each of the six styles has its use and its cost.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Leaders who have mastered four or more—especially the authoritative, democratic, affiliative, and coaching styles—have the very best climate and business performance."</span>
+<span class="source">— Daniel Goleman,《Leadership That Gets Results》HBR, 2000</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Six Styles · When to Use · The Cost</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="660" height="130" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="20" y="166" width="660" height="130" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="350" y="44" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">✓ Use often · builds climate (default styles)</text>
+<text x="35" y="72" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">Authoritative</tspan> — "Come with me." When direction is unclear, ignition needed.</text>
+<text x="35" y="96" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">Coaching</tspan> — "Let's grow you." When the person wants to develop.</text>
+<text x="35" y="120" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">Affiliative</tspan> — "People first." When the team is wounded, needs repair.</text>
+<text x="35" y="142" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">Democratic</tspan> — "What do you think?" When buy-in matters, info is spread.</text>
+<text x="350" y="190" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">⚠ Use sparingly · misused, it poisons climate (emergency tools)</text>
+<text x="35" y="220" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">Pacesetting</tspan> — "Watch me, keep up." Elite sprint team; overuse burns people out.</text>
+<text x="35" y="248" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">Commanding</tspan> — "Do as I say." Real crisis / a bad actor; daily use = fear culture.</text>
+<text x="35" y="278" font-family="Georgia" font-size="12" fill="#5a3818">Rule: the first four are <tspan font-weight="700">staples</tspan>, the last two are <tspan font-weight="700">first aid</tspan> — high dose, short course.</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: You're a tech lead manager. Monday, a production incident. Wednesday, a senior engineer is lost about an architecture direction. Same week, two events.</div>
+<div class="dialog bad">
+<div class="speaker">✗ One style for everything</div>
+<p>You're an affiliative person, so during the incident you're still asking "Everyone okay? No pressure" — the fire is burning, the team needs someone to make the call. Three days later you switch to commanding with the lost engineer: "Just go with Plan A" — but he needed to think it through together, not be ordered. <strong>Both times you used the wrong club.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Switch by situation</div>
+<p><strong>During the incident (commanding, time-boxed):</strong> "I'm making the call now. Roll back to the last version, Zhang watches monitoring, Li sends the customer notice, we sync in 15 minutes. Postmortem tomorrow." — In a crisis, democracy is a luxury; stop the bleeding first.</p>
+<p><strong>Three days later with the senior engineer (coaching):</strong> "Between Plan A and B, which long-term cost worries you more? Looking back three years from now, what would you want us to have decided today?" — Give thinking space, not the answer.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Widen Your Style Bandwidth</div>
+<ul class="checklist">
+<li>Which is my "default style"? Did I use it 80% of the time over the past month?</li>
+<li>Which two of the six do I almost never use? Those are exactly my blind spots.</li>
+<li>Did I use commanding/pacesetting this week? Was it a real crisis, or just impatience?</li>
+<li>When I switch styles, do I signal it to the team? ("I'll call this one" vs "I want to hear you all on this")</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating your default style as a personality totem.</strong> "I'm just a straight-shooter" — that's not authenticity, it's not bothering to grow a second style.</li>
+<li><strong>Pacesetting as a staple.</strong> The trap newly-promoted high performers fall into: sprinting out front, burning the team out, calling it "leading by example."</li>
+<li><strong>Doing democracy in a crisis.</strong> Asking "what does everyone think" with the building on fire dumps the decision on the team — that's not empowerment.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Style switching carries an extra tax for women: research (Heilman's "role congruity" experiments) shows women using <strong>commanding/pacesetting</strong> are labeled "aggressive" far more often than men, while affiliative gets them dismissed as "nice but not enough of a leader." The fix isn't to use only safe styles — it's, when switching to a forceful style, one extra line that <strong>attributes it to the situation, not your temperament</strong>: "The time window is narrow, so I'm calling this directly now." — it weakens the label's grip.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Daniel Goleman,《Primal Leadership》</strong> — the systematic expansion of the six styles and emotional intelligence, building on《Leadership That Gets Results》(HBR, 2000).</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Adjust to the Person: Equal Treatment of Unequals Is the Deepest Inequality
+<span class="en">Situational Leadership — Match the Person</span></h2>
+<span class="tag">Situational</span><span class="tag">Blanchard</span><span class="tag">Delegation Gears</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">For the same task, a beginner needs directing (high guidance), a veteran needs delegating (low guidance). <strong>Treating people of vastly different ability the same way is the most hidden form of unfairness.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"There's nothing so unequal as the equal treatment of unequals."</span>
+<span class="source">— Ken Blanchard,《Leadership and the One Minute Manager》(Situational Leadership SLII)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">SLII Four Gears: Set by the Person's Maturity "On This Task"</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="20" x2="60" y2="330" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="60" y1="330" x2="440" y2="330" stroke="#a8702d" stroke-width="1.5"/>
+<text x="30" y="180" font-family="Georgia" font-size="11" fill="#8a6d3b" transform="rotate(-90 30 180)">Supportive (high→low)</text>
+<text x="250" y="358" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">Directive (high ← → low)</text>
+<rect x="250" y="30" width="190" height="145" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<rect x="60" y="30" width="190" height="145" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="250" y="185" width="190" height="145" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="60" y="185" width="190" height="145" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<text x="345" y="58" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">S3 Supporting</text>
+<text x="345" y="80" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#2a3a18">able, shaky confidence</text>
+<text x="345" y="100" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#2a3a18">"You decide, I back you"</text>
+<text x="155" y="58" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#6b4a1f">S2 Coaching</text>
+<text x="155" y="80" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">eager, low skill</text>
+<text x="155" y="100" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">"I teach, but hear you"</text>
+<text x="345" y="213" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#6b4a1f">S4 Delegating</text>
+<text x="345" y="235" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">able, self-driven</text>
+<text x="345" y="255" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">"It's yours, hands off"</text>
+<text x="155" y="213" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">S1 Directing</text>
+<text x="155" y="235" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#5a3818">brand new, can't yet</text>
+<text x="155" y="255" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#5a3818">"Here are the steps"</text>
+<text x="250" y="385" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#8a6d3b">Same person, new unfamiliar task → reassess the gear</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: A senior backend engineer on your team (S4) is assigned a totally unfamiliar frontend rewrite (where she's really S1–S2 on this task).</div>
+<div class="dialog bad">
+<div class="speaker">✗ Setting the gear by the person's overall level</div>
+<p>"She's senior, just delegate." — You gave S4 freedom, but she stumbled in unfamiliar territory for two weeks, afraid to ask for help (afraid of looking unworthy of "senior"). <strong>Mismatch: you delegated by title, but on this task she needed an S2 coach.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Setting the gear by maturity "on this task"</div>
+<p>"On backend you're fully S4, I stay out of it. But frontend is new terrain for you, so let's run S2 at first: for the first two weeks I'll go over it with you every couple of days — not to check on you, but to help you dodge the pits I've fallen into. Once you're steady, we switch right back to delegating."</p>
+<p><strong>Key:</strong> say explicitly "this is temporary, by task not by person" to protect her dignity — downshifting a gear is not a demotion.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Before Setting the Gear, Ask Yourself</div>
+<ul class="checklist">
+<li>Am I setting the gear by "this person's overall level" or "this task's specific maturity"? (The former almost always mismatches.)</li>
+<li>On this task, does the person lack skill (give guidance) or lack confidence (give support)? The remedies differ.</li>
+<li>Have I confused "downshifting a gear" with "demoting," making them feel diminished?</li>
+<li>For S4 (delegating) people, am I still doing unnecessary check-ins, manufacturing micromanagement?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Micromanaging a senior S4.</strong> The most hurtful — what they read is "you don't trust me," not "you care."</li>
+<li><strong>Hands-off delegating to an S1 beginner.</strong> "I trust you to figure it out" sounds empowering but is really dodging the duty to guide.</li>
+<li><strong>Mistaking "lacks confidence" for "lacks skill."</strong> Flooding a capable-but-nervous person with guidance only deflates them more. They need S3 support.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Ken Blanchard & Paul Hersey,《Situational Leadership II / SLII》</strong> — the classic framework matching style S1–S4 to a person's "development level D1–D4." Pairs with this series' Day 13 "Delegation & Letting Go."</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Dosage of Vulnerability: Vulnerable Is Not Oversharing
+<span class="en">The Dosage of Vulnerability</span></h2>
+<span class="tag">Vulnerability</span><span class="tag">Trust</span><span class="tag">Boundaries</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Showing vulnerability builds trust — but <strong>vulnerability is "disclosure with boundaries," not "emotional dumping."</strong> At the right dose it's courage; at overdose it turns the team into your emotional trash can.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Vulnerability is not oversharing, it's sharing with people who have earned the right to hear our stories... Vulnerability minus boundaries is not vulnerability."</span>
+<span class="source">— Brené Brown,《Daring Greatly》/《Dare to Lead》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: How to Say "I Don't Know"</div>
+<div class="scene">
+<div class="setup">Context: In an architecture review, a senior engineer asks a deep question you can't answer. The whole team is watching you.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both extremes are wrong</div>
+<p><strong>Extreme A (bluffing):</strong> mumble out something that sounds like an answer — the senior people hear it on the spot, and trust starts leaking.<br><strong>Extreme B (over-vulnerable):</strong> "Honestly I've been under so much stress lately, not sleeping, I really can't crack this, I even doubt whether I deserve to lead this team…" — vulnerability has become a plea for comfort, and now the team has to take care of you.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Dosed vulnerability</div>
+<p>"I can't answer that right now — and I don't want to make something up. Give me until tomorrow; I'll check the real cost of that RPC layer and give you an accurate answer. <strong>If anyone already knows, say it now — I'll learn.</strong>"</p>
+<p><strong>The dosage formula:</strong> admit not knowing (builds trust) + give a next step (stays reliable) + invite others (removes self-centering). Three things in one line, under 20 seconds.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Dosage Self-Check Before Being Vulnerable</div>
+<ul class="checklist">
+<li><strong>Purpose test:</strong> Am I saying this vulnerable thing for the team (build trust / model learning), or for myself (seek comfort / offload pressure)? For the latter, find a mentor or friend, not the team.</li>
+<li><strong>Audience test:</strong> Have the people in this room earned the right to hear this disclosure? Or am I oversharing to people I just met?</li>
+<li><strong>Landing test:</strong> Is there a "next step" after my vulnerability? Pure dumping with no action = dumping.</li>
+<li><strong>Frequency test:</strong> Am I occasionally vulnerable (powerful), or venting every week (team is fatigued)?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "vulnerable" as "weak," so never showing it.</strong> Lencioni says the root of team trust is exactly "vulnerability-based trust" — the leader admits mistakes first, then others dare to.</li>
+<li><strong>Using the same dose upward and downward.</strong> Modest vulnerability with your team builds trust; pouring out your troubles to a boss still evaluating you may read as "can't handle it."</li>
+<li><strong>Backpedaling right after.</strong> "I was wrong… though honestly it's not entirely my fault" — once the hedge appears, the vulnerability is wasted.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Vulnerability is asymmetric for women: the same "I'm not sure" is read as "candid, secure" from a male leader and "see, lacks confidence" from a woman — another face of the likability/competence tradeoff. The fix isn't to stop being vulnerable, but to <strong>pair vulnerability with competence</strong>: "I need to double-check the details (vulnerable) — but I'm confident in the conclusion; last quarter's data points the same way (competence)." Be vulnerable first, then anchor; the dose is unchanged, but you've calibrated how it's received.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Brené Brown,《Dare to Lead》</strong> — "vulnerability is not weakness, it's our most accurate measure of courage," and the relationship between vulnerability and boundaries.<br><strong>Patrick Lencioni,《The Five Dysfunctions of a Team》</strong> — "vulnerability-based trust" is the first cornerstone of a healthy team.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>The Authenticity Paradox: Don't Use "That's Not Me" as an Excuse Not to Grow
+<span class="en">The Authenticity Paradox</span></h2>
+<span class="tag">Authenticity</span><span class="tag">Growth</span><span class="tag">Ibarra</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">"Be yourself" is good advice and a dangerous trap. When a new behavior makes you uncomfortable, <strong>"that's not me" is often not loyalty to self but a respectable excuse for refusing to grow</strong>. The authentic self isn't a fixed statue — it's a draft you can experiment with and expand.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Because going against our natural inclinations can make us feel like impostors, we tend to latch on to authenticity as an excuse for sticking with what's comfortable."</span>
+<span class="source">— Herminia Ibarra,《The Authenticity Paradox》HBR, 2015</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: You're an introverted tech lead, newly promoted to manager. The most visible figure in the company is that charismatic VP who's effortless on stage. You're advised to "speak up more at all-hands, network more." Your first reaction: "That's not my style."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Using "authenticity" to seal off growth</div>
+<p>"I'm a technical person, my work speaks for me; all that networking and stage performance isn't me." — Sounds principled, but three years later you find: influence all went to the people who can express themselves, and no one knows your good work. You stayed loyal to an <strong>outdated version of yourself</strong>.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Ibarra's "playful experimentation" + Susan Cain's introvert version</div>
+<p>Not imitating that VP's extroverted style (that would be the truly fake thing), but <strong>finding the introvert's own version</strong>: swap "improvising at the all-hands" for "writing a crisp technical memo circulated company-wide"; swap "cocktail-party networking" for "one deep 1:1 coffee a week" — still speaking up and building relationships, just through your medium and at your pace.</p>
+<p><strong>The mindset:</strong> "I'll try this new behavior on for a while; the discomfort is normal and doesn't mean it's inauthentic."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Tell "Truly Not Me" From "Just Not Used to It Yet"</div>
+<ul class="checklist">
+<li>When I say "that's not my style," is it because it <strong>violates my values</strong>, or just because it <strong>makes me uncomfortable</strong>? Guard the former, try the latter.</li>
+<li>Does the new behavior I resist have a version that "achieves the same purpose through my strength"? (An introvert's way of speaking up ≠ an extrovert's.)</li>
+<li>Am I staying loyal to "the me of now," or to "the me I thought I was five years ago"?</li>
+<li>Is this stretch moving me toward the leader I want to be, or just pleasing others' expectations? (The latter isn't worth doing.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>"Authenticity" = staying in the comfort zone.</strong> Explaining every discomfort as "inauthentic," so you never grow a new capability.</li>
+<li><strong>The other extreme: fully playacting someone else.</strong> An introvert forcing a charismatic-VP act reads as plastic to the team — worse than not speaking up. The boundary of authenticity: you can borrow a move, you can't swap your personality.</li>
+<li><strong>Waiting until you "feel ready / confident" to act.</strong> Ibarra says it's backwards: act first, then grow new self-knowledge from acting (act like a leader, then think like one), not the reverse.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+The authenticity paradox has a special twist for women: Tomas Chamorro-Premuzic notes that organizations often mistake "displayed confidence" for "competence," and that display is more culturally encouraged in men. Women are asked to "be their authentic selves," yet penalized for displaying a forceful style (double bind). The pragmatic fix isn't either/or — it's to <strong>tie the new behavior you're trying on to a purpose you genuinely believe in</strong>: "I practice speaking at all-hands not to perform confidence, but because my team's work deserves to be seen." Authentic purpose makes the action un-fake, and more resistant to "she's changed" gossip.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Herminia Ibarra,《The Authenticity Paradox》</strong> (HBR, 2015) /《Act Like a Leader, Think Like a Leader》— "act first, learn after" and "playful experimentation with the self."<br><strong>Susan Cain,《Quiet》</strong> — introverted leadership, no need to playact extroversion.<br><strong>Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</strong> — confidence ≠ competence, and its gender asymmetry.</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Go Deeper · Push to the Edge</h3>
+<details>
+<summary>1. Where's the line between "switching style by situation" and being a two-faced "tell-them-what-they-want-to-hear" operator?</summary>
+<div>The difference is <strong>intent and consistency</strong>. Situational switching changes the means while values stay fixed: command in a crisis, coach in calm times, but what you consider "right" is constant, and the team can predict your line. Two-faced means values shift with the audience — no stable core behind it. Test: if your different styles were seen by the same person at once (boss and report in the same meeting), would you be embarrassed? Switching, no; two-faced, yes. What's consistent is "who you are"; what varies is only "which club you use right now."</div>
+</details>
+<details>
+<summary>2. Are the "default staple" styles the same in East Asian and Western organizations?</summary>
+<div>Not entirely. Goleman's data comes mainly from Western organizations; democratic/coaching styles may not transplant well into high-context, strongly hierarchical East Asian organizations — reports may not dare to tell the truth when you "democratically seek input," and may read it as "the boss has no view." This doesn't negate the framework, only changes the dose: in hierarchical cultures, authoritative + affiliative may be the steadier staples, and democratic needs psychological safety (see Day 21) laid first to work. Don't copy the style ratios of American management books — tune to your organization's real power distance.</div>
+</details>
+<details>
+<summary>3. Does pursuing "all six styles" actually cost you a distinct identity?</summary>
+<div>There's tension. Expanding bandwidth has a marginal cost, and a leader who's "a bit of everything" may leave the team unable to remember what you stand for. The pragmatic balance: <strong>keep one clear primary style as your identity (your signature club), then deliberately fill in 2–3 key backup styles to cover your blind spots</strong> — they need not be equal. Jobs had an extremely strong identity (authoritative + pacesetting), at the cost of near-zero affiliative and democratic — a high-risk, high-reward bet most people shouldn't imitate.</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 37 Action</h3>
+<p>This week you do one concrete thing — not reflect, not read:</p>
+<div class="action">
+<strong>Step 1 (diagnose):</strong> Against Card 1's six styles, review your key interactions of the past two weeks and <strong>tally which you used and how many times</strong>. You'll likely find 1–2 "default styles" dominate, and 2 you almost never use.<br><br>
+<strong>Step 2 (stretch):</strong> This week pick one <strong>low-risk</strong> occasion and deliberately use one of your "blind-spot styles." If you're always commanding/pacesetting, take a non-urgent matter and use <strong>coaching</strong> once (only ask, don't answer); if you're always affiliative/democratic, take something you're confident about and use <strong>authoritative</strong> once (give clear direction, no more soliciting input).<br><br>
+Afterward, jot two lines: <strong>(1) how awkward it felt (1–10); (2) how far the team's reaction was from what you expected.</strong> Awkward = normal; that's bandwidth growing.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 37 · 2026.06.27</footer>
+</div>
+</body>
+</html>

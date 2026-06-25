@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 37：领导个人风格</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #a8702d}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{margin-bottom:12px;border-bottom:1px dashed #e6d9bf;padding-bottom:12px}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem;padding:6px 0}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details>div{margin-top:10px;font-size:0.93rem;color:#4a3a20;padding:8px 14px;background:#f8f0dd;border-radius:4px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 37 · 2026.06.27</div>
+<h1>领导个人风格：风格是工具集，不是性格</h1>
+<div class="meta"><span>主题：Leadership Style</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Leadership style is not a function of personality but a strategic choice." — Daniel Goleman</div>
+</header>
+
+<div class="intro">
+<strong>本期的命题：</strong>很多人把"领导风格"当成性格——"我就是个直接的人"。这是最大的误解：<strong>风格是可切换的工具集，不是出厂焊死的性格。</strong>Goleman 用 3871 名高管的数据证明，只会一种风格的 leader 业绩最差，能在四种以上之间流畅切换的最好。本期四件事：六种风格的情境切换、对不同成熟度的人调档、示弱的剂量、避开"真实性悖论"。核心不是"做你自己"，是<strong>扩大"你自己"的带宽</strong>。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>六种风格的情境切换：别一把锤子敲所有钉子
+<span class="en">Six Styles, Switched by Situation</span></h2>
+<span class="tag">风格库</span><span class="tag">情境</span><span class="tag">Goleman</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">最差的 leader 一辈子只用一种风格，还美其名曰"真实"。最好的 leader 像高尔夫球手——<strong>根据这一杆的情境，从球包里抽出对的那根杆</strong>。六种风格各有适用与代价。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Leaders who have mastered four or more—especially the authoritative, democratic, affiliative, and coaching styles—have the very best climate and business performance."</span>
+<span class="zh">"掌握四种以上风格——尤其是愿景型、民主型、亲和型与教练型——的领导者，拥有最好的团队氛围和业绩。"</span>
+<span class="source">— Daniel Goleman,《Leadership That Gets Results》HBR, 2000</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">六种风格 · 何时用 · 代价</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="660" height="130" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="20" y="166" width="660" height="130" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="350" y="44" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">✓ 多用 · 提升氛围（默认风格）</text>
+<text x="35" y="72" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">愿景型 Authoritative</tspan> —「跟我来，去那座山」。方向不明、需要点燃时。</text>
+<text x="35" y="96" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">教练型 Coaching</tspan> —「我们一起把你练出来」。下属愿意成长时。</text>
+<text x="35" y="120" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">亲和型 Affiliative</tspan> —「人先于事」。团队受创、需要修复关系时。</text>
+<text x="35" y="142" font-family="Georgia" font-size="12" fill="#2a3a18"><tspan font-weight="700">民主型 Democratic</tspan> —「你们怎么看？」。需要买入、信息分散时。</text>
+<text x="350" y="190" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">⚠ 少用 · 用错会毒化氛围（救急工具）</text>
+<text x="35" y="220" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">领跑型 Pacesetting</tspan> —「看我的，跟上」。精英小团队冲刺时；滥用会累垮人。</text>
+<text x="35" y="248" font-family="Georgia" font-size="12" fill="#5a3818"><tspan font-weight="700">命令型 Commanding</tspan> —「照我说的做」。真危机 / 应对害群之马；平时用=恐惧文化。</text>
+<text x="35" y="278" font-family="Georgia" font-size="12" fill="#5a3818">规则：前四种是<tspan font-weight="700">主食</tspan>，后两种是<tspan font-weight="700">急救药</tspan>——剂量大、疗程短。</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你是 tech lead manager。周一线上事故，周三一位资深工程师对架构方向迷茫。同一周，两件事。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 一种风格走天下</div>
+<p>你是个亲和型的人，事故当下还在问"大家还好吗，别有压力"——火还烧着，团队需要的是有人拍板。三天后对迷茫的工程师你却切换成命令型"就按方案 A 做"——他要的是被一起想清楚，不是被指挥。<strong>两次都用错了杆。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 按情境切换</div>
+<p><strong>事故当下（命令型，限时）：</strong>"现在我来拍板。回滚到上一版本，张三盯监控，李四发客户公告，15 分钟后同步。复盘留到明天。"——危机里民主是奢侈，先止血。</p>
+<p><strong>三天后对资深工程师（教练型）：</strong>"方案 A 和 B 你更担心哪个的长期成本？如果三年后回头看，你希望我们今天做了什么决定？"——给思考空间，不给答案。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：扩大你的风格带宽</div>
+<ul class="checklist">
+<li>我的"默认风格"是哪种？过去一个月我有 80% 的时间都在用它吗？</li>
+<li>六种风格里，我几乎从不用的是哪两种？那正是我的盲区。</li>
+<li>本周我用命令型/领跑型了吗？是真危机，还是我只是没耐心？</li>
+<li>切换风格时我有没有给团队信号？（"这件事我先拍板"vs"我想听大家的"）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把默认风格当人格图腾。</strong>"我就是个直来直去的人"——这不是真实，是懒得长出第二种风格。</li>
+<li><strong>领跑型当主食。</strong>高 performer 升上来最容易犯：自己冲在前面，团队累垮还觉得"我以身作则"。</li>
+<li><strong>危机里还在搞民主。</strong>火烧眉毛问"大家怎么看"，是把决策责任甩给团队，不是赋能。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+风格切换对女性有额外的税：研究（Heilman"角色一致性"实验）显示，女性用<strong>命令型/领跑型</strong>时被贴"aggressive"标签的概率显著高于男性，用亲和型又易被低估为"nice 但不够 leader"。对策不是只用安全风格，而是切到强硬风格时多一句话<strong>把归因落在情境而非性情</strong>："时间窗口很窄，所以我现在直接拍板。"——削弱标签的附着力。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Daniel Goleman,《Primal Leadership》</strong>— 六种风格与情绪智力的系统展开，《Leadership That Gets Results》(HBR, 2000) 的扩写。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>因人调档：对不平等的人平等对待，才是最大的不平等
+<span class="en">Situational Leadership — Match the Person</span></h2>
+<span class="tag">情境领导</span><span class="tag">Blanchard</span><span class="tag">放权档位</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">同一件事，对新手要指挥（高指导），对老手要放权（低指导）。<strong>用同一种方式对待能力悬殊的人，是最隐蔽的不公平。</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"There's nothing so unequal as the equal treatment of unequals."</span>
+<span class="zh">"没有什么比平等地对待不平等的人更不平等。"</span>
+<span class="source">— Ken Blanchard,《Leadership and the One Minute Manager》（情境领导 SLII）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">SLII 四档：按对方"在这件事上"的成熟度调</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="20" x2="60" y2="330" stroke="#a8702d" stroke-width="1.5"/>
+<line x1="60" y1="330" x2="440" y2="330" stroke="#a8702d" stroke-width="1.5"/>
+<text x="30" y="180" font-family="Georgia" font-size="11" fill="#8a6d3b" transform="rotate(-90 30 180)">支持行为（高→低）</text>
+<text x="250" y="358" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">指导行为（高 ← → 低）</text>
+<rect x="250" y="30" width="190" height="145" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
+<rect x="60" y="30" width="190" height="145" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="250" y="185" width="190" height="145" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="1.5"/>
+<rect x="60" y="185" width="190" height="145" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
+<text x="345" y="58" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">S3 支持型</text>
+<text x="345" y="80" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#2a3a18">能力够、信心晃</text>
+<text x="345" y="100" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#2a3a18">「你来定，我支持」</text>
+<text x="155" y="58" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#6b4a1f">S2 教练型</text>
+<text x="155" y="80" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">有热情、缺能力</text>
+<text x="155" y="100" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">「我教，但听你想法」</text>
+<text x="345" y="213" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#6b4a1f">S4 授权型</text>
+<text x="345" y="235" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">能力强、自驱</text>
+<text x="345" y="255" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#3a2f1c">「交给你，我不插手」</text>
+<text x="155" y="213" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">S1 指挥型</text>
+<text x="155" y="235" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#5a3818">全新、不会</text>
+<text x="155" y="255" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#5a3818">「具体步骤我给你」</text>
+<text x="250" y="385" text-anchor="middle" font-family="Georgia" font-size="10.5" fill="#8a6d3b">同一个人，换一件不熟的事，档位要重新评估</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你团队里一位资深后端（S4）被派去做完全陌生的前端重构（在这件事上其实是 S1-S2）。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 按"人"的总体级别定档</div>
+<p>"他是 senior，放权就行。"——你给了 S4 自由度，他却在陌生领域踩坑两周不敢求助（怕显得不配 senior）。<strong>错配：你按头衔放权，这件事上他要的是 S2 教练。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 按"这件事"的成熟度定档</div>
+<p>"在后端你完全 S4，我不插手。但前端对你是新地形，咱们先按 S2 来：头两周我每两天和你过一次，不是检查你，是帮你绕开我踩过的坑。等你站稳了，我们立刻切回放权。"</p>
+<p><strong>关键：</strong>明确说"这是临时的、按事不按人"，保住他的自尊——降档不是降级。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：定档前问自己</div>
+<ul class="checklist">
+<li>我是按"这个人的总体级别"还是"这件事的具体成熟度"定档的？（前者几乎总会错配）</li>
+<li>这个人在这件事上，是缺能力（给指导）还是缺信心（给支持）？两者的解药不同。</li>
+<li>我有没有把"降档"和"降级"混淆，让对方感到被贬低？</li>
+<li>放权档（S4）的人，我是不是还在不必要地 check-in，制造微管理？</li>
+<li>新人（S1）我是不是给了过度自由，美其名曰"信任"，实则放养？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>对资深 S4 微管理。</strong>最伤人——他读到的是"你不信任我"，而非"你关心我"。</li>
+<li><strong>对 S1 新人甩手放权。</strong>"我相信你能搞定"听着赋能，实则是逃避指导的责任。</li>
+<li><strong>错把"缺信心"当"缺能力"。</strong>对能力够但发怵的人猛灌指导，只会更挫伤他。他要的是 S3 支持。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Ken Blanchard & Paul Hersey,《情境领导 II / SLII》</strong>— 按下属"发展层级 D1–D4"匹配风格 S1–S4 的经典框架。可与本系列 Day 13《授权与放手》互参。</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>示弱的剂量：脆弱不是过度分享
+<span class="en">The Dosage of Vulnerability</span></h2>
+<span class="tag">脆弱</span><span class="tag">信任</span><span class="tag">边界</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">示弱建立信任——但<strong>脆弱是"有边界地袒露"，不是"情绪倾倒"</strong>。剂量对了是勇气，过量是把团队变成你的情绪垃圾桶。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Vulnerability is not oversharing, it's sharing with people who have earned the right to hear our stories... Vulnerability minus boundaries is not vulnerability."</span>
+<span class="zh">"脆弱不是过度分享，而是分享给那些赢得了倾听资格的人……脆弱减去边界，就不再是脆弱。"</span>
+<span class="source">— Brené Brown,《Daring Greatly》/《Dare to Lead》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：「我不知道」怎么说</div>
+<div class="scene">
+<div class="setup">情境：架构评审会上，一个资深工程师问了你答不上来的深问题。全组在看你。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两个极端都错</div>
+<p><strong>极端 A（硬撑）：</strong>含糊编一个像答案的答案——资深的人当场听出来，信任开始漏。<br><strong>极端 B（过度示弱）：</strong>"老实说我最近压力特别大、睡不好，这块真搞不定，我都怀疑自己配不配带团队……"——脆弱变成求安慰，团队反过来得照顾你。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 有剂量的示弱</div>
+<p>"这个我现在答不上来——而且我不想编一个。给我到明天，我查清楚 RPC 那层的真实开销再给你准确答案。<strong>谁如果已经了解，现在就说，我学。</strong>"</p>
+<p><strong>剂量公式：</strong>承认不知（建立信任）+ 给出下一步（保住可靠）+ 邀请他人（去掉自己中心）。三件事一句话，不超 20 秒。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：示弱前的剂量自检</div>
+<ul class="checklist">
+<li><strong>目的测试：</strong>我说这句脆弱，是为了团队（建立信任/示范学习），还是为了我自己（求安慰/卸压力）？后者请找 mentor 或朋友，不是团队。</li>
+<li><strong>对象测试：</strong>这个房间里的人，赢得了听这段袒露的资格吗？还是我在对刚认识的人 overshare？</li>
+<li><strong>落地测试：</strong>我的脆弱后面有没有跟一个"下一步"？纯倾倒没有行动 = 倾倒。</li>
+<li><strong>频率测试：</strong>我是偶尔示弱（有力量），还是每周都在 vent（团队已疲劳）？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"脆弱"当"软弱"，于是从不示弱。</strong>Lencioni 说团队信任的根基正是"基于脆弱的信任"——领导者先承认错误，别人才敢。</li>
+<li><strong>向上和向下用同一剂量。</strong>对团队适度示弱建立信任；对还在评估你的老板大倒苦水，可能被读成"扛不住"。</li>
+<li><strong>示弱后立刻找补。</strong>"我错了……不过其实也不全怪我"——找补一出，前面的脆弱全废。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+脆弱对女性是不对称的：同样一句"我不确定"，男性 leader 常被读成"坦诚有安全感"，女性更易被读成"果然信心不足"——这是 likability/competence 权衡的又一面。对策不是不示弱，而是<strong>把脆弱和能力配对出现</strong>："细节我得再核实（脆弱）——但结论我有把握，上季度数据指向同一方向（能力）。"先示弱后落锚，剂量不变，接收端的解读被你校准了。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Brené Brown,《Dare to Lead》</strong>— "脆弱不是软弱，是勇气最精确的度量"，以及脆弱与边界的关系。<br><strong>Patrick Lencioni,《The Five Dysfunctions of a Team》</strong>— "基于脆弱的信任"（vulnerability-based trust）是健康团队的第一块基石。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>真实性悖论：别把"这不是我"当成不成长的借口
+<span class="en">The Authenticity Paradox</span></h2>
+<span class="tag">真实性</span><span class="tag">成长</span><span class="tag">Ibarra</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">"做你自己"是好建议，也是危险陷阱。当一个新行为让你不舒服时，<strong>"这不是我"常常不是忠于自我，而是拒绝成长的体面说辞</strong>。真实的自我不是固定的雕像，是可以试验、扩展的草稿。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Because going against our natural inclinations can make us feel like impostors, we tend to latch on to authenticity as an excuse for sticking with what's comfortable."</span>
+<span class="zh">"因为违背天性会让我们觉得自己像个冒牌货，我们往往抓住'真实性'当借口，赖在舒适区里不动。"</span>
+<span class="source">— Herminia Ibarra,《The Authenticity Paradox》HBR, 2015</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你是内向的 tech lead，刚升 manager。公司里最受关注的是那位 charismatic、台上挥洒自如的 VP。你被建议"多在大会上发声、多 networking"，你的第一反应是"这不是我的风格"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 用"真实"封死成长</div>
+<p>"我是技术派，我用作品说话，那些 networking 和台上表演不是我。"——听起来有骨气，但三年后你发现：影响力全给了会表达的人，你的好工作没人知道。你忠于了一个<strong>过时版本的自己</strong>。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Ibarra 的"游戏式试验"+ Susan Cain 的内向版本</div>
+<p>不是模仿那位 VP 的外向风格（那才真是假的），而是<strong>找内向者自己的版本</strong>：把"大会即兴演讲"换成"写一篇结构清晰的技术 memo 全公司传阅"；把"酒会 networking"换成"每周一次深度 1:1 咖啡"——同样是发声和建关系，只用你擅长的介质和节奏。</p>
+<p><strong>心法：</strong>"我先借这个新行为试穿一阵，不舒服正常，不等于不真实。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：区分"真不是我"与"只是还不习惯"</div>
+<ul class="checklist">
+<li>我说"这不是我的风格"时，是因为它<strong>违背我的价值观</strong>，还是只是<strong>让我不舒服</strong>？前者该守，后者该试。</li>
+<li>这个我抗拒的新行为，有没有一个"用我擅长的介质实现同样目的"的版本？（内向者的发声≠外向者的发声）</li>
+<li>我是在忠于"现在的我"，还是忠于"五年前那个我以为的我"？</li>
+<li>这次拉伸，是朝我想成为的 leader 靠近，还是只是迎合别人的期待？（后者不值得做）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>"真实"=固守舒适区。</strong>把每一次不适都解释成"不真实"，于是永远不长新能力。</li>
+<li><strong>另一极端：全盘扮演别人。</strong>内向者硬演 charismatic VP，团队感到的是塑料，比不发声更糟。真实性的边界在于——动作可以借，人格不能换。</li>
+<li><strong>等"准备好了/自信了"再做。</strong>Ibarra 说反了：是先做、再从做中长出新的自我认知（act like a leader, then think like one），不是反过来。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+真实性悖论对女性有特殊扭曲：Tomas Chamorro-Premuzic 指出，组织常把"自信的外显"误当成"能力"，而这种外显在文化上更鼓励男性。女性既被要求"做真实的自己"，又因展现强势风格而被罚（double bind）。务实解法不是二选一，而是<strong>把要试穿的新行为绑在你真心认同的目的上</strong>——"我练习在大会发言，不是表演自信，是因为团队的工作值得被看见。"目的真实，动作就不假，也更扛得住"她变了"的闲话。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Herminia Ibarra,《The Authenticity Paradox》</strong>（HBR, 2015）/《Act Like a Leader, Think Like a Leader》— "先行动、后认知"与"游戏式试验自我"。<br><strong>Susan Cain,《Quiet》</strong>— 内向者领导力，无需扮外向。<br><strong>Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</strong>— 自信≠能力，及其性别不对称。</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · 推到边界</h3>
+<details>
+<summary>1. "情境切换风格"和"见人说人话"的两面派，边界在哪？</summary>
+<div>区别在<strong>意图与一致性</strong>。情境切换是手段变、价值观不变：危机里命令、平时教练，但你对"什么是对的"始终如一，团队能预测你的底线。两面派是价值观随对象变，背后没有稳定内核。检验法——你的不同风格若被同一个人同时看到（老板和下属在同一个会），你会尴尬吗？切换不会，两面派会。一致的是"你是谁"，变的只是"此刻用哪根杆"。</div>
+</details>
+<details>
+<summary>2. 六种风格的"默认主食"在东亚和欧美组织一样吗？</summary>
+<div>不完全。Goleman 的数据主要来自西方组织，民主型/教练型在高语境、强层级的东亚组织可能水土不服——下属未必敢在"民主征求意见"时讲真话，反把它读成"领导没主见"。这不否定框架，只改剂量：层级文化里愿景型+亲和型可能是更稳的主食，民主型要先用心理安全感（见 Day 21）铺垫才生效。别照搬美式书的风格配比，按你组织真实的权力距离调。</div>
+</details>
+<details>
+<summary>3. 追求"六种全会"会不会反而失去辨识度？</summary>
+<div>有张力。带宽扩展有边际成本，"什么都会一点"的 leader 可能让团队记不住你代表什么。务实平衡：<strong>留一个清晰主风格当辨识度（你的招牌杆），再补足 2-3 种关键备用风格覆盖盲区</strong>，不必六种均等。Jobs 辨识度极强（愿景+领跑），代价是亲和与民主近乎为零——高风险高回报的押注，多数人不该模仿。</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本期习作 · Your Day 37 Action</h3>
+<p>本期你要做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>第一步（诊断）：</strong>对照 Card 1 的六种风格，回看过去两周的关键互动，<strong>统计各用了哪种、各几次</strong>。多半会发现 1-2 种"默认风格"占了大头，有 2 种几乎没用过。<br><br>
+<strong>第二步（拉伸）：</strong>本周挑一个<strong>低风险</strong>场合，刻意用一次你的"盲区风格"。总是命令/领跑的，找件不紧急的事用一次<strong>教练型</strong>（只问不答）；总是亲和/民主的，找件有把握的事用一次<strong>愿景型</strong>（明确给方向，不再征求意见）。<br><br>
+事后记两行：<strong>(1) 用起来多别扭（1-10）；(2) 团队反应和你的预期差多少。</strong>别扭=正常，那正是带宽在长。
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 37 · 2026.06.27</footer>
+</div>
+</body>
+</html>
