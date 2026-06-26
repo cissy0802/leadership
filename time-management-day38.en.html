@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 38: Time Management for Leaders</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #a8702d}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{margin-bottom:12px;border-bottom:1px dashed #e6d9bf;padding-bottom:12px}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem;padding:6px 0}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details>div{margin-top:10px;font-size:0.93rem;color:#4a3a20;padding:8px 14px;background:#f8f0dd;border-radius:4px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 38 · 2026.06.28</div>
+<h1>Time Management for Leaders: Your Calendar Is Politics, Not a To-Do List</h1>
+<div class="meta"><span>Topic: Time Management for Leaders</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"The key is not to prioritize what's on your schedule, but to schedule your priorities." — Stephen Covey</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Going from engineer to tech lead manager, the painful part isn't more work — it's that <strong>the physical structure of your time gets rewritten</strong>. The unbroken blocks of deep time you once had get shattered into fragments. Most people treat this as "too much to do" and respond by cramming harder and leaving later. Wrong. For a leader, time management isn't an efficiency trick — it's a <strong>public declaration of power and priority</strong>: what your calendar looks like tells the team what matters. Four moves this week: separate the two time regimes (maker vs manager), turn your calendar into a fortification, learn the actual scripts for saying no, and protect deep-work blocks. One sentence at the core — <strong>if you don't design your time, someone else designs it for you.</strong>
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Maker's Schedule vs Manager's Schedule: You Run Two Clocks
+<span class="en">Maker's Schedule vs Manager's Schedule</span></h2>
+<span class="tag">Time Regimes</span><span class="tag">Deep Block</span><span class="tag">Paul Graham</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Managers slice time by the hour; makers need half-day blocks. As a TLM you <strong>live on both clocks at once</strong> — the answer isn't to work harder, it's to physically separate these two kinds of time on your calendar, so meetings don't blow your blocks into rubble too small to do anything hard in.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"When you're operating on the maker's schedule, meetings are a disaster. A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in."</span>
+<span class="source">— Paul Graham, "Maker's Schedule, Manager's Schedule" (2009)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Two Schedules Compared</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="210" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="210" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="46" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">⚠ Fragmented (kills depth)</text>
+<rect x="40" y="60" width="280" height="22" rx="3" fill="#d98a60"/><text x="50" y="76" font-family="Georgia" font-size="11" fill="#fff">9:00 Meeting</text>
+<rect x="40" y="88" width="280" height="20" rx="3" fill="#f0d0bc"/><text x="50" y="103" font-family="Georgia" font-size="11" fill="#7a4020">9:30 Gap (unfillable)</text>
+<rect x="40" y="114" width="280" height="22" rx="3" fill="#d98a60"/><text x="50" y="130" font-family="Georgia" font-size="11" fill="#fff">10:30 1:1</text>
+<rect x="40" y="142" width="280" height="20" rx="3" fill="#f0d0bc"/><text x="50" y="157" font-family="Georgia" font-size="11" fill="#7a4020">11:00 Gap (unfillable)</text>
+<rect x="40" y="168" width="280" height="22" rx="3" fill="#d98a60"/><text x="50" y="184" font-family="Georgia" font-size="11" fill="#fff">14:00 Review</text>
+<rect x="40" y="196" width="280" height="20" rx="3" fill="#f0d0bc"/><text x="50" y="211" font-family="Georgia" font-size="11" fill="#7a4020">15:00 Gap (unfillable)</text>
+<text x="520" y="46" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">✓ Zoned (protects depth)</text>
+<rect x="380" y="60" width="280" height="76" rx="3" fill="#8aac68"/><text x="390" y="95" font-family="Georgia" font-size="12" fill="#fff" font-weight="700">9:00–12:00 Maker block</text><text x="390" y="115" font-family="Georgia" font-size="11" fill="#fff">design / writing / deep review</text>
+<rect x="380" y="144" width="280" height="22" rx="3" fill="#c0a878"/><text x="390" y="160" font-family="Georgia" font-size="11" fill="#3a2a10">13:00 Lunch / buffer</text>
+<rect x="380" y="172" width="280" height="44" rx="3" fill="#b89858"/><text x="390" y="190" font-family="Georgia" font-size="12" fill="#fff" font-weight="700">14:00–17:00 Manager gear</text><text x="390" y="208" font-family="Georgia" font-size="11" fill="#fff">meetings / 1:1s / coordination here</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: You're BigCat, leading an 8-person distributed-systems team. A critical architecture RFC is due this week, but six meetings are scattered across your calendar with one-hour gaps between each.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common move</div>
+<p>You try to "use the fragments" — open the RFC doc in the one-hour gaps. But just as you get into flow, the next meeting's reminder pings. End of day: the RFC has only an intro, yet you've been in meetings all day — drained, nothing to show. <strong>Fragments can't hold cognitively demanding work.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better move (actively re-arrange)</div>
+<p>Monday, spend 10 minutes <strong>pushing every meeting to the afternoon</strong>, and message colleagues: "I've moved our syncs to after 2pm — I need an unbroken morning to ship the RFC, especially this week." Lock 9am–12pm as a "maker block," batch meetings in the afternoon. By week's end the RFC is done in two full mornings.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Audit Your Weekly Clock</div>
+<ul class="checklist">
+<li>How many ≥2-hour blocks with zero meeting interruptions do I have this week? Fewer than 3 is danger territory.</li>
+<li>Are my meetings <strong>scattered across the day</strong> or <strong>clustered</strong>? Scattered = every gap wasted.</li>
+<li>What kind of work have I crammed into fragments? (Writing designs, deep reviews don't belong there.)</li>
+<li>Have I <strong>explicitly</strong> told the team "mornings are my maker time"? Implicit isn't enough — say it.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Thinking "not enough time" when it's "wrong-shaped time."</strong> The same 8 hours, broken into eight 1-hour bits ≪ two 4-hour blocks in output.</li>
+<li><strong>Leaving blocks "open in case."</strong> Un-blocked time will be filled by meetings — a blank slot is an invitation.</li>
+<li><strong>Surrendering maker time entirely upon becoming a manager.</strong> A TLM still ships technical work; give up all deep time and you lose technical judgment.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Paul Graham, "Maker's Schedule, Manager's Schedule"</strong> (2009 essay) — the original framing of the two time regimes in conflict.<br><strong>Andy Grove, <em>High Output Management</em></strong> (Ch. 3) — time is the manager's only non-renewable resource; batch like tasks for leverage.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Your Calendar Is a Fortification, Not a Log
+<span class="en">Your Calendar Is a Defense, Not a Log</span></h2>
+<span class="tag">Calendar Defense</span><span class="tag">Priority</span><span class="tag">Pay Yourself First</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">A calendar's job isn't to "record meetings others booked" — it's to <strong>claim your priorities in advance</strong>. Blank slots are open invitations: claim them first, or others claim them for you. Like "pay yourself first" in budgeting, block deep work and recovery in first; open up only what's left.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"The key is not to prioritize what's on your schedule, but to schedule your priorities."</span>
+<span class="source">— Stephen Covey, <em>The 7 Habits of Highly Effective People</em> (Habit 3)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: BigCat's morning is blank. A PM sees it and books a "quick alignment" at 10am Tuesday. Then a second and third meeting fill in — and the unbroken block just evaporated.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Calendar as passive log</div>
+<p>The calendar only answers "what meetings do I have today?" Blank = "book me freely." When you finally want deep work, there's nowhere to stand, so you stay late to catch up. You never declared anything, so others defined your priorities for you.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Calendar as defensive tool</div>
+<p><strong>1. Pre-claim:</strong> Each Sunday night, block next week's "Focus Blocks" in advance (title them clearly: "Deep Work · Do Not Book"); treat them as inviolable as meetings.<br><strong>2. Set office hours:</strong> Collapse "reach me anytime" into a fixed 30-minute open window daily; tell the team "non-urgent stuff, bring it to office hours."<br><strong>3. Batch 1:1s:</strong> Cluster all 1:1s into Wednesday/Thursday afternoons instead of scattering them across five days.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Arm Your Calendar</div>
+<ul class="checklist">
+<li>Are next week's Focus Blocks already blocked in — before others fill them?</li>
+<li>Has my "open to interruption" time been collapsed into fixed office hours?</li>
+<li>Are like meetings (1:1s, status syncs) batched into the same slot, same day?</li>
+<li>Have I left 5–10 minutes of buffer between meetings? Back-to-back = late to every one, no time to digest.</li>
+<li>Have I left at least one "nothing scheduled" slot each day for the unexpected? (A full calendar avalanches on a single delay.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating Focus Blocks as the sacrificial item.</strong> Yield them whenever someone asks, and within weeks they exist in name only. Guard them like external meetings.</li>
+<li><strong>Booking the calendar to 100%.</strong> No buffer means any overrun or surprise triggers a chain collapse. A healthy calendar has 20% white space.</li>
+<li><strong>Defaulting every meeting to 60 minutes.</strong> Much gets done in 25. Change the default duration and reclaim hours each week.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Stephen Covey, <em>The 7 Habits</em></strong> (Habit 3 "Put First Things First") — the important/urgent quadrants; schedule Quadrant II (important, not urgent).<br><strong>Cal Newport, <em>Deep Work</em></strong> — time-block planning: pre-assign a task to every hour of the day.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Art of Saying No: Every Yes Is a No to Something Else
+<span class="en">The Art of Saying No</span></h2>
+<span class="tag">Saying No</span><span class="tag">Transparent Trade-offs</span><span class="tag">Essentialism</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">Your time is fixed, so every yes is quietly a no to something else. People who can't say no <strong>aren't more diligent — they've handed the trade-off decision to everyone who walks up to them</strong>. Focus isn't doing more; it's the courage to give up many good things.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas."</span>
+<span class="source">— Steve Jobs (Apple WWDC, 1997)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Three Scripts Better Than a Flat No</div>
+<div class="scene">
+<div class="setup">Setup: Your boss drops an urgent cross-team investigation on BigCat, but your week is already full with a critical RFC and two interviews.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two bad reactions</div>
+<p><strong>Mindless yes:</strong> "Sure, no problem!" — then sacrifice sleep and RFC quality, satisfying no one.<br><strong>Hard no:</strong> "I'm too busy, can't do it." — reads as uncommitted, and gives the boss zero basis to decide.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Script 1: Hand the trade-off back to the asker</div>
+<p>"I can take the investigation. But my week is full with the RFC and interviews, so to fit it in, <strong>the RFC slips to next week</strong>. Which would you rather I sacrifice?" — Not a refusal; you make them own the prioritization.</p>
+<div class="dialog good" style="margin-top:8px">
+<div class="speaker">✓ Script 2: Yes-and-price-tag</div>
+<p>"Doable, give me until Friday. If you need it faster, I'll need to hand the interviews to Lee." — Yes, with the cost made transparent.</p>
+</div>
+<div class="dialog good" style="margin-top:8px">
+<div class="speaker">✓ Script 3: Not now + an alternative</div>
+<p>"I can't carve out an unbroken block for solid research this week. Either you get the deep version next Monday, or I give you a rough 30-minute read now to tide you over?" — Offer a path, not a wall.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Before You Say No</div>
+<ul class="checklist">
+<li>If I say yes to this, <strong>what already-committed thing am I saying no to</strong>? Have I done that math?</li>
+<li>Am I refusing the "task," or offering "trade-off + alternative"? The latter is almost always better.</li>
+<li>Does the other party have the info they need to decide? ("I'm busy" isn't info; "pick A or B" is.)</li>
+<li>Is this yet another piece of "office housework" (meeting notes, ordering food, organizing offsites)? That should rotate, not always land on me.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating no as "hurting feelings."</strong> An opaque yes hurts more — agreeing and then delivering poorly costs more trust than a clean trade-off.</li>
+<li><strong>Over-explaining and apologizing in a long string.</strong> The longer, the guiltier it reads. One trade-off + one alternative is enough.</li>
+<li><strong>Saying no to outsiders but always yes to the boss.</strong> Failing to manage expectations upward means you and your team are what eventually blows up.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research (Babcock et al., <em>The No Club</em>) shows women are assigned "non-promotable tasks" (office housework) at significantly higher rates, and are more readily labeled "uncooperative / not nice" when they decline — another likability-vs-competence asymmetry. The practical move isn't "learn to say no coldly," it's to <strong>institutionalize and de-personalize the refusal</strong>: "Let's rotate this record-keeping across the team — it's X's turn this time." Deflect with a rule rather than personal preference: you keep your time and avoid the likability landmine.</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Greg McKeown, <em>Essentialism</em></strong> — "If it isn't a clear yes, then it's a clear no"; the discipline of either/or trade-offs.<br><strong>Babcock, Peyser, Vesterlund &amp; Weingart, <em>The No Club</em></strong> (2022) — the gendered distribution of non-promotable work and strategies for declining.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Deep-Work Blocks: Attention Is the Truly Scarce Asset
+<span class="en">Protecting Deep Work Blocks</span></h2>
+<span class="tag">Deep Work</span><span class="tag">Attention Residue</span><span class="tag">Cal Newport</span>
+</div>
+
+<div class="section">
+<div class="section-label">Principle in One Line</div>
+<div class="principle">What's truly scarce isn't time — it's <strong>uninterrupted attention</strong>. Every task switch leaves "attention residue" that discounts the next thing. Deep work won't happen on its own — it must be deliberately designed, protected by ritual, and treated as something where "always online" is a default you actively switch off.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Own Words</div>
+<div class="quote">
+<span class="en">"Deep work is the ability to focus without distraction on a cognitively demanding task. It's a skill that allows you to quickly master complicated information and produce better results in less time."</span>
+<span class="source">— Cal Newport, <em>Deep Work</em> (2016)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Setup: BigCat wants to design a distributed rate-limiter during the morning Focus Block, but Slack red-dots keep coming and the phone buzzes on the desk.</div>
+<div class="dialog bad">
+<div class="speaker">✗ "Pretending to do deep work"</div>
+<p>The doc is open, but every few minutes you glance at Slack, drop an emoji, check the phone. Two hours pass and the design is still a draft. You thought you worked — really you kept restarting inside "attention residue," spending minutes each time re-finding context.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Protect depth with ritual</div>
+<p><strong>Enter:</strong> Set Slack to "Focus, do not disturb · back in 2h," phone in a drawer, only the tabs the design needs.<br><strong>During:</strong> Give the block a concrete output — "produce the core algorithm of rate-limiter v1," not a vague "think about it."<br><strong>Exit (Newport's shutdown ritual):</strong> At the end, write down "where to resume next," then go batch-process the Slack backlog. <strong>Batch</strong> comms checks instead of trickling them all day.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Protect One Deep Block</div>
+<ul class="checklist">
+<li>Before starting, did I give the block <strong>one concrete output</strong> (not "research," but "draft X")?</li>
+<li>Are comms notifications <strong>off</strong>? (Not muted with the red dot still there — actually not looking.)</li>
+<li>Is the phone <strong>out of sight</strong>? (On the desk it drains attention even unwatched.)</li>
+<li>Have I batched "check Slack/email" into a few fixed times rather than constant refreshing?</li>
+<li>At the end, did I do a shutdown — note the stopping point, give the brain a clear "done for today" signal?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking "busy" for "productive."</strong> The fullness of replying and meeting all day is fake; what actually moves things is a few deep blocks. Newport calls the former "busyness as a proxy for productivity."</li>
+<li><strong>Underestimating switching cost.</strong> "I'll just reply to one Slack" — and then you need ten-plus minutes to sink back in. Attention residue is an invisible tax.</li>
+<li><strong>Feeling, as a manager, that you don't deserve deep work.</strong> "My job is to respond anytime" — wrong. The one who most needs protected strategic-thinking time is the leader. A perpetual firefighter has no time to think about direction.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Cal Newport, <em>Deep Work</em></strong> (2016) — the definition of deep work, time-blocking, and the shutdown ritual.<br><strong>Sophie Leroy, "Why Is It So Hard to Do My Work?"</strong> (2009) — the original research on "attention residue."<br><strong>Oliver Burkeman, <em>Four Thousand Weeks</em></strong> — accept that "never finishing" is the norm; focus on the few that truly matter.</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Going Deeper · Push to the Edges</h3>
+<details>
+<summary>1. Will "protecting deep blocks" make the team feel you're unavailable, not committed?</summary>
+<div>There's a real tension. A leader's availability is itself valuable — the team needs to reach you when stuck. The fix isn't abandoning deep blocks, it's <strong>making unavailability predictable</strong>: tell the team "mornings I focus; afternoons reach me anytime; for true emergencies (incident-level), interrupt me whenever." The key to availability is "reachable when urgent," not "instant reply always." Keep the emergency channel open, collapse routine interruptions into fixed windows, and the team trusts your rhythm more, not less.</div>
+</details>
+<details>
+<summary>2. The higher the level, should you abandon maker time and fully embrace the manager schedule?</summary>
+<div>It's staged. Going from IC to first-line manager, maker time should indeed be ceded — otherwise you're competing with reports for work and bottlenecking the team. But at levels requiring strategy, the content of "deep blocks" shifts — no longer writing code, but writing strategy memos, making architecture calls, designing the org. These are equally cognitively demanding "making" that needs unbroken time. So it's not "abandon deep blocks," it's that <strong>their output has been upgraded</strong>. An exec who only ever reacts in manager fragments and never enters deep thought is doing senior firefighting, not leading.</div>
+</details>
+<details>
+<summary>3. Does this calendar defense work in steep-hierarchy, always-on East Asian org cultures?</summary>
+<div>Adjust the dose. Where power distance is large and "boss calls, you respond" is default, hard-blocking your calendar can read as "putting on airs / not cooperative." The pragmatic move is to <strong>align up first, set rules down</strong>: reach agreement with your boss that "I produce X in the morning, so I cluster syncs in the afternoon" (frame it as for the output, not for leisure), then make your rhythm public to the team. Where the culture doesn't support "personal refusal," packaging the boundary as "a work arrangement for delivery quality" lands better than invoking "I need focus time."</div>
+</details>
+<details>
+<summary>4. Doesn't "handing the trade-off back to the asker" look like dodging, not owning?</summary>
+<div>Depends on whether you hand back a "problem" or "decision options." Dodging is tossing the problem back as-is ("I can't do it, you figure it out"); owning is returning with a clear trade-off and recommendation ("A and B, only one is possible; I recommend keeping A because it affects the release; you call it"). The latter showcases judgment — you grasp the whole picture, can prioritize, and respect their decision rights. What's truly unaccountable is a silent yes followed by a delivery collapse.</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 38 Action</h3>
+<p>One concrete thing this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Step 1 (Defend):</strong> Open next week's calendar right now and block <strong>two ≥2-hour Focus Blocks</strong> at your highest-energy times, titled clearly "Deep Work · Do Not Book." Give each a concrete output (not "think about it," but "draft X").<br><br>
+<strong>Step 2 (Refuse):</strong> The first request that tries to crowd out these two blocks this week — <strong>don't mindlessly yes; use Script 1 from Card 3</strong> — hand the trade-off back: "I can take it, but X has to yield. Which would you rather I sacrifice?"<br><br>
+Then jot two lines: <strong>(1) Did the Focus Block actually hold, and what broke it? (2) How did the person react when you handed the trade-off back?</strong> Don't beat yourself up if it didn't hold — first see clearly what's stealing your time.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 38 · 2026.06.28</footer>
+</div>
+</body>
+</html>

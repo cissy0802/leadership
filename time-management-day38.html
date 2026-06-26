@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 38：领导者时间管理</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #a8702d}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{margin-bottom:12px;border-bottom:1px dashed #e6d9bf;padding-bottom:12px}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem;padding:6px 0}
+.deepthink summary:hover{color:#a8702d}
+.deepthink details>div{margin-top:10px;font-size:0.93rem;color:#4a3a20;padding:8px 14px;background:#f8f0dd;border-radius:4px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 38 · 2026.06.28</div>
+<h1>领导者时间管理：日程是政治，不是待办</h1>
+<div class="meta"><span>主题：Time Management for Leaders</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"The key is not to prioritize what's on your schedule, but to schedule your priorities." — Stephen Covey</div>
+</header>
+
+<div class="intro">
+<strong>本期的命题：</strong>从工程师变成 tech lead manager，最痛的不是工作变多，是<strong>时间的物理结构被改写</strong>了——你曾经拥有的整块深度时间，被切成了一地碎片。多数人把这当成"事情太多"，于是更努力地塞、更晚地下班。错了。时间管理对 leader 不是效率技巧，是<strong>权力与优先级的公开声明</strong>：你的日历长什么样，团队就知道什么重要。本期四件事：分清制造者与管理者两种时间制度、把日历当防御工事、拒绝的具体话术、以及保护深度工作块。核心一句话——<strong>不主动设计时间，时间就被别人设计。</strong>
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>制造者日程 vs 管理者日程：你身上有两套时钟
+<span class="en">Maker's Schedule vs Manager's Schedule</span></h2>
+<span class="tag">时间制度</span><span class="tag">深度块</span><span class="tag">Paul Graham</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">管理者按小时切片，制造者要半天整块。作为 TLM，你<strong>同时活在两套时钟里</strong>——关键不是更努力，而是把这两种时间在日历上物理隔离，别让会议把整块时间炸成无法做硬事的碎渣。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"When you're operating on the maker's schedule, meetings are a disaster. A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in."</span>
+<span class="zh">"当你处在制造者日程里，会议是一场灾难。一个会就能毁掉整个下午——它把下午劈成两半，每半都小到做不了任何硬事。"</span>
+<span class="source">— Paul Graham,《Maker's Schedule, Manager's Schedule》(2009)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">两种日程的对比</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="210" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="210" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="46" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">⚠ 碎片化日程（毁掉深度）</text>
+<rect x="40" y="60" width="280" height="22" rx="3" fill="#d98a60"/><text x="50" y="76" font-family="Georgia" font-size="11" fill="#fff">9:00 会议</text>
+<rect x="40" y="88" width="280" height="20" rx="3" fill="#f0d0bc"/><text x="50" y="103" font-family="Georgia" font-size="11" fill="#7a4020">9:30 空隙(填不满)</text>
+<rect x="40" y="114" width="280" height="22" rx="3" fill="#d98a60"/><text x="50" y="130" font-family="Georgia" font-size="11" fill="#fff">10:30 1:1</text>
+<rect x="40" y="142" width="280" height="20" rx="3" fill="#f0d0bc"/><text x="50" y="157" font-family="Georgia" font-size="11" fill="#7a4020">11:00 空隙(填不满)</text>
+<rect x="40" y="168" width="280" height="22" rx="3" fill="#d98a60"/><text x="50" y="184" font-family="Georgia" font-size="11" fill="#fff">14:00 评审</text>
+<rect x="40" y="196" width="280" height="20" rx="3" fill="#f0d0bc"/><text x="50" y="211" font-family="Georgia" font-size="11" fill="#7a4020">15:00 空隙(填不满)</text>
+<text x="520" y="46" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">✓ 分区日程（保护深度）</text>
+<rect x="380" y="60" width="280" height="76" rx="3" fill="#8aac68"/><text x="390" y="95" font-family="Georgia" font-size="12" fill="#fff" font-weight="700">9:00–12:00 制造者整块</text><text x="390" y="115" font-family="Georgia" font-size="11" fill="#fff">设计 / 写作 / 深度评审</text>
+<rect x="380" y="144" width="280" height="22" rx="3" fill="#c0a878"/><text x="390" y="160" font-family="Georgia" font-size="11" fill="#3a2a10">13:00 午休/缓冲</text>
+<rect x="380" y="172" width="280" height="44" rx="3" fill="#b89858"/><text x="390" y="190" font-family="Georgia" font-size="12" fill="#fff" font-weight="700">14:00–17:00 管理者档</text><text x="390" y="208" font-family="Georgia" font-size="11" fill="#fff">会议 / 1:1 / 协调全压这里</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你是 BigCat，带 8 人的分布式系统组。本周要交一份关键的架构 RFC，但日历上散落着 6 个会，每两个会之间隔 1 小时。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>你想"利用碎片"——会间的 1 小时打开 RFC 文档。但刚进入状态，下个会的提醒响了。一天结束，RFC 只写了开头，你却开了一整天会，疲惫且毫无成就感。<strong>碎片时间做不了认知密集的硬事。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（主动重排）</div>
+<p>周一花 10 分钟把本周所有会议<strong>往下午挤</strong>，给同事发一句："我把我们的同步挪到了下午 2 点后——上午我需要整块时间出 RFC，这周尤其。" 上午 9–12 锁成"制造者块"，下午集中开会。一周下来，RFC 在两个完整上午里就出来了。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：审视你的一周时钟</div>
+<ul class="checklist">
+<li>我这周有几个 ≥2 小时、零会议打断的整块？少于 3 个就危险了。</li>
+<li>我的会议是<strong>散落全天</strong>，还是<strong>集中成簇</strong>？散落 = 每个空隙都被浪费。</li>
+<li>我把哪类工作硬塞进了碎片时间？（写设计、深度 review 不该在碎片里做）</li>
+<li>我有没有跟团队<strong>明确</strong>过"上午是我的 maker 时段"？默契不够，要明说。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>以为"时间不够"，其实是"时间形状不对"。</strong>同样 8 小时，碎成 8 个 1 小时 ≪ 2 个 4 小时块的产出。</li>
+<li><strong>把整块时间留给"有空再说"。</strong>不预先 block，它一定被会填满——空白即邀请。</li>
+<li><strong>升了 manager 就彻底放弃 maker 时间。</strong>TLM 仍需技术产出，全盘交出深度时间，你会失去技术判断力。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Paul Graham,《Maker's Schedule, Manager's Schedule》</strong>(2009 essay)— 两种时间制度冲突的原始论述。<br><strong>Andy Grove,《High Output Management》</strong>（Ch. 3）— 时间是经理唯一不可再生的资源，批处理同类任务以提升杠杆。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>日历是防御工事，不是记录本
+<span class="en">Your Calendar Is a Defense, Not a Log</span></h2>
+<span class="tag">日历防御</span><span class="tag">优先级</span><span class="tag">先付自己</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">日历的功能不是"记下别人约的会"，而是<strong>提前占住你的优先级</strong>。空白格子是公开的邀请函——你不先占，别人就替你占。像理财"先付自己"一样，先把深度工作和恢复时间 block 进去，剩下的才开放。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The key is not to prioritize what's on your schedule, but to schedule your priorities."</span>
+<span class="zh">"关键不是给日程上已有的事排优先级，而是把你的优先级排进日程。"</span>
+<span class="source">— Stephen Covey,《The 7 Habits of Highly Effective People》(Habit 3)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 的日历上午一片空白。一个 PM 看到了，直接约了周二上午 10 点一个"快速对齐"。接着第二个、第三个会也填了进来——你的整块时间就这样蒸发了。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 把日历当被动记录</div>
+<p>日历只用来"看今天有什么会"。空白 = "随便约"。等你想做深度工作时，发现已经无处下脚，只能晚上加班补。你从不主动声明，于是别人替你定义了你的优先级。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 把日历当防御工具</div>
+<p><strong>1. 预占：</strong>每周日晚把下周的"Focus Block"提前 block（标题写清"深度工作 · 勿约"），它和会议一样不可侵犯。<br><strong>2. 设 office hours：</strong>把"随时找我"收敛成每天固定 30 分钟开放时段，告诉团队"非紧急的找我，放到 office hours"。<br><strong>3. 批处理 1:1：</strong>所有 1:1 排在周三、周四下午连成一片，而不是散落五天。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：把日历武装起来</div>
+<ul class="checklist">
+<li>我下周的 Focus Block 已经 block 进去了吗？（在别人填满之前）</li>
+<li>我的"开放被打断"时段有没有收敛成固定 office hours？</li>
+<li>同类的会（1:1、状态同步）有没有批处理到同一时段、同一天？</li>
+<li>我有没有给会议之间留 5–10 分钟缓冲？背靠背开会 = 每个会都迟到、没有消化。</li>
+<li>每天有没有至少留一格"什么都不排"应对意外？（满日历 = 一个延误就雪崩）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 Focus Block 当"可牺牲项"。</strong>一有人约就让位——几周后它名存实亡。要像对待外部会议一样守它。</li>
+<li><strong>日历排到 100% 满。</strong>没有缓冲，任何一个会超时或突发事件，整天连环崩。健康的日历有 20% 留白。</li>
+<li><strong>所有会议默认 60 分钟。</strong>很多事 25 分钟够了。改默认时长，每周省出几小时。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Stephen Covey,《The 7 Habits》</strong>（Habit 3 "Put First Things First"）— 重要 vs 紧急四象限，把第二象限（重要不紧急）排进日程。<br><strong>Cal Newport,《Deep Work》</strong>— "时间块计划法"(time-block planning)：给一天的每个小时预先指派任务。</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>拒绝的艺术：每个 yes 都是对别的事说 no
+<span class="en">The Art of Saying No</span></h2>
+<span class="tag">拒绝</span><span class="tag">取舍透明</span><span class="tag">Essentialism</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">你的时间是固定的，所以每个 yes 都在悄悄地对其他事说 no。不会拒绝的人，<strong>不是更勤奋，是把取舍权交给了所有来找他的人</strong>。专注的本质不是做更多，是有勇气放弃很多好东西。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas."</span>
+<span class="zh">"人们以为专注是对你要做的那件事说 yes。完全不是。专注是对另外一百个好主意说 no。"</span>
+<span class="source">— Steve Jobs (Apple WWDC, 1997)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：三种比"直接拒绝"更高级的话术</div>
+<div class="scene">
+<div class="setup">情境：老板临时塞给 BigCat 一个跨组的紧急调研，但你这周已排满了关键的 RFC 和两个面试。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种坏反应</div>
+<p><strong>无脑 yes：</strong>"好的没问题！"——然后牺牲睡眠和 RFC 质量，谁都没满意。<br><strong>硬 no：</strong>"我太忙了，做不了。"——显得不担当，且没给老板任何决策依据。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 话术一：把取舍丢回给提出者</div>
+<p>"我可以接这个调研。但这周 RFC 和面试已经排满，要插进来，<strong>RFC 就得推到下周</strong>。你希望我牺牲哪个？" —— 不是拒绝，是让对方为优先级做决策。</p>
+<div class="dialog good" style="margin-top:8px">
+<div class="speaker">✓ 话术二：Yes-and-标价</div>
+<p>"可以，给我到周五。如果要更快，我需要把面试转给 Lee 帮忙。" —— 答应，但把成本透明化。</p>
+</div>
+<div class="dialog good" style="margin-top:8px">
+<div class="speaker">✓ 话术三：不是现在 + 替代方案</div>
+<p>"这周我抽不出整块时间做扎实的调研。要么下周一给你深度版，要么我现在给你一个 30 分钟的粗略判断先顶着？" —— 给路径，不给硬墙。</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：拒绝前的自检</div>
+<ul class="checklist">
+<li>这个请求如果说 yes，我在<strong>对哪件已答应的事说了 no</strong>？这笔账我算清了吗？</li>
+<li>我是在拒绝"任务"，还是给出"取舍 + 替代方案"？后者几乎总是更好。</li>
+<li>对方有没有得到做决策所需的信息？（"我忙"不是信息，"A 和 B 二选一"才是）</li>
+<li>这是不是又一件"office housework"（会议纪要、订餐、组织团建）？这类事该轮流，不该总落在我头上。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把拒绝当成"伤感情"。</strong>不透明的 yes 才伤感情——你答应了却交付不好，比清晰的取舍更损信任。</li>
+<li><strong>拒绝时过度解释、道歉一长串。</strong>越长越像心虚。一句取舍 + 一个替代，足够。</li>
+<li><strong>只对外人拒绝，对老板永远 yes。</strong>向上不会管理预期，最终爆掉的是你和你的团队。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究（Babcock 等《The No Club》）显示，女性被分派"非晋升性杂活"(non-promotable tasks，即 office housework)的概率显著更高，且拒绝时更容易被贴"不合作 / 不够 nice"的标签——这是 likability 与 competence 的又一处不对称。务实对策不是"学会冷酷地说不"，而是<strong>把拒绝制度化、去个人化</strong>："这类记录工作我们组轮流来吧，这次该 X 了"——用规则而非个人意愿挡回去，既保住时间，也不踩 likability 的雷。</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Greg McKeown,《Essentialism》</strong>— "如果不是个明确的 yes，那就是个明确的 no"；以及"非此即彼"的取舍纪律。<br><strong>Babcock, Peyser, Vesterlund &amp; Weingart,《The No Club》</strong>(2022)— non-promotable work 的性别分布与拒绝策略。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>深度工作块：注意力是真正稀缺的资产
+<span class="en">Protecting Deep Work Blocks</span></h2>
+<span class="tag">深度工作</span><span class="tag">注意力残留</span><span class="tag">Cal Newport</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">真正稀缺的不是时间，是<strong>不被打断的注意力</strong>。每次切换任务都留下"注意力残留"，让下一件事打折。深度工作不会自然发生——它必须被刻意设计、用仪式保护，并把"随时在线"当成需要主动关闭的默认状态。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Deep work is the ability to focus without distraction on a cognitively demanding task. It's a skill that allows you to quickly master complicated information and produce better results in less time."</span>
+<span class="zh">"深度工作是在无干扰下专注于认知密集型任务的能力。它是一项技能，让你迅速掌握复杂信息，并用更少时间产出更好结果。"</span>
+<span class="source">— Cal Newport,《Deep Work》(2016)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 想在上午的 Focus Block 里设计一个分布式限流方案，但 Slack 红点不断、手机在桌上震。</div>
+<div class="dialog bad">
+<div class="speaker">✗ "假装在深度工作"</div>
+<p>文档开着，但每隔几分钟瞄一眼 Slack、回个表情、看一眼手机。两小时过去，方案还停在草稿。你以为自己工作了，其实是在"注意力残留"里反复重启——每次切回来都要花几分钟找回上下文。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 用仪式保护深度</div>
+<p><strong>进入：</strong>Slack 设"专注勿扰 · 2h 后回"，手机放抽屉，只开方案需要的标签页。<br><strong>过程：</strong>给这块定一个明确产出——"产出限流方案 v1 的核心算法"，不是模糊的"想一想"。<br><strong>退出（Newport 的 shutdown ritual）：</strong>到点写下"下一步从哪继续"，再去集中处理积压的 Slack。把检查通讯<strong>批量化</strong>，而不是涓涓不断。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：保护一个深度块</div>
+<ul class="checklist">
+<li>开始前，我有没有给这块定<strong>一个具体产出</strong>（不是"研究一下"，而是"写出 X 的初稿"）？</li>
+<li>通讯工具的通知<strong>关了</strong>吗？（不是静音红点还在，是真的不看）</li>
+<li>手机是不是在<strong>视线之外</strong>？（在桌上即使不看也持续耗注意力）</li>
+<li>我有没有把"查 Slack/邮件"batch 成固定几次，而不是随时刷？</li>
+<li>结束时有没有做 shutdown——记下断点，给大脑一个"今天到此"的明确信号？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"忙碌"当"高产"。</strong>整天回消息、开会的充实感是假的；真正推动事情的是少数几个深度块。Newport 称前者为"忙碌的表演"(busyness as proxy for productivity)。</li>
+<li><strong>低估切换成本。</strong>"就回一条 Slack"——回完你需要十几分钟才能重新沉进去。注意力残留是隐形税。</li>
+<li><strong>身为 manager 觉得自己不配深度工作。</strong>"我的工作就是随时响应"——错。最该被保护战略思考时间的，恰恰是 leader。永远救火的 leader 没有时间想方向。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Cal Newport,《Deep Work》</strong>(2016)— 深度工作的定义、时间块法与 shutdown ritual。<br><strong>Sophie Leroy,《Why Is It So Hard to Do My Work?》</strong>(2009)— "注意力残留"(attention residue) 的原始研究。<br><strong>Oliver Burkeman,《Four Thousand Weeks》</strong>— 接受"做不完"是常态，专注真正重要的少数。</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · 推到边界</h3>
+<details>
+<summary>1. "保护深度块"会不会让团队觉得你不可及、不够投入？</summary>
+<div>有真实张力。Leader 的可及性本身就是一种价值——团队需要在卡住时能找到你。解法不是放弃深度块，是<strong>让不可及变得可预测</strong>：明确告诉团队"上午我专注，下午随时找我；真紧急（线上事故级）任何时候打断我"。可及性的关键是"紧急时能找到"，不是"任何时候都秒回"。把紧急通道开着，把日常打断收敛到固定窗口，团队反而更信任你的节奏。</div>
+</details>
+<details>
+<summary>2. 层级越高，是不是越该放弃 maker 时间、全面拥抱 manager 日程？</summary>
+<div>分阶段。从 IC 到一线 manager，maker 时间确实该主动让渡，否则你在和下属抢活、堵塞团队。但到了需要做战略的层级，"深度块"的内容会变——不再是写代码，而是写战略 memo、做架构判断、想组织设计。这些同样是认知密集、需要整块时间的"制造"。所以不是"放弃深度块"，是<strong>深度块的产出物升级了</strong>。永远只在 manager 碎片里反应、从不进入深度思考的高管，做的是高级救火，不是领导。</div>
+</details>
+<details>
+<summary>3. 这套日历防御在强层级、随叫随到的东亚组织文化里行得通吗？</summary>
+<div>要调剂量。在权力距离大、"老板召唤即响应"为默认的环境里，硬性 block 日历可能被读成"摆架子 / 不配合"。务实做法是<strong>向上先对齐、向下立规则</strong>：先和老板达成"上午我产出 X，所以同步排下午"的共识（把它框成为了产出，不是为了清闲），再向团队公开你的节奏。文化不支持"个人拒绝"时，把边界包装成"为了交付质量的工作安排"，比诉诸"我需要专注时间"更容易被接受。</div>
+</details>
+<details>
+<summary>4. "把取舍丢回给提出者"会不会显得推诿、不担当？</summary>
+<div>取决于你给的是"问题"还是"决策选项"。推诿是把问题原样扔回去（"我做不了你看着办"）；担当是带着清晰的取舍和建议回去（"A 和 B 只能选一个，我建议保 A，因为它影响发布；你拍板"）。后者展示的恰恰是判断力——你掌握全局、能排优先级、且尊重对方的决策权。真正不担当的，是默默 yes 然后交付崩盘。</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本期习作 · Your Day 38 Action</h3>
+<p>本期你要做一件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>第一步（防御）：</strong>现在就打开下周日历，在最有精力的时段 block <strong>两个 ≥2 小时的 Focus Block</strong>，标题写清"深度工作 · 勿约"。给它们一个明确产出（不是"想一想"，而是"写出 X 初稿"）。<br><br>
+<strong>第二步（拒绝）：</strong>本周遇到第一个会挤占这两块的请求时，<strong>不要无脑 yes，用 Card 3 话术一</strong>——把取舍丢回去："我可以接，但 X 就得让位，你希望我牺牲哪个？"<br><br>
+事后记两行：<strong>(1) Focus Block 真的守住了吗，被什么破坏了；(2) 那次"丢回取舍"对方怎么反应。</strong>守不住别自责——先看清是什么在偷你的时间。
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 38 · 2026.06.28</footer>
+</div>
+</body>
+</html>
