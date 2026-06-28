@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 40: Building Company Culture</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 40 · 2026.06.28</div>
+<h1>Building Company Culture: How the Team Decides When You're Not There</h1>
+<div class="meta"><span>Topic: Building Company Culture</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Culture is how a company makes decisions when you're not there." — Ben Horowitz</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> Most "culture building" is self-deception—you print the values on mugs and lobby posters, then keep rewarding the behavior that violates them. <strong>Culture is not what you proclaim; it's what you reward, what you tolerate, who you promote, and what you cut first under pressure.</strong> As a tech lead manager in a big company, you can't control company-level culture—but you can fully decide the culture of your own small team, and it's often different from what the company claims. Four steps: see culture's real layers, write it as an executable contract, preserve the founder's mentality as scale dilutes it, and make culture outlive your departure.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Culture Is the Behavior You Reward and Tolerate, Not the Values on the Wall
+<span class="en">Culture Is What You Reward and Tolerate</span></h2>
+<span class="tag">Essence</span><span class="tag">Schein's 3 levels</span><span class="tag">Say-do gap</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">The values poster is culture's outermost—and least trustworthy—layer. Real culture lives in the <strong>underlying assumptions</strong>: the team's default sense that "here, X is safe and Y gets punished." To change culture, change what you reward and tolerate, not the poster.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Your culture is how your company makes decisions when you're not there. It's the set of assumptions your employees use to resolve the problems they face every day."</span>
+<span class="source">— Ben Horowitz, <em>What You Do Is Who You Are</em> (Introduction)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Framework: Schein's Three Levels of Culture</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="20" width="600" height="58" rx="5" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="40" y="92" width="600" height="58" rx="5" fill="#f3e9d2" stroke="#a8702d" stroke-width="2"/>
+<rect x="40" y="164" width="600" height="62" rx="5" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="58" y="44" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">Artifacts (Visible)</text>
+<text x="58" y="66" font-family="Georgia" font-size="12" fill="#3a2f1c">Office, slogans, process, who speaks in meetings — easy to see, easy to fake</text>
+<text x="58" y="116" font-family="Georgia" font-size="14" font-weight="700" fill="#8a5a1f">Espoused Values</text>
+<text x="58" y="138" font-family="Georgia" font-size="12" fill="#3a2f1c">"Customer first," "embrace change" on the website — may be mere aspiration</text>
+<text x="58" y="188" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">Underlying Assumptions (Invisible · the real culture)</text>
+<text x="58" y="210" font-family="Georgia" font-size="12" fill="#5a3818">"Bearers of bad news get cut," "overtime proves loyalty" — unspoken, universally obeyed</text>
+<text x="340" y="244" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">Changing culture = changing the bottom layer; touching only the top = repainting posters</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scenario</div>
+<div class="scene">
+<div class="setup">Situation: Your team's wall says "Quality First," but last quarter's promotion went to the engineer who pulled an all-nighter to suppress a production incident—while the person who quietly eliminated that whole class of incident, so the system never broke again, went unmentioned.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Self-deceiving culture work</div>
+<p>You give the "we value quality, we value the long term" speech again at the all-hands and make a fresh values slide. What the team actually learns: <strong>firefighting makes headlines; fire prevention is invisible.</strong> Next quarter, no one wants the silent preventive work.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Change the reward signal</div>
+<p>At the promotion review you say explicitly: "The person I want to recognize is the one who <strong>made the incident never happen</strong>—their work had no demo, none of firefighting's drama, but it's the culture we actually want." Then write it into the promotion rationale doc, publicly visible.<br><strong>Culture is calibrated by one real reward decision, not one speech.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: To Know Your Team's Real Culture, Skip the Poster—Read These 5 Signals</div>
+<ul class="checklist">
+<li>What behavior did the last public recognition / promotion reward? That's the strongest culture broadcast.</li>
+<li>What behavior gets tolerated with no one addressing it? (Tolerated = tacitly endorsed = the de facto standard.)</li>
+<li>When pressure hits and something must be cut, what goes first? (Exposes the real priority.)</li>
+<li>In month three, what unwritten "here's how it actually works" rules do newcomers hear from veterans?</li>
+<li>What "legends" do people retell privately—about whom, about what? (Stories are values.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking proclamation for building.</strong> Revising the values slide a hundred times matters less than one promotion decision.</li>
+<li><strong>Rewarding against your values, unaware.</strong> You preach collaboration but pay bonuses only to individual heroes—the team believes the bonus.</li>
+<li><strong>Touching only the surface.</strong> New logo, new slogan, more offsites—underlying assumptions untouched.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Write Culture as an Executable Contract, Not Platitudes Anyone Would Sign
+<span class="en">Write Culture as a Testable Contract</span></h2>
+<span class="tag">Culture Deck</span><span class="tag">Falsifiable</span><span class="tag">Trade-offs</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Unwritten culture can't be inherited, hired for, or calibrated. But write it as behavior that <strong>distinguishes people, has a counter-example, and requires a trade-off</strong>—"we value integrity" is something anyone signs, which means it says nothing. A good culture line should make some people uncomfortable.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"We're a team, not a family. ... Adequate performance gets a generous severance package."</span>
+<span class="source">— Patty McCord & Reed Hastings, Netflix Culture Deck / <em>Powerful</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scenario: Writing the Team's Operating Principles</div>
+<div class="scene">
+<div class="setup">Situation: You want to set a few culture principles for the team, to put in the onboarding doc and hiring bar.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Platitudes anyone would sign</div>
+<p>"We pursue excellence. We embrace change. We respect each other. We are customer-centric."<br>—Not one of these helps you choose between two candidates, and not one makes anyone uncomfortable. It's not culture; it's decoration.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Falsifiable, trade-off-bearing lines</div>
+<p>· "<strong>Async by default; meetings are the last resort.</strong> If it can be a doc, don't meet; a meeting needs an agenda, and one without an agenda can be declined."<br>· "<strong>Bad news flows upstream, the faster the better.</strong> Whoever reports a problem is protected; hiding it, once found, is the offense."<br>· "<strong>We're accountable for output, not hours.</strong> No one tracks when you shipped; delivery quality is the only yardstick."<br>Each implies a trade-off, a counter-example, and a kind of person it would screen out.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Is a Culture Principle Sound? (5 Questions)</div>
+<ul class="checklist">
+<li><strong>Does it distinguish people?</strong> Can it help you decide between two candidates? If not, it's too vague.</li>
+<li><strong>Does it have a counter-example?</strong> Is there a reasonable opposite choice? ("Async-first" vs "sync-first"—both are valid stances.)</li>
+<li><strong>Is it observable?</strong> Can you point to concrete behavior and say "this fits / this violates"?</li>
+<li><strong>Does it involve a trade-off?</strong> What does it give up? A principle that sacrifices nothing is a slogan.</li>
+<li><strong>Can you hire for it?</strong> Can you design an interview question to test fit?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Copying a big company's deck.</strong> Netflix's "freedom and responsibility" comes paired with high pay and high turnover; copy the words without the supporting mechanisms and you get an empty shell.</li>
+<li><strong>Writing it, then locking it in a drawer.</strong> A culture doc that doesn't enter hiring, onboarding, and performance is a dead file.</li>
+<li><strong>Too many lines.</strong> 15 equals none; 3–5 with real trade-offs are memorable and binding.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The Founder's Mentality: Rebuilding Ownership in a Big Company's Sub-Team
+<span class="en">The Founder's Mentality at Sub-Team Scale</span></h2>
+<span class="tag">Founder Mentality</span><span class="tag">Ownership</span><span class="tag">Frontline obsession</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Scale creates complexity, and complexity dilutes the owner's mindset—Bain calls it "the paradox of growth." You can't stop the company from growing, but in your own small team you can <strong>rebuild the founder's mentality's three traits: an insurgent mission, frontline obsession, and an owner's mindset.</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The founder's mentality has three traits: an insurgent mission, an obsession with the front line, and an owner's mindset. Growth creates complexity, and complexity is the silent killer of these traits."</span>
+<span class="source">— Chris Zook & James Allen, <em>The Founder's Mentality</em> (Bain, 2016)</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scenario</div>
+<div class="scene">
+<div class="setup">Situation: Your team used to be the one in the company that "took on any dirty job and bit down hard on user problems." Two years on, it's become an execution unit that "delivers by ticket, has full process, but no one truly cares about outcomes." Engineers own their tasks, not the output.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Filling the ownership vacuum with process</div>
+<p>Add more process, finer Jira fields, more status meetings, trying to buy back quality with control. Result: higher complexity, lower ownership—everyone is just clocking the work.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Scripts to rebuild the three traits</div>
+<p><strong>Insurgent mission:</strong> "We're not the maintenance crew for system XX. We exist so that [a class of users] never has to endure [a specific pain]—that's our fight."<br><strong>Frontline obsession:</strong> "This sprint, everyone reads 5 raw user reports / sits in on one oncall. Cut off from the front line, we drift into PowerPoint."<br><strong>Owner's mindset:</strong> "As of today this metric is yours—not 'a task assigned to you' but 'your territory.' It does well, you get credit; it breaks, you decide how to fix it."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Is the Owner's Mindset Still There? (Read Signals, Not Slogans)</div>
+<ul class="checklist">
+<li>Does anyone <strong>pick up ownerless work</strong> on their own, rather than "that's not in my scope"?</li>
+<li>Does anyone dare say <strong>"we shouldn't be building this feature at all"</strong>, even after it's scheduled?</li>
+<li>How many layers separate the team from the front line (real users, real incidents)? More layers, thinner ownership.</li>
+<li>When something breaks, is the first reflex "whose fault" or "I'll fix it"?</li>
+<li>Is there an "insurgent mission" at all—or only "finish what's assigned from above"?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking process for culture.</strong> Process is a byproduct of complexity, not a source of ownership; heavier process often means lower ownership.</li>
+<li><strong>Thinking ownership can be obtained by exhortation.</strong> It comes from real delegation—you have to hand over decision rights and credit together.</li>
+<li><strong>Denying the cost of growth.</strong> The honest trade-off: scale genuinely brings necessary process and coordination cost. The goal isn't to return to a chaotic garage shop—it's to keep the ownership core inside necessary complexity.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>The Culture Handoff: Once You Leave, Does It Still Live?
+<span class="en">Culture Handoff — Will It Outlive You?</span></h2>
+<span class="tag">Inheritance</span><span class="tag">Embedding mechanisms</span><span class="tag">Surviving reorg</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">A culture sustained by your personal charisma is a single point of failure—one transfer or reorg and it collapses. Culture must be inherited through what Schein calls <strong>embedding mechanisms</strong>: what you attend to, what you reward, how you react in a crisis, who you hire and promote. Institutionalize these, and culture lives without you.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The only thing of real importance that leaders do is to create and manage culture. ... If you do not manage culture, it manages you."</span>
+<span class="source">— Edgar Schein, <em>Organizational Culture and Leadership</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scenario</div>
+<div class="scene">
+<div class="setup">Situation: The team you built from scratch is being handed to a successor, or folded into a larger org by reorg. You fear the hard-won culture (candor, no-blame for bad news, output orientation) will evaporate once you're gone.</div>
+<div class="dialog good">
+<div class="speaker">✓ Make tacit culture explicit, turn it into mechanisms</div>
+<p><strong>1. Write down decision principles:</strong> "Here's how we've always decided"—turn the judgment criteria that live only in your head into a one-page doc for the successor.<br><strong>2. Tell the founding story:</strong> behind "why we do it this way" is an origin event. Tell it to the successor and to newcomers—stories outlive rules.<br><strong>3. Institutionalize rituals:</strong> make blameless postmortems and bad-news protection fixed calendar events that don't depend on your attendance.<br><strong>4. Name the culture carriers:</strong> "Zhang and Li are the living embodiments of this culture. Keep them and give them a voice—worth more than any doc."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Checklist: Before the Handoff, Make Sure Culture Survives</div>
+<ul class="checklist">
+<li>Are the core decision principles <strong>written down</strong>, or do they live only in your gut?</li>
+<li>Have you identified 2–3 <strong>culture carriers</strong>? Does the successor know who they are?</li>
+<li>Do the key rituals (postmortems, 1:1 cadence, bad-news channel) <strong>run without your presence</strong>?</li>
+<li>Are reward / promotion criteria <strong>institutionalized</strong>, rather than your personal call?</li>
+<li>Does the successor <strong>buy into</strong> this culture—or will they tear it down on arrival? (A handoff without buy-in is a guaranteed collapse.)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Assuming culture continues automatically.</strong> Culture with no institutional carrier reverts to the company average within six months.</li>
+<li><strong>Handing off projects but not culture.</strong> The handoff doc is full of architecture and oncall, not a word about "how we decide, how we treat bad news."</li>
+<li><strong>Denying the successor has changed.</strong> A new leader has the right to reshape culture; what you can do is articulate and institutionalize the good parts—not demand they enshrine it unchanged.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"Culture building" contains a lot of invisible glue work—offsites, onboarding buddy, organizing rituals, maintaining psychological safety. Research (Lise Vesterlund, <em>The No Club</em>) shows women are <strong>disproportionately</strong> assigned this "no-one-can-decline, doesn't-count-in-reviews" office housework. Two moves: make the work <strong>explicit and rotated</strong>, so it enters the team's public ledger rather than landing on one person by default; and <strong>account for the glue work you do and claim it in reviews</strong>—"I built and maintained the team's postmortem and bad-news channels" is real leadership output, not background noise to be erased.
+</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Going Deeper · Pushing the Edges</h3>
+<details>
+<summary>1. Can a small team's culture stay at odds with the company's mainstream long-term without being assimilated?</summary>
+<div>It can hold for a while, but there's a ceiling. A subculture is like an island against the current—your dike holds back the mainstream (promotion mechanics, evaluation framing, your boss's preferences). As long as you're there and your team keeps producing results to buy autonomy, it survives and can even become a model. But once a reorg, a new boss, or a dip in results arrives, the dike breaks. The pragmatic move isn't to resist head-on—it's to <strong>frame the subculture as a "playbook" that serves company goals</strong>, giving leadership a reason to protect it rather than treat it as a deviant. Cultural autonomy is, in essence, bought with performance.</div>
+</details>
+<details>
+<summary>2. Can Netflix's "high-freedom, high-turnover" strong culture be copied elsewhere?</summary>
+<div>Mostly not. A strong culture is a tightly self-consistent system: freedom paired with responsibility, responsibility with high pay, high pay with high turnover, turnover with a "team-not-family" contract. Remove any link and copy only the words and it deforms—freedom without accountability becomes license; turnover without high pay and decent severance becomes exploitation. Schein's insight is that culture solves <strong>adaptation problems in a specific environment</strong>; Netflix's answer fits its high-talent-density industry. Don't copy the answer—copy the method of <strong>pairing every value with a corresponding mechanism</strong>.</div>
+</details>
+<details>
+<summary>3. Is the founder's mentality's "insurgent mission" still fitting in a stable, mature large org?</summary>
+<div>The form must change; the core still holds. A mature org may not need a grand "disrupt the industry" narrative, but every team needs a reason to exist beyond "maintain the status quo"—even just "make this legacy system stop tormenting users." A team without a sense of mission degrades into a pure execution unit, and ownership evaporates with it. But be honest: not every role can have an epic mission, and manufacturing one rings false. Safer to land the mission at the scale of <strong>a concrete user pain</strong>—real and tangible, not a slogan.</div>
+</details>
+<details>
+<summary>4. How do you balance culture inheritance against the successor's autonomy?</summary>
+<div>This is a real tension with no clean solution. If the successor copies everything wholesale, the culture is yours, not theirs, and they can't steer it; if they tear it all down, what you built is lost and the team endures pointless turbulence. The healthy band: you make the <strong>"why"</strong> of the culture clear and institutionalized (so the good parts have inertia and don't vanish overnight with a personnel change), but genuinely hand over the right to modify the <strong>"how."</strong> What most needs handing off isn't the rule list—it's the judgment behind the rules; once the successor buys the judgment, they'll naturally evolve a form that fits them.</div>
+</details>
+<details>
+<summary>5. When culture and performance clash—a high-output person who damages culture: keep or cut?</summary>
+<div>This is the hardest real call, and culture's most consequential broadcast. Horowitz and McCord agree: <strong>keeping the "brilliant jerk" announces that your culture lines are fake.</strong> The team reads it precisely—so output can buy out the principles. But don't romanticize either: when they're irreplaceable and their departure carries major business risk, the right move is often to <strong>draw a clear line + give a deadline to change the behavior</strong>, not to remove them instantly. Count the cost honestly: the cost of tolerating is a devalued culture; the cost of cutting is short-term loss of firepower. There's no painless option—only which one you're willing to pay for.</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 40 Action</h3>
+<p>Do two concrete things this week—not reflection, not reading:</p>
+<div class="action">
+<strong>Step 1 (culture checkup):</strong> Run an honest diagnosis on your team with Card 1's 5 signals—especially ask yourself: "What behavior did my last public recognition / promotion reward? Does it match the culture I preach?" Write down the line where they don't match—that's your team's real culture gap.<br><br>
+<strong>Step 2 (write it down):</strong> Using Card 2's 5-question test, write <strong>3</strong> operating principles with real trade-offs—each must distinguish people and have a counter-example. Then test them: read them to a colleague of the opposite temperament; if they nod at all of them and say "isn't this obvious?", you're still writing decoration—go back and rewrite until at least one makes them frown.<br><br>
+One reflection question: <strong>If you transferred tomorrow, how many lines of your team's culture could survive six months without you?</strong> The ones you can't answer for are what you should institutionalize this quarter.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 40 · 2026.06.28</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 40：公司文化建设</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 40 · 2026.06.28</div>
+<h1>公司文化建设：你不在场时，团队怎么做决定</h1>
+<div class="meta"><span>主题：Building Company Culture</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Culture is how a company makes decisions when you're not there." — Ben Horowitz</div>
+</header>
+
+<div class="intro">
+<strong>本期的命题：</strong>大多数"文化建设"是自欺——把价值观印在马克杯和海报上，然后照旧奖励违背它的行为。<strong>文化不是你宣称什么，是你奖励什么、容忍什么、升迁谁、危机时砍掉什么。</strong>作为大公司里的 tech lead manager，你管不了公司级文化，但能完全决定自己这个小团队的文化——而它往往和公司宣称的不一样。本期四步：看清文化的真实层次，把它写成可执行的合同，在规模稀释中保住创始人心态，最后让文化在你离开后还能活下来。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>文化是被奖励和容忍的行为，不是墙上的价值观
+<span class="en">Culture Is What You Reward and Tolerate</span></h2>
+<span class="tag">本质</span><span class="tag">Schein 三层</span><span class="tag">言行差</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">价值观海报是文化的最表层、也最不可信。真正的文化藏在<strong>深层假设</strong>里——团队默认"在这里，X 是安全的、Y 是会被惩罚的"。要改文化，改你奖励和容忍的行为，不是改海报。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Your culture is how your company makes decisions when you're not there. It's the set of assumptions your employees use to resolve the problems they face every day."</span>
+<span class="zh">"你的文化，是你不在场时公司怎么做决定。它是员工每天用来解决问题的那套默认假设。"</span>
+<span class="source">— Ben Horowitz,《What You Do Is Who You Are》（导论）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">框架：Schein 文化三层模型</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="20" width="600" height="58" rx="5" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="40" y="92" width="600" height="58" rx="5" fill="#f3e9d2" stroke="#a8702d" stroke-width="2"/>
+<rect x="40" y="164" width="600" height="62" rx="5" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<text x="58" y="44" font-family="Georgia" font-size="14" font-weight="700" fill="#4a6a28">人工制品 Artifacts（可见）</text>
+<text x="58" y="66" font-family="Georgia" font-size="12" fill="#3a2f1c">办公室、口号、流程、谁在会上发言 —— 最易看、最易伪造</text>
+<text x="58" y="116" font-family="Georgia" font-size="14" font-weight="700" fill="#8a5a1f">倡导的价值观 Espoused Values</text>
+<text x="58" y="138" font-family="Georgia" font-size="12" fill="#3a2f1c">官网写的「客户第一」「拥抱变化」—— 可能只是愿望</text>
+<text x="58" y="188" font-family="Georgia" font-size="14" font-weight="700" fill="#a04020">深层假设 Underlying Assumptions（不可见 · 真文化）</text>
+<text x="58" y="210" font-family="Georgia" font-size="12" fill="#5a3818">「报忧的人会挨刀」「加班才显忠诚」—— 没人说，但人人照做</text>
+<text x="340" y="244" text-anchor="middle" font-family="Georgia" font-size="11" fill="#8a6d3b">改文化＝改最底层；只动顶层＝刷海报</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你的团队墙上写着「质量第一」，但上季度晋升的是那个连夜救火、把线上事故压下去的工程师，而那个默默把这类事故根除、让系统再没出过问题的人无人提及。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 自欺的文化建设</div>
+<p>在 all-hands 上再讲一遍「我们重视质量、重视长期」，做一张新的价值观幻灯片。团队真正学到的是：<strong>救火上头条，防火没人看见。</strong>下个季度，没人愿意做无声的预防工作。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 改奖励信号</div>
+<p>晋升评审会上你明确说："这次我要表彰的是 <strong>让事故根本不发生</strong> 的人——他的工作没有 demo、没有救火的戏剧性，但它是我们真正想要的文化。"然后把它写进晋升理由文档，公开可见。<br><strong>文化是用一次真实的奖励决定校准的，不是用一次演讲。</strong></p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：想知道团队真实文化，别看海报，看这 5 个信号</div>
+<ul class="checklist">
+<li>上次公开表彰 / 晋升的，是什么行为？这是最强的文化广播。</li>
+<li>什么行为被容忍了却没人处理？（容忍＝默许＝事实标准）</li>
+<li>压力来临、要砍东西时，第一个被牺牲的是什么？（暴露真实优先级）</li>
+<li>新人第三个月，会从老人那里听到哪些"这里其实是这样运作的"潜规则？</li>
+<li>大家私下反复讲的"传说"是关于谁、关于什么？（故事即价值观）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把宣讲当建设。</strong>价值观幻灯片改一百遍，不如改一次晋升决定。</li>
+<li><strong>奖励与价值观相悖却不自知。</strong>嘴上说协作，奖金只发给个人英雄——团队信奖金。</li>
+<li><strong>只动表层。</strong>换 logo、改口号、办团建，深层假设纹丝不动。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>把文化写成可执行的合同，不是谁都能签字的废话
+<span class="en">Write Culture as a Testable Contract</span></h2>
+<span class="tag">Culture Deck</span><span class="tag">可证伪</span><span class="tag">取舍</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">不写下来的文化无法传承、无法招聘、无法校准。但要写成<strong>能区分人、有反例、需要取舍</strong>的行为准则——"我们重视诚信"谁都会签字，等于没写。好的文化条目应该让一部分人不舒服。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"We're a team, not a family. ... Adequate performance gets a generous severance package."</span>
+<span class="zh">"我们是一支球队，不是一家人。……称职但不出色的表现，换来的是一份慷慨的遣散费。"</span>
+<span class="source">— Patty McCord & Reed Hastings, Netflix Culture Deck /《Powerful》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：写团队的 operating principles</div>
+<div class="scene">
+<div class="setup">情境：你想给团队定几条文化原则，写进 onboarding 文档和招聘标准。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 谁都能签字的废话</div>
+<p>"我们追求卓越。我们拥抱变化。我们尊重彼此。我们以客户为中心。"<br>——没有任何一条能帮你在两个候选人之间做选择，也没有任何一条会让任何人不舒服。它不是文化，是装饰。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 可证伪、带取舍的条目</div>
+<p>· "<strong>默认异步，会议是最后手段。</strong>能写文档就不开会；要开会先发议程，没议程的会可以拒绝。"<br>· "<strong>坏消息逆流而上，越快越好。</strong>谁报告问题，谁受保护；藏问题被发现，才是过错。"<br>· "<strong>我们为产出负责，不为工时负责。</strong>没人统计你几点上线；交付质量是唯一标尺。"<br>每条都隐含一个取舍、一个反例、一种会被它劝退的人。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：一条文化准则是否合格（5 问）</div>
+<ul class="checklist">
+<li><strong>能区分人吗？</strong>它能帮你在两个候选人之间做决定吗？不能就太空。</li>
+<li><strong>有反例吗？</strong>存在合理的反向选择吗？（"异步优先"的反面是"同步优先"，两者都成立）</li>
+<li><strong>可观察吗？</strong>能指着具体行为说"这符合 / 这违背"吗？</li>
+<li><strong>有取舍吗？</strong>它放弃了什么？不放弃任何东西的原则是口号。</li>
+<li><strong>招聘能问吗？</strong>能设计一道面试题验证候选人是否契合吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>抄大厂的 deck。</strong>Netflix 的"自由与责任"配的是高薪与高淘汰；只抄词不抄配套机制，就是空架子。</li>
+<li><strong>写完锁进抽屉。</strong>文化文档不进招聘、onboarding、绩效，就是死文件。</li>
+<li><strong>条目太多。</strong>15 条等于没有；3–5 条真有取舍的，才记得住、才有约束力。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>创始人心态：在大公司的子团队里重建主人翁感
+<span class="en">The Founder's Mentality at Sub-Team Scale</span></h2>
+<span class="tag">Founder Mentality</span><span class="tag">主人翁</span><span class="tag">一线痴迷</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">规模带来复杂度，复杂度稀释主人翁心态——这是 Bain 说的"成长的悖论"。你管不了公司变大，但能在自己的小团队里<strong>重建创始人心态的三件套：叛逆者使命、一线痴迷、主人翁心态。</strong></div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The founder's mentality has three traits: an insurgent mission, an obsession with the front line, and an owner's mindset. Growth creates complexity, and complexity is the silent killer of these traits."</span>
+<span class="zh">"创始人心态有三个特征：叛逆者的使命、对一线的痴迷、主人翁的心态。成长制造复杂度，而复杂度是这三者无声的杀手。"</span>
+<span class="source">— Chris Zook & James Allen,《The Founder's Mentality》（Bain, 2016）</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你的团队曾是公司里那支"什么脏活都敢接、对用户问题死磕"的队伍。两年后它变成了一个"按 ticket 交付、流程齐全但没人真在乎结果"的执行单元。工程师只 own 自己的任务，不 own 产出。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 用流程填补 ownership 真空</div>
+<p>加更多流程、更细的 Jira 字段、更多状态会，试图用管控换回质量。结果复杂度更高，主人翁感更低——大家更像在交差。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 重建三件套的话术</div>
+<p><strong>叛逆者使命：</strong>"我们不是 XX 系统的维护组。我们存在是为了让 [某类用户] 不再忍受 [某个具体痛点]——这才是我们的仗。"<br><strong>一线痴迷：</strong>"这个 sprint 每人去读 5 条原始用户反馈 / 旁听一次 oncall。脱离一线的我们会越做越像 PPT。"<br><strong>主人翁心态：</strong>"这个指标从今天起是你的，不是'分给你的任务'，是'你的地盘'。它好你拿功劳，它砸你来定怎么修。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：主人翁心态还在不在？（看信号，别问口号）</div>
+<ul class="checklist">
+<li>有没有人会<strong>主动捡起无主的活</strong>，而不是"那不在我 scope 里"？</li>
+<li>有没有人敢说<strong>"这个功能我们根本不该做"</strong>，哪怕已经排期？</li>
+<li>团队离一线（真实用户、真实故障）有几层之隔？层数越多，主人翁感越稀。</li>
+<li>出问题时，第一反应是"谁的锅"还是"我来修"？</li>
+<li>有没有"反对者使命"这种东西——还是只剩"完成上面派的活"？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把流程当文化。</strong>流程是复杂度的产物，不是主人翁心态的来源；流程越重，ownership 常常越低。</li>
+<li><strong>误以为 ownership 能靠喊话获得。</strong>它来自真授权——你得真的把决定权和功劳一起交出去。</li>
+<li><strong>否认成长的代价。</strong>诚实的取舍：规模确实带来必要的流程与协调成本，目标不是回到混乱的小作坊，是在必要复杂度里保住主人翁内核。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>文化的交接与传承：你离开后，它还活着吗
+<span class="en">Culture Handoff — Will It Outlive You?</span></h2>
+<span class="tag">传承</span><span class="tag">嵌入机制</span><span class="tag">reorg 存活</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">靠你个人魅力维持的文化，是单点故障——你一调岗 / reorg 就崩。文化要靠 Schein 说的<strong>嵌入机制</strong>传承：你关注什么、奖励什么、危机时怎么反应、招谁升谁。把这些做成制度，文化才能没有你也活着。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The only thing of real importance that leaders do is to create and manage culture. ... If you do not manage culture, it manages you."</span>
+<span class="zh">"领导者真正重要的事只有一件：创造并管理文化。……你不管理文化，文化就会管理你。"</span>
+<span class="source">— Edgar Schein,《Organizational Culture and Leadership》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你一手带起来的 team 要交给继任者，或被 reorg 并入更大的组。你担心那套来之不易的文化（坦诚、报忧无罪、产出导向）会在你走后蒸发。</div>
+<div class="dialog good">
+<div class="speaker">✓ 把隐性文化显性化，做成机制</div>
+<p><strong>1. 写下决策原则：</strong>"我们一向是这样做决定的"——把那些只在你脑子里的判断准则，落成一页文档交给继任者。<br><strong>2. 讲清创始故事：</strong>"我们为什么这样做"背后有一个起源事件。讲给继任者和新人听——故事比规则活得久。<br><strong>3. 制度化仪式：</strong>把 blameless 复盘、报忧者保护这些做成日历上固定的、不依赖你出席的环节。<br><strong>4. 点名 culture carrier：</strong>"老张和小李是这套文化的活载体，留住他们、给他们话语权，比任何文档都管用。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">检查表：交接前，确保文化能活下来</div>
+<ul class="checklist">
+<li>核心决策原则<strong>写下来了吗</strong>，还是只活在你的直觉里？</li>
+<li>你识别出 2–3 个 <strong>culture carrier</strong>（文化活载体）了吗？继任者知道是谁吗？</li>
+<li>关键仪式（复盘、1:1 节奏、报忧机制）<strong>是否不依赖你出席</strong>就能运转？</li>
+<li>奖励 / 晋升标准<strong>是否已经制度化</strong>，而不是靠你个人拍板？</li>
+<li>继任者<strong>认同</strong>这套文化吗？还是会上任就推倒重来？（不认同的交接是注定的崩塌）</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>以为文化会自动延续。</strong>没有制度承载的文化，半年内回归公司平均值。</li>
+<li><strong>只交项目不交文化。</strong>交接文档写满架构和 oncall，只字不提"我们怎么做决定、怎么对待坏消息"。</li>
+<li><strong>不认继任者已变的现实。</strong>新 leader 有权重塑文化；你能做的是把好的部分讲清、制度化，而非要求他原样供奉。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"文化建设"里有大量隐形的 glue work（黏合性工作）——团建、onboarding buddy、张罗仪式、维护心理安全。研究（Lise Vesterlund《The No Club》）显示，女性被<strong>不成比例地</strong>分派这类"没人拒绝得了又不进绩效"的 office housework。对策两条：把这些工作<strong>显性化、轮值化</strong>，让它进团队明账而非默认落在某人头上；为自己做的 glue work <strong>记账并在绩效中主张</strong>——"我建立并维护了团队的复盘与报忧机制"是真实的领导力产出，不该被当背景音消失。
+</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · 推到边界</h3>
+<details>
+<summary>1. 小团队文化能和公司主流文化长期相悖而不被同化吗？</summary>
+<div>能撑一段，但有上限。子文化像逆流中的小岛——靠你这道堤坝挡着主流（晋升机制、考核口径、上级偏好）。只要你在、且你的团队持续出成绩换来自治权，它能存活甚至成为标杆。但一旦 reorg、换上级、或团队战绩下滑，堤坝就被冲垮。务实策略不是硬抗，是<strong>把子文化包装成对公司目标有利的"打法"</strong>，让上层有理由保护它，而非视它为异类。文化的自治权，本质是用业绩买来的。</div>
+</details>
+<details>
+<summary>2. Netflix 那套"高自由高淘汰"的强文化，能直接搬到别处吗？</summary>
+<div>多半不能。强文化是高度自洽的系统：自由配责任、责任配高薪、高薪配高淘汰、淘汰配"球队非家人"的契约。抽掉任何一环只抄词，就会变形——给自由不给问责，变放任；要淘汰不给高薪和体面遣散，变压榨。Schein 的洞见是文化解决的是<strong>特定环境下的适应问题</strong>，Netflix 的答案适配它的高人才密度行业。别抄答案，抄它<strong>把每条价值观都配上对应机制</strong>这个方法。</div>
+</details>
+<details>
+<summary>3. 创始人心态的"叛逆者使命"，在一个稳态成熟的大组织里还合适吗？</summary>
+<div>形式要变，内核仍成立。成熟组织未必需要"颠覆行业"的宏大叙事，但每个团队都需要一个比"维护现状"更高的存在理由——哪怕是"让这套老系统对用户不再是折磨"。没有使命感的团队会退化成纯执行单元，主人翁感随之蒸发。但要诚实：不是每个岗位都能有史诗级使命，硬造会显得虚假。更稳妥的是把使命落到<strong>具体用户痛点</strong>这个尺度，真实可感，不喊口号。</div>
+</details>
+<details>
+<summary>4. 文化的传承和继任者的自主权，怎么平衡？</summary>
+<div>这是真张力，没有干净解。继任者若全盘照搬，文化是你的不是他的，他驾驭不动；若全盘推翻，你建的东西付诸东流、团队经历无谓动荡。健康区间是：你负责把文化的<strong>"为什么"</strong>讲透并制度化（让好东西有惯性、不会因换人一夜消失），但把<strong>"怎么做"</strong>的修改权真诚交出。最该交接的不是规则清单，是规则背后的判断；继任者认同了判断，自然会演化出适合他的新形式。</div>
+</details>
+<details>
+<summary>5. 文化和绩效冲突时——一个高产出但破坏文化的人，留还是走？</summary>
+<div>这是最难的真实抉择，也是文化最关键的一次广播。Horowitz 和 McCord 的立场一致：<strong>留下"才华横溢的混蛋"，等于宣布你的文化条目是假的。</strong>团队会精确读懂——原来产出可以买断准则。但也别浪漫化：在他不可替代、且离开有重大业务风险时，正确动作往往是先<strong>明确划线 + 限期改变行为</strong>，而非立刻清除。代价要诚实计入：纵容的代价是文化贬值，清除的代价是短期战力受损。没有无痛选项，只有你愿意为哪个买单。</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本期习作 · Your Day 40 Action</h3>
+<p>本期做两件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>第一步（文化体检）：</strong>用 Card 1 的 5 个信号给你的团队做一次诚实诊断——尤其问自己："我上一次公开表彰 / 晋升的，是什么行为？它和我嘴上说的文化一致吗？"把不一致的那条写下来，这就是你团队的真实文化漏洞。<br><br>
+<strong>第二步（写下来）：</strong>用 Card 2 的 5 问标准，给团队写 <strong>3 条</strong>真有取舍的 operating principles——每条都要能区分人、有反例。写完做个测试：把它们念给一个性格相反的同事听，如果他全部点头说"这不废话吗"，说明你写的还是装饰，回去重写到至少有一条让他皱眉。<br><br>
+一个反思题：<strong>如果你明天调岗，你团队这套文化里，有几条能在没有你的情况下活过半年？</strong>答不出来的，就是你这季度该制度化的。
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 40 · 2026.06.28</footer>
+</div>
+</body>
+</html>
