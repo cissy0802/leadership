@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 41: Startup vs Big-Company Leadership</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 41 · 2026.06.29</div>
+<h1>Startup vs Big-Company: The Leadership You Trained May Be a Liability on the Other Side</h1>
+<div class="meta"><span>Topic: Startup vs Big-Company Leadership</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Peacetime CEO knows that proper protocol leads to winning. Wartime CEO violates protocol in order to win." — Ben Horowitz</div>
+</header>
+
+<div class="intro">
+<strong>This issue's thesis:</strong> the same leadership capability often carries the opposite sign in a startup versus a big company. <strong>The process, coordination, and stakeholder alignment you mastered at a big company are fatal premature optimization at a startup; the hands-on heroics and rule-bending that work at a startup are unscalable single points of failure at a big company.</strong> Capability has no absolute good or bad — only fit with stage. BigCat is a tech lead manager at a big company who also wants to be a "super-individual," so this difference has to be read both ways: which big-company skills become liabilities when you move to a startup, and how to preserve the 0→1 muscle inside a big company without letting bureaucracy atrophy it. Four steps: stage is the first variable, creating vs scaling are two muscles, the intrapreneur's trap, and what to unload and rebuild when you switch.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Stage Is the First Variable: Wartime Leader vs Peacetime Leader
+<span class="en">Wartime vs Peacetime — Stage Is the First Variable</span></h2>
+<span class="tag">Stage Fit</span><span class="tag">Wartime/Peacetime</span><span class="tag">Situational</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">A leadership style has no absolute right or wrong — only fit with stage. The same act — rewriting critical code yourself, calling the shot around process — saves the day at a startup but manufactures single points of failure and breaks scalability at a mature company. Before judging good or bad, judge which stage you're in.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Peacetime CEO knows that proper protocol leads to winning. Wartime CEO violates protocol in order to win."</span>
+<span class="source">— Ben Horowitz, <em>The Hard Thing About Hard Things</em>, "Peacetime CEO/Wartime CEO"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Stage → Leadership Mode</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<line x1="40" y1="60" x2="660" y2="60" stroke="#a8702d" stroke-width="2"/>
+<polygon points="660,60 648,54 648,66" fill="#a8702d"/>
+<text x="50" y="42" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">0 → 1 (find PMF)</text>
+<text x="300" y="42" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">1 → 100 (scale)</text>
+<text x="540" y="42" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Mature big co</text>
+<circle cx="60" cy="60" r="5" fill="#b85c3a"/><circle cx="350" cy="60" r="5" fill="#c47040"/><circle cx="600" cy="60" r="5" fill="#5c8a3a"/>
+<rect x="30" y="90" width="200" height="130" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="250" y="90" width="200" height="130" rx="6" fill="#faecd8" stroke="#c47040" stroke-width="2"/>
+<rect x="470" y="90" width="200" height="130" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="130" y="113" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">Wartime mode</text>
+<text x="45" y="138" font-family="Georgia" font-size="11" fill="#5a3818">· Speed &gt; correctness</text>
+<text x="45" y="158" font-family="Georgia" font-size="11" fill="#5a3818">· Hands-on, bend rules</text>
+<text x="45" y="178" font-family="Georgia" font-size="11" fill="#5a3818">· Centralized calls</text>
+<text x="45" y="198" font-family="Georgia" font-size="11" fill="#5a3818">· No playbook</text>
+<text x="350" y="113" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#9a5a28">Hybrid mode</text>
+<text x="265" y="138" font-family="Georgia" font-size="11" fill="#5a3818">· Build while fighting</text>
+<text x="265" y="158" font-family="Georgia" font-size="11" fill="#5a3818">· Hire + delegate</text>
+<text x="265" y="178" font-family="Georgia" font-size="11" fill="#5a3818">· Process grows from 0</text>
+<text x="265" y="198" font-family="Georgia" font-size="11" fill="#5a3818">· Culture-dilution risk</text>
+<text x="570" y="113" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">Peacetime mode</text>
+<text x="485" y="138" font-family="Georgia" font-size="11" fill="#2a3a18">· Scalable &gt; hero</text>
+<text x="485" y="158" font-family="Georgia" font-size="11" fill="#2a3a18">· Process, align, rails</text>
+<text x="485" y="178" font-family="Georgia" font-size="11" fill="#2a3a18">· Delegate, invest long</text>
+<text x="485" y="198" font-family="Georgia" font-size="11" fill="#2a3a18">· Tend stakeholders</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: a staff engineer who joined a big company from a startup hits a production P1 and instinctively wants to charge in, hotfix it himself, and bypass review.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Wartime move dropped into peacetime</div>
+<p>"Forget review — I'll push a patch directly, five minutes, I'll backfill the process later." At a startup this is heroism; at a big company that one cut bypasses change control, the rollback plan, and the right-to-know of three dependent teams. You fix this one, plant a bigger landmine, and the team learns "when it's urgent, you can just bypass."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The move after recognizing the stage</div>
+<p>"Spin up a war room per the incident process, name an IC, and <strong>push the fix through the emergency review channel</strong> — a big company has that channel precisely for moments like this. Then run a blameless postmortem and distill the hotfix into a reusable runbook." Personal heroism is converted into a reusable system.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Self-Check: Which Mode Should I Be In?</div>
+<ul class="checklist">
+<li>Are we <strong>searching for the answer</strong> (PMF) or <strong>replicating a known answer</strong> (scaling)? Former leans wartime, latter peacetime.</li>
+<li>If this decision is wrong, is it <strong>fatal</strong> or <strong>reversible</strong>? Fatal and time-pressed → call it fast; reversible → delegate and run the process.</li>
+<li>The process I'm bypassing — am I <strong>fighting a fire</strong> or <strong>taking a shortcut</strong>? The latter builds technical and organizational debt.</li>
+<li>Am I jumping in because <strong>only I can do it</strong>, or because I <strong>can't let go</strong>? The latter is a signal to delegate.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating style as personality, not tool.</strong> "I'm just a hands-on leader" — you've simply failed to notice the stage changed.</li>
+<li><strong>Faking wartime at a big company.</strong> A daily "wartime" mindset with no real existential threat manufactures anxiety and overreach.</li>
+<li><strong>Faking peacetime at a startup.</strong> Building heavy process and six-page memos before PMF is even in sight — optimizing away the speed that keeps you alive.</li>
+<li><strong>Knowing only one mode.</strong> What's truly scarce is a leader who can <strong>switch</strong> between wartime and peacetime.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Ben Horowitz, <em>The Hard Thing About Hard Things</em></strong> (chapter "Peacetime CEO/Wartime CEO") — the origin of the wartime/peacetime frame.<br><strong>Larry Greiner, "Evolution and Revolution as Organizations Grow"</strong> (HBR, 1972/1998) — five stages of organizational growth, each with a different crisis and leadership demand.</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Zero-to-One vs One-to-Hundred: Creating and Scaling Are Two Different Muscles
+<span class="en">Zero-to-One vs One-to-Hundred — Two Different Muscles</span></h2>
+<span class="tag">Create vs Scale</span><span class="tag">Delegation</span><span class="tag">Systematize</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Taking something from 0 to 1 (making a new thing amid uncertainty) and from 1 to 100 (scaling a validated thing) are nearly opposite capabilities. <strong>Creating runs on hands-on work and speed; scaling runs on systems and delegation.</strong> Many get stuck trying to scale the way they create — and become the bottleneck.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Doing what we already know how to do takes the world from 1 to n... But every time we create something new, we go from 0 to 1."</span>
+<span class="source">— Peter Thiel, <em>Zero to One</em>, Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">The Two Muscles, Side by Side</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="200" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="200" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">0 → 1 · Create muscle</text>
+<text x="35" y="80" font-family="Georgia" font-size="12" fill="#5a3818">· Goal: find what works</text>
+<text x="35" y="104" font-family="Georgia" font-size="12" fill="#5a3818">· Speed &gt; right, fix fast</text>
+<text x="35" y="128" font-family="Georgia" font-size="12" fill="#5a3818">· Hands-on, full-stack</text>
+<text x="35" y="152" font-family="Georgia" font-size="12" fill="#5a3818">· No playbook, judgment</text>
+<text x="35" y="176" font-family="Georgia" font-size="12" fill="#5a3818">· Less is more, cut scope</text>
+<text x="35" y="200" font-family="Georgia" font-size="12" fill="#5a3818">· Metric: does anyone want it</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">1 → 100 · Scale muscle</text>
+<text x="375" y="80" font-family="Georgia" font-size="12" fill="#2a3a18">· Goal: copy it a hundred times</text>
+<text x="375" y="104" font-family="Georgia" font-size="12" fill="#2a3a18">· Repeatable &gt; flash of genius</text>
+<text x="375" y="128" font-family="Georgia" font-size="12" fill="#2a3a18">· Hire, delegate, build systems</text>
+<text x="375" y="152" font-family="Georgia" font-size="12" fill="#2a3a18">· Turn judgment into process</text>
+<text x="375" y="176" font-family="Georgia" font-size="12" fill="#2a3a18">· Consistency, quality rails</text>
+<text x="375" y="200" font-family="Georgia" font-size="12" fill="#2a3a18">· Metric: runs without you</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Context: BigCat's team grew from 3 to 12. The most critical service is one he wrote by hand, and he's used to reviewing and approving every core change himself.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Scaling the way you create</div>
+<p>"The core path is too important — I'd better review it myself; you all take the periphery." Three months later he's the bottleneck on every key PR, and his strongest engineers — locked out of the core, unable to grow — start looking elsewhere. He's doing a 3-person job inside a 12-person team.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Switching to the scale muscle</div>
+<p>"Write the <strong>judgment criteria</strong> for the core service into a design-principles doc and a review checklist, name two owners, and I step back to a <strong>guardrail role</strong> — only watching for red lines."<br>To the person taking over: "This used to be my baby; now it's yours. <strong>I give you the boundaries, not the answers</strong> — I'll stop you at a red line, but inside it I don't interfere."</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Self-Check: Am I Still Using Create-Phase Moves While Scaling?</div>
+<ul class="checklist">
+<li>Are the things <strong>only I can do</strong> growing or shrinking? (Shrinking is the sign of healthy scaling.)</li>
+<li>Have I turned <strong>"my judgment" into "a standard others can use"</strong>, instead of leaving it only in my head?</li>
+<li>If I'm gone for two weeks, do the team's key decisions <strong>stall</strong> or <strong>continue as usual</strong>?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking non-delegation for high standards.</strong> "Only I can guarantee quality" — right short-term, but long-term you seal off the team's growth and your own rise.</li>
+<li><strong>Premature systematization.</strong> Writing heavy process docs in the 0→1 phase freezes unvalidated things and kills exploration.</li>
+<li><strong>Assuming skill in one is skill in the other.</strong> Many great 0→1 founders get replaced during scaling — not failure, just a muscle mismatch.</li>
+<li><strong>Still using the hero narrative while scaling.</strong> Praising "who saved the fire tonight" makes people start fires to put out — rewarding the wrong behavior.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Peter Thiel, <em>Zero to One</em></strong> — the essential distinction between 0→1 and 1→n.<br><strong>Reid Hoffman, <em>Blitzscaling</em></strong> — why the scaling phase deliberately sacrifices efficiency for speed.<br><strong>Will Larson, <em>An Elegant Puzzle</em></strong> — turning judgment into systems, delegation, and team topology.</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The "Entrepreneur" Trap Inside a Big Company: Keeping the 0→1 Muscle from Atrophying
+<span class="en">The Intrapreneur's Trap</span></h2>
+<span class="tag">Intrapreneurship</span><span class="tag">Influence</span><span class="tag">Super-Individual</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">A big company rewards "wait for permission, write the deck, align until everyone agrees" — a set of behaviors that is slow death at a startup. To be a super-individual inside a big company, selectively keep the entrepreneur's reflexes amid bureaucracy — but tell apart which "bypasses" advance you and which get you labeled.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The hallmark of originality is rejecting the default and exploring whether a better option exists."</span>
+<span class="source">— Adam Grant, <em>Originals</em>, Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: Request Resources vs Just Build It</div>
+<div class="scene">
+<div class="setup">Context: BigCat spots an obvious improvement to an internal tool, but it isn't in this quarter's OKRs.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Pure big-company reflex</div>
+<p>"First write a proposal, slot it into next quarter's planning, wait for the org to approve resources and three teams to align." Half a year later the window has closed, or the proposal has been sanded down to something toothless by its fourth review.</p>
+</div>
+<div class="dialog bad">
+<div class="speaker">✗ Pure startup reflex (gets you labeled at a big company)</div>
+<p>"Just pull two people, quietly build and ship it, ask forgiveness later." The thing might be good, but you've touched someone else's system, gotten tagged "uncontrollable, doesn't respect process," and someone holds a grudge at promotion calibration.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The intrapreneur's middle path</div>
+<p>Use a <strong>prototype small enough to need no approval</strong>, touch only what's within your own permissions, and prove value with real data. Then bring <strong>something you can demo</strong> — not a deck — to the owner: "I built a prototype that validates X; I'd like to talk about getting it onto your roadmap, under your team's name." Lower the decision cost with the work, and expand through collaboration rather than bypass.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Self-Check: Which Big-Company Habits Are Startup Liabilities / Which Reflexes to Keep</div>
+<ul class="checklist">
+<li><strong>Permission culture</strong>: safe at a big company, slow death at a startup — practice "do first, report after" on reversible, low-risk things.</li>
+<li><strong>Deck-driven</strong>: a prototype you can demo beats slides — keep the "build it, then talk" muscle.</li>
+<li><strong>Align until everyone's happy</strong>: often equals mediocrity — tell apart which decisions truly need broad alignment and which only need one or two key nods.</li>
+<li><strong>Sense of boundaries</strong>: this is the real skill a big company teaches — don't drop it at a startup; before bypassing process, be clear whose turf you're touching.</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "entrepreneurial spirit" as a license to ignore process.</strong> Half of big-company process is bureaucracy, half is protection others bought with incidents — confuse them and you step on a mine.</li>
+<li><strong>Using the demo to humiliate, not invite.</strong> "Look, I alone built what you didn't in half a year" — you win the prototype and lose all future collaboration.</li>
+<li><strong>Mistaking visibility for influence.</strong> Flashing presence everywhere isn't being irreplaceable; the leverage is work others can't route around.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Female Leader's Note</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"Ask-forgiveness" intrapreneurship has a lower margin of error for women at a big company: the same "bypassing process" is often read as "has ownership, bold" for men but more easily as "doesn't follow rules, hard to work with" for women (the likability penalty). A counter: turn the solo prototype into <strong>collaboration with co-signers</strong> as early as possible — bring the relevant owners on as joint authors — rewriting "she acted on her own" into "she drove a cross-team collaboration." Not retreat — a non-backfiring wrapper for the same nerve.
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Adam Grant, <em>Originals</em></strong> — strategies for pushing new ideas within an institution, and the timing of "earn status first, then take the risk."<br><strong>Gifford Pinchot, <em>Intrapreneuring</em></strong> — the origin of the word "intrapreneur" and the classic treatise on building inside a large organization.</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>What to Unload, What to Build When You Switch: A Two-Way Conversion Map
+<span class="en">What to Unload &amp; What to Build When You Switch</span></h2>
+<span class="tag">Career Move</span><span class="tag">Skill Conversion</span><span class="tag">Self-Diagnosis</span>
+</div>
+
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">The biggest risk in switching stages isn't lacking skill — it's <strong>carrying the previous stage's muscle memory without unloading it</strong>. Big-company-to-startup most often dies of "over-structuring"; startup-to-big-company most often hits the wall of "ignoring systems." First figure out which abilities transfer, which are liabilities, and which you must build new.</div>
+</div>
+
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The higher you go, the more your problems are behavioral. What got you here won't get you there."</span>
+<span class="source">— Marshall Goldsmith, <em>What Got You Here Won't Get You There</em></span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Skill Conversion Map</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="15" y="20" width="218" height="200" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="241" y="20" width="218" height="200" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="467" y="20" width="218" height="200" rx="6" fill="#faecd8" stroke="#c47040" stroke-width="2"/>
+<text x="124" y="46" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">✓ Transfers</text>
+<text x="28" y="74" font-family="Georgia" font-size="11" fill="#2a3a18">· Technical judgment</text>
+<text x="28" y="98" font-family="Georgia" font-size="11" fill="#2a3a18">· Make complex simple</text>
+<text x="28" y="122" font-family="Georgia" font-size="11" fill="#2a3a18">· Hiring / reading people</text>
+<text x="28" y="146" font-family="Georgia" font-size="11" fill="#2a3a18">· Giving feedback</text>
+<text x="28" y="170" font-family="Georgia" font-size="11" fill="#2a3a18">· Trust &amp; honesty</text>
+<text x="350" y="46" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">⚠ May be liability</text>
+<text x="254" y="74" font-family="Georgia" font-size="11" fill="#5a3818">Big→startup:</text>
+<text x="254" y="96" font-family="Georgia" font-size="11" fill="#5a3818">  heavy process/permission</text>
+<text x="254" y="118" font-family="Georgia" font-size="11" fill="#5a3818">  over-specialized reliance</text>
+<text x="254" y="146" font-family="Georgia" font-size="11" fill="#5a3818">Startup→big:</text>
+<text x="254" y="168" font-family="Georgia" font-size="11" fill="#5a3818">  ignore process/lone hero</text>
+<text x="254" y="190" font-family="Georgia" font-size="11" fill="#5a3818">  bypass stakeholders</text>
+<text x="576" y="46" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#9a5a28">+ Must build</text>
+<text x="480" y="74" font-family="Georgia" font-size="11" fill="#5a3818">Big→startup:</text>
+<text x="480" y="96" font-family="Georgia" font-size="11" fill="#5a3818">  full-stack, ambiguity</text>
+<text x="480" y="118" font-family="Georgia" font-size="11" fill="#5a3818">  results with no resources</text>
+<text x="480" y="146" font-family="Georgia" font-size="11" fill="#5a3818">Startup→big:</text>
+<text x="480" y="168" font-family="Georgia" font-size="11" fill="#5a3818">  cross-team alignment</text>
+<text x="480" y="190" font-family="Georgia" font-size="11" fill="#5a3818">  managing up &amp; politics</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Scene: A Self-Diagnosis Conversation Before Switching</div>
+<div class="scene">
+<div class="setup">Context: BigCat is weighing whether to leave the big company to be head of engineering at a Series-B startup.</div>
+<div class="dialog good">
+<div class="speaker">✓ Three questions to be honest with yourself about</div>
+<p><strong>1. Where does my sense of achievement come from?</strong> "Making something from nothing" or "making the existing thing steadier and bigger"? The former suits early stage, the latter scaling. The cost of self-deception is years of mismatch.</p>
+<p><strong>2. How much of my advantage comes from the big-company platform?</strong> Brand, resources, network — honestly separate "my ability" from "the ability the platform lends me," and note what zeroes out when you leave.</p>
+<p><strong>3. How much structurelessness can I tolerate?</strong> A startup has no clear ladder, no ready-made systems, and pay may drop — that's its nature, not a flaw; the question is whether your psychological and financial buffer is enough.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Switching Checklist</div>
+<ul class="checklist">
+<li>Have I listed the 2 old habits I need to <strong>actively unload</strong>? (Not what to learn — what to stop doing.)</li>
+<li>Have I separated "my ability" from "the ability the platform lends me" — which zeroes out when I leave?</li>
+<li>Do I have a <strong>financial buffer</strong> (FU money / runway) to ride out the swings of the adaptation period?</li>
+<li>Is my first-90-days goal to <strong>understand before remaking</strong>, or to rush to prove myself? (Switchers most often die of the second.)</li>
+<li>Have I asked <strong>people who've walked this path</strong> what's easiest to step on?</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Walking a new road with the old map.</strong> Bring a full big-company process to a 5-person startup and you get bureaucracy before you even have a product.</li>
+<li><strong>Underestimating the zeroing of platform dividends.</strong> Much of "my influence" was borrowed from the company brand; switch and you find the doors no longer open by themselves.</li>
+<li><strong>Remaking everything on arrival.</strong> Overturning it all in the first 90 days turns the "understanding period" into an "enemy-making period."</li>
+<li><strong>Treating a job change as escape.</strong> First be clear whether you're fleeing a stage mismatch or something else — otherwise you just jump into another mismatch.</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Marshall Goldsmith, <em>What Got You Here Won't Get You There</em></strong> — why old success patterns become obstacles in a transition.<br><strong>Michael Watkins, <em>The First 90 Days</em></strong> — the "diagnose before remaking" cadence of the first 90 days.<br><strong>Marty Cagan, <em>EMPOWERED</em></strong> — the leadership differences teams need at different stages.</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Deeper Questions · Pushed to the Edge</h3>
+<details>
+<summary>1. Can "stage fit" become an excuse not to grow or improve?</summary>
+<div>Yes — that's its abuse boundary. "We're a startup so we don't need process" can be an honest judgment or a fig leaf for dodging engineering discipline. The test: <strong>is what you're sacrificing making way for the single most critical constraint right now?</strong> Sacrificing process for speed is a real trade-off; sacrificing to the point of no tests, no review, and all critical knowledge inside one person's head is not stage fit — it's planting landmines. Ask: "Is this simplification to move fast, or just because doing it right is annoying?"</div>
+</details>
+<details>
+<summary>2. From a senior big-company role to a startup, can the halo become a burden?</summary>
+<div>Often yes. A big-company title brings not just expectations but a platform-spoiled way of working: someone handles hiring, legal, cross-team coordination — all gone at a startup. The subtler trap is identity inertia: you're used to exercising influence through rank, but a startup only recognizes <strong>what you solved with your own hands this week</strong>. Healthy switchers "level down" on purpose — doing grunt work for the first months to rebuild the "I can create value directly" muscle and the team's trust. Take the halo off yourself, or it refuses growth on your behalf.</div>
+</details>
+<details>
+<summary>3. Are "super-individual" and "scaling leader" contradictory?</summary>
+<div>There's real tension. The super-individual's leverage comes from being irreplaceable, while a scaling leader's value comes precisely from <strong>making yourself replaceable</strong>. The more you want to build something dazzling with your own hands, the harder it is to delegate. One integration: move "irreplaceable" from the <strong>execution layer</strong> to the <strong>judgment layer</strong> — it shouldn't be "only I can write this code" but "only I can define the direction, see the trap, spot the talent." Delegate execution; make judgment and taste scarce. That scales the team and keeps your personal leverage.</div>
+</details>
+<details>
+<summary>4. Does this stage frame hold the same in hardtech vs pure software?</summary>
+<div>The frame holds, but the parameters differ enormously. Pure-software 0→1 can prototype in weeks and iterate fast, so "scale first, fix later" is often viable; but for biotech, aerospace, and chips, 0→1 itself takes years and huge capital — "fail fast" means the company goes to zero, so it actually needs substantial engineering discipline early. Heavily regulated industries (finance, healthcare) are the same: the cost of bypassing process is legal liability. Don't copy the Silicon Valley software narrative — first ask what the <strong>unit cost and irreversibility of a mistake</strong> are in your industry, then set the ratio of speed to structure.</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Issue's Exercise · Your Day 41 Action</h3>
+<p>Do two concrete things this issue — not reflection, not reading:</p>
+<div class="action">
+<strong>Step 1 (stage diagnosis):</strong> Use Card 1's four self-check questions to locate your team <strong>now</strong> — overall in 0→1, 1→100, or peacetime mode? Then answer honestly: do my <strong>own</strong> default moves right now (jumping in vs delegating and building systems) match that stage? Write down the one that doesn't.<br><br>
+<strong>Step 2 (unload one move):</strong> Pick one thing "only you can do," and this week <strong>write its judgment criteria into a one-page doc or checklist</strong>, hand it to one person to own, and step back to the guardrail role. It's the smallest step in converting the create muscle into the scale muscle.<br><br>
+One reflection question: <strong>If you jumped to a 5-person startup next week, of the abilities you rely on today, how much is "yours" and how much is "lent to you by the big-company platform"?</strong> That ratio decides your real starting point when you switch.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 41 · 2026.06.29</footer>
+</div>
+</body>
+</html>

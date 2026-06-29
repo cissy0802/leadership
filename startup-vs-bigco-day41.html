@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 41：初创 vs 大厂领导力差异</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 41 · 2026.06.29</div>
+<h1>初创 vs 大厂：你练的领导力，在另一边可能是负债</h1>
+<div class="meta"><span>主题：Startup vs Big-Company Leadership</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Peacetime CEO knows that proper protocol leads to winning. Wartime CEO violates protocol in order to win." — Ben Horowitz</div>
+</header>
+
+<div class="intro">
+<strong>本期的命题：</strong>同一套领导力能力，在初创和大厂里的价值符号常常相反。<strong>大厂练就的流程、协调、stakeholder 对齐，到初创是致命的过早优化；初创靠的亲自下场、绕流程、英雄主义，到大厂是不可扩展的单点故障。</strong>能力没有绝对好坏，只有阶段适配。BigCat 在大厂做 tech lead manager 又追求超级个体——这个差异要双向看清：哪些大厂技能在迁移到初创时是负债，怎么在大厂内部保住 0→1 的肌肉不被官僚萎缩。本期四步：阶段是第一变量、创造 vs 扩展是两种肌肉、大厂里的"创业者"陷阱、迁移时该卸载和新建什么。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>阶段是第一变量：战时 leader 与平时 leader
+<span class="en">Wartime vs Peacetime — Stage Is the First Variable</span></h2>
+<span class="tag">阶段适配</span><span class="tag">战时平时</span><span class="tag">情境领导</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">领导风格没有绝对对错，只有和阶段是否适配。同一个动作——亲自改关键代码、绕过流程拍板——在初创是救命，在成熟大厂是制造单点故障、破坏可扩展性。判断好坏前，先判断你在哪个阶段。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Peacetime CEO knows that proper protocol leads to winning. Wartime CEO violates protocol in order to win."</span>
+<span class="zh">"平时的 CEO 知道遵守规程才能赢。战时的 CEO 知道为了赢必须打破规程。"</span>
+<span class="source">— Ben Horowitz,《The Hard Thing About Hard Things》"Peacetime CEO/Wartime CEO"</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">阶段 → 领导模式</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<line x1="40" y1="60" x2="660" y2="60" stroke="#a8702d" stroke-width="2"/>
+<polygon points="660,60 648,54 648,66" fill="#a8702d"/>
+<text x="50" y="42" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">0 → 1（找 PMF）</text>
+<text x="300" y="42" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">1 → 100（扩张）</text>
+<text x="540" y="42" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">成熟大厂</text>
+<circle cx="60" cy="60" r="5" fill="#b85c3a"/><circle cx="350" cy="60" r="5" fill="#c47040"/><circle cx="600" cy="60" r="5" fill="#5c8a3a"/>
+<rect x="30" y="90" width="200" height="130" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="250" y="90" width="200" height="130" rx="6" fill="#faecd8" stroke="#c47040" stroke-width="2"/>
+<rect x="470" y="90" width="200" height="130" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="130" y="113" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">战时模式</text>
+<text x="45" y="138" font-family="Georgia" font-size="11" fill="#5a3818">· 速度 &gt; 正确</text>
+<text x="45" y="158" font-family="Georgia" font-size="11" fill="#5a3818">· 亲自下场、绕流程</text>
+<text x="45" y="178" font-family="Georgia" font-size="11" fill="#5a3818">· 集中拍板</text>
+<text x="45" y="198" font-family="Georgia" font-size="11" fill="#5a3818">· 没有 playbook</text>
+<text x="350" y="113" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#9a5a28">混合模式</text>
+<text x="265" y="138" font-family="Georgia" font-size="11" fill="#5a3818">· 边打边建系统</text>
+<text x="265" y="158" font-family="Georgia" font-size="11" fill="#5a3818">· 招人 + 放权</text>
+<text x="265" y="178" font-family="Georgia" font-size="11" fill="#5a3818">· 流程从 0 长出</text>
+<text x="265" y="198" font-family="Georgia" font-size="11" fill="#5a3818">· 文化稀释风险</text>
+<text x="570" y="113" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">平时模式</text>
+<text x="485" y="138" font-family="Georgia" font-size="11" fill="#2a3a18">· 可扩展 &gt; 英雄</text>
+<text x="485" y="158" font-family="Georgia" font-size="11" fill="#2a3a18">· 流程、对齐、护栏</text>
+<text x="485" y="178" font-family="Georgia" font-size="11" fill="#2a3a18">· 放权、长期投入</text>
+<text x="485" y="198" font-family="Georgia" font-size="11" fill="#2a3a18">· stakeholder 经营</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一位从初创加入大厂的 staff 工程师，遇到线上 P1 事故，习惯性想自己冲进去 hotfix、绕过 review。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 把战时动作搬到平时</div>
+<p>"别等 review 了，我直接 push 个 patch，五分钟搞定，回头补流程。"——初创里这是英雄；大厂里这一刀绕过的是变更管控、回滚预案和三个依赖团队的知情权。修好这次，埋下更大的雷，团队还学会了"急了就能绕"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 识别阶段后的动作</div>
+<p>"按 incident 流程拉 war room、指定 IC，<strong>修复走紧急 review 通道</strong>——大厂这个通道就是为这种时刻设计的。事后 blameless 复盘，把 hotfix 沉淀成 runbook。"个人英雄换成可复用的系统。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">自检：我现在该用哪种模式？</div>
+<ul class="checklist">
+<li>我们在<strong>找答案</strong>（PMF）还是<strong>复制已知答案</strong>（规模化）？前者偏战时，后者偏平时。</li>
+<li>这个决定错了，是<strong>致命</strong>还是<strong>可回滚</strong>？致命且时间紧 → 快拍；可回滚 → 放权走流程。</li>
+<li>我绕过的流程，是在<strong>救火</strong>还是<strong>图省事</strong>？后者在制造技术与组织债。</li>
+<li>我亲自下场，是<strong>只有我能做</strong>，还是<strong>不放心放手</strong>？后者是该放权的信号。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把风格当人格，而非工具。</strong>"我就是个亲力亲为的 leader"——你只是没意识到阶段变了。</li>
+<li><strong>大厂里假装打仗。</strong>没有真实存亡威胁却天天"战时"心态，制造的是焦虑和越权。</li>
+<li><strong>初创里假装太平。</strong>PMF 还没影就大建流程、写六页 memo——把救命的速度优化掉了。</li>
+<li><strong>只会一种模式。</strong>真正稀缺的是能在战时/平时之间<strong>切换</strong>的 leader。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Ben Horowitz,《The Hard Thing About Hard Things》</strong>（"Peacetime CEO/Wartime CEO" 一章）——战时/平时框架的原始出处。<br><strong>Larry Greiner, "Evolution and Revolution as Organizations Grow"</strong>（HBR, 1972/1998）——组织成长五阶段，每阶段的危机和领导诉求不同。</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>从 0 到 1 与从 1 到 100：创造和扩展是两块不同的肌肉
+<span class="en">Zero-to-One vs One-to-Hundred — Two Different Muscles</span></h2>
+<span class="tag">创造 vs 扩展</span><span class="tag">放权</span><span class="tag">系统化</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">把 0 做到 1（在不确定里造出新东西）和把 1 做到 100（把已验证的东西规模化），是两种几乎相反的能力。<strong>创造靠亲手做和速度，扩展靠系统和放权。</strong>很多人卡在：用造东西的方式去扩张，自己变成瓶颈。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Doing what we already know how to do takes the world from 1 to n... But every time we create something new, we go from 0 to 1."</span>
+<span class="zh">"做我们已经知道怎么做的事，是把世界从 1 推到 n……但每当我们创造全新的东西，是从 0 走到 1。"</span>
+<span class="source">— Peter Thiel,《Zero to One》Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">两块肌肉的对照</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="320" height="200" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="360" y="20" width="320" height="200" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">0 → 1 · 创造肌肉</text>
+<text x="35" y="80" font-family="Georgia" font-size="12" fill="#5a3818">· 目标：找到能 work 的东西</text>
+<text x="35" y="104" font-family="Georgia" font-size="12" fill="#5a3818">· 速度 &gt; 正确，错了快改</text>
+<text x="35" y="128" font-family="Georgia" font-size="12" fill="#5a3818">· 亲手做，全栈通吃</text>
+<text x="35" y="152" font-family="Georgia" font-size="12" fill="#5a3818">· 没有 playbook，靠判断</text>
+<text x="35" y="176" font-family="Georgia" font-size="12" fill="#5a3818">· 少即是多，砍范围</text>
+<text x="35" y="200" font-family="Georgia" font-size="12" fill="#5a3818">· 衡量：有没有人要</text>
+<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">1 → 100 · 扩展肌肉</text>
+<text x="375" y="80" font-family="Georgia" font-size="12" fill="#2a3a18">· 目标：把它复制一百份</text>
+<text x="375" y="104" font-family="Georgia" font-size="12" fill="#2a3a18">· 可复制 &gt; 灵光一现</text>
+<text x="375" y="128" font-family="Georgia" font-size="12" fill="#2a3a18">· 招人、放权、建系统</text>
+<text x="375" y="152" font-family="Georgia" font-size="12" fill="#2a3a18">· 把判断写成流程</text>
+<text x="375" y="176" font-family="Georgia" font-size="12" fill="#2a3a18">· 一致性、质量护栏</text>
+<text x="375" y="200" font-family="Georgia" font-size="12" fill="#2a3a18">· 衡量：能不能不靠你跑</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：BigCat 的团队从 3 人长到 12 人。最关键的服务是他亲手写的，核心改动他习惯自己 review、自己拍。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 用造东西的方式扩张</div>
+<p>"核心链路太重要，还是我自己看吧，你们先做外围。"——三个月后他成了所有关键 PR 的瓶颈，团队最强的人因为碰不到核心、长不快开始找下家。他在 12 人团队里干 3 人时的活。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 切换到扩展肌肉</div>
+<p>"把核心服务的<strong>判断标准</strong>写成设计原则文档和 review checklist，指定两个 owner，我退到<strong>护栏角色</strong>，只看是否触发红线。"<br>对接手人："这块以前是我的命根子，现在是你的了。<strong>我给你边界，不给你答案</strong>——撞红线我拦，红线内不插手。"</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">自检：我在扩展期还在用创造期的动作吗？</div>
+<ul class="checklist">
+<li>团队里<strong>只有我能做</strong>的事，是越来越多还是越来越少？（越少才是健康扩展）</li>
+<li>我有没有把<strong>"我的判断"写成"别人能用的标准"</strong>，而非只活在脑子里？</li>
+<li>我离开两周，团队的关键决策会<strong>停摆</strong>还是<strong>照常</strong>？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把不放权当高标准。</strong>"只有我能保证质量"——短期对，长期封死了团队成长和自己的上行。</li>
+<li><strong>过早系统化。</strong>0→1 阶段就大写流程，把还没验证的东西提前固化，扼杀探索。</li>
+<li><strong>以为擅长一块就擅长另一块。</strong>很多 0→1 创始人扩张期被换掉，不是失败，是肌肉不匹配。</li>
+<li><strong>规模化仍用英雄叙事。</strong>表彰"今晚谁救了火"，于是大家制造火好去救——奖励错了行为。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Peter Thiel,《Zero to One》</strong>——0→1 与 1→n 的本质区分。<br><strong>Reid Hoffman,《Blitzscaling》</strong>——规模化阶段为何要主动牺牲效率换速度。<br><strong>Will Larson,《An Elegant Puzzle》</strong>——把判断沉淀为系统、放权与团队拓扑。</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>大厂里的"创业者"陷阱：怎么保住 0→1 肌肉不被官僚萎缩
+<span class="en">The Intrapreneur's Trap</span></h2>
+<span class="tag">内部创业</span><span class="tag">影响力</span><span class="tag">超级个体</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">大厂奖励"等许可、写 PPT、对齐到所有人都同意"，这套行为在初创是慢性死亡。想在大厂里做超级个体，要在官僚环境里有选择地保留创业者的反射——但分清哪些"绕过"会上行、哪些会让你被打标签。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The hallmark of originality is rejecting the default and exploring whether a better option exists."</span>
+<span class="zh">"原创性的标志，是拒绝默认选项，去探索是否存在更好的可能。"</span>
+<span class="source">— Adam Grant,《Originals》Ch.1</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：申请资源 vs 先做出来</div>
+<div class="scene">
+<div class="setup">情境：BigCat 看到一个内部工具的明显改进机会，但它不在本季 OKR 里。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 纯大厂反射</div>
+<p>"先写提案，排进下季度 planning，等组织批资源、对齐完三个团队再说。"——半年过去，窗口关了，或提案在第四次评审里被磨成不痛不痒。</p>
+</div>
+<div class="dialog bad">
+<div class="speaker">✗ 纯初创反射（大厂会被打标签）</div>
+<p>"直接拉两个人偷偷做了上线，先斩后奏。"——东西也许不错，但你动了别人的系统，被贴"不可控、不尊重流程"的标签，升职 calibration 上有人记仇。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 内部创业者的中间道</div>
+<p>用<strong>不需要审批的小原型</strong>，只碰自己有权限的范围，拿真实数据证明价值。然后带着<strong>能 demo 的东西</strong>而非 PPT 去找 owner："我做了个原型验证了 X，想聊怎么接进你的 roadmap、署你们的名。"——用作品降低决策成本，用合作而非绕过来扩张。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">自检：哪些大厂习惯是初创负债 / 哪些反射要保住</div>
+<ul class="checklist">
+<li><strong>等许可文化</strong>：大厂里安全，初创里是慢性死亡——练习在可逆、低风险的事上"先做后报"。</li>
+<li><strong>PPT 驱动</strong>：会 demo 的原型胜过会做幻灯片——保住"造出来再说"的肌肉。</li>
+<li><strong>对齐到所有人满意</strong>：常等于平庸——分清哪些决定真需要广泛对齐，哪些只需一两个关键人点头。</li>
+<li><strong>边界感</strong>：这是大厂教你的真本事，初创里也别丢——绕过流程前想清楚动了谁的地盘。</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"创业精神"当无视流程的许可证。</strong>大厂流程一半是官僚，一半是别人用事故换来的保护，分不清就踩雷。</li>
+<li><strong>用 demo 羞辱而非邀请。</strong>"看，我一个人就做出了你们半年没做的"——你赢了原型，输了未来的合作。</li>
+<li><strong>把可见性误当影响力。</strong>到处刷存在感不等于不可替代；杠杆是别人绕不过你的作品。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">女性视角提示</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+"先斩后奏"的内部创业对女性容错率更低：同样"绕过流程"，男性常被读作"有 ownership、敢闯"，女性更易被读作"不守规矩、难合作"（likability 惩罚）。对策：把单打独斗的原型尽早转成<strong>有联署人的合作</strong>，把"她擅自行动"改写成"她促成了一次跨团队协作"。不是退缩，是给同样的胆识配一个不反噬的包装。
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Adam Grant,《Originals》</strong>——在体制内推动新想法的策略，以及"先获得地位再冒险"的时序。<br><strong>Gifford Pinchot,《Intrapreneuring》</strong>——"intrapreneur"一词的来源，大组织内部创业的经典论述。</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>迁移时该卸载什么、新建什么：双向转换地图
+<span class="en">What to Unload &amp; What to Build When You Switch</span></h2>
+<span class="tag">职业迁移</span><span class="tag">技能转换</span><span class="tag">自我诊断</span>
+</div>
+
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">跨阶段迁移最大的风险不是缺技能，是<strong>带着上一段的肌肉记忆不卸载</strong>。大厂去初创最易死于"过度结构化"，初创来大厂最易撞墙于"无视系统"。先想清哪些能力可迁移、哪些是负债、哪些必须新建。</div>
+</div>
+
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"The higher you go, the more your problems are behavioral. What got you here won't get you there."</span>
+<span class="zh">"你爬得越高，问题越是行为层面的。让你走到这里的本事，无法带你去往那里。"</span>
+<span class="source">— Marshall Goldsmith,《What Got You Here Won't Get You There》</span>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">技能迁移转换表</div>
+<div class="frame-diagram">
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="15" y="20" width="218" height="200" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
+<rect x="241" y="20" width="218" height="200" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
+<rect x="467" y="20" width="218" height="200" rx="6" fill="#faecd8" stroke="#c47040" stroke-width="2"/>
+<text x="124" y="46" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">✓ 可迁移</text>
+<text x="28" y="74" font-family="Georgia" font-size="11" fill="#2a3a18">· 技术判断力</text>
+<text x="28" y="98" font-family="Georgia" font-size="11" fill="#2a3a18">· 把复杂讲简单</text>
+<text x="28" y="122" font-family="Georgia" font-size="11" fill="#2a3a18">· 招人识人</text>
+<text x="28" y="146" font-family="Georgia" font-size="11" fill="#2a3a18">· 给反馈</text>
+<text x="28" y="170" font-family="Georgia" font-size="11" fill="#2a3a18">· 信任与诚实</text>
+<text x="350" y="46" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#a04020">⚠ 可能是负债</text>
+<text x="254" y="74" font-family="Georgia" font-size="11" fill="#5a3818">大厂→初创：</text>
+<text x="254" y="96" font-family="Georgia" font-size="11" fill="#5a3818">  过度流程/等许可</text>
+<text x="254" y="118" font-family="Georgia" font-size="11" fill="#5a3818">  分工过细的依赖</text>
+<text x="254" y="146" font-family="Georgia" font-size="11" fill="#5a3818">初创→大厂：</text>
+<text x="254" y="168" font-family="Georgia" font-size="11" fill="#5a3818">  无视流程/单点英雄</text>
+<text x="254" y="190" font-family="Georgia" font-size="11" fill="#5a3818">  绕过 stakeholder</text>
+<text x="576" y="46" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#9a5a28">+ 必须新建</text>
+<text x="480" y="74" font-family="Georgia" font-size="11" fill="#5a3818">大厂→初创：</text>
+<text x="480" y="96" font-family="Georgia" font-size="11" fill="#5a3818">  全栈、模糊容忍</text>
+<text x="480" y="118" font-family="Georgia" font-size="11" fill="#5a3818">  无资源造结果</text>
+<text x="480" y="146" font-family="Georgia" font-size="11" fill="#5a3818">初创→大厂：</text>
+<text x="480" y="168" font-family="Georgia" font-size="11" fill="#5a3818">  跨团队对齐</text>
+<text x="480" y="190" font-family="Georgia" font-size="11" fill="#5a3818">  向上 &amp; 政治读图</text>
+</svg>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">场景示范：迁移前的自我诊断对话</div>
+<div class="scene">
+<div class="setup">情境：BigCat 在考虑要不要离开大厂去一家 B 轮初创做工程负责人。</div>
+<div class="dialog good">
+<div class="speaker">✓ 对自己诚实的三个问题</div>
+<p><strong>1. 我的成就感来自哪？</strong>"从无到有造东西"还是"把已有的做得更稳更大"？前者适合早期，后者适合规模化。骗自己的代价是几年错配。</p>
+<p><strong>2. 我的优势有多少来自大厂平台？</strong>品牌、资源、协作网——诚实区分"我的能力"和"平台借我的能力"，离开后哪些归零。</p>
+<p><strong>3. 我能忍受没有结构的程度？</strong>初创没清晰职级、现成系统，薪资可能降——这是本质，问题是你的心理和财务缓冲够不够。</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">迁移检查表</div>
+<ul class="checklist">
+<li>我列出了要<strong>主动卸载</strong>的 2 个旧习惯了吗？（不是新学什么，是停做什么）</li>
+<li>我区分了"我的能力"和"平台借我的能力"——离开后哪些会归零？</li>
+<li>我有<strong>财务缓冲</strong>（FU money / runway）撑过适配期的波动吗？</li>
+<li>前 90 天目标是<strong>先理解再改造</strong>，还是急着证明自己？（迁移者最常死于第二种）</li>
+<li>我问过<strong>走过这条路的人</strong>最容易踩的坑吗？</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>用旧地图走新路。</strong>带一整套大厂流程去 5 人初创，团队还没产品就先有了官僚。</li>
+<li><strong>低估平台红利的归零。</strong>很多"我的影响力"是公司品牌借的，换地方才发现门不再自动打开。</li>
+<li><strong>迁移即刻大改。</strong>前 90 天就推翻一切，等于把"理解期"换成"树敌期"。</li>
+<li><strong>把跳槽当逃离。</strong>先搞清你逃的是阶段错配还是别的问题，否则只是跳进另一个错配。</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Marshall Goldsmith,《What Got You Here Won't Get You There》</strong>——旧成功模式为何在转型时变成障碍。<br><strong>Michael Watkins,《The First 90 Days》</strong>——前 90 天"先诊断后改造"的节奏。<br><strong>Marty Cagan,《EMPOWERED》</strong>——不同阶段团队所需领导力的差异。</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考 · 推到边界</h3>
+<details>
+<summary>1. "阶段适配"会不会变成不成长、不改进的借口？</summary>
+<div>会，这是它的滥用边界。"我们是初创所以不需要流程"可能是诚实判断，也可能是逃避工程纪律的遮羞布。区分点：<strong>你牺牲的东西是否在为当前最关键的约束让路。</strong>牺牲流程换速度是真 trade-off；但牺牲到没测试、没 review、关键知识全在一个人脑里，那不是阶段适配，是埋雷。问自己："这个简化是为了跑得快，还是只因为做对的事太麻烦？"</div>
+</details>
+<details>
+<summary>2. 从大厂高位去初创，光环会不会反而是包袱？</summary>
+<div>常常是。大厂 title 带来的不只是期待，还有被平台惯出来的工作方式：有人帮你搞定招聘、法务、跨团队协调，到初创全没了。更隐蔽的是身份惯性：你习惯用职级行使影响力，初创只认你<strong>这周亲手解决了什么</strong>。健康的迁移者会主动"降维"——前几个月刻意做脏活，重建"能直接创造价值"的肌肉和信任。光环要主动卸下，不然它替你拒绝成长。</div>
+</details>
+<details>
+<summary>3. "超级个体"和"扩展型 leader"矛盾吗？</summary>
+<div>有真实张力。超级个体的杠杆来自不可替代，扩展型 leader 的价值恰恰来自<strong>让自己变得可替代</strong>。你越想亲手做惊艳的东西越难放权。一种整合：把"不可替代"从<strong>执行层</strong>挪到<strong>判断层</strong>——不该是"只有我能写这段代码"，而是"只有我能定义方向、看穿陷阱、识别人才"。执行放权，判断和品味做到稀缺，既扩展团队又保住个人杠杆。</div>
+</details>
+<details>
+<summary>4. 这套阶段框架在硬科技 vs 纯软件里一样成立吗？</summary>
+<div>框架成立，但参数差异巨大。纯软件 0→1 几周出原型、快速试错，"先扩张再修"常可行；但生物医药、航天、芯片，0→1 要数年和巨资，"快速失败"等于公司归零，反而需要早期就有相当的工程纪律。监管重的行业（金融、医疗）也一样，绕过流程的成本是法律责任。别照搬硅谷叙事：先问你行业里<strong>试错的单位成本和不可逆程度</strong>，再决定速度与结构的配比。</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本期习作 · Your Day 41 Action</h3>
+<p>本期做两件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>第一步（阶段诊断）：</strong>用 Card 1 的自检四问，给<strong>现在</strong>的团队定位——整体在 0→1、1→100 还是平时模式？再诚实回答：我<strong>个人</strong>当下的默认动作（亲自下场 vs 放权建系统）和这个阶段匹配吗？把不匹配的那条写下来。<br><br>
+<strong>第二步（卸载一个动作）：</strong>选一件"只有你能做"的事，这周把它的<strong>判断标准写成一页文档或 checklist</strong>，交给一个人 own，你退到护栏角色。这是把创造肌肉转成扩展肌肉的最小一步。<br><br>
+一个反思题：<strong>如果下周就跳去一家 5 人初创，你今天倚仗的能力里有几成是"你的"，几成是"大厂平台借你的"？</strong>这个比例决定你迁移时的真实起点。
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 41 · 2026.06.29</footer>
+</div>
+</body>
+</html>
