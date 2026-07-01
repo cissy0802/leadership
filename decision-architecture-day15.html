@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>领导力 Day 15：决策架构</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -74,32 +75,27 @@ header h1{font-size:1.55rem}
 </head>
 <body>
 <div class="container">
-
 <header>
 <div class="week-tag">Day 15 · 2026.06.04</div>
-<h1>决策架构：让"谁拍板、怎么拍"不再靠运气</h1>
+<h1 data-tts="75149a8bc74299c1">决策架构：让"谁拍板、怎么拍"不再靠运气</h1>
 <div class="meta"><span>主题：Decision Architecture</span><span>·</span><span>4 个工具</span></div>
 <div class="subtitle">"Disagree and commit." — Jeff Bezos, 2016 致股东信</div>
 </header>
-
 <div class="intro">
 <strong>本周的命题：</strong>技术 leader 上行的瓶颈，很少是"不会做技术决策"，而是<strong>组织里的决策机制坏了</strong>——没人知道谁拍板、可逆的小事走了重流程、重大不可逆的事反而被一句"先上再说"草草定了、决策后还在内耗。本期四个工具回答四个问题：<strong>这个决策值多重的流程</strong>（决策类型与机制）、<strong>谁拍板</strong>（RAPID）、<strong>怎么让日常决策快起来</strong>（DACI）、<strong>定了之后怎么让所有人真正执行</strong>（Disagree and Commit）。
 </div>
-
 <!-- ============ Card 1 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 01</div>
-<h2>决策类型分层：先问这扇门能不能往回走
+<h2 data-tts="8bbff508c431b0bc">决策类型分层：先问这扇门能不能往回走
 <span class="en">Type 1 vs Type 2 — Match Process to Reversibility</span></h2>
 <span class="tag">可逆性</span><span class="tag">决策机制</span><span class="tag">流程重量</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">决策前先分诊：<strong>双向门</strong>（可逆）就授权、快、容忍试错；<strong>单向门</strong>（不可逆）才值得慢、值得共识、值得你亲自上。流程的重量应当匹配决策的代价，而不是匹配你的焦虑。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -108,7 +104,6 @@ header h1{font-size:1.55rem}
 <span class="source">— Jeff Bezos, Amazon 致股东信 2015</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -124,7 +119,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">决策前 30 秒分诊清单</div>
 <ul class="checklist">
@@ -135,30 +129,28 @@ header h1{font-size:1.55rem}
 <li>我是不是在给不可逆决策走了过轻的流程？（这个更危险）</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="frame-diagram">
-<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
-<rect x="20" y="20" width="320" height="210" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
-<rect x="360" y="20" width="320" height="210" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
-<text x="180" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#4a6a28">双向门 · 可逆</text>
-<text x="35" y="80" font-family="Georgia" font-size="12" fill="#2a3a18">· 回滚成本低（小时 / 天）</text>
-<text x="35" y="104" font-family="Georgia" font-size="12" fill="#2a3a18">· 默认授权，快速决策</text>
-<text x="35" y="128" font-family="Georgia" font-size="12" fill="#2a3a18">· 容忍试错，错了就改</text>
-<text x="35" y="152" font-family="Georgia" font-size="12" fill="#2a3a18">· 工具：DACI / 直接授权</text>
-<text x="35" y="176" font-family="Georgia" font-size="12" fill="#2a3a18">· 例：选库、命名、配置参数</text>
-<text x="35" y="208" font-family="Georgia" font-size="12.5" font-weight="700" fill="#4a6a28">→ 求快，别开会</text>
-<text x="520" y="48" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#a04020">单向门 · 不可逆</text>
-<text x="375" y="80" font-family="Georgia" font-size="12" fill="#5a3818">· 回滚成本极高或不可能</text>
-<text x="375" y="104" font-family="Georgia" font-size="12" fill="#5a3818">· 值得慢、值得共识</text>
-<text x="375" y="128" font-family="Georgia" font-size="12" fill="#5a3818">· 你亲自上、正式记录</text>
-<text x="375" y="152" font-family="Georgia" font-size="12" fill="#5a3818">· 工具：RAPID / RFC</text>
-<text x="375" y="176" font-family="Georgia" font-size="12" fill="#5a3818">· 例：数据迁移、对外 API、选型锁定</text>
-<text x="375" y="208" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a04020">→ 求稳，慢慢来</text>
+<svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#e6efdc" height="210" rx="6" stroke="#5c8a3a" stroke-width="2" width="320" x="20" y="20"></rect>
+<rect fill="#f5e0d0" height="210" rx="6" stroke="#b85c3a" stroke-width="2" width="320" x="360" y="20"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="180" y="48">双向门 · 可逆</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="35" y="80">· 回滚成本低（小时 / 天）</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="35" y="104">· 默认授权，快速决策</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="35" y="128">· 容忍试错，错了就改</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="35" y="152">· 工具：DACI / 直接授权</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="35" y="176">· 例：选库、命名、配置参数</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="12.5" font-weight="700" x="35" y="208">→ 求快，别开会</text>
+<text fill="#a04020" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="520" y="48">单向门 · 不可逆</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="375" y="80">· 回滚成本极高或不可能</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="375" y="104">· 值得慢、值得共识</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="375" y="128">· 你亲自上、正式记录</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="375" y="152">· 工具：RAPID / RFC</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="375" y="176">· 例：数据迁移、对外 API、选型锁定</text>
+<text fill="#a04020" font-family="Georgia" font-size="12.5" font-weight="700" x="375" y="208">→ 求稳，慢慢来</text>
 </svg>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -169,27 +161,23 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Jeff Bezos,</strong> Amazon 致股东信（2015 / 2016）— "one-way / two-way door" 的原始出处，已成行业通用语。</div>
 </div>
 </div>
-
 <!-- ============ Card 2 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 02</div>
-<h2>RAPID：给"谁拍板"一个明确答案
+<h2 data-tts="72bd082514c5b8c0">RAPID：给"谁拍板"一个明确答案
 <span class="en">RAPID — Who Has the D?</span></h2>
 <span class="tag">决策权</span><span class="tag">跨团队</span><span class="tag">角色分配</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">当一个跨团队决策卡住，问题几乎从不是"信息不够"，而是<strong>没人知道谁拍板</strong>。RAPID 把决策拆成五个角色——Recommend（推荐）、Agree（同意，有否决权）、Perform（执行）、Input（输入）、Decide（拍板）。最关键的一条：<strong>D 必须是单独一个人</strong>。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -198,32 +186,30 @@ header h1{font-size:1.55rem}
 <span class="source">— Rogers &amp; Blenko,《Who Has the D?》HBR, 2006</span>
 </div>
 </div>
-
 <div class="section">
 <div class="frame-diagram">
-<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+<svg viewbox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
 <g font-family="Georgia">
-<circle cx="48" cy="40" r="20" fill="#a8702d"/><text x="48" y="46" text-anchor="middle" font-size="18" font-weight="700" fill="#fffaf0">R</text>
-<text x="82" y="36" font-size="14" font-weight="700" fill="#5c3a18">Recommend 推荐</text>
-<text x="82" y="56" font-size="12" fill="#8a6d3b">提出方案、搜集信息、驱动分析</text>
-<circle cx="48" cy="92" r="20" fill="#a8702d"/><text x="48" y="98" text-anchor="middle" font-size="18" font-weight="700" fill="#fffaf0">A</text>
-<text x="82" y="88" font-size="14" font-weight="700" fill="#5c3a18">Agree 同意（有否决权）</text>
-<text x="82" y="108" font-size="12" fill="#8a6d3b">少数人才该有——慎发</text>
-<circle cx="48" cy="144" r="20" fill="#a8702d"/><text x="48" y="150" text-anchor="middle" font-size="18" font-weight="700" fill="#fffaf0">P</text>
-<text x="82" y="140" font-size="14" font-weight="700" fill="#5c3a18">Perform 执行</text>
-<text x="82" y="160" font-size="12" fill="#8a6d3b">决策落地的人</text>
-<circle cx="48" cy="196" r="20" fill="#a8702d"/><text x="48" y="202" text-anchor="middle" font-size="18" font-weight="700" fill="#fffaf0">I</text>
-<text x="82" y="192" font-size="14" font-weight="700" fill="#5c3a18">Input 输入</text>
-<text x="82" y="212" font-size="12" fill="#8a6d3b">提供意见——但不投票</text>
-<circle cx="48" cy="240" r="22" fill="#5c3a18"/><text x="48" y="247" text-anchor="middle" font-size="19" font-weight="700" fill="#f5e8c8">D</text>
-<text x="82" y="236" font-size="14" font-weight="700" fill="#5c3a18">Decide 拍板（唯一一人）</text>
-<text x="82" y="256" font-size="12" fill="#a04020">最终负责——绝不能是"两个 D"</text>
+<circle cx="48" cy="40" fill="#a8702d" r="20"></circle><text fill="#fffaf0" font-size="18" font-weight="700" text-anchor="middle" x="48" y="46">R</text>
+<text fill="#5c3a18" font-size="14" font-weight="700" x="82" y="36">Recommend 推荐</text>
+<text fill="#8a6d3b" font-size="12" x="82" y="56">提出方案、搜集信息、驱动分析</text>
+<circle cx="48" cy="92" fill="#a8702d" r="20"></circle><text fill="#fffaf0" font-size="18" font-weight="700" text-anchor="middle" x="48" y="98">A</text>
+<text fill="#5c3a18" font-size="14" font-weight="700" x="82" y="88">Agree 同意（有否决权）</text>
+<text fill="#8a6d3b" font-size="12" x="82" y="108">少数人才该有——慎发</text>
+<circle cx="48" cy="144" fill="#a8702d" r="20"></circle><text fill="#fffaf0" font-size="18" font-weight="700" text-anchor="middle" x="48" y="150">P</text>
+<text fill="#5c3a18" font-size="14" font-weight="700" x="82" y="140">Perform 执行</text>
+<text fill="#8a6d3b" font-size="12" x="82" y="160">决策落地的人</text>
+<circle cx="48" cy="196" fill="#a8702d" r="20"></circle><text fill="#fffaf0" font-size="18" font-weight="700" text-anchor="middle" x="48" y="202">I</text>
+<text fill="#5c3a18" font-size="14" font-weight="700" x="82" y="192">Input 输入</text>
+<text fill="#8a6d3b" font-size="12" x="82" y="212">提供意见——但不投票</text>
+<circle cx="48" cy="240" fill="#5c3a18" r="22"></circle><text fill="#f5e8c8" font-size="19" font-weight="700" text-anchor="middle" x="48" y="247">D</text>
+<text fill="#5c3a18" font-size="14" font-weight="700" x="82" y="236">Decide 拍板（唯一一人）</text>
+<text fill="#a04020" font-size="12" x="82" y="256">最终负责——绝不能是"两个 D"</text>
 </g>
 </svg>
 <div style="font-size:0.82rem;color:#8a6d3b;margin-top:6px">字母 ≠ 流程顺序，只是助记；实际次序通常是 I→R→A→D→P。</div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -239,7 +225,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">用 RAPID 前自检</div>
 <ul class="checklist">
@@ -249,7 +234,6 @@ header h1{font-size:1.55rem}
 <li>Input 的人清楚自己不是在投票吗？要提前讲明，免得决策后觉得被忽视。</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误 + 女性视角</div>
 <div class="pitfall">
@@ -264,27 +248,23 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Paul Rogers &amp; Marcia Blenko (Bain &amp; Company),《Who Has the D? How Clear Decision Roles Enhance Organizational Performance》</strong>HBR, 2006 — RAPID 框架原始论文。</div>
 </div>
 </div>
-
 <!-- ============ Card 3 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 03</div>
-<h2>DACI：工程团队的轻量决策权
+<h2 data-tts="6820c0ea6a7f40bb">DACI：工程团队的轻量决策权
 <span class="en">DACI — Lightweight Decision Rights</span></h2>
 <span class="tag">轻量级</span><span class="tag">单一 Driver</span><span class="tag">日常决策</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">RAPID 适合重大、跨组、需要正式记录的决策；日常的团队内决策需要更轻的工具——<strong>DACI</strong>：Driver（驱动者，推进但不一定拍板）、Approver（批准者，唯一拍板，通常 1 人）、Contributors（贡献者）、Informed（知会者）。一页纸、一个文档、十分钟。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -293,26 +273,24 @@ header h1{font-size:1.55rem}
 <span class="source">— Andy Grove,《High Output Management》Ch.5</span>
 </div>
 </div>
-
 <div class="section">
 <div class="frame-diagram">
-<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
-<rect x="20" y="20" width="320" height="160" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
-<rect x="360" y="20" width="320" height="160" rx="6" fill="#fcf6e8" stroke="#5c3a18" stroke-width="2"/>
-<text x="180" y="46" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">RAPID</text>
-<text x="35" y="74" font-family="Georgia" font-size="12" fill="#3a2f1c">· 重大 / 跨多团队 / 不可逆</text>
-<text x="35" y="98" font-family="Georgia" font-size="12" fill="#3a2f1c">· 5 个角色，正式记录</text>
-<text x="35" y="122" font-family="Georgia" font-size="12" fill="#3a2f1c">· 较重，慎用</text>
-<text x="35" y="156" font-family="Georgia" font-size="12.5" font-weight="700" fill="#a04020">单向门用它</text>
-<text x="520" y="46" text-anchor="middle" font-family="Georgia" font-size="15" font-weight="700" fill="#5c3a18">DACI</text>
-<text x="375" y="74" font-family="Georgia" font-size="12" fill="#3a2f1c">· 日常 / 团队内 / 可逆</text>
-<text x="375" y="98" font-family="Georgia" font-size="12" fill="#3a2f1c">· 4 个角色，一页纸</text>
-<text x="375" y="122" font-family="Georgia" font-size="12" fill="#3a2f1c">· 轻快，可异步</text>
-<text x="375" y="156" font-family="Georgia" font-size="12.5" font-weight="700" fill="#4a6a28">双向门用它</text>
+<svg viewbox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#fcf6e8" height="160" rx="6" stroke="#a8702d" stroke-width="2" width="320" x="20" y="20"></rect>
+<rect fill="#fcf6e8" height="160" rx="6" stroke="#5c3a18" stroke-width="2" width="320" x="360" y="20"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="180" y="46">RAPID</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="35" y="74">· 重大 / 跨多团队 / 不可逆</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="35" y="98">· 5 个角色，正式记录</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="35" y="122">· 较重，慎用</text>
+<text fill="#a04020" font-family="Georgia" font-size="12.5" font-weight="700" x="35" y="156">单向门用它</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="520" y="46">DACI</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="375" y="74">· 日常 / 团队内 / 可逆</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="375" y="98">· 4 个角色，一页纸</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="375" y="122">· 轻快，可异步</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="12.5" font-weight="700" x="375" y="156">双向门用它</text>
 </svg>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -328,7 +306,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">起一份 DACI 前自检</div>
 <ul class="checklist">
@@ -338,7 +315,6 @@ header h1{font-size:1.55rem}
 <li>决策记下来了吗？三个月后有人问"当时为什么这么定"，找得到答案吗？</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -349,27 +325,23 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>DACI</strong> 源自 Intuit，由 <strong>Atlassian Team Playbook</strong>（"DACI: a decision-making framework"）推广普及。<br><strong>Andy Grove,《High Output Management》</strong>Ch.5 — "自由讨论 → 清晰决定 → 全力支持" 的决策三段论。</div>
+<div class="ref"><strong>DACI</strong> 源自 Intuit，由 <strong>Atlassian Team Playbook</strong>（"DACI: a decision-making framework"）推广普及。<br/><strong>Andy Grove,《High Output Management》</strong>Ch.5 — "自由讨论 → 清晰决定 → 全力支持" 的决策三段论。</div>
 </div>
 </div>
-
 <!-- ============ Card 4 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 04</div>
-<h2>Disagree and Commit：决策之后的纪律
+<h2 data-tts="aed6500d914d79db">Disagree and Commit：决策之后的纪律
 <span class="en">Disagree and Commit — The Discipline After the Decision</span></h2>
 <span class="tag">异议</span><span class="tag">执行</span><span class="tag">团队承诺</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle"><strong>异议属于决策之前，执行属于决策之后。</strong>一旦 D 拍了板，即使你不同意，也全力执行——而不是阳奉阴违、背后唱衰、或留一手等着说"我早说过"。这是高效团队与内耗团队的分水岭。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -378,7 +350,6 @@ header h1{font-size:1.55rem}
 <span class="source">— Jeff Bezos, Amazon 致股东信 2016</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -394,7 +365,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">承诺前自检</div>
 <ul class="checklist">
@@ -404,14 +374,12 @@ header h1{font-size:1.55rem}
 <li>如果这是不可逆且我判断有真实危害的决策——我是去 escalate 了，还是用"commit"来回避冲突？</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">边界（诚实承认）</div>
 <div class="pitfall">
 Disagree and commit <strong>不适用于</strong>"不可逆 + 高风险 + 你判断会造成真实伤害"的决策——那种要正式 escalate，不是默默 commit。把"求同存异"当成万能挡箭牌，等于放弃了你作为专业人士的责任。
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误 + 女性视角</div>
 <div class="pitfall">
@@ -426,22 +394,19 @@ Disagree and commit <strong>不适用于</strong>"不可逆 + 高风险 + 你判
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Jeff Bezos,</strong> Amazon 致股东信 2016 — "disagree and commit" 出处。<br><strong>Patrick Lencioni,《The Five Dysfunctions of a Team》</strong>— "Commitment is a function of clarity and buy-in"：承诺不等于共识，只需清晰 + 被听见。</div>
+<div class="ref"><strong>Jeff Bezos,</strong> Amazon 致股东信 2016 — "disagree and commit" 出处。<br/><strong>Patrick Lencioni,《The Five Dysfunctions of a Team》</strong>— "Commitment is a function of clarity and buy-in"：承诺不等于共识，只需清晰 + 被听见。</div>
 </div>
 </div>
-
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>本周习作 · Your Day 15 Action</h3>
 <p>本周你要做一件具体的事，不是反思也不是阅读：</p>
 <div class="action">
-选一个本周卡在你面前的决策。<strong>第一步</strong>，做 Card 1 的 30 秒分诊：单向门还是双向门？<strong>第二步</strong>，按规模选工具——跨团队就画一张 RAPID（白纸黑字写下<strong>唯一的 D 是谁</strong>）；团队内就起一份半页 DACI doc（一个 Driver、一个 Approver、48 小时异步 input 窗口）。本周内让这个决策真正"落地有人 own"。<br><br>会后记一行：<strong>这个决策从启动到拍板花了多久？比上次同类决策快了还是慢了？</strong>
+选一个本周卡在你面前的决策。<strong>第一步</strong>，做 Card 1 的 30 秒分诊：单向门还是双向门？<strong>第二步</strong>，按规模选工具——跨团队就画一张 RAPID（白纸黑字写下<strong>唯一的 D 是谁</strong>）；团队内就起一份半页 DACI doc（一个 Driver、一个 Approver、48 小时异步 input 窗口）。本周内让这个决策真正"落地有人 own"。<br/><br/>会后记一行：<strong>这个决策从启动到拍板花了多久？比上次同类决策快了还是慢了？</strong>
 </div>
 </div>
-
 <!-- ============ Deepen ============ -->
 <div class="deepen">
 <h3>深入思考</h3>
@@ -451,16 +416,14 @@ Disagree and commit <strong>不适用于</strong>"不可逆 + 高风险 + 你判
 <details><summary>决策速度 vs 决策质量，你的团队该往哪个方向调？</summary><div>过去一年，是"决策太慢"伤害大，还是"决策太草率"伤害大？这个答案决定你该加流程还是减流程。常见误判：明明问题是"太慢"（双向门也走重流程），却因为一次草率决策翻车，反而给所有决策加审批——结果把整个团队拖进决策瘫痪。先诊断主要病因，再开药。</div></details>
 <details><summary>是否该强制每个决策都留"为什么"的两行记录？</summary><div>决策日志（decision log / ADR）的长期价值常被低估：它让团队不必在同一问题上反复从零争论，也让新人快速理解"为什么我们当初这么选"。成本是每个 Approver 多写两行理由。问题是：在你的团队，不留记录导致的"重复决策"损耗，是否已经大到值得引入这点摩擦？多数成长中的工程团队，答案是值得。</div></details>
 </div>
-
 <nav class="footer-nav">
 <a href="index.html">← 返回目录</a>
 </nav>
-
 <footer>BigCat · Leadership Daily · Day 15 · 2026.06.04</footer>
 </div>
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </body>
 </html>
