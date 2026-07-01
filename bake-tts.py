@@ -58,9 +58,17 @@ def plain_text(attr_value: str) -> str:
 
 
 def normalize_for_tts(text: str) -> str:
-    """Light normalization. Azure handles smart quotes / em-dash fine, but
-    fixing nbsp etc. avoids weird pauses."""
-    return text.replace(" ", " ")  # nbsp → regular space
+    """Light normalization. Fix nbsp + spell out ✓/✗/⚠ marks
+    (Azure otherwise drops them, losing good/bad semantic). NOTE: × is
+    NOT replaced — commonly used as multiplication ("Care × Challenge")."""
+    text = text.replace(" ", " ")
+    text = text.replace("✓ ", "正例，").replace("✓ ", "正例，").replace("✓", "正例，")
+    text = text.replace("✔ ", "正例，").replace("✔ ", "正例，").replace("✔", "正例，")
+    text = text.replace("✗ ", "反例，").replace("✗ ", "反例，").replace("✗", "反例，")
+    text = text.replace("✘ ", "反例，").replace("✘ ", "反例，").replace("✘", "反例，")
+    text = text.replace("❌ ", "反例，").replace("❌ ", "反例，").replace("❌", "反例，")
+    text = text.replace("⚠️ ", "注意，").replace("⚠ ", "注意，").replace("⚠", "注意，")
+    return text
 
 
 def ssml_escape(text: str) -> str:
