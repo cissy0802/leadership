@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>领导力 Day 16：战略与方向</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -74,32 +75,27 @@ header h1{font-size:1.55rem}
 </head>
 <body>
 <div class="container">
-
 <header>
 <div class="week-tag">Day 16 · 2026.06.05</div>
-<h1>战略与方向：从"忙着划水"到"知道往哪游"</h1>
+<h1 data-tts="30472c2ac83fff93">战略与方向：从"忙着划水"到"知道往哪游"</h1>
 <div class="meta"><span>主题：Strategy &amp; Direction</span><span>·</span><span>4 个工具</span></div>
 <div class="subtitle">"The core of strategy work is always the same: discovering the critical factors in a situation and designing a way to coordinate and focus actions to deal with them." — Richard Rumelt</div>
 </header>
-
 <div class="intro">
 <strong>本周的命题：</strong>技术 leader 往上走，瓶颈很少是"执行不力"，而是<strong>方向不清</strong>——团队很忙，但说不清在为什么价值用力；目标列了一长串，却没有一条说明"我们到底要解决哪个问题"。本期四个工具回答四个递进的问题：<strong>我们朝哪游</strong>（北极星指标）、<strong>怎么知道到了</strong>（OKR 设计）、<strong>怎么把方向写成让人能行动的文字</strong>（战略 Memo），以及<strong>信息永远不全时怎么仍然敢定方向</strong>（接纳不确定性）。
 </div>
-
 <!-- ============ Card 1 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 01</div>
-<h2>北极星指标：给团队一个所有人都认得的方向
+<h2 data-tts="812aeadb3f3603c5">北极星指标：给团队一个所有人都认得的方向
 <span class="en">The North Star Metric — One Number for Value</span></h2>
 <span class="tag">方向锚</span><span class="tag">用户价值</span><span class="tag">前置因</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">方向先于目标。一个团队若没有一个所有人都认得的"北极星"——那个最能代表你为用户创造的核心价值的<strong>单一指标</strong>——每个人都会朝自己以为对的方向用力，合力归零。北极星不是营收本身，是营收的<strong>前置因</strong>。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -108,7 +104,6 @@ header h1{font-size:1.55rem}
 <span class="source">— Sean Ellis（"North Star Metric" 概念提出者），&amp; Morgan Brown,《Hacking Growth》</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -123,32 +118,30 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="frame-diagram">
-<svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg">
-<rect x="200" y="20" width="300" height="56" rx="6" fill="#5c3a18"/>
-<text x="350" y="44" text-anchor="middle" font-family="Georgia" font-size="14" font-weight="700" fill="#f5e8c8">★ 北极星指标</text>
-<text x="350" y="63" text-anchor="middle" font-family="Georgia" font-size="11" fill="#e0cba0">每周延迟达标的活跃下游团队数</text>
-<line x1="350" y1="76" x2="130" y2="120" stroke="#a8702d" stroke-width="1.5"/>
-<line x1="350" y1="76" x2="350" y2="120" stroke="#a8702d" stroke-width="1.5"/>
-<line x1="350" y1="76" x2="570" y2="120" stroke="#a8702d" stroke-width="1.5"/>
-<rect x="30" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
-<rect x="250" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
-<rect x="470" y="120" width="200" height="64" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="1.5"/>
-<text x="130" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">输入杠杆 · 速度</text>
-<text x="130" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">P99 延迟达标率</text>
-<text x="350" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">输入杠杆 · 可靠</text>
-<text x="350" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">月故障触发次数</text>
-<text x="570" y="146" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#4a6a28">输入杠杆 · 易用</text>
-<text x="570" y="168" text-anchor="middle" font-family="Georgia" font-size="11" fill="#2a3a18">新接入耗时</text>
-<rect x="200" y="212" width="300" height="44" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="1.5"/>
-<text x="350" y="232" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#a04020">护栏指标 · 别为提速牺牲</text>
-<text x="350" y="249" text-anchor="middle" font-family="Georgia" font-size="11" fill="#5a3818">调用正确率不得下降</text>
+<svg viewbox="0 0 700 270" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#5c3a18" height="56" rx="6" width="300" x="200" y="20"></rect>
+<text fill="#f5e8c8" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="350" y="44">★ 北极星指标</text>
+<text fill="#e0cba0" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="63">每周延迟达标的活跃下游团队数</text>
+<line stroke="#a8702d" stroke-width="1.5" x1="350" x2="130" y1="76" y2="120"></line>
+<line stroke="#a8702d" stroke-width="1.5" x1="350" x2="350" y1="76" y2="120"></line>
+<line stroke="#a8702d" stroke-width="1.5" x1="350" x2="570" y1="76" y2="120"></line>
+<rect fill="#e6efdc" height="64" rx="6" stroke="#5c8a3a" stroke-width="1.5" width="200" x="30" y="120"></rect>
+<rect fill="#e6efdc" height="64" rx="6" stroke="#5c8a3a" stroke-width="1.5" width="200" x="250" y="120"></rect>
+<rect fill="#e6efdc" height="64" rx="6" stroke="#5c8a3a" stroke-width="1.5" width="200" x="470" y="120"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="130" y="146">输入杠杆 · 速度</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="130" y="168">P99 延迟达标率</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="350" y="146">输入杠杆 · 可靠</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="168">月故障触发次数</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="570" y="146">输入杠杆 · 易用</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="570" y="168">新接入耗时</text>
+<rect fill="#f5e0d0" height="44" rx="6" stroke="#b85c3a" stroke-width="1.5" width="300" x="200" y="212"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="350" y="232">护栏指标 · 别为提速牺牲</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="249">调用正确率不得下降</text>
 </svg>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">选北极星的 5 个测试</div>
 <ul class="checklist">
@@ -159,7 +152,6 @@ header h1{font-size:1.55rem}
 <li>全队不看文档，能说出它吗？</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -170,27 +162,23 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Sean Ellis &amp; Morgan Brown,《Hacking Growth》</strong>— "North Star Metric" 的提出与方法。<br><strong>Amplitude,《The North Star Playbook》</strong>— 北极星 + 输入杠杆树的实操模板。</div>
+<div class="ref"><strong>Sean Ellis &amp; Morgan Brown,《Hacking Growth》</strong>— "North Star Metric" 的提出与方法。<br/><strong>Amplitude,《The North Star Playbook》</strong>— 北极星 + 输入杠杆树的实操模板。</div>
 </div>
 </div>
-
 <!-- ============ Card 2 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 02</div>
-<h2>OKR 设计：把 KR 从"待办清单"救成"结果"
+<h2 data-tts="ff7c963799f948fb">OKR 设计：把 KR 从"待办清单"救成"结果"
 <span class="en">OKRs — Key Results Are Outcomes, Not Tasks</span></h2>
 <span class="tag">目标设定</span><span class="tag">可证伪</span><span class="tag">结果 vs 任务</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">Objective 回答"我们要去哪"（定性、鼓舞、有方向）；Key Results 回答"怎么知道到了"（定量、可验证、<strong>能被证伪</strong>）。最常见的失败，是把 KR 写成任务清单（"做完 X"），而不是结果（"X 带来了 Y"）。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -199,24 +187,22 @@ header h1{font-size:1.55rem}
 <span class="source">— Andy Grove,《High Output Management》Ch.6</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
 <div class="setup">情境：BigCat 要给团队定一个季度 OKR，主题是"提升平台稳定性"。</div>
 <div class="dialog bad">
 <div class="speaker">✗ 任务伪装成 KR</div>
-<p>O：提升平台稳定性<br>KR1：完成监控系统迁移<br>KR2：上线熔断机制<br>KR3：写 5 篇 runbook</p>
+<p>O：提升平台稳定性<br/>KR1：完成监控系统迁移<br/>KR2：上线熔断机制<br/>KR3：写 5 篇 runbook</p>
 <p>三个 KR 全是"做了什么"。三件都做完了，稳定性<strong>可能根本没变</strong>——下游照样半夜被叫醒。</p>
 </div>
 <div class="dialog good">
 <div class="speaker">✓ 结果式 KR</div>
-<p>O：让下游团队信任我们的平台不会半夜叫醒他们<br>KR1：由我方故障导致的下游 on-call 触发，从每月 12 次降到 <strong>≤3 次</strong><br>KR2：P0 故障平均恢复时间 (MTTR) 从 45 分钟降到 <strong>≤15 分钟</strong><br>KR3：季度下游团队满意度 (NSAT) 从 6.2 升到 <strong>≥8.0</strong></p>
+<p>O：让下游团队信任我们的平台不会半夜叫醒他们<br/>KR1：由我方故障导致的下游 on-call 触发，从每月 12 次降到 <strong>≤3 次</strong><br/>KR2：P0 故障平均恢复时间 (MTTR) 从 45 分钟降到 <strong>≤15 分钟</strong><br/>KR3：季度下游团队满意度 (NSAT) 从 6.2 升到 <strong>≥8.0</strong></p>
 <p>迁移、熔断、runbook 都还要做——但它们变成达成这些<strong>结果</strong>的手段，而不是目的本身。</p>
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">压测你的 KR</div>
 <ul class="checklist">
@@ -227,7 +213,6 @@ header h1{font-size:1.55rem}
 <li>它能被诚实地<strong>证伪</strong>吗？（无法证伪的 KR 只是口号）</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -238,27 +223,23 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>John Doerr,《Measure What Matters》</strong>— Google OKR 的体系化，含"OKR 与绩效解耦"原则。<br><strong>Andy Grove,《High Output Management》</strong>（Ch.6）— OKR 的思想源头。</div>
+<div class="ref"><strong>John Doerr,《Measure What Matters》</strong>— Google OKR 的体系化，含"OKR 与绩效解耦"原则。<br/><strong>Andy Grove,《High Output Management》</strong>（Ch.6）— OKR 的思想源头。</div>
 </div>
 </div>
-
 <!-- ============ Card 3 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 03</div>
-<h2>写 Strategy Memo：愿望清单 vs 真战略
+<h2 data-tts="71fb61908ca8cdcc">写 Strategy Memo：愿望清单 vs 真战略
 <span class="en">The Strategy Memo — Rumelt's Kernel</span></h2>
 <span class="tag">诊断</span><span class="tag">取舍</span><span class="tag">连贯行动</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">好战略不是一句鼓舞口号，也不是一张目标清单。Rumelt 说战略的内核只有三件事：<strong>诊断</strong>（这到底是什么问题）、<strong>指导方针</strong>（用什么总思路应对）、<strong>连贯行动</strong>（一组互相加强、不自相矛盾的具体动作）。缺了诊断的"战略"，都是愿望清单。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -267,7 +248,6 @@ header h1{font-size:1.55rem}
 <span class="source">— Richard Rumelt,《Good Strategy Bad Strategy》</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -284,7 +264,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">你的 memo 是真战略还是愿望清单？</div>
 <ul class="checklist">
@@ -295,7 +274,6 @@ header h1{font-size:1.55rem}
 <li>去掉所有形容词（最好、领先、卓越）后，还剩下实质吗？</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误 · 女性视角</div>
 <div class="pitfall">
@@ -310,27 +288,23 @@ header h1{font-size:1.55rem}
 研究显示，面对同一份战略 memo，女性作者更容易被评为"细致、执行力强"，而非"有战略眼光"——"strategic"标签的归因存在性别偏差（参见 LeanIn &amp; McKinsey《Women in the Workplace》关于晋升评语的发现）。对策：在 memo 开头用一句显性的判断句——<strong>"我判断核心问题是 X，因此我主张 Y"</strong>——把"判断"和"主张"摆到台面，逼评价者面对你的战略<strong>判断本身</strong>，而不是默认滑向"执行得不错"。
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Richard Rumelt,《Good Strategy Bad Strategy》</strong>— 诊断 / 指导方针 / 连贯行动的"内核"框架。<br><strong>Will Larson,《An Elegant Puzzle》</strong>（"Vision and strategy"）— 工程团队的愿景与战略写法。</div>
+<div class="ref"><strong>Richard Rumelt,《Good Strategy Bad Strategy》</strong>— 诊断 / 指导方针 / 连贯行动的"内核"框架。<br/><strong>Will Larson,《An Elegant Puzzle》</strong>（"Vision and strategy"）— 工程团队的愿景与战略写法。</div>
 </div>
 </div>
-
 <!-- ============ Card 4 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">TOOL 04</div>
-<h2>接纳不确定性：方向要坚定，路径要可改
+<h2 data-tts="6a4dd8626eb4a91a">接纳不确定性：方向要坚定，路径要可改
 <span class="en">Strategy Under Uncertainty — Bet, Learn, Revise</span></h2>
 <span class="tag">概率思维</span><span class="tag">近端目标</span><span class="tag">护栏</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">战略一定建立在不完整的信息上。专业不是"等看清了再定方向"，而是在雾中先定一个<strong>足够近、足够具体的近端目标</strong>，押注、执行、再按反馈修正。<strong>方向要坚定，路径要可改。</strong></div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -339,7 +313,6 @@ header h1{font-size:1.55rem}
 <span class="source">— Annie Duke,《Thinking in Bets》</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -355,7 +328,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">雾中决策检查表</div>
 <ul class="checklist">
@@ -366,7 +338,6 @@ header h1{font-size:1.55rem}
 <li>决策错了，我会复盘"<strong>过程</strong>"还是只骂"结果"？</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -377,22 +348,19 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Annie Duke,《Thinking in Bets》</strong>— 概率思维、resulting、过程 vs 结果。<br><strong>Richard Rumelt,《Good Strategy Bad Strategy》</strong>— "proximate objective（近端目标）"：选一个近到可行的目标当抓手。</div>
+<div class="ref"><strong>Annie Duke,《Thinking in Bets》</strong>— 概率思维、resulting、过程 vs 结果。<br/><strong>Richard Rumelt,《Good Strategy Bad Strategy》</strong>— "proximate objective（近端目标）"：选一个近到可行的目标当抓手。</div>
 </div>
 </div>
-
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>本周习作 · Your Day 16 Action</h3>
 <p>本周你要做一件具体的事，不是反思也不是阅读：</p>
 <div class="action">
-选你团队当前一个"方向不清"的领域。写半页，按今天的工具串起来：<strong>(1)</strong> 一句<strong>诊断</strong>（核心障碍到底是什么）；<strong>(2)</strong> 一个<strong>北极星指标</strong>候选；<strong>(3)</strong> 把它转成 1 个 O + 3 个<strong>结果式 KR</strong>（强制规则：KR 里不许出现"完成 / 上线 / 交付"动词）。<br><br>拿给团队 review，只问一个问题：<strong>"如果这三条 KR 都达成，你信我们方向就对了吗？"</strong> 如果有人犹豫，说明你的 KR 还没覆盖 O——回去补。
+选你团队当前一个"方向不清"的领域。写半页，按今天的工具串起来：<strong>(1)</strong> 一句<strong>诊断</strong>（核心障碍到底是什么）；<strong>(2)</strong> 一个<strong>北极星指标</strong>候选；<strong>(3)</strong> 把它转成 1 个 O + 3 个<strong>结果式 KR</strong>（强制规则：KR 里不许出现"完成 / 上线 / 交付"动词）。<br/><br/>拿给团队 review，只问一个问题：<strong>"如果这三条 KR 都达成，你信我们方向就对了吗？"</strong> 如果有人犹豫，说明你的 KR 还没覆盖 O——回去补。
 </div>
 </div>
-
 <!-- ============ Deepen ============ -->
 <div class="deepen">
 <h3>深入思考</h3>
@@ -402,16 +370,14 @@ header h1{font-size:1.55rem}
 <details><summary>"接纳不确定"与"给团队确定感"如何平衡？</summary><div>团队需要确定性才敢投入，领导却必须对未知诚实——这是真实的张力。可行的做法是分层：对<strong>方向</strong>给确定感（"我们半年就干可靠性这一件事，这点不变"），对<strong>路径</strong>诚实地留余地（"具体用哪套方案，我们 3 个月后按数据定"）。把"不确定"限定在可改的战术层，而不是让团队感觉整个方向都在飘。</div></details>
 <details><summary>大公司里，自下而上的战略空间到底有多大？</summary><div>你的团队战略一定被上层战略约束——这不是限制，而是信息。真正的技术 leader 战略，往往是"在上层方向的缝隙里，找到一个上层没看清、但你能赢的具体战场"。与其抱怨没有自由度，不如把上层目标当作你的诊断输入：上面要的是 X，而达成 X 的真实瓶颈在我这一层是 Y——把 Y 做成你团队的战略，既向上对齐，又有自己的主张。</div></details>
 </div>
-
 <nav class="footer-nav">
 <a href="index.html">← 返回目录</a>
 </nav>
-
 <footer>BigCat · Leadership Daily · Day 16 · 2026.06.05</footer>
 </div>
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </body>
 </html>
