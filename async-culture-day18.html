@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>领导力 Day 18：Async 文化与文档优先</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -74,32 +75,27 @@ header h1{font-size:1.55rem}
 </head>
 <body>
 <div class="container">
-
 <header>
 <div class="week-tag">Day 18 · 2026.06.07</div>
-<h1>Async 文化与文档优先：把会议从默认变成例外</h1>
+<h1 data-tts="7870bd1f948a5284">Async 文化与文档优先：把会议从默认变成例外</h1>
 <div class="meta"><span>主题：Async Culture &amp; Documentation-First</span><span>·</span><span>4 个原则</span></div>
 <div class="subtitle">"A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in." — Paul Graham</div>
 </header>
-
 <div class="intro">
 <strong>本周的命题：</strong>同步会议是大公司里最贵、也最被滥用的资源。一场 8 人 1 小时的会，是 8 个工时——还不算被切碎的整块时间。<strong>文档优先（doc-first）不是少开会的技巧，是一种把"思考"和"广播"分离的组织设计</strong>：先把决定写清楚，让人异步读、异步评，会议只用于真正需要高带宽的事——冲突、模糊、共情。本周四个原则：用一页备忘录代替一场会、用 RFC 让决定在写作中成型、用 ADR 给未来留下"为什么"、以及如何系统性地削减会议负荷。这不是远程团队专属——它对任何被会议淹没的 tech lead 都成立。
 </div>
-
 <!-- ============ Card 1 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">PRINCIPLE 01</div>
-<h2>写作优先：用一页备忘录代替一场会
+<h2 data-tts="c89248bbddd103d2">写作优先：用一页备忘录代替一场会
 <span class="en">Writing-First — The Memo Over The Meeting</span></h2>
 <span class="tag">文档优先</span><span class="tag">叙事备忘录</span><span class="tag">默读</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">重要的决定先写成文档再开会。<strong>写作强迫你把模糊的想法逼成清晰的逻辑</strong>——PPT 可以靠口才蒙混，一页连贯的叙事不行。会议是用来"读后讨论"的，不是用来听人念稿的。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -108,7 +104,6 @@ header h1{font-size:1.55rem}
 <span class="source">— Jeff Bezos,《Amazon 2017 致股东信》</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -125,7 +120,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">一页备忘录的骨架（检查表）</div>
 <ul class="checklist">
@@ -136,7 +130,6 @@ header h1{font-size:1.55rem}
 <li><strong>没有 PPT 也能独立读懂吗？</strong>文档要能脱离讲解者存在。</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -148,7 +141,6 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">女性视角提示</div>
 <div class="female">
@@ -156,27 +148,23 @@ header h1{font-size:1.55rem}
 研究反复显示，会议中女性更容易被打断、被抢功（idea 被复述后归到男性同事名下）。<strong>书面文化是一种结构性的纠偏</strong>：想法写在文档里、带署名和时间戳，谁先提出一目了然，不靠谁嗓门大。作为 leader，你可以刻意强化这点——在会上引用时点名出处："这个方案是 Priya 在文档第 2 节提的，我们顺着她的思路。"把功劳锚定在文字上。
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Jeff Bezos,《Amazon 2017 致股东信》</strong>— 六页叙事备忘录与"禁用 PPT"、会议默读机制的来源。<br><strong>Camille Fournier,《The Manager's Path》</strong>— 强调写作是 senior 工程领导的核心杠杆。</div>
+<div class="ref"><strong>Jeff Bezos,《Amazon 2017 致股东信》</strong>— 六页叙事备忘录与"禁用 PPT"、会议默读机制的来源。<br/><strong>Camille Fournier,《The Manager's Path》</strong>— 强调写作是 senior 工程领导的核心杠杆。</div>
 </div>
 </div>
-
 <!-- ============ Card 2 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">PRINCIPLE 02</div>
-<h2>RFC 文化：让决定在写作与评论中成型
+<h2 data-tts="360b94f9a5520d32">RFC 文化：让决定在写作与评论中成型
 <span class="en">RFC Culture — Decisions That Form In The Open</span></h2>
 <span class="tag">RFC</span><span class="tag">设计文档</span><span class="tag">异步评审</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">RFC（Request for Comments）/ 设计文档是一份<strong>公开、可异步评论、有明确生命周期</strong>的提案。它把"少数人在会议室拍板"变成"全员可参与、留痕的决策过程"——也是规模化对齐的最低成本方式。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -185,35 +173,33 @@ header h1{font-size:1.55rem}
 <span class="source">— Malte Ubl,《Design Docs at Google》(2020)</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">RFC 的生命周期</div>
 <div class="frame-diagram">
-<svg viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg">
-<rect x="10" y="55" width="120" height="60" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
-<rect x="160" y="55" width="130" height="60" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
-<rect x="320" y="55" width="130" height="60" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
-<rect x="480" y="55" width="120" height="60" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
-<rect x="630" y="55" width="60" height="60" rx="6" fill="#f3e9d2" stroke="#8a6d3b" stroke-width="2"/>
-<text x="70" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">Draft</text>
-<text x="70" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">起草</text>
-<text x="225" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">评论期</text>
-<text x="225" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">异步批注·限时</text>
-<text x="385" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#4a6a28">Decided</text>
-<text x="385" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#4a6a28">明确拍板人</text>
-<text x="540" y="80" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="700" fill="#5c3a18">实施</text>
-<text x="540" y="100" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">链接到 ADR</text>
-<text x="660" y="82" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#6b4a1f">归档</text>
-<text x="660" y="100" text-anchor="middle" font-family="Georgia" font-size="9" fill="#8a6d3b">可检索</text>
-<text x="145" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
-<text x="305" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
-<text x="465" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
-<text x="615" y="90" text-anchor="middle" font-family="Georgia" font-size="16" fill="#a8702d">→</text>
-<text x="350" y="35" text-anchor="middle" font-family="Georgia" font-size="11" fill="#a04020">关键：评论期要"限时"，否则永远停在草稿</text>
+<svg viewbox="0 0 700 170" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#fcf6e8" height="60" rx="6" stroke="#a8702d" stroke-width="2" width="120" x="10" y="55"></rect>
+<rect fill="#fcf6e8" height="60" rx="6" stroke="#a8702d" stroke-width="2" width="130" x="160" y="55"></rect>
+<rect fill="#e6efdc" height="60" rx="6" stroke="#5c8a3a" stroke-width="2" width="130" x="320" y="55"></rect>
+<rect fill="#fcf6e8" height="60" rx="6" stroke="#a8702d" stroke-width="2" width="120" x="480" y="55"></rect>
+<rect fill="#f3e9d2" height="60" rx="6" stroke="#8a6d3b" stroke-width="2" width="60" x="630" y="55"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="70" y="80">Draft</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="70" y="100">起草</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="225" y="80">评论期</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="225" y="100">异步批注·限时</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="385" y="80">Decided</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="10" text-anchor="middle" x="385" y="100">明确拍板人</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="540" y="80">实施</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="540" y="100">链接到 ADR</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="660" y="82">归档</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="9" text-anchor="middle" x="660" y="100">可检索</text>
+<text fill="#a8702d" font-family="Georgia" font-size="16" text-anchor="middle" x="145" y="90">→</text>
+<text fill="#a8702d" font-family="Georgia" font-size="16" text-anchor="middle" x="305" y="90">→</text>
+<text fill="#a8702d" font-family="Georgia" font-size="16" text-anchor="middle" x="465" y="90">→</text>
+<text fill="#a8702d" font-family="Georgia" font-size="16" text-anchor="middle" x="615" y="90">→</text>
+<text fill="#a04020" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="35">关键：评论期要"限时"，否则永远停在草稿</text>
 </svg>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -229,7 +215,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">一份好 RFC 的检查表</div>
 <ul class="checklist">
@@ -240,7 +225,6 @@ header h1{font-size:1.55rem}
 <li>决定后状态改为 Decided，并链接到对应的 ADR / 实施 ticket。</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -252,27 +236,23 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Malte Ubl,《Design Docs at Google》(2020)</strong>— 设计文档结构，尤其"替代方案"一节的论述。<br><strong>Will Larson,《An Elegant Puzzle》</strong>— 用 RFC 与架构评审在 hypergrowth 中维持一致性。</div>
+<div class="ref"><strong>Malte Ubl,《Design Docs at Google》(2020)</strong>— 设计文档结构，尤其"替代方案"一节的论述。<br/><strong>Will Larson,《An Elegant Puzzle》</strong>— 用 RFC 与架构评审在 hypergrowth 中维持一致性。</div>
 </div>
 </div>
-
 <!-- ============ Card 3 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">PRINCIPLE 03</div>
-<h2>决策记录 ADR：给未来的人留下"为什么"
+<h2 data-tts="f6e20906393905ba">决策记录 ADR：给未来的人留下"为什么"
 <span class="en">Decision Records — Capturing The Why</span></h2>
 <span class="tag">ADR</span><span class="tag">决策日志</span><span class="tag">机构记忆</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">代码记录"做了什么"，ADR（Architecture Decision Record）记录<strong>"为什么这么决定、当时的上下文、放弃了什么"</strong>。半年后没人记得为何当初不选另一条路——ADR 就是组织的防遗忘机制。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -281,7 +261,6 @@ header h1{font-size:1.55rem}
 <span class="source">— Michael Nygard,《Documenting Architecture Decisions》(2011)</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -297,7 +276,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">一条 ADR 的最小结构（检查表）</div>
 <ul class="checklist">
@@ -308,7 +286,6 @@ header h1{font-size:1.55rem}
 <li>编号 + 放进 repo（不可逆的决定才值得写，可逆的别写）。</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -320,27 +297,23 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Michael Nygard,《Documenting Architecture Decisions》(2011)</strong>— ADR 概念的原始出处。<br><strong>Will Larson,《An Elegant Puzzle》</strong>— 将决策记录纳入工程组织的运行机制。</div>
+<div class="ref"><strong>Michael Nygard,《Documenting Architecture Decisions》(2011)</strong>— ADR 概念的原始出处。<br/><strong>Will Larson,《An Elegant Puzzle》</strong>— 将决策记录纳入工程组织的运行机制。</div>
 </div>
 </div>
-
 <!-- ============ Card 4 ============ -->
 <div class="card">
 <div class="card-header">
 <div class="card-num">PRINCIPLE 04</div>
-<h2>削减会议负荷：把同步当昂贵资源
+<h2 data-tts="ba14f30c4e9e9973">削减会议负荷：把同步当昂贵资源
 <span class="en">Cutting Meeting Load — Sync As A Scarce Resource</span></h2>
 <span class="tag">Async 默认</span><span class="tag">Maker Schedule</span><span class="tag">减会</span>
 </div>
-
 <div class="section">
 <div class="section-label">一句话原则</div>
 <div class="principle">默认 async，<strong>会议是 escalation 而非 default</strong>。同步只用于真正需要高带宽的事：冲突、模糊、情感、头脑风暴。能写清楚的事就别开会——开会前先问"这能不能是一份文档"。</div>
 </div>
-
 <div class="section">
 <div class="section-label">名家原话</div>
 <div class="quote">
@@ -349,31 +322,29 @@ header h1{font-size:1.55rem}
 <span class="source">— Paul Graham,《Maker's Schedule, Manager's Schedule》(2009)</span>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">决策：这件事需要开会吗？</div>
 <div class="frame-diagram">
-<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
-<rect x="250" y="10" width="200" height="44" rx="6" fill="#f3e9d2" stroke="#5c3a18" stroke-width="2"/>
-<text x="350" y="30" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="700" fill="#5c3a18">有人想约会议</text>
-<text x="350" y="46" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">先别接受</text>
-<rect x="230" y="80" width="240" height="44" rx="6" fill="#fcf6e8" stroke="#a8702d" stroke-width="2"/>
-<text x="350" y="100" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3a2f1c">需要高带宽吗？</text>
-<text x="350" y="116" text-anchor="middle" font-family="Georgia" font-size="10" fill="#8a6d3b">冲突/模糊/共情/脑暴</text>
-<rect x="20" y="160" width="200" height="70" rx="6" fill="#e6efdc" stroke="#5c8a3a" stroke-width="2"/>
-<text x="120" y="185" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#4a6a28">否 → 写下来</text>
-<text x="120" y="205" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#2a3a18">文档 / RFC / Loom</text>
-<text x="120" y="220" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#2a3a18">异步评论解决</text>
-<rect x="480" y="160" width="200" height="70" rx="6" fill="#f5e0d0" stroke="#b85c3a" stroke-width="2"/>
-<text x="580" y="182" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="700" fill="#a04020">是 → 开会</text>
-<text x="580" y="201" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#5a3818">有议程·有预读</text>
-<text x="580" y="216" text-anchor="middle" font-family="Georgia" font-size="9.5" fill="#5a3818">最少人·定结论</text>
-<line x1="300" y1="124" x2="120" y2="160" stroke="#a8702d" stroke-width="1.5"/>
-<line x1="400" y1="124" x2="580" y2="160" stroke="#a8702d" stroke-width="1.5"/>
+<svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f3e9d2" height="44" rx="6" stroke="#5c3a18" stroke-width="2" width="200" x="250" y="10"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="350" y="30">有人想约会议</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="350" y="46">先别接受</text>
+<rect fill="#fcf6e8" height="44" rx="6" stroke="#a8702d" stroke-width="2" width="240" x="230" y="80"></rect>
+<text fill="#3a2f1c" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="100">需要高带宽吗？</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="350" y="116">冲突/模糊/共情/脑暴</text>
+<rect fill="#e6efdc" height="70" rx="6" stroke="#5c8a3a" stroke-width="2" width="200" x="20" y="160"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="11" font-weight="700" text-anchor="middle" x="120" y="185">否 → 写下来</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="9.5" text-anchor="middle" x="120" y="205">文档 / RFC / Loom</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="9.5" text-anchor="middle" x="120" y="220">异步评论解决</text>
+<rect fill="#f5e0d0" height="70" rx="6" stroke="#b85c3a" stroke-width="2" width="200" x="480" y="160"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="11" font-weight="700" text-anchor="middle" x="580" y="182">是 → 开会</text>
+<text fill="#5a3818" font-family="Georgia" font-size="9.5" text-anchor="middle" x="580" y="201">有议程·有预读</text>
+<text fill="#5a3818" font-family="Georgia" font-size="9.5" text-anchor="middle" x="580" y="216">最少人·定结论</text>
+<line stroke="#a8702d" stroke-width="1.5" x1="300" x2="120" y1="124" y2="160"></line>
+<line stroke="#a8702d" stroke-width="1.5" x1="400" x2="580" y1="124" y2="160"></line>
 </svg>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">场景示范</div>
 <div class="scene">
@@ -387,7 +358,6 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">减会检查表</div>
 <ul class="checklist">
@@ -398,7 +368,6 @@ header h1{font-size:1.55rem}
 <li>recurring 会议有没有定期清零、按需重建？</li>
 </ul>
 </div>
-
 <div class="section">
 <div class="section-label">常见错误</div>
 <div class="pitfall">
@@ -410,7 +379,6 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">女性视角提示</div>
 <div class="female">
@@ -418,22 +386,19 @@ header h1{font-size:1.55rem}
 "office housework"——记会议纪要、定会议室、追进度——长期不成比例地落在女性身上，且很少转化为晋升资本。<strong>转向书面/异步文化时要顺手修掉这个分配</strong>：让文档 DRI、记录者按角色轮值（写进流程，不靠"谁主动"），而不是默认让团队里那位女性"顺便记一下"。把隐形劳动显形、可轮换，本身就是公平设计。
 </div>
 </div>
-
 <div class="section">
 <div class="section-label">关键参考</div>
-<div class="ref"><strong>Paul Graham,《Maker's Schedule, Manager's Schedule》(2009)</strong>— 整块时间为何对创造者至关重要。<br><strong>Jason Fried &amp; DHH,《It Doesn't Have to Be Crazy at Work》</strong>— "会议是最后手段"与异步默认文化。<br><strong>GitLab Handbook</strong>— "handbook-first"：默认把一切写下来的极致实践。</div>
+<div class="ref"><strong>Paul Graham,《Maker's Schedule, Manager's Schedule》(2009)</strong>— 整块时间为何对创造者至关重要。<br/><strong>Jason Fried &amp; DHH,《It Doesn't Have to Be Crazy at Work》</strong>— "会议是最后手段"与异步默认文化。<br/><strong>GitLab Handbook</strong>— "handbook-first"：默认把一切写下来的极致实践。</div>
 </div>
 </div>
-
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>本周习作 · Your Day 18 Action</h3>
 <p>本周做一件具体的事，不是反思也不是阅读：</p>
 <div class="action">
-<strong>选你日历上一场本周的经常性会议</strong>（最像"状态广播"的那场）。这周<strong>把它替换成一份异步文档</strong>：会前发出，给 24 小时异步评论，到点只对"还有争议的批注"开一个 15 分钟短会（或干脆不开）。<br><br>会后记两行：<strong>(1) 实际花的同步时间从多少分钟降到了多少；(2) 决策质量更好还是更差</strong>。<br><br>反思题：你团队里有哪些会，其实是在用同步时间补偿"没人愿意把事写清楚"？
+<strong>选你日历上一场本周的经常性会议</strong>（最像"状态广播"的那场）。这周<strong>把它替换成一份异步文档</strong>：会前发出，给 24 小时异步评论，到点只对"还有争议的批注"开一个 15 分钟短会（或干脆不开）。<br/><br/>会后记两行：<strong>(1) 实际花的同步时间从多少分钟降到了多少；(2) 决策质量更好还是更差</strong>。<br/><br/>反思题：你团队里有哪些会，其实是在用同步时间补偿"没人愿意把事写清楚"？
 </div>
 </div>
-
 <!-- ============ Deepen ============ -->
 <div class="deepen">
 <h3>深入思考</h3>
@@ -443,17 +408,14 @@ header h1{font-size:1.55rem}
 <details><summary>RFC/ADR 的维护成本会不会最终变成"文档债"，没人更新形同虚设？</summary><div>真实风险。关键区分：ADR 是不可变的历史快照，本就不该更新（决定变了写新的），所以它几乎没有维护成本——这是它优于"活文档"的地方。会变成债的是那些试图"始终保持最新"的活文档。原则：能用不可变记录（决策、会议纪要）就别用活文档；活文档要指定 owner 和复审节奏，否则宁可不建。</div></details>
 <details><summary>削减会议会不会反噬 manager 自己的影响力（"开会"也是被看见的方式）？</summary><div>这是诚实的灰色地带。在很多组织里，出现在会议室=政治资本，纯异步工作的人可能"隐形"。成本是真实的：你可能高效但不被高层注意到。务实的平衡——把省下的时间投入少数高杠杆的同步场合（关键评审、跨部门、向上汇报），在那里高质量地"被看见"；同时让你团队的产出（文档、决策记录）本身成为你影响力的证据。不必为刷存在而开会，但也别天真地以为纯产出会自动被看见。</div></details>
 </div>
-
 <nav class="footer-nav">
 <a href="index.html">← 返回目录</a>
 </nav>
-
 <footer>BigCat · Leadership Daily · Day 18 · 2026.06.07</footer>
 </div>
-
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </body>
 </html>
