@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领导力 Day 43：职业战略</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 43 · 2026.07.01</div>
+<h1>职业战略：把自己当一家一人公司来经营</h1>
+<div class="meta"><span>主题：Career Strategy</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Management is not a promotion, management is a change of profession." — Charity Majors</div>
+</header>
+
+<div class="intro">
+<strong>本周的命题：</strong>职业不是一条"熬年限就上行"的电梯，而是一家你终身持有、自己当 CEO 的公司。它有<strong>定位</strong>（押注哪条赛道）、有<strong>产品迭代</strong>（晋升是滞后的营收数字）、有<strong>战略转型</strong>（Manager 还是 IC，何时换轨）、有<strong>退出时机</strong>（何时离场止损）。大多数技术人只在被动地"表现好"，却从不主动做这四件事——于是把定位权、晋升节奏、去留决定，全交给了别人的日历。本周把它拿回来：不是教你钻营，是教你像经营一门生意一样，对自己的十年负责。
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>个人定位：找"稀缺 × 擅长"的交集，别在拥挤赛道内卷
+<span class="en">Positioning — Bet Where Scarce Meets Strong</span></h2>
+<span class="tag">定位</span><span class="tag">差异化</span><span class="tag">杠杆</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">定位不是"我想做什么"，而是三个圈的交集：<strong>组织稀缺什么 ∩ 我能做到前 10% ∩ 我愿长期投入</strong>。落在交集里的事是杠杆，落在圈外的努力都是内卷。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"You need to think of yourself as an entrepreneur at the helm of at least one living, growing start-up venture: your career."</span>
+<span class="zh">"你得把自己当成一位创业者——你至少掌舵着一家活着、在成长的创业公司：你的职业。"</span>
+<span class="source">— Reid Hoffman,《The Start-up of You》Ch.1</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">定位坐标：你该押哪个象限</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 640 340" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#a8702d" stroke-width="2" x1="60" x2="60" y1="30" y2="300"></line>
+<line stroke="#a8702d" stroke-width="2" x1="60" x2="600" y1="300" y2="300"></line>
+<line stroke="#c4a878" stroke-dasharray="4 4" stroke-width="1.5" x1="330" x2="330" y1="30" y2="300"></line>
+<line stroke="#c4a878" stroke-dasharray="4 4" stroke-width="1.5" x1="60" x2="600" y1="165" y2="165"></line>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" text-anchor="middle" transform="rotate(-90 30 165)" x="30" y="165">← 组织稀缺 / 被需要 →</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" text-anchor="middle" x="330" y="325">← 我能做到多好 →</text>
+<rect fill="#e6efdc" height="120" rx="6" width="255" x="335" y="35"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="462" y="90">★ 杠杆点</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="462" y="112">稀缺又擅长 → all in</text>
+<rect fill="#f5eede" height="120" rx="6" width="255" x="72" y="35"></rect>
+<text fill="#6b4a1f" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="199" y="90">学习区</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="199" y="112">稀缺但还不行 → 投资自己</text>
+<rect fill="#f5e0d0" height="120" rx="6" width="255" x="335" y="170"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="462" y="225">舒适区陷阱</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="462" y="247">擅长但不稀缺 → 会被商品化</text>
+<rect fill="#efe4d4" height="120" rx="6" width="255" x="72" y="170"></rect>
+<text fill="#8a6d3b" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="199" y="225">放弃区</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="199" y="247">不稀缺也不擅长 → 别恋战</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：BigCat 的定位对话</div>
+<div class="scene">
+<div class="setup">情境：你是 AI/分布式背景的 TLM。skip-level 问你"未来两年你想被公司知道为擅长什么？"</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见回答（无定位）</div>
+<p>"我想做大模型相关的，现在最火。我技术还行，团队也能带，哪里有需要我都能上。" —— 追热点 + 什么都能干 = 什么都不稀缺。人人都在挤大模型这条赛道，你没有差异化，只能拼投入时长。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后回答（三圈交集）</div>
+<p>"公司现在最缺的，是能把 AI 训练/推理真正<strong>扛到生产规模</strong>、又能带团队落地的人——不是写 demo，是解决分布式下的成本、稳定性、调度。这正好压在我的分布式底子上。我想被知道为『<strong>让 AI 系统在规模下不塌</strong>的那个人』，未来两年我会围绕这个挑项目、建团队。"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">定位自检表</div>
+<ul class="checklist">
+<li>我能用一句话说清"我想被知道为擅长 X"吗？X 是否足够窄、足够具体？</li>
+<li>这个 X 组织真的稀缺吗，还是我自我感觉？（问 2 个 skip-level 验证需求）</li>
+<li>在 X 上我能进到组织前 10% 吗？做不到就该换成"学习区"投资，而非硬撑。</li>
+<li>三年后 X 会更稀缺还是被商品化？（例：手写 CRUD 已被 AI 抹平）</li>
+<li>我最近 3 个项目，有几个真正在给 X 添砖，几个只是"救火惯性"？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>追最热而非最缺。</strong>最热的赛道往往最拥挤，稀缺性最低。孙子讲"避实击虚"——攻组织的空档，不是挤在人堆里。</li>
+<li><strong>定位太宽。</strong>"全栈 + 能管理 + 懂业务"等于没定位。宽 = 可替代。</li>
+<li><strong>把 title 当定位。</strong>"我是 TLM"不是定位，那是职级。定位是"我解决哪一类别人解决不了的问题"。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+女性在"自我定位/自我推销"上常陷双重束缚：清晰宣告"我擅长 X"易被贴上"aggressive / 太爱表现"，模糊谦逊又拿不到定位红利。对策：用<strong>事实与需求</strong>框定，而非形容词自夸——不说"我很强，我该负责 AI infra"，说"过去 3 个季度 AI infra 的稳定性事故我处理了 X 起，这块我想正式 own"。让数据替你做那句"我很行"。
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>晋升曲线：头衔是滞后指标，先在下一级表现，再谈头衔
+<span class="en">Promotion Is a Lagging Indicator</span></h2>
+<span class="tag">晋升</span><span class="tag">可见度</span><span class="tag">Sponsor</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">晋升不是"给了头衔你才开始做 N+1 的事"，而是"你已经稳定做了两个季度 N+1 的事，头衔只是<strong>追认</strong>"。等许可才行动的人，永远在等。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"No one cares about your career as much as you do. It is up to you to keep yourself happy and challenged in your job."</span>
+<span class="zh">"没有人像你自己一样在乎你的职业。让自己在工作里保持愉快和被挑战，是你自己的事。"</span>
+<span class="source">— Camille Fournier,《The Manager's Path》Ch.2</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：晋升不是求，是"举证"</div>
+<div class="scene">
+<div class="setup">情境：你觉得自己够格升 Staff/高级经理，想跟老板开口。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法（讨要式）</div>
+<p>"我来公司三年了，一直很努力，也带了团队，是不是可以考虑给我升一级？"——用年限和苦劳做论据。经理无法拿"努力"去 calibration 会上替你辩护。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（举证 + 借力 sponsor）</div>
+<p>"我想跟你对齐一下晋升。我整理了一份文档：过去三个季度我已经在做的<strong>下一级职责</strong>——跨三个团队推动了 X 架构决策、带出两个能独立负责的 senior。我想确认：<strong>还差哪块证据</strong>？以及在 calibration 会上，谁能替我背书这些影响？"</p>
+<p>（关键在最后一句：你要的不是"批准"，是让经理变成你的 <strong>sponsor</strong>——在你不在的房间替你说话的人。）</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">晋升举证检查表</div>
+<ul class="checklist">
+<li>我有没有一份持续更新的"影响力日志"（brag doc），记录季度成果与量化影响？</li>
+<li>我列出的证据，是"下一级"的职责范围，还是把本级工作做得很勤？</li>
+<li>我知道本级→下一级的<strong>明确 rubric</strong>吗？逐条对照，哪条已满足、哪条缺？</li>
+<li>我有 sponsor 吗？（不是 mentor——是有决策权、愿在 calibration 替我背书的人）</li>
+<li>我的影响是否被<strong>正确的人</strong>看见？还是只有我直属经理知道？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把苦劳当功劳。</strong>加班、年限、"很努力"不是晋升货币；<strong>可归因的影响</strong>才是。</li>
+<li><strong>只有 mentor 没有 sponsor。</strong>mentor 给你建议，sponsor 给你机会。晋升靠后者。</li>
+<li><strong>默默做事等被发现。</strong>"酒香也怕巷子深"——影响力若无人可归因于你，等于没发生。</li>
+<li><strong>把晋升当终点。</strong>升上去只是拿到下一级的入场券，不是奖杯。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+大量研究显示男性常被"按潜力"晋升、女性被要求"按已证明的业绩"晋升——同一级，女性要多一轮"再证明一次"。对策有两条：一是<strong>把潜力翻译成既成事实</strong>（brag doc 里全是已发生的量化影响，不给"她还没准备好"留空间）；二是主动索取 sponsor 而非等待赏识——研究里女性更易得到 mentor（建议），却更少得到 sponsor（机会），要专门补这一环。
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>双轨制：Manager 与 IC 是两个职业，不是高低，是钟摆
+<span class="en">The Engineer / Manager Pendulum</span></h2>
+<span class="tag">双轨</span><span class="tag">Staff+</span><span class="tag">钟摆</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">管理不是 IC 的"升级版"，是<strong>换了一门职业</strong>——技能、日常、成就感来源全变。IC 高线（Staff/Principal）与管理线平级；在两条线之间来回摆动，不是失败，是积累复合优势。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Management is not a promotion, management is a change of profession. The best line managers I've ever worked for are the ones who don't want your job."</span>
+<span class="zh">"管理不是晋升，是转行。我共事过的最好的一线经理，都是那些并不觊觎你位子的人。"</span>
+<span class="source">— Charity Majors,〈The Engineer/Manager Pendulum〉(2017)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">双轨阶梯与钟摆</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="160" y="28">IC 技术线</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="500" y="28">Manager 管理线</text>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="245"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="195"></rect>
+<rect fill="#e6efdc" height="34" rx="4" stroke="#5c8a3a" stroke-width="2" width="220" x="50" y="145"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="95"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="45"></rect>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="160" y="267">Senior</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="160" y="217">Staff</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12.5" font-weight="700" text-anchor="middle" x="160" y="167">Sr. Staff / Principal</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="160" y="117">Distinguished</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="160" y="66">Fellow…</text>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="245"></rect>
+<rect fill="#e6efdc" height="34" rx="4" stroke="#5c8a3a" stroke-width="2" width="220" x="390" y="195"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="145"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="95"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="45"></rect>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="267">EM / TLM</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12.5" font-weight="700" text-anchor="middle" x="500" y="217">Sr. Manager</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="167">Director</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="117">Sr. Director</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="66">VP…</text>
+<path d="M270 212 C320 212 340 162 390 162" fill="none" stroke="#7a2a5a" stroke-dasharray="5 4" stroke-width="2"></path>
+<path d="M390 205 C340 205 320 255 270 255" fill="none" stroke="#7a2a5a" stroke-dasharray="5 4" stroke-width="2"></path>
+<text fill="#7a2a5a" font-family="Georgia" font-size="11" font-weight="700" text-anchor="middle" x="330" y="150">钟摆</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="330" y="300">同一高度 = 平级；来回摆动积累复合优势</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：TLM 的岔路自问</div>
+<div class="scene">
+<div class="setup">情境：你已做 TLM 两年，纠结继续爬管理线，还是摆回 Staff IC。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 错误框架（把它当"退步"）</div>
+<p>"回去做 IC 岂不是承认我管理没做好？升上来了哪有往回走的。"——把双轨当单向电梯，于是被"面子"绑在一条并不适合自己的路上。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 正确框架（问能量，不问面子）</div>
+<p>问自己三题：<strong>(1) 我的成就感来自"自己解决了难题"还是"团队因我而更强"？(2) 上周哪些时刻我充电、哪些时刻我耗电？(3) 五年后我想被知道为架构决策者，还是组织建设者？</strong></p>
+<p>参照 Will Larson《Staff Engineer》的 IC 高线原型——<strong>Tech Lead / Architect / Solver / Right Hand</strong>：Staff+ 不是"更高级的写代码"，同样是影响力的职业。摆回去是换招式，不是降级。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Manager vs IC 决策检查表</div>
+<ul class="checklist">
+<li>让我"充电"的时刻，更多在深度技术攻坚，还是在带人/搭系统/搞定跨团队？</li>
+<li>我能接受管理线的成就感是<strong>间接且滞后</strong>的（几个月后团队产出才体现）吗？</li>
+<li>选 IC 高线，我清楚 Staff+ 靠"技术影响力与判断"而非"代码行数"吗？</li>
+<li>公司的 IC 天花板是否真和管理线平级？（有些公司 Staff 以上名存实亡——这是环境信号）</li>
+<li>我是否被"往回走没面子"绑架，而非按能量与长期定位做选择？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>为逃离代码而做管理。</strong>管理不是"不用写代码的奖赏"，是另一套更难的技能。</li>
+<li><strong>为面子留在管理线。</strong>把不适合的角色硬扛成"退步恐惧"，两头都做不好。</li>
+<li><strong>以为 Staff+ 就是资深写代码。</strong>Staff+ 的货币是技术判断、跨团队影响与"把复杂问题讲清楚"，不是产出量。</li>
+<li><strong>在 IC 天花板很低的公司死磕 IC 线。</strong>轨道存不存在是环境问题，别用个人努力对抗结构。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Pivot 时机：走对时机，总感觉像走早了
+<span class="en">When to Pivot — On-Time Quitting Feels Early</span></h2>
+<span class="tag">转型</span><span class="tag">止损</span><span class="tag">退场</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">该走的信号出现时，理性上"再等等"总有理由（沉没成本、期权、面子）。但<strong>走对时机，几乎总会感觉像走早了</strong>；等到"确定该走"，往往已经晚了一年。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Quitting on time will usually feel like quitting too early."</span>
+<span class="zh">"在正确的时机退出，通常都会感觉像退得太早了。"</span>
+<span class="source">— Annie Duke,《Quit》(2022)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：区分"低谷"与"到顶"</div>
+<div class="scene">
+<div class="setup">情境：你在现岗位有点闷，不确定是暂时低谷，还是真该 pivot。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 沉没成本陷阱</div>
+<p>"我在这儿投入了四年，期权还有一年 vest，现在走太亏了。再熬熬说不定会好。"——用<strong>已付出的过去</strong>做去留决定，而过去的投入无论走留都拿不回来。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 机会成本 + 拐点视角</div>
+<p>换一组问题：<strong>"如果我今天是新加入这家公司、这个岗位，我还会选它吗？"</strong> 若答案是否，去留就该按<strong>未来一年的成长与机会</strong>算，而非过去四年的账。</p>
+<p>再叠加 Andy Grove 的"战略拐点"（strategic inflection point）：<strong>雪总是先从边缘融化</strong>——组织的衰退、你个人成长的停滞，最早的信号出现在边缘（好的人开始走、你已一年没学到新东西）。看边缘，别等中心塌。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Pivot 决策检查表（先定"kill criteria"）</div>
+<ul class="checklist">
+<li>我能提前写下<strong>止损线</strong>吗？（"若连续两个季度 X 不改善，我就启动找机会"——冷静时定，别热血/低谷时拍脑袋）</li>
+<li>"再等等"的理由，是指向<strong>未来的机会</strong>，还是只在守<strong>过去的沉没成本</strong>？</li>
+<li>过去 12 个月我学到的新东西，够不够撑起下一次跳跃的定位？</li>
+<li>边缘信号：好的同事在不在离开？我的经理还在为我争取资源吗？</li>
+<li>我是在"逃离"（推力），还是"奔向"（拉力）？两者都可以走，但要认清是哪种。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 · 承认灰色</div>
+<div class="pitfall">
+<ul>
+<li><strong>用沉没成本做决定。</strong>期权、年限、"都熬到这了"——这些是过去，不进未来的账。</li>
+<li><strong>热血裸辞或低谷冲动走。</strong>止损线要在情绪平静时预设，不在最糟那天临时定。</li>
+<li><strong>只会"逃离"不会"奔向"。</strong>没有清晰定位（Card 1）的 pivot，只是换个地方重复同样的困。</li>
+<li><strong>把"忠诚"当美德硬扛。</strong>诚实说：留下常有真实好处（关系、期权、稳定），走则有真实代价。这里没有干净的最优解，只有你愿意为哪一种代价买单。孙子"不若则能避之"——打不赢的仗，体面撤退也是战略。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考</h3>
+<details>
+<summary>"把自己当公司经营"会不会滑向精致的利己主义，把同事都当资源？</summary>
+<div>会，如果只剩算计。区别在于：好的职业战略是<strong>把自己的成长和组织的产出对齐</strong>——你押注的定位正是组织稀缺的，你的晋升靠的是可归因的真实影响。它要求你交付价值、赢得 sponsor 的真心背书，这些都建立在信任而非算计上。滑向利己的信号是：你开始抢功、囤积信息、只做对晋升有利的事。战略是对自己的十年负责，不是把每次互动都变成交易。</div>
+</details>
+<details>
+<summary>定位要"窄而深"，但技术迭代那么快，押窄了会不会被时代淘汰？</summary>
+<div>定位窄的是<strong>问题域</strong>，不是<strong>技术栈</strong>。"让 AI 系统在规模下不塌"是问题域，底层用什么框架会变，但"规模下的稳定性判断"这类能力可迁移、越老越值钱。押死具体工具（某个框架、某个平台）确实危险；押住一类<strong>难而持久的问题</strong>则相对抗周期。定位 + 保持在"学习区"持续更新工具，两者不矛盾。</div>
+</details>
+<details>
+<summary>钟摆理论听起来很美，但很多公司根本没有真正平级的 IC 高线，怎么办？</summary>
+<div>这就是 Card 3 检查表里"轨道存不存在是环境问题"的意思。如果一家公司 Staff 以上名存实亡、所有权力都在管理线，那么"选 IC 线"在这里就是一句空话——这本身是关于这家公司的<strong>重要信息</strong>，应纳入 Card 4 的 pivot 判断。有时正确的动作不是在本公司选轨，而是换一家真正双轨平权的公司去摆你的钟摆。个人选择要尊重结构现实。</div>
+</details>
+<details>
+<summary>"走对时机总感觉像走早了"——那如何避免变成频繁跳槽、什么都没沉淀？</summary>
+<div>Annie Duke 的话针对的是"该走却因沉没成本硬留"，不是鼓励一有不适就跳。两者的分界是 Card 4 的<strong>预设止损线</strong>：冷静时写下"满足什么条件我才走"，这既能防你因面子拖太久，也能防你因一时情绪乱跳。频繁跳槽通常是"只逃离不奔向"（无定位）的症状——先解决定位，pivot 才有沉淀。深度需要时间，但错误的深度只是浪费时间，关键在分清你在哪一种里。</div>
+</details>
+<details>
+<summary>晋升靠 sponsor，但如果我所在的组织政治化、sponsor 全是派系游戏怎么办？</summary>
+<div>先分清 sponsor 与派系：sponsor 是<strong>基于你真实影响力</strong>替你背书的人，派系是<strong>基于站队</strong>的利益绑定。健康的做法是让多位有决策权的人真实看到你的贡献，而非把命运押在单一靠山上——押单一靠山既是派系风险，也是脆弱性（他一走你就塌）。如果组织里晋升完全脱离贡献、只剩站队，这又是一个强烈的 pivot 信号（回到 Card 4）。政治无法完全回避，但你能选择用贡献而非依附去积累背书。</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 43 Action</h3>
+<p>本周做两件具体的事，不是反思也不是阅读：</p>
+<div class="action">
+<strong>第一步（写定位句 + 验证）：</strong>用一句话补全"我想在未来两年被知道为『擅长 ___ 的那个人』"，要求足够窄、足够具体（能通过 Card 1 的三圈交集）。然后找 <strong>1 位 skip-level 或资深 peer</strong>，问一句："这块能力，组织未来两年真的稀缺吗？"用他的回答校准你的定位。<br><br>
+<strong>第二步（开一份 brag doc）：</strong>新建一份文档，倒推过去两个季度，逐条写下你已经在做的、属于<strong>下一级</strong>的影响（尽量带量化）。写完盯着它问一个反思题：<strong>"这些证据里，有几条是真正做了下一级的事，有几条只是把本级的事做得很勤？"</strong> 差距，就是你下季度要补的方向。
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 43 · 2026.07.01</footer>
+</div>
+</body>
+</html>

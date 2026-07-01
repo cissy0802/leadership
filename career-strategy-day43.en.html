@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Day 43: Career Strategy</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">Day 43 · 2026.07.01</div>
+<h1>Career Strategy: Run Yourself Like a One-Person Company</h1>
+<div class="meta"><span>Topic: Career Strategy</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Management is not a promotion, management is a change of profession." — Charity Majors</div>
+</header>
+
+<div class="intro">
+<strong>This week's premise:</strong> A career is not an escalator that carries you up if you just log enough years. It is a company you own for life and run as CEO. It has <strong>positioning</strong> (which market to bet on), <strong>product iteration</strong> (a promotion is a lagging revenue number), <strong>strategic pivots</strong> (manager or IC, and when to switch), and <strong>exit timing</strong> (when to cut losses and leave). Most engineers only "perform well" passively — handing the power over their positioning, their promotion pace, and their stay-or-go decision to someone else's calendar. This week, take it back. This isn't about scheming; it's about running your own ten years like a business, and owning the outcome.
+</div>
+
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Positioning: Bet Where Scarce Meets Strong — Don't Grind in a Crowded Lane
+<span class="en">Positioning — Bet Where Scarce Meets Strong</span></h2>
+<span class="tag">Positioning</span><span class="tag">Differentiation</span><span class="tag">Leverage</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Positioning isn't "what I feel like doing." It's the intersection of three circles: <strong>what the org is scarce in ∩ what I can be top-10% at ∩ what I'll invest in long-term</strong>. Work inside the intersection is leverage; effort outside it is just grinding.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"You need to think of yourself as an entrepreneur at the helm of at least one living, growing start-up venture: your career."</span>
+<span class="source">— Reid Hoffman, <em>The Start-up of You</em>, Ch.1</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The Positioning Grid: Which Quadrant to Bet On</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 640 340" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#a8702d" stroke-width="2" x1="60" x2="60" y1="30" y2="300"></line>
+<line stroke="#a8702d" stroke-width="2" x1="60" x2="600" y1="300" y2="300"></line>
+<line stroke="#c4a878" stroke-dasharray="4 4" stroke-width="1.5" x1="330" x2="330" y1="30" y2="300"></line>
+<line stroke="#c4a878" stroke-dasharray="4 4" stroke-width="1.5" x1="60" x2="600" y1="165" y2="165"></line>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" text-anchor="middle" transform="rotate(-90 30 165)" x="30" y="165">← Org scarcity / demand →</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" text-anchor="middle" x="330" y="325">← How good I can be →</text>
+<rect fill="#e6efdc" height="120" rx="6" width="255" x="335" y="35"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="462" y="90">★ Leverage point</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="462" y="112">scarce + strong → all in</text>
+<rect fill="#f5eede" height="120" rx="6" width="255" x="72" y="35"></rect>
+<text fill="#6b4a1f" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="199" y="90">Learning zone</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="199" y="112">scarce, not yet good → invest</text>
+<rect fill="#f5e0d0" height="120" rx="6" width="255" x="335" y="170"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="462" y="225">Comfort trap</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="462" y="247">strong, not scarce → commoditized</text>
+<rect fill="#efe4d4" height="120" rx="6" width="255" x="72" y="170"></rect>
+<text fill="#8a6d3b" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="199" y="225">Drop zone</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="199" y="247">neither → don't cling</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: BigCat's Positioning Conversation</div>
+<div class="scene">
+<div class="setup">Setup: You're a TLM with an AI/distributed-systems background. A skip-level asks, "In two years, what do you want to be known for here?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common answer (no positioning)</div>
+<p>"Something with large language models — that's what's hot. My tech is solid, I can run a team, I'll take on whatever's needed." — Chasing the hype plus "I can do anything" equals scarce in nothing. Everyone is crowding the LLM lane; with no differentiation, you can only compete on hours.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better answer (the three-circle intersection)</div>
+<p>"What the org is most short on is people who can take AI training/inference to <strong>real production scale</strong> and lead a team to ship it — not demos, but the cost, stability, and scheduling problems under distribution. That sits right on my distributed-systems base. I want to be known as <strong>the person who keeps AI systems from collapsing at scale</strong>, and I'll pick projects and build a team around that."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Positioning Self-Check</div>
+<ul class="checklist">
+<li>Can I state "I want to be known for X" in one sentence? Is X narrow and specific enough?</li>
+<li>Is X genuinely scarce in the org, or just my perception? (Verify demand with 2 skip-levels.)</li>
+<li>Can I get into the org's top 10% on X? If not, treat it as a "learning zone" investment, don't force it.</li>
+<li>In three years will X be scarcer or commoditized? (e.g. hand-written CRUD is already flattened by AI.)</li>
+<li>Of my last 3 projects, how many actually built toward X vs. were just firefighting inertia?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Chasing hottest, not scarcest.</strong> The hottest lane is usually the most crowded, so scarcity is lowest. Sun Tzu: "avoid the strong, strike the weak" — attack the org's gaps, don't pile into the crowd.</li>
+<li><strong>Positioning too broad.</strong> "Full-stack + can manage + gets the business" equals no positioning. Broad = replaceable.</li>
+<li><strong>Mistaking title for positioning.</strong> "I'm a TLM" is a level, not a position. Positioning is "which class of problems I solve that others can't."</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women face a double bind in self-positioning: declaring "I'm great at X" risks the "aggressive / show-off" label, while vague modesty forfeits the positioning payoff. The counter: frame with <strong>facts and needs</strong>, not adjectives. Don't say "I'm strong, I should own AI infra"; say "Over the last 3 quarters I handled X stability incidents in AI infra — I'd like to formally own it." Let the data say "I'm good" for you.
+</div>
+</div>
+</div>
+
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>The Promotion Curve: The Title Is a Lagging Indicator
+<span class="en">Promotion Is a Lagging Indicator</span></h2>
+<span class="tag">Promotion</span><span class="tag">Visibility</span><span class="tag">Sponsor</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Promotion isn't "you get the title, then start doing the next level's work." It's "you've steadily done next-level work for two quarters, and the title merely <strong>ratifies</strong> it." Those who wait for permission wait forever.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"No one cares about your career as much as you do. It is up to you to keep yourself happy and challenged in your job."</span>
+<span class="source">— Camille Fournier, <em>The Manager's Path</em>, Ch.2</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: A Promotion Is Evidence, Not a Request</div>
+<div class="scene">
+<div class="setup">Setup: You think you're ready for Staff / Senior Manager and want to raise it with your boss.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Common approach (asking for it)</div>
+<p>"I've been here three years, worked really hard, and I run a team now — can we consider bumping me up a level?" — Using tenure and effort as the argument. Your manager can't defend "hard work" for you in a calibration meeting.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better approach (evidence + recruiting a sponsor)</div>
+<p>"I want to align on promotion. I put together a doc: the <strong>next-level responsibilities</strong> I've already been doing over the last three quarters — drove architecture decision X across three teams, grew two seniors who now run things independently. I want to confirm: <strong>what evidence is still missing</strong>? And in calibration, who can vouch for this impact?"</p>
+<p>(The last line is the point: you're not asking for "approval," you're turning your manager into your <strong>sponsor</strong> — the one who speaks for you in the room you're not in.)</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Promotion-Evidence Checklist</div>
+<ul class="checklist">
+<li>Do I keep a running "impact log" (brag doc) with quarterly results and quantified impact?</li>
+<li>Is my evidence <strong>next-level</strong> scope, or just doing my current level diligently?</li>
+<li>Do I know the explicit <strong>rubric</strong> from this level to the next? Which criteria are met, which are missing?</li>
+<li>Do I have a sponsor? (Not a mentor — someone with decision power willing to vouch in calibration.)</li>
+<li>Is my impact seen by the <strong>right</strong> people, or does only my direct manager know?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Confusing effort with impact.</strong> Overtime, tenure, "I tried hard" aren't promotion currency; <strong>attributable impact</strong> is.</li>
+<li><strong>A mentor but no sponsor.</strong> Mentors give advice; sponsors give opportunities. Promotion runs on the latter.</li>
+<li><strong>Working quietly, waiting to be discovered.</strong> Impact no one can attribute to you might as well not have happened.</li>
+<li><strong>Treating promotion as the finish line.</strong> Getting bumped up is a ticket to the next level, not a trophy.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research consistently shows men are often promoted on <strong>potential</strong> while women are held to <strong>proven</strong> results — at the same level, women run an extra "prove it again" lap. Two counters: first, <strong>translate potential into accomplished fact</strong> (fill the brag doc with impact that already happened, leaving no room for "she's not ready"); second, actively ask for a sponsor rather than wait to be noticed — studies find women get more mentors (advice) but fewer sponsors (opportunities), so patch that link deliberately.
+</div>
+</div>
+</div>
+
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Dual Tracks: Manager and IC Are Two Professions, Not High and Low — a Pendulum
+<span class="en">The Engineer / Manager Pendulum</span></h2>
+<span class="tag">Dual track</span><span class="tag">Staff+</span><span class="tag">Pendulum</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Management isn't the "upgraded" version of being an IC — it's a <strong>different profession</strong>: different skills, different days, different source of fulfillment. The IC high track (Staff/Principal) is peer to management; swinging back and forth between the two isn't failure, it compounds your advantage.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Management is not a promotion, management is a change of profession. The best line managers I've ever worked for are the ones who don't want your job."</span>
+<span class="source">— Charity Majors, "The Engineer/Manager Pendulum" (2017)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The Dual-Track Ladder and the Pendulum</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="160" y="28">IC track</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="500" y="28">Manager track</text>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="245"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="195"></rect>
+<rect fill="#e6efdc" height="34" rx="4" stroke="#5c8a3a" stroke-width="2" width="220" x="50" y="145"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="95"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="50" y="45"></rect>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="160" y="267">Senior</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="160" y="217">Staff</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12.5" font-weight="700" text-anchor="middle" x="160" y="167">Sr. Staff / Principal</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="160" y="117">Distinguished</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="160" y="66">Fellow…</text>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="245"></rect>
+<rect fill="#e6efdc" height="34" rx="4" stroke="#5c8a3a" stroke-width="2" width="220" x="390" y="195"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="145"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="95"></rect>
+<rect fill="#fcf6e8" height="34" rx="4" stroke="#a8702d" stroke-width="1.5" width="220" x="390" y="45"></rect>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="267">EM / TLM</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12.5" font-weight="700" text-anchor="middle" x="500" y="217">Sr. Manager</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="167">Director</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="117">Sr. Director</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12.5" text-anchor="middle" x="500" y="66">VP…</text>
+<path d="M270 212 C320 212 340 162 390 162" fill="none" stroke="#7a2a5a" stroke-dasharray="5 4" stroke-width="2"></path>
+<path d="M390 205 C340 205 320 255 270 255" fill="none" stroke="#7a2a5a" stroke-dasharray="5 4" stroke-width="2"></path>
+<text fill="#7a2a5a" font-family="Georgia" font-size="11" font-weight="700" text-anchor="middle" x="330" y="150">pendulum</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="330" y="300">Same height = peer level; swinging back and forth compounds advantage</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The TLM's Fork-in-the-Road Questions</div>
+<div class="scene">
+<div class="setup">Setup: You've been a TLM for two years, torn between climbing the manager track or swinging back to Staff IC.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Wrong frame (treating it as a demotion)</div>
+<p>"Going back to IC means admitting I failed at management, doesn't it? Once you've moved up, you don't go back." — Treating dual tracks as a one-way elevator, so "face" chains you to a path that doesn't fit you.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Right frame (ask about energy, not face)</div>
+<p>Ask yourself three questions: <strong>(1) Does my fulfillment come from "I cracked a hard problem myself" or "the team is stronger because of me"? (2) Which moments last week charged me, which drained me? (3) In five years do I want to be known as an architecture decision-maker or an org builder?</strong></p>
+<p>See Will Larson's <em>Staff Engineer</em> IC-track archetypes — <strong>Tech Lead / Architect / Solver / Right Hand</strong>: Staff+ isn't "coding at a higher level," it's an influence profession in its own right. Swinging back is changing your moveset, not a demotion.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Manager vs. IC Decision Checklist</div>
+<ul class="checklist">
+<li>Do my "charging" moments come more from deep technical problem-solving, or from growing people / building systems / cross-team work?</li>
+<li>Can I accept that the manager track's fulfillment is <strong>indirect and lagging</strong> (team output shows up months later)?</li>
+<li>If I pick the IC high track, do I understand Staff+ runs on "technical influence and judgment," not lines of code?</li>
+<li>Is my company's IC ceiling truly peer to the manager track? (In some places, Staff+ exists in name only — that's a signal about the environment.)</li>
+<li>Am I chained by "going back looks bad," rather than choosing by energy and long-term positioning?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Going into management to escape code.</strong> Management isn't "the reward of not coding," it's a harder, different skill set.</li>
+<li><strong>Staying on the manager track for face.</strong> Forcing an ill-fitting role because of "fear of looking like a step back" — you do both jobs badly.</li>
+<li><strong>Thinking Staff+ is just senior coding.</strong> The currency of Staff+ is technical judgment, cross-team influence, and "making complex problems clear," not output volume.</li>
+<li><strong>Grinding the IC track at a company with a low IC ceiling.</strong> Whether the track exists is an environment problem; don't fight structure with personal effort.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>When to Pivot: On-Time Always Feels Too Early
+<span class="en">When to Pivot — On-Time Quitting Feels Early</span></h2>
+<span class="tag">Pivot</span><span class="tag">Cut losses</span><span class="tag">Exit</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">When the signals to leave appear, "just wait a bit longer" always has reasons (sunk cost, unvested equity, face). But <strong>leaving at the right time almost always feels too early</strong>; by the time you're "sure you should go," you're usually a year late.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Quitting on time will usually feel like quitting too early."</span>
+<span class="source">— Annie Duke, <em>Quit</em> (2022)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: Telling a "Trough" From a "Peak"</div>
+<div class="scene">
+<div class="setup">Setup: You're a bit bored in your current role, unsure if it's a temporary trough or a real time to pivot.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The sunk-cost trap</div>
+<p>"I've put four years in here, equity vests in one more — leaving now would be such a waste. Let me tough it out, maybe it'll get better." — Deciding stay-or-go on <strong>what's already been paid</strong>, which you can't recover whether you stay or leave.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Opportunity-cost + inflection view</div>
+<p>Switch the question: <strong>"If I were joining this company and this role fresh today, would I still choose it?"</strong> If no, then stay-or-go should be computed on <strong>the next year's growth and opportunity</strong>, not the last four years' ledger.</p>
+<p>Layer on Andy Grove's "strategic inflection point": <strong>snow always melts first at the edges</strong> — the earliest signs of an org's decline, or your own stalled growth, show up at the periphery (good people start leaving; you haven't learned anything new in a year). Watch the edges; don't wait for the center to collapse.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Pivot Decision Checklist (Set "Kill Criteria" First)</div>
+<ul class="checklist">
+<li>Can I write down a <strong>stop-loss line</strong> in advance? ("If X doesn't improve for two straight quarters, I start looking" — set it when calm, not on impulse in a trough.)</li>
+<li>Are my reasons to "wait" pointing at <strong>future opportunity</strong>, or just guarding <strong>past sunk cost</strong>?</li>
+<li>Is what I've learned in the last 12 months enough to underwrite the positioning for my next jump?</li>
+<li>Edge signals: are good colleagues leaving? Is my manager still fighting for resources for me?</li>
+<li>Am I "running from" (push) or "running toward" (pull)? Both can justify leaving, but be clear which it is.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes · Owning the Gray</div>
+<div class="pitfall">
+<ul>
+<li><strong>Deciding on sunk cost.</strong> Equity, tenure, "I've made it this far" — these are the past, not entries in the future's ledger.</li>
+<li><strong>Rage-quitting or leaving on a trough impulse.</strong> Set the stop-loss line when calm, not on your worst day.</li>
+<li><strong>Only "running from," never "running toward."</strong> A pivot without clear positioning (Card 1) just repeats the same rut somewhere else.</li>
+<li><strong>Toughing it out as "loyalty."</strong> Honestly: staying often has real upsides (relationships, equity, stability); leaving has real costs. There's no clean optimum here — only which cost you're willing to pay. Sun Tzu: "if outmatched, be able to avoid the enemy" — a graceful retreat from an unwinnable fight is also strategy.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>Go Deeper</h3>
+<details>
+<summary>Doesn't "run yourself like a company" slide into refined selfishness, treating colleagues as resources?</summary>
+<div>It does, if all that's left is calculation. The difference: good career strategy <strong>aligns your growth with the org's output</strong> — the positioning you bet on is exactly what the org is scarce in, and your promotion rests on attributable, real impact. It requires you to deliver value and earn a sponsor's genuine backing, both built on trust, not scheming. The warning signs of the selfish slide: you start grabbing credit, hoarding information, doing only what helps your promotion. Strategy means owning your ten years, not turning every interaction into a transaction.</div>
+</details>
+<details>
+<summary>Positioning should be "narrow and deep," but tech moves fast — won't betting narrow get you obsoleted?</summary>
+<div>What's narrow is the <strong>problem domain</strong>, not the <strong>tech stack</strong>. "Keeping AI systems from collapsing at scale" is a problem domain; the underlying framework will change, but "judgment about stability at scale" is transferable and grows more valuable with age. Betting on a specific tool (a framework, a platform) is indeed risky; betting on a class of <strong>hard, durable problems</strong> is relatively cycle-resistant. Positioning plus staying in the "learning zone" to keep refreshing tools are not in conflict.</div>
+</details>
+<details>
+<summary>The pendulum sounds nice, but many companies have no truly peer IC high track. Then what?</summary>
+<div>This is exactly what "whether the track exists is an environment problem" means in the Card 3 checklist. If a company's Staff+ exists in name only and all power sits on the manager track, then "choosing the IC track" is empty talk there — and that itself is <strong>important information</strong> about the company, to feed into your Card 4 pivot call. Sometimes the right move isn't picking a track at your current company, but moving to one with genuinely equal dual tracks to swing your pendulum. Personal choice must respect structural reality.</div>
+</details>
+<details>
+<summary>"On-time always feels too early" — so how do I avoid becoming a job-hopper who never accumulates anything?</summary>
+<div>Annie Duke's line targets "should go but staying out of sunk cost," not "jump at the first discomfort." The dividing line is Card 4's <strong>pre-set stop-loss</strong>: writing down "what conditions make me leave" while calm both stops you from dragging on out of face and from jumping on a mood. Chronic job-hopping is usually the symptom of "only running from, never toward" (no positioning) — fix positioning first, then pivots accumulate. Depth takes time, but the wrong depth just wastes time; the key is telling which one you're in.</div>
+</details>
+<details>
+<summary>Promotion runs on sponsors, but if my org is politicized and sponsors are all faction games?</summary>
+<div>First separate sponsor from faction: a sponsor vouches for you <strong>based on your real impact</strong>; a faction is a self-interest bond <strong>based on picking a side</strong>. The healthy move is to let several people with decision power genuinely see your contribution, rather than betting your fate on a single patron — a single patron is both a faction risk and a fragility (they leave, you collapse). If promotion in your org is fully divorced from contribution and all that's left is side-picking, that's a strong pivot signal (back to Card 4). Politics can't be fully avoided, but you can choose to accumulate backing through contribution rather than dependence.</div>
+</details>
+</div>
+
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Practice · Your Day 43 Action</h3>
+<p>Do two concrete things this week — not reflection, not reading:</p>
+<div class="action">
+<strong>Step 1 (write your positioning sentence + verify):</strong> Complete this in one line: "In the next two years I want to be known as 'the person who's great at ___.'" It must be narrow and specific enough to pass Card 1's three-circle intersection. Then find <strong>1 skip-level or senior peer</strong> and ask: "Will this capability really be scarce in the org over the next two years?" Use their answer to calibrate your positioning.<br><br>
+<strong>Step 2 (start a brag doc):</strong> Open a new doc, work backward through the last two quarters, and list — item by item — the <strong>next-level</strong> impact you're already delivering (quantified where possible). When done, stare at it and ask one reflection question: <strong>"Of this evidence, how many items are truly next-level work, and how many are just my current level done diligently?"</strong> The gap is what you build toward next quarter.
+</div>
+</div>
+
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+
+<footer>BigCat · Leadership Daily · Day 43 · 2026.07.01</footer>
+</div>
+</body>
+</html>
