@@ -38,7 +38,7 @@ ENDPOINT_TEMPLATE = "https://{region}.tts.speech.microsoft.com/cognitiveservices
 DEFAULT_VOICE_ZH = "zh-CN-XiaoxiaoNeural"
 DEFAULT_VOICE_EN = "en-US-JennyNeural"
 # Elements whose data-zh/data-en text becomes part of a model's narration.
-NARRATION_TAGS = ("h1", "h2", "h3", "h4", "p", "div", "li")
+NARRATION_TAGS = ("h1", "h2", "h3", "h4", "p", "div", "li", "summary")
 REPO_DIR = Path(__file__).parent.resolve()
 AUDIO_DIR = REPO_DIR / "audio"
 # Azure tolerates much larger bodies than Volcano. 3000 chars gives plenty of
