@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 44：Mentor 与 Sponsor</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 44 · 2026.07.03</div>
+<h1>Mentor 与 Sponsor：谁陪你想，谁替你争</h1>
+<div class="meta"><span>主题：Mentors &amp; Sponsors</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"A sponsor will use their internal political and social capital to move your career forward behind closed doors." — Carla Harris</div>
+</header>
+<div class="intro">
+<strong>本周的命题：</strong>很多人把职业停滞归咎于"缺少 mentor"，收集了三五个愿意喝咖啡给建议的前辈——却依然升不上去。因为决定你升迁的那场会议里，没有人替你说话。<strong>Mentor 陪你想清楚问题，Sponsor 拿自己的政治资本，替你争一个你不在场的机会。</strong>前者便宜且多，后者昂贵且稀缺，而后者才是晋升的杠杆。本周四个原则：<strong>分清两者</strong>、<strong>怎么找 sponsor</strong>（挣来的，不是求来的）、<strong>怎么用好这段关系</strong>（给他弹药、别让他丢脸）、以及作为 tech lead manager，<strong>怎么去 sponsor 别人</strong>。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>分清区别：一个对你说话，一个替你说话
+<span class="en">Mentor Talks To You; Sponsor Talks About You</span></h2>
+<span class="tag">区别</span><span class="tag">重要性</span><span class="tag">政治资本</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Mentor 给你建议，消耗的是他的时间；Sponsor 在你不在场的房间里替你争取机会，消耗的是他自己的<strong>政治资本</strong>。前者让你更聪明，后者让你被提拔——两者都要，但别把 mentor 错当成 sponsor。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"A sponsor is someone who will use their internal political and social capital to move your career forward behind closed doors."</span>
+<span class="zh">"Sponsor 是那个愿意在关起门的会议里，动用他内部的政治与人脉资本，替你把职业往前推的人。"</span>
+<span class="source">— Carla Harris, TED (2018);《Expect to Win》作者</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">三者辨析（别再混为一谈）</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#fcf6e8" height="210" rx="6" stroke="#a8702d" stroke-width="2" width="205" x="18" y="24"></rect>
+<rect fill="#fcf6e8" height="210" rx="6" stroke="#a8702d" stroke-width="2" width="205" x="248" y="24"></rect>
+<rect fill="#e6efdc" height="210" rx="6" stroke="#5c8a3a" stroke-width="2" width="215" x="468" y="24"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="120" y="52">Coach 教练</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="120" y="72">问你问题</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="33" y="104">给：提问、反思</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="33" y="130">花：结构化时间</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="33" y="156">在场：你面前</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="33" y="182">供给：多</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="33" y="208">帮你：想清楚</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="350" y="52">Mentor 导师</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="72">给你建议</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="263" y="104">给：经验、判断</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="263" y="130">花：时间、善意</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="263" y="156">在场：你面前</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="263" y="182">供给：较多</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="263" y="208">帮你：更聪明</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="575" y="52">Sponsor 赞助人</text>
+<text fill="#5c7a3a" font-family="Georgia" font-size="11" text-anchor="middle" x="575" y="72">替你说话</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="483" y="104">给：机会、背书</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="483" y="130">花：政治资本</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="483" y="156">在场：你缺席时</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="483" y="182">供给：稀缺</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="483" y="208">帮你：被提拔</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一位资深工程师跟你诉苦"我明明有好几个 mentor，为什么还是升不上去"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 错误的自我诊断</div>
+<p>"我有三个很好的 mentor，每月喝咖啡，都很看好我。"——追问一句：<strong>上次晋升评审会上，谁在你缺席时点了你的名字、举了你的具体战绩？</strong> 答案是"没有"。他收集了一堆 mentor，却一个 sponsor 都没有。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 正确的区分</div>
+<p>"我需要的不是更多建议，而是一个<strong>有决策权、且愿意在评审会替我背书</strong>的人。"——建议廉价（人人乐意给），背书昂贵（要押上自己的信誉）。看清缺口在哪一边，才不会继续错付努力。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">盘点检查表：你现有的关系是哪一种？</div>
+<ul class="checklist">
+<li>列出你 3–5 个"贵人"，逐个标注：他给你的是<strong>建议</strong>、还是<strong>机会与背书</strong>？</li>
+<li>过去一次晋升/项目分配里，有没有一个人<strong>在你不在场时</strong>替你争取过？（那个人才是 sponsor）</li>
+<li>你的 sponsor 有没有<strong>实际的决策权或影响力</strong>？（善意但无权，等于 mentor）</li>
+<li>他知道你下一步<strong>想去哪</strong>吗？（sponsor 不能替你争一个他不知道你想要的东西）</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 · 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 mentor 数量当安全感。</strong>五个 mentor ≠ 一个 sponsor；建议再多也不自动变成提拔。</li>
+<li><strong>误以为 sponsor 要"感情好"。</strong>他押注的是你的<strong>战绩</strong>；有时最愿为你背书的人，跟你并不熟。</li>
+<li><strong>指望一个人身兼两职。</strong>好导师未必有权力，有权力者未必有耐心。分开找。</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Ibarra 等人在 HBR（2010）的经典发现：女性<strong>被过度 mentor、却被严重 under-sponsored</strong>。组织乐于给女性"发展建议"，却更少真金白银地押上资本替她们争位置。若你总在收集建议，先问：我缺的是不是恰恰那个愿意花资本的人？把找 sponsor 当成显性目标，而非等它自然发生。
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Sylvia Ann Hewlett,《(Forget a Mentor,) Find a Sponsor》</strong>(2013)— sponsorship 概念的奠基之作。<br/><strong>Herminia Ibarra, Nancy Carter &amp; Christine Silva,《Why Men Still Get More Promotions Than Women》</strong>(HBR, 2010)— "over-mentored, under-sponsored" 出处。</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>怎么找：sponsor 是挣来的，不是求来的
+<span class="en">You Earn a Sponsor, You Don't Ask for One</span></h2>
+<span class="tag">寻找</span><span class="tag">可归因业绩</span><span class="tag">双向交易</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Sponsorship 是投资，不是慈善。Sponsor 押注在<strong>能让他显得有眼光的人</strong>身上。所以路径不是发冷邮件求收养，而是：交付可归因的成果 → 让有权力的人亲眼看到 → 让他知道你想去哪。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Sponsorship is a two-way street. Sponsors extend their reputation on your behalf, and in return protégés owe them stellar performance and loyalty."</span>
+<span class="zh">"赞助是一条双向的街。Sponsor 把自己的声誉押在你身上，作为回报，被赞助者欠他的是出色的业绩与忠诚。"</span>
+<span class="source">— Sylvia Ann Hewlett,《Find a Sponsor》(2013)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你想让隔壁组一位有影响力的总监 D 成为你的 sponsor。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 求收养式冷邮件</div>
+<p>"D 总监您好，很敬仰您，不知能否成为我的 mentor/sponsor，定期指导我的职业发展？"——你在向一个不了解你战绩的人，索要一笔昂贵的投资。他凭什么押上自己的信誉？大概率石沉大海或礼貌敷衍。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 用一次真实交付建立关系</div>
+<p><strong>①精准求助，不是求收养：</strong>"D，你们组那个跨区限流方案，我上季度踩过同样的坑，整理了份复盘也许有用——顺便请教你一个设计取舍。"给价值在先。</p>
+<p><strong>②交付到让他记住：</strong>接下的联合评审里啃下最硬的那块，且让功劳<strong>可归因到你</strong>（你署名、你在会上讲）。</p>
+<p><strong>③说出 aspiration：</strong>"我明年想往 Staff 走，正在补跨组影响力，你觉得我还缺什么？"——sponsor 无法替你争一个他不知道你想要的机会。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">找 sponsor 的检查表</div>
+<ul class="checklist">
+<li>我锁定的候选人，是否<strong>真的有决策权/影响力</strong>触达我想要的机会？（选对屋子里的人）</li>
+<li>我给过他<strong>可见、可归因</strong>的价值证据吗？（不是"我很努力"，是"这件难事是我搞定的"）</li>
+<li>我<strong>明确说出过</strong>我的下一步目标吗？含糊的人无法被 sponsor。</li>
+<li>我是不是把赌注押在<strong>多位</strong>潜在 sponsor 上？（押单一靠山既脆弱，也像派系依附）</li>
+<li>这段关系对他有<strong>回报</strong>吗？（我的成功会不会让他显得有眼光、帮他分担某个难题？）</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"要个头衔"当起点。</strong>没人愿意被正式"任命"为你的 sponsor；关系先于标签。</li>
+<li><strong>只交付、不让人看见。</strong>默默让别人署名，等于抹掉了 sponsor 押注你的理由。可归因是前提。</li>
+<li><strong>藏着 aspiration 等人猜。</strong>"是金子总会发光"是幻觉；不说出口，没人替你争。</li>
+<li><strong>只往上够、不横向织网。</strong>今天的平级 peer，三年后就是有权替你说话的人。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Sylvia Ann Hewlett,《Find a Sponsor》</strong>— "双向街"与被赞助者的义务。<br/><strong>Herminia Ibarra,《Act Like a Leader, Think Like a Leader》</strong>— 关系网络为何是领导力基础设施，而非"钻营"。</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>怎么用：给 sponsor 弹药，让替你说话毫不费力
+<span class="en">Arm Your Sponsor — Make Advocacy Effortless</span></h2>
+<span class="tag">经营关系</span><span class="tag">可转述</span><span class="tag">降低风险</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">Sponsor 替你说话时，手里需要"一句可转述的定位"和"几条可引用的战绩"。你的活儿是<strong>把弹药喂到他嘴边、降低他为你背书的风险，并且永远不让他因为你而丢脸</strong>。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Sponsorship means spending your political capital on someone. Give your sponsor the specific, concrete things they need to advocate for you."</span>
+<span class="zh">"赞助意味着在某人身上花掉你的政治资本。要把 sponsor 替你发声所需的、具体而实在的素材，交到他手上。"</span>
+<span class="source">— Lara Hogan,《What Does Sponsorship Look Like?》</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：晋升评审季前，你的 sponsor 说"我会在会上帮你说话"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 把弹药准备的活儿丢给他</div>
+<p>"太感谢了，就拜托你了！"——然后什么都不给。评审会上他只能泛泛说一句"这人挺不错、很努力"。软绵绵、不可引用，在一屋子要抢名额的博弈里，撑不住任何反驳。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 交给他一份"可直接念"的弹药</div>
+<p>"我整理了三条最硬的证据，你在会上需要可直接用：<br/>① <strong>限流项目</strong>：Q2 我主导，跨 3 组，事故率降 40%，两位 Staff 点赞；<br/>② <strong>带人</strong>：把 X 从徘徊带到独立 owner，他上季度 promo 了；<br/>③ <strong>影响力</strong>：我写的 RFC 成了全组默认范式。<br/>一句话定位：<strong>'规模化稳定性上，别人先想到找他。'</strong>"</p>
+<p>你把他的活儿从"替你组织论据"降到"把你写好的话念出来"——风险和成本都被你先扛了。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">经营关系检查表</div>
+<ul class="checklist">
+<li>我能用<strong>一句话</strong>说清我的定位吗？（sponsor 要能对别人复述它）</li>
+<li>我有没有定期（每季度）给他<strong>3 条可引用的 wins</strong>？（是喂弹药，不是邀功——差别在于是否指向共同目标）</li>
+<li>我有没有替他<strong>降低风险</strong>：把可能让他难堪的坑提前告诉他，而不是让他被别人当场打脸？</li>
+<li>他为我花的资本，我有没有<strong>兑现</strong>？（交付出色 + 关键时刻不掉链子，是唯一的回报）</li>
+<li>我有没有把赞助<strong>用在刀刃上</strong>？（别为鸡毛蒜皮消耗他有限的资本）</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 · 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>报忧不报功。</strong>只在出问题时找 sponsor，他手里就永远没有替你说好话的素材。</li>
+<li><strong>让他为你丢一次脸。</strong>他背书后你掉链子——政治资本是一次性透支，很难再借。</li>
+<li><strong>羞于开口喂弹药。</strong>喂弹药不是自夸，是让他的背书站得住；不给反而浪费善意。</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究反复显示女性更容易<strong>低估并羞于陈述自己的成就</strong>，把"给 sponsor 喂战绩"误当成惹人厌的自夸。一个心理减负的框架：你不是在炫耀，你是在<strong>降低替你背书者的风险</strong>——把它想成对 sponsor 的一份体贴，开口就容易得多。战绩写在文档里、由他去转述，还能绕开"自己说显得自负"的双重束缚。
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Lara Hogan,《What Does Sponsorship Look Like?》</strong>（个人博客 / Resilient Management 延伸）— 赞助的具体动作清单。<br/><strong>Adam Grant,《Give and Take》</strong>— 互惠、给予者如何被记住，以及"倡导他人"的力量。</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>怎么做：去 sponsor 别人，在他不在的房间替他说话
+<span class="en">Become a Sponsor — Advocate in the Rooms They're Not In</span></h2>
+<span class="tag">成为赞助人</span><span class="tag">Calibration</span><span class="tag">用出资本</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则</div>
+<div class="principle">作为 tech lead manager，你已握着分配可见项目、在 calibration 发言的权力。Sponsorship 就是<strong>把这份权力具体地、可归因地用出去</strong>——不是心里觉得某人好，而是在他缺席的房间里，指名道姓替他争。</div>
+</div>
+<div class="section">
+<div class="section-label">名家原话</div>
+<div class="quote">
+<span class="en">"Mentorship helps people better navigate their circumstances; sponsorship changes their circumstances."</span>
+<span class="zh">"导师帮人更好地应对处境；赞助人则改变人的处境。"</span>
+<span class="source">— Rosalind Chow, HBR (2021)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">赞助的四个动作（Chow 的 ABCD）</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 210" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#e6efdc" height="80" rx="6" stroke="#5c8a3a" stroke-width="2" width="320" x="20" y="20"></rect>
+<rect fill="#e6efdc" height="80" rx="6" stroke="#5c8a3a" stroke-width="2" width="320" x="360" y="20"></rect>
+<rect fill="#e6efdc" height="80" rx="6" stroke="#5c8a3a" stroke-width="2" width="320" x="20" y="112"></rect>
+<rect fill="#e6efdc" height="80" rx="6" stroke="#5c8a3a" stroke-width="2" width="320" x="360" y="112"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="15" font-weight="700" x="38" y="48">A · Amplify 放大</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="38" y="72">公开归功，让他的贡献</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="38" y="90">被更多人、更高层看见</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="15" font-weight="700" x="378" y="48">B · Boost 举荐</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="378" y="72">在评审/分配会上，指名</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="378" y="90">道姓地正式背书、提名</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="15" font-weight="700" x="38" y="140">C · Connect 牵线</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="38" y="164">把他引入你的人脉网，</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="38" y="182">给他你才有的那些门</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="15" font-weight="700" x="378" y="140">D · Defend 护航</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="378" y="164">被质疑或背锅时替他辩护，</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="378" y="182">保护他的声誉不被误伤</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：跨组 calibration 会，你要替下属 X 争一个高一级的评级。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 泛泛的"好人卡"</div>
+<p>"X 这一年表现很不错，很努力，也很靠谱，我觉得可以往上提一提。"——没有证据、没有归因、没有明确的 ask。在一屋子人抢有限名额时，这句话第一个被略过。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 证据 + 归因 + 明确诉求</div>
+<p>"我为 <strong>X 提名 Senior</strong>，三条依据：① 限流项目他独立 owner，跨 3 组、事故率降 40%；② 把新人 Y 带到独立交付；③ 他的 RFC 成了全组范式。这些是 Senior 级的<strong>范围与影响</strong>，不是把本级做勤了。<strong>诉求明确：这轮给他 Senior。</strong>"</p>
+<p>指名、给证据、可归因、清晰 ask——这才是把政治资本真正花出去。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">成为 sponsor 的检查表</div>
+<ul class="checklist">
+<li>过去一个季度，我在<strong>某人不在场</strong>的会议里，具体替谁争取过一次？（说不出名字＝我没在 sponsor）</li>
+<li>我给出高可见度机会时，是不是总给<strong>同一批"像我的人"</strong>？（当心 mini-me 偏好）</li>
+<li>我替人背书时，有没有<strong>具体证据 + 明确 ask</strong>，而不是"他不错"？</li>
+<li>我 sponsor 的对象里，有没有<strong>被系统性低估</strong>的人（安静的贡献者、少数群体）？</li>
+<li>我押上的是真资本吗？（sponsorship 有成本——他若搞砸会溅到我。这正是它值钱的原因）</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 · 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 mentor 当 sponsor 交差。</strong>约喝咖啡给建议很舒服（零风险），真在评审会押名字才有用。别用前者假装做了后者。</li>
+<li><strong>只赞助"像自己的人"。</strong>mini-me 偏好让机会一次次流向同一类人，复制现状。</li>
+<li><strong>背书却不敢真花资本。</strong>说好话但一遇反对就撤——这不是 sponsor，是围观。</li>
+<li><strong>诚实的灰色：</strong>赞助是零和的，资本有限，抬 A 就意味着这轮没抬 B。谁值得你押，是艰难且有代价的判断，没有干净解。</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Ibarra 的研究点破一个残酷循环：女性与少数群体<strong>被大量 mentor、却少有人真 sponsor</strong>。作为握有资本的 manager，最高杠杆的动作就是刻意去 sponsor（不只是 mentor）那些安静但扎实、不擅自我推销的贡献者。<strong>Chow 提醒：真正的赞助是改变别人的处境，不是让自己感觉良好。</strong>约谈给建议是低风险的自我安慰；在评审会押上你的名字，才是把资本真花出去。
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">关键参考</div>
+<div class="ref"><strong>Rosalind Chow,《Don't Just Mentor Women and People of Color. Sponsor Them.》</strong>(HBR, 2021)— ABCD 框架与"改变处境"之别。<br/><strong>Lara Hogan,《Resilient Management》</strong>— manager 作为 sponsor 的具体动作与边界。</div>
+</div>
+</div>
+<!-- ============ Deep Think ============ -->
+<div class="deepthink">
+<h3>深入思考</h3>
+<details>
+<summary>"挣来 sponsor"听起来很功利，会不会把同事互助都变成算计交易？</summary>
+<div>会，如果只剩算计。区别在于：健康的赞助建立在<strong>真实业绩与信任</strong>之上——sponsor 押注你，是因为你确实交付了让他敢背书的成果，这要求你先创造价值。滑向纯交易的信号是：只在有用时才联系人、只做对晋升有利的事、把每次帮忙都记账。把它理解为"让贡献被有权力的人看见"，而非"把关系变现"，就守住了那条线。</div>
+</details>
+<details>
+<summary>如果组织高度政治化，sponsor 全是派系站队怎么办？</summary>
+<div>先分清 sponsor 与派系靠山：前者<strong>基于你的真实影响力</strong>背书，后者<strong>基于站队</strong>绑定利益。对冲之道是让<strong>多位</strong>有决策权者真实看到你的贡献，而非把命运押在单一靠山上——押单点既是派系风险，也是脆弱性（他一走你就塌）。若晋升完全脱离贡献、只剩站队，这本身是强烈的 pivot 信号（回到 Day 43）。</div>
+</details>
+<details>
+<summary>manager 去 sponsor 下属，和"任人唯亲"的界线在哪？</summary>
+<div>界线在<strong>依据</strong>：健康的赞助押注<strong>可归因的业绩与潜力</strong>，经得起证据检验；任人唯亲押注<strong>关系亲疏与忠诚</strong>，怕见光。一个自检：我 sponsor 的人是不是总是"像我的人"（mini-me 偏好）？如果高可见机会反复流向同一类人，即使个个够格，你也在系统性复制现状。用证据而非交情说话，并刻意覆盖被低估者，就守住了分野。</div>
+</details>
+<details>
+<summary>Sponsorship 是零和的——抬举一个就没抬另一个，这道德吗？</summary>
+<div>诚实说：有限名额下赞助确实零和，抬 A 就是这轮没抬 B，没有皆大欢喜的干净解。但零和不等于不道德——不作为也是选择，只是把决定权让给了默认偏见（谁更会自我推销）。你能做的是让取舍的<strong>依据尽量正当</strong>：基于证据、覆盖被低估者、对没押的人诚实（告诉他下轮要补什么），而非假装人人有份。承认代价，是负责任地用权力。</div>
+</details>
+</div>
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>本周习作 · Your Day 44 Action</h3>
+<p>本周做两件具体的事，一件为己、一件为人，都不是反思也不是阅读：</p>
+<div class="action">
+<strong>第一步（盘点 + 补一颗弹药）：</strong>用 Card 1 检查表列出 3–5 位"贵人"，逐个标注是 mentor 还是 sponsor。找出最想争取的那位潜在 sponsor，本周主动给他<strong>一条可引用的 win</strong>（一句话定位 + 一个量化战绩），并说清你下一步想去哪。<br/><br/>
+<strong>第二步（真花一次资本）：</strong>在本周任何一场你能发言、而某位下属/peer 不在场的会议里，用 Card 4 的"证据 + 归因 + 明确 ask"结构替一个人争取一次——优先选那个<strong>安静扎实、不擅自我推销</strong>的人。<br/><br/>
+会后写一行反思题：<strong>"这次我押上的，是真资本（有风险、可归因），还是一张零成本的好人卡？"</strong>
+</div>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 44 · 2026.07.03</footer>
+</div>
+</body>
+</html>
