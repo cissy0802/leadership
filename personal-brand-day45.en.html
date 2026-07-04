@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 45: Personal Brand & Thought Leadership</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#4a3a20}
+.ref strong{color:#5c3a18}
+.deepthink{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18;box-shadow:0 2px 14px rgba(92,58,24,0.09)}
+.deepthink h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:16px;color:#5c3a18}
+.deepthink details{border-bottom:1px dashed #d8c8a8;padding:12px 0}
+.deepthink summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deepthink details div{margin-top:10px;font-size:0.93rem;color:#4a3a20}
+.homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
+.homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
+.homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
+.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
+.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 45 · 2026.07.04</div>
+<h1 data-tts="a1b2c3d4e5f60718">Your Personal Brand: Who Speaks for You When You're Not in the Room</h1>
+<div class="meta"><span>Topic: Personal Brand &amp; Thought Leadership</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"Your brand is what other people say about you when you're not in the room." — Jeff Bezos</div>
+</header>
+<div class="intro">
+<strong>This week's premise:</strong> Many engineers instinctively recoil from "personal brand"—it smells of influencers, self-promotion, cringe. But the truth is far more neutral: <strong>your brand is simply the one sentence people use to describe you when you're not around.</strong> Having "no brand" doesn't mean you're clean—it means that sentence gets filled in at random by others. For a big-company tech lead manager, the calibration room where your promotion is decided is precisely the room you're not in—and how the people there describe you is your brand either working for you or dragging you down. Four principles: <strong>brand is what they say, not what you claim</strong>, <strong>internal visibility before external fame</strong>, <strong>let writing and speaking compound your work</strong>, and <strong>the consistency dividend and the authenticity bill</strong>.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2 data-tts="9f8e7d6c5b4a3021">Brand Is What They Say, Not What You Claim
+<span class="en">Your Reputation Lives in Other People's Sentences</span></h2>
+<span class="tag">Positioning</span><span class="tag">Reputation</span><span class="tag">One Sentence</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Your brand isn't who you claim to be on your résumé—it's how others summarize you in one sentence when you're not there. What you can do isn't "invent a sentence"; it's choose a true positioning, then let your work prove it repeatedly until others say that sentence themselves.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Your brand is what other people say about you when you're not in the room."</span>
+<span class="source">— attributed to Jeff Bezos (widely quoted)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: A skip-level director asks an engineer on a neighboring team—"What does BigCat do?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Fuzzy positioning</div>
+<p>The answer: "Uh… he runs a backend team, does a lot of stuff." Vague, replaceable, nothing that lands in the calibration plus-column. No matter how much you do, there's no one-sentence version of you in anyone's head.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Sharp positioning</div>
+<p>What you want to hear: "BigCat? That's the tech lead who cut our recommendation latency in half and grew two seniors along the way."<br/>
+You don't produce that sentence by saying it—you produce it by <strong>hammering the same positioning</strong> through every update, doc, and person you grow over a year. Method: pick <strong>one</strong> capability label (not three)—"distributed-systems reliability" or "turns messes into the gold standard." Better narrow than broad.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Two Axes of Brand: Competence × Visibility</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#fcf6e8" height="120" rx="6" stroke="#c4a878" stroke-width="1.5" width="270" x="100" y="30"></rect>
+<rect fill="#e6efdc" height="120" rx="6" stroke="#5c8a3a" stroke-width="2" width="270" x="380" y="30"></rect>
+<rect fill="#f2ede0" height="120" rx="6" stroke="#c4a878" stroke-width="1.5" width="270" x="100" y="160"></rect>
+<rect fill="#f5e0d0" height="120" rx="6" stroke="#b85c3a" stroke-width="2" width="270" x="380" y="160"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="235" y="72">Invisible Star</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="235" y="96">Strong · Unknown</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="235" y="116">→ Undervalued, slow to rise</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="515" y="72">Benchmark · Leverage ✓</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="11" text-anchor="middle" x="515" y="96">Strong · Seen</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="11" text-anchor="middle" x="515" y="116">→ Brand works for you</text>
+<text fill="#7a6a48" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="235" y="212">Nobody</text>
+<text fill="#8a7a58" font-family="Georgia" font-size="11" text-anchor="middle" x="235" y="236">No substance · No exposure</text>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="515" y="212">Hollow Influencer</text>
+<text fill="#a04020" font-family="Georgia" font-size="11" text-anchor="middle" x="515" y="236">Loud · No substance</text>
+<text fill="#a04020" font-family="Georgia" font-size="11" text-anchor="middle" x="515" y="256">→ Short-term gain, long-term blowback</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" transform="rotate(-90 40 150)" x="40" y="150">Competence →</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="385" y="296">Visibility →</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Positioning Self-Check</div>
+<ul class="checklist">
+<li>Can I state what I'm known for in one sentence that <strong>doesn't contain "owns / manages"</strong>?</li>
+<li>Is this positioning scarce, or could ten peers say the exact same thing?</li>
+<li>Over the past 3 months, did my visible output all reinforce one positioning (rather than scatter)?</li>
+<li>If you asked three different colleagues, would they give close-to-matching descriptions?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes · A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Wanting to be known for five things = being known for zero.</strong> Brand runs on focus, not on covering everything.</li>
+<li><strong>Positioning by "telling," not "proving."</strong> One slick intro can't carry a brand; a year of consistent delivery can.</li>
+<li><strong>Positioning detached from real ability.</strong> One deep probe and it collapses—brand becomes a liability.</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research (Rudman; Bowles et al.) shows women's self-promotion more readily triggers "backlash": the same "I led this project" reads as confidence from a man and "credit-grabbing, hard to work with" from a woman (the competence–likability double bind). One counter is to <strong>substitute third-party evidence for self-praise</strong>—let the data, the sponsor, the doc speak ("the team cut latency in half" rather than "I cut it in half"), nailing your positioning into facts and sidestepping the "she's bragging" penalty zone.
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Jeff Bezos</strong>—the widely quoted definition of brand as "what people say when you're not in the room."<br/><strong>Laurie Rudman &amp; Hannah Riley Bowles</strong>—empirical research on the self-promotion backlash against women (source for the Note).</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2 data-tts="1122334455667788">Internal Visibility Before External Fame
+<span class="en">The Calibration Room Beats the Follower Count</span></h2>
+<span class="tag">Visibility</span><span class="tag">Big Co</span><span class="tag">Brag Doc</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">For a big-company tech lead manager, promotion isn't decided by LinkedIn followers—it's decided by a few directors you may not even know in the calibration room. Build your brand inward first: make sure your skip-level, the neighboring managers, and whoever writes your promo packet already know what you've done.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"We are CEOs of our own companies: Me Inc. To be in business today, our most important job is to be head marketer for the brand called You."</span>
+<span class="source">— Tom Peters, "The Brand Called You" (Fast Company, 1997)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: The semiannual promo cycle. Your manager needs to write your promo packet—but only remembers what you did last month.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Heads-down, hoping to be discovered</div>
+<p>You believe "good gold always shines" and never sync proactively. The packet ends up full of recent trivia; the P0 you saved a year ago is forgotten—and calibration bounces you, reason: "impact not clear enough." The gold is buried, and no one's digging for you.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Keep a brag doc (a term coined by Julia Evans)</div>
+<p>One line a month: <strong>what you did + impact + who benefited + evidence link</strong>. Before promo, distill it into three throughlines and hand it to your manager. You're not bragging—you're <strong>supplying ammunition</strong>. When he argues for you, you loaded the rounds.<br/>
+In a monthly 1:1, drop one line: "Wanted to sync a win from this month, for you to use at calibration later." Not credit-seeking—restocking.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Three Layers of Visibility: Promotion Is Decided in the Middle</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#fcf6e8" height="60" rx="6" stroke="#c4a878" stroke-width="1.5" width="500" x="40" y="20"></rect>
+<rect fill="#e6efdc" height="60" rx="6" stroke="#5c8a3a" stroke-width="2.5" width="500" x="40" y="95"></rect>
+<rect fill="#fcf6e8" height="60" rx="6" stroke="#c4a878" stroke-width="1.5" width="500" x="40" y="170"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" x="58" y="46">Outer · Outside the company / industry</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" x="58" y="66">LinkedIn · conferences · blog —— amplifier, not substitute</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="13" font-weight="700" x="58" y="121">Middle · skip-level / neighbor managers / calibration room</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="11" x="58" y="141">Where your promotion is decided —— build here first</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" x="58" y="196">Inner · Direct team and manager</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" x="58" y="216">Daily delivery —— necessary, not sufficient for promotion</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="13" font-weight="700" x="558" y="130">← Decisive</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Minimum-Viable Brag Doc Checklist</div>
+<ul class="checklist">
+<li>Do I keep a running record of accomplishments, rather than cramming from memory the night before promo?</li>
+<li>Does each entry have <strong>quantified impact + a clickable evidence link</strong> (PR, doc, metrics dashboard)?</li>
+<li>Does my manager have "ammunition to speak for me" without having to go dig it up himself?</li>
+<li>Has my high-impact work been directly seen by at least one skip-level or neighbor manager?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Equating visibility with public posting while being invisible inside the company.</strong> However famous outside, no one speaks for you in the promo room.</li>
+<li><strong>Cramming visibility only right before promo.</strong> Calibration folks see through "last-minute posturing" at a glance.</li>
+<li><strong>Over-broadcasting.</strong> @all every little thing and you cry wolf; when it truly matters, no one's watching.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Julia Evans</strong>—"Get your work recognized: write a brag document" (blog), origin of the brag-doc term.<br/><strong>Will Larson,《Staff Engineer》</strong>—how visibility and sponsorship drive senior-level promotion.</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2 data-tts="c0ffee1234567890">Let Writing and Speaking Compound Your Work
+<span class="en">A Good Post Is a 24/7 Copy of You</span></h2>
+<span class="tag">Thought Leadership</span><span class="tag">Writing</span><span class="tag">Speaking</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Thought leadership isn't becoming an industry influencer—it's writing down one thing you've already thought through, so it works for you while you sleep, sit in meetings, or take vacation. A good RFC or blog post is a 24/7, infinitely copyable version of you.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"Imagine if your next boss didn't have to read your résumé because she already reads your blog."</span>
+<span class="source">— Austin Kleon,《Show Your Work!》</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: You want to start writing to build thought leadership, but the moment you sit down you reach for "Top 10 Backend Architecture Trends."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Hollow survey</div>
+<p>A generic roundup anyone could write, no scars of your own—readers finish and can't remember who you are. Clickbait title + secondhand takes = <strong>diluting</strong> your brand, not building it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ A load-bearing firsthand retro</div>
+<p>Write about one specific pit you actually fell into—"How we turned a 3-hour P0 retro into an automated guardrail that never fails the same way twice." Firsthand, specific, costly, and only you can write it. <strong>One of these beats ten trend surveys.</strong><br/>
+Structure formula: <strong>specific problem → what we tried and failed → how we finally solved it → a reusable principle</strong>. Same for an internal RFC—the "why" is worth more than the "what."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Pre-Publish Checklist</div>
+<ul class="checklist">
+<li>Could <strong>only I (having lived it)</strong> write this, or could anyone?</li>
+<li>Is there a real case with numbers or cost, not just abstract advice?</li>
+<li>Can the reader walk away with <strong>one executable principle</strong>?</li>
+<li>Does the body deliver what the title promised (no clickbait)?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes · A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Chasing trends with surveys</strong>—diluting rather than building brand.</li>
+<li><strong>Perfectionism that means you never publish.</strong> A published B+ beats an unpublished A+.</li>
+<li><strong>Writing without leaving links.</strong> Others can't share or cite it, and the compounding breaks.</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+In public speaking and meetings, women are interrupted more often ("manterrupting") and see their ideas restated by men who then get the credit ("hepeating"). The counter is <strong>amplification</strong>—a strategy used by the women on Obama's White House staff: when one woman makes a point, another immediately repeats it and names the author, "as X just said," so the originator is remembered; when interrupted, a calm "let me finish this point" reclaims the floor without escalating to confrontation.
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Austin Kleon,《Show Your Work!》</strong>—the practice of sharing your process, not just the finished product.<br/><strong>Dorie Clark,《Stand Out》</strong>—designing the path from expertise to thought leadership.</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2 data-tts="deadbeef0badf00d">The Consistency Dividend and the Authenticity Bill
+<span class="en">Brand Is Compound Interest—and Can Become Debt</span></h2>
+<span class="tag">Consistency</span><span class="tag">Delivery</span><span class="tag">Authenticity</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle in One Line</div>
+<div class="principle">Brand is a compounding asset—and can turn into a liability. Consistency builds trust (people can predict you = they'll bet on you); but when the image you project runs ahead of what you actually deliver, the gap settles in one lump sum as a credibility crash. The ceiling on brand is authenticity.</div>
+</div>
+<div class="section">
+<div class="section-label">In Their Words</div>
+<div class="quote">
+<span class="en">"The main reason for the uneven sex ratio in management is our inability to distinguish between confidence and competence."</span>
+<span class="source">— Tomas Chamorro-Premuzic, "Why Do So Many Incompetent Men Become Leaders?" (HBR, 2013)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene</div>
+<div class="scene">
+<div class="setup">Situation: You have a modest internal reputation as the "reliability expert." In a cross-team review, to protect the persona, you act totally confident about a design you're actually unsure of.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Propping up the persona</div>
+<p>Dishonest confidence. The design ships and breaks, and one incident shatters the "reliable" brand—rebuilding takes 10× the time. When the persona runs ahead of ability, the bill always arrives.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Calibrated confidence</div>
+<p>"I'm confident on this part; but I haven't verified X—give me three days for a spike before I commit." <strong>Admitting a boundary doesn't weaken the brand; it strengthens "reliable"</strong> (reliable people know exactly what they don't know). The moat of brand is calibrated confidence, not permanent confidence.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The Honest Trade-off (No Optimal Solution Here)</div>
+<div class="pitfall">
+The brutal reality: the market does, in the short run, reward high-confidence self-promoters—even hollow influencers (exactly Chamorro-Premuzic's point)—which is <strong>structurally unfair</strong> to the people who quietly do the work and don't self-promote (many of them women). Two imperfect choices sit in front of you: <strong>don't play at all</strong>, and accept the cost of being chronically undervalued; or <strong>play in a bounded way</strong>, and accept a bit of moral discomfort from "self-marketing." The honest advice is the latter—but anchor it to real work: let your confidence be endorsed by delivery, not a hollow performance.
+</div>
+</div>
+<div class="section">
+<div class="section-label">Brand Sustainability Checklist</div>
+<ul class="checklist">
+<li>Does every label I project externally have real, deliverable ability backing it?</li>
+<li>When uncertain, do I admit the boundary, or prop up the persona?</li>
+<li>Is my confidence endorsed by past delivery, or pure performance?</li>
+<li>Have I tied my brand to a single employer/single project (if it vanishes, does the brand collapse with it)?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes · A Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Propping up fake confidence for the persona</strong>—one exposure and it's game over.</li>
+<li><strong>A brand detached from real values</strong>—wear the mask long enough and it fuses to your face (see Day 35).</li>
+<li><strong>Tying the brand entirely to your current company</strong>—leave and it resets to zero.</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Since the game rewards confidence and penalizes women's self-promotion, "just tell women to promote themselves more confidently" really offloads a systemic problem onto individuals. A more honest dual track: <strong>at the individual level</strong>, use evidence-backed calibrated confidence (neither faking nor shrinking); <strong>at the organizational level</strong>, as a manager you can change the evaluation mechanism—separate "who's loudest" from "who delivers most" in calibration, and proactively sponsor those who don't self-promote (see Day 44). Brand shouldn't be a personal arms race alone.
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Key References</div>
+<div class="ref"><strong>Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</strong>—confidence ≠ competence, and how it distorts promotion.<br/><strong>Machiavelli,《The Prince》</strong> (Ch. 18)—"men judge by the eyes, few by the hands": the realist view of image management and its moral cost.</div>
+</div>
+</div>
+<!-- ============ Deep think ============ -->
+<div class="deepthink">
+<h3>Going Deeper</h3>
+<details>
+<summary>Engineers instinctively hate the cringe of "personal brand"—isn't this teaching people to become what they despise?</summary>
+<div>It depends on whether you read brand as "performance" or "making your contribution visible." The cringe is the <strong>hollow influencer</strong>—image running ahead of ability. This whole piece is anchored the other way: real work first, then make it visible. If every label you project is backed by deliverable ability, "letting people accurately know what you did" isn't self-marketing—it's reducing information asymmetry. What to fear isn't building a brand; it's building one <strong>you can't deliver on</strong>.</div>
+</details>
+<details>
+<summary>Internal vs external brand—if energy is limited, which do you bet on first?</summary>
+<div>For a big-company tech lead manager, almost always <strong>inside first</strong>: the calibration room decides your promotion, not LinkedIn. External brand is an amplifier, not a substitute—it can feed back inward ("even the outside world cites him"), but only once you've established yourself internally. The exception: when you're already eyeing a jump/going independent, or your org systematically fails to recognize contribution (back to the Day 43 pivot signals), external brand becomes your BATNA, worth investing in early.</div>
+</details>
+<details>
+<summary>At a startup/small team, how does personal brand differ from big co?</summary>
+<div>Small companies have no calibration room or promo packet; visibility is nearly automatic—the founder sees you daily. So the marginal return on internal brand is low, and <strong>external brand has more leverage</strong>: hiring, fundraising, BD all feed on the founding team's public reputation. Conversely, big-company hierarchy separates you from decision-makers, so "making people who don't know you aware of you" becomes essential. Change the scale, and the mix of the same principles shifts.</div>
+</details>
+<details>
+<summary>At staff/director level, brand should shift from "what I did" to "what I made happen"—how?</summary>
+<div>Junior brand is <strong>personal output</strong> ("I cut latency in half"); senior brand is <strong>systemic impact</strong> ("the team he grew, the standard he set, made a whole area reliable"). How: deliberately hand visible credit to the team, and reframe your narrative from "hero firefighting" to "designed the system so the fire never starts." The paradox: the higher you go, the more you build your brand by <strong>elevating others</strong>—grabbing credit caps you out.</div>
+</details>
+</div>
+<!-- ============ Homework ============ -->
+<div class="homework">
+<h3>This Week's Exercise · Your Day 45 Action</h3>
+<p>Do two concrete things this week—neither reflection nor reading:</p>
+<div class="action">
+<strong>Step 1 (position + supply):</strong> Using Card 1, write <strong>one sentence</strong> for how you want to be remembered (no "owns / manages"), and start a brag doc (Card 2)—add three entries this month, each with "impact + evidence link." In your next 1:1, sync the strongest one to your manager: "for you to use at calibration later."<br/><br/>
+<strong>Step 2 (compound your work):</strong> Pick one thing you lived through that <strong>only you can write</strong>, and using Card 3's structure formula (problem → failure → solution → principle), write an internal post or RFC intro under 300 words—and ship it this week.<br/><br/>
+Afterward, write one reflection line: <strong>"Is the brand I project running ahead of what I can actually deliver?"</strong>
+</div>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to Index</a>
+</nav>
+<footer>BigCat · Leadership · Day 45 · 2026.07.04</footer>
+</div>
+</body>
+</html>
