@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 49：讲故事的领导力</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.spectrum{background:#fcf6e8;border:1px solid #e6d9bf;border-radius:6px;padding:20px 22px;margin:14px 0}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.twobox{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+.twobox .b{flex:1;min-width:220px;background:#fffaf0;border:1px solid #d8c49a;border-radius:6px;padding:14px 16px;font-size:0.9rem;color:#4a3a20}
+.twobox .b .h{font-weight:700;color:#5c3a18;margin-bottom:6px;font-size:0.95rem}
+.twobox .b.consensus{border-left:4px solid #5c8a3a}
+.twobox .b.topdown{border-left:4px solid #a8702d}
+.twobox .b ul{margin-left:18px;margin-top:6px}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 49 · 2026.07.08</div>
+<h1>讲故事的领导力：让同样的事实，长出让人愿意行动的形状</h1>
+<div class="meta"><span>主题：Storytelling Leadership</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Maybe stories are just data with a soul." — Brené Brown</div>
+</header>
+<div class="intro">
+<strong>本期的命题：</strong>你每周都在"讲"——讲 roadmap、讲重组、讲述职、讲为什么该给团队加人。同样一组事实，摊成一页 bullet 的 slide，团队记住 0 条、会后照旧；包进一个有张力的故事，却能让人在乎、记住、动身。这不是话术包装，是<strong>信息如何被编码进人脑</strong>的问题：人对抽象数字麻木，对具体的人和画面敏感。本期不谈"要真诚要有感染力"这种空话，只给四件可执行的工具：what is / what could be 讲愿景、ABT 三段式讲变革、"招牌故事"沉淀价值观、"一张脸 + 一组数"让论证既动心又可信。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>愿景叙事：别念 PPT，讲一个"从此刻到彼岸"的故事
+<span class="en">Vision as Narrative — From What Is to What Could Be</span></h2>
+<span class="tag">愿景</span><span class="tag">叙事</span><span class="tag">听众为主角</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">愿景不是一页 bullet 的 OKR，是一个有张力的故事：让听众在<strong>现状(what is)</strong>与<strong>可能(what could be)</strong>之间来回摆动，最后自己想动身。主角是团队，不是你。</div>
+<div class="quote">
+<span class="en">"Never deliver a presentation and try to make yourself the hero. The audience is the hero. You are the mentor."</span>
+<span class="zh">"永远不要在演讲里把自己塑造成英雄。听众才是英雄，你是那个导师。"</span>
+<span class="source">— Nancy Duarte,《Resonate》(2010)，Ch.1</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">愿景叙事的"心跳线"：在两极之间来回</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 680 200" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#c4a878" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="640" y1="60" y2="60"></line>
+<line stroke="#c4a878" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="640" y1="140" y2="140"></line>
+<text fill="#5c8a3a" font-family="Georgia" font-size="12" x="40" y="52">what could be（可能之美）</text>
+<text fill="#b85c3a" font-family="Georgia" font-size="12" x="40" y="158">what is（现状之痛）</text>
+<polyline fill="none" points="60,140 160,60 260,140 360,60 460,140 560,60 620,45" stroke="#a8702d" stroke-width="2.5"></polyline>
+<circle cx="620" cy="45" fill="#5c3a18" r="5"></circle>
+<text fill="#5c3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="600" y="30">新常态·行动</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="340" y="185">每一次来回的"落差"＝张力＝听众想改变的动力</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：半年 kickoff 讲新平台愿景</div>
+<div class="scene">
+<div class="setup">情境：BigCat 在团队半年启动会上讲下一阶段方向。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 念 roadmap</div>
+<p>打开 slide，逐条念 5 个 OKR、3 个里程碑、一张架构图。信息齐全，团队记住 0 条，散会照旧。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 在 what is / what could be 之间摆动</div>
+<p><strong>先讲现状之痛（画面）：</strong>"现在每接一个客户，我们要手动配三天环境，on-call 半夜被叫醒是常态。"</p>
+<p><strong>跳到彼岸（画面）：</strong>"想象一年后：客户自助接入，十分钟上线，我们的周末真的属于自己。"</p>
+<p><strong>再来回几次</strong>，把落差撑开。<strong>收尾把主角交给团队：</strong>"能把我们从今天带到那一天的，不是这页 slide，是在座每一个人。"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">愿景故事自检表</div>
+<ul class="checklist">
+<li>有没有清晰的 what is（现状之痛）和 what could be（可能之美）两极？只有彼岸没有痛，愿景像空中楼阁。</li>
+<li>我在两极间制造了至少 2-3 次"来回"张力，而不是平铺直叙？</li>
+<li>故事主角是团队/客户，还是我自己？（把"我要做"改成"我们能到"）</li>
+<li>有没有具体可感的画面（半夜 on-call、十分钟上线），而非抽象形容词（高效、卓越、领先）？</li>
+<li>结尾给了听众一个明确的"第一步"，让张力落地成行动？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>只讲 what could be：</strong>没有现状之痛做对比，再美的愿景也没人有动力离开沙发。</li>
+<li><strong>用形容词代替画面：</strong>"做到世界级"——听众脑中没有图像。换成一个具体场景。</li>
+<li><strong>自己当英雄：</strong>"我带你们打下这座山"——听众成了配角，无法在愿景里照见自己。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+女性在台上讲宏大愿景时，更易被评为"太 aggressive、不够 warm"（competence-likability 双重束缚）。务实解：把愿景锚在"客户/团队的英雄旅程"而非"我的雄心"——既符合 Duarte"听众才是主角"的正确结构，又天然绕开"她太有野心"的偏见反弹。这不是妥协，是把对的叙事结构和政治现实对齐。
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>把一个 roadmap 改写成三句话的愿景故事：一句 what is（现状痛点，具体到画面）、一句 what could be（彼岸，也要画面）、一句"主角是你们"。下次站会讲这三句，别放 slide。</div>
+<div class="setup"><strong>思考题：</strong>我上一次讲团队方向，团队记住了几条？一条都记不住，问题出在内容还是叙事结构？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>变革故事：用 And / But / Therefore 把"为什么要改"说清
+<span class="en">The Change Story — And, But, Therefore</span></h2>
+<span class="tag">变革</span><span class="tag">ABT</span><span class="tag">紧迫感</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">宣布变革最常见的失败是"只有 therefore"（直接下命令）或"只有 and"（一堆背景没有冲突）。有力的变革故事有完整三段：<strong>我们一直 A，但是 B 变了，所以必须 C</strong>。缺了"but"的冲突，就没有紧迫感。</div>
+<div class="quote">
+<span class="en">"And, But, Therefore. Those three words are the spine of narrative. 'And' sets up agreement, 'But' introduces the problem, 'Therefore' delivers the consequence."</span>
+<span class="zh">"And、But、Therefore——这三个词是叙事的脊椎。'and'铺设共识，'but'引入问题，'therefore'给出后果。"</span>
+<span class="source">— Randy Olson,《Houston, We Have a Narrative》(2015)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">ABT 三段结构</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 680 150" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#e6efdc" height="80" rx="6" stroke="#5c8a3a" stroke-width="2" width="190" x="20" y="30"></rect>
+<rect fill="#f5e0d0" height="80" rx="6" stroke="#b85c3a" stroke-width="2" width="190" x="245" y="30"></rect>
+<rect fill="#fcf0dd" height="80" rx="6" stroke="#a8702d" stroke-width="2" width="190" x="470" y="30"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="115" y="58">AND</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" text-anchor="middle" x="115" y="80">共识 / 现状</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="11" text-anchor="middle" x="115" y="98">"我们一直……"</text>
+<text fill="#a04020" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="340" y="58">BUT</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" text-anchor="middle" x="340" y="80">冲突 / 紧迫</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="11" text-anchor="middle" x="340" y="98">"但是……变了"</text>
+<text fill="#a8702d" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="565" y="58">THEREFORE</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" text-anchor="middle" x="565" y="80">出路 / 行动</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="11" text-anchor="middle" x="565" y="98">"所以我们要……"</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="22" text-anchor="middle" x="227" y="78">→</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="22" text-anchor="middle" x="452" y="78">→</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：宣布一次痛苦的架构迁移</div>
+<div class="scene">
+<div class="setup">情境：BigCat 要把团队维护三年的老服务迁到新架构——短期没有新 feature 产出，大家会很累。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 缺 But 的两种翻车</div>
+<p><strong>只有 therefore：</strong>"从下季度起我们迁移到新架构，请排期。"团队只听到"又要加班做没成就感的活"，抵触。</p>
+<p><strong>只有 and：</strong>讲了二十分钟历史背景、选型对比，没人知道重点是什么、为什么是现在。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 完整 ABT</div>
+<p><strong>And：</strong>"我们这套老服务稳定跑了三年，撑起了公司一半营收。"</p>
+<p><strong>But：</strong>"但它现在每月宕机两次，新客户要的多租户它天生做不了，上季度我们因此丢了两个大单。"</p>
+<p><strong>Therefore：</strong>"所以这个季度我们迁移——不是推倒重来，是给这台老引擎换上能载我们下一程的底盘。"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">变革故事自检表</div>
+<ul class="checklist">
+<li>"But"（什么变了、为什么现在不能不改）说清了吗？没有 But 就没有紧迫感。</li>
+<li>我有没有先用"And"承认过去的价值，而非一上来否定团队的心血？</li>
+<li>"敌人"被点成外部形势（市场、技术债、竞品），还是暗示成某个人/某团队的错？</li>
+<li>Therefore 是一条有希望的出路，还是一句冰冷的命令？</li>
+<li>整个故事能用三句话讲完吗？讲不完，说明冲突没抓准。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>跳过 But 直接下命令：</strong>员工没有"为什么是现在"的紧迫感，把变革当领导拍脑袋。</li>
+<li><strong>But 里骂过去、骂团队：</strong>否定在场者的心血会激起防御。敌人指向形势，不是人。</li>
+<li><strong>Therefore 只有痛苦没有希望：</strong>缺了彼岸只剩恐惧，人会僵住或逃跑。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>挑一件你正要推的变革，用 ABT 填空写一句话："我们一直＿＿（and），但是＿＿（but），所以要＿＿（therefore）。"大声念——如果 but 那段没让你自己心跳加速，说明紧迫感没抓对。</div>
+<div class="setup"><strong>思考题：</strong>我最近一次推变革遇到的阻力，有多少是因为我省了"but"、直接跳到了"therefore"？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>用故事对齐：让价值观从口号变成可被复述的"招牌故事"
+<span class="en">Aligning with Story — Springboard &amp; Signature Stories</span></h2>
+<span class="tag">对齐</span><span class="tag">文化</span><span class="tag">Springboard</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">价值观 slide 没人记得，故事才会被复述、传播、内化。对齐团队靠的不是宣讲"我们的价值观是 X"，而是反复讲一个能让人<strong>跳跃式领悟</strong>的具体故事（Denning 称之为 springboard story）。</div>
+<div class="quote">
+<span class="en">"A springboard story is one that enables a leap in understanding by the audience so as to grasp how an organization or community or complex system may change."</span>
+<span class="zh">"跳板故事，是一种能让听众'跳跃式领悟'的故事——让他们瞬间抓住一个组织或复杂系统可以如何改变。"</span>
+<span class="source">— Stephen Denning,《The Springboard》(2000)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：让"客户第一"从口号变成行为</div>
+<div class="scene">
+<div class="setup">情境：BigCat 想让团队真正把"客户第一"活出来，而不是挂在墙上。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 宣讲价值观</div>
+<p>"我们团队的价值观是客户至上，请大家践行。"三天后没人记得，行为毫无变化。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 讲一个招牌故事（signature story）</div>
+<p>"上个月周五晚十一点，Wei 发现某客户的数据同步出了问题——不是我们的锅，是对方配置错了。他本可以周一再说，却直接打过去，陪对方工程师改到凌晨一点。周一那客户的 VP 给我发了封邮件。<strong>这就是'客户第一'长什么样</strong>——不是海报上的四个字，是 Wei 那晚的选择。"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">两类组织故事，各有其用</div>
+<div class="twobox">
+<div class="b consensus">
+<div class="h">✓ 榜样故事（Springboard）</div>
+正向，"这就是我们要的样子"，激发模仿。
+<ul>
+<li>用在招聘 / onboarding / 全员会，传递价值观</li>
+<li>如 Wei 那晚的选择</li>
+</ul>
+</div>
+<div class="b topdown">
+<div class="h">⚠ 警示故事（Cautionary）</div>
+负向，"这是我们踩过的坑"，防止重蹈。
+<ul>
+<li>用在复盘 / post-mortem，沉淀教训</li>
+<li>如某次赶工跳过 review 导致线上事故</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">招牌故事自检表</div>
+<ul class="checklist">
+<li>每条核心价值观，我能各配一个<strong>真实发生过</strong>的具体故事吗？配不出的，其实还只是口号。</li>
+<li>故事有具体的主角、时间、细节（周五晚十一点、改到凌晨一点），还是笼统的"有同事做得很好"？</li>
+<li>它短到别人能在茶水间转述给第三个人吗？能被复述，才能传播。</li>
+<li>我有没有在 onboarding / 全员会 / 复盘里<strong>反复</strong>讲同一组招牌故事，而非只讲一次？</li>
+<li>故事的主角是否多样（不同层级、背景），而不是永远表扬同几个人？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>只宣讲抽象价值观、不给故事：</strong>价值观 slide 的半衰期是三天。</li>
+<li><strong>编造或夸大故事：</strong>一旦被识破，你所有故事的可信度一起归零。只讲真事，宁可平淡。</li>
+<li><strong>主角永远是同一类人：</strong>若你表扬的"英雄"永远是加班到深夜的男工程师，你在无意中定义了一种排他的文化。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+组织里的"英雄叙事"常隐含性别偏好——"救火英雄""深夜攻坚"更多流向男性；而女性常做的"防火"工作（提前协调、让事故根本没发生）因"没有戏剧性"而不被讲述、不被看见。作为讲故事的人，你有权力选择讲谁：<strong>刻意把"因为她提前对齐、事故根本没发生"也讲成招牌故事</strong>，就是在重新定义什么叫英雄。
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>为团队最重要的一条价值观，找一个真实发生过的具体故事（有主角、时间、细节），本周讲出来。观察一周内有没有人向第三方转述它。</div>
+<div class="setup"><strong>思考题：</strong>我团队里，哪种贡献因"没有故事性"而长期不被看见？我能不能给它写一个故事？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>数据 + 故事：一张脸负责让人在乎，一组数负责证明它不是个案
+<span class="en">Data + Story — One Face to Care, The Numbers to Believe</span></h2>
+<span class="tag">数据</span><span class="tag">叙事</span><span class="tag">说服</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">纯数据打动不了人（人对统计数字麻木），纯故事不可信（一个例子可能是特例）。有力的说服是<strong>故事负责让人在乎，数据负责证明它不是个案</strong>：先用一个具体的人抓住心，再用聚合数据锚住脑。</div>
+<div class="quote">
+<span class="en">"Maybe stories are just data with a soul."</span>
+<span class="zh">"也许，故事只是有了灵魂的数据。"</span>
+<span class="source">— Brené Brown,《The Gifts of Imperfection》(2010)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：向 VP 申请 3 个 headcount 还技术债</div>
+<div class="scene">
+<div class="setup">情境：BigCat 要说服 VP 批人手来还技术债。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 只堆数据</div>
+<p>甩一页 dashboard：p99 延迟、错误率、on-call 工单同比。VP 看着数字点头，然后说"先放着，下季度再看"。数字没让他"感到"痛。</p>
+</div>
+<div class="dialog bad">
+<div class="speaker">✗ 只讲故事</div>
+<p>"我们团队最近很累、士气很低。"感性但无凭据，VP 无法判断这是真问题还是团队在抱怨。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 先脸后数</div>
+<p>"上周三凌晨三点，Lin 第四次被同一个 alert 叫醒，修完跟我说'我在想是不是该换个团队了'。<strong>这不是个例</strong>——上季度 on-call 工单涨了 40%，三个人在调研里给'可持续性'打了最低分，我们已流失一名 senior。我要三个 headcount，不是扩张，是止血。"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">数据 + 故事自检表</div>
+<ul class="checklist">
+<li>有没有一个具体的、有名字有场景的"人"，而不只是抽象的"团队/用户"？（identifiable victim effect：一张脸胜过一千个数字）</li>
+<li>紧跟一组聚合数据，证明这张脸不是孤例、不是我挑出来的特例了吗？</li>
+<li>顺序对吗？——通常先故事（勾住情感）再数据（提供依据），而非反过来。</li>
+<li>我的图表本身有没有一句清晰的"结论句"，而不是让对方自己猜重点？</li>
+<li>故事是真的、有代表性的，还是我为打动人挑的极端个案？（挑特例＝操纵，会反噬）</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>只有数据没有脸：</strong>决策者理性认可、情感无感，于是"以后再说"。</li>
+<li><strong>只有故事没有数据：</strong>动人但被当成个人抱怨或轶事，撑不起决策。</li>
+<li><strong>用不具代表性的极端个案煽情：</strong>短期打动，一旦被发现是特例，你的可信度和未来所有论证一起崩。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+当故事主角是"你自己"（述职、争取晋升讲自己的贡献），女性面临额外的 self-promotion 惩罚——同样的自我叙事，女性更易被评为"邀功、不谦虚"。一个对冲：把主角部分让渡给"团队/客户的结果"，用<strong>数据</strong>承载个人贡献（"这个项目我主导，结果是 X"）——让数据替你说那句你自己说出来会被扣分的话。数据在这里是女性自我倡导的政治护甲。
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>拿近期一次要做的说服（申请资源、推方案、争取晋升），写下"一张脸 + 一组数"：一个具体的人/场景（60 字内）+ 一组证明它非个案的聚合数据。汇报时按"先脸后数"讲。</div>
+<div class="setup"><strong>思考题：</strong>我是不是习惯只用数据说服（觉得讲故事"不够硬核"）？这偏好让我丢了多少本可以争取到的支持？</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>深入思考</h3>
+<details>
+<summary>讲故事和操纵的边界在哪？领导者用叙事影响人，什么时候就越界成了 manipulation？</summary>
+<div class="body">技巧本身中性，界线在真实与是否尊重对方的自主判断。三个检验：<strong>(1) 故事是真的吗</strong>（事实层不造假）；<strong>(2) 我省略的信息，对方若知道会不会改变判断</strong>（选择性省略是操纵的灰区）；<strong>(3) 叙事服务的是听众的利益，还是只服务我。</strong>判据不在"用没用故事"，而在真实与是否留给对方判断的空间。</div>
+</details>
+<details>
+<summary>工程师文化把"讲故事"当成务虚、销售话术。在一个崇尚数据和逻辑的技术组织里，storytelling 会不会适得其反？</summary>
+<div class="body">关键在故事与数据的配比。对工程师，纯煽情会触发"这人在忽悠"的警报——所以 Card 4 的配方尤其重要：故事让人在乎，数据建立可信度，缺一不可。在技术组织，故事不替代严谨，只当严谨的<strong>运载工具</strong>，让正确的数据被听进去、被记住。高手不是二选一，而是让 p99 延迟图配上一个凌晨三点的具体场景。把"讲故事"和"讲逻辑"对立，本身就是假两难。</div>
+</details>
+<details>
+<summary>AI 能生成漂亮叙事之后，"会讲故事"还是领导者的稀缺能力吗？</summary>
+<div class="body">AI 能生成故事的"形式"（结构、辞藻），但领导力叙事的力量来自<strong>真实性和亲历</strong>——你讲 Wei 那晚的故事有力量，是因为你在场、你在乎、团队知道那是真的。AI 让"讲得漂亮"变廉价，于是"讲得真"和"选择讲谁的故事"（价值判断）反倒更稀缺——那是领导者不可外包的部分。</div>
+</details>
+<details>
+<summary>跨文化团队里，故事的说服力会因文化而异吗？西方偏爱的"英雄旅程"在别处同样有效吗？</summary>
+<div class="body">叙事是人类普适的，但故事的"型"有文化差异。个人英雄旅程（单一主角克服困难）在个人主义文化里共鸣强；在集体主义文化里，"团队共同克服"往往更有效，突出单个英雄反而引起不适。高低语境也影响：低语境文化要故事把寓意讲明白，高语境文化里点破寓意反而像不信任听众。呼应 Day 48——故事框架当假设，讲给具体的人时按其文化校准。</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 49 · 2026.07.08</footer>
+</div>
+</body>
+</html>
