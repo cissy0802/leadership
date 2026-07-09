@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 50: Data-Driven Management</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 50 · 2026.07.09</div>
+<h1>Data-Driven Management: Let Data Constrain Judgment, Not Excuse You From It</h1>
+<div class="meta"><span>Topic: Data-Driven Management</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"In God we trust; all others must bring data." — W. Edwards Deming</div>
+</header>
+<div class="intro">
+<strong>This issue's thesis:</strong> "Be data-driven" is every big company's mantra, but the real divide isn't whether you use data—it's <strong>whether you use it correctly</strong>. Misused, data turns on you: a metric gets gamed the moment it's used to judge people; the prettier the dashboard, the more it hides what it never measured; A/B results get retro-fitted into whatever story you wanted; and "insufficient data" becomes a shield for not taking responsibility. This issue gives four tools: spot the <strong>Goodhart trap</strong>, see through the blind spots of quantitative data with qualitative work, turn opinion fights into <strong>falsifiable experiments</strong>, and draw the jurisdiction line between intuition and data.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Goodhart's Trap: When a Measure Becomes a Target, It Stops Being a Good Measure
+<span class="en">Goodhart's Trap</span></h2>
+<span class="tag">metric gaming</span><span class="tag">paired indicators</span><span class="tag">diagnose, don't judge</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Canonical Quote</div>
+<div class="principle">Once a metric is used to <strong>judge and apply pressure</strong>, people optimize "the metric itself" rather than the real goal behind it, and the metric distorts. The cure isn't to drop metrics—it's <strong>paired indicators</strong>: measure quantity and quality together so cheating shows up on the other dimension.</div>
+<div class="quote">
+<span class="en">"When a measure becomes a target, it ceases to be a good measure."</span>
+<span class="source">— Marilyn Strathern (1997), popularizing Charles Goodhart's 1975 original</span>
+</div>
+<div class="quote">
+<span class="en">"You should guard against overreacting... by pairing indicators, so that both effect and counter-effect are measured."</span>
+<span class="source">— Andy Grove, <em>High Output Management</em>, Ch.2 (paired indicators)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Metric Drift: The Moment You Apply Pressure, Metric and Real Goal Part Ways</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 680 200" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#8a6d3b" stroke-width="1.5" x1="60" x2="640" y1="170" y2="170"></line>
+<line stroke="#8a6d3b" stroke-width="1.5" x1="60" x2="60" y1="28" y2="170"></line>
+<line stroke="#b85c3a" stroke-dasharray="5 4" stroke-width="1.5" x1="340" x2="340" y1="28" y2="170"></line>
+<text fill="#b85c3a" font-family="Georgia" font-size="12" text-anchor="middle" x="340" y="22">↑ made a KPI</text>
+<polyline fill="none" points="70,115 340,85 640,42" stroke="#a8702d" stroke-width="2.5"></polyline>
+<polyline fill="none" points="70,115 340,85 640,148" stroke="#5c8a3a" stroke-dasharray="6 4" stroke-width="2.5"></polyline>
+<text fill="#a8702d" font-family="Georgia" font-size="12" x="558" y="34">the metric</text>
+<text fill="#5c8a3a" font-family="Georgia" font-size="12" x="558" y="162">real goal</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="500" y="100">gap = gaming</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="200" y="192">before: they overlap; after: metric inflates while the real goal slips</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: Setting "Code Coverage Must Hit 80%"</div>
+<div class="scene">
+<div class="setup">Context: Your manager wants the team to raise unit-test coverage from 55% to 80% this quarter, written into the OKRs.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Pressure a single metric as the target</div>
+<p>"80% coverage is a hard target, tied to your review." Three weeks later the number looks great—but engineers wrote a pile of <strong>assertion-free empty tests</strong> just to get code "executed." The defect rate didn't move, and you destroyed a once-useful diagnostic signal.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ State the metric's purpose, and pair it</div>
+<p><strong>Demote its status first:</strong> "Coverage is a <strong>diagnostic gauge</strong>, not a review KPI. What I actually care about is defect escape rate."</p>
+<p><strong>Then pair it:</strong> "I'll watch coverage + mutation score on critical paths. Coverage can be gamed with empty tests, but a test that can't kill mutants exposes itself instantly—modules with high coverage and low mutation score are padding."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">A Gaming-Resistance Checkup for Key Metrics</div>
+<ul class="checklist">
+<li>Once it's used to judge, what's the laziest <strong>cheat path</strong>? (What you didn't think of, the team will.)</li>
+<li>Have I paired it with a <strong>counter/quality metric</strong> that exposes padding? (velocity + rework rate; tickets closed + reopen rate)</li>
+<li>Am I using it to <strong>diagnose</strong> or to <strong>judge</strong> (decide who's promoted)? The judging use triggers gaming immediately.</li>
+<li>The metric went up—do I have independent evidence the <strong>real goal</strong> went up too, or only the metric?</li>
+<li>Who owns the interpretation? If the person being judged also defines and reports it, you've invited cheating.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating a proxy as the ultimate goal:</strong> velocity, lines of code, PR count are proxies, not value itself. Stare at them long enough and the team optimizes the proxy at value's expense.</li>
+<li><strong>Single-metric dictatorship:</strong> one North Star with no paired guardrail is a green light for gaming.</li>
+<li><strong>Judging AND self-reporting:</strong> Campbell's Law—the more a social indicator is used for decisions, the more it corrupts the very process it was meant to monitor.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Pick the metric your team most values, write down "if I were the one being judged, how would I game it most cheaply without really solving anything," then pair it with a counter-metric that exposes that cheat.</div>
+<div class="setup"><strong>Reflection:</strong> Which number on my team keeps improving while I quietly sense "the real thing" hasn't? That's most likely an already-collapsed Goodhart metric.</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>The Blind Spot of Numbers: Data Tells You What; Only Stories Tell You Why
+<span class="en">What vs. Why</span></h2>
+<span class="tag">qual × quant</span><span class="tag">user interviews</span><span class="tag">unmeasured ≠ unimportant</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Canonical Quote</div>
+<div class="principle">Quantitative tells you <strong>what happened and how big</strong>; qualitative tells you <strong>why and how</strong>. Staring only at the dashboard systematically misses "important but not-yet-measured" things—and "can't measure it" usually means "haven't figured out how" (Hubbard: measurement is a reduction of uncertainty, not its elimination), not "shouldn't manage it."</div>
+<div class="quote">
+<span class="en">"When the data and the anecdotes disagree, the anecdotes are usually right."</span>
+<span class="source">— Jeff Bezos, recounted internally at Amazon (i.e., the data may be measuring the wrong thing)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: Retention Drops 3%, the Dashboard Can't Say Why</div>
+<div class="scene">
+<div class="setup">Context: A feature you own sees weekly retention drop 3 points week-over-week, and several PMs each have a theory.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Dig for more data inside the data</div>
+<p>"Let's slice another dimension." Cut by device, region, version—two days later, ten correlation charts, nobody can name a cause, and the loudest voice declares "must be the new onboarding flow."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Quant to locate, qual to explain</div>
+<p><strong>Quant narrows it:</strong> "The drop is concentrated on new users' day 2; existing users are flat"—numbers pinpoint <strong>where</strong>.</p>
+<p><strong>Qual explains why:</strong> Do 15-minute interviews with ~5 day-2 churners, then watch 10 session replays. The truth surfaces: on a certain device the onboarding button is hidden behind the keyboard. <strong>This "why" no amount of slicing could produce.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Which One—Qual or Quant?</div>
+<ul class="checklist">
+<li>Am I answering <strong>"how big / did it move"</strong> (quant) or <strong>"why / what's going on"</strong> (qual)? Wrong tool guarantees waste.</li>
+<li>A number gave me a <strong>surprise</strong> (anomaly/drop/spike)—did I go ask 5 real people "what happened," instead of spinning inside the data?</li>
+<li>The thing I call "can't measure so ignore" (morale, tech debt, trust)—truly unmeasurable, or have I just not bothered designing a rough proxy?</li>
+<li>Is my report to leadership "one number + one face"—scale evidence plus a specific person to care about? (echo Day 49)</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + A Note for Women Leaders</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "unmeasured" as "nonexistent":</strong> tech debt, collaboration friction, psychological safety don't enter the dashboard, so decisions treat them as zero.</li>
+<li><strong>Using quant to fake objectivity:</strong> "what to measure and what not to" is itself a value judgment—it just buries the bias inside metric selection.</li>
+<li><strong>Cherry-picking flattering interviews:</strong> only talking to active users / happy employees is qualitative rubber-stamping of a conclusion you already held.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+A "count only quantifiable output" performance culture systematically undervalues <strong>glue work</strong>—mentoring, writing docs, cross-team coordination, tending team emotions; contributions that raise others' output while making your own commit count look unremarkable, which research shows fall disproportionately on women and underrepresented groups. As a manager, deliberately write these into promotion cases <strong>with concrete examples</strong>—it's both fair and a correction of the systematic bias in your own dashboard.
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> For one problem where you have "an anomaly but no cause," do 3–5 real interviews or watch a few real usage records. Is the insight qual gave you something no slicing could?</div>
+<div class="setup"><strong>Reflection:</strong> How many important variables in my decisions get defaulted to zero because they "can't enter the dashboard"? Which one deserves even a rough measure this quarter?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Experimentation: Turn "Whoever's Loudest" Into "Let the Data Refute It"
+<span class="en">From HiPPO to Falsifiable Hypotheses</span></h2>
+<span class="tag">A/B testing</span><span class="tag">falsifiable hypothesis</span><span class="tag">pre-registration</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Canonical Quote</div>
+<div class="principle">Convert opinion fights into hypothesis tests: <strong>in advance</strong>, write a falsifiable hypothesis, pre-set the success threshold and sample size, and agree "if it misses, we roll back." The precondition is accepting a counter-intuitive fact—<strong>most of the ideas you're confident in don't actually work</strong>.</div>
+<div class="quote">
+<span class="en">"Evaluating well-designed and executed experiments that were designed to improve a key metric, only about one-third were successful at improving the key metric!"</span>
+<span class="source">— Ron Kohavi et al., <em>Trustworthy Online Controlled Experiments</em> (2020), from Microsoft Bing data, Ch.1</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The PM Is Sure "Blue Button = Higher Conversion"</div>
+<div class="scene">
+<div class="setup">Context: In review, a senior PM declares "change the CTA button from green to blue, conversion will surely rise" and wants a full rollout.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Let rank/volume decide (HiPPO)</div>
+<p>Either you cave and ship it fully, or you two argue "blue vs. green" and the higher rank wins. Either way you learned nothing, and next time you argue again.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Turn the disagreement into a pre-registered experiment</div>
+<p><strong>Argue the hypothesis, not who's right:</strong> "No need to guess. Write the hypothesis clearly: <strong>blue lifts main-flow conversion by ≥ 2%</strong>."</p>
+<p><strong>Pre-set the decision rule:</strong> "Agree upfront—sample size to X, run a full 2 weeks (avoid the novelty effect), ship only if it hits 2% and is significant; <strong>if not, roll back, and no one redefines the metric afterward</strong>." The disagreement stops being politics and becomes something data can refute.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Lock These Down Before an Experiment Starts</div>
+<ul class="checklist">
+<li><strong>Falsifiable hypothesis</strong>: write it as "if X then metric Y changes ≥ Z," not "improve the experience" (which always "wins").</li>
+<li><strong>Pre-set success threshold</strong>: what counts as success, decided <strong>before it runs</strong>, in writing—no moving the goalposts later.</li>
+<li><strong>Sample size and duration</strong>: compute how many samples and how long, so you don't stop the moment you see what you want (peeking).</li>
+<li><strong>Rollback condition</strong>: what verdict means failure and reverting, agreed in advance, so sunk cost doesn't hijack the decision.</li>
+<li><strong>Guardrail metrics</strong>: while the primary metric rises, watch that latency, churn, complaints—side effects—don't get wrecked.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>HARKing (hypothesizing after results are known):</strong> inventing "I meant to test this" after seeing results—any noise can be spun into a story. The hypothesis must be locked before you see data.</li>
+<li><strong>Only significance, never effect size:</strong> with a big enough sample even a 0.01% lift is "significant"—but is it worth the engineering cost? (And don't be fooled by the novelty effect—the first-few-days inflation of a new release.)</li>
+<li><strong>Forcing A/B onto decisions that can't be split:</strong> strategy, hiring, reorgs can't all be experimented on—don't use "no data" to dodge them; that's Card 4's turf.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Take a recent "everyone has a point" argument and rewrite it as an experiment card: hypothesis, success threshold, sample size/duration, rollback condition. Even if you never run it, the act itself exposes "actually nobody has evidence."</div>
+<div class="setup"><strong>Reflection:</strong> If "most good ideas don't actually work" is true, how much of what my team is confidently rolling out has never been genuinely refuted?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Intuition & Data: Draw Each One's Jurisdiction, Let Neither Usurp the Other
+<span class="en">Drawing the Jurisdiction Line</span></h2>
+<span class="tag">high-validity environments</span><span class="tag">classify the decision</span><span class="tag">don't launder decisions</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Canonical Quote</div>
+<div class="principle">Data doesn't kill judgment—it <strong>constrains</strong> it. In <strong>regular + fast-feedback</strong> environments, trust the data and your trained intuition; for <strong>novel, low-frequency, no-precedent</strong> decisions, data is only an input and you still have to make the call responsibly. Don't use data to launder an already-made decision, and don't use "insufficient data" to dodge a judgment you should own.</div>
+<div class="quote">
+<span class="en">"Intuition can be trusted only when the environment is sufficiently regular to be predictable, and when there is an opportunity to learn these regularities through prolonged practice with rapid feedback."</span>
+<span class="source">— Kahneman &amp; Klein, <em>Conditions for Intuitive Expertise</em> (2009), American Psychologist</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Trust Intuition or Wait for Data? Two Axes</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#8a6d3b" stroke-width="1.5" x1="70" x2="640" y1="250" y2="250"></line>
+<line stroke="#8a6d3b" stroke-width="1.5" x1="70" x2="70" y1="30" y2="250"></line>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" x="300" y="285">environment regularity / predictability  →</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="12" transform="rotate(-90 26 175)" x="26" y="175">feedback speed  →</text>
+<rect fill="#f5e0d0" height="95" rx="4" width="270" x="80" y="145"></rect>
+<rect fill="#f8ecd0" height="95" rx="4" width="270" x="360" y="145"></rect>
+<rect fill="#f8ecd0" height="95" rx="4" width="270" x="80" y="42"></rect>
+<rect fill="#e6efdc" height="95" rx="4" width="270" x="360" y="42"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="12.5" font-weight="bold" x="92" y="188">pure intuition riskiest</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" x="92" y="208">→ structured process / benchmarks</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="12.5" font-weight="bold" x="372" y="85">intuition most reliable</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" x="372" y="105">→ expert intuition trusted (+ data)</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11.5" x="92" y="80">slow feedback, regular</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" x="92" y="100">→ data first, judgment fills gaps</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11.5" x="372" y="188">fast feedback, volatile</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" x="372" y="208">→ small experiments, fast iteration</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The VP Already Decided, Asks You to "Add Some Data"</div>
+<div class="scene">
+<div class="setup">Context: The VP has decided to launch a big project, then asks you to "pull some data to support this direction."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Become the data's whitewasher</div>
+<p>You take the hint and cherry-pick supporting numbers into a pretty slide. The decision wasn't changed one bit; data was only used to <strong>rationalize</strong> a made-up mind—the most common counterfeit of "data-driven."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ One line to surface data's real purpose</div>
+<p><strong>Ask the decision's nature first:</strong> "How locked is this direction? If the data comes back against it, would we actually change?"</p>
+<p><strong>Draw the jurisdiction:</strong> "If it's an irreversible, no-precedent strategic bet, it's fundamentally a judgment call—I'll give you risk quantification and worst-case, but let's not dress it up as 'the data says do it.' If it's splittable and reversible, what we need isn't a rubber-stamp, it's a real experiment."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Classify the Decision Before You Judge</div>
+<ul class="checklist">
+<li>Is this decision's environment <strong>regular, with fast feedback</strong>? (fast + regular → trust trained intuition; slow + novel → structured process)</li>
+<li>Is it a <strong>reversible two-way door</strong> (try boldly, back out) or an <strong>irreversible one-way door</strong> (slow down, demand evidence)? (echo Day 15)</li>
+<li>Am I seeking data to <strong>possibly change the decision</strong>, or to <strong>rubber-stamp</strong> a decided one? The latter wastes everyone's time.</li>
+<li>When intuition alarms, do I treat it as a <strong>lead to investigate</strong> or an unargued <strong>veto</strong>? The former is right, the latter risky.</li>
+<li>Am I using "not enough data yet" to <strong>stall a judgment I should own</strong>?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Data laundering (a HiPPO variant):</strong> conclusion first, data after—disguising a political decision as an analytic one.</li>
+<li><strong>Analysis paralysis:</strong> using "let's wait for more data" to dodge low-frequency, high-stakes judgments that data can never fully settle.</li>
+<li><strong>Treating intuition as a veto:</strong> "something feels off" can launch an investigation, but can't override a proposal without evidence—especially when your intuition was never calibrated.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Take one decision you'll make this week and classify it: how regular/fast is feedback? one-way or two-way door? Then answer honestly—am I seeking data to possibly change my mind, or to rubber-stamp? Write it down for yourself.</div>
+<div class="setup"><strong>Reflection:</strong> That "professional intuition" I trust most—was it trained in a regular, fast-feedback environment? If not (e.g., a low-frequency domain I've bet on only two or three times), it may just be luck dressed as experience.</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>Going Deeper</h3>
+<details>
+<summary>If every metric gets gamed once it's used to judge, should we still use metrics for performance at all?</summary>
+<div class="body">Don't, and performance falls back to pure subjectivity—worse. The answer is <strong>layering</strong>: metrics as diagnostic gauges (low gaming pressure), but performance triangulated with <strong>multiple paired metrics + qualitative evidence</strong>, with interpretation owned by someone other than the judged. The core is: never let a <strong>single metric</strong> map directly to a major consequence—the instant it does, Campbell's Law fires.</div>
+</details>
+<details>
+<summary>Isn't "data-driven" itself a bias—systematically letting "the measurable" beat "the important"?</summary>
+<div class="body">Yes, it's the McNamara fallacy: treating the quantifiable as the only thing that matters and the unquantifiable as nonexistent. The more data-reverent the org, the more it goes systematically blind on tech debt, culture, long-term trust. The fix is to <strong>force a seat for the hard-to-measure-but-important</strong>—even a rough proxy. The mark of a mature data culture is that it openly admits where its data doesn't reach.</div>
+</details>
+<details>
+<summary>In a big company with a heavy HiPPO culture, how can a mid-level tech lead push experimentation?</summary>
+<div class="body">Changing culture top-down is above your pay grade, but you can run <strong>demonstration wins</strong> in your own patch: pick a low-risk argument, quietly run one pre-registered experiment, and let the result speak—most persuasive when it <strong>overturns everyone's intuition, including your own</strong>, because it proves the method guards against everyone's hubris, not any one person's. Don't frame it as "challenging the boss's judgment," frame it as "saving one full-rollout disaster."</div>
+</details>
+<details>
+<summary>Kahneman says intuition is trustworthy only in regular environments—yet executives make exactly the low-frequency big calls. So is executive "experience-intuition" basically untrustworthy?</summary>
+<div class="body">In purely low-validity domains (macro forecasts, one-off big bets), yes—research shows experts there don't beat simple models, and confidence often mistakes past <strong>luck</strong> for skill (echo Day 30). But an executive's value may not be "predicting which bet wins"—it's asking the right questions and taking responsibility under incomplete information; that's judgment, not prediction. Self-protection: separate intuitions from <strong>high-validity experience</strong> (managed many people → trustworthy) from those in <strong>low-frequency domains</strong> (bet two or three times → suspect); for the latter, add guardrails with external benchmarks and dissenters.</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 50 · 2026.07.09</footer>
+</div>
+</body>
+</html>
