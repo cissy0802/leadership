@@ -1,9 +1,10 @@
 # Topics Roadmap
 
+> **⚠️ routine 须知**：本表即全部计划。只写下面**已列出**的条目；**全部写完就停**——别自己发明新主题、别往本文件加行。写完只发一条 PushNotification 请 BigCat 补充。（新条目由 BigCat / deep-research 反哺加进本表，届时你自然继续写。）
+
 源是仓库中的文件本身（`ls *-{day,week,book,issue}*.html`）。本文件是主题查找表：N → 主题。
 
 **本路线图已收口：Day 1–69 封顶，不再自动续写。** Day 1–30 已发布、保持不动；原 Day 31–79 中 10 条「进阶 / 深化 / 科学」与已发布的 Day 1–30 重复（反馈 / 授权 / 冲突 / 政治 / 危机 / 影响力 / 决策 / 信任 等），已删除，其余精选保留并 renumber 至 Day 31–69。删除清单见文末。
-（注：仅改本文件不阻止 routine 在 day69 之后再 append；停止续写需在 routine prompt / cron 侧设上限。）
 
 - Day 1: 1:1 会议设计 — 频率与议程, 信任建设, 让下属说真话, 避免变状态更新
 - Day 2: 给反馈 — Radical Candor 2x2, SBI 框架, 立刻 vs 等待, 书面 vs 口头
