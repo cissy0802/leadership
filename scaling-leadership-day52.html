@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 52：规模化领导</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 52 · 2026.07.11</div>
+<h1 data-tts="a1f7c2e94b6d0835">规模化领导：从"管人"到"管系统"</h1>
+<div class="meta"><span>主题：Scaling Leadership</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"What got you here won't get you there." — Marshall Goldsmith</div>
+</header>
+<div class="intro">
+<strong>本期的命题：</strong>把 5 个人带好和把 50 个人带好，不是同一件事的放大版，而是<strong>两种不同的工作</strong>。5 个人时你靠亲力亲为和高频接触产生影响；50 个人时你亲手碰的每件事都在稀释你的杠杆。规模化的真正痛点是四个"看不见的漏水点"：<strong>注意力不够分</strong>（还想管人，其实该管系统）、<strong>组织结构在悄悄决定架构</strong>（Conway 定律）、<strong>你的话每过一层就衰减一次</strong>、<strong>文化不会自动复制</strong>。本期四个原则逐个补漏——把你从"最忙的人"变成"让别人做对事的人"。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2 data-tts="b3e8d1740a2f9c56">从管人到管系统：你的产出=组织的产出
+<span class="en">From Managing People to Managing Systems</span></h2>
+<span class="tag">杠杆</span><span class="tag">系统思维</span><span class="tag">授权</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">规模化的第一次心智切换：你的产出<strong>不再是你亲手做的事</strong>，而是你的组织加上你影响到的相邻组织的总产出。别再问"我今天做了多少"，要问"哪件事能<strong>撬动最多人</strong>的产出"——一个高杠杆动作（招对人、修好流程、讲清方向）胜过十件亲力亲为。</div>
+<div class="quote">
+<span class="en">"A manager's output = the output of his organization + the output of the neighboring organizations under his influence."</span>
+<span class="zh">"经理的产出 = 他所辖组织的产出 + 他能影响到的相邻组织的产出。"</span>
+<span class="source">— Andy Grove,《High Output Management》Ch.3</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：从"救火队长"到"造灭火系统"</div>
+<div class="scene">
+<div class="setup">情境：BigCat 团队从 6 人扩到两组共 16 人，你还是每个 PR 都想 review、每个事故都亲自上。下属开始绕过你，因为"等 BigCat 有空要三天"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 还在管人（不可扩展）</div>
+<p>"这个设计等我周五 review 完再合。" "线上出问题叫我，我来看。" "这个决定我拍。"<br/>—— 你成了瓶颈。你越勤奋，团队越依赖你，扩得越大越堵。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 改为管系统（可扩展）</div>
+<p><strong>把"我"换成"机制"：</strong>"我不再逐个 review PR。定三条<strong>必须我看</strong>的红线（改 schema、动鉴权、跨团队 API），其余你们两两互审。"</p>
+<p>"事故不再等我——写一份 <strong>on-call runbook</strong> 和升级路径，谁值班谁先决策，事后一起做 blameless review 改进系统。"</p>
+<p>"我这周的产出不是写代码，是<strong>把这两个机制立起来</strong>——它们会替我 review 一整年。"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">高杠杆动作 自检清单</div>
+<ul class="checklist">
+<li>这事只有我能做吗？还是我"最快/最放心"所以抓着不放？（后者=该授权）</li>
+<li>我在解决"这一个问题"，还是在建"以后此类问题自动解决"的机制？</li>
+<li>我这周有没有做一件撬动 10 人以上产出的事（招聘、流程、方向、去阻塞）？</li>
+<li>如果我消失两周，团队会卡在哪？那个卡点就是我下一个要系统化的地方。</li>
+<li>我日历里"亲手做事"和"提升组织能力"的比例，随规模在变吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"忙"当"有价值"。</strong>规模化后，你最忙的时候往往杠杆最低。</li>
+<li><strong>授权=甩锅。</strong>授权是给出决策权+上下文+安全网，不是把烂摊子扔出去不管。</li>
+<li><strong>只授权任务不授权判断。</strong>下属长不出决策肌肉，你永远是瓶颈。</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+规模化时最容易被无视的是"胶水工作"（Tanya Reilly《Being Glue》）——把项目粘合起来的协调、文档、跨组对齐。它<strong>正是</strong>把组织从 6 人扩到 16 人必需的系统工作，却常被当"打杂"，且不成比例地落在女性头上、不进晋升材料。对策：<strong>显性化为系统产出</strong>——说"我建立了跨组发布协议/事故流程"，而非"我帮大家协调了一下"。是架构，不是打杂。
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>列出你本周亲手做的 5 件事，逐个问"这能撬动几人产出"。把杠杆最低的那件，这周授权或系统化掉。</div>
+<div class="setup"><strong>思考题：</strong>我抓着不放的那件事，究竟是因为别人做不了，还是因为放手会让我觉得自己"没用了"？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2 data-tts="c5a2f83e17d940b6">组织设计：你画的组织图，就是你将来的架构图
+<span class="en">Org Design — Conway's Law Is Not Optional</span></h2>
+<span class="tag">Conway 定律</span><span class="tag">Team Topologies</span><span class="tag">认知负荷</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">组织结构不是行政问题，是<strong>技术架构问题</strong>。系统的形状会不可避免地长成团队沟通结构的镜像（Conway 定律）。所以设计团队边界=<strong>提前设计软件边界</strong>：想要什么样的架构，就先组织出什么样的团队；并让每个团队的职责<strong>不超过它的认知负荷</strong>（Team Topologies）。</div>
+<div class="quote">
+<span class="en">"Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure."</span>
+<span class="zh">"任何设计系统的组织，其产出的系统结构，都会复制该组织的沟通结构。"</span>
+<span class="source">— Melvin Conway,《How Do Committees Invent?》1968</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">决策图：团队怎么切 · 何时该拆</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f5e0d0" height="120" rx="6" stroke="#b85c3a" stroke-width="2" width="300" x="20" y="30"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="170" y="55">⚠ 反模式：一个大组扛所有</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" text-anchor="middle" x="170" y="82">12 人 · 1 个经理 · 3 条产品线</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" text-anchor="middle" x="170" y="104">认知过载 · 谁都不 own · 决策堵</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" text-anchor="middle" x="170" y="126">经理 1:12 → 无法深度 1:1</text>
+<rect fill="#e6efdc" height="120" rx="6" stroke="#5c8a3a" stroke-width="2" width="320" x="360" y="30"></rect>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="520" y="55">✓ 拆成"流对齐"小队</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="520" y="82">6+6 · 各 own 一条价值流</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="520" y="104">端到端负责 · 边界=API 边界</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="520" y="126">经理 1:6 → 1:1 有质量</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="350" y="185">该拆分的信号（命中 2 条就该动）</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="60" y="215">· 一个经理直接下属 &gt; 8 人</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="60" y="240">· 站会一半人在听与己无关的事</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="60" y="265">· 改一个功能要协调 3+ 人</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="390" y="215">· 没人能说清"这块谁 own"</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="390" y="240">· 团队认知负荷 &gt; 能承载的域</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="390" y="265">· 交付前置时间越来越长</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：拆组前的对话</div>
+<div class="scene">
+<div class="setup">情境：你的 12 人组扛着三条产品线，速度越来越慢。老板问"要不要加人"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 只加人不改结构</div>
+<p>"对，我们缺人，再招 4 个。"<br/>—— 沟通路径数按 n² 涨，12 人→16 人协调成本翻倍，速度不升反降（Brooks 定律）。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 先设计边界，再谈人数</div>
+<p>"问题不是人手，是<strong>边界</strong>。三条线耦合太紧，改一处动全身。我提议拆成两个 stream-aligned 小队，各端到端 own 一条价值流，中间用清晰 API 契约解耦。"</p>
+<p>"拆完每队 6 人、认知负荷可控，再判断哪队真缺人——很可能只缺 1 个，不是 4 个。<strong>组织设计先行，招聘是结果不是起点。</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">组织设计 决策清单</div>
+<ul class="checklist">
+<li>我想要的架构长什么样？团队边界是否已照它来切？（Conway 逆用）</li>
+<li>每个团队能否用一句话说清"我们 own 什么"？说不清=边界糊。</li>
+<li>团队认知负荷是否超载？（域太多、依赖太杂 = 该收窄或拆）</li>
+<li>拆分后，跨队协作走的是清晰接口，还是"人肉对齐会"？</li>
+<li>加人之前，我是否先问过"是结构问题还是人手问题"？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>为了政治画组织图。</strong>照某人势力切团队，架构就长成畸形，债留给工程师还。</li>
+<li><strong>无限扩单个组。</strong>1:12 的经理做不了有质量的 1:1，也扛不住深度技术判断。</li>
+<li><strong>拆了组不给清晰边界。</strong>没有 API 契约的拆分=把耦合从代码挪进会议室。</li>
+<li><strong>频繁重组。</strong>每次重组都要付 3-6 个月适应税，别当廉价工具。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>画出你团队当前的沟通结构图，再画出你系统的架构图，叠在一起看——哪里错位？那就是 Conway 定律在收你的税。</div>
+<div class="setup"><strong>思考题：</strong>我上一次组织调整，是为了让架构更健康，还是为了摆平人的问题？如果是后者，代价谁在付？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2 data-tts="d7b4e0913f8a25c1">沟通的稀释：你说一次，一线听到的是第七手
+<span class="en">Communication Dilution — Say It Until You're Sick of It</span></h2>
+<span class="tag">过度沟通</span><span class="tag">书面化</span><span class="tag">context</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">信息每过一层就衰减一次，等传到一线，你的"清晰方向"已面目全非。规模化领导必须接受一个反直觉的事实：<strong>你以为说得太多了，员工才刚好听清。</strong>对策两条——重复到自己都腻，以及<strong>把关键决策写成结构化文字</strong>，让它不依赖口口相传。</div>
+<div class="quote">
+<span class="en">"We don't do PowerPoint... Instead, we write narratively structured six-page memos. We silently read one at the beginning of each meeting."</span>
+<span class="zh">"我们不用 PowerPoint……而是写结构化叙事的六页备忘录，每次开会先安静读一遍。"</span>
+<span class="source">— Jeff Bezos, Amazon 2018 致股东信</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">决策图：一句话方向的"衰减漏斗"</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="#e6efdc" points="60,30 640,30 560,70 140,70" stroke="#5c8a3a" stroke-width="2"></polygon>
+<polygon fill="#f3e9d2" points="140,80 560,80 500,120 200,120" stroke="#c4a878" stroke-width="2"></polygon>
+<polygon fill="#f8ead8" points="200,130 500,130 450,170 250,170" stroke="#d0a060" stroke-width="2"></polygon>
+<polygon fill="#f5e0d0" points="250,180 450,180 410,220 290,220" stroke="#b85c3a" stroke-width="2"></polygon>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="350" y="55">你（原意）："Q3 聚焦稳定性，功能让路"</text>
+<text fill="#4a3a20" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="105">经理层："Q3 优先稳定性，功能也别落太多"</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="155">组长："稳定性重要，但功能进度照排"</text>
+<text fill="#a04020" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="205">工程师听到："好像都要，那按老样子干"</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" text-anchor="middle" x="350" y="242">每过一层，取舍被磨圆一次 —— 到底层，"聚焦"消失了</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：怎么让方向传到底不变形</div>
+<div class="scene">
+<div class="setup">情境：你在 all-hands 讲了"Q3 聚焦稳定性"，两周后发现一个组还在猛加功能。</div>
+<div class="dialog bad">
+<div class="speaker">✗ "我不是讲过了吗"</div>
+<p>"我 all-hands 明明说了聚焦稳定性，你们怎么没听？"<br/>—— 讲一次≠传到位。责怪一线，只会让人以后更不敢承认"没听清"。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 冗余 + 书面 + 让对方复述</div>
+<p><strong>写下来：</strong>一页"Q3 方向备忘"，明确列出<strong>不做什么</strong>（这是取舍的关键，最容易被磨掉）。发到每个渠道。</p>
+<p><strong>反向确认：</strong>"用你自己的话说，这季度我们<strong>为了稳定性放弃了什么</strong>？"（让对方复述取舍，而非点头）</p>
+<p><strong>重复：</strong>同一条方向，在 all-hands、周会、1:1、Slack 至少讲 5 次，措辞可变、内核不变。你腻了，一线刚入耳。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">抗稀释 检查表</div>
+<ul class="checklist">
+<li>关键决策，我是否落成了文字（不是只在会上口头说）？</li>
+<li>我的方向里，"不做什么"是否和"要做什么"一样清晰？</li>
+<li>我是否让下级<strong>用自己的话复述</strong>过一次，以检测走样？</li>
+<li>同一条重要信息，我是否在 ≥3 个渠道、≥5 次重复过？</li>
+<li>坏消息我是否亲自、尽早、直接传达，而非让它层层过滤变味？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>"讲过一次"就以为传到了。</strong>规模越大，一次触达率越接近于零。</li>
+<li><strong>只讲做什么，不讲不做什么。</strong>没有取舍的"聚焦"传到底就变成"什么都要"。</li>
+<li><strong>怕重复显得啰嗦。</strong>你对信息的厌倦度，远高于员工的熟悉度——继续重复。</li>
+<li><strong>坏消息让 HR/邮件代传。</strong>过滤层会把它变形，团队还记得你"没敢自己说"。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>选一条你以为团队都懂的方向，随机问 3 个一线成员"用你的话说这是什么"，对比他们的答案和你的原意——差距就是稀释率。</div>
+<div class="setup"><strong>思考题：</strong>当信息走样时，我的第一反应是"他们没听"，还是"我没传到位"？这个归因方向，决定我会不会一直踩同一个坑。</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2 data-tts="e9c6b25047a1d38f">文化的规模化：文化是你不在场时，大家怎么做决定
+<span class="en">Scaling Culture — What Happens When You're Not in the Room</span></h2>
+<span class="tag">文化</span><span class="tag">身教</span><span class="tag">制度化</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">10 人时，文化=创始人的影子，靠亲身感染就能传。100 人时，你影子照不到的人占多数，文化<strong>只能靠制度承载</strong>——你奖励了什么、惩罚了什么、招了谁、放走了谁、容忍了什么。价值观墙上的字不算数，<strong>你的行为和你的激励系统才是真文化。</strong></div>
+<div class="quote">
+<span class="en">"Culture is how a company makes decisions when you're not there. It's the set of assumptions your employees use to resolve the problems they face every day."</span>
+<span class="zh">"文化，就是你不在场时公司如何做决定；是员工用来解决日常问题的那套默认假设。"</span>
+<span class="source">— Ben Horowitz,《What You Do Is Who You Are》</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：文化是被行为定义的，不是被口号</div>
+<div class="scene">
+<div class="setup">情境：团队价值观写着"质量第一"。但上季度一个赶工上线、埋了技术债却按时交付的人拿了最高绩效；另一个坚持修债、延期一周的人被打了"进度慢"。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 口号与激励背离</div>
+<p>你在 all-hands 继续讲"我们重视质量"。<br/>—— 团队看的是绩效结果，不是你的 slides。真实文化已被写成"嘴上质量第一，实际赶工得赏"，下季度所有人都会赶工。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 用行为和激励定义文化</div>
+<p><strong>对齐激励：</strong>公开表彰那位修债延期的人——"他做了正确但不讨好的取舍，这才是我们说的质量第一。"让<strong>被奖励的行为</strong>=你宣称的价值观。</p>
+<p><strong>设计文化载体：</strong>把"质量"制度化进系统——code review 门槛、技术债预算、事故 blameless 复盘。文化不能只靠感召，要能在你不在场时<strong>自动运转</strong>。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">文化规模化 检查表</div>
+<ul class="checklist">
+<li>我上次晋升/表彰的人，是否真的体现了我宣称的价值观？（激励=真文化）</li>
+<li>我们容忍的最差行为是什么？那就是团队真正的<strong>行为下限</strong>。</li>
+<li>价值观是否落成可执行的机制（招聘标准、review 规则、仪式），而非只是海报？</li>
+<li>新人入职 30 天内，靠什么<strong>具体做法</strong>习得文化，而非"耳濡目染"？</li>
+<li>一个我不在场的决策发生时，我敢不敢预测团队会怎么选？敢=文化已落地。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>以为写下价值观=有了文化。</strong>文化是你奖惩什么，不是你贴了什么。</li>
+<li><strong>容忍高绩效的"混蛋"。</strong>留下一个违背价值观的明星，等于告诉所有人价值观可用业绩买断。</li>
+<li><strong>指望文化自然扩散。</strong>过了 50 人，不设计的文化会长出你没想要的样子。</li>
+<li><strong>leader 自己破例。</strong>你的每次例外，都是对全体的一次文化"再培训"。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>列出团队上季度被奖励和被冷落的各 2 人及原因，对照你宣称的价值观——真实文化和口号一致吗？不一致处，就是下季度要修的激励错配。</div>
+<div class="setup"><strong>思考题：</strong>我最近一次为了"结果"对违背价值观的行为睁只眼闭只眼，是什么时候？团队从我的沉默里学到了什么规则？</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>深入思考</h3>
+<details>
+<summary>"从管人到管系统"会不会走过头，变成只碰流程、不碰人的冷漠管理？</summary>
+<div class="body">会，这是真实的 trade-off。系统化解决"可重复、可标准化"的问题；但人的动机、信任、职业焦虑无法被流程承载，恰恰需要你亲自在场。健康做法是<strong>分层</strong>：把可标准化的（review 规则、on-call、决策流程）系统化，腾出的精力<strong>加倍投入不可系统化的</strong>——高质量 1:1、职业对话、信任修复。系统是为了让你有余力做只有人能做的事。走偏的信号：你开始用"看数据/看流程"回避跟具体的人谈具体的难处。</div>
+</details>
+<details>
+<summary>小团队(&lt;10 人)是不是根本不需要这些，硬套反而官僚？</summary>
+<div class="body">大部分是的，别过早优化。10 人以内，高频接触足以承载文化与沟通，强行搞六页备忘录、正式组织设计只会拖慢速度。但有两件事值得<strong>提前做</strong>：一是<strong>把关键决策写下来</strong>的习惯（成本低，是未来抗稀释的地基）；二是<strong>激励与价值观对齐</strong>（10 人时的错配，扩到 50 人会放大成灾）。其余的组织设计、正式沟通机制，等你感到"话传不到"时再上——那个痛点通常出现在 15–25 人之间。</div>
+</details>
+<details>
+<summary>Conway 定律说架构镜像组织，那到底是先定架构还是先定组织？</summary>
+<div class="body">用"逆 Conway 操作"（Inverse Conway Maneuver）：<strong>从目标架构反推组织结构</strong>，主动把团队切成你希望系统长成的样子，让定律为你所用而非收你税。但要诚实两点：一是这需要架构意图足够清晰，早期探索阶段架构没定，别急着固化组织；二是重组代价高，这招只适合<strong>值得长期押注的架构方向</strong>，不适合频繁微调。原则：架构方向清晰且想长期投入时，用组织设计去"锁定"它。</div>
+</details>
+<details>
+<summary>大厂里 tech lead manager 常常无权决定组织结构，这套还有用吗？</summary>
+<div class="body">有用，但要换成"影响"而非"决定"的玩法。你改不了 org chart，但能改<strong>事实上的协作边界</strong>：定义清晰的 API 契约、明确谁 own 什么、设跨组接口人——这些"软组织设计"不需要 HR 批。同时，把你观察到的结构性问题（Conway 错配、认知过载、1:12 带不动）<strong>用交付前置时间的数据讲给有权改结构的人听</strong>，你就从"承受结构"变成"影响结构"。向上讲清"这是结构问题不是努力问题"，本身就是高杠杆动作。</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 52 · 2026.07.11</footer>
+</div>
+</body>
+</html>
