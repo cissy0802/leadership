@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 54: Managing in the Age of AI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 54 · 2026.07.13</div>
+<h1 data-tts="7b1e9d4a2c6f3081">Managing in the Age of AI: Pushing Your Team from "Using the Tool" to "Owning the Judgment"</h1>
+<div class="meta"><span>Topic: Managing in the Age of AI</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"The greatest economic rewards will come not from replacing humans, but from augmenting them." — Erik Brynjolfsson, "The Turing Trap"</div>
+</header>
+<div class="intro">
+<strong>This week's premise:</strong> When everyone on your team is using AI, does your management have to change? The answer is neither "ban it" nor "let it run wild." The real work is this: <strong>draw a clear human-AI division of labor for each type of task</strong>, move your team's scarcity from "execution" to the "judgment" AI still can't do well, and honestly handle the question everyone is quietly asking—"will I be replaced?" This week's four principles—<strong>division of labor, reskilling, automation anxiety, quality &amp; accountability</strong>—turn "how do I manage an AI-augmented team" into an executable daily practice.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2 data-tts="c3a8f0917d2b46e5">Division of Labor: Be a Centaur, Not a Cyborg
+<span class="en">Designing the Human-AI Split</span></h2>
+<span class="tag">Division</span><span class="tag">Workflow</span><span class="tag">Augment</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Expert Voice</div>
+<div class="principle">Draw a clear line for each kind of task: AI handles <strong>drafting, scaling, enumerating options, boilerplate</strong>; humans handle <strong>judgment, trade-offs, accountability, edge cases</strong>. The manager's job isn't the all-or-nothing "should we use AI"—it's designing this dividing line for each type of work: what goes to the machine, and where a human must take over.</div>
+<div class="quote">
+<span class="en">"The Centaur approach involves a strategic division of labor between human and machine, switching between AI and human tasks depending on which is better at what."</span>
+<span class="source">— Ethan Mollick, "Co-Intelligence" (2024)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: From "All-or-Nothing" to "Draw the Line"</div>
+<div class="scene">
+<div class="setup">Context: Your team needs to write a design doc for a new service. A senior engineer insists "AI output can't be trusted, ban it entirely"; a junior pastes an entire AI-generated architecture section straight into the doc without a close read.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two extremes</div>
+<p><strong>Total ban:</strong> "No AI on design docs."—You give up exactly what it's best at: drafting and listing options.<br/><strong>Total handoff:</strong> A generated section goes in unverified—you've outsourced the very judgment that should stay human.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Draw the line (centaur split)</div>
+<p>"Here's the split: <strong>AI drafts the skeleton, lists the pros/cons of three storage options, generates the interface boilerplate</strong>; <strong>the human decides the architectural trade-offs, reviews edge cases and failure modes, and signs off on the final call.</strong>"</p>
+<p>Give the team one repeatable rule: <strong>"AI can draft; a human must sign."</strong> Make the line a default habit, not an argument every time.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Division-of-Labor Design Checklist</div>
+<ul class="checklist">
+<li>In this task, which part is "generate/enumerate" (fit for AI), and which is "judge/trade-off/own" (must stay human)?</li>
+<li>Am I giving an all-or-nothing "use AI or not," or a real line of "which parts, where"?</li>
+<li>Have I explicitly ringed the high-stakes zones (security, money, data, external commitments) as "human must take over"?</li>
+<li>Can the team repeat this line in one sentence—or does it live only in my head?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + Female Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Substituting "attitude" for "design."</strong> "Embrace AI" is a slogan, not a line; without task-level specifics, everyone does their own thing.</li>
+<li><strong>A frozen line.</strong> Models shift each quarter; work once "human-only" gets pushed across the line—re-draw it periodically.</li>
+<li><strong>Splitting without aligning standards.</strong> If "what counts as a good AI draft" is unstated, humans clean up after it—slower, not faster.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Pick one recurring task type. Split it into two columns—"generate" and "judge"—and explicitly write which column goes to AI and which stays human. Share it as the team's default.</div>
+<div class="setup"><strong>Reflection:</strong> Is my team's current AI usage a division of labor I designed, or a set of private workarounds each person improvised?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2 data-tts="9e4b7a01f6c8d235">Reskilling: The Premium Moves from Doing to Judging
+<span class="en">From Execution to Judgment</span></h2>
+<span class="tag">Reskilling</span><span class="tag">Judgment</span><span class="tag">Taste</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Expert Voice</div>
+<div class="principle">AI flattens the "can it even be built" barrier, and scarcity shifts to what it still can't do well: <strong>taste, problem definition, verification, cross-domain synthesis</strong>. Reskilling your team isn't teaching a few prompt tricks—it's pushing each person from "the keyboard end" toward "the judgment end." Execution is being commoditized; judgment is appreciating.</div>
+<div class="quote">
+<span class="en">"Consultants using AI finished 12.2% more tasks, 25.1% faster, and produced 40% higher quality results—with the largest gains among the lower-performing consultants."</span>
+<span class="source">— Dell'Acqua et al., "Navigating the Jagged Technological Frontier" (Harvard/BCG, 2023)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: Re-position the "Flattened" Value</div>
+<div class="scene">
+<div class="setup">Context: A senior engineer confides, anxious: "Now that Copilot exists, the juniors' code looks about as good as mine. My years of craft aren't worth anything."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Empty reassurance</div>
+<p>"Don't worry, you're still better than they are."—Neither specific nor credible. He knows you're brushing him off, and next time he won't tell you what he really thinks.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Acknowledge + re-position the value</div>
+<p>"You're right—<strong>the pure code-writing part really did get flattened.</strong> But where you're now more valuable has shifted: judging <strong>where this AI code breaks under high concurrency</strong>, turning a vague requirement into <strong>the right problem</strong>, and that 'smells wrong' taste in code review—AI still can't give you those."</p>
+<p>"Next quarter I'm moving your time off the keyboard: lead architecture reviews with two juniors, run a postmortem. <strong>That's your moat.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Reskilling Execution Checklist</div>
+<ul class="checklist">
+<li>Is my team's reskilling focus "better at the tool" or "better at judgment"? (The former gets flattened again in six months.)</li>
+<li>Have I freed up my senior people's time for the high-judgment work—verification, problem definition, mentoring?</li>
+<li>Are juniors using AI to skip the fundamentals? Their reps are being taken by AI—how do I make that up?</li>
+<li>Am I modeling "AI drafts, judgment gatekeeps"—or "dump it on AI and don't look"?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + Female Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Reskilling as attendance box-ticking.</strong> Assigning a prompt course to be watched—judgment isn't grown from videos, it's grown in real tasks.</li>
+<li><strong>Upgrading the tool but not the role.</strong> People still do the flattened work, just faster—eventually the whole slice disappears.</li>
+<li><strong>Ignoring the junior "practice paradox."</strong> AI does their foundational reps, so judgment is harder to grow.</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Multiple surveys show women report using generative AI at markedly lower rates than men—partly because women are scrutinized more harshly for mistakes and so are warier of "trial-and-error" use in public, tending to use it <strong>quietly and privately</strong> (what Ethan Mollick calls "secret cyborgs"). Countermeasure: managers should <strong>openly normalize AI use and write it into the formal workflow</strong>, making it an explicit team rule rather than an underground skill—once a tool goes underground, existing adoption gaps only widen.
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> For each direct report, write one line: "the single judgment skill you should deepen most in the AI era" (architectural trade-offs / problem definition / verification / mentoring). At your next 1:1, agree on a real task to practice it.</div>
+<div class="setup"><strong>Reflection:</strong> If AI flattens another half of my team's execution work next year, am I growing "skills that will get flattened again" or "judgment that's harder to flatten"?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2 data-tts="a5c2e8b3079f4d16">Automation Anxiety: Honesty Beats Empty Reassurance
+<span class="en">Honesty Over Reassurance</span></h2>
+<span class="tag">Fear</span><span class="tag">Honesty</span><span class="tag">Transition Path</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Expert Voice</div>
+<div class="principle">"Will AI replace me?" isn't melodrama—it's real fear. Empty reassurance ("you'll never be replaced") backfires: people don't believe it, and they learn to stop leveling with you. The honest move gives two things together: <strong>acknowledge which tasks will genuinely disappear</strong>, while pouring resources into <strong>concrete actions that help them transition</strong>. Panic is useless; a path is useful.</div>
+<div class="quote">
+<span class="en">"This is the worst AI you will ever use."</span>
+<span class="source">— Ethan Mollick, "Co-Intelligence" (2024)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: Acknowledge the Truth + Give a Path</div>
+<div class="scene">
+<div class="setup">Context: In a 1:1, a report says, "I've seen AI write tests and first-draft docs now—am I about to become useless?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two failure modes</div>
+<p><strong>Denial:</strong> "Stop overthinking, your role is safe."—He doesn't believe it, and feels you won't tell him the truth; the door closes.<br/><strong>Panic without an exit:</strong> "Honestly, yeah, you'd better hustle."—Leaves anxiety, offers no direction.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Honesty + a transition commitment</div>
+<p>"Some work really will be automated—boilerplate tests, first-draft docs. That's true, I won't lie to you. <strong>But that doesn't mean you get replaced.</strong>"</p>
+<p>"Next quarter we move you toward what AI still can't do well: <strong>failure diagnosis on complex systems, mentoring a junior, leading a cross-team design.</strong> I'll give you the specific projects and timeline. Panic doesn't help; transition does—<strong>and I'll walk this path with you.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Honest-Anxiety Checklist</div>
+<ul class="checklist">
+<li>Am I giving a real assessment, or the "you're safe" reassurance he can see through in a second?</li>
+<li>Have I separated "which tasks disappear" from "you as a person won't be replaced"?</li>
+<li>After acknowledging the fear, do I give a concrete transition path <strong>with projects and a timeline</strong>—or just "hang in there"?</li>
+<li>At the team level, have I openly discussed AI's changes, or let rumor ferment into panic?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + Female Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Dodging via silence.</strong> If you don't discuss it, the fear doesn't vanish—it goes underground into attrition and quiet quitting.</li>
+<li><strong>Over-promising.</strong> "I guarantee no one will lose their job to AI"—the day the org actually cuts headcount, all your credibility is wiped at once.</li>
+<li><strong>Only threat, no opportunity.</strong> AI also frees people to do higher-value work; talking only about displacement is one-sided fearmongering.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Find the person on your team most likely to be anxious and open a conversation: say honestly which work will change, and together write down one concrete first step toward higher-judgment work.</div>
+<div class="setup"><strong>Reflection:</strong> Last time I discussed AI's impact on the team, did I give reassuring truth—or a comforting falsehood that just made people go quiet?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2 data-tts="d1f6b40a3c827e59">Quality &amp; Accountability: Human in the Loop, Sign-off Doesn't Outsource
+<span class="en">Accountability Doesn't Automate</span></h2>
+<span class="tag">Verification</span><span class="tag">Ownership</span><span class="tag">Failure Modes</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Expert Voice</div>
+<div class="principle">AI-augmented teams have new failure modes: <strong>hallucinations reaching production, over-trusting output, diffused accountability</strong> ("the AI wrote it" becomes an excuse). The "jagged frontier" means you can't tell by intuition where AI is reliable and where it quietly fails. Managers must build two things: <strong>a verification culture</strong> and <strong>clear ownership</strong>—AI is the tool; the byline and the accountability are always human.</div>
+<div class="quote">
+<span class="en">"Be the human in the loop... You are responsible for the output. The AI is a tool, and you are the one who signs off on the work."</span>
+<span class="source">— Ethan Mollick, "Co-Intelligence" (2024)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: Head Off "The AI Wrote It" Before It Becomes an Excuse</div>
+<div class="scene">
+<div class="setup">Context: In a PR, AI-generated code calls an <strong>API that doesn't exist</strong> (a hallucination). It passes review and reaches staging before anyone catches it.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two extremes</div>
+<p><strong>Excuse:</strong> "Oh, the AI got it wrong, not your fault."—Accountability outsourced, no one learns, same error next time.<br/><strong>Overcorrection:</strong> "From today, no AI for the whole team."—Abandoning all the gains over one failure.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Set the rule + build verification</div>
+<p>"Let's be clear: <strong>whoever submits, owns it—regardless of whether AI wrote it.</strong> AI drafting for you doesn't change that you're the signer."</p>
+<p>"Two supporting mechanisms: <strong>(1)</strong> AI-generated critical code/conclusions get a human check before submission—especially whether external dependencies actually exist; <strong>(2)</strong> in high-stakes zones (security, money, data), AI output requires a second reviewer."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Human-in-the-Loop Verification Checklist</div>
+<ul class="checklist">
+<li>Does the team share an explicit norm—"whoever submits owns it, independent of whether AI generated it"?</li>
+<li>Are high-stakes zones (security / money / data / external commitments) covered by a red line: "AI output must be human-verified / second-reviewed"?</li>
+<li>Does everyone know AI fabricates confidently (hallucination)? Are they wary of output that "looks right"?</li>
+<li>Am I encouraging labeling "this was AI-drafted," so reviewers know where to look twice?</li>
+<li>When I sign off on AI-drafted work myself, have I actually read it—or am I also passing "looks right"?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + Female Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Verification as bureaucracy.</strong> Not everything needs a second reviewer—spend the cost only on high-stakes zones; let low-stakes go, or the team routes around the process.</li>
+<li><strong>Diffused accountability, no owner.</strong> "AI + three people touched it" = everyone can pass the buck when it breaks. Ownership must land on one named person.</li>
+<li><strong>Trust rising with fluency.</strong> The smoother and more confident the AI output, the lazier people get about verifying—exactly when it's most dangerous.</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Blame for "the AI got it wrong" is often assigned unevenly: in murky, many-hands situations, women and underrepresented people are more likely to bear heavier consequences for the same error (the likability / competence double bind, extended into the AI era). Countermeasure: make "humans own AI output" a <strong>clear, situation-not-person process</strong>—which zones must be verified, who signs by name, verification records kept—so blame isn't assigned by impression and identity.
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Write a one-page "AI use &amp; accountability agreement" for the team: sign-off rules, high-stakes red lines, verification requirements. Send it this week and walk it through at the next team meeting.</div>
+<div class="setup"><strong>Reflection:</strong> If an AI hallucination quietly reached production next Monday, would today's process catch it—or could I only assign blame after the fact?</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>Going Deeper</h3>
+<details>
+<summary>Won't the "centaur split" fail as AI grows stronger—the line pushed further and further toward the human, until there's nowhere left to retreat?</summary>
+<div class="body">The line is indeed moving, but "failure" is premature. Every wave of automation has pushed humans toward higher abstraction: from writing assembly to writing high-level languages, humans didn't disappear—they moved to judgment that's harder to specify. The point isn't holding a fixed line but <strong>migrating upward continuously</strong>—today humans own architectural trade-offs and accountability; tomorrow, maybe problem definition and value judgment. The real risk isn't "the line gets pushed to nothing," but a manager who never re-draws it, leaving the team stuck at a layer that will eventually be swallowed. Treat re-drawing the line as a quarterly routine, not a one-time setup.</div>
+</details>
+<details>
+<summary>If "judgment" is the scarce thing, but juniors grow judgment precisely by doing the foundational work AI now takes over—how do you solve this "practice paradox"?</summary>
+<div class="body">This is the most real management dilemma of the AI era: AI does the juniors' foundational reps, so judgment is harder to grow. The fix isn't sending them back to hand-writing boilerplate, but <strong>changing how they practice</strong>: make juniors the <strong>reviewers and verifiers</strong> of AI output—read the AI-generated code, find where it breaks, explain why. Reviewing exposes you to the "good vs. bad" contrast faster than writing from scratch—exactly the nutrient of judgment. Pair it with clear feedback, and you migrate practice from a "production act" to a "judgment act."</div>
+</details>
+<details>
+<summary>Won't honestly saying "some work will disappear" actually create panic and accelerate attrition?</summary>
+<div class="body">There's that risk, so honesty must come <strong>in pairs</strong>: in the same breath that names the threat, give the path. Saying "your work will disappear" alone is intimidation; "it will disappear + here's my concrete plan to help you transition" is leadership. People can bear bad news; what they can't bear is <strong>uncertainty plus silence</strong>. If you don't speak, the fear is still there—it just goes underground into quietly sending out résumés. Transparency actually reduces attrition: those who stay know you didn't deceive them, and know you're investing in their next step. What really accelerates attrition is reassurance that gets exposed as false.</div>
+</details>
+<details>
+<summary>Does "humans own AI output" still hold as AI grows more autonomous (agents executing multiple steps on their own)? How should accountability scale with the degree of automation?</summary>
+<div class="body">The principle holds, but its anchor moves up with autonomy. When AI goes from "giving suggestions" to "executing multi-step actions on its own," humans can no longer review line by line—so accountability shifts from "review every output" to <strong>"design the guardrails and acceptance criteria"</strong>: define what the agent may touch, when it must stop and find a human, how results get accepted. The analogy: you don't audit a report's every keystroke, but you're accountable for who you hire, what permissions you grant, how you evaluate. The higher the automation, the more human accountability retreats from the "operational layer" to the "policy-and-boundary layer"—what exits is execution; what can't exit is <strong>being accountable for setting those boundaries</strong>.</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 54 · 2026.07.13</footer>
+</div>
+</body>
+</html>
