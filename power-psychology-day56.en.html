@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 56: The Psychology of Power</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 56 · 2026.07.15</div>
+<h1 data-tts="f1a3b5c7d9e02345">The Psychology of Power: Why the More Power You Hold, the Less You See People</h1>
+<div class="meta"><span>Topic: The Psychology of Power</span><span>·</span><span>4 Principles</span></div>
+<div class="subtitle">"This is the power paradox: we rise in power due to what is best about human nature, but we fall from power due to what is worst." — Dacher Keltner, The Power Paradox</div>
+</header>
+<div class="intro">
+<strong>This issue's proposition:</strong> As a tech lead manager, your power is quietly growing — you set ratings, hand out work, decide who gets stage time at the all-hands. Psychology keeps finding something counterintuitive: <strong>power systematically corrodes the very abilities that got you here — empathy, listening, restraint.</strong> This isn't a morality lecture; it's a predictable mechanism. This issue's four principles — <strong>how power corrupts, how status switches off empathy, Level 5 humble leadership, and self-awareness of power</strong> — give you a set of guardrails so that as your power grows, you don't fall into the trap of being "the last person to know you've changed."
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2 data-tts="a2b4c6d8e0f13456">How Power Corrupts: The Skills That Got You Up, Gone Once You Sit Down
+<span class="en">The Power Paradox</span></h2>
+<span class="tag">power paradox</span><span class="tag">disinhibition</span><span class="tag">guardrails</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle">You climb on empathy, collaboration, restraint; the moment you take the seat, power systematically switches those off. <strong>This isn't a character flaw — it's power's predictable effect on the brain, so rely on structural guardrails, not on "I won't change."</strong> Keltner's twenty years of experiments: people primed with a sense of power interrupt more, act more impulsively, and read others' emotions less well.</div>
+<div class="quote">
+<span class="en">"The seductions of power induce us to lose the very skills that enabled us to gain power in the first place."</span>
+<span class="source">— Dacher Keltner, The Power Paradox (2016)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: You, Three Months After the Promotion</div>
+<div class="scene">
+<div class="setup">Situation: You've been a senior manager for three months. In a design review, a junior engineer says, "This approach carries a lot of launch risk."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Power-disinhibited move</div>
+<p>"I've looked at it, it's fine, let's move on." — You didn't notice you cut him off, or ask where the risk actually was. You just felt "I've gotten more decisive." Three weeks later it breaks in production; only afterward do you learn that was exactly the point he'd tried to raise.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Install guardrails</div>
+<p>Set yourself three hard rules: <strong>(1)</strong> In decision meetings I speak last, I don't set the tone first; <strong>(2)</strong> before overruling any objection, I restate the person's concern until they nod; <strong>(3)</strong> each quarter I ask the team, "Has there been a time recently I made you afraid to speak up?" Guardrails run on process, not willpower.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The Guardrail Checklist</div>
+<ul class="checklist">
+<li>In decision meetings, am I always the first or loudest to set the tone? Try speaking last.</li>
+<li>The last time I changed my mind — was it a report who persuaded me? Can't recall = warning sign.</li>
+<li>Do I interrupt people more or less often than a year ago?</li>
+<li>Is there anyone who'll tell me to my face, "You're wrong this time"? If not, go build that.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + A Woman's Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>"I'm not that kind of person."</strong> The more certain you are you're immune, the fewer guardrails you've installed. Corrosion happens precisely when you feel good about yourself.</li>
+<li><strong>Mistaking the side effect for an upgrade.</strong> "I've finally gotten decisive" and "I've stopped listening" are one line apart.</li>
+<li><strong>Reflecting only after it blows up.</strong> Install guardrails while you're winning, not after you lose control.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Women leaders face the reverse trap: the same decisiveness gets labeled "aggressive / bossy," so some over-restrain and end up forfeiting power they should be using. The guardrail here isn't "use less power" — it's "use it clear-eyed": distinguish "I'm suppressing dissent" from "I'm making a normal call." Rein in the former; don't retreat from the latter out of fear of the label.
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Review a decision meeting you ran last week and count two numbers — where in the order you spoke, and how many times you interrupted. Next time, drop each by one notch.</div>
+<div class="setup"><strong>Reflection:</strong> How many people around me still dare tell me, undiluted, "Your judgment was wrong this time"? Over the past year, is that number rising or falling?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2 data-tts="b3c5d7e9f1a24567">Status &amp; Empathy: Power Quietly Switched Off the "Perspective" Toggle
+<span class="en">Power Turns Off Perspective-Taking</span></h2>
+<span class="tag">perspective</span><span class="tag">mirroring</span><span class="tag">blind spot</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle">Power's most hidden cost: it lowers your ability to see the world from someone else's angle. <strong>In a classic experiment, people primed with power were more likely to draw the letter E facing so only they could read it — not selfishness, but genuinely forgetting there's another viewer.</strong> Neuroscience goes further: power dampens the brain's mirroring response — the more power, the harder it is to read another's situation automatically.</div>
+<div class="quote">
+<span class="en">"Power leads individuals to anchor too heavily on their own vantage point, insufficiently adjusting to others' perspectives."</span>
+<span class="source">— Galinsky et al., "Power and Perspectives Not Taken" (2006)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: You Think "This Isn't Hard"</div>
+<div class="scene">
+<div class="setup">Situation: You're setting a deadline. This task takes you two hours; you think it's "totally reasonable."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Estimating others by your own vantage</div>
+<p>"This isn't hard, right? Get it to me by Friday." — You estimated by your own fluency, forgetting it's his first time touching this system. He doesn't dare push back, grinds it out, and hands in a half-baked result Friday. Both of you are frustrated.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Label your vantage, ask for theirs</div>
+<p>"This is about half a day for me, but it's your first time in this area. After you read the spec, tell me: how long do you think it'll take, where might you get stuck? <strong>We'll set it by your estimate, not mine.</strong>" — Mark your own read as "my vantage," and hand the call to the person actually doing the work.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The Blind-Spot Checklist</div>
+<ul class="checklist">
+<li>This deadline / difficulty call — am I using my fluency, or his?</li>
+<li>Before I spoke, did I know what else is on his plate today?</li>
+<li>When I say "this is simple" — simple for me, or for him?</li>
+<li>When did I last actively ask, "How do you see this?"</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + A Woman's Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Estimating others by your own bandwidth.</strong> Your "simple" is his all-nighter of a week.</li>
+<li><strong>Taking silence as agreement.</strong> Under a status gap, no objection ≠ no opinion — usually it's not daring to say it.</li>
+<li><strong>"Perspective-taking" that stays talk.</strong> Real perspective-taking is asked out loud, not imagined in your head.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Pick a task you recently thought was "easy," and ask the person actually doing it: "How long do you think this takes, and what's hard about it?" Compare their answer with your estimate — how far apart?</div>
+<div class="setup"><strong>Reflection:</strong> That person on my team who never pushes back on me — do they really agree with everything, or does the seat I sit in make pushback feel pointless?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2 data-tts="c4d6e8f0a2b35678">Humble Leadership: Credit Out the Window, Blame in the Mirror
+<span class="en">Level 5 Leadership — Humility × Will</span></h2>
+<span class="tag">Level 5</span><span class="tag">humility</span><span class="tag">will</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle">The strongest leaders aren't the most charismatic — they're a paradoxical blend of <strong>personal humility + professional will</strong>: fiercely hard on results, radically low-key about themselves. Collins's metaphor — <strong>look out the window when it goes well</strong> (credit the team, luck, timing), <strong>look in the mirror when it fails</strong> (own the responsibility). The corrupted do exactly the reverse.</div>
+<div class="quote">
+<span class="en">"Level 5 leaders channel their ego needs away from themselves and into the larger goal of building a great company. Ambition first for the company, not the self."</span>
+<span class="source">— Jim Collins, Good to Great (2001)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Collins's Five Levels of Leadership</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="#f3e9d2" points="320,20 470,80 170,80" stroke="#5c3a18" stroke-width="2"></polygon>
+<rect fill="#fcf6e8" height="42" stroke="#a8702d" stroke-width="1.5" width="360" x="140" y="86"></rect>
+<rect fill="#fcf6e8" height="42" stroke="#a8702d" stroke-width="1.5" width="420" x="110" y="134"></rect>
+<rect fill="#fcf6e8" height="42" stroke="#a8702d" stroke-width="1.5" width="480" x="80" y="182"></rect>
+<rect fill="#fcf6e8" height="42" stroke="#a8702d" stroke-width="1.5" width="540" x="50" y="230"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="320" y="66">L5 Humility + Will</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="13" text-anchor="middle" x="320" y="113">L4 Effective Leader: drives vision &amp; high standards</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="13" text-anchor="middle" x="320" y="161">L3 Competent Manager: organizes people &amp; resources</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="13" text-anchor="middle" x="320" y="209">L2 Contributing Team Member: works toward group goals</text>
+<text fill="#3a2f1c" font-family="Georgia" font-size="13" text-anchor="middle" x="320" y="257">L1 Highly Capable Individual: talent &amp; knowledge</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The Project Was a Big Win — Whose Credit?</div>
+<div class="scene">
+<div class="setup">Situation: A team project is a big success. In front of everyone at the all-hands, your boss asks: "Who's mainly responsible for this?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Take credit in the mirror</div>
+<p>"Mostly I led everyone to get the direction right." — You grabbed the light from out the window; the team remembers it a long time. And should the project fail, the same person says "execution didn't keep up," aiming the mirror at others.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Credit out the window</div>
+<p>"The direction held because X pushed back hard early on that wrong assumption, and Y spent two weeks getting the data pipeline working. My job was to stay out of the way." — And if it fails, the Level 5 move is the mirror: "The direction was my misjudgment."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Level 5 Self-Check</div>
+<ul class="checklist">
+<li>Last time the team succeeded, was my first reflex "we" or "I"?</li>
+<li>Last time it failed, did I look in the mirror (myself) or out the window (circumstances, others)?</li>
+<li>Can I say publicly, "I don't get this — who can teach me?" (Schein, Humble Inquiry)</li>
+<li>Is the successor I'm growing strong enough to replace me? Or am I guarding against him?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + A Woman's Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking humility for weakness.</strong> Level 5's will is steel — humility is about how you attribute, not about having no edge.</li>
+<li><strong>Fake modesty.</strong> "It was all the team" out loud, grabbing credit in private. The team can tell real from fake.</li>
+<li><strong>Only the window, never the mirror.</strong> All success to yourself, all failure to circumstances — the textbook symptom of power's corrosion.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+There's an asymmetry here: a woman leader "crediting the team" is readily read as "she didn't do much anyway," so her credit gets siphoned off more easily. The fix isn't to drop humility — it's to make the "will" half solid: while crediting the team, state clearly "here was my judgment, here's the call I made." Don't let humility become invisibility.
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Review a recent team win and loss. For the win, write three specific people and what they did right; for the loss, write one cause that's only about you. Notice which column is harder to fill.</div>
+<div class="setup"><strong>Reflection:</strong> If I were laterally replaced next year, is anyone I lead already strong enough to take my seat? Am I helping him get stronger, or guarding against him?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2 data-tts="d5e7f9a1b3c46789">Self-Awareness of Power: You're the Last to Know You've Changed
+<span class="en">Self-Awareness of Power</span></h2>
+<span class="tag">self-awareness</span><span class="tag">feedback loop</span><span class="tag">hubris</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle">The more power, the less truth reaches you — not because you turned bad, but because feedback decays automatically: no one wants to give the boss a bad review. <strong>So self-awareness can't run on "I feel fine"; it has to run on feedback loops you deliberately build.</strong> The higher the seat, the more you need honest feedback and the less it arrives on its own — a gap you close by structure, not introspection.</div>
+<div class="quote">
+<span class="en">"The higher up you go in an organization, the less honest feedback you receive—and the more you need it."</span>
+<span class="source">— Marshall Goldsmith, What Got You Here Won't Get You There (2007)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: You Want to Know How You're Managing</div>
+<div class="scene">
+<div class="setup">Situation: You want to know how you're doing as a manager.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Closed question, only noise</div>
+<p>You ask in a 1:1, "You think I'm managing okay, right?" — Power gap + closed phrasing, and the stock answer is "It's fine." You think you're collecting feedback; you're collecting noise.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Build a structured loop</div>
+<p><strong>(1)</strong> An anonymous skip-level or team survey, asking about specific behavior: "In the past month, was there a time I made you afraid to speak the truth? Give an example." <strong>(2)</strong> Name a "truth friend" (a peer or mentor) and explicitly authorize them to slap you down. <strong>(3)</strong> Regularly ask, "What's the one thing I should most change?" — then only say "Thanks, I'll think about it." Defend once, and the truth stops for three months.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The Feedback-Loop Checklist</div>
+<ul class="checklist">
+<li>Do I have an anonymous / low-risk channel where the team can speak ill of me?</li>
+<li>When did I last receive negative feedback about myself? Too long ago = the loop is broken.</li>
+<li>When someone criticizes me, is my first reflex "thank you" or an explanation?</li>
+<li>Since being promoted, has how often I actively ask for feedback risen or fallen? (It should rise; for most it falls.)</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + A Woman's Lens</div>
+<div class="pitfall">
+<ul>
+<li><strong>Taking no complaints as no problems.</strong> Silence under a power gap is the most expensive illusion.</li>
+<li><strong>Asking for feedback, then punishing the truth-teller.</strong> Defend on the spot or retaliate later — once is enough to silence the team forever.</li>
+<li><strong>Trusting only peers and superiors.</strong> It's precisely subordinates who see the truest version of you.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research shows women leaders often get "blunter" feedback — vaguer, weighted toward personality over behavior ("you're a bit aggressive" rather than "you interrupted three times in that meeting"). The fix: when you get vague feedback, force it into behavior — "Can you give me a specific example? What I want to change is the behavior, not the personality." Grind blunt feedback into something actionable.
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> This week, find someone you trust and tell them plainly: "I authorize you — from now on, if you think I'm off, tell me directly, and I won't hold it against you." When they first point something out, reply only, "Thanks, I'll think about it."</div>
+<div class="setup"><strong>Reflection:</strong> When did I last actually change a behavior because of someone's feedback? If I can't recall — is it that I didn't receive any, or that I received it and didn't take it seriously?</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep Questions ============ -->
+<div class="deep">
+<h3>Going Deeper</h3>
+<details>
+<summary>Does power really "corrupt" everyone, or does it just expose who you already were?</summary>
+<div class="body">Both. Keltner's experiments show power has a predictable disinhibiting effect on ordinary people — even kind ones interrupt more and act more impulsively, which supports "corruption." But other research shows power is an <strong>amplifier</strong> — those already high in prosocial motives become more generous once empowered. So don't treat it as either/or: power is both a solvent eroding self-control and a magnifier exposing your nature. The one practical takeaway: don't bet you're "a good person, therefore immune" — everyone needs guardrails.</div>
+</details>
+<details>
+<summary>In a big company, will installing these "humility guardrails" make me look un-leaderlike and get my spot taken by more aggressive people?</summary>
+<div class="body">A real risk, no denial. But humility ≠ not competing. Level 5's key is "<strong>humble attribution + steel will</strong>" — fight for results, resources, and direction when you must; just don't hoard credit or assert authority by suppressing dissent. In an environment that rewards performative confidence, pure humility does lose out; the fix is to walk on two legs — hard on results, low-key in posture — not to drop either. Also be honest: some political ecosystems simply reward hubris, and then the question is "stay and adapt" or "go elsewhere" — a trade-off with no optimal answer.</div>
+</details>
+<details>
+<summary>Power weakens empathy, but a leader must make cold calls (layoffs, PIPs). Would too much empathy stop you from deciding?</summary>
+<div class="body">Distinguish empathy's two layers: <strong>emotional contagion</strong> (feeling sad along with them) vs <strong>cognitive perspective-taking</strong> (understanding their situation). Hard decisions need the latter, not the former — understanding what the laid-off person will go through is exactly how you do a brutal thing with dignity (early notice, honesty, help), not how you dodge the decision. The real imbalance is "cold decision + cold execution." The goal: make the hard call when it's hard, and use cognitive perspective-taking to preserve the other person's dignity in execution. Adam Grant's "disagreeable giver" is this balance.</div>
+</details>
+<details>
+<summary>Most of this is Western research (Keltner / Collins / Galinsky). Does it hold in the steep-hierarchy, high-power-distance organizations of East Asia?</summary>
+<div class="body">The mechanism holds; the expression differs. "Power lowers perspective-taking, feedback decays up the hierarchy" is a fairly cross-cultural finding; but in high-power-distance cultures, subordinates are even less likely to volunteer feedback to superiors, so the loop breaks <strong>more completely</strong> — meaning guardrails should be built even more actively by those on top (anonymous channels, a designated truth-teller); counting on truth to emerge on its own is even less realistic. Sun Tzu's "when superiors and subordinates share the same desire, they win" is precisely about letting real information flow across a power gap. Humility has even stronger legitimacy in the Confucian context ("the superior man is dignified but not proud") — just guard against it degrading into performative courtesy.</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 56 · 2026.07.15</footer>
+</div>
+</body>
+</html>
