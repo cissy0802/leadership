@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 58：创意与研发团队领导</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 58 · 2026.07.17</div>
+<h1 data-tts="a1f4c9e07b2d6538">创意与研发团队领导：管聪明人，不能用管流水线的手</h1>
+<div class="meta"><span>主题：Leading Creative &amp; R&amp;D Teams</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"雇聪明人却告诉他们怎么做，是没道理的；我们雇聪明人，是为了让他们告诉我们该怎么做。" — Steve Jobs</div>
+</header>
+<div class="intro">
+<strong>本期的命题：</strong>你带的是一支 ML / research / 平台团队，全是比你更懂某个细分方向的人。用管交付团队那套（派任务、盯进度、按 ticket 计功）去管他们，会同时做到两件坏事：<strong>既压死创造力，又让最强的人先走。</strong>创意与研发团队的领导，本质是一门"给约束、不给指令"的手艺。本期四个原则——<strong>管理创意工作者（给上下文而非控制）、自主与方向（框架内的自由）、安全与创新（高安全 × 高标准）、失败容忍（区分好失败与坏失败）</strong>——帮你把一群难管的聪明人，变成一支持续产出非共识成果的团队。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2 data-tts="b7e2a4d18c05f9a3">管理创意工作者：给上下文，别给控制
+<span class="en">Managing Creatives — Lead With Context, Not Control</span></h2>
+<span class="tag">上下文</span><span class="tag">自主</span><span class="tag">动机</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">创意工作者的产出不是"手快"，是"想得对"。你越用指令和审批去控制过程，越是拿走了他做对判断所需的<strong>上下文</strong>。管理动作要从"我告诉你做什么"，转成"我确保你掌握足够的 why，好让你自己做出我也会做的那个决定"。</div>
+<div class="quote">
+<span class="en">"Lead with context, not control. If you give your employees the information they need to make good decisions, you don't have to control them."</span>
+<span class="zh">"用上下文领导，而不是用控制。只要你给员工做好决策所需的信息，你就不必去控制他们。"</span>
+<span class="source">— Reed Hastings,《No Rules Rules》(2020) Ch.9</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：研究员想追一个不在 roadmap 上的方向</div>
+<div class="scene">
+<div class="setup">情境：一位资深研究员想花三个月探索一个当前 roadmap 上没有、也没人要的技术路径，他很兴奋，你心里没底。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 用控制回应</div>
+<p>"现在先聚焦在 roadmap 上的东西，这个等有余力再说。" —— 你保住了这季度的确定性，但传递的信号是"你的判断不重要，按我的清单干活"。三个月后，最有想法的那个人开始更新简历。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 用上下文回应</div>
+<p>"我想听懂它。<strong>它如果成了，会解掉我们哪个真问题？</strong>"（给他表达 why 的空间）</p>
+<p>"我的上下文是：这季度对 X 有硬承诺，我背着这个数。<strong>在不动摇 X 的前提下</strong>，能不能约定一个小切口——两周出一个能证伪的最小实验？成了我帮你要资源，不成也都学到了东西。"（给约束和路径，不给否决）</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">从"控制"切到"上下文"的清单</div>
+<ul class="checklist">
+<li>我上次否掉一个想法，是给了"为什么不行"的上下文，还是只给了"不行"？</li>
+<li>团队卡住来问我时，我是直接给答案，还是补齐他缺的上下文让他自己定？</li>
+<li>我的审批环节里，有几个是真在控风险，有几个只是在满足我的掌控感？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把"过程可见"当"过程可控"。</strong>要 daily 汇报每一步，聪明人会把精力花在让你安心，而不是把问题想对。</li>
+<li><strong>用管资浅工程师的密度管资深研究员。</strong>方向感强的人被高频 check-in 会当成不信任；上下文更要前置，事后补的叫追责。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>这周挑一个你本来会"直接给答案"的求助，改成反问一句"你缺的是哪块背景？"——把上下文给足，让他自己做决定，然后忍住不修正。</div>
+<div class="setup"><strong>思考题：</strong>我团队里如果有人做了一个和我不同、但基于同样上下文的合理决定，我的第一反应是"好，他能独立判断了"，还是"他怎么没按我想的来"？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2 data-tts="c3d8b1e64a2b0759">自主与方向：框架内的自由，而不是放养
+<span class="en">Autonomy &amp; Direction — Freedom Within a Frame</span></h2>
+<span class="tag">赋能团队</span><span class="tag">护栏</span><span class="tag">北极星</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">自主不等于放养。创意团队跑偏，几乎总是因为你只给了自由、没给方向；而团队僵死，几乎总是因为你只给了方向、没给自由。答案是<strong>"框架内的自由"</strong>：给团队一个要解决的<strong>问题</strong>和一组不可逾越的<strong>护栏</strong>，把"怎么解"完全留给他们。</div>
+<div class="quote">
+<span class="en">"The key is to give teams problems to solve, rather than solutions to implement. Empowered teams are measured by outcomes, not output."</span>
+<span class="zh">"关键是给团队要解决的问题，而不是要实现的方案。被赋能的团队，用结果来衡量，而不是用产出量。"</span>
+<span class="source">— Marty Cagan,《INSPIRED》(2nd ed., 2017)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">框架内的自由：什么锁死，什么放开</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f5e0d0" height="118" rx="6" stroke="#b85c3a" stroke-width="2" width="270" x="20" y="24"></rect>
+<rect fill="#e6efdc" height="118" rx="6" stroke="#5c8a3a" stroke-width="2" width="270" x="330" y="24"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="155" y="50">护栏（我锁死，不可动）</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="34" y="76">· 要解的问题 / 北极星指标</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="34" y="98">· 安全 / 合规 / 伦理红线</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="34" y="120">· 截止日与预算量级</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="465" y="50">自由区（团队全权决定）</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="344" y="76">· 用什么技术方案 / 架构</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="344" y="98">· 怎么拆解、谁做哪块</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="344" y="120">· 试几条路、如何取舍</text>
+<rect fill="#fcf6e8" height="52" rx="6" stroke="#a8702d" stroke-width="1.5" width="580" x="20" y="168"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="12.5" font-weight="700" text-anchor="middle" x="310" y="190">领导的活：护栏说清、说少 → 自由区越大越可信</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="310" y="210">护栏含糊或频繁改 → 团队缩回来等你拍板，自主就死了</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：团队跑偏了，怎么拉回又不没收自主</div>
+<div class="scene">
+<div class="setup">情境：你给团队"降低推理延迟"这个问题，两周后发现他们在重写整个服务框架——技术上有意思，但离目标越来越远。</div>
+<div class="dialog good">
+<div class="speaker">✓ 校准方向，不收回自由</div>
+<p>"先确认北极星：<strong>这季度要把 P95 延迟砍到 200ms 以内</strong>，对吧？现在的方向是重写框架——帮我理解，这条路怎么最快指向那个数？"</p>
+<p>"如果它是三个月的投资、这季度指标反而更悬，可能就选错了切口。<strong>方案我不替你们定，但护栏得守：先拿到那个延迟数。</strong>要不要一起把选项按'离目标的距离'排个序？"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">设"框架"的清单</div>
+<ul class="checklist">
+<li>我给的是一个要解的问题，还是一份要造的功能清单？（后者是伪授权）</li>
+<li>我的护栏能不能一句话说清？说不清的护栏，团队没法在里面自由。</li>
+<li>我衡量他们用的是 outcome（问题解没解）还是 output（写了多少代码）？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>假授权。</strong>嘴上说"你们定"，方案一不合心意就推翻——一次就够团队学会"等你拍板最省事"。</li>
+<li><strong>护栏漂移。</strong>目标每两周变一次，团队永远在重启，自主变成无所适从。</li>
+<li><strong>只给自由不给北极星。</strong>没有共享目标的自主，是一群人朝不同方向使劲。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>给团队一个当前任务，写下你的护栏（≤3 条）和自由区各一栏，发给团队问："边界清楚吗？哪里你觉得被过度框住了？"</div>
+<div class="setup"><strong>思考题：</strong>上次我推翻团队的技术方案，是它真会撞上护栏，还是仅仅因为"跟我想的不一样"？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2 data-tts="d9a6c2f43b71e850">安全与创新：高心理安全 × 高标准，才有 learning zone
+<span class="en">Safety &amp; Innovation — Where High Safety Meets High Standards</span></h2>
+<span class="tag">心理安全</span><span class="tag">高标准</span><span class="tag">learning zone</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">创新需要有人敢说出半成型、可能很蠢的想法——这要心理安全。但心理安全<strong>不是</strong>降低标准、一团和气。真正孕育创新的是<strong>"高安全 × 高标准"</strong>那个象限：既敢冒险直言，又对结果较真。只有安全没标准，是舒适区；只有标准没安全，是焦虑区。</div>
+<div class="quote">
+<span class="en">"Psychological safety is not about being nice. It's about candor... It is not the absence of standards; combined with high standards, it creates the conditions for high performance."</span>
+<span class="zh">"心理安全感不是一味和气，而是敢于坦诚……它不是降低标准；只有与高标准结合，才创造出高绩效的条件。"</span>
+<span class="source">— Amy Edmondson,《The Fearless Organization》(2019)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">安全 × 标准：四象限</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 560 360" xmlns="http://www.w3.org/2000/svg">
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" transform="rotate(-90 24 190)" x="24" y="190">心理安全 →</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="320" y="350">对结果的标准 →</text>
+<rect fill="#fcf6e8" height="130" rx="4" stroke="#a8702d" stroke-width="1.5" width="200" x="70" y="30"></rect>
+<rect fill="#e6efdc" height="130" rx="4" stroke="#5c8a3a" stroke-width="2.5" width="200" x="290" y="30"></rect>
+<rect fill="#f0e6d2" height="130" rx="4" stroke="#b8a060" stroke-width="1.5" width="200" x="70" y="176"></rect>
+<rect fill="#f5e0d0" height="130" rx="4" stroke="#b85c3a" stroke-width="1.5" width="200" x="290" y="176"></rect>
+<text fill="#6b4a1f" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="170" y="82">舒适区</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="170" y="104">Comfort</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" text-anchor="middle" x="170" y="126">敢说，但没人较真</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" text-anchor="middle" x="170" y="144">和气，不出成果</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="390" y="82">学习区</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="11" text-anchor="middle" x="390" y="104">Learning</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="10.5" text-anchor="middle" x="390" y="126">敢冒险 + 对结果较真</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="10.5" font-weight="700" text-anchor="middle" x="390" y="144">创新在这里发生</text>
+<text fill="#7a6030" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="170" y="228">冷漠区</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="170" y="250">Apathy</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" text-anchor="middle" x="170" y="272">不敢说也不在乎</text>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="390" y="228">焦虑区</text>
+<text fill="#a04020" font-family="Georgia" font-size="11" text-anchor="middle" x="390" y="250">Anxiety</text>
+<text fill="#a04020" font-family="Georgia" font-size="10.5" text-anchor="middle" x="390" y="272">要求高但不敢冒险</text>
+<text fill="#a04020" font-family="Georgia" font-size="10.5" text-anchor="middle" x="390" y="290">藏问题、报喜不报忧</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：评审会上，一个半熟的想法被当场怼</div>
+<div class="scene">
+<div class="setup">情境：架构评审会，一位工程师抛出大胆但明显不成熟的方案，另一个资深立刻说"这根本行不通"。全场安静，提出者脸红了。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 让它过去 / 或和稀泥</div>
+<p>你要么装没看见（下次没人敢抛半熟想法 → 冷漠区），要么打圆场"大家都有道理"（没了标准 → 舒适区）。两条路都杀创新。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 保护冒险的人，同时保住标准</div>
+<p>"等一下——先谢谢你把这个还没想透的东西摆出来，这正是评审该有的样子。"（保护冒险行为）</p>
+<p>"<strong>'行不通'拆开看：是哪个具体假设撑不住？</strong>如果是延迟，能不能只验证那一个假设，而不是否掉整个想法？"（对事较真，把"否定人"转成"证伪假设"，标准不降）</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">造 learning zone 的清单</div>
+<ul class="checklist">
+<li>上一个被否的想法，我们否的是"这个人"还是"某条具体假设"？</li>
+<li>我自己在会上认过"我不确定 / 我错了"吗？领导先示范脆弱，安全才是真的。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>把心理安全误当"不能批评"。</strong>于是烂方案也不敢说破——那不是安全，是冷漠区。</li>
+<li><strong>只保护安全，忘了标准。</strong>创新团队最怕"人人都好棒棒"，最后什么都出不来。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+脑暴与评审里有个反复被验证的现象：女性和资浅成员的想法，更容易被忽略或被他人"重述后归属"（idea appropriation）。领导可当场做归因锚定——"这点最早是 A 提的，顺着 A 的思路往下"——一句话既护了原创者，也示范"在这里冒险提想法，功劳算你的"。
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>下次评审会，当一个半熟想法被否时，把"这行不通"改写成一个问题："它靠哪条假设？能不能只测那一条？"——把否定人转成证伪假设。</div>
+<div class="setup"><strong>思考题：</strong>我的团队更像哪个象限？"舒适区"是我用"和气"换掉了标准；"焦虑区"是我要的高标准里带着惩罚——是哪种？</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2 data-tts="e5b8d3a17c40b629">失败容忍：区分"好失败"和"坏失败"，只奖前者
+<span class="en">Tolerating Failure — Reward the Right Kind of Wrong</span></h2>
+<span class="tag">失败光谱</span><span class="tag">聪明的失败</span><span class="tag">复盘</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">"容忍失败"最容易被做歪：要么变成"什么错都无所谓"（纵容疏忽），要么口头容忍、暗地记账（没人再敢冒险）。正解是<strong>把失败分级</strong>：可避免的疏忽型失败该问责，探索未知的<strong>聪明失败</strong>该奖励。创新的失败不是必要之恶，是做新东西的<strong>必然副产品</strong>。</div>
+<div class="quote">
+<span class="en">"Mistakes aren't a necessary evil. They aren't evil at all. They are an inevitable consequence of doing something new."</span>
+<span class="zh">"错误不是必要之恶，它根本不是恶。它是做新东西不可避免的结果。"</span>
+<span class="source">— Ed Catmull,《Creativity, Inc.》(2014)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">失败光谱：从该问责到该奖励</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 620 250" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="fg" x1="0" x2="1"><stop offset="0" stop-color="#b85c3a"></stop><stop offset="0.5" stop-color="#b8a060"></stop><stop offset="1" stop-color="#5c8a3a"></stop></lineargradient>
+</defs>
+<rect fill="url(#fg)" height="20" rx="10" width="560" x="30" y="40"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="12" font-weight="700" x="30" y="30">该问责 ←</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="12" font-weight="700" text-anchor="end" x="590" y="30">→ 该奖励</text>
+<rect fill="#f5e0d0" height="120" rx="6" stroke="#b85c3a" stroke-width="1.5" width="175" x="30" y="90"></rect>
+<rect fill="#f0e6d2" height="120" rx="6" stroke="#b8a060" stroke-width="1.5" width="175" x="222" y="90"></rect>
+<rect fill="#e6efdc" height="120" rx="6" stroke="#5c8a3a" stroke-width="2" width="175" x="414" y="90"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="117" y="116">可避免的失败</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="117" y="140">已知流程没照做</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="117" y="160">疏忽 / 走捷径</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="117" y="184">→ 该纠正、该问责</text>
+<text fill="#7a6030" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="309" y="116">复杂系统失败</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="309" y="140">多因素叠加</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="309" y="160">难完全预防</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="309" y="184">→ 建早期预警</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="501" y="116">聪明的失败</text>
+<text fill="#3a5a20" font-family="Georgia" font-size="11" text-anchor="middle" x="501" y="140">探索未知的实验</text>
+<text fill="#3a5a20" font-family="Georgia" font-size="11" text-anchor="middle" x="501" y="160">假设明确、代价可控</text>
+<text fill="#3a5a20" font-family="Georgia" font-size="11" font-weight="700" text-anchor="middle" x="501" y="184">→ 该奖励、该传播</text>
+</svg>
+</div>
+<div class="scene">
+<div class="setup">分级来自 Amy Edmondson「Strategies for Learning from Failure」（HBR 2011）。"聪明失败"的四个特征：<strong>(1)</strong> 探索新领域，答案本就未知；<strong>(2)</strong> 有明确假设，不是瞎试；<strong>(3)</strong> 代价刻意控制在小范围；<strong>(4)</strong> 事后能提炼出可复用的知识。四条全中，才配叫"聪明失败"。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范：一个 ambitious 的实验失败了</div>
+<div class="scene">
+<div class="setup">情境：团队投六周做一个新模型架构，指标没跑赢 baseline，项目要停。工程师很沮丧，团队在看你怎么反应。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 罚，或假装无所谓</div>
+<p>"这六周基本白费了。"——一句话教全团队以后只提稳赢的项目。或反过来，不复盘、拍拍肩"没事下一个"——失败里的知识也一起蒸发了。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 先归类，再提炼，公开传播</div>
+<p>"先说清楚：<strong>这是一次聪明的失败，不是搞砸了。</strong>方向未知、假设明确、代价控制在六周，这正是我们该做的下注。"</p>
+<p>"现在做最有价值的事：<strong>把它变成团队资产。</strong>写一页——赌的假设是什么、为什么没成、下一个碰这方向的人该避开什么。这页我在组会上讲，署你的名。"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">失败容忍的清单</div>
+<ul class="checklist">
+<li>这次失败落在光谱哪一段？我是不是把"聪明失败"和"疏忽失败"一视同仁了？</li>
+<li>提"稳赢小项目"和提"高风险大赌注"，在我这待遇一样吗？不一样，就没人会赌。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角</div>
+<div class="pitfall">
+<ul>
+<li><strong>口头容忍，绩效记账。</strong>嘴上"失败没关系"，perf review 却只认成果——团队一眼看穿，从此只求稳。</li>
+<li><strong>把所有失败都当"学习机会"。</strong>疏忽型失败也不问责，就是纵容，标准崩塌。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究（含 glass cliff 文献）显示，女性和少数群体的失败常被更严苛地归因、更长久地记住，同等失败在多数群体身上却被视为"值得的一搏"。领导公开、明确地把某次失败<strong>命名为"聪明的失败"并写进正式记录</strong>，不只是安慰当事人——更是在纠正这种不对称归因，让"该被奖励的冒险"对所有人一视同仁。
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="scene">
+<div class="setup"><strong>习作：</strong>翻出团队近三个月一次失败的尝试，用上面四个特征归类。若是"聪明失败"，补一次迟到的公开肯定，并让当事人写一页 learnings 进 wiki。</div>
+<div class="setup"><strong>思考题：</strong>我嘴上"鼓励冒险"，但诚实回看我实际奖励和晋升的人，我是在奖励结果，还是奖励"敢在未知里下注并从中学习"？</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep Questions ============ -->
+<div class="deep">
+<h3>深入思考</h3>
+<details>
+<summary>"给上下文不给控制"在成熟资深团队里很美，但如果我带的是一群资浅、方向感还没建立起来的人呢？</summary>
+<div class="body">上下文 vs 控制不是开关，是一根<strong>随人成熟度滑动的滑块</strong>。对资浅的人，"上下文"里本就该包含更具体的方向、更密的 check-in、甚至一段示范——这不是控制，是在帮他建立做判断所需的上下文。危险的是把这套高密度指导原封不动用到资深研究员身上，或反过来对新人过早放手再怪他"没自己搞定"。给上下文的精神不变（永远解释 why），密度随人而变——这正是 Hersey-Blanchard 情境领导的内核。</div>
+</details>
+<details>
+<summary>"失败光谱"听着清楚，但现实里一次失败往往同时有疏忽和探索的成分，怎么分？会不会成了各打五十大板的和稀泥？</summary>
+<div class="body">现实的失败确实是混合的，但正因如此才要<strong>拆开归因，而不是给整件事打一个模糊的总分</strong>。把一次失败拆成几条具体的决策，逐条判：探索未知的那部分归"聪明失败"，该奖；已知流程没照做的那部分归"可避免失败"，该纠正。<strong>同一次事件里，可以既表扬冒险、又指出疏忽——这不是和稀泥，恰恰是最精确的反馈。</strong>和稀泥是"整体还行下次注意"；精确是"你赌这个方向对，我支持；但你跳过了压测那步，不能再有"。</div>
+</details>
+<details>
+<summary>大厂考核是季度 OKR、按交付量给分，我一个 tech lead manager 凭什么在这种系统里保护"聪明的失败"？</summary>
+<div class="body">这是最真实的张力，别用理想主义糊弄。三层：<strong>(1) 向上翻译。</strong>把高风险探索用老板听得懂的语言包装成"对冲性投资"和"能力建设"，让失败的实验在汇报里也有正当位置，而不是只报成的、藏没成的。<strong>(2) 用可控代价买探索空间。</strong>把探索切成小、快、代价明确的实验，季度里留出 10%~20% 带宽，失败也不伤主线 KPI，你才有底气护它。<strong>(3) 认清系统的边界。</strong>若组织真的只奖稳赢、任何失败都算减分，你能在缝隙里护一点，但改不了水温——这时诚实的问题是：这还是不是适合做创新团队 leader 的地方？</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 58 · 2026.07.17</footer>
+</div>
+</body>
+</html>

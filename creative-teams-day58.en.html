@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 58: Leading Creative &amp; R&amp;D Teams</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 58 · 2026.07.17</div>
+<h1 data-tts="a1f4c9e07b2d6538">Leading Creative &amp; R&amp;D Teams: You Can't Manage Smart People Like an Assembly Line</h1>
+<div class="meta"><span>Topic: Leading Creative &amp; R&amp;D Teams</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"It doesn't make sense to hire smart people and then tell them what to do; we hire smart people so they can tell us what to do." — Steve Jobs</div>
+</header>
+<div class="intro">
+<strong>This issue's premise:</strong> You lead an ML / research / platform team — full of people who know some niche better than you do. Managing them the way you'd manage a delivery team (assign tasks, track progress, count credit by tickets) does two bad things at once: <strong>it kills creativity, and it makes your strongest people leave first.</strong> Leading a creative and R&amp;D team is, at its core, a craft of "giving constraints, not instructions." This issue's four principles — <strong>managing creatives (context over control), autonomy &amp; direction (freedom within a frame), safety &amp; innovation (high safety × high standards), and tolerating failure (telling good failure from bad)</strong> — help you turn a group of hard-to-manage smart people into a team that keeps producing non-consensus results.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2 data-tts="b7e2a4d18c05f9a3">Managing Creatives: Give Context, Not Control
+<span class="en">Managing Creatives — Lead With Context, Not Control</span></h2>
+<span class="tag">Context</span><span class="tag">Autonomy</span><span class="tag">Motivation</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Original Quote</div>
+<div class="principle">A creative worker's output isn't about being fast; it's about thinking correctly. The more you use directives and approvals to control the process, the more you strip away the <strong>context</strong> they need to judge well. The management move shifts from "I tell you what to do" to "I make sure you have enough of the <em>why</em> to make the same decision I would have made."</div>
+<div class="quote">
+<span class="en">"Lead with context, not control. If you give your employees the information they need to make good decisions, you don't have to control them."</span>
+<span class="source">— Reed Hastings, <em>No Rules Rules</em> (2020), Ch.9</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: A Researcher Wants to Chase Something Off the Roadmap</div>
+<div class="scene">
+<div class="setup">Situation: A senior researcher wants to spend three months exploring a technical path that isn't on the current roadmap and that nobody asked for. They're excited; you're uneasy.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Responding with control</div>
+<p>"Let's stay focused on what's on the roadmap for now; we'll revisit this when we have bandwidth." — You preserve this quarter's certainty, but the signal you send is "your judgment doesn't matter, work my list." Three months later, your most inventive person starts updating their résumé.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Responding with context</div>
+<p>"I want to understand it. <strong>If it works, which real problem of ours does it solve?</strong>" (give them room to express the <em>why</em>)</p>
+<p>"Here's my context: this quarter we have a hard commitment on X, and I'm on the hook for that number. <strong>Without destabilizing X</strong>, could we agree on a small cut — two weeks to produce a minimal, falsifiable experiment? If it works, I help you get resources; if not, we've both learned something." (give constraints and a path, not a veto)</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist: From "Control" to "Context"</div>
+<ul class="checklist">
+<li>Last time I killed an idea, did I give the context of "why not," or just "no"?</li>
+<li>When the team is stuck and asks me, do I hand over the answer, or fill in the context they're missing so they can decide?</li>
+<li>Of my approval gates, how many genuinely control risk, and how many just feed my sense of control?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking "process visible" for "process controlled."</strong> Demand a daily report on every step, and smart people spend their energy reassuring you instead of thinking the problem through.</li>
+<li><strong>Managing a senior researcher at the density you'd use for a junior engineer.</strong> People with strong direction read high-frequency check-ins as distrust; context should come first, not after — supplied afterward, it's just accountability.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> This week, pick a request you'd normally "just answer" and instead ask back, "Which piece of background are you missing?" — supply the context, let them decide, then resist correcting.</div>
+<div class="setup"><strong>Reflection:</strong> If someone on my team makes a reasonable decision that differs from mine but rests on the same context, is my first reaction "good, they can judge independently," or "why didn't they do it my way"?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2 data-tts="c3d8b1e64a2b0759">Autonomy &amp; Direction: Freedom Within a Frame, Not Free-Range
+<span class="en">Autonomy &amp; Direction — Freedom Within a Frame</span></h2>
+<span class="tag">Empowered Teams</span><span class="tag">Guardrails</span><span class="tag">North Star</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Original Quote</div>
+<div class="principle">Autonomy isn't free-range. A creative team drifts almost always because you gave freedom without direction; a team goes rigid almost always because you gave direction without freedom. The answer is <strong>"freedom within a frame"</strong>: give the team a <strong>problem</strong> to solve and a set of non-negotiable <strong>guardrails</strong>, and leave "how to solve it" entirely to them.</div>
+<div class="quote">
+<span class="en">"The key is to give teams problems to solve, rather than solutions to implement. Empowered teams are measured by outcomes, not output."</span>
+<span class="source">— Marty Cagan, <em>INSPIRED</em> (2nd ed., 2017)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Freedom Within a Frame: What's Locked, What's Open</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f5e0d0" height="118" rx="6" stroke="#b85c3a" stroke-width="2" width="270" x="20" y="24"></rect>
+<rect fill="#e6efdc" height="118" rx="6" stroke="#5c8a3a" stroke-width="2" width="270" x="330" y="24"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="155" y="50">Guardrails (I lock, non-negotiable)</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="34" y="76">· the problem / North Star metric</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="34" y="98">· safety / compliance / ethics lines</text>
+<text fill="#5a3818" font-family="Georgia" font-size="12" x="34" y="120">· deadline &amp; budget order of magnitude</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="465" y="50">Free Zone (team decides fully)</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="344" y="76">· which technical approach / architecture</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="344" y="98">· how to break it down, who does what</text>
+<text fill="#2a3a18" font-family="Georgia" font-size="12" x="344" y="120">· how many paths to try, how to trade off</text>
+<rect fill="#fcf6e8" height="52" rx="6" stroke="#a8702d" stroke-width="1.5" width="580" x="20" y="168"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="12.5" font-weight="700" text-anchor="middle" x="310" y="190">The leader's job: state guardrails clearly, keep them few → the bigger, more credible the free zone</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="310" y="210">Vague or shifting guardrails → the team retreats to wait for your call, and autonomy dies</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The Team Drifted — Pull It Back Without Confiscating Autonomy</div>
+<div class="scene">
+<div class="setup">Situation: You gave the team the problem "reduce inference latency." Two weeks later you find them rewriting the entire service framework — technically interesting, but drifting further from the goal.</div>
+<div class="dialog good">
+<div class="speaker">✓ Recalibrate direction, don't reclaim freedom</div>
+<p>"Let me confirm the North Star: <strong>this quarter we need P95 latency under 200ms</strong>, right? The current direction is a framework rewrite — help me understand how that path points at that number fastest."</p>
+<p>"If it's a three-month investment that actually makes this quarter's metric shakier, we may have picked the wrong cut. <strong>I won't decide the approach for you, but the guardrail holds: get the latency number first.</strong> Want to rank the options together by 'distance to the goal'?"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist: Setting the "Frame"</div>
+<ul class="checklist">
+<li>Am I giving a problem to solve, or a feature list to build? (The latter is pseudo-empowerment.)</li>
+<li>Can I state my guardrails in one sentence? Guardrails you can't state clearly leave no room to be free inside.</li>
+<li>Am I measuring them by outcome (did the problem get solved) or output (how much code got written)?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Pseudo-empowerment.</strong> You say "you decide," then overturn the first approach that isn't to your liking — once is enough for the team to learn "waiting for you to call it is easiest."</li>
+<li><strong>Guardrail drift.</strong> The goal changes every two weeks, the team is forever restarting, and autonomy becomes disorientation.</li>
+<li><strong>Freedom with no North Star.</strong> Autonomy without a shared goal is a group of people straining in different directions.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> For a current task, write your guardrails (≤3) and the free zone in two columns, send it to the team, and ask: "Is the boundary clear? Where do you feel over-framed?"</div>
+<div class="setup"><strong>Reflection:</strong> Last time I overturned the team's technical approach, was it because it would truly hit a guardrail, or merely because it wasn't "how I'd have done it"?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2 data-tts="d9a6c2f43b71e850">Safety &amp; Innovation: High Safety × High Standards Is the Learning Zone
+<span class="en">Safety &amp; Innovation — Where High Safety Meets High Standards</span></h2>
+<span class="tag">Psych Safety</span><span class="tag">High Standards</span><span class="tag">Learning Zone</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Original Quote</div>
+<div class="principle">Innovation needs someone brave enough to voice a half-formed, possibly dumb idea — that takes psychological safety. But psychological safety is <strong>not</strong> lowering standards or keeping everyone comfortable. What actually breeds innovation is the <strong>"high safety × high standards"</strong> quadrant: people dare to take risks and speak candidly, and they're serious about results. Safety without standards is the comfort zone; standards without safety is the anxiety zone.</div>
+<div class="quote">
+<span class="en">"Psychological safety is not about being nice. It's about candor... It is not the absence of standards; combined with high standards, it creates the conditions for high performance."</span>
+<span class="source">— Amy Edmondson, <em>The Fearless Organization</em> (2019)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Safety × Standards: Four Quadrants</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 560 360" xmlns="http://www.w3.org/2000/svg">
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" transform="rotate(-90 24 190)" x="24" y="190">Psych safety →</text>
+<text fill="#5c3a18" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="320" y="350">Standard for results →</text>
+<rect fill="#fcf6e8" height="130" rx="4" stroke="#a8702d" stroke-width="1.5" width="200" x="70" y="30"></rect>
+<rect fill="#e6efdc" height="130" rx="4" stroke="#5c8a3a" stroke-width="2.5" width="200" x="290" y="30"></rect>
+<rect fill="#f0e6d2" height="130" rx="4" stroke="#b8a060" stroke-width="1.5" width="200" x="70" y="176"></rect>
+<rect fill="#f5e0d0" height="130" rx="4" stroke="#b85c3a" stroke-width="1.5" width="200" x="290" y="176"></rect>
+<text fill="#6b4a1f" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="170" y="82">Comfort Zone</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="170" y="104">Comfort</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" text-anchor="middle" x="170" y="126">people speak, no one presses</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" text-anchor="middle" x="170" y="144">nice, no results</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="390" y="82">Learning Zone</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="11" text-anchor="middle" x="390" y="104">Learning</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="10.5" text-anchor="middle" x="390" y="126">dare to risk + serious on results</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="10.5" font-weight="700" text-anchor="middle" x="390" y="144">innovation happens here</text>
+<text fill="#7a6030" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="170" y="228">Apathy Zone</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="170" y="250">Apathy</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10.5" text-anchor="middle" x="170" y="272">afraid to speak, don't care</text>
+<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="390" y="228">Anxiety Zone</text>
+<text fill="#a04020" font-family="Georgia" font-size="11" text-anchor="middle" x="390" y="250">Anxiety</text>
+<text fill="#a04020" font-family="Georgia" font-size="10.5" text-anchor="middle" x="390" y="272">high demands, afraid to risk</text>
+<text fill="#a04020" font-family="Georgia" font-size="10.5" text-anchor="middle" x="390" y="290">hide problems, report only good news</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: In Review, a Half-Baked Idea Gets Shot Down on the Spot</div>
+<div class="scene">
+<div class="setup">Situation: In an architecture review, an engineer floats a bold but clearly immature proposal, and a senior instantly says "that just won't work." The room goes quiet; the person who raised it flushes.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Let it pass / or smooth it over</div>
+<p>You either pretend not to notice (next time no one dares float a half-baked idea → drifting to the apathy zone), or you paper over it with "everyone has a point" (standards gone → drifting to the comfort zone). Both paths kill innovation.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Protect the risk-taker, hold the standard</div>
+<p>"Hold on — first, thanks for putting something not-yet-fully-thought-out on the table; that's exactly what a review is for." (protect the risk-taking behavior)</p>
+<p>"<strong>Let's unpack 'won't work': which specific assumption doesn't hold?</strong> If it's latency, can we validate just that one assumption rather than reject the whole idea?" (be serious about the substance — turn "reject the person" into "falsify the assumption," standard intact)</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist: Building the Learning Zone</div>
+<ul class="checklist">
+<li>The last idea we rejected — did we reject "the person" or "one specific assumption"?</li>
+<li>Have I said "I'm not sure / I was wrong" in a meeting? The leader models vulnerability first, or safety isn't real.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + Female Leader's Note</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking psych safety for "no criticism allowed."</strong> Then no one dares call out a bad proposal either — that isn't safety, it's the apathy zone.</li>
+<li><strong>Protecting only safety, forgetting standards.</strong> A creative team's worst fate is "everyone's amazing!" and nothing ships.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+There's a repeatedly documented pattern in brainstorming and reviews: ideas from women and junior members are more easily overlooked or "re-attributed after being restated" (idea appropriation). A leader can anchor attribution in the moment — "that point was A's first; let's follow A's line" — a single sentence that both protects the originator and models "here, if you risk an idea, the credit is yours."
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Next review, when a half-baked idea gets rejected, rewrite "this won't work" as a question: "Which assumption does it rest on? Can we test just that one?" — turn rejecting the person into falsifying the assumption.</div>
+<div class="setup"><strong>Reflection:</strong> Which quadrant is my team more like? The "comfort zone" means I traded standards for niceness; the "anxiety zone" means my high standards come with punishment — which is it?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2 data-tts="e5b8d3a17c40b629">Tolerating Failure: Tell "Good Failure" From "Bad," and Reward Only the First
+<span class="en">Tolerating Failure — Reward the Right Kind of Wrong</span></h2>
+<span class="tag">Failure Spectrum</span><span class="tag">Intelligent Failure</span><span class="tag">Retro</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Original Quote</div>
+<div class="principle">"Tolerate failure" is the easiest slogan to distort: it becomes either "any mistake is fine" (indulging negligence) or verbal tolerance with quiet score-keeping (no one dares risk again). The fix is to <strong>grade failure</strong>: avoidable, negligent failures deserve accountability; <strong>intelligent failures</strong> that explore the unknown deserve reward. The failures of innovation aren't a necessary evil — they're the <strong>inevitable byproduct</strong> of doing something new.</div>
+<div class="quote">
+<span class="en">"Mistakes aren't a necessary evil. They aren't evil at all. They are an inevitable consequence of doing something new."</span>
+<span class="source">— Ed Catmull, <em>Creativity, Inc.</em> (2014)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The Failure Spectrum: From Blameworthy to Praiseworthy</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 620 250" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="fg" x1="0" x2="1"><stop offset="0" stop-color="#b85c3a"></stop><stop offset="0.5" stop-color="#b8a060"></stop><stop offset="1" stop-color="#5c8a3a"></stop></lineargradient>
+</defs>
+<rect fill="url(#fg)" height="20" rx="10" width="560" x="30" y="40"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="12" font-weight="700" x="30" y="30">Blameworthy ←</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="12" font-weight="700" text-anchor="end" x="590" y="30">→ Praiseworthy</text>
+<rect fill="#f5e0d0" height="120" rx="6" stroke="#b85c3a" stroke-width="1.5" width="175" x="30" y="90"></rect>
+<rect fill="#f0e6d2" height="120" rx="6" stroke="#b8a060" stroke-width="1.5" width="175" x="222" y="90"></rect>
+<rect fill="#e6efdc" height="120" rx="6" stroke="#5c8a3a" stroke-width="2" width="175" x="414" y="90"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="117" y="116">Avoidable Failure</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="117" y="140">known process skipped</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="117" y="160">negligence / cutting corners</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="117" y="184">→ correct &amp; hold to account</text>
+<text fill="#7a6030" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="309" y="116">Complex Failure</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="309" y="140">many factors combine</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="309" y="160">hard to fully prevent</text>
+<text fill="#6b4a1f" font-family="Georgia" font-size="11" text-anchor="middle" x="309" y="184">→ build early warning</text>
+<text fill="#4a6a28" font-family="Georgia" font-size="13" font-weight="700" text-anchor="middle" x="501" y="116">Intelligent Failure</text>
+<text fill="#3a5a20" font-family="Georgia" font-size="11" text-anchor="middle" x="501" y="140">experiment into the unknown</text>
+<text fill="#3a5a20" font-family="Georgia" font-size="11" text-anchor="middle" x="501" y="160">clear hypothesis, bounded cost</text>
+<text fill="#3a5a20" font-family="Georgia" font-size="11" font-weight="700" text-anchor="middle" x="501" y="184">→ reward &amp; broadcast</text>
+</svg>
+</div>
+<div class="scene">
+<div class="setup">The grading comes from Amy Edmondson, "Strategies for Learning from Failure" (HBR 2011). Four marks of an "intelligent failure": <strong>(1)</strong> it explores new ground where the answer was genuinely unknown; <strong>(2)</strong> it had a clear hypothesis, not blind trial; <strong>(3)</strong> the cost was deliberately kept small; <strong>(4)</strong> it yields reusable knowledge afterward. All four must hold to earn the name "intelligent failure."</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: An Ambitious Experiment Failed</div>
+<div class="scene">
+<div class="setup">Situation: The team spent six weeks on a new model architecture; the metric didn't beat baseline and the project is being stopped. The engineer is deflated, and the team is watching how you react.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Punish, or fake indifference</div>
+<p>"Those six weeks were basically wasted." — One sentence that teaches the whole team to only propose safe bets from now on. Or the reverse: no retro, a pat on the shoulder, "no worries, on to the next" — and the knowledge inside the failure evaporates with it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Classify first, then extract, then broadcast</div>
+<p>"Let's be clear: <strong>this was an intelligent failure, not a screw-up.</strong> Unknown direction, clear hypothesis, cost bounded to six weeks — this is exactly the kind of bet we should be making."</p>
+<p>"Now the most valuable thing: <strong>turn it into a team asset.</strong> Write one page — what hypothesis we bet on, why it didn't pan out, what the next person near this area should avoid. I'll present that page at the team meeting, with your name on it."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist: Tolerating Failure</div>
+<ul class="checklist">
+<li>Where on the spectrum does this failure land? Am I treating "intelligent failure" and "negligent failure" the same?</li>
+<li>Proposing a "safe small project" versus a "high-risk big bet" — do they get the same treatment from me? If not, no one will bet.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + Female Leader's Note</div>
+<div class="pitfall">
+<ul>
+<li><strong>Verbal tolerance, performance score-keeping.</strong> You say "failure is fine," but the perf review only counts results — the team sees through it instantly and plays safe forever.</li>
+<li><strong>Treating every failure as a "learning opportunity."</strong> Not holding negligent failures to account is just indulgence, and the standard collapses.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Research (including the glass-cliff literature) shows the failures of women and minorities are often attributed more harshly and remembered longer, while an equivalent failure in the majority is seen as "a bet worth making." A leader who publicly and explicitly <strong>names a given failure an "intelligent failure" and writes it into the formal record</strong> isn't just comforting the person — they're correcting that asymmetric attribution, so the "risk that deserves reward" is treated the same for everyone.
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Dig up a failed attempt from the team's last three months and classify it against the four marks above. If it's an "intelligent failure," add a belated public acknowledgment and have the person write one page of learnings into the wiki.</div>
+<div class="setup"><strong>Reflection:</strong> I say "take risks," but if I honestly look back at who I actually rewarded and promoted, am I rewarding results, or rewarding "daring to bet in the unknown and learning from it"?</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep Questions ============ -->
+<div class="deep">
+<h3>Deeper Questions</h3>
+<details>
+<summary>"Context over control" is lovely for a mature, senior team — but what if I lead a group of junior people who haven't built any sense of direction yet?</summary>
+<div class="body">Context vs control isn't a switch; it's a <strong>slider that moves with each person's maturity</strong>. For junior people, "context" should itself include more specific direction, denser check-ins, even a stretch of demonstration — that's not control, it's helping them build the context they need to judge. The danger is applying that same high-density guidance, unchanged, to a senior researcher — or the reverse, letting a newcomer go too early and then blaming them for "not figuring it out." The spirit of giving context never changes (always explain the <em>why</em>); the density varies by person — which is exactly the core of Hersey-Blanchard situational leadership.</div>
+</details>
+<details>
+<summary>The "failure spectrum" sounds clean, but in reality a single failure often mixes negligence and exploration. How do you split it? Doesn't it just become mushy fence-sitting?</summary>
+<div class="body">Real failures are indeed mixed — which is exactly why you must <strong>attribute by pieces rather than slap one fuzzy grade on the whole thing</strong>. Break the failure into specific decisions and judge each: the part that explored the unknown is "intelligent failure," reward it; the part where a known process wasn't followed is "avoidable failure," correct it. <strong>In the same event you can both praise the risk and point out the negligence — that isn't fence-sitting, it's the most precise feedback there is.</strong> Fence-sitting is "overall fine, be careful next time"; precision is "you bet on the right direction, I support that; but you skipped the load test, and that can't happen again."</div>
+</details>
+<details>
+<summary>Big-company reviews are quarterly OKRs scored by delivery volume. As one tech lead manager, on what basis do I protect "intelligent failure" in that system?</summary>
+<div class="body">This is the most real tension — don't paper over it with idealism. Three layers: <strong>(1) Translate upward.</strong> Repackage high-risk exploration in language your boss understands — "hedging investment" and "capability building" — so failed experiments have a legitimate place in the report, instead of you reporting only the wins and hiding the misses. <strong>(2) Buy exploration space with bounded cost.</strong> Cut exploration into small, fast experiments with explicit cost; reserve 10%–20% of bandwidth in the quarter so failure doesn't dent the main-line KPI, and you'll have the standing to protect it. <strong>(3) Recognize the system's limits.</strong> If the organization truly rewards only safe wins and counts any failure as a demerit, you can protect a little in the cracks but can't change the water temperature — and the honest question then becomes: is this still a place suited to leading an innovation team?</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 58 · 2026.07.17</footer>
+</div>
+</body>
+</html>
