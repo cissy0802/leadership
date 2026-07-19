@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 60: Boards &amp; Governance</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 60 · 2026.07.19</div>
+<h1>Boards &amp; Governance: Who Really Owns the Company Decides Whom You Fight For</h1>
+<div class="meta"><span>Theme: Boards &amp; Governance</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"The board doesn't run the company — the board decides who runs it, and watches whether they run it well." See the top of the chessboard, and your managing-up finally has a ceiling to reach.</div>
+</header>
+<div class="intro">
+<strong>This issue's premise:</strong> You're a tech lead manager at a big company, and the board seems worlds away — yet every "align on strategy" ask, every slashed budget, every sudden reorg traces back to that boardroom table. This issue hands you a <strong>governance lens</strong>: see the company's real chain of delegation, understand whom the CEO fights for, and map the highest-level power rules back onto your own managing-up. Four principles — <strong>governance ≠ management, fiduciary duty &amp; the agency problem, stakeholders vs shareholders, and the CEO–board "no surprises" rule</strong> — upgrade you from "someone who does the work heads-down" to "someone who sees the whole board." That is exactly the divide between senior and staff/management.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Governance Is Not Management: Noses In, Fingers Out
+<span class="en">Governance Is Not Management — Noses In, Fingers Out</span></h2>
+<span class="tag">governance boundary</span><span class="tag">board's role</span><span class="tag">oversight</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle + The Source</div>
+<div class="principle">A board's job isn't to run the company — it's to <strong>make sure the company is run well</strong>. It does only three big things: set direction (approve strategy), manage one person (hire/fire the CEO and set pay), and watch risk (finances, compliance, big bets). The day-to-day is handed to management. <strong>Cross that line and a board that meddles in operations becomes overreaching micromanagement; one that never asks becomes a negligent rubber stamp.</strong></div>
+<div class="quote">
+<span class="en">"Noses in, fingers out."</span>
+<span class="zh">Get your nose in (ask everything that must be asked), but keep your fingers out (don't do management's job for them).</span>
+<span class="source">— A classic maxim of corporate governance, from John Carver's Policy Governance tradition</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">In Practice: Your First Report to a Steering Committee</div>
+<div class="scene">
+<div class="setup">Situation: your platform project has to report to a senior steering committee — your first time facing a "board-style" setting. You've prepared a pile of progress.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Treat it as a status update</div>
+<p>"This week we shipped A, B, C; next week we plan D, E…" — You've turned a governance forum into a standup. The committee doesn't care about your task list; all they can give you is <strong>decisions, resources, and risk judgment</strong>. Filling the time with status wastes the one thing that could move them.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Treat it as a governance forum</div>
+<p>"I need a decision today: Option A is fast but incurs tech debt; Option B is slower but sustainable. <strong>I lean B and need you to approve two more sprints.</strong>"</p>
+<p>"And an early risk flag: if the third-party API misses its June bar, the whole line slips two weeks — <strong>I want you to know now, not be blindsided later.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Governance vs Management Checklist</div>
+<ul class="checklist">
+<li>Facing leadership/a committee, do I bring "decisions and risks awaiting judgment," or a list of completed tasks?</li>
+<li>Can I say in one sentence whether a call is mine to make or must escalate to the governance level?</li>
+<li>When above wants to reach into my execution details, do I politely draw the line back ("you set direction, leave the how to us")?</li>
+<li>Is the information I give upward rich enough to let them "get their noses in" and see the whole picture, not filtered into good-news-only?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating a governance forum as a reporting show.</strong> Filling the time with progress while dodging the hard calls they should actually adjudicate — you look busy but move nothing.</li>
+<li><strong>The reverse: waiting for the top to decide everything.</strong> Handing up every call your level should own makes people doubt your judgment. The essence of governance is layering: big things escalate, daily things self-decide.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Question</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Re-sort your next upward report into three columns — "decision / risk / FYI." Delete pure status updates; keep only what needs the other side's action or judgment.</div>
+<div class="setup"><strong>Question:</strong> When I complain "the top micromanages," how much is because I only gave them a status log, forcing them to guess and meddle in details?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Fiduciary Duty &amp; the Agency Problem: Whom Does a Director Answer To
+<span class="en">Fiduciary Duty &amp; the Principal–Agent Problem</span></h2>
+<span class="tag">fiduciary duty</span><span class="tag">agency problem</span><span class="tag">independence</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle + The Source</div>
+<div class="principle">Directors owe a fiduciary duty to <strong>shareholders (the principals)</strong> — two ironclad rules: the <strong>duty of loyalty</strong> (no self-dealing, no conflicts of interest) and the <strong>duty of care</strong> (due diligence, real oversight). Governance exists to solve exactly one core problem: the <strong>agency problem</strong> — the people running the company (agents) may not act in the owners' interest. Independent directors, audits, tying CEO pay to the stock price — all exist to narrow that gap. Grasp it and you'll understand where a big company's countless "seemingly redundant processes" come from.</div>
+<div class="quote">
+<span class="en">"Too often, directors have behaved not as watchdogs but as cocker spaniels — wagging their tails at management rather than barking at questionable moves."</span>
+<span class="zh">Warren Buffett's blunt line: too many directors act like cocker spaniels wagging their tails at management, instead of watchdogs that bark at questionable moves.</span>
+<span class="source">— Warren Buffett, Berkshire Hathaway 2002 Letter to Shareholders</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Framework: The Principal–Agent Chain of Accountability</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#e8dcc0" height="52" rx="6" width="150" x="20" y="74"></rect>
+<text fill="#5c3a18" font-size="15" font-weight="700" text-anchor="middle" x="95" y="97">Shareholders</text>
+<text fill="#8a6d3b" font-size="11" text-anchor="middle" x="95" y="115">Principal</text>
+<rect fill="#e8dcc0" height="52" rx="6" width="150" x="245" y="74"></rect>
+<text fill="#5c3a18" font-size="15" font-weight="700" text-anchor="middle" x="320" y="97">Board</text>
+<text fill="#8a6d3b" font-size="11" text-anchor="middle" x="320" y="115">Steward</text>
+<rect fill="#e8dcc0" height="52" rx="6" width="150" x="470" y="74"></rect>
+<text fill="#5c3a18" font-size="15" font-weight="700" text-anchor="middle" x="545" y="97">CEO / Mgmt</text>
+<text fill="#8a6d3b" font-size="11" text-anchor="middle" x="545" y="115">Agent</text>
+<line stroke="#a8702d" stroke-width="2" x1="170" x2="243" y1="90" y2="90"></line>
+<polygon fill="#a8702d" points="243,90 235,86 235,94"></polygon>
+<text fill="#6b4a1f" font-size="10.5" text-anchor="middle" x="206" y="82">entrusts</text>
+<line stroke="#a8702d" stroke-width="2" x1="395" x2="468" y1="90" y2="90"></line>
+<polygon fill="#a8702d" points="468,90 460,86 460,94"></polygon>
+<text fill="#6b4a1f" font-size="10.5" text-anchor="middle" x="431" y="82">delegates</text>
+<line stroke="#8a3a3a" stroke-dasharray="5 4" stroke-width="2" x1="470" x2="397" y1="112" y2="112"></line>
+<polygon fill="#8a3a3a" points="397,112 405,108 405,116"></polygon>
+<text fill="#8a3a3a" font-size="10.5" text-anchor="middle" x="431" y="140">accountable</text>
+<line stroke="#8a3a3a" stroke-dasharray="5 4" stroke-width="2" x1="245" x2="172" y1="112" y2="112"></line>
+<polygon fill="#8a3a3a" points="172,112 180,108 180,116"></polygon>
+<text fill="#8a3a3a" font-size="10.5" text-anchor="middle" x="206" y="140">elects</text>
+<text fill="#a04020" font-size="11" font-style="italic" text-anchor="middle" x="320" y="178">The gap = agency cost: the agent's interest ≠ the principal's; governance exists to close it</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">In Practice: Map the Agency Problem Back onto Your Own Team</div>
+<div class="scene">
+<div class="setup">Situation: a senior engineer on your team always picks the "flashy, promo-packet-friendly" work and dodges the unglamorous grunt work the team actually needs. That's a miniature agency problem — personal incentive ≠ the team's collective interest.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Scold the motive</div>
+<p>"Could you stop obsessing over your own promotion and think more about the team?" — Blame doesn't change incentive structure; it just teaches them to hide the self-interest better.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Change accountability and incentives</div>
+<p>"Let me recalibrate how I'll rate this: <strong>that migration nobody wants to touch — pull it off and it's the hardest line in your promo story; I'll personally champion it at calibration.</strong>"</p>
+<p>"Everyone wants the flashy work, but what makes the committee remember you is carrying what others couldn't." (Align interests with accountability and incentives, not sermons about attitude — which is exactly what a board does to a CEO.)</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Fiduciary &amp; Independence Checklist</div>
+<ul class="checklist">
+<li>Do the incentives I set for reports reward "output of real value to the team," or accidentally reward "flashy but useless performance"?</li>
+<li>Do I have a "cocker spaniel" tendency at my level — wagging along with the boss instead of speaking up when I should question?</li>
+<li>When I decide, do I self-check for hidden conflicts of interest (favoring my own people, protecting my own projects), the way a duty of loyalty demands?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + A Note on Women's Perspective</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking "loyalty" for "obedience."</strong> Fiduciary loyalty means loyalty to the principal (the organization's long-term interest), not to a particular superior's ego — when the two conflict, the former wins.</li>
+<li><strong>Believing the agency problem is solved by "finding people with good character."</strong> Even the most principled person is pulled by incentives; governance relies on structure (accountability, transparency, aligned incentives), not on betting on human nature.</li>
+</ul>
+<div class="female">
+<span class="female-label">Women's Perspective</span>
+Board diversity is itself a governance issue: research (Adams &amp; Ferreira, 2009) finds more diverse boards oversee more actively and attend more reliably. But "the only woman in the room" is often pushed into symbolic ornamentation, or assigned to lower-weight committees. If you ever enter such a setting, beware of <strong>being treated as the face of diversity rather than a vote with real power</strong>: actively push to join the core committees where the money and power sit.
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Question</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Pick one case on your team where personal incentive is misaligned with collective interest, and design one accountability or reward mechanism to align it — instead of appealing to attitude in a meeting.</div>
+<div class="setup"><strong>Question:</strong> In my boss's eyes, am I the watchdog that "barks" at the critical moment, or the spaniel that just wags its tail? Do I want more to be trusted, or to be liked?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Stakeholders vs Shareholders: Whom Are You Actually Optimizing For
+<span class="en">Stakeholders vs Shareholders — Whose Interests?</span></h2>
+<span class="tag">stakeholders</span><span class="tag">shareholder primacy</span><span class="tag">multi-party trade-offs</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle + The Source</div>
+<div class="principle">Governance has had a half-century argument: <strong>shareholder primacy</strong> (Friedman: a business's social responsibility is to make money for shareholders) versus <strong>stakeholder capitalism</strong> (Freeman: a firm answers to shareholders, employees, customers, regulators, and community). A real board is forever weighing multiple constituencies, with no single right answer. <strong>Bring that "for whom" awareness down to your level: on any important decision, don't optimize only for the loudest voice — first put every stakeholder on the table.</strong></div>
+<div class="quote">
+<span class="en">"The social responsibility of business is to increase its profits."</span>
+<span class="zh">Milton Friedman's famous thesis — a business's social responsibility is to increase its profits — was directly challenged half a century later by Freeman's stakeholder theory.</span>
+<span class="source">— Milton Friedman, The New York Times Magazine, 1970.09.13</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">In Practice: A Technical Decision — For Whom Are You Optimizing?</div>
+<div class="scene">
+<div class="setup">Situation: the PM keeps pushing you to ship a feature that boosts the quarterly metric. It looks good on this quarter's numbers, but it adds tech debt, burdens downstream teams, and coarsens the user experience.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Optimize only for the loudest</div>
+<p>"Fine, the PM's under pressure — let's get the quarterly metric up first." — You answered only the loudest stakeholder (the PM's KPI) and quietly sacrificed users, downstream teams, and your future self. Short-term peace, long-term landmine.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Lay out every stakeholder first</div>
+<p>"Let me list who this decision touches: <strong>the PM wants the quarterly number, users want the experience, downstream teams fear being dragged by our debt, and the us of six months from now has to maintain it.</strong>"</p>
+<p>"A compromise: ship a lean version this quarter to protect the metric, and schedule a debt-repayment window next quarter. <strong>I'll put this trade-off to the parties together for confirmation, rather than silencing others on one party's behalf.</strong>" (Governance thinking: make trade-offs explicit; don't let the silent party pay for the loud one.)</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Stakeholder Trade-off Checklist</div>
+<ul class="checklist">
+<li>Which parties does this decision touch? Can I name them one by one, instead of staring only at the loudest?</li>
+<li>Is there a "silent stakeholder" (a future maintainer, a downstream team, the end user) being quietly sacrificed?</li>
+<li>When constituencies genuinely conflict, do I honestly admit "there's no win-win here" and explain why I chose as I did?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Using "stakeholder capitalism" as a people-pleaser's excuse to satisfy everyone.</strong> It doesn't free you from trade-offs; it makes you <strong>know whom you're sacrificing and own it</strong> — trade-offs always exist; dodging them is the real dereliction.</li>
+<li><strong>Optimizing only for the party with a voice, ignoring those with no advocate.</strong> User experience, technical health, long-term maintainability often have no volume in the room — which is exactly why you must speak for them.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Question</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> For one tough decision this week, draw a minimal stakeholder map (who's affected × how much × who speaks for them) and see whether a silent party is being systematically ignored.</div>
+<div class="setup"><strong>Question:</strong> Over the past six months, were my technical decisions more like "optimizing for this quarter's number" or "optimizing for long-term health"? Was that bias a choice I made, or one pressure pushed me into?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>CEO–Board Relations: "No Surprises" Is Managing Up at Its Peak
+<span class="en">CEO–Board Relations — "No Surprises" Is Managing Up at Its Peak</span></h2>
+<span class="tag">no-surprises rule</span><span class="tag">managing up</span><span class="tag">pre-wiring</span>
+</div>
+<div class="section">
+<div class="section-label">The Principle + The Source</div>
+<div class="principle">The board can hire and fire the CEO, so the relationship between them is, at heart, the company's highest form of <strong>managing up</strong> — it runs on trust, and trust is held together by one ironclad rule: <strong>never surprise the board</strong>. Bad news gets delivered early, delivered privately, delivered before the formal meeting. This maps one-to-one back to you: <strong>don't let your boss hear your bad news for the first time in front of others, in the big meeting, or after the fact.</strong></div>
+<div class="quote">
+<span class="en">"The board hates surprises. Bad news does not get better with age — deliver it early, deliver it straight."</span>
+<span class="zh">A governance truism for CEOs: the board hates surprises; bad news doesn't improve with age — deliver it early and deliver it straight.</span>
+<span class="source">— A widely held CEO maxim in corporate governance (see the thesis of Ram Charan's <em>Boards That Deliver</em>, 2005)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">In Practice: A Project Is Slipping — How You Let the Boss Know</div>
+<div class="scene">
+<div class="setup">Situation: your critical project is confirmed to slip by a month. Next week is your boss's quarterly review where they report up to their boss.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Sit on it until the big meeting</div>
+<p>(In the quarterly review, in front of everyone) "This project… may slip a month." — Your boss gets hit by the surprise in front of their boss, caught flat-footed and embarrassed. What they remember isn't the slip — it's <strong>"you made me look bad."</strong> That's how trust burns in one shot.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Pre-wire privately before the meeting</div>
+<p>(Three days before the review, privately) "Heads-up on bad news we need to figure out how to frame together: Project X will slip a month, because of Y."</p>
+<p>"I've got a recovery plan and a new timeline ready. <strong>I want to align on our shared message before you go in, so you're not caught flat-footed in the room.</strong>" (Early, private, with a plan — turning them from the person surprised into the person controlling the situation with you.)</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">"No Surprises" Checklist</div>
+<ul class="checklist">
+<li>My last piece of bad news — did I tell the key person early and privately, or let it burst out in a public setting?</li>
+<li>Might my boss hear something I should have told them first — in the meeting, from someone else, or after the fact?</li>
+<li>When I deliver bad news, do I bring "here's what I plan to do" along with it, instead of just dumping a problem on them?</li>
+<li>Before an important formal meeting, do I "pre-wire" key people one-on-one, digesting the shocks and disagreements in advance?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking "no surprises" for "report only good news."</strong> Exactly the opposite — it demands that <strong>bad news be told even sooner</strong>. Hiding bad news manufactures precisely the most damaging kind of surprise.</li>
+<li><strong>Communicating only inside formal meetings, never pre-wiring.</strong> A pro's meeting exists to "confirm an alignment already reached"; the real persuasion and digesting of disagreement happen in the one-on-ones beforehand.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Question</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Before your next important review, list the key people in the room, pick the one or two most likely to be "shocked" by your content or to object, and pre-wire them one-on-one beforehand.</div>
+<div class="setup"><strong>Question:</strong> Do I harbor a hope that "if I sit on bad news long enough, maybe it fixes itself"? In the end, did that delay protect me, or burn others' trust in me?</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep Dive ============ -->
+<div class="deep">
+<h3>Deeper Reflection</h3>
+<details>
+<summary>I'm just a middle manager — the whole board world is light-years away. Do I really need to understand it?</summary>
+<div class="body">Yes, and the payoff is high. <strong>(1) Explanatory power</strong> — those "baffling" reorgs, budget cuts, and sudden strategy pivots above you almost always trace to governance-level pressure (quarterly results, board accountability, activist investors); understand it and you can anticipate instead of getting blindsided. <strong>(2) The ceiling on managing up</strong> — the rules a CEO uses with the board (no surprises, decisions not status logs, explicit trade-offs) are, one altitude down, exactly the rules you should use with your boss. <strong>(3) A promotion signal</strong> — people who can speak "governance language" (accountability, risk, multi-party trade-offs) get read as "thinking one level above their role," which is precisely what staff/management promo committees look for.</div>
+</details>
+<details>
+<summary>Won't the "no surprises" rule swing to the other extreme — asking permission for everything, never daring to decide?</summary>
+<div class="body">It can, so guard against it by separating "surprise" from "delegation." <strong>No surprises ≠ no autonomy.</strong> What you must sync is <strong>bad news or big pivots that materially affect the boss or exceed your authority</strong> — not every daily decision. The healthy move is to settle once with your boss: "what level do you want to know about in advance, and what level do I just call myself" (echoing Principle 1's layering). Carry the calls you should own on your own, and only give a heads-up on things that would "hit them as a surprise." Asking about everything actually exposes weak judgment — the opposite of the maturity "no surprises" is after.</div>
+</details>
+<details>
+<summary>Does this governance logic hold across cultures and company forms?</summary>
+<div class="body">The skeleton is universal, the flesh varies with context. <strong>The agency problem, fiduciary duty, and no surprises</strong> are cross-cultural underlying structures — wherever "owners entrust others to run things," these tensions exist. But the implementation differs widely: the US/UK favor a single-tier board, Germany has a supervisory board plus employee codetermination; <strong>founder-led tech giants</strong> often use dual-class stock to keep voting control, so board checks are weakened; in state-owned or family firms the principal isn't dispersed shareholders at all. So don't treat any single governance doctrine as universal truth — <strong>first ask "who is this company's real principal, and where does power actually sit," then apply the framework.</strong></div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 60 · 2026.07.19</footer>
+</div>
+</body>
+</html>
