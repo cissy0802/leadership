@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 65: Organizational Learning &amp; Knowledge</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:4px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:12px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.frame-diagram{background:#fcf6e8;padding:20px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf;text-align:center}
+.frame-diagram svg{max-width:100%;height:auto}
+.deep{margin-top:50px}
+.deep h3{font-size:1.2rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px;text-align:center}
+details{background:#fffaf0;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #a8702d}
+summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.98rem}
+details .body{margin-top:10px;font-size:0.93rem;color:#4a3a20;line-height:1.7}
+details .body strong{color:#5c3a18}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 65 · 2026.07.24</div>
+<h1>Organizational Learning &amp; Knowledge: Stop Falling Into the Same Hole Twice</h1>
+<div class="meta"><span>Theme: Organizational Learning &amp; Knowledge</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">Smart individuals don't add up to a learning organization. A team's real moat isn't who's strongest — it's how fast it turns every mistake into one it won't repeat.</div>
+</header>
+<div class="intro">
+<strong>This issue's thesis:</strong> The most expensive waste in a big company isn't downtime — it's <strong>the same mistake made again by a different person</strong>. A key engineer leaves and nobody knows how to deploy the system; a postmortem produces a page of action items that get re-lived next quarter verbatim; the retro degenerates into a going-through-the-motions gripe session. All of it points to one thing — whether your team <strong>compounds experience into organizational capability</strong>, or lets it walk out with people and evaporate with time. Four foundations this issue: blameless postmortems (learning from failure), institutional memory (knowledge management), single- vs double-loop learning (retro culture), and the step most often missed — closing the loop so a lesson becomes changed behavior.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Blameless Postmortems: Fix the System, Not the Person
+<span class="en">Blameless Postmortems — Fix the System, Not the Person</span></h2>
+<span class="tag">learning from failure</span><span class="tag">postmortems</span><span class="tag">psychological safety</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle">The moment a postmortem starts hunting for "who did it," learning stops — because everyone will hide next time. The real question isn't <strong>"who pushed the wrong button"</strong> but <strong>"what made pushing that button both easy and unstopped."</strong> People can't be "fixed"; systems and processes can.</div>
+<div class="quote">
+<span class="en">"You can't 'fix' people, but you can fix systems and processes to better support people making the right choices."</span>
+<span class="zh">The postmortem chapter's core stance: you don't repair the person, you repair the conditions that made the error likely.</span>
+<span class="source">— Google, <em>SRE Book</em>, Ch.15 "Postmortem Culture: Learning from Failure"</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The Postmortem After a Production Incident</div>
+<div class="scene">
+<div class="setup">Situation: A config change took a live service down for 40 minutes. In the review, the junior engineer who made the change stares at the table; the room is silent. As tech lead manager, your first sentence sets the tone.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Hunt for the person (the room freezes)</div>
+<p>"Who made this config change? Was it reviewed first? Can we be more careful going forward?" — You think you're just asking about details, but what the room hears is: <strong>getting caught means getting named</strong>. Next time someone hits a landmine, the first instinct is to cover, not report — and you've buried your most valuable incident data.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Fix the system (unload the shame first, then dig)</div>
+<p><strong>Set the tone:</strong> "To be clear — this isn't about assigning blame. Anyone, with the same information and tools available at that moment, could have done the same thing. What we're hunting is the system's gap, not the person's."</p>
+<p><strong>Then dig:</strong> "Why could this config go to full rollout without a second confirmation? Why didn't the canary catch it? If it were me making the change, which step would have stopped me?"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Blameless Postmortem Checklist</div>
+<ul class="checklist">
+<li>In the doc, is the "root cause" a person's name / a lapse, or a system defect (missing validation, missing canary, missing alert)? The former means you haven't dug to the bottom.</li>
+<li>Did I explicitly say "no blame here," or leave people to guess? Unspoken, people default to defense.</li>
+<li>Does every action item point to "change the system so the error is harder to make," rather than "everyone be more careful"? "Be more careful" isn't an action item — it's a wish.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Blameless in words, hunting with your eyes.</strong> You say "no blame," but after the review that person gets moved off the core module — the team can read it, and hides again next time. Blamelessness is a behavior, not a slogan.</li>
+<li><strong>Stopping at "human error."</strong> Those two words are the investigation's <em>start</em>, not its <em>end</em>: why this person made this error, and how much room the system gave them to make it — that's the real answer.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Pull up a recent postmortem. Classify each "root cause" and "improvement": mark ❌ if it points at a person, ✅ if at a system. If ❌ outnumbers ✅, rewrite — translate each "should have been more careful" into "the system should have stopped it this way."</div>
+<div class="setup"><strong>Reflection:</strong> Last time I pressed "who did it," was it really for learning — or for the sense of control that comes from "someone's accountable now"? What's the price of that sense of control?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Institutional Memory: Knowledge That Outlives People
+<span class="en">Institutional Memory — Knowledge That Outlives People</span></h2>
+<span class="tag">knowledge management</span><span class="tag">bus factor</span><span class="tag">make it explicit</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle">Knowledge that lives only in one person's head isn't an asset — it's a <strong>liability</strong>: they take sick leave or quit, and the knowledge walks out with them. A manager's job is to keep forcing <strong>tacit knowledge</strong> into <strong>retrievable, explicit records</strong>. The metric is <strong>bus factor</strong>: how many people must be hit by a bus before nobody can run this system? If the answer is 1, that's a red light.</div>
+<div class="quote">
+<span class="en">"Tacit knowledge is highly personal. It is hard to formalize and, therefore, difficult to communicate to others."</span>
+<span class="zh">The crux of organizational learning is exactly this: making the personal and hard-to-formalize explicit.</span>
+<span class="source">— Ikujiro Nonaka, <em>The Knowledge-Creating Company</em> (HBR, 1991)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Where Knowledge Lives: The Lower, The Safer</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+<text fill="#5c3a18" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="350" y="26">Where knowledge is stored · from "walks with people" to "stays with the org"</text>
+<rect fill="#f5e0d0" height="40" rx="5" stroke="#b85c3a" stroke-width="1.5" width="600" x="50" y="42"></rect>
+<text fill="#a04020" font-family="Georgia" font-size="13" font-weight="700" x="66" y="60">① Only in someone's head (tribal knowledge)</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" x="66" y="78">bus factor = 1; person leaves, knowledge zeroed</text>
+<rect fill="#f6e6cf" height="40" rx="5" stroke="#c47040" stroke-width="1.5" width="600" x="50" y="94"></rect>
+<text fill="#8a5020" font-family="Georgia" font-size="13" font-weight="700" x="66" y="112">② Scattered in DMs / spoken in meetings / one inbox</text>
+<text fill="#5a3818" font-family="Georgia" font-size="11" x="66" y="130">it exists, but if you can't search it, it may as well not</text>
+<rect fill="#eef0e0" height="40" rx="5" stroke="#8a9a4a" stroke-width="1.5" width="600" x="50" y="146"></rect>
+<text fill="#5a6a20" font-family="Georgia" font-size="13" font-weight="700" x="66" y="164">③ In searchable docs (RFC / runbook / ADR / wiki)</text>
+<text fill="#4a5a18" font-family="Georgia" font-size="11" x="66" y="182">newcomers self-serve without interrupting veterans</text>
+<rect fill="#e6efdc" height="40" rx="5" stroke="#5c8a3a" stroke-width="1.5" width="600" x="50" y="198"></rect>
+<text fill="#3a6a28" font-family="Georgia" font-size="13" font-weight="700" x="66" y="216">④ Baked into code / automation / validation (knowledge as execution)</text>
+<text fill="#2a5a18" font-family="Georgia" font-size="11" x="66" y="234">no one has to remember; the system does it right by itself</text>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The Moment a Key Engineer Resigns</div>
+<div class="scene">
+<div class="setup">Situation: The only person who truly understands the payment reconciliation system suddenly resigns — gone in two weeks. In their head sit all the system's "gotchas" and conventions.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Last-minute cram (two weeks can't recover three years of tacit knowledge)</div>
+<p>"Before you go, patch up the docs and write down everything you know to hand off to the team." — Three years of tacit knowledge can't be recovered by one rushed doc in the final two weeks. And it exposes the real problem: <strong>the mechanism you should have built long ago never got built.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Drain it continuously (not only when someone's leaving)</div>
+<p><strong>Everyday mechanism:</strong> "Starting this month, any system only one person knows gets paired / rotated on-call, with the second person filling in the runbook as they go — not a handoff to anyone, just the team standard."</p>
+<p><strong>On the person leaving:</strong> "These two weeks, don't write a big comprehensive doc. Do three things: run one real failure drill, record one deployment walkthrough, and list 'the 5 gotchas I most fear you don't know.' Drain the deadliest first; don't chase completeness."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Institutional Memory Checklist</div>
+<ul class="checklist">
+<li>How many systems on my team have bus factor = 1? Can I name them? If not, I'm not even watching this.</li>
+<li>Do major technical decisions leave a record of "why we chose this" (ADR / RFC)? Keep only the conclusion, not the reasoning, and in six months nobody dares touch it.</li>
+<li>Is writing docs part of the team's everyday rhythm, or forever parked under "when we have time" — and therefore never done?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking "wrote a doc" for "knowledge management."</strong> A doc that's unsearchable, unmaintained, and six months stale is worse than none — it gives false safety. Searchable, owned, and updated: that's institutional memory.</li>
+<li><strong>Depending on a "hero" while quietly grateful.</strong> That "knows-everything, always-on" firefighter is a single point of failure. The more you depend on them, the more it shows you haven't built a system.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> List every critical system on your team and tag each with a bus factor (how many people know it). Pick the one at =1, and this week schedule a pairing session or have a second person start a runbook.</div>
+<div class="setup"><strong>Reflection:</strong> Am I also enjoying the irreplaceability of being "the only one who knows X"? How is that sense of safety slowing my own move upward — because I can't take my hands off?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Single- vs Double-Loop Learning: Question the Recipe, Not Just the Dish
+<span class="en">Single- vs Double-Loop Learning — Question the Recipe, Not Just the Dish</span></h2>
+<span class="tag">retro culture</span><span class="tag">learning organization</span><span class="tag">reflection</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle"><strong>Single-loop learning</strong> is "the result was wrong, so tweak the method" — patching this dish. <strong>Double-loop learning</strong> goes up a level and asks: "What made us assume this was the right thing to do in the first place?" — changing the recipe. Most teams' retros are stuck in single-loop: endlessly optimizing a process that shouldn't exist. Real learning is daring to question the premise that's never been questioned.</div>
+<div class="quote">
+<span class="en">"Double-loop learning occurs when error is detected and corrected in ways that involve the modification of an organization's underlying norms, policies, and objectives."</span>
+<span class="zh">Correction that reaches the organization's underlying norms and goals — not just its actions — is where the second loop lives.</span>
+<span class="source">— Chris Argyris, <em>Organizational Learning</em> (Argyris &amp; Schön, 1978)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Two Kinds of Learning: Which Loop Do You Correct</div>
+<div class="frame-diagram">
+<svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#fcf6e8" height="46" rx="6" stroke="#a8702d" stroke-width="1.5" width="130" x="24" y="100"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="89" y="120">Assumptions</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="89" y="136">premise / goals</text>
+<rect fill="#fcf6e8" height="46" rx="6" stroke="#a8702d" stroke-width="1.5" width="120" x="200" y="100"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="260" y="120">Action</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="260" y="136">method / process</text>
+<rect fill="#fcf6e8" height="46" rx="6" stroke="#a8702d" stroke-width="1.5" width="120" x="370" y="100"></rect>
+<text fill="#5c3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="430" y="120">Result</text>
+<text fill="#8a6d3b" font-family="Georgia" font-size="10" text-anchor="middle" x="430" y="136">error / output</text>
+<line stroke="#5c3a18" stroke-width="2" x1="154" x2="196" y1="123" y2="123" marker-end="url(#ar)"></line>
+<line stroke="#5c3a18" stroke-width="2" x1="320" x2="366" y1="123" y2="123" marker-end="url(#ar)"></line>
+<defs><marker id="ar" markerHeight="6" markerWidth="7" orient="auto" refX="6" refY="3"><path d="M0,0 L7,3 L0,6 Z" fill="#5c3a18"></path></marker></defs>
+<path d="M430,146 Q430,200 260,200 Q260,180 260,148" fill="none" stroke="#5c8a3a" stroke-width="2" marker-end="url(#ar2)"></path>
+<text fill="#4a6a28" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="345" y="222">Single-loop: adjust action (patch the dish)</text>
+<path d="M430,98 Q430,40 89,40 Q89,66 89,96" fill="none" stroke="#8a3a6a" stroke-width="2" marker-end="url(#ar3)"></path>
+<text fill="#7a2a5a" font-family="Georgia" font-size="12" font-weight="700" text-anchor="middle" x="260" y="30">Double-loop: question the assumption itself (change the recipe)</text>
+<defs><marker id="ar2" markerHeight="6" markerWidth="7" orient="auto" refX="6" refY="3"><path d="M0,0 L7,3 L0,6 Z" fill="#5c8a3a"></path></marker>
+<marker id="ar3" markerHeight="6" markerWidth="7" orient="auto" refX="6" refY="3"><path d="M0,0 L7,3 L0,6 Z" fill="#8a3a6a"></path></marker></defs>
+</svg>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: The Quarterly Retro, Again Optimizing the Process Nobody Loves</div>
+<div class="scene">
+<div class="setup">Situation: Every retro, the team complains "the release review is too slow," so every quarter they tweak the review form, add people, change the tooling. Three quarters on, still slow.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Spinning in the single loop (optimizing inside a wrong premise)</div>
+<p>"This time let's cut two more columns from the form and add an approver to share the load." — You're making an <strong>already-bloated process</strong> run slightly faster. The premise — "every release needs a review this heavy" — has never been touched. Next year's retro, you'll be sitting right here.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Move up to the second loop (question the premise)</div>
+<p><strong>Push the question up a level:</strong> "Before we optimize the process, step back: <strong>why does every release go through this heavy review?</strong> Is it a scar from one big incident in the past, or does every kind of change genuinely need it?"</p>
+<p><strong>Change the recipe:</strong> "If 80% of changes are low-risk, the answer may not be 'make review faster' but 'low-risk changes shouldn't go through this review at all' — tiered release. We may have been optimizing something that shouldn't exist."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Double-Loop Learning Checklist</div>
+<ul class="checklist">
+<li>In the retro, are we discussing "how to do this thing better," or do we dare ask "should this thing be done at all"? Only the former = trapped in the single loop.</li>
+<li>Is there a "we've always done it this way" rule that no one has asked "why" about in a long time? That's often the doorway to the second loop.</li>
+<li>Am I, as leader, precisely the guardian of the "underlying assumption" — some premises are mine, so the team doesn't dare question them?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Running the retro as venting or a praise fest.</strong> Only griping without change, or only mutual praise without digging, produces no learning. A retro's output is "one concrete method or premise we'll change next time," not a better mood.</li>
+<li><strong>Daring only the single loop, because the double one drags out "who set this."</strong> Questioning a premise often points at a senior leader or a historical decision — politically uncomfortable — but avoid it and the team patches forever.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Pick a process the team keeps complaining about yet keeps only tweaking. Write down the "never-questioned premise" behind it, and at the next retro put that premise itself on the table for debate — instead of optimizing the process again.</div>
+<div class="setup"><strong>Reflection:</strong> Which rule is "a scar left by one incident"? It made sense back then — does it still today? Are we guarding against risk, or worshipping an outdated totem?</div>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Closing the Loop: From Action Item to Actually Changed Behavior
+<span class="en">Closing the Loop — From Action Item to Changed Behavior</span></h2>
+<span class="tag">knowing-doing</span><span class="tag">follow-through</span><span class="tag">avoid learning theater</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + Master's Words</div>
+<div class="principle">A postmortem that produces a full page of action items — no owner, no follow-up, re-lived verbatim next quarter — isn't learning; it's <strong>learning theater</strong>: performing "we're so reflective" while changing no behavior. Knowledge only actually happens when it <strong>changes the next action</strong>. Writing it down is only knowing; doing it is learning.</div>
+<div class="quote">
+<span class="en">"Knowing what needs to be done... too often does not result in action or behavior consistent with that knowledge."</span>
+<span class="zh">This is the fatal gap between knowing and doing.</span>
+<span class="source">— Pfeffer &amp; Sutton, <em>The Knowing-Doing Gap</em> (2000)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scene: Last Quarter's Postmortem Conclusion, Re-Lived This Quarter</div>
+<div class="scene">
+<div class="setup">Situation: You dig into the record and find the root cause of this incident — an identical action item was already written in another postmortem last quarter. It just never got done.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Write it again (theater, encore)</div>
+<p>"Okay, this time we really must follow through — I'll record it in the postmortem doc." — You've produced another unclaimed action item. The doc honestly records: <strong>you've never actually changed.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Give it an owner, a date, a check (real closure)</div>
+<p><strong>Lock the three elements:</strong> "An action item only counts with three things — <strong>a named owner, a clear due date, and a verifiable definition of done</strong>. Without all three, it doesn't go in today."</p>
+<p><strong>Build a review mechanism:</strong> "Every sprint, spend 5 minutes at the start going over last period's action items; anyone not done says why, out loud. Make 'not followed up' visible — visible, and it gets done."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Closing-the-Loop Checklist</div>
+<ul class="checklist">
+<li>Does every action item have a named owner + due date + a verifiable "what counts as done"? Missing any one, and it probably won't happen.</li>
+<li>Is there a standing mechanism to periodically revisit whether last period's action items actually got done? Without a review, what's written defaults to fizzling out.</li>
+<li>Is the number of action items so large it can't possibly be finished? A list of 10 you can't finish is worse than 2 you actually close — over-listing is itself not intending to do them.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common Mistakes + Note for Women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Substituting "record it" for "change behavior."</strong> Writing it into a doc brings a false sense of closure, as if the problem is handled. Docs don't change behavior; follow-through does.</li>
+<li><strong>Action items grow in number, shrink in completion.</strong> An unfinishable list equals no list; better to lock 1–2 and actually close the loop.</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Taking retro notes, maintaining the wiki, chasing action-item progress — this "housework of organizational memory" is often defaulted to women (office housework): time-consuming, uncounted as "technical output," and forgotten at promotion time. Two counters: one, <strong>rotate the note-taking and follow-up</strong> so it's a shared team duty rather than one person's fixed label; two, if you're doing this coordination work, actively <strong>name it as your leadership contribution</strong> and leave a trail — "I built and ran the team's postmortem follow-up mechanism and cut the repeat-incident rate by X" — instead of letting it fade into "she's just detail-oriented."
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This Week's Exercise + Reflection</div>
+<div class="scene">
+<div class="setup"><strong>Exercise:</strong> Pull up the last postmortem's action items and check each: does it have an owner? Is it done? Pick one that isn't, and this week fit it with owner + due date + definition of done, and schedule it into the start of the next sprint's review.</div>
+<div class="setup"><strong>Reflection:</strong> Of the action items my team writes down, roughly what share actually lands? If it's low, is the problem "didn't think clearly about what to do" or "thought it through but no one drove it"? The two have completely different fixes.</div>
+</div>
+</div>
+</div>
+<!-- ============ Deep Thinking ============ -->
+<div class="deep">
+<h3>Deeper Questions</h3>
+<details>
+<summary>Won't blameless postmortems swing to the other extreme — no one's at fault for any error, since "it's the system's problem"?</summary>
+<div class="body">Yes, and this is a real risk. Blameless doesn't mean no accountability. The fix is Dekker's <strong>Just Culture</strong>: distinguish an "honest slip" from "reckless / willful." The former is treated impersonally and used to fix the system; the latter still calls for accountability. The dividing line is <strong>intent</strong>: would a conscientious person in the same conditions have done the same? If yes, it's a system problem; knowingly barreling ahead despite risk is another matter. Blamelessness protects "daring to report," not "exemption from consequences."</div>
+</details>
+<details>
+<summary>Writing docs for knowledge management is costly — won't it slow delivery? How much should actually be captured?</summary>
+<div class="body">This is a real trade-off; don't pretend otherwise. Principle: <strong>rank by "hurts if lost," don't chase completeness</strong>. Worth capturing — the "why" of major decisions (ADR, saves future arguments), incident-handling steps (runbook, life-saving), bus-factor-1 systems. Not worth it — implementation details that go stale before you finish, things the code already expresses. Test: would this knowledge badly wound the team if it walked out with a person? If yes, write it. A doc is insurance, not a ritual — buy the coverage you need, don't over-insure everything.</div>
+</details>
+<details>
+<summary>In a high-pressure, deadline-driven big company, isn't this "learning organization" stuff a luxury?</summary>
+<div class="body">Quite the opposite — the higher the pressure, the more you need it; the form just has to get lighter. No time for an hour-long retro? Use a 5-minute "one thing to keep, one thing to stop from last sprint." No time to write a long doc? Leave one line of "why this change" in the PR description. Learning needn't be a grand ceremony; it can be a micro-habit embedded in the everyday flow. The real luxury is paying the same tuition for the same mistake over and over — that's the cost a high-pressure team can least afford.</div>
+</details>
+<details>
+<summary>How does scale change this? Are the practices the same for a small team and an org of hundreds?</summary>
+<div class="body">The underlying principles are the same (blameless, make-explicit, double-loop, close-the-loop); the mechanisms differ. Small teams rely on <strong>high-frequency informality</strong>: spoken retros, pairing, knowledge flowing naturally in dense collaboration, bus-factor risk diluted by everyone touching the code. Large orgs rely on <strong>systems and tooling</strong>: a cross-team postmortem library, searchable decision records, turning learning into templates and automated checks — because among hundreds, tacit knowledge won't flow on its own; infrastructure must force it explicit. The bigger the scale, the more "findable" beats "someone knows it."</div>
+</details>
+</div>
+<footer>BigCat · Leadership · Day 65 · 2026.07.24</footer>
+</div>
+</body>
+</html>
