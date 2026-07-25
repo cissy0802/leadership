@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 66：公共与非营利领导</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.flow{display:flex;align-items:stretch;justify-content:center;gap:6px;flex-wrap:wrap}
+.flow-box{flex:1;min-width:96px;background:#fffaf0;border:1px solid #d8c69f;border-radius:4px;padding:10px 8px;text-align:center;font-size:0.84rem;color:#5c3a18}
+.flow-box .lv{display:block;font-size:0.7rem;letter-spacing:1px;color:#a8702d;font-weight:700;margin-bottom:4px}
+.flow-box .nt{display:block;font-size:0.76rem;color:#8a6d3b;margin-top:5px;font-style:italic}
+.flow-box.hot{background:#f3e9d2;border-color:#a8702d;border-width:2px}
+.flow-arrow{align-self:center;color:#c4a878;font-size:1.1rem}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+.funnel{max-width:520px;margin:0 auto}
+.funnel-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.funnel-bar{background:#f3e9d2;border:1px solid #d8c69f;border-radius:4px;padding:8px 12px;font-size:0.88rem;color:#5c3a18;font-weight:600;text-align:center}
+.funnel-row:nth-child(1) .funnel-bar{width:100%}
+.funnel-row:nth-child(2) .funnel-bar{width:78%}
+.funnel-row:nth-child(3) .funnel-bar{width:56%}
+.funnel-row:nth-child(4) .funnel-bar{width:34%}
+.funnel-lever{font-size:0.8rem;color:#8a6d3b;flex:1}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.flow{flex-direction:column}
+.flow-arrow{transform:rotate(90deg)}
+.funnel-row{flex-direction:column;align-items:flex-start}
+.funnel-row .funnel-bar{width:100%!important}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 66 · 2026.07.25</div>
+<h1>公共与非营利领导：没有利润表的地方怎么带队</h1>
+<div class="meta"><span>主题：Public &amp; Nonprofit Leadership</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"In the social sectors, money is only an input, and not a measure of greatness." — Jim Collins</div>
+</header>
+<div class="intro">
+<strong>为什么这一课与你直接相关：</strong>大公司里有一大片区域跑的是非营利逻辑——<strong>平台团队、内部工具、开源项目、跨组 initiative、ERG</strong>。它们恰好具备非营利组织的三个特征：<strong>没有收入表可当成绩单、部分成员是志愿者（20% 投入、不由你考核）、要同时对几个不给你发薪的人问责</strong>。失败模式也一模一样：报一堆活动量却拿不到预算、用使命感换无偿加班、志愿者两周内蒸发、对四方各自承诺最后全部违约。四件事，四个工具。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>没有利润指标：把活动、产出、结果分三层报
+<span class="en">Inputs Are Not Outputs</span></h2>
+<span class="tag">指标</span><span class="tag">逻辑模型</span><span class="tag">汇报</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">在业务团队，钱既是投入也是成绩单；在非营利结构里，<strong>钱只是投入</strong>。你必须自己造一把尺——先承认它是代理指标，再承诺至少三个季度不换。</div>
+<div class="quote">
+<span class="en">"In business, money is both an input (a resource for achieving greatness) and an output (a measure of greatness). In the social sectors, money is only an input, and not a measure of greatness."</span>
+<span class="zh">「在企业里，钱既是投入（达成卓越的资源），也是产出（衡量卓越的尺子）。在社会部门，钱只是投入，不是衡量卓越的尺子。」</span>
+<span class="source">— Jim Collins,《Good to Great and the Social Sectors》(2005), p.5</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：季度 review，VP 问你「平台团队的 ROI 怎么算？」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「我们支撑 40 个业务团队，去年处理 2000 个 ticket，可用性 99.95%。」——全是<strong>活动量</strong>。VP 听完仍不知道你消失会发生什么，于是分 headcount 时把你当纯成本中心打折。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>「我分三层报。<strong>活动</strong>：2000 个 ticket——这个数字我不当成绩，它越高可能越说明我们的自助文档越差。<strong>产出</strong>：40 个团队的部署中位耗时从 22 分钟降到 6 分钟。<strong>结果</strong>：这 40 个团队今年发布频率翻倍、回滚率降 30%，折算约 9 个工程师年。」</p>
+<p>「加一句<strong>反事实</strong>：平台团队冻结一个季度，最先坏的不是宕机，是这条曲线掉回去，约 6 周可见。」</p>
+<p>「再<strong>自曝</strong>：这把尺能作弊——部署耗时可以靠砍安全检查换来，所以我同时报安全检查覆盖率，请你两个数一起看。」</p>
+</div>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">逻辑模型 · Logic Model</div>
+<div class="flow">
+<div class="flow-box"><span class="lv">投入</span>人力 · 预算<span class="nt">别当成绩</span></div>
+<div class="flow-arrow">→</div>
+<div class="flow-box"><span class="lv">活动</span>ticket · 会议<span class="nt">最常被误报</span></div>
+<div class="flow-arrow">→</div>
+<div class="flow-box hot"><span class="lv">产出</span>耗时 · 覆盖率<span class="nt">你能控</span></div>
+<div class="flow-arrow">→</div>
+<div class="flow-box hot"><span class="lv">结果</span>发布频率<span class="nt">该报这层</span></div>
+<div class="flow-arrow">→</div>
+<div class="flow-box"><span class="lv">影响</span>业务增长<span class="nt">别独占功劳</span></div>
+</div>
+<div class="dgm-note">只报到「活动」，被砍预算时毫无还手之力；报到「影响」又会被业务线指为抢功。守住产出与结果这两层。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我能用一个数字回答「本团队冻结一季度，第一个可测的坏事是什么、多久出现」吗？</li>
+<li>我上次汇报的最高层级是活动、产出，还是结果？</li>
+<li>我这把尺最可能的作弊路径是什么？我主动报了配对的制衡指标吗？</li>
+<li>有没有一位内部客户愿意用他自己的话替我复述这个结果？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把不可精确测当成不用测</strong>：说「我们的价值无法量化」，等于主动放弃预算话语权。</li>
+<li><strong>用满意度调查冒充结果</strong>：内部 NPS 是感受不是结果，只适合当早期预警。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>写一行反事实句发给你老板：「如果本团队冻结一个季度，第一个可测的坏事是 ___，约 ___ 周内出现。」</p>
+<p><strong>思考：</strong>这句写不出来，问题在指标缺失还是团队定位本身模糊？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>使命驱动的双刃：使命不能拿来买加班
+<span class="en">Passion Is Not Consent</span></h2>
+<span class="tag">使命</span><span class="tag">激励</span><span class="tag">伦理</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 研究原话</div>
+<div class="principle">使命感能替代一部分薪酬，这既是它的力量也是它的道德风险。<strong>你越擅长讲使命，越有义务自己守住剥削线</strong>——因为团队不会拦你。</div>
+<div class="quote">
+<span class="en">"Understanding contemporary forms of exploitation: Attributions of passion serve to legitimize the poor treatment of workers."</span>
+<span class="zh">「理解当代剥削的形式：把员工归因为『有热情』，会让苛待他们显得正当。」实验发现：一个人被认为对工作充满热情时，旁观者更容易认为让他无偿加班、做份外的事是合理的。</span>
+<span class="source">— Kim, Campbell, Shepherd &amp; Kay, 《Journal of Personality and Social Psychology》118(1), 2020</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：内部平台的关键里程碑前两周，团队已经连续两个 sprint 超载。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「我知道大家都很辛苦，但我们做的是公司未来两年的地基，这种机会不多——再拼两周。」——这句话做了两件坏事：用使命兑换无偿劳动，并把不愿参与的人自动变成不够忠诚的人。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>「这两周我要请大家多投入。使命我只说一句：这是公司两年的地基。<strong>剩下全是对价，且可核查</strong>——」</p>
+<p>「(1) X 和 Y 两个 deliverable 我已跟 VP 谈下来推到下季度，纪要在这里；(2) 上线后第一周全员不排 oncall、不安排会议；(3) 这两周每人的具体贡献我今天就写成 perf 材料里的句子，发给你本人确认措辞。」</p>
+<p>「(4) <strong>如果你这两周有个人安排，说一句『我不行』就够了，不需要理由，不影响任何评价。</strong>」——最后这句才是重点：没有无成本的退出，前三条都只是包装。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表（讲使命动员前自查）</div>
+<ul class="checklist">
+<li>额外投入有对应的可核查对价吗（砍 scope／补休／写进 perf）？</li>
+<li>我给出了无成本的退出话术吗？不参与的人会被隐性标记吗？</li>
+<li>上一次动员我给的承诺，兑现比例是多少？低于 100% 就先还债，再动员。</li>
+<li>这个强度如果持续 12 个月，谁会先离职？我能接受那个名字吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「他有热情」当成可以少给的理由</strong>：这正是上述研究测出的偏误，施加者通常察觉不到。</li>
+<li><strong>殉道文化</strong>：以熬夜时长论忠诚，会先赶走市场价值最高的人——他们有别的选择。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>翻出上次动员时给过的承诺，逐条标注已兑现／未兑现，把未兑现的设为本周第一优先。</p>
+<p><strong>思考：</strong>如果团队明天全换成只认合同不认使命的承包商，你哪些做法会立刻站不住？那些就是你靠使命贴补的管理债。</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>志愿者不是廉价员工：管入口和署名，不管任务
+<span class="en">Volunteers Vote With Their Feet</span></h2>
+<span class="tag">志愿者</span><span class="tag">开源</span><span class="tag">跨组 initiative</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">志愿者你考核不了，只能<strong>降低他的首次贡献成本</strong>并<strong>保证他的署名</strong>。带志愿者的团队，管理重心从「分配任务、追进度」移到「造入口、发荣誉」。</div>
+<div class="quote">
+<span class="en">"Treating your users as co-developers is your least-hassle route to rapid code improvement and effective debugging."</span>
+<span class="zh">「把你的用户当成共同开发者，是通往快速改进代码与有效调试的最省事路径。」</span>
+<span class="source">— Eric S. Raymond,《The Cathedral and the Bazaar》Lesson 7</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你发起跨组 initiative（统一日志规范），5 个团队各派 1 人以 20% 投入。两周后只剩 1 人还在动。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>建一个 30 人群、每周一小时同步会、一份「谁负责哪块」的表格，然后等大家交作业。——对志愿者，会议是纯成本、表格是纯负担；他的 perf 由他自己的 manager 写，你的表格没有强制力。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（三件事）</div>
+<p><strong>1. 造 15 分钟入口：</strong>「第一批 12 个待迁移 service 我拆成 12 个独立 PR，每个附模板和一条命令，15 分钟能做完。链接在这里，<strong>不参会也能贡献</strong>。」</p>
+<p><strong>2. 把荣誉外包给他的 manager</strong>（你唯一持有的真货币，要在 kickoff 就承诺）：「我每月给每位贡献者的 manager 发一封三句话邮件，写清他做了什么、影响多少团队，抄送他本人。」</p>
+<p><strong>3. 给能署名的东西：</strong>文档的 Authors 行、changelog 致谢、内部技术分享的联合演讲人。</p>
+<p>并把同步会从「每周 60 分钟」改成<strong>「每两周 25 分钟 + 决策必须写进纪要」</strong>——不参会也不掉队，会议就不再是筛掉志愿者的门槛。</p>
+</div>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">贡献者漏斗 · 每层的流失原因与你的杠杆</div>
+<div class="funnel">
+<div class="funnel-row"><div class="funnel-bar">知道这件事</div><div class="funnel-lever">没人转发 → 借他 manager 的周会宣布</div></div>
+<div class="funnel-row"><div class="funnel-bar">试第一次</div><div class="funnel-lever">环境跑不起来 → 15 分钟可完成的首单</div></div>
+<div class="funnel-row"><div class="funnel-bar">再来第二次</div><div class="funnel-lever">PR 挂三天无人 review → 24 小时响应承诺</div></div>
+<div class="funnel-row"><div class="funnel-bar">成为 owner</div><div class="funnel-lever">署名归你 → 把模块和名字一起交出去</div></div>
+</div>
+<div class="dgm-note">志愿者流失几乎不发生在「意愿」那层，而发生在摩擦与冷落这两层。先修 review 延迟，再谈招募。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>从「知道这件事」到「提交第一个改动」几步？超过三步就砍。</li>
+<li>每位贡献者的 manager 这个月收到过我写的具体反馈吗？</li>
+<li>贡献者的 PR 平均多久拿到第一次回应？超过 24 小时先修这个，别再招人。</li>
+<li>参加我的会是贡献的必要条件吗？如果是，设计有问题。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>用 headcount 的方式管 20% 的人</strong>：给他排 sprint、追 burndown，他下周就消失了。</li>
+<li><strong>把志愿者放在关键路径上</strong>：一旦出现 oncall 或向后兼容承诺，就该转正式投入。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+Babcock、Recalde、Vesterlund 与 Weingart（《American Economic Review》2017）发现：<strong>低晋升价值的任务（low-promotability tasks）</strong>更多被请求于女性，女性也更常接受——两个机制同时起作用：被请求的概率更高，拒绝的社会代价也更高。而横向 initiative、协调、会议记录、招聘面试、新人 onboarding 正是这类任务的典型。两个动作：<br/>(1) <strong>作为发起人</strong>：别默认让同一批人做记录与协调，把轮值写进 charter，你自己也在轮值表里。<br/>(2) <strong>作为被邀请者</strong>：接之前先问「这件事会以什么形式出现在我的 perf 材料里？」——把不可见的劳动换成可核查的承诺；<strong>问不出答案，本身就是可以不接的理由</strong>。
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>挑一个横向 initiative，做出一个 15 分钟能完成的「首单任务」，并给每位贡献者的 manager 发出第一封三句话邮件。</p>
+<p><strong>思考：</strong>若所有志愿者明天同时退出，这件事会停在哪一步？那一步就是你该争取正式 headcount 的地方。</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>五个老板：从行政式切到立法式领导
+<span class="en">Legislative Leadership</span></h2>
+<span class="tag">多方问责</span><span class="tag">stakeholder</span><span class="tag">权力</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">当没有任何一个人（包括你名义上的老板）拥有足够的结构性权力替你拍板，你的工作方式必须换挡：<strong>不靠职权，靠说服、共同利益和政治信用</strong>。这不是软弱，这是这类位置的物理规律。</div>
+<div class="quote">
+<span class="en">"In executive leadership, the individual leader has enough concentrated power to simply make the right decisions. In legislative leadership, on the other hand, no individual leader—not even the nominal chief executive—has enough structural power to make the most important decisions by himself or herself."</span>
+<span class="zh">「在行政式领导中，领导者手里有足够集中的权力，直接做出正确决定即可。在立法式领导中，没有任何单个领导者——哪怕名义上的最高负责人——有足够结构性权力独自做最重要的决定。」</span>
+<span class="source">— Jim Collins,《Good to Great and the Social Sectors》(2005), p.11</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：本季度平台团队有 6 个工程师季度可用。VP 要降本，业务线 A 和 B 各要一个互斥的功能，安全部门要三个合规卡点。四个诉求全做需要 11 个工程师季度。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>分别单独安抚：对 VP 说会降本，对 A 说 Q3 给你，对 B 也说尽量 Q3，对安全说都听你的。<strong>三周后四方都认为你骗了他</strong>——你其实一句谎没说，只是从没让他们看见彼此的存在。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（一封 memo，而非四场私聊）</div>
+<p>「本季度容量 6 个工程师季度，四个诉求合计 11 个。排序提案与理由：<strong>安全卡点（3）</strong>——硬约束，不做会同时阻塞 A 和 B；<strong>A 的 X（2）</strong>——它同时降低 B 未来的接入成本；<strong>降本（1）</strong>；<strong>B 的 Y 推 Q4</strong>，过渡方案是一个临时 workaround（链接）。」</p>
+<p>「<strong>如果你认为排序该改，请在周四前回复你愿意让出的那一项。只加不减的回复我不采纳。</strong>」</p>
+<p>关键在最后一句：<strong>把「加」的请求强制转成「换」的请求</strong>。没有职权时这是你唯一守得住的边界，而它守的是容量，不是你的面子。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表（每个 stakeholder 四问）</div>
+<ul class="checklist">
+<li>他到底要什么——不是他说要什么，而是他年底被考核什么？</li>
+<li>他能给我什么（预算、headcount、掩护、背书）？</li>
+<li>他有真实否决权，还是只有意见？我把这两类人混在一起对待了吗？</li>
+<li>我对他的承诺，和对其他三方的承诺写在同一份文档里吗？</li>
+<li>我上个季度替谁挡过一次麻烦？政治信用只能先付后取。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「所有人都不满意」当成公平的证明</strong>：也可能只是谁都没被说服。公平的证据是他们能复述你的排序理由。</li>
+<li><strong>以为公开取舍会得罪人</strong>：真正得罪人的是私下承诺后毁约。公开取舍得罪的是当期，私下毁约损失的是信用本金。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>把本季度对各 stakeholder 的承诺抄进同一页文档，标出互相矛盾的两条，本周就其中一条向双方公开取舍。</p>
+<p><strong>思考：</strong>立法式领导做久了会不会真的失去决断力？团队最近一次希望你直接拍板、你却又去征求意见，是什么时候？</p>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>代理指标一旦进考核就会失真（Goodhart）。没有利润这个终审裁判，那把尺该多久换一次？</summary><div>把「稳定」和「有效」分开管：<strong>对外口径至少稳定三个季度</strong>，否则换尺本身就在说明上一把没用；但<strong>每季度公开做一次作弊路径审计</strong>——这个指标现在最容易被怎么刷，我们刷了没有。换尺只接受两个合法理由：团队定位变了，或它已被证明可被廉价操纵。换尺时新旧两把并行公布一个季度，让别人自己看出差异。</div></details>
+<details><summary>使命与剥削之间的线，只能由被剥削者定义吗？团队自己热情高涨要求加班，leader 该不该拦？</summary><div>该拦，理由不是家长主义而是<strong>信息不对称</strong>：你知道这个项目在 VP 心里的真实优先级、知道 perf 校准时加班的实际权重，团队不知道，所以刹车的义务在你。两条线：<strong>可持续性</strong>（这个强度能持续 12 个月吗？不能就是借债，要有还款日）与<strong>可逆性</strong>（付出的是可补的疲劳，还是不可逆的健康与家庭损失）。热情能决定要不要冲，不能决定冲多久。</div></details>
+<details><summary>志愿者模式（20% 贡献）能规模化吗？什么时候必须转成正式 headcount？</summary><div>志愿者适合<strong>探索与扩散</strong>，不适合承担<strong>oncall 与向后兼容承诺</strong>。三个转正式化信号：出现 SLA 承诺；维护性工作占比超过三成；bus factor 掉到 1。最简判据是一句话：<strong>「它坏了会不会有人在凌晨被叫醒？」</strong>会，就必须有正式的人；不会，志愿者模式还能跑很久。把这句写进你要 headcount 的 memo 第一行。</div></details>
+<details><summary>把 low-promotability task 写进 charter 轮值，会不会只是把不公平从性别转移到资历？</summary><div>会——如果轮值只在低职级里轮。两条限定：<strong>轮值必须跨职级且包含发起人自己</strong>；更根本的是把 coordination 变成<strong>有名字、有权重的 perf 维度</strong>。轮值只是分摊损失，给权重才是消除损失。组织若不肯给权重，就诚实告诉团队：这件事在这里不计分，我用可见度或项目选择权补偿你，而不是假装它会被看见。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 66 · 2026.07.25</footer>
+</div>
+</body>
+</html>
