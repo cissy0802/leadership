@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 67：注意力与精力领导</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.flow{display:flex;align-items:stretch;justify-content:center;gap:6px;flex-wrap:wrap}
+.flow-box{flex:1;min-width:96px;background:#fffaf0;border:1px solid #d8c69f;border-radius:4px;padding:10px 8px;text-align:center;font-size:0.84rem;color:#5c3a18}
+.flow-box .lv{display:block;font-size:0.7rem;letter-spacing:1px;color:#a8702d;font-weight:700;margin-bottom:4px}
+.flow-box .nt{display:block;font-size:0.76rem;color:#8a6d3b;margin-top:5px;font-style:italic}
+.flow-box.hot{background:#f3e9d2;border-color:#a8702d;border-width:2px}
+.flow-box.cold{background:#efe9dd;border-style:dashed;color:#8a7c62}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+.matrix{display:grid;grid-template-columns:88px 1fr 1fr;gap:6px;max-width:600px;margin:0 auto}
+.matrix .hd{font-size:0.78rem;color:#a8702d;font-weight:700;text-align:center;align-self:end;letter-spacing:1px}
+.matrix .rl{font-size:0.78rem;color:#a8702d;font-weight:700;align-self:center;text-align:right;letter-spacing:1px}
+.matrix .cell{background:#fffaf0;border:1px solid #d8c69f;border-radius:4px;padding:12px 10px;font-size:0.86rem;color:#3a2f1c}
+.matrix .cell b{display:block;color:#5c3a18;margin-bottom:4px;font-size:0.9rem}
+.matrix .cell.good{background:#e9efdf;border-color:#7c9a54}
+.matrix .cell.warn{background:#f5e0d0;border-color:#b85c3a}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.flow{flex-direction:column}
+.matrix{grid-template-columns:1fr}
+.matrix .rl{text-align:left}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 67 · 2026.07.26</div>
+<h1>注意力与精力领导：稀缺的不是时间，是能被想清楚的问题数</h1>
+<div class="meta"><span>主题：Attention &amp; Energy</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"A wealth of information creates a poverty of attention." — Herbert Simon</div>
+</header>
+<div class="intro">
+<strong>本篇与时间管理的分工：</strong>Day 38 讲日历，Day 46 讲身体与倦怠；本篇讲<strong>中间那层——注意力</strong>。时间可加，注意力不可加：你有 40 小时，但一周只有三四个「能真正想清楚」的槽位，且槽位空着也会被占——被没结论的会、半开的决策、昨天没关掉的念头。它还有第二重身份：<strong>你的注意力是公开的战略信号</strong>，团队跟着它走，不跟着 OKR 文档走。四件事：设上限、收编切换成本、按窗口配给决策、把注意力当信号公开管理。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>注意力预算：在飞的「想清楚」最多三件
+<span class="en">Attention Is the Binding Constraint</span></h2>
+<span class="tag">WIP 上限</span><span class="tag">优先级</span><span class="tag">向上沟通</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">把「需要你亲自想清楚的问题」当成固定槽位：<strong>同时最多三个</strong>。第四个不靠加班解决，靠先腾一个槽位——腾的方式由塞进来的人一起选。</div>
+<div class="quote">
+<span class="en">"What information consumes is rather obvious: it consumes the attention of its recipients. Hence a wealth of information creates a poverty of attention and a need to allocate that attention efficiently."</span>
+<span class="zh">「信息消耗的东西很明显：它消耗接收者的注意力。于是信息的富足制造了注意力的贫困，以及高效分配注意力的必要。」</span>
+<span class="source">— Herbert A. Simon,《Designing Organizations for an Information-Rich World》(1971), pp.40–41</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你手上已有三件「必须你亲自想」的事：推理服务容量重构、两位资深工程师的晋升材料、与数据组的 schema 谈判。VP 周一找你：「AI 成本治理这条线也接过来，Q3 出方案。」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「好，我看看怎么排。」——四件事全部在飞。两周后每件推进 20%，容量重构的关键判断拖到最后一刻拍脑袋，晋升材料写得像交差。你付了四份注意力税，收到零份认可。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>「我先说清约束：手上有三件需要我<strong>亲自出判断</strong>的事——容量重构、两份晋升材料、schema 谈判。这不是执行量而是判断量，加人不能替我想。」</p>
+<p>「成本治理我愿意接，但进来必须有一件出去，三个可选：<strong>(1) schema 谈判降级为『我只定原则，细节交 Alex』</strong>，风险是可能多让一步；<strong>(2) 容量重构延一个月</strong>，风险是 Q4 大促余量变薄；<strong>(3) 成本治理我只做前两周的问题定义与度量口径，方案给 Priya 主笔、我做 reviewer</strong>。我推荐 (3)。你选哪个？」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我能立刻说出当前占槽的三件事吗？说不出＝已被无主的事占满。</li>
+<li>最近一次有人加事，我给了带风险的选项，还是只说「我尽量」？</li>
+<li>这三件里几件<strong>只有我能想</strong>？能交出去的为什么还在我手上？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只说「我很忙」</strong>：抱怨换不到资源。要给<strong>三个带风险标价的选项</strong>，被牺牲的那件才有老板的签名。</li>
+<li><strong>把判断量当执行量报</strong>：说「排满了」，老板听到的是日历问题，会让你「优化会议」。要报判断带宽，不是小时数。</li>
+<li><strong>用沉默替代降级</strong>：偷偷把 schema 谈判做浅却不说，出问题时你毫无免责依据。降级必须留一句书面记录。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>在 1:1 doc 顶端写一行「本周三个槽位：___ / ___ / ___」，下次有人加事时先把这行给对方看，再给三个带风险的选项。</p>
+<p><strong>思考：</strong>若三个槽位里两个是救火，那是团队能力问题，还是你不肯放手？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>注意力残留：切换的税不记在时间账上
+<span class="en">Attention Residue</span></h2>
+<span class="tag">中断治理</span><span class="tag">深度工作</span><span class="tag">团队机制</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">中断的成本不是那 5 分钟，是<strong>回来后半小时里你只有七成的自己</strong>。中断是组织行为，靠自律治不了，要靠机制：<strong>单一通道 + 值班接口人 + 强制收尾</strong>。</div>
+<div class="quote">
+<span class="en">"People need to stop thinking about one task in order to fully transition their attention and perform well on another. Yet, results indicate it is difficult for people to transition their attention away from an unfinished task and their subsequent task performance suffers."</span>
+<span class="zh">「人必须先停止思考上一个任务，才能把注意力完整转移、在新任务上表现良好；但结果显示，人很难从未完成的任务上移开注意力，后续表现因此变差。」</span>
+<span class="source">— Sophie Leroy,《Why Is It So Hard to Do My Work?》, Organizational Behavior and Human Decision Processes 109(2), 2009</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你正在写容量重构的设计权衡，一位工程师 Slack @你：「staging 部署又挂了，是不是上次那个证书问题？你看一眼？」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>你切过去看日志、回三条，12 分钟后回到文档。但之后半小时你还在想那个证书——那段权衡越写越绕，你以为问题太难，其实是<strong>残留</strong>。晚上你重写了一遍。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（回复话术）</div>
+<p>「我在深度块里，14:30 出来。<strong>这类问题不用等我</strong>：本周 on-point 是 Alex（频道置顶），他有 staging 全部权限；若确认是证书，runbook 在 wiki『cert-rotation』。<strong>若你判断 14:30 前需要我做决策</strong>，在 #team-oncall 发一条 blocker，我出来第一件事看它。」</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 团队机制（宣布一次即可）</div>
+<p><strong>(1) on-point 轮值：</strong>每周一人承接所有「问一下 BigCat」，其余人受保护，包括你不当值的日子。</p>
+<p><strong>(2) 单一升级通道：</strong>真 blocker 只走一个频道，别处 @我默认异步。有这条你才敢真的不看 Slack。</p>
+<p><strong>(3) 强制收尾 2 分钟：</strong>切换前写一行「我刚想到哪、下一步做什么」。Leroy 的实验显示，先给未完成任务一个明确计划能显著降低残留——这一行就是那个计划。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>本周被打断的事里几次<strong>只有我能答</strong>？其余说明知识没落文档或没有 on-point。</li>
+<li>团队能一句话说出「什么算真 blocker、走哪个通道」吗？</li>
+<li>on-point 轮值包含我自己吗？（不包含 = 给自己特权，团队会记住）</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>把响应速度当美德</strong>：秒回让你成为最舒服的依赖对象，也成为最不出成果的人。响应快是 on-point 的 KPI，不是你的。</li>
+<li><strong>只设边界不给替代路径</strong>：「我在专注别找我」读起来是傲慢；「别找我 + 找他 + runbook 在这」才可执行。</li>
+</ul>
+<div class="female">
+<span class="female-label">Female Leader's Note</span>
+研究反复观察到女性在会议中被打断的频率更高，也更容易被默认成「随时可问」的那个人——于是成为全组的人肉接口：深度时间被切碎，年底拿不出成块产出。两个做法：<strong>(1) 把「随时可问」制度化为轮值</strong>，你从「默认接口」变成「本周 on-point 是谁」，这是升级不是拒绝；<strong>(2) 用一句中性归位句</strong>——「我先把刚才那半句说完，再接你这条」——让打断变成可见行为，而不是你独自吞下。
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>记一周「中断台账」，每次三个字段：谁、是否只有我能答、我当时在做什么。周五数「不是只有我能答」的占比。</p>
+<p><strong>思考：</strong>比例超过一半，要修的是你的边界，还是团队的文档与授权？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>按窗口配给：单向门放峰值，双向门交默认规则
+<span class="en">Match Decision Type to Your Best Hours</span></h2>
+<span class="tag">决策</span><span class="tag">授权</span><span class="tag">节奏设计</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">一天里的判断质量不恒定。<strong>不可逆决策必须落在峰值窗口</strong>；可逆决策不该占峰值，而该被一套「不用问我」的默认规则替代——授权的本质是把决策从你的注意力账上移走。</div>
+<div class="quote">
+<span class="en">"Some decisions are consequential and irreversible or nearly irreversible—one-way doors—and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation... Most decisions aren't like that—they are changeable, reversible—they're two-way doors."</span>
+<span class="zh">「有些决策重大且不可逆或近乎不可逆——单向门——这类决策必须审慎、缓慢、经充分斟酌与咨询后做出……但多数决策不是这样，它们可改、可逆——是双向门。」</span>
+<span class="source">— Jeff Bezos, 2015 Letter to Shareholders (Amazon)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">两轴配给：可逆性 × 状态窗口</div>
+<div class="frame-diagram">
+<div class="dgm-title">决策类型 × 注意力窗口</div>
+<div class="matrix">
+<div class="hd"></div>
+<div class="hd">峰值窗口（你最清醒的 2–3 小时）</div>
+<div class="hd">低谷窗口（会后、傍晚、赶飞机）</div>
+<div class="rl">单向门<br/>不可逆</div>
+<div class="cell good"><b>放这里</b>架构选型、解雇、晋升定档、对外承诺。给一个带 pre-read 的正式时段，别在走廊定。</div>
+<div class="cell warn"><b>最贵的错</b>疲惫时拍不可逆的板。就说「明天上午给你答案」——延迟一夜远比错一次便宜。</div>
+<div class="rl">双向门<br/>可逆</div>
+<div class="cell"><b>浪费</b>用最好的两小时选 CI 工具版本等于烧钱，这类该下沉。</div>
+<div class="cell good"><b>交出去</b>写成默认规则：影响低于阈值的不用问我，做完告知一句。</div>
+</div>
+<div class="dgm-note">别格都能将就，右上角不行——只有这一格里「延迟」永远比「现在拍」便宜。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：周五 17:40，你刚开完连续四个会。一位工程师在走廊拦你：「缓存层自己写还是上第三方托管？下周一开工，你定一下。」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「用托管的吧，快。」——三个月后发现它绑定了一家供应商、数据出了合规域，迁回来要两个季度。你在最差的窗口用 20 秒推开了一扇单向门。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法</div>
+<p>「先问一句：<strong>这个决定错了，多久能改回来？</strong>」——「要搬数据，大概一个季度。」「那是单向门，不适合我用开完四个会的脑子在走廊上定。」</p>
+<p>「周一 10 点给你 45 分钟。周日前写一页：<strong>两个方案各自的退出成本、数据落在哪个合规域、三个月后要换需动哪些代码</strong>。周一只讨论这三点。」</p>
+<p>「同时解锁一条，对全组可逆选型都适用：<strong>退出成本低于两周人力的，你直接定</strong>，周报给我一句结论。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我的峰值窗口是哪两小时？现在被会议占了吗？</li>
+<li>过去一个月我在低谷拍过哪个不可逆决策？后来还好吗？</li>
+<li>「不用问我」的阈值是明文的吗（影响面、退出成本）？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「快」当领导力表演</strong>：秒决在双向门是优点，在单向门是赌博。区分标准只有一条——退出成本。</li>
+<li><strong>延迟却不给日期</strong>：「我再想想」是黑洞，团队会自行猜测并空转。延迟必须带时间戳与输入清单。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>在团队频道贴三行「不用问我」规则：退出成本低于 ___ 的，你定、事后一句话告知；不确定是否可逆的，先问「多久能改回来」；单向门的，约我峰值窗口 + 带一页 pre-read。</p>
+<p><strong>思考：</strong>你迟迟不写这条阈值，是怕他们判断错，还是怕失去被需要的感觉？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>你的注意力是公开信号：明说「今季我只深入两件事」
+<span class="en">Where You Look Is the Strategy</span></h2>
+<span class="tag">战略信号</span><span class="tag">可持续节奏</span><span class="tag">向下沟通</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">团队读的不是 OKR 文档，是<strong>你反复追问什么、参加谁的评审、在哪个话题上眼睛发亮</strong>。所以注意力分配必须公开宣布——不宣布，团队会自己猜，且通常猜成「被冷落＝被放弃」。</div>
+<div class="quote">
+<span class="en">"How you handle your own time is, in my view, the single most important aspect of being a role model and leader."</span>
+<span class="zh">「在我看来，你如何处理自己的时间，是成为榜样与领导者最重要的一件事。」</span>
+<span class="source">— Andy Grove,《High Output Management》(1983)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：季度 kickoff。你决定这季只深入两件（容量重构、成本治理），另两条线（内部工具、文档平台）只看指标。后者 owner 是位很在意被看见的资深工程师。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>你什么也不宣布，只是悄悄不去内部工具的周会了。三周后那位 owner 在 skip-level 里说「感觉我们这条线不重要了」，两个月后开始看外部机会。你从没想过放弃这条线——你只是没说。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后做法（kickoff 原话）</div>
+<p>「先讲一件通常没人讲的事：<strong>我这季的注意力怎么分。</strong>我深入两件——容量重构、成本治理，它们是这季唯一的两扇单向门。」</p>
+<p>「内部工具和文档平台，<strong>我改成只看指标不进细节</strong>。说清楚：这是<strong>我的带宽决定，不是对这两条线的降级</strong>，headcount 与 perf 权重不变。」</p>
+<p>「对这两位 owner 我承诺三件事：<strong>月度一次 45 分钟深聊，你定议程；你判断需要我出面时随时拉我，优先级高于我自己的深度块；季末我用你写的材料替你在校准会上讲</strong>——不会因为『我没参与所以不了解』而让你的成绩打折。」</p>
+<p>「哪一周你觉得被冷落了，直接说，我立刻调整。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表：季度注意力资产负债表</div>
+<ul class="checklist">
+<li>本季深入的两件事写下来了吗？它们是单向门，还是只是我最喜欢的技术？</li>
+<li>过去两周日历的实际分布和我宣布的一致吗？（不一致时团队信日历不信宣言）</li>
+<li>这个节奏能连跑四个季度吗？不能就不是可持续节奏，是又一次冲刺。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只宣布关注什么，不宣布不关注什么</strong>：后半句才是信息，也是唯一会被质疑的部分；不说的代价是别人替你解读。</li>
+<li><strong>用「我信任你们」掩盖撒手</strong>：没机制的信任，在被降级的人听来就是遗弃。</li>
+<li><strong>把可持续当慢</strong>：连跑四季的产出高于两季冲刺加一季恢复。有些季度确实无可持续解——那就明说这是借债，并给还款日。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>给团队发五行邮件：本季深入的两件事、只看指标的两条线、对后者的三条补偿承诺、以及「觉得被冷落就直接说」。</p>
+<p><strong>思考：</strong>写下「我不深入什么」时的不适，来自怕别人失望，还是怕承认自己做不了全部？</p>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>「三个槽位」在小团队成立，在管 60 人的总监层还成立吗？</summary><div>槽位数不变，<strong>装的东西变了</strong>：一线 TLM 装具体问题（架构怎么选），总监装「哪类问题该由谁决」的系统设计。规模上升后的真风险是<strong>槽位被下一层的具体问题偷偷占满</strong>——你还在参与三个架构评审，于是没带宽想组织设计。判据：这问题我不想，是没人能想，还是没人敢想？后者要修授权，不是带宽。</div></details>
+<details><summary>跨时区团队里「峰值窗口」怎么办？你的峰值正是对方的深夜。</summary><div>关键是<strong>单向门需要同步讨论，但不需要同步做出</strong>：拆成异步 pre-read（对方在他的峰值写）+ 一次短同步（双方都不在低谷的重叠时段）+ 异步确认（你在你的峰值定）。真无解的是重叠只剩一小时且正好双方低谷——那就<strong>轮流承担不便</strong>：这个月我早起，下个月换你。公开轮值比假装大家都方便更耐久。</div></details>
+<details><summary>宣布「我只深入两件事」，会不会被上级读作野心不足？</summary><div>会——如果你只说了后半句。对上换框：不说「我只做两件」，说<strong>「判断带宽压在这两扇单向门上，另两条线我用机制而不是用我的时间保证」</strong>，再给出机制。老板怕的从不是你少做，是<strong>没人管</strong>。要认的政治成本：在把「随时在场」当美德的文化里公开聚焦，短期会吃亏；对冲只能靠那两件事的产出足够硬。</div></details>
+<details><summary>中断只走一个通道，会不会牺牲本该被听见的弱信号？</summary><div>会，这是真 trade-off——抱怨、暗流、微弱的离职意向常常正是从随手一条 Slack 漏出来的。对冲不是重开所有通道，而是<strong>换到你控制节奏的渠道</strong>：1:1、季度 skip-level，外加一条保留的「私事随时找我」例外。注意力保护针对技术打断，不该覆盖人的事：这条信息关于<strong>系统</strong>（能异步）还是关于<strong>人</strong>（等就凉了）。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 67 · 2026.07.26</footer>
+</div>
+</body>
+</html>
