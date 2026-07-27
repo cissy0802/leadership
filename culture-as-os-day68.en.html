@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 68: Culture as Operating System</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.flow{display:flex;align-items:stretch;justify-content:center;gap:6px;flex-wrap:wrap}
+.flow-box{flex:1;min-width:96px;background:#fffaf0;border:1px solid #d8c69f;border-radius:4px;padding:10px 8px;text-align:center;font-size:0.84rem;color:#5c3a18}
+.flow-box .lv{display:block;font-size:0.7rem;letter-spacing:1px;color:#a8702d;font-weight:700;margin-bottom:4px}
+.flow-box .nt{display:block;font-size:0.76rem;color:#8a6d3b;margin-top:5px;font-style:italic}
+.flow-box.hot{background:#f3e9d2;border-color:#a8702d;border-width:2px}
+.flow-box.cold{background:#efe9dd;border-style:dashed;color:#8a7c62}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.flow{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 68 · 2026.07.27</div>
+<h1>Culture as Operating System: What People Do by Default When No One Is Giving Orders</h1>
+<div class="meta"><span>Topic: Culture as Operating System</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"Your culture is how your company makes decisions when you're not there." — Ben Horowitz</div>
+</header>
+<div class="intro">
+<strong>How this differs from Day 40:</strong> Day 40 covered the <strong>content</strong> of culture — what you want, and how to write it as an executable contract. This issue covers the <strong>mechanism</strong>: which layer culture lives in, what runs it, what writes to it, what corrupts it. "Operating system" is not a metaphor here: culture is <strong>the layer that decides default behavior in the absence of explicit instruction</strong>. Four moves: <strong>work the right layer</strong>, <strong>rituals are the runtime</strong>, <strong>promotion is the loudest write</strong>, <strong>book your culture debt</strong>.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Culture Has Three Layers — Match the Lever to the Layer
+<span class="en">Culture Is Layered</span></h2>
+<span class="tag">Schein's three levels</span><span class="tag">sequencing change</span><span class="tag">time scales</span>
+</div>
+<div class="section">
+<div class="section-label">The principle, and the source</div>
+<div class="principle">Culture is not one solid block. <strong>Defaults change in weeks, incentives in quarters, underlying beliefs only as a byproduct of the first two staying consistent for a long time.</strong> Speeches move the third layer roughly zero — they don't even touch the first.</div>
+<div class="quote">
+<span class="en">"Culture is a pattern of shared basic assumptions learned by a group as it solved its problems… taught to new members as the correct way to perceive, think, and feel in relation to those problems."</span>
+<span class="source">— Edgar H. Schein, <em>Organizational Culture and Leadership</em>, 4th ed. (2010), p.18</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The layers and their levers</div>
+<div class="frame-diagram">
+<div class="dgm-title">Three layers · which hand moves which</div>
+<div class="flow">
+<div class="flow-box hot"><span class="lv">App layer · defaults</span>meeting format, review SLA, on-call rules, how people talk in channels<span class="nt">2–8 weeks<br/>lever: change the process default directly</span></div>
+<div class="flow-box"><span class="lv">Kernel · incentives</span>promotion bar, perf weighting, who gets praised, who gets kept<span class="nt">2–4 quarters<br/>lever: change calibration and the promo bar</span></div>
+<div class="flow-box cold"><span class="lv">Firmware · assumptions</span>"is it safe to say this?" "does failure go on my record?"<span class="nt">1–3 years<br/>no direct lever: rewritten only by consistency in the layers above</span></div>
+</div>
+<div class="dgm-note">Work left to right. Skipping left and shouting at the right is what a values poster is.</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scenario</div>
+<div class="scene">
+<div class="setup">Context: your team won't report bad news; slips always surface in the final week. Your boss says: "Go build a culture of candor."</div>
+<div class="dialog bad">
+<div class="speaker">✗ The usual move</div>
+<p>At the all-hands: "We need to be open and candid — bring me problems any time, I won't blame anyone." Then "Transparency" goes into the team wiki. Three months later, the next slip still surfaces in the final week.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: work layer by layer</div>
+<p><strong>Layer 1 (within two weeks):</strong> a fixed 10 minutes at the end of the weekly — one line each: "red / yellow / green + the one thing I'm most worried about," format locked. <strong>I go first, and I have to name my own worry.</strong></p>
+<p><strong>Layer 2 (one to two quarters):</strong> set one line in calibration and write it into the perf template — <strong>"surfaced a risk 4+ weeks early with an option" counts as impact; "surfaced it in the final week" costs a notch even if the thing shipped.</strong></p>
+<p><strong>Layer 3: leave it alone.</strong> It starts moving the first time someone flags a risk early and I reallocate resources instead of assigning blame.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>My most recent "culture change" — which layer did it act on? If it was only talk, it didn't reach layer one.</li>
+<li>What have I actually changed in layer two? Can I name the specific promo-bar or perf-weighting change?</li>
+<li>Does my time scale match the layer? Demanding belief change in three months guarantees disappointment — and a wrong diagnosis ("this team just doesn't get it").</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking artifacts for culture:</strong> you changed the meeting format and announce "our culture has changed." That's a trace culture left behind, not culture.</li>
+<li><strong>Giving a layer-one order in layer-three language:</strong> "have more ownership" is unexecutable; "for 48 hours after launch you're on call, with authority to roll back without asking" is executable.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's rep + a question</div>
+<div class="mini">
+<p><strong>Do:</strong> take one culture problem you want fixed and translate it into two things — one default you can change this week, one incentive line you can change this quarter.</p>
+<p><strong>Reflect:</strong> the strongest underlying assumption on your team right now — which specific event under a previous leader taught it?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Rituals and Symbols: the Runtime Is Repeated Action, Not Repeated Words
+<span class="en">Rituals and Symbols Are the Runtime</span></h2>
+<span class="tag">ritual design</span><span class="tag">high-contrast events</span><span class="tag">frequency first</span>
+</div>
+<div class="section">
+<div class="section-label">The principle, and the source</div>
+<div class="principle"><strong>Rituals</strong> — repeated actions with a fixed time, fixed format, and a fixed host — execute the culture once a week. <strong>Symbols</strong> — one-off, high-contrast events — tell people where the boundary is. Both are cheaper than speeches, and both work.</div>
+<div class="quote">
+<span class="en">"…a meeting is nothing less than the medium through which managerial work is performed."</span>
+<span class="source">— Andy Grove, <em>High Output Management</em> (1983), Ch.4 "Meetings—The Medium of Managerial Work"</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scenario</div>
+<div class="scene">
+<div class="setup">Context: you want "write it down before you build it" to become the team default, instead of something you chase every time.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The usual move</div>
+<p>A long email on why design docs matter, template linked, closing with "please make this a habit." New RFCs two weeks later: zero.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Ritual (executes weekly)</div>
+<p>"Thursdays at 15:00, <strong>Design Half-Hour</strong>: if you have an RFC you get 5 minutes; if you don't, don't come. <strong>I host it; when I travel Alex hosts — this meeting is never cancelled.</strong> Afterwards I post in the channel: this week's RFC links, plus <strong>whose decision got changed by the discussion</strong>."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Symbol (one-off, very loud)</div>
+<p>An engineer's RFC once made the team drop the approach you were championing. You tell that story at the all-hands: "Here's what I planned to do; the data in section three of his doc convinced me, and we switched." <strong>One of these beats ten emails.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist: will this ritual survive?</div>
+<ul class="checklist">
+<li>Is it ≤30 minutes? Does it have a fixed host <strong>and a backup</strong>? (A ritual with no backup doesn't survive its second quarter.)</li>
+<li>Does it contain a moment where someone is named specifically? Rituals without naming decay into status broadcasts.</li>
+<li>Does it still happen when I'm not there? Yes = it's in the OS. No = it's still just my personal habit.</li>
+<li>Can I name one symbolic event I created last quarter? If not, the team reads culture only off my calendar.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on gender</div>
+<div class="pitfall">
+<ul>
+<li><strong>Rituals that cost too much:</strong> a two-hour "culture workshop" once a month loses to ten minutes every week. <strong>Frequency beats ceremony.</strong></li>
+<li><strong>Only positive symbols:</strong> if crossing the line is never handled publicly, the line doesn't exist. Negative symbols must <strong>address behavior, not the person, and the person must know in advance</strong> — otherwise you broadcast fear, not a standard.</li>
+<li><strong>The work of running rituals defaults to the same person:</strong> booking the room, sending reminders, writing notes. When this "office housework" lands persistently on the women or the most junior person on the team, the ritual itself broadcasts a culture you don't want. Fix: <strong>rotate it, and count it as real contribution at perf time.</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's rep + a question</div>
+<div class="mini">
+<p><strong>Do:</strong> pick one behavior you want and design it into a ≤30-minute weekly ritual; name the host and the backup on the spot.</p>
+<p><strong>Reflect:</strong> which of your team's existing rituals is already dead but still on the calendar? What is it broadcasting now?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Hiring, Promotion, Firing Are Three Writes — Promotion Is the Loudest
+<span class="en">Hiring Is Culture — and Promotion Is Louder</span></h2>
+<span class="tag">culture add</span><span class="tag">the promotion signal</span><span class="tag">the high performer who crosses the line</span>
+</div>
+<div class="section">
+<div class="section-label">The principle, and the source</div>
+<div class="principle">Hiring decides <strong>what gets installed</strong>; promotion decides <strong>what the system optimizes for</strong>. The team doesn't know your candidates — it knows the person you promoted. <strong>Promotion is the strongest cultural signal of the three</strong>, and the only one no amount of messaging can walk back.</div>
+<div class="quote">
+<span class="en">"Employers sought candidates who were not only competent but also culturally similar to themselves in terms of leisure pursuits, experiences, and self-presentation styles."</span>
+<span class="source">— Lauren A. Rivera, "Hiring as Cultural Matching," <em>American Sociological Review</em> 77(6), 2012</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scenario A: turning "fit" into "add"</div>
+<div class="scene">
+<div class="dialog bad">
+<div class="speaker">✗ Interview feedback</div>
+<p>"Great conversation — felt like one of us." Zero information. All it measured was <strong>similarity</strong>.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Interview feedback</div>
+<p>"My round tested <strong>candor under conflict</strong>. I asked how he handled the last time he and his TL disagreed: he privately asked where their data came from, found a constraint he'd missed, then volunteered in the team meeting that he'd been wrong. <strong>He adds something we're missing: nobody on this team volunteers that they were wrong.</strong>"</p>
+<p>The formula: <strong>which behavior I tested + the evidence + what he adds that we lack.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scenario B: the question after promotions land</div>
+<div class="scene">
+<div class="setup">Context: results are out, and a report asks you in a 1:1: "Why did K get promoted? He drove two people out last quarter."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Don't say</div>
+<p>"His business impact really was large; we're addressing the people issues with him privately." Translated honestly: <strong>results can buy line-crossing.</strong> From here on, every behavioral standard you state is discounted.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try</div>
+<p>"You're right, and <strong>this is one I failed to hold</strong>. I judged the project couldn't survive without him — that judgment was wrong, and it cost two people."</p>
+<p>"What's already changed: starting this cycle, <strong>behavioral issues raised in skip-level feedback get their own column in calibration and can't be offset by impact</strong>. K's next promotion has to clear that column. This applies to everyone, including me."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>In my last three interview debriefs, how many said "we clicked" rather than "here's the behavior I tested and the evidence"?</li>
+<li>The last person I promoted — can the team say which behavior he stands for? If not, that promotion carried no information.</li>
+<li>Is there someone on my team with strong results who crosses the line, still here? If so, in my system impact outranks behavior.</li>
+<li>Who tests culture in the loop? If every interviewer does, nobody does.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on gender</div>
+<div class="pitfall">
+<ul>
+<li><strong>Leaving the culture interview to "gut feel":</strong> without fixed dimensions, what interviewers measure is similarity.</li>
+<li><strong>Talking culture at hiring but not at promotion:</strong> the team can't see the first and sees all of the second.</li>
+<li><strong>Handling line-crossers only in private:</strong> if the team doesn't know, it didn't happen — a cultural signal exists only when it's seen.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">A note on gender</span>
+Empirically, "culture fit" is close to equivalent to "similar to the interviewer" (Rivera 2012). For women and people from non-dominant backgrounds the damage runs twice: <strong>the reason for rejection can never be stated clearly</strong> ("just didn't feel like a fit" — you can neither appeal it nor improve on it), and <strong>once inside, they're more likely to be expected to fill the culture gap</strong> — running events, onboarding newcomers, sitting on the DEI committee — work with no slot in the perf template. Two operational fixes: rewrite the culture interview as <strong>2–3 fixed behavioral dimensions, one per interviewer, with evidence required in the writeup</strong>; and if you genuinely need someone to fill a culture gap, <strong>run it as a project</strong> — in their goals, with time allocated, counted as impact.
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's rep + a question</div>
+<div class="mini">
+<p><strong>Do:</strong> convert your team's culture interview into 2 fixed behavioral dimensions and require specific evidence in every writeup.</p>
+<p><strong>Reflect:</strong> the last time you called a candidate "not quite a fit" — if you had to write down the behavioral evidence, could you?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Culture Debt: You May Borrow an Exception, but It Needs a Payer and a Due Date
+<span class="en">Culture Debt Needs a Ledger</span></h2>
+<span class="tag">managing exceptions</span><span class="tag">interest</span><span class="tag">how rules die</span>
+</div>
+<div class="section">
+<div class="section-label">The principle, and the source</div>
+<div class="principle">Every "this one's special, let's skip it" is a loan. <strong>Borrowing isn't the mistake; not booking it and not repaying it is.</strong> The interest takes a very concrete form: next time, someone skips it without asking.</div>
+<div class="quote">
+<span class="en">"Shipping first time code is like going into debt… The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt."</span>
+<span class="source">— Ward Cunningham, "The WyCash Portfolio Management System," OOPSLA '92 Experience Report</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scenario</div>
+<div class="scene">
+<div class="setup">Context: two weeks before peak season, a change needs to skip design review and go straight out. The owner comes to you for approval.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The usual move</div>
+<p>"Special case — ship it, be careful next time." No payer, no due date. Three months later the review process actually runs at 40%, and <strong>nobody remembers which exception started the slide</strong>.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: say all of it, then post it in the channel</div>
+<p>"Approved to skip, and <strong>I'm booking it</strong>: I'm the borrower, the due date is Aug 15, and repayment is a retroactive RFC plus a Design Half-Hour talk on <strong>what made it safe to skip this time, and under what conditions it wouldn't be</strong>."</p>
+<p>"This waiver <strong>covers this one change only</strong>; everything else goes through review as usual."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist: interest is invisible, these four are countable</div>
+<ul class="checklist">
+<li><strong>Exception count:</strong> how many skips did I approve last quarter? No number = no ledger.</li>
+<li><strong>Request rate:</strong> do people still come and ask, or do they just skip? <strong>Nobody asking = the rule is dead</strong> and only the corpse is still on the wiki.</li>
+<li><strong>Explanation half-life:</strong> ask someone three months in why the rule exists — can they answer? A rule nobody can justify is the first one sacrificed under pressure.</li>
+<li>Is there a rule I break myself? (A leader's exceptions carry ten times the interest rate.)</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating debt as sin:</strong> a team with no culture debt usually isn't a healthy culture — it's a team not doing anything hard. Borrow, but book it.</li>
+<li><strong>Silent repeal:</strong> if you don't want a rule, repeal it out loud. <strong>An unenforced rule left on the books devalues every other rule</strong> — the highest-interest form of culture debt there is.</li>
+<li><strong>Repaying only after an incident:</strong> that's not repayment, that's collection — and what the team learns is "it only counts when something breaks."</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's rep + a question</div>
+<div class="mini">
+<p><strong>Do:</strong> list every exception you approved this quarter and attach a payer and a due date to each; for the ones you can't repay, formally announce the rule change.</p>
+<p><strong>Reflect:</strong> which rule on your team is everyone breaking while nobody dares say it's already dead?</p>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>Going Deeper</h3>
+<details><summary>Inside a sub-team of twelve, can you build a local culture different from the company's? Where's the boundary?</summary><div>You can, but only in layer one and <strong>part</strong> of layer two. Defaults — review practice, meeting format, on-call rules — are fully yours; incentives are only partly yours, because promotions clear calibration and the company bar wins in the end. The real danger is letting the team believe <strong>layer three</strong> differs too ("we don't play that game here"), then watching it shatter in some promotion cycle and taking your credibility to zero in one shot. Safer: commit only to the layers you can deliver, and state the boundary — "inside the team, this is how we work; at company level the bar is that one, and I'll translate for you."</div></details>
+<details><summary>Is culture's malleability overrated? What actually happens when a new leader arrives to "reshape the culture"?</summary><div>New leaders typically hammer layer one in the first 90 days — meetings, process, vocabulary — because it's fast and visible. But the layer-three assumption ("this place reorgs every 18 months, so don't invest long") not only survives, it gets reinforced by the churn itself. The only thing that rewrites layer three is <strong>one concrete event that contradicts the history</strong>: publicly protecting someone who followed the new rules and took a short-term loss for it. Without that, every layer-one change reads as one more round of noise at the next reorg.</div></details>
+<details><summary>Does "hiring is culture" break down on a team of only senior people whose values are long since set?</summary><div>It doesn't break down, but the lever moves from shaping to <strong>selecting and making explicit</strong>. Senior people won't change their values because of your rituals, but they will follow rules that are <strong>clearly stated and consistently enforced</strong>. So the weight goes on layer-one explicitness (write the defaults down, and write down why) and layer-two consistency, not layer-three assimilation. Conversely, the culture they bring becomes an input to your layer three — that's what culture add actually means, and where the risk sits: you have to tell which imports are additions and which are bad assumptions.</div></details>
+<details><summary>Where does the analogy between culture debt and technical debt fail?</summary><div>Three places. <strong>Who pays the interest:</strong> technical debt is paid by machines and whoever comes next; culture debt is paid by specific people, usually not the borrower — typically the most rule-abiding person leaves first. <strong>Whether it can be rewritten:</strong> technical debt can be cleared in one rewrite; culture debt only amortizes through time and consistency, with a lag (you change the bar, trust takes quarters to return). <strong>Measurability:</strong> technical debt has a visible balance; culture debt only has proxies — exception counts, regretted attrition, the same name recurring in skip-level feedback. Which means you will systematically underestimate it.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 68 · 2026.07.27</footer>
+</div>
+</body>
+</html>
