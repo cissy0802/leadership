@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 69：领导者的内在工作</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.quad,.six{display:grid;gap:8px}
+.quad{grid-template-columns:1fr 1fr}
+.six{grid-template-columns:repeat(3,1fr)}
+.cell{background:#fffaf0;border:1px solid #d8c69f;border-radius:4px;padding:11px 12px;font-size:0.85rem;color:#5c3a18}
+.cell .nm{display:block;font-weight:700;color:#a8702d;font-size:0.79rem;letter-spacing:1px;margin-bottom:4px}
+.cell .nt{display:block;font-size:0.79rem;color:#8a6d3b;margin-top:5px;font-style:italic}
+.cell.hot{background:#f3e9d2;border-color:#a8702d;border-width:2px}
+.cell.cold{background:#efe9dd;border-style:dashed;color:#8a7c62}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.quad,.six{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 69 · 2026.07.28</div>
+<h1>领导者的内在工作：你没处理的部分，团队在替你付账</h1>
+<div class="meta"><span>主题：The Leader's Inner Work</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Everyone carries a shadow, and the less it is embodied in the individual's conscious life, the blacker and denser it is." — C. G. Jung</div>
+</header>
+<div class="intro">
+<strong>与前几篇的分工：</strong>Day 46 讲身体节奏，Day 67 讲注意力分配，Day 22 讲身份不被头衔绑定。本篇往下一层：你的认知误差、你压抑掉的部分、你被触发那 10 秒的默认反应。这些不是私事——它们每天以具体成本出现在团队里：一次不公平的降档、一个你以为在偷懒、其实卡在错配里的下属。四件事：<strong>自知靠外部数据不靠内省</strong>、<strong>阴影会伪装成客观判断</strong>、<strong>正念是协议不是心境</strong>、<strong>倦怠是环境的读数</strong>。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>自知是校准出来的，不是内省出来的
+<span class="en">Self-Awareness Is Calibrated, Not Introspected</span></h2>
+<span class="tag">Eurich 研究</span><span class="tag">What not Why</span><span class="tag">loving critic</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">内省产出的多是<strong>让自己舒服的叙事</strong>；自知的增量几乎全部来自<strong>别人看到的具体行为样本</strong>。把「我为什么会这样」换成「哪一次、你看到了什么」。<strong>升职会压低这个能力</strong>：位置越高，愿意给你原始数据的人越少。</div>
+<div class="quote">
+<span class="en">"Even though most people believe they are self-aware, self-awareness is a truly rare quality: We estimate that only 10%–15% of the people we studied actually fit the criteria."</span>
+<span class="zh">「尽管多数人相信自己有自知之明，自知其实极其稀有：我们估计研究对象里只有 10%–15% 真正符合标准。」</span>
+<span class="source">— Tasha Eurich,「What Self-Awareness Really Is (and How to Cultivate It)」,《Harvard Business Review》2018-01-04（基于《Insight》2017）</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：跨级反馈汇总里出现一条——「不好接近（hard to approach）」。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>反复想「我为什么给人这种感觉？我明明说过有事随时找我」，两小时后得到一个让自己舒服的解释：「大概是我太忙」。<strong>问「为什么」，收到的永远是解释，不是数据。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后：把 why 换成 what，去要一个具体时刻</div>
+<p>找 3 个人（直属、peer、隔一级），问法写死：「我拿到一条『不好接近』。<strong>我不要总体评价，我要一个具体时刻</strong>——最近一次你本想找我却没找，当时我在做什么、你看到什么让你决定算了？」</p>
+<p>拿到的原话可能是：「上周二你戴着耳机，我在门口站了两秒，你抬头看了一眼又低下去了。」<strong>这是可操作数据</strong>；「你有点难接近」不是。</p>
+
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 常设机制：loving critic</div>
+<p>指定一个够在乎你、也敢说难听话的人，授权写死：「看到我做 X 就<strong>当场</strong>说，不挑时间、不用铺垫，我不会记账。」他第一次真说时，<strong>你的反应决定这机制活不活得过一个月。</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我最近一次对自己的判断更新，来自内省还是别人给的行为样本？</li>
+<li>我说得出我的 loving critic 是谁吗？他上次让我不舒服是什么时候？</li>
+<li>升到这个层级后，还有谁的反馈是<strong>不经过滤</strong>到我这的？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「我知道我脾气急」当自知</strong>：知道标签 ≠ 知道触发点。真自知是能预测「下周三那个会上，什么会让我失控」。年度 360 也一样——它告诉你有问题，不告诉你是哪个行为。</li>
+<li><strong>女性视角</strong>：女性收到的反馈系统性更模糊、更偏性格评语（「太强势」「不够温暖」）而非行为与结果（Correll &amp; Simard, HBR 2016）。所以「逼出具体行为样本」对她们价值更高——把无法申辩的标签逼回可改的行为。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>本周找 3 个人，用写死的问法各要一个具体时刻。只记录，不辩解。</p>
+<p><strong>思考：</strong>如果团队要给你贴一个你绝不会给自己贴的标签，最可能是哪个？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>阴影面：你最受不了的那个人，标记着你压抑掉的自己
+<span class="en">The Shadow Leaks Under Pressure</span></h2>
+<span class="tag">Jung 阴影</span><span class="tag">强度落差检查</span><span class="tag">使用说明书</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">阴影是<strong>你判定为不可接受、于是从自我形象里删掉的那部分</strong>。它在压力下有两种泄漏方式：对某类人的过度反应，和把自己的动机读进别人身上。<strong>最危险的形态是它伪装成客观的绩效判断。</strong></div>
+<div class="quote">
+<span class="en">"Everyone carries a shadow, and the less it is embodied in the individual's conscious life, the blacker and denser it is."</span>
+<span class="zh">「每个人都带着一个阴影；它在意识生活中被体现得越少，就越黑、越浓。」</span>
+<span class="source">— C. G. Jung,「Psychology and Religion」(1938),《Collected Works》Vol. 11, §131</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你对组里一位 senior 特别不耐烦——他每次都把方案讲得很完整，在大群频繁同步进展。你自己都觉得反应过头。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>翻译成绩效语言：「他太喜欢表演，实干不够。」然后在校准会上给他降半档。<strong>这句话无法证伪也不需要证据——所以它一路畅通。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后：三步自查，5 分钟做完</div>
+<p><strong>1. 量强度：</strong>「我的不耐是 8/10，他造成的实际损害是 2/10——<strong>多出来的 6 分是我的。</strong>」</p>
+<p><strong>2. 找镜像：</strong>「我被教的是『做了再说』，把『展示』归为不体面。<strong>他做的正是我不允许自己做的事。</strong>」</p>
+<p><strong>3. 剥出真问题：</strong>剩下的是他的同步占了大群过多带宽。于是话变成：「你的同步有价值，但大群频率偏高——改成每周一条汇总发大群、细节走项目频道，行吗？」<strong>可执行、可反驳、不带人格评判。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 给团队一份「我的使用说明书」</div>
+<p>1:1 上说：「<strong>我被临时改需求时反应会过激</strong>，那不是针对你。看到我语速突然变快，可以直接说『你现在反应有点大』——<strong>我不会记账，这是我给你的权限。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我最受不了的那个下属，他的实际损害能量化吗？我的反应强度匹配吗？</li>
+<li>我说得出自己的三个触发点吗——具体到场景，不是「压力大的时候」？</li>
+<li>我最近一次的负面评价里，有没有无法证伪的人格词（「心思重」「爱表现」「不够 mature」）？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>说明书变成免责条款</strong>：「我就是这样，你们担待」——它是给团队的纠错权，不是给自己的豁免。这套自查的目的不是忏悔，是<strong>在阴影变成一次不公平的绩效判断之前拦住它</strong>。</li>
+<li><strong>压抑越彻底，泄漏越难识别</strong>：从不发火的 leader，阴影常走另一条路——冷处理、绕过、悄悄降低评价。代价一样大，且更难申诉。</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">女性视角</span>
+同一句强硬评语，出自女性更容易被读成「情绪化」而不是「有标准」。于是更多人被推向「过度压抑」那条路，泄漏形式变成过度控制与被动疏远——它们在反馈里不会被明说，只会变成一句「和她合作有点累」。可操作的替代：把愤怒转成<strong>书面的、带依据的边界声明</strong>——「这个改动我不批准，理由是 A 和 B；要推翻需要给我 C。」强度保留，却不给对方贴标签的抓手。
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>对你最不耐烦的那个下属做一次强度落差检查，剥掉「多出来的分」再写反馈。</p>
+<p><strong>思考：</strong>你评价里最常出现的那个人格词，若被要求给行为证据，你写得出吗？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>正念领导：在刺激与反应之间插一段协议，不是插一种心境
+<span class="en">Mindfulness Is a Protocol, Not a Mood</span></h2>
+<span class="tag">情绪标注</span><span class="tag">会中协议</span><span class="tag">出处之辨</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">对 leader 来说，正念唯一可交付的东西是：<strong>在被触发的那 10 秒里，你能观察到自己被触发，并执行一个事先写好的动作</strong>。练习在会外，兑现在会内。</div>
+<div class="quote">
+<span class="en">"Mindfulness means paying attention in a particular way: on purpose, in the present moment, and nonjudgmentally."</span>
+<span class="zh">「正念意味着以一种特定的方式留意：有意地、在当下、不评判地。」</span>
+<span class="source">— Jon Kabat-Zinn,《Wherever You Go, There You Are》(1994), p.4</span>
+</div>
+<div class="pitfall" style="margin-top:12px"><strong>出处校验：</strong>「在刺激与回应之间存在一个空间」这句常被署名 Viktor Frankl——<strong>但它不见于他任何已知著作</strong>；Stephen Covey 自述是在图书馆一本作者不详的书里读到的。句子有用，署名别当真。</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：季度评审会上，老板当着 8 个人说：「这个数据我不信，你们团队是不是又选择性汇报了？」你感到血往上冲。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种触发反应，代价对称</div>
+<p><strong>反击：</strong>「这个数我们核过三遍，您不信可以自己看 dashboard。」——接下来 40 分钟全在争数据真伪，你今天真正要的资源一个字没提。</p>
+<p><strong>让步：</strong>「不好意思，我回去再核一下。」——团队三个月的工作，在这一句里被你自己撤回了。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 协议：三步，约 8 秒</div>
+<p><strong>1. 标注（对自己，1 秒）：</strong>「这是被当众质疑触发的羞耻，不是数据问题。」——<strong>给情绪命名会降低它的强度</strong>（affect labeling；Lieberman et al., 2007,《Psychological Science》）。</p>
+<p><strong>2. 买时间（3 秒）：</strong>喝一口水。唯一功能是隔开那 3 秒，且在会议里毫不显眼。</p>
+<p><strong>3. 说事先写好的句式：</strong>「您指的是哪个口径？如果是<strong>去重规则</strong>，我们用的是 X，可以现在打开核；如果是<strong>样本时间窗</strong>，我承认只覆盖了 6 周。您先告诉我是哪一类，我们就不用猜。」——<strong>把一句人身怀疑转成二选一的技术问题，而且是你熟悉的那两个选项。</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我说得出被触发时最先出现的<strong>身体信号</strong>吗（心跳、语速、耳热）？说不出＝协议没有触发器。</li>
+<li>我有没有 2–3 句写死的、被质疑时能直接出口的句子？临场造句在被触发时必然失败。</li>
+<li>我的练习有可交付物吗？如果只是「感觉平静一点」，它还没进入工作。</li>
+<li>高压会开完，我有没有留 5 分钟不排别的事？没留＝情绪残留直接带进下一个会。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「不生气」当目标</strong>：目标是生气时仍按协议行动。要求自己不生气，只会把它推进阴影（卡 2）。</li>
+<li><strong>把过程说出口</strong>：「我需要一点时间平复情绪」在多数工程组织里会被折算成风险。<strong>练习私有，产出公开。</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>写下 3 句被质疑时的应答句式，贴在显示器边缘。</p>
+<p><strong>思考：</strong>你最近一次在会上后悔的那句话，触发器出现在第几秒？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>倦怠是环境的读数，不是韧性的读数
+<span class="en">Burnout Is a Reading on the Environment</span></h2>
+<span class="tag">Maslach 三维度</span><span class="tag">六类错配</span><span class="tag">别把系统问题教练化</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">倦怠有三个可分辨的维度——<strong>耗竭、犬儒、效能感崩塌</strong>——由环境的六类错配产生。听到「我最近很累」，第一动作是<strong>定位哪一格坏了</strong>，不是建议对方休息。</div>
+<div class="quote">
+<span class="en">"Burnout is not a problem of the people themselves but of the social environment in which they work."</span>
+<span class="zh">「倦怠不是人自身的问题，而是他们所处的那个工作环境的问题。」</span>
+<span class="source">— Christina Maslach &amp; Michael P. Leiter,《The Truth About Burnout》(1997)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">六类错配 · 哪几格你真能动</div>
+<div class="frame-diagram">
+<div class="dgm-title">六错配 · 坏掉时听起来像什么</div>
+<div class="six">
+<div class="cell"><span class="nm">工作量</span>「我永远清不完」<span class="nt">部分可动：砍范围比加人快</span></div>
+<div class="cell hot"><span class="nm">控制感</span>「我只是在执行别人的决定」<span class="nt">可动，且最便宜</span></div>
+<div class="cell hot"><span class="nm">回报</span>「做成了也没人知道」<span class="nt">可动：公开归因＋写进 perf</span></div>
+<div class="cell"><span class="nm">共同体</span>「这儿没有能说真话的人」<span class="nt">部分可动：修关系，不是团建</span></div>
+<div class="cell hot"><span class="nm">公平</span>「凭什么是他升」<span class="nt">可动，但要讲真口径</span></div>
+<div class="cell cold"><span class="nm">价值观</span>「我不认为这事该做」<span class="nt">基本不可动：只能明说</span></div>
+</div>
+<div class="dgm-note">深色＝你这一层就能动。请假只对「工作量」有短效，其余五格无效。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一位可靠的下属在 1:1 上说：「我最近特别累，做什么都没意思。」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 不要说</div>
+<p>「你要注意休息，周末别看邮件」／「要不要请两天假？」——把环境问题转成个人问题，暗示他应对能力有毛病。<strong>下次他不会再说了。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：先定位，再谈解法</div>
+<p>「先不急着找解法。我想分清是哪一类：<strong>是活太多做不完，还是做得完但你觉得这事没意义，还是做完了没人认，还是你对怎么做没有话语权？</strong>」（他答：「后两个。」）</p>
+<p>「那休假不解决问题。这两条我能动：<strong>控制感</strong>——下季度这模块的方案由你定，我只在架构评审提意见，不预先给方向；<strong>回报</strong>——上季度那次迁移我没做过公开归因，是我的失误，下周 all-hands 我讲一次并写进你的 perf 材料。<strong>工作量我今年动不了，headcount 冻到 Q4——我不假装能改。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>上一次听到「我很累」，我问的是错配定位，还是直接给了休息建议？</li>
+<li>动不了的那几格，我有没有<strong>明说</strong>动不了？（假装能动＝第二次背叛）</li>
+<li><strong>「反正也改不了」有没有开始出现在我自己嘴里</strong>——那是犬儒维度，不是清醒。</li>
+<li>我有没有一份证据文件？每周一行：这周我做了什么、别人因此发生了什么。</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把倦怠当懒惰</strong>：倦怠是<strong>工作特异</strong>的——他周末做副业依然有精力，那不是耗竭，是错配。</li>
+<li><strong>用福利回应结构问题</strong>：给被六格压坏的人发冥想 app 订阅，传递的是「问题在你的心态」。</li>
+<li><strong>只在人快走时才谈</strong>：那时读数已到底部，他已经在面试——你谈的是挽留，不是修复。</li>
+<li><strong>忽略自己的效能感读数</strong>：manager 的产出滞后 6–12 个月，「我到底有没有价值」是最早出现也最难自查的信号。证据文件在两个时刻救你：自我怀疑期，和晋升材料期。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>把最近一次「我很累」的对话重做一遍：用六格定位，明说哪几格你动不了。</p>
+<p><strong>思考：</strong>如果倦怠是环境的读数，你团队的读数在测量谁？</p>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>把自己的触发点讲清楚，会不会在向上管理里变成弹药？</summary><div>会，所以要区分对象与颗粒度。对下属给原始触发点——他们需要预警权；对能决定你晋升的人，给的应是<strong>「已被管理的弱点 + 机制」</strong>：「我被临时改需求时反应会过激，所以这类会我让 Alex 做第二双眼睛。」裸露的弱点会被折算成风险，配了机制的弱点才被读作成熟度。硬边界只有一条：<strong>不要向评估你的人披露尚无对策的弱点。</strong></div></details>
+<details><summary>「动不了的那几格」诚实告知，会不会摧毁士气？</summary><div>多数情况相反。明确的坏消息比暧昧的希望更能维持信任：后者兑现失败时会被记成<strong>背叛</strong>而不只是失望——背叛不可逆，失望可以。关键是边界具体到理由和时间：「工作量今年动不了，headcount 冻到 Q4；控制感和归因下周就动。」最伤的从来不是坏消息，是承诺你决定不了的事。</div></details>
+<details><summary>阴影理论没有严格实证支持，用它做管理决策靠谱吗？</summary><div>当诊断用不靠谱：Jung 的阴影不是可证伪的构念，只能当启发式。但它导出的那个动作不依赖任何理论——<strong>比较反应强度与实际损害</strong>，落差大就先别下判断。边界很清楚：<strong>只用它审计自己的评价，绝不用它「解释」别人</strong>——那正是投射的新形式。</div></details>
+<details><summary>内在工作会不会变成精致的自我沉溺，占掉本该做事的时间？</summary><div>会，分界线很清楚：内在工作<strong>必须有外部可观察的交付物</strong>——一句改掉的评价、一次没做成的降档、一条新的应答句式、一格被定位的错配。没有交付物的部分就是消费。还有一个可自测的时间比：<strong>花在自省上的时间超过花在收集他人反馈的时间，方向就反了</strong>（回到卡 1）。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 69 · 2026.07.28</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 69: The Leader's Inner Work</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
+.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.quad,.six{display:grid;gap:8px}
+.quad{grid-template-columns:1fr 1fr}
+.six{grid-template-columns:repeat(3,1fr)}
+.cell{background:#fffaf0;border:1px solid #d8c69f;border-radius:4px;padding:11px 12px;font-size:0.85rem;color:#5c3a18}
+.cell .nm{display:block;font-weight:700;color:#a8702d;font-size:0.79rem;letter-spacing:1px;margin-bottom:4px}
+.cell .nt{display:block;font-size:0.79rem;color:#8a6d3b;margin-top:5px;font-style:italic}
+.cell.hot{background:#f3e9d2;border-color:#a8702d;border-width:2px}
+.cell.cold{background:#efe9dd;border-style:dashed;color:#8a7c62}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.quad,.six{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 69 · 2026.07.28</div>
+<h1>The Leader's Inner Work: Your Team Pays for What You Haven't Processed</h1>
+<div class="meta"><span>Topic: The Leader's Inner Work</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"Everyone carries a shadow, and the less it is embodied in the individual's conscious life, the blacker and denser it is." — C. G. Jung</div>
+</header>
+<div class="intro">
+<strong>How this differs from earlier issues:</strong> Day 46 covered physical pacing, Day 67 covered attention allocation, Day 22 covered separating identity from title. This one goes a layer down: <strong>your blind spots, the parts of yourself you've suppressed, your default reaction in the ten seconds after you're triggered</strong>. None of that is private — it shows up as concrete cost in your team every day: one unfair down-level, one report you think is coasting who is actually stuck in a mismatch. Four things: <strong>self-awareness comes from external data, not introspection</strong>; <strong>the shadow disguises itself as objective judgment</strong>; <strong>mindfulness is a protocol, not a mood</strong>; <strong>burnout is a reading on the environment</strong>.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Self-awareness is calibrated, not introspected
+<span class="en">Ask What, Not Why</span></h2>
+<span class="tag">Eurich research</span><span class="tag">What not Why</span><span class="tag">loving critic</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Introspection mostly produces <strong>a story that makes you comfortable</strong>; almost all real gain in self-knowledge comes from <strong>specific behavioral samples other people observed</strong>. Replace "why am I like this" with "which moment, and what did you see." <strong>Promotion erodes this capability</strong>: the higher you sit, the fewer people are willing to hand you raw data.</div>
+<div class="quote">
+<span class="en">"Even though most people believe they are self-aware, self-awareness is a truly rare quality: We estimate that only 10%–15% of the people we studied actually fit the criteria."</span>
+<span class="source">— Tasha Eurich, "What Self-Awareness Really Is (and How to Cultivate It)," <em>Harvard Business Review</em>, Jan 4 2018 (drawing on <em>Insight</em>, 2017)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: your skip-level feedback summary contains one line — "hard to approach."</div>
+<div class="dialog bad">
+<div class="speaker">✗ The usual move</div>
+<p>You turn it over for two hours — "why do I come across that way? I've told them repeatedly to come to me anytime" — and land on an explanation that feels good: "I'm probably just busy and they're being considerate." <strong>Ask "why" and you always get an explanation, never data.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Fixed: swap why for what, and demand a specific moment</div>
+<p>Go to three people (a direct report, a peer, someone a level down). Use a fixed script: "I got a piece of feedback that I'm hard to approach. <strong>I don't want your overall assessment — I want one specific moment.</strong> The last time you meant to come to me and didn't: what was I doing, and what did you see that made you decide not to?"</p>
+<p>What you may get back: "Last Tuesday you had headphones on. I stood in your doorway for two seconds, you glanced up and looked back down." <strong>That is actionable data.</strong> "You're a bit hard to approach" is not.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ A standing mechanism: the loving critic</div>
+<p>Name one person who cares enough about you to say the uncomfortable thing, and make the authorization explicit: "When you see me do X, tell me <strong>on the spot</strong> — no waiting for a good moment, no preamble. I won't hold it against you." The first time they actually do it, <strong>your reaction decides whether the mechanism survives a month.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>My most recent update to my self-image: did it come from introspection, or from a behavioral sample someone gave me?</li>
+<li>Can I name my loving critic? When did they last make me uncomfortable?</li>
+<li>Since I reached this level, whose feedback still reaches me <strong>unfiltered</strong>?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + note for women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "I know I have a short fuse" as self-awareness</strong>: knowing the label ≠ knowing the trigger. Real self-awareness is being able to predict what will set you off in next Wednesday's meeting. Annual 360s have the same limit — they tell you there's a problem, not which behavior it is.</li>
+<li><strong>Note for women</strong>: feedback given to women is systematically vaguer and skews toward personality ("too aggressive," "not warm enough") rather than behavior and results (Correll &amp; Simard, HBR 2016). That makes "force out a specific behavioral sample" worth more here — it pushes an unappealable label back into behavior you can actually change.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> This week, ask three people for one specific moment each, using the fixed script. Record only — don't explain yourself.</p>
+<p><strong>Reflection:</strong> If your team had to give you a label you'd never give yourself, which one would it be?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>The shadow: the person you can least stand marks what you suppressed
+<span class="en">The Shadow Leaks Under Pressure</span></h2>
+<span class="tag">Jungian shadow</span><span class="tag">intensity gap check</span><span class="tag">user manual</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">The shadow is <strong>the part of yourself you judged unacceptable and deleted from your self-image</strong>. Under pressure it leaks two ways: disproportionate reaction to a certain type of person, and reading your own motives into someone else. <strong>Its most dangerous form is disguising itself as an objective performance judgment.</strong></div>
+<div class="quote">
+<span class="en">"Everyone carries a shadow, and the less it is embodied in the individual's conscious life, the blacker and denser it is."</span>
+<span class="source">— C. G. Jung, "Psychology and Religion" (1938), <em>Collected Works</em> Vol. 11, §131</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: one senior engineer on your team irritates you disproportionately — he presents every design in full, and posts progress updates in the big channel constantly. Even you sense your reaction is out of proportion.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The usual move</div>
+<p>Translate it into performance language: "He's too focused on performing, light on real delivery." Then take him down half a level in calibration. <strong>That sentence is unfalsifiable and requires no evidence — which is exactly why nothing stops it.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Fixed: a three-step audit, five minutes</div>
+<p><strong>1. Rate the intensity:</strong> "My irritation is 8/10. The actual damage he causes is 2/10 — <strong>the extra 6 points are mine.</strong>"</p>
+<p><strong>2. Find the mirror:</strong> "I was raised on 'do it first, talk later,' and filed 'visibility' under undignified. <strong>He is doing exactly what I don't allow myself to do.</strong>"</p>
+<p><strong>3. Strip out the real issue:</strong> what's left is that his updates consume too much bandwidth in the main channel. So the sentence becomes: "Your progress updates are valuable, but the frequency in the main channel is too high — one weekly digest there, details in the project channel. Workable?" <strong>Actionable, contestable, no verdict on his character.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Give the team a user manual for you</div>
+<p>In a 1:1: "<strong>I overreact when requirements change on me mid-flight</strong> — that's not about you. If you see my speech speed jump, say it straight: 'your reaction is running hot right now.' <strong>I won't hold it against you. That's a permission I'm giving you.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>The report I can least stand: can I quantify the actual damage? Does my reaction match it?</li>
+<li>Can I name my three triggers — specific to a situation, not "when I'm under pressure"?</li>
+<li>Did my last negative assessment contain an unfalsifiable character word ("political," "showy," "not mature enough")?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + note for women</div>
+<div class="pitfall">
+<ul>
+<li><strong>The manual becomes a liability waiver</strong>: "That's just how I am, bear with me." It's a correction right you grant the team, not an exemption you grant yourself. And the point of this audit isn't confession — it's <strong>stopping the shadow before it becomes one unfair performance call</strong>.</li>
+<li><strong>The more completely it's suppressed, the harder the leak is to spot</strong>: leaders who never lose their temper tend to leak the other way — going cold, routing around someone, quietly lowering their rating. Same cost, and far harder to appeal.</li>
+</ul>
+</div>
+<div class="female">
+<span class="female-label">Note for women</span>
+The same blunt line reads as "emotional" rather than "holding a standard" when a woman says it. That pushes more women down the over-suppression path, where the leak becomes over-control and quiet distancing — neither of which is ever named in feedback; it surfaces as "she's a bit tiring to work with." The workable substitute: convert the anger into a <strong>written, evidenced boundary statement</strong> — "I'm not approving this change; reasons A and B. To overturn it, bring me C." The force is fully preserved, and there's no handle left for a label.
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> Run the intensity-gap check on the report who irritates you most, strip out the "extra points," then write the feedback.</p>
+<p><strong>Reflection:</strong> The character word that shows up most often in your assessments — could you produce behavioral evidence for it on demand?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Mindful leadership: insert a protocol between stimulus and response, not a mood
+<span class="en">Mindfulness Is a Protocol, Not a Mood</span></h2>
+<span class="tag">affect labeling</span><span class="tag">in-meeting protocol</span><span class="tag">check the attribution</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">For a leader, the only deliverable mindfulness produces is this: <strong>in the ten seconds after you're triggered, you can observe that you were triggered, and execute a move you wrote down in advance</strong>. Practice happens outside the meeting; the payoff happens inside it.</div>
+<div class="quote">
+<span class="en">"Mindfulness means paying attention in a particular way: on purpose, in the present moment, and nonjudgmentally."</span>
+<span class="source">— Jon Kabat-Zinn, <em>Wherever You Go, There You Are</em> (1994), p.4</span>
+</div>
+<div class="pitfall" style="margin-top:12px"><strong>Attribution check:</strong> the much-quoted "between stimulus and response there is a space" is routinely attributed to Viktor Frankl — <strong>but it appears in none of his known works</strong>; Stephen Covey said he read it in a library book by an author he could not identify. Useful sentence; don't trust the byline.</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: in the quarterly review, in front of eight people, your boss says: "I don't believe this data. Is your team cherry-picking again?" You feel the blood rise.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two triggered reactions, symmetrical cost</div>
+<p><strong>Counterattack:</strong> "We've checked these numbers three times; if you don't believe them, look at the dashboard yourself." — the next 40 minutes go to litigating data integrity, and the resources you actually came for never get mentioned.</p>
+<p><strong>Capitulation:</strong> "Sorry, I'll go back and re-verify." — three months of your team's work, withdrawn by you in one sentence.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ The protocol: three steps, about 8 seconds</div>
+<p><strong>1. Label it (to yourself, 1 second):</strong> "This is shame triggered by being questioned in public — it isn't a data problem." <strong>Naming an emotion lowers its intensity</strong> (affect labeling; Lieberman et al., 2007, <em>Psychological Science</em>).</p>
+<p><strong>2. Buy time (3 seconds):</strong> take a sip of water. Its only function is to open those three seconds, and it's completely unremarkable in a meeting.</p>
+<p><strong>3. Deliver the pre-written line:</strong> "Which definition are you pointing at? If it's the <strong>dedup rule</strong>, we use X and we can open it right now; if it's the <strong>sample window</strong>, I'll grant that it only covers six weeks. Tell me which one and we don't have to guess." — <strong>that converts a personal suspicion into a two-option technical question, and both options are ones you know cold.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Can I name the <strong>physical signal</strong> that arrives first when I'm triggered (heart rate, speech speed, hot ears)? If not, the protocol has no trigger.</li>
+<li>Do I have 2–3 pre-written lines I can say under challenge? Composing on the spot fails reliably once you're triggered.</li>
+<li>Does my practice have a deliverable? If it only produces "feeling a bit calmer," it hasn't entered the job yet.</li>
+<li>After a high-pressure meeting, do I leave five minutes unscheduled? If not, the residue goes straight into the next meeting.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Making "don't get angry" the goal</strong>: the goal is acting on protocol while angry. Demanding that you not feel it just pushes it into the shadow (Card 2).</li>
+<li><strong>Saying the process out loud</strong>: "I need a moment to settle myself" gets scored as risk in most engineering organizations. <strong>Practice private, output public.</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> Write three response lines for being challenged, and stick them on the edge of your monitor.</p>
+<p><strong>Reflection:</strong> The last thing you said in a meeting and regretted — at what second did the trigger appear?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Burnout is a reading on the environment, not on resilience
+<span class="en">Burnout Is a Reading on the Environment</span></h2>
+<span class="tag">Maslach's three dimensions</span><span class="tag">six mismatches</span><span class="tag">don't coach a system problem</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Burnout has three distinguishable dimensions — <strong>exhaustion, cynicism, collapsed sense of efficacy</strong> — produced by six kinds of mismatch with the environment. When you hear "I'm exhausted lately," your first move is <strong>locating which cell broke</strong>, not recommending rest.</div>
+<div class="quote">
+<span class="en">"Burnout is not a problem of the people themselves but of the social environment in which they work."</span>
+<span class="source">— Christina Maslach &amp; Michael P. Leiter, <em>The Truth About Burnout</em> (1997)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Six mismatches · which cells you can actually move</div>
+<div class="frame-diagram">
+<div class="dgm-title">The six mismatches · what each sounds like when it breaks</div>
+<div class="six">
+<div class="cell"><span class="nm">Workload</span>"I will never get to the bottom of it"<span class="nt">partly movable: cutting scope beats adding people</span></div>
+<div class="cell hot"><span class="nm">Control</span>"I'm just executing someone else's decisions"<span class="nt">movable, and cheapest</span></div>
+<div class="cell hot"><span class="nm">Reward</span>"I shipped it and nobody knows"<span class="nt">movable: public attribution + written into perf</span></div>
+<div class="cell"><span class="nm">Community</span>"There's nobody here I can tell the truth to"<span class="nt">partly movable: repair one relationship, not a team offsite</span></div>
+<div class="cell hot"><span class="nm">Fairness</span>"Why did he get promoted"<span class="nt">movable, but only with the real criteria</span></div>
+<div class="cell cold"><span class="nm">Values</span>"I don't think this should be built"<span class="nt">largely immovable: say so plainly</span></div>
+</div>
+<div class="dgm-note">Dark = movable at your level. Time off has a short effect on Workload only, and none on the other five.</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: a dependable report says in a 1:1, "I've been really exhausted lately. Nothing feels worth doing."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Don't say</div>
+<p>"Make sure you rest — no email on weekends" / "Do you want to take a couple of days off?" — that converts an environment problem into a personal one and implies his coping is defective. <strong>He won't raise it again.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: locate first, solve second</div>
+<p>"Let's not jump to fixes. I want to separate which kind this is: <strong>too much work to finish, or finishable but you don't think it matters, or finished but nobody notices, or you have no say in how it's done?</strong>" (He answers: "the last two.")</p>
+<p>"Then time off won't fix it. Here's what I can move: <strong>control</strong> — next quarter the technical approach for this module is yours; I'll comment at architecture review and won't pre-set the direction. <strong>Reward</strong> — I never publicly attributed last quarter's migration to you. That was my failure; I'll say it at next week's all-hands and write it into your perf packet. <strong>Workload I can't move this year — headcount is frozen until Q4, and I won't pretend otherwise.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Last time I heard "I'm exhausted," did I locate the mismatch, or go straight to advising rest?</li>
+<li>For the cells I can't move, did I <strong>say so explicitly</strong>? (Pretending you can move them buys a second betrayal.)</li>
+<li>Has <strong>"nothing's going to change anyway" started coming out of my own mouth</strong>? That's the cynicism dimension, not clear-sightedness.</li>
+<li>Do I keep an evidence file? One line a week: what I did, and what happened to someone else because of it.</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Reading burnout as laziness</strong>: burnout is <strong>work-specific</strong> — if he still has energy for a side project on weekends, that isn't exhaustion, it's mismatch.</li>
+<li><strong>Answering a structural problem with a perk</strong>: handing a meditation app subscription to someone crushed by those six cells communicates "the problem is your mindset."</li>
+<li><strong>Only having the conversation when they're about to leave</strong>: by then the reading has bottomed out and they're already interviewing — you're negotiating a save, not a repair.</li>
+<li><strong>Ignoring your own efficacy reading</strong>: a manager's output lags 6–12 months, which makes "am I actually worth anything" the earliest signal and the hardest to self-check. The evidence file saves you at two moments: the self-doubt stretch, and promotion-packet season.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> Redo your last "I'm exhausted" conversation: locate it in the six cells, and say plainly which ones you can't move.</p>
+<p><strong>Reflection:</strong> If burnout is a reading on the environment, whom is your team's reading measuring?</p>
+</div>
+</div>
+</div>
+<!-- ============ Deep ============ -->
+<div class="deep">
+<h3>Going deeper</h3>
+<details><summary>Does spelling out your triggers become ammunition when managing up?</summary><div>It can, so separate audience from granularity. Reports get the raw trigger — they need the early warning. Anyone who decides your promotion gets <strong>"a managed weakness plus its mechanism"</strong>: "I overreact to mid-flight requirement changes, so in those meetings I have Alex act as my second pair of eyes." A bare weakness gets scored as risk; a weakness with a mechanism reads as maturity. One hard boundary: <strong>never disclose a weakness you don't yet have a countermeasure for to the people evaluating you.</strong></div></details>
+<details><summary>Does naming the cells you can't move destroy morale?</summary><div>Usually the opposite. Definite bad news sustains trust better than vague hope, because hope that fails to land is recorded as <strong>betrayal</strong> rather than mere disappointment — and betrayal doesn't reverse. What matters is that the boundary carries a reason and a date: "Workload can't move this year, headcount is frozen until Q4; control and attribution move next week." What damages people isn't bad news, it's a promise you don't control.</div></details>
+<details><summary>Shadow theory has no rigorous empirical support. Is it sound to make management decisions with it?</summary><div>Not as a diagnosis: Jung's shadow isn't a falsifiable construct, only a heuristic. But the action it yields depends on no theory at all — <strong>compare reaction intensity against actual damage</strong>, and when the gap is large, withhold the judgment. The boundary is clean: <strong>use it to audit your own assessments, never to "explain" other people</strong> — that is just projection in a new form.</div></details>
+<details><summary>Can inner work turn into refined self-indulgence that eats time you should spend working?</summary><div>It can, and the dividing line is clear: inner work <strong>must produce an externally observable deliverable</strong> — one assessment rewritten, one down-level not made, one new response line, one mismatch located. Anything without a deliverable is consumption. There's also a ratio you can self-check: <strong>if you spend more time on introspection than on collecting other people's feedback, the direction is already inverted</strong> (back to Card 1).</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 69 · 2026.07.28</footer>
+</div>
+</body>
+</html>
