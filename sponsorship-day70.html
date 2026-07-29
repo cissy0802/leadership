@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 70：赞助不掉线</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.tl-label{font-size:0.78rem;color:#8a6d3b;letter-spacing:1px;margin:12px 0 6px;font-weight:700}
+.tl-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.bar{border-radius:3px;padding:9px 7px;font-size:0.79rem;text-align:center;color:#5c3a18;line-height:1.45}
+.bar b{display:block;font-size:0.74rem;letter-spacing:0.5px;margin-bottom:3px;opacity:0.85}
+.bar.s4{background:#a8702d;color:#fffaf0}
+.bar.s3{background:#c99a5e;color:#fffaf0}
+.bar.s2{background:#e0c9a0}
+.bar.s1{background:#efe6d3;color:#8a7c62}
+.bar.r1{background:#f5ece4;color:#8a7c62}
+.bar.r2{background:#e8bfa4}
+.bar.r3{background:#d4906a;color:#fff}
+.bar.r4{background:#b85c3a;color:#fff}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.tl-row{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 70 · 2026.07.29</div>
+<h1>赞助不掉线：变革死在赞助人第六周的日历上</h1>
+<div class="meta"><span>主题：Executive Sponsorship</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Active and visible executive sponsorship is the top contributor to change success." — Prosci, Best Practices in Change Management</div>
+</header>
+<div class="intro">
+<strong>与前几篇的分工：</strong>Day 8 讲没有职权时怎么横向推动，Day 9 讲怎么影响老板。本篇只讲一件事：当变革要跨团队落地，<strong>决定成败的不是你的说服力，是赞助人的日程表</strong>。四件事：<strong>赞助是可排期的工作量、不是一句背书</strong>、<strong>衰减发生在第 6–12 周</strong>、<strong>「中层在挡」多半是激励错位</strong>、<strong>吸收能力有硬上限</strong>。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>赞助是一份可排期的工作量，不是一句背书
+<span class="en">Sponsorship Is a Workload, Not an Endorsement</span></h2>
+<span class="tag">Prosci 第一因子</span><span class="tag">不可代理</span><span class="tag">带日期的三件事</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">Prosci 历次《Best Practices in Change Management》研究里，<strong>「积极且可见的高管赞助」始终是变革成功的第一贡献因子</strong>，被提及频率约为第二名的三倍；「中层管理者的参与」只排到第七位上下。实际含义：跨团队的事推不动时，<strong>你缺的通常不是执行力，是赞助人的日程</strong>。</div>
+<div class="quote">
+<span class="en">"Active and visible executive sponsorship is the top contributor to change success."</span>
+<span class="zh">「积极且可见的高管赞助，是变革成功的首要贡献因子。」</span>
+<span class="source">— Prosci,《Best Practices in Change Management》（该结论自 1998 年首版起在历版研究中稳定居首）</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你要推一个跨 5 个团队的存储层迁移。评审会上 VP 说：「我完全支持，需要什么随时找我。」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「好的，谢谢支持。」回去自己推。<strong>「随时找我」是撒手（abdication）的标准形态</strong>——责任被平移回你，外观却和支持一模一样，所以三个月后你才发现没人在接。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后：当场把「支持」翻译成三件带日期的事</div>
+<p>「谢谢。我把『支持』拆成三件，您看哪几件能接：<br/><strong>① 发声</strong>：8/5 全员会上由<strong>您</strong>（不是我）宣布这是 H2 三个 must-win 之一，讲清不做的代价；<br/><strong>② 背书</strong>：给 5 位团队负责人的启动邮件由您署名，初稿我写；<br/><strong>③ 仲裁</strong>：每两周 15 分钟，只处理我推不动的跨团队冲突，首次 8/12。」<br/><strong>把开放式的善意压成带日期、带署名的动作，是赞助能否落地的分界线。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 若他只肯接第 ① 件</div>
+<p>「那我按『有发声、无仲裁』重排期：跨团队冲突的解决周期从 3 天变 3 周，Q3 里程碑后移两周。」<strong>不是要挟，是把赞助缺口的成本当场记在明处</strong>——不记，它最后会被记成你的执行力问题。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我说得出赞助人未来 90 天要出场的三个场合、各在哪一天吗？</li>
+<li>他上一次为这件事真正<strong>花掉政治资本</strong>是什么时候、对着谁？</li>
+<li>如果他下个月调岗，我有第二赞助人吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「不反对」当赞助</strong>：高层的沉默一律被读作「这事没那么重要」。赞助的最小可见单位是<strong>他当着别人的面替你做一次取舍</strong>。</li>
+<li><strong>挑职级最高的人当赞助人</strong>：效力来自他对<strong>受影响团队</strong>的实际权力，不是 title。</li>
+<li><strong>女性视角</strong>：Ibarra 等人指出，女性得到的更多是 mentorship（建议时间），男性得到的更多是 sponsorship（公开背书与资源投注），两者常被混为一谈（Herminia Ibarra, Nancy Carter, Christine Silva,「Why Men Still Get More Promotions Than Women」,《HBR》2010-09）。差别只在一句：约的是「想听听您的建议」，还是「请您 8/5 会上具名宣布」。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>把最重要的那项变革写成一页「赞助人排期」：三件事、三个日期、署名人写死，本周发出去，让他只需回 yes/no。</p>
+<p><strong>思考：</strong>你现在推的事，如果赞助人明天起什么都不做，多久会有人发现？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>赞助衰减：剪刀差出现在第 6–12 周
+<span class="en">Sponsor Decay Kills It in Week Six</span></h2>
+<span class="tag">衰减曲线</span><span class="tag">预置出场</span><span class="tag">只给决定不给周报</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">赞助可见度在 kickoff 当天最高，此后单调下降；阻力却要等到<strong>人们真被要求改变日常动作</strong>时才到峰值——通常是 kickoff 后 6 到 12 周。<strong>两条线交叉的那一格，就是转型死掉的地方。</strong></div>
+<div class="quote">
+<span class="en">"Transformation is impossible unless hundreds or thousands of people are willing to help, often to the point of making short-term sacrifices."</span>
+<span class="zh">「除非成百上千的人愿意帮忙、甚至愿意做出短期牺牲，否则转型不可能发生。」</span>
+<span class="source">— John P. Kotter,「Leading Change: Why Transformation Efforts Fail」,《Harvard Business Review》1995 年 3–4 月号（后收入《Leading Change》1996）</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">赞助衰减剪刀差</div>
+<div class="tl-label">赞助可见度（不干预就自然衰减）</div>
+<div class="tl-row">
+<div class="bar s4"><b>第 0–2 周</b>kickoff 高峰</div>
+<div class="bar s3"><b>第 3–5 周</b>偶尔提及</div>
+<div class="bar s2"><b>第 6–12 周</b>已转向新议题</div>
+<div class="bar s1"><b>第 13 周起</b>只在复盘出现</div>
+</div>
+<div class="tl-label">阻力（行为真被要求改变时才到峰值）</div>
+<div class="tl-row">
+<div class="bar r1">口头支持</div>
+<div class="bar r2">排期开始冲突</div>
+<div class="bar r3">「先做完本季 feature」</div>
+<div class="bar r4">静默不做</div>
+</div>
+<div class="dgm-note">交叉区在第 6–12 周：赞助最弱、阻力最强。把出场排进这一段，而不是 kickoff。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：迁移进入第 8 周，两个团队开始「先做完这季度的 feature 再说」。你去找赞助人。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「进度有点落后，可能需要您再强调一下重要性。」<strong>模糊、且把判断责任推回给他</strong>——一句「下次会上提一句」就能打发，你还觉得自己已经升级过了。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后：报两个卡点，各附一个待他拍的决定</div>
+<p>「两个卡点，各需要您一个决定。<strong>A 团队</strong>把迁移排在 feature 之后——需要您在下周 staff meeting 上说明先后，一句话即可。<strong>B 团队</strong>的 tech lead 认为方案有技术风险，<strong>这不是阻力，是真问题</strong>，我需要您批两周 spike。<strong>前者是您的事，后者是我的事，我分开报。</strong>」</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 机制：kickoff 当天就把衰减检查排进他的日历</div>
+<p>三次 15 分钟，定在第 6、12、20 周，标题写死「本期需要您做的一个决定」。<strong>议程永远只有一项，没有决定就取消。</strong>赞助带宽被状态更新吃光，真要仲裁时就调不动了。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>赞助人上一次<strong>公开</strong>提到这件事，是几周前？</li>
+<li>未来 8 周他的日历上，有没有已排定的、与这件事相关的出场？</li>
+<li>我上次递给他的是状态更新，还是一个待拍的决定？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>用周报维持存在感</strong>：注意力预算固定，被例行同步吃光后，剩不下用来仲裁的那部分。</li>
+<li><strong>把技术异议归类成阻力压下去</strong>：最贵的错误。用赞助权威碾过真问题，代价会在上线时以事故形式收回来，而且从此没人再提异议（呼应 Day 7、Day 21）。<strong>分辨方法：让他把担心写成可验证的失败场景</strong>——写得出的是技术问题，写不出的才是排期冲突。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>打开日历，给最重要的那件事预置第 6、12、20 周三次赞助同步。</p>
+<p><strong>思考：</strong>如果赞助人只剩三次出场机会，你会花在哪三周？为什么不是 kickoff？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>「中层在挡」是一个没有出处的诊断
+<span class="en">The "Frozen Middle" Is Misaligned Incentives</span></h2>
+<span class="tag">frozen middle 之辨</span><span class="tag">激励先于动员</span><span class="tag">抄送升级</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">「冻结的中层（frozen middle）」流传极广，却<strong>几乎找不到可靠出处，也缺乏实证支持</strong>；可查的证据方向相反——Tabrizi 研究 56 个企业转型后发现，<strong>中层深度参与的转型成功率更高</strong>（「The Key to Change Is Middle Management」,《HBR》2014-10-28）。你看到的「中层阻挡」多半是<strong>激励错位下的理性反应</strong>：他的考核仍只计旧指标。<strong>先对齐激励再动员，否则你是在要求一个人自愿降低自己的绩效评分。</strong></div>
+<div class="quote">
+<span class="en">"Tell me how you measure me, and I will tell you how I will behave."</span>
+<span class="zh">「告诉我你怎么考核我，我就告诉你我会怎么做事。」</span>
+<span class="source">— Eliyahu M. Goldratt,《The Haystack Syndrome》(1990)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你需要 peer manager Ken 的两个人做迁移适配。他说：「我们这季度腾不出人。」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 不要说</div>
+<p>「这是公司 H2 的战略优先级。」<strong>用权威压 peer 的两个后果</strong>：他表面同意、实际派最弱的人；你欠下一笔以后要还的人情债。更关键的是——<strong>他没说谎，他的 Q3 目标里确实没有这一项。</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：先验证激励，再谈资源</div>
+<p>「先不谈优先级，我确认一件事：<strong>你 Q3 的考核里，这次迁移算在哪一项？</strong>」<br/>他若说「不算」——「那你挡我是对的，换我也挡，我不该找你要人。两条路：我找 Sandy 把它写进你 Q3 目标；或者把适配拆成一条可交付、由我这边计入。<strong>你选哪个？</strong>」</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 升级邮件（抄送 Ken，不背着他）</div>
+<p>「Sandy：迁移需要 Platform 组约 2 人月，Ken 的 Q3 目标里没有这一项——<strong>这不是配合问题，是目标问题</strong>。两个解法：(a) 把这条加进 Platform 的 Q3 目标；(b) 我方接下、Ken 只做 review。<strong>我建议 (a)，因为 (b) 会让适配质量依赖我们不熟悉的代码。</strong>请您裁一下。」</p>
+<p><strong>抄送当事人是分界线：摆到台面上，你解决的是问题；背着他，你制造的是敌人。</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我说得出这位 peer 本季度被考核的三项指标吗？我的诉求落在哪一项？</li>
+<li>我要的是他的<strong>人</strong>，还是他的<strong>目标</strong>？（要人是战术，改目标才是解法）</li>
+<li>升级的时候，我抄送当事人了吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>贴标签本身就是成本</strong>：「中层在挡」一进入你的叙事，你就停止排查真原因；这话还一定会传到当事人耳里，把可谈拢的目标冲突升级成人格冲突。</li>
+<li><strong>越过 peer 直接找他的下属</strong>：短期见效，长期失去这条线上所有非正式信息——而那正是你提前发现下一次冲突的唯一来源。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>挑一个你归为「推不动」的 peer，查他本季度的考核指标，看你的诉求落在哪一项。落不到就停止动员，转去改目标。</p>
+<p><strong>思考：</strong>你自己此刻有没有正在「合理地阻挡」某件事？是不是因为它没写进你的目标？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>变革饱和：吸收能力比 headcount 更早耗尽
+<span class="en">Change Saturation Is the Real Constraint</span></h2>
+<span class="tag">Gartner 数据</span><span class="tag">吸收账</span><span class="tag">向下赞助</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">2016 年一名员工平均经历 2 项计划内的组织级变革，2022 年是 10 项；同期「愿意支持变革」的比例从 74% 跌到 38%。<strong>吸收能力有硬上限</strong>，越过之后再加沟通只会加速疲劳。你要管的不只是自己发起的那一件，<strong>是团队此刻同时被要求改变的总数</strong>——这个数字通常只有你数得出来。</div>
+<div class="quote">
+<span class="en">"The average employee experienced 10 planned enterprise changes in 2022 — up from two in 2016."</span>
+<span class="zh">「2022 年一名普通员工经历了 10 项计划内的组织级变革，而 2016 年只有 2 项。」</span>
+<span class="source">— Cian Ó Móráin &amp; Peter Aykens（Gartner）,「Employees Are Losing Patience With Change Initiatives」,《Harvard Business Review》2023 年 5–6 月号</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：季度规划会上，skip-level 老板说：「迁移继续推，Q3 还要落地新的 oncall 制度和新的绩效流程。」三件都要求团队改日常动作。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见做法</div>
+<p>「明白，我们会尽力。」<strong>结果是三件各推进 40%</strong>：年底一件都没落地，团队的记忆是「折腾一整年，什么都没成」——这会让下一次变革的启动成本翻倍。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后：交出一张吸收账，让排序发生在会上而不是私下</div>
+<p>「三件我都同意做，但先说明吸收上限：<strong>团队 Q3 只能承接一项『要求所有人改日常行为』的变革</strong>，另外两项要么排到 Q4、要么降级为只影响 2 人的试点。我建议：迁移（有外部依赖，最不可延）→ oncall（先 2 人试点）→ 绩效流程（与 Q4 周期天然对齐）。<strong>顺序您可以改，我照办；但三件并行我不会答应，那等于三件都不会发生。</strong>」</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 对团队：赞助的向下版本</div>
+<p>「Q3 你们只需真正改一件事：迁移。另外两件我已争取到 Q4 或只做试点。<strong>有人来找你们要这两件，转给我。</strong>」——<strong>替团队挡住变革流量，和替项目争取高管出场，是同一件事的两个方向。</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我团队此刻同时被要求改变行为的事项，我列得出来吗？超过 2 项了吗？</li>
+<li>我上一次替团队<strong>推掉或推迟</strong>一项变革，是什么时候？</li>
+<li>新增一项之前，我明确停掉或延后了哪一项？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>把沟通量当解药</strong>：饱和状态下加沟通只会加速疲劳。那篇 HBR 的结论正相反——减少同时在跑的变革数，并让员工在「怎么实施」上有真实发言权。</li>
+<li><strong>只数自己发起的变革</strong>：员工感受到的是总量，含 HR、财务、合规发起的那些。全记进账，否则你会以为自己只提了个很小的要求。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>列出团队 Q3 同时在跑的全部变革（含其他部门发起的）。超过两项，就带这张表去找老板要一个排序。</p>
+<p><strong>思考：</strong>你团队上一次「改完了、并且留下来了」的变革是哪一件？它和现在这几件有何结构差异？</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>赞助人就是不给赞助，怎么办？</summary><div>三步。<strong>先假设是带宽而非意愿</strong>：把要求压到「15 分钟、一个决定」，很多不支持只是没被排进日程。<strong>仍不动就换人</strong>：效力来自对受影响团队的实际权力，不必是最高职级。<strong>都不行就重新评估这件事该不该做</strong>——没有赞助的跨团队变革不是勇敢，是自费给组织做实验，成本由你的团队承担。此时降级为「本团队内部的改进」通常更聪明：范围小了，但至少会真的发生。</div></details>
+<details><summary>把目标冲突升级给共同上级，会不会被打上「爱告状」的标签？</summary><div>取决于三点：抄没抄送、说的是问题还是人、有没有带方案。抄送当事人 + 只描述目标错位 + 给两个选项并推荐一个，读起来是替上级省时间；背着人 + 描述对方动机 + 只抛问题，才是告状。第四个变量是频率：一季度一次是负责，一个月三次是你在用上级替代自己的影响力。</div></details>
+<details><summary>这套东西在扁平组织或小公司还成立吗？</summary><div>成立，形式不同。赞助的本质是<strong>有人愿意为它花掉自己的政治资本</strong>，8 人公司和 8 万人公司一样。规模真正改变的是<strong>衰减速度</strong>：层级越多、路径越长，信号衰减越快，所以大公司必须把可见度做成排期与署名，小公司靠创始人在周会上连提四周往往就够。小公司的反向风险是赞助过度集中——创始人一转向，整件事当天归零。</div></details>
+<details><summary>「先对齐激励再动员」会不会把所有协作都变成交易？</summary><div>有这个风险，代价也真实：把每件事都翻译成 KPI，会挤掉靠职业良心完成的工作，长期削弱自愿协作。分界线很具体——<strong>跨团队、持续数月、且会显著影响对方绩效评分的事，必须先对齐激励</strong>；一次性的、几小时的忙，用互惠和关系就够。只问一句：<strong>这件事会不会让他在自己的评估里变难看？</strong>会，就去改目标；不会，就直接开口。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 70 · 2026.07.29</footer>
+</div>
+</body>
+</html>

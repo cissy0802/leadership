@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 70: Sponsorship That Does Not Fade</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.tl-label{font-size:0.78rem;color:#8a6d3b;letter-spacing:1px;margin:12px 0 6px;font-weight:700}
+.tl-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.bar{border-radius:3px;padding:9px 7px;font-size:0.79rem;text-align:center;color:#5c3a18;line-height:1.45}
+.bar b{display:block;font-size:0.74rem;letter-spacing:0.5px;margin-bottom:3px;opacity:0.85}
+.bar.s4{background:#a8702d;color:#fffaf0}
+.bar.s3{background:#c99a5e;color:#fffaf0}
+.bar.s2{background:#e0c9a0}
+.bar.s1{background:#efe6d3;color:#8a7c62}
+.bar.r1{background:#f5ece4;color:#8a7c62}
+.bar.r2{background:#e8bfa4}
+.bar.r3{background:#d4906a;color:#fff}
+.bar.r4{background:#b85c3a;color:#fff}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.tl-row{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 70 · 2026.07.29</div>
+<h1>Sponsorship That Doesn't Fade: Change Dies on Your Sponsor's Week-Six Calendar</h1>
+<div class="meta"><span>Topic: Executive Sponsorship</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"Active and visible executive sponsorship is the top contributor to change success." — Prosci, Best Practices in Change Management</div>
+</header>
+<div class="intro">
+<strong>How this differs from earlier issues:</strong> Day 8 covered horizontal influence without authority; Day 9 covered managing up. This one is about a single thing: when a change has to land across teams, <strong>what decides the outcome is not your persuasiveness — it's your sponsor's calendar</strong>. Four moves: <strong>sponsorship is a schedulable workload, not an endorsement</strong>; <strong>decay hits in weeks 6–12</strong>; <strong>"the middle is blocking" is usually misaligned incentives</strong>; <strong>absorption capacity has a hard ceiling</strong>.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Sponsorship is a schedulable workload, not an endorsement
+<span class="en">Turn Goodwill Into Dated Commitments</span></h2>
+<span class="tag">Prosci #1 factor</span><span class="tag">non-delegable</span><span class="tag">three dated asks</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Across every iteration of Prosci's <em>Best Practices in Change Management</em>, <strong>"active and visible executive sponsorship" has been the top contributor to change success</strong> — cited roughly three times as often as the runner-up; "middle-manager engagement" lands around seventh. The practical reading: when a cross-team effort won't move, <strong>what you're short of usually isn't execution, it's your sponsor's calendar</strong>.</div>
+<div class="quote">
+<span class="en">"Active and visible executive sponsorship is the top contributor to change success."</span>
+<span class="source">— Prosci, <em>Best Practices in Change Management</em> (this finding has ranked first in every edition since the first study in 1998)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: you're driving a storage-layer migration across 5 teams. In the review, your VP says: "You have my full support — come find me if you need anything."</div>
+<div class="dialog bad">
+<div class="speaker">✗ What most people do</div>
+<p>"Great, thanks for the support" — then go push it alone. <strong>"Come find me" is textbook abdication</strong>: responsibility slides back to you while looking exactly like backing, so it takes three months before you notice nobody was ever holding it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: convert "support" into three dated commitments on the spot</div>
+<p>"Thank you. Let me break 'support' into three specific items — tell me which ones you'll take:<br/><strong>① Voice</strong>: at the Aug 5 all-hands, <strong>you</strong> (not me) announce this as one of three H2 must-wins, and name the cost of not doing it;<br/><strong>② Signature</strong>: the kickoff email to the 5 team leads goes out under your name — I'll draft it;<br/><strong>③ Arbitration</strong>: 15 minutes every two weeks, only for cross-team conflicts I can't move, first one Aug 12."<br/><strong>Compressing open-ended goodwill into dated, signed actions is the line between sponsorship that lands and sponsorship that doesn't.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ If he'll only take item ①</div>
+<p>"Then I'll re-plan on 'voice, no arbitration': cross-team conflict resolution goes from 3 days to 3 weeks, and the Q3 milestone moves out two weeks." <strong>Not a threat — it puts the cost of the sponsorship gap on the record now</strong>. Leave it off the record and it eventually gets recorded as your delivery problem.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Can I name three specific occasions in the next 90 days where my sponsor appears — and the date of each?</li>
+<li>When did he last actually <strong>spend political capital</strong> on this, and in front of whom?</li>
+<li>If he moves roles next month, do I have a second sponsor?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + note for women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "not objecting" as sponsorship</strong>: silence from a senior leader is always read as "this isn't that important." The smallest visible unit of sponsorship is <strong>him making a tradeoff for you in front of other people</strong>.</li>
+<li><strong>Picking the highest-ranking person available</strong>: the power that matters is his real authority over the <strong>affected teams</strong>, not his title.</li>
+<li><strong>For women</strong>: Ibarra and colleagues found women receive more mentorship (advice time) while men receive more sponsorship (public backing and resource commitment) — and the two get conflated (Herminia Ibarra, Nancy Carter, Christine Silva, "Why Men Still Get More Promotions Than Women," <em>HBR</em>, Sept 2010). The operational difference is one sentence: are you booking "I'd value your advice," or "please announce this under your name on Aug 5"?</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> write your most important change effort into a one-page "sponsor schedule": three items, three dates, signatory fixed. Send it this week so all he has to do is answer yes/no.</p>
+<p><strong>Reflection:</strong> on what you're driving right now — if your sponsor did nothing from tomorrow on, how long before anyone noticed?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Sponsor decay: the scissors open in weeks 6–12
+<span class="en">Sponsor Decay Kills It in Week Six</span></h2>
+<span class="tag">decay curve</span><span class="tag">pre-booked appearances</span><span class="tag">decisions, not status</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Sponsor visibility peaks on kickoff day and declines monotonically after. Resistance, by contrast, only peaks when <strong>people are actually asked to change their daily behavior</strong> — typically 6 to 12 weeks after kickoff. <strong>The cell where those two lines cross is where transformations die.</strong></div>
+<div class="quote">
+<span class="en">"Transformation is impossible unless hundreds or thousands of people are willing to help, often to the point of making short-term sacrifices."</span>
+<span class="source">— John P. Kotter, "Leading Change: Why Transformation Efforts Fail," <em>Harvard Business Review</em>, March–April 1995 (later in <em>Leading Change</em>, 1996)</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">THE SPONSOR-DECAY SCISSORS</div>
+<div class="tl-label">Sponsor visibility (decays on its own if left alone)</div>
+<div class="tl-row">
+<div class="bar s4"><b>Weeks 0–2</b>kickoff peak</div>
+<div class="bar s3"><b>Weeks 3–5</b>occasional mentions</div>
+<div class="bar s2"><b>Weeks 6–12</b>moved on to new topics</div>
+<div class="bar s1"><b>Week 13+</b>reappears at the postmortem</div>
+</div>
+<div class="tl-label">Resistance (peaks only when behavior must actually change)</div>
+<div class="tl-row">
+<div class="bar r1">verbal support</div>
+<div class="bar r2">scheduling starts to clash</div>
+<div class="bar r3">"after this quarter's features"</div>
+<div class="bar r4">silent non-compliance</div>
+</div>
+<div class="dgm-note">The crossing zone is weeks 6–12: sponsorship weakest, resistance strongest. Book the appearances into that stretch, not into kickoff.</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: week 8 of the migration, and two teams start saying "after we finish this quarter's features." You go to your sponsor.</div>
+<div class="dialog bad">
+<div class="speaker">✗ What most people do</div>
+<p>"We're running a bit behind — it might help if you reinforced the importance again." <strong>Vague, and it hands the judgment call back to him</strong>. "Sure, I'll mention it next time" disposes of you, and you still feel like you escalated.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: two blockers, each with one decision for him to make</div>
+<p>"Two blockers, each needs one decision from you. <strong>Team A</strong> has sequenced migration behind features — I need you to state the ordering at next week's staff meeting; one sentence is enough. <strong>Team B</strong>'s tech lead believes the design carries real technical risk — <strong>that isn't resistance, it's a genuine problem</strong> — I need you to approve a two-week spike. <strong>The first is yours to own, the second is mine; I'm reporting them separately.</strong>"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Mechanism: book the decay checks on kickoff day itself</div>
+<p>Three 15-minute slots at weeks 6, 12 and 20, with a fixed title: "One decision needed from you this cycle." <strong>The agenda is always exactly one item; if there's no decision, cancel.</strong> Once status updates have eaten the sponsor's bandwidth, it's not there when you actually need arbitration.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>How many weeks ago did my sponsor last mention this <strong>publicly</strong>?</li>
+<li>Over the next 8 weeks, is there anything already on his calendar tied to this effort?</li>
+<li>Was the last thing I handed him a status update, or a decision waiting to be made?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + note for women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Using weekly reports to stay present</strong>: the attention budget is fixed — once routine syncs consume it, there's nothing left for arbitration.</li>
+<li><strong>Filing a technical objection as resistance and overruling it</strong>: the most expensive mistake here. Steamrolling a real problem with borrowed authority gets repaid as an incident at launch, and nobody raises an objection again (see Day 7 and Day 21). <strong>The test: ask him to write the worry down as a falsifiable failure scenario</strong> — if he can, it's a technical problem; if he can't, it's a scheduling conflict.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> open your calendar and pre-book weeks 6, 12 and 20 sponsor syncs for your most important effort.</p>
+<p><strong>Reflection:</strong> if your sponsor had only three appearances left, which three weeks would you spend them on — and why not kickoff?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>"The middle is blocking" is a diagnosis with no source
+<span class="en">The "Frozen Middle" Is Misaligned Incentives</span></h2>
+<span class="tag">frozen-middle myth</span><span class="tag">incentives before mobilization</span><span class="tag">escalate with a cc</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">"The frozen middle" circulates widely, yet <strong>has no traceable original source and little empirical support</strong>; the evidence that does exist points the other way — Tabrizi's study of 56 corporate transformations found that <strong>the ones where middle managers were deeply involved succeeded at higher rates</strong> ("The Key to Change Is Middle Management," <em>HBR</em>, Oct 28 2014). What you're calling middle-manager obstruction is usually <strong>a rational response to misaligned incentives</strong>: his review still counts only the old metrics. <strong>Align incentives before you mobilize, or you're asking someone to volunteer for a lower performance rating.</strong></div>
+<div class="quote">
+<span class="en">"Tell me how you measure me, and I will tell you how I will behave."</span>
+<span class="source">— Eliyahu M. Goldratt, <em>The Haystack Syndrome</em> (1990)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: you need two people from your peer manager Ken for migration adaptation work. He says: "We can't free anyone up this quarter."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Don't say</div>
+<p>"This is a company H2 strategic priority." <strong>Two consequences of leaning on authority with a peer</strong>: he agrees on the surface and assigns his weakest person; and you take on a debt you'll have to repay later. More importantly — <strong>he isn't lying. It genuinely isn't in his Q3 goals.</strong></p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: verify the incentive before you argue about resources</div>
+<p>"Let's leave priority aside — I want to check one thing: <strong>in your Q3 review, which line does this migration count toward?</strong>"<br/>If he says "it doesn't" — "Then you're right to block me; I'd block me too. So I shouldn't be asking you for people. Two paths: I go to Sandy and get it written into your Q3 goals, or we carve the adaptation out as a deliverable counted on my side. <strong>Which do you want?</strong>"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Escalation email (cc Ken — never behind his back)</div>
+<p>"Sandy: the migration needs roughly 2 person-months from Platform, and it isn't in Ken's Q3 goals — <strong>so this isn't a cooperation problem, it's a goals problem</strong>. Two fixes: (a) add this line to Platform's Q3 goals; (b) we absorb the work and Ken only reviews. <strong>I recommend (a), because (b) makes adaptation quality depend on code we don't know well.</strong> Your call."</p>
+<p><strong>The cc is the dividing line: out in the open, you're solving a problem; behind his back, you're manufacturing an enemy.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Can I name the three metrics this peer is reviewed on this quarter — and which one my ask lands in?</li>
+<li>Am I asking for his <strong>people</strong>, or for his <strong>goals</strong>? (People is a tactic; changing the goal is the fix.)</li>
+<li>When I escalated, did I cc the person involved?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + note for women</div>
+<div class="pitfall">
+<ul>
+<li><strong>The label itself is a cost</strong>: once "the middle is blocking" enters your narrative, you stop investigating the real cause — and the phrase always reaches the person, turning a workable goals conflict into a personal one.</li>
+<li><strong>Going around the peer straight to his reports</strong>: effective short-term, and long-term you lose every piece of informal signal on that line — which is the only way you'd have seen the next conflict coming.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> pick a peer you've filed as "immovable," look up his review metrics for this quarter, and find which one your ask lands in. If none, stop mobilizing and go change the goal.</p>
+<p><strong>Reflection:</strong> are you currently blocking something "reasonably" yourself — because it was never written into your goals?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Change saturation: absorption runs out before headcount does
+<span class="en">Change Saturation Is the Real Constraint</span></h2>
+<span class="tag">Gartner data</span><span class="tag">absorption ledger</span><span class="tag">sponsoring downward</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">In 2016 the average employee lived through 2 planned enterprise changes; in 2022 it was 10 — and over the same period, willingness to support change fell from 74% to 38%. <strong>Absorption capacity has a hard ceiling</strong>, and past it, more communication only accelerates fatigue. What you have to manage isn't just the change you started — <strong>it's the total number your team is being asked to absorb right now</strong>, a number usually only you can count.</div>
+<div class="quote">
+<span class="en">"The average employee experienced 10 planned enterprise changes in 2022 — up from two in 2016."</span>
+<span class="source">— Cian Ó Móráin &amp; Peter Aykens (Gartner), "Employees Are Losing Patience With Change Initiatives," <em>Harvard Business Review</em>, May–June 2023</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: at quarterly planning your skip-level says, "Keep the migration going, and in Q3 we also land the new oncall model and the new performance process." All three require your team to change daily behavior.</div>
+<div class="dialog bad">
+<div class="speaker">✗ What most people do</div>
+<p>"Understood, we'll do our best." <strong>The result is three efforts at 40% each</strong>: nothing lands by year-end, and what the team remembers is "we churned for a year and nothing stuck" — which doubles the startup cost of the next change.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: put an absorption ledger on the table so the sequencing happens in the room, not in private</div>
+<p>"I agree with all three, but let me state the absorption ceiling first: <strong>my team can take exactly one change in Q3 that asks everyone to alter daily behavior</strong>. The other two either move to Q4 or get scoped down to a 2-person pilot. My proposed order: migration (external dependencies, least deferrable) → oncall (2-person pilot first) → performance process (naturally aligned to the Q4 cycle). <strong>You can change the order and I'll follow it — but I won't agree to all three in parallel, because that means none of them happen.</strong>"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ To the team: sponsorship pointed downward</div>
+<p>"In Q3 there's exactly one thing you actually have to change: the migration. I've got the other two moved to Q4 or scoped to a pilot. <strong>If anyone comes to you asking for those two, send them to me.</strong>" — <strong>Blocking change traffic for your team and winning executive airtime for your project are the same job, pointed in two directions.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Can I list every effort currently asking my team to change behavior? Is it more than 2?</li>
+<li>When did I last <strong>kill or defer</strong> a change on my team's behalf?</li>
+<li>Before adding one, which one did I explicitly stop or postpone?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + note for women</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating communication volume as the cure</strong>: under saturation, more communication only accelerates fatigue. The HBR piece concludes the opposite — cut the number of changes running at once, and give employees genuine say in <em>how</em> they're implemented.</li>
+<li><strong>Counting only the changes you started</strong>: what employees feel is the total, including the ones from HR, finance and compliance. Put them all in the ledger, or you'll assume you made one very small request.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> list every change running on your team in Q3, including the ones other functions started. More than two — take the list to your boss and ask for an ordering.</p>
+<p><strong>Reflection:</strong> what was the last change on your team that finished <em>and stayed</em>? What was structurally different about it?</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>Going deeper</h3>
+<details><summary>What if the sponsor simply won't sponsor?</summary><div>Three steps. <strong>Assume bandwidth, not unwillingness, first</strong>: compress the ask to "15 minutes, one decision" — a lot of non-support is just never having been scheduled. <strong>Still nothing: change sponsors</strong> — the power that matters is real authority over the affected teams, not seniority. <strong>Still nothing: re-evaluate whether the work should happen at all</strong>. An unsponsored cross-team change isn't brave; it's running an experiment for the organization at your own expense, with your team paying. At that point, demoting it to "an internal improvement in my team" is usually the smarter move: smaller scope, but it actually happens.</div></details>
+<details><summary>Does escalating a goals conflict to a shared manager get me labeled a tattletale?</summary><div>It turns on three things: whether you cc'd, whether you described a problem or a person, and whether you brought options. cc the person + describe only the goal misalignment + offer two options with a recommendation reads as saving your manager time. Behind their back + describing their motives + raising a problem with no fix is what reads as tattling. The fourth variable is frequency: once a quarter is responsible; three times a month means you're substituting your manager for your own influence.</div></details>
+<details><summary>Does any of this hold in a flat organization or a small company?</summary><div>Yes, in a different form. Sponsorship is fundamentally <strong>someone willing to spend their own political capital on it</strong>, which is identical at 8 people and 80,000. What scale really changes is <strong>the decay rate</strong>: more layers and longer paths mean the signal fades faster, so large companies must turn visibility into schedules and signatures, while a founder mentioning it at four consecutive weekly meetings is often enough. The inverse risk in small companies is over-concentration — the founder pivots and the whole thing hits zero that day.</div></details>
+<details><summary>Doesn't "align incentives first" turn every collaboration into a transaction?</summary><div>The risk is real, and so is the cost: translating everything into KPIs crowds out the work people do out of professional conscience, and erodes voluntary cooperation over time. The line is drawable, though — <strong>anything cross-team, running for months, that would visibly hurt the other person's rating must have incentives aligned first</strong>; a one-off favor costing a few hours runs fine on reciprocity and relationship. Ask one question: <strong>will this make him look worse in his own review?</strong> If yes, go change the goal. If no, just ask.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 70 · 2026.07.29</footer>
+</div>
+</body>
+</html>
