@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 71：AI 预算的两本账</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.tl-label{font-size:0.78rem;color:#8a6d3b;letter-spacing:1px;margin:12px 0 6px;font-weight:700}
+.tl-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.bar{border-radius:3px;padding:9px 7px;font-size:0.79rem;text-align:center;color:#5c3a18;line-height:1.45}
+.bar b{display:block;font-size:0.74rem;letter-spacing:0.5px;margin-bottom:3px;opacity:0.85}
+.bar.s4{background:#a8702d;color:#fffaf0}
+.bar.s3{background:#c99a5e;color:#fffaf0}
+.bar.s2{background:#e0c9a0}
+.bar.s1{background:#efe6d3;color:#8a7c62}
+.bar.r1{background:#f5ece4;color:#8a7c62}
+.bar.r2{background:#e8bfa4}
+.bar.r3{background:#d4906a;color:#fff}
+.bar.r4{background:#b85c3a;color:#fff}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+.dials{display:grid;grid-template-columns:5.2em 1fr 1fr;gap:6px;font-size:0.83rem;line-height:1.5}
+.dials>div{padding:8px 10px;border-radius:3px}
+.dials .dh{font-weight:700;color:#a8702d;letter-spacing:1px;font-size:0.74rem;text-align:center;padding-bottom:2px}
+.dials .dk{background:#f1ece0;color:#5c3a18;font-weight:700;text-align:center}
+.dials .dw{background:#f5e0d0;color:#6b3a1a}
+.dials .ds{background:#e6efdc;color:#33441e}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.tl-row{grid-template-columns:1fr 1fr}
+.dials{grid-template-columns:1fr}
+.dials .dh{display:none}
+.dials .dk{margin-top:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 71 · 2026.07.30</div>
+<h1>AI 预算的两本账：当投资依据是尚未兑现的节省</h1>
+<div class="meta"><span>主题：AI Investment &amp; ROI Discipline</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"For a successful technology, reality must take precedence over public relations, for nature cannot be fooled." — Richard P. Feynman, 1986</div>
+</header>
+<div class="intro">
+<strong>与前几篇的分工：</strong>Day 50 讲指标的一般陷阱，Day 54 讲怎么管一个被 AI 增强的团队。本篇只讲钱：<strong>当这一轮 AI 投资的依据，是上一轮承诺过、却从未落到损益表上的节省</strong>。四件事：<strong>两本账分开记</strong>、<strong>识破期望的滚动</strong>、<strong>ROI 口径六旋钮</strong>、<strong>先定判据再批钱</strong>。
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>漏斗账与利润账，分开记
+<span class="en">Keep the Funnel Ledger and the P&amp;L Ledger Apart</span></h2>
+<span class="tag">配对指标</span><span class="tag">上生产≠省钱</span><span class="tag">谁签字确认</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">AI 项目有两种「成功」：<strong>进了生产、有人在用</strong>（漏斗账），和<strong>某个财务科目真的降了</strong>（利润账）。多数汇报把前者当后者报，且不是故意的——漏斗账快而可见，利润账要等几个季度还要财务认账。<strong>两账一旦混进同一张 slide，就再也拆不开。</strong></div>
+<div class="quote">
+<span class="en">"Because indicators direct one's activities, you should guard against overreacting. This you can do by pairing indicators, so that together both effect and counter-effect are measured."</span>
+<span class="zh">「因为指标会引导人的行为，你必须防止过度反应。做法是给指标配对，让效果与反效果同时被测量。」</span>
+<span class="source">— Andy Grove,《High Output Management》第 2 章「Managing the Breakfast Factory」</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">两本账：同一个项目的两条独立进度</div>
+<div class="tl-label">漏斗账 · 用例走到哪一格（快、可见、容易堆）</div>
+<div class="tl-row">
+<div class="bar s4"><b>立项</b>有人想做</div>
+<div class="bar s3"><b>POC</b>demo 跑通</div>
+<div class="bar s2"><b>上生产</b>有真实用户</div>
+<div class="bar s1"><b>一年后</b>还在被用</div>
+</div>
+<div class="tl-label">利润账 · 钱走到哪一格（慢、要别人认账）</div>
+<div class="tl-row">
+<div class="bar r1">节省被测出来</div>
+<div class="bar r2">有非本人签字确认</div>
+<div class="bar r3">进了下一年预算基线</div>
+<div class="bar r4">云账单 / 合同 / 人力真的降了</div>
+</div>
+<div class="dgm-note">漏斗账第 3 格常被当成利润账第 4 格来报——AI 汇报里最普遍的一次错位。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：季度评审前，老板说：「你在 slide 上写『AI 让团队效率提升 30%』。」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种常见反应，都是坏的</div>
+<p>「好，我写。」——你为一个自己无法复核的数字署了名。<br/>「这个数字我没法验证。」——纯抵抗、不给替代品，会被读成「不支持 AI」，而 slide 照旧会写，只是换人写。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：写两行，把两本账当场分开</div>
+<p>「我写两行。<strong>漏斗账</strong>：6 个 AI 用例，2 个上了生产，日活 40 人。<strong>利润账</strong>：这 2 个把 code review 平均等待从 11 小时降到 6 小时；同期云与许可成本增加约 $8k/季。<br/><strong>我只敢说周期缩短，不敢说人力节省——因为没有人减少，也没有人被重新分配。</strong>如果这张 slide 需要 30%，请让我先定它的口径，好让明年还能按同一口径再报一次。」</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 若老板说「就写 30%，别搞复杂」</div>
+<p>「明白，按 30% 写。<strong>同时在备注页留一行口径</strong>：该数字来自 2 个生产用例的周期时间缩短，未含成本增加与人力变化。」——上级要叙事，你不必对抗；你只要一行日后能自证的口径。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我最近一次汇报的 AI 收益，属于漏斗账还是利润账？</li>
+<li>我说的「节省」，有哪个财务科目（headcount / 云账单 / 合同）在同期真的下降？</li>
+<li>收益数字有没有配一个测反效果的指标（新增成本、review 额外工时、缺陷率）？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>把 POC 数量当进展</strong>：POC 是最便宜的成功，也最容易被批量生产。稀缺的是「上了生产且一年后还活着」。</li>
+<li><strong>从「时间节省」直跳「成本节省」</strong>：省下的小时若没换成更少的人或更多的产出，它变成的是 slack。slack 有价值，但<strong>不能记进利润账</strong>——记进去等于承诺一笔不存在的现金。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>把手上全部 AI 用例列成两列表：左列漏斗状态，右列对应的财务科目。<strong>右列空着就留空，不要填故事。</strong></p>
+<p><strong>思考：</strong>只准报一个数字给 CFO，你报哪个？为什么不是你现在正报的那个？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>用未兑现的节省，为下一轮背书
+<span class="en">Funding Round N+1 With Savings Round N Never Delivered</span></h2>
+<span class="tag">Bain 2026</span><span class="tag">期望滚动</span><span class="tag">要口径不要真相</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">Bain 对 951 家年收入 $100M 以上企业的调查发现：约 <strong>44%</strong> 的大企业用<strong>先前自动化项目的节省</strong>为下一轮 AI 投资背书，而那批节省系统性未达标；在欠交付的子群里，<strong>约九成仍在加码</strong>。这不是集体愚蠢，是一个结构：<strong>上一轮的差额从不被结算，而是被折进下一轮的假设里</strong>——它不消失，只往前滚。</div>
+<div class="quote">
+<span class="en">"For a successful technology, reality must take precedence over public relations, for nature cannot be fooled."</span>
+<span class="zh">「一项技术要成功，现实必须优先于公关，因为自然是骗不过去的。」</span>
+<span class="source">— Richard P. Feynman, 《Report of the Presidential Commission on the Space Shuttle Challenger Accident》Appendix F (1986)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：预算会上 VP 说：「去年那套 CI 自动化省了 12 个人力，所以今年 AI 平台预算翻倍。」而你知道那 12 个人力从没在任何编制表上消失过。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 不要说</div>
+<p>「我不太确定那 12 个人力是不是真省下来了。」<strong>你挑战的不是一个数据，是某人已经进了晋升材料的成果。</strong>结局固定：数字不会改，你被归类为「对 AI 有保留」，且从此拿不到这条线上的信息。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：要口径，不要真相</div>
+<p>「我支持翻倍。为了这次交付得干净，我想沿用去年那个案子的口径：<strong>那 12 个人力按哪种算法折算的？</strong>小时按谁的时薪、时间窗是全年还是峰值月？我照同一口径写今年目标，免得两年数字打架。」<strong>口径一摊开，差额自己会显形，而且不是你指出来的</strong>——这是唯一低成本的路径。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 第二步（写进你自己的提案）</div>
+<p>「按去年同口径折算，今年目标 = 减少 8 FTE 等价工时；<strong>Q3 末结算，若实际只到 3，我在同一封邮件里报告并下调 Q4 预算。</strong>」——<strong>提前把失败的样子写下来，是让结算真的发生的唯一办法。</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>上一轮承诺过的节省数字，我找得到原始 deck 吗？被结算过吗？</li>
+<li>我这次要的钱，依据是新证据，还是上一轮未结算的承诺？</li>
+<li>我自己的提案里，写了「多少算失败」吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>当众质疑数字的真实性</strong>：把技术问题变成人的问题，代价远大于收益。同一件事，问口径是协作姿态，问真伪是审计姿态。</li>
+<li><strong>反向错误：因口径可疑就一律不投</strong>。欠交付不等于没价值，漏斗账里那些真被使用的用例是真的。区别只在一点：<strong>别把它当成下一轮的抵押品。</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>找出组织里最近一次公开的「AI 省了 X」，问提出者口径——只问算法，不做评价。</p>
+<p><strong>思考：</strong>若你团队今年欠交付，你会在什么场合、对谁、用什么措辞主动说？说不出场合，说明你也在滚。</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>ROI 口径的六个旋钮
+<span class="en">The Six Dials Behind Any ROI Number</span></h2>
+<span class="tag">Goodhart</span><span class="tag">追问清单</span><span class="tag">自报 vs 实测</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">同一个项目，合法地调六个旋钮就能把 ROI 从 0.4x 调到 5x，每一步都不算撒谎。所以听到 ROI 数字时，<strong>先问旋钮位置，再问数值</strong>——数值是结论，旋钮才是内容。</div>
+<div class="quote">
+<span class="en">"Any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes."</span>
+<span class="zh">「任何被观察到的统计规律，一旦因控制目的而被施加压力，就会趋于崩塌。」</span>
+<span class="source">— Charles Goodhart,「Problems of Monetary Management: The U.K. Experience」(1975)，后被概括为 Goodhart's Law</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">六旋钮：同一个项目的两种合法算法</div>
+<div class="dials">
+<div class="dh">旋钮</div>
+<div class="dh">宽口径（数字好看）</div>
+<div class="dh">严口径（可被复核）</div>
+<div class="dk">分母</div>
+<div class="dw">只算 token 与许可费</div>
+<div class="ds">含人力改造、评测集、返工、运维工时</div>
+<div class="dk">标尺</div>
+<div class="dw">和「什么都不做」比</div>
+<div class="ds">和一个认真做过的非 AI 方案比</div>
+<div class="dk">准入</div>
+<div class="dw">只统计活下来的用例</div>
+<div class="ds">分母含全部立项，含死掉的</div>
+<div class="dk">职级</div>
+<div class="dw">小时按平均或高职级时薪折价</div>
+<div class="ds">按实际承接者薪资，且只算能真被回收的</div>
+<div class="dk">时间窗</div>
+<div class="dw">取最好的一个月 ×12</div>
+<div class="ds">全年实测，含学习期与回落</div>
+<div class="dk">来源</div>
+<div class="dw">问用户「你觉得省了多少」</div>
+<div class="ds">测周期时间 / 吞吐 / 缺陷率</div>
+</div>
+<div class="dgm-note">六个全调宽，可以合法地把不赚钱的项目报成 5x。追问顺序：来源 → 分母 → 准入。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：peer 团队宣布 AI code review 的 ROI 是 4.2x。你的 skip-level 老板问你：「为什么你们不做？」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 不要说</div>
+<p>「他们那个数字不可信。」——你没证据却有动机（看起来像在护自己的排期）。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：我要做，但先对齐口径</div>
+<p>「我想做，但先对齐口径，否则我做出来的 4.2x 和他们的不是同一个东西。我会问 Marco 六件事：<strong>分母含不含评测与返工工时；对照组是『不做』还是现有 lint 规则；4.2x 的分母是全部 12 个用例还是活下来的 3 个；小时按谁的时薪；峰值年化还是全年实测；数据是问卷还是周期时间。</strong>问完我给您一个同口径的估计——<strong>可能仍然很好，只是这次能被复核。</strong>」</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 对 Marco（横向，不能显得在查账）</div>
+<p>「你们那个 4.2x 我想直接抄口径，省得自己发明一套、两边数字打架。分母和时间窗怎么定的？」——<strong>「我想抄你的口径」是索要方法论最不树敌的说法</strong>：它把你放在学习者位置，而他为了让数字站得住，会主动讲细节。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>分母里有没有人力改造与评测工时？</li>
+<li>对照组是「什么都不做」，还是一个认真做过的非 AI 方案？</li>
+<li>成功率的分母是全部立项，还是只有活着的用例？</li>
+<li>节省的小时数是自报还是实测？时间窗是峰值年化还是全年实测？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>只查别人不查自己</strong>：你的提案通常也在用宽口径，因为宽口径更容易过。先自查，追问才有立场。</li>
+<li><strong>女性视角</strong>：ROI 一旦依赖自报（旋钮 6），就变成一场自我推销比赛。Exley 与 Kessler 发现在客观表现几乎相同时，<strong>女性对自己表现的对外描述系统性低于男性</strong>（Christine L. Exley &amp; Judd B. Kessler,「The Gender Gap in Self-Promotion」,《Quarterly Journal of Economics》137(3), 2022）。而自报正是 AI 收益统计的默认做法。两件可做的事：关键收益改实测；收自报时给统一模板与量纲（「本周因此少做的具体动作是哪几件」），而非自由发挥。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>挑一个你正在引用的 AI 收益数字，标出六个旋钮各在什么位置，看哪几个是宽的。</p>
+<p><strong>思考：</strong>如果规定所有 AI 提案必须用严口径，你手上哪个项目会先死？它该死吗？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>先定哪档口径算成功，再批钱
+<span class="en">Set the Bar Before You Fund It</span></h2>
+<span class="tag">Klein premortem</span><span class="tag">退出条件</span><span class="tag">六行判据</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">事后争论一个 AI 项目算不算成功，永远争不出结果——因为判据是从结果里反挑的。唯一解法是<strong>在批钱那一刻把判据写死</strong>：哪个指标、什么口径、什么阈值、什么时候看、达不到怎么办。<strong>没有退出条件的投入不会失败，它只会无限延期。</strong></div>
+<div class="quote">
+<span class="en">"Unlike a typical critiquing session, in which project team members are asked what might go wrong, the premortem operates on the assumption that the 'patient' has died."</span>
+<span class="zh">「与通常那种『可能出什么问题』的评审不同，事前验尸从『病人已经死了』这个前提出发。」</span>
+<span class="source">— Gary Klein,「Performing a Project Premortem」,《Harvard Business Review》2007 年 9 月号</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你自己要申请 3 个人一个季度，做 AI 辅助的测试生成。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 常见写法</div>
+<p>「预期显著提升测试覆盖率与开发效率。」<strong>无口径、无阈值、无退出</strong>——结局只能靠叙事收尾：季度末看心情判定，而通常判「成功」，因为承认失败没有好处。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 修后：提案里的判据段（六行，写死）</div>
+<p><strong>指标①</strong> 被合并的 AI 生成测试占新增测试 ≥ 25%（分母含被拒的）。<br/><strong>指标②</strong> 这些测试拦下过 ≥ 3 个会进生产的缺陷（以 revert / hotfix 记录为准，不用自报）。<br/><strong>看的时间</strong>：Q4 最后一周，日期已定。<br/><strong>两项都达</strong> → 申请扩到 10 人。<strong>只达一项</strong> → 维持 3 人不扩。<strong>都不达</strong> → Q1 停掉，我在同一份文档里写结论。<br/>成本侧记全：3 人季度 + 约 $6k 推理与工具费 + 约 15% 的 review 额外工时。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 汇报时补一句</div>
+<p>「我没写 ROI 倍数，因为现在写的任何倍数都是我自己选的口径。我写的是<strong>阈值与退出条件</strong>——Q4 末不必谈判，照表判定。」<strong>在人人报倍数的环境里，一份能判死自己的判据是极稀缺的可信度。</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>提案里有没有一个「多少算失败」的具体数字？</li>
+<li>判据的指标是实测还是自报？达不到阈值时的动作写进提案了吗、谁执行？</li>
+<li>成本侧列全了吗（人力改造 / 评测集 / review 额外工时 / 推理费）？</li>
+<li>复盘日期定死了吗，还是「等有空看」？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>判据写得太软</strong>：「若有正向信号则继续」等于没写。可判死的判据才是判据。</li>
+<li><strong>只写成功判据、不写退出条件</strong>：项目会以「再给一个季度」续命，这是 AI 投资里最贵的损耗——不占用一次失败，却持续占用最好的人。</li>
+<li><strong>要承认的 trade-off</strong>：严判据会挡掉一些其实值得做的探索。诚实的做法是把它标成<strong>「学习性投入，不承诺 ROI，上限 X 人月」</strong>，而不是编个 ROI 混过评审。<strong>给探索一个正确的名字，比给它漂亮数字更能保护它。</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>给金额最大的那项 AI 投入补一段六行判据（指标 / 口径 / 阈值 / 日期 / 达标动作 / 不达标动作），发给赞助人求一句确认。</p>
+<p><strong>思考：</strong>你有没有一个项目已经过了本该被停掉的时点？让它还活着的是证据，还是没人愿意宣布结算？</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>我坚持严口径，同行都用宽口径，我是不是自己吃亏？</summary><div>短期确实吃亏，不该粉饰。中间路线是<strong>两行并存</strong>：对外用组织通行口径（否则你在自建一套没人认的货币），同时给严口径的第二行并说明差在哪个旋钮。两年后宽口径开始被追责时，手里有可信存量数据的只有你。分界：严口径用在<strong>大额、长周期</strong>的投入上，几周的小试点做全套核算本就不划算。</div></details>
+<details><summary>「学习性投入」会不会变成不接受考核的挡箭牌？</summary><div>会，所以要给三个硬约束：金额上限、时间上限、一个非 ROI 的可验证产出（能改变下次决策的评测集、一个被证伪的技术假设）。它的判据不是省没省钱，而是：<strong>我们现在知道了什么是三个月前不知道的，它改变了哪个具体决定？</strong>答不出，就不是学习而是拖延。</div></details>
+<details><summary>这套东西在创业公司还成立吗？</summary><div>部分成立，权重不同。小公司的 AI 投入常常不为省钱而为不死，用严 ROI 去卡会杀掉正确的赌注；但<strong>两本账仍然必须分开</strong>——创业公司最常见的死法之一就是把「demo 惊艳」记成「产品有用」，再按后者去招人和融资。规模改变的是结算周期：大公司按季度，小公司按周，而且结算人往往就是提案人自己。</div></details>
+<details><summary>高层其实知道数字是宽口径，为什么还照报？</summary><div>因为在资本市场与内部竞争里，<strong>「有 AI 战略」本身有独立于 ROI 的价值</strong>：它影响估值、预算分配、谁被看作未来的人。这不是纯粹欺骗，是两个真实目标叠在同一个数字上。理解这点能省下大量无用的纠正——你改不了对外叙事，但能守住内部账本。分界线是：<strong>对外可以配合叙事，对内不能拿叙事当输入</strong>；一旦叙事被用来定排期和人力，团队就会为一个不存在的收益真实地加班。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 71 · 2026.07.30</footer>
+</div>
+</body>
+</html>

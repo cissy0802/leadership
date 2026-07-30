@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 71: Two Sets of Books on the AI Budget</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.tl-label{font-size:0.78rem;color:#8a6d3b;letter-spacing:1px;margin:12px 0 6px;font-weight:700}
+.tl-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.bar{border-radius:3px;padding:9px 7px;font-size:0.79rem;text-align:center;color:#5c3a18;line-height:1.45}
+.bar b{display:block;font-size:0.74rem;letter-spacing:0.5px;margin-bottom:3px;opacity:0.85}
+.bar.s4{background:#a8702d;color:#fffaf0}
+.bar.s3{background:#c99a5e;color:#fffaf0}
+.bar.s2{background:#e0c9a0}
+.bar.s1{background:#efe6d3;color:#8a7c62}
+.bar.r1{background:#f5ece4;color:#8a7c62}
+.bar.r2{background:#e8bfa4}
+.bar.r3{background:#d4906a;color:#fff}
+.bar.r4{background:#b85c3a;color:#fff}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+.dials{display:grid;grid-template-columns:6.5em 1fr 1fr;gap:6px;font-size:0.83rem;line-height:1.5}
+.dials>div{padding:8px 10px;border-radius:3px}
+.dials .dh{font-weight:700;color:#a8702d;letter-spacing:1px;font-size:0.74rem;text-align:center;padding-bottom:2px}
+.dials .dk{background:#f1ece0;color:#5c3a18;font-weight:700;text-align:center}
+.dials .dw{background:#f5e0d0;color:#6b3a1a}
+.dials .ds{background:#e6efdc;color:#33441e}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.tl-row{grid-template-columns:1fr 1fr}
+.dials{grid-template-columns:1fr}
+.dials .dh{display:none}
+.dials .dk{margin-top:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 71 · 2026.07.30</div>
+<h1>Two Sets of Books on the AI Budget: Funding This Round on Savings That Never Arrived</h1>
+<div class="meta"><span>Topic: AI Investment &amp; ROI Discipline</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"For a successful technology, reality must take precedence over public relations, for nature cannot be fooled." — Richard P. Feynman, 1986</div>
+</header>
+<div class="intro">
+<strong>How this differs from earlier issues:</strong> Day 50 covered metric traps in general; Day 54 covered managing an AI-augmented team. This one is only about money: <strong>when the case for this round of AI investment rests on savings the last round promised and never booked</strong>. Four moves: <strong>keep the two ledgers apart</strong>; <strong>recognize the expectation rollover</strong>; <strong>the six dials behind any ROI</strong>; <strong>set the bar before you fund it</strong>.
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Keep the funnel ledger and the P&amp;L ledger apart
+<span class="en">Shipped Is Not the Same as Saved</span></h2>
+<span class="tag">paired indicators</span><span class="tag">shipped ≠ saved</span><span class="tag">who signs off</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">An AI project has two kinds of "success": <strong>it shipped and people use it</strong> (the funnel ledger), and <strong>a financial line item actually went down</strong> (the P&amp;L ledger). Most reporting presents the first as the second, and not out of malice — the funnel ledger moves fast and is visible, while the P&amp;L ledger takes quarters and requires finance to agree. <strong>Once the two are merged onto one slide, they can never be separated again.</strong></div>
+<div class="quote">
+<span class="en">"Because indicators direct one's activities, you should guard against overreacting. This you can do by pairing indicators, so that together both effect and counter-effect are measured."</span>
+<span class="source">— Andy Grove, <em>High Output Management</em>, ch. 2 "Managing the Breakfast Factory"</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Two ledgers: one project, two independent tracks</div>
+<div class="tl-label">Funnel ledger · how far the use case got (fast, visible, easy to stack up)</div>
+<div class="tl-row">
+<div class="bar s4"><b>Proposed</b>someone wants it</div>
+<div class="bar s3"><b>POC</b>demo works</div>
+<div class="bar s2"><b>In prod</b>real users</div>
+<div class="bar s1"><b>A year on</b>still used</div>
+</div>
+<div class="tl-label">P&amp;L ledger · how far the money got (slow, needs someone else to agree)</div>
+<div class="tl-row">
+<div class="bar r1">saving measured</div>
+<div class="bar r2">signed off by someone other than you</div>
+<div class="bar r3">baked into next year's baseline</div>
+<div class="bar r4">cloud bill / contract / headcount actually down</div>
+</div>
+<div class="dgm-note">Cell 3 of the funnel ledger routinely gets reported as cell 4 of the P&amp;L ledger — the single most common misalignment in AI reporting.</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: before the quarterly review, your boss says: "Put 'AI made the team 30% more efficient' on the slide."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Two common reactions, both bad</div>
+<p>"Sure, I'll write it." — you've just put your name on a number you can't audit.<br/>"I can't verify that number." — pure resistance with no substitute; it reads as "not supportive of AI," and the slide still gets written, just by someone else.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: write two lines and split the ledgers on the spot</div>
+<p>"I'll write two lines. <strong>Funnel ledger</strong>: 6 AI use cases, 2 in production, 40 daily users. <strong>P&amp;L ledger</strong>: those 2 cut average code-review wait from 11 hours to 6; over the same period cloud and licence costs rose about $8k/quarter.<br/><strong>I can claim cycle-time reduction; I can't claim labour savings — nobody left and nobody was reassigned.</strong> If this slide needs the 30%, let me define how it's calculated, so next year we can report the same number the same way."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ If your boss says "just write 30%, don't overcomplicate it"</div>
+<p>"Understood, I'll write 30%. <strong>I'll also add one line of definition in the appendix</strong>: derived from cycle-time reduction in 2 production use cases; excludes added cost and headcount change." — leadership wants a narrative; you don't have to fight it. All you need is one line you can point to later.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Was the AI benefit I last reported a funnel-ledger or a P&amp;L-ledger number?</li>
+<li>For the "saving" I claimed, which financial line (headcount / cloud bill / contract) actually fell in the same period?</li>
+<li>Does my benefit number have a paired indicator measuring the counter-effect (added cost, extra review hours, defect rate)?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating POC count as progress</strong>: a POC is the cheapest form of success, which is exactly why it is easy to mass-produce. What's scarce is "shipped and still alive a year later."</li>
+<li><strong>Jumping from "time saved" to "cost saved"</strong>: hours freed that don't convert into fewer people or more output become slack. Slack has value, but <strong>it cannot be booked in the P&amp;L ledger</strong> — booking it promises the organization cash that does not exist.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> list every AI use case you own in two columns: funnel status on the left, the matching financial line on the right. <strong>Leave the right column blank where it is blank — don't fill it with a story.</strong></p>
+<p><strong>Reflection:</strong> if you could report exactly one number to the CFO, which would it be? Why isn't it the one you're reporting now?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Funding round N+1 with savings round N never delivered
+<span class="en">The Expectation Rollover</span></h2>
+<span class="tag">Bain 2026</span><span class="tag">rollover</span><span class="tag">ask for the method, not the truth</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Bain's survey of 951 companies with over $100M in revenue found that roughly <strong>44%</strong> of large enterprises justify their next round of AI investment with <strong>savings from earlier automation projects</strong> — savings that systematically underdelivered; and within the underdelivering subgroup, <strong>about nine in ten are still increasing spend</strong>. This isn't collective stupidity, it's a structure: <strong>the shortfall from the last round is never settled, it gets folded into the assumptions of the next one</strong>. It doesn't disappear; it rolls forward.</div>
+<div class="quote">
+<span class="en">"For a successful technology, reality must take precedence over public relations, for nature cannot be fooled."</span>
+<span class="source">— Richard P. Feynman, <em>Report of the Presidential Commission on the Space Shuttle Challenger Accident</em>, Appendix F (1986)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: in the budget meeting your VP says, "Last year's CI automation saved 12 headcount, so we're doubling the AI platform budget." You know those 12 never vanished from any org chart.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Don't say</div>
+<p>"I'm not sure those 12 headcount were really saved." <strong>You're not challenging a data point, you're challenging someone's promotion packet.</strong> The outcome is fixed: the number doesn't change, you get filed under "has reservations about AI," and you stop receiving information from that line.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: ask for the method, not the truth</div>
+<p>"I'm for doubling it. To deliver this one cleanly I'd like to reuse last year's definition: <strong>how were those 12 headcount calculated?</strong> Hours priced at whose rate, and was the window the full year or the peak month? I'll write this year's target on the same basis so the two years' numbers don't contradict each other." <strong>Once the method is on the table, the shortfall surfaces on its own — and not because you pointed at it.</strong> That's the only low-cost path.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Step two (put it in your own proposal)</div>
+<p>"On last year's basis, this year's target = 8 FTE-equivalent hours removed; <strong>settled at the end of Q3, and if the actual is only 3, I'll report it in that same email and cut the Q4 budget.</strong>" — <strong>writing down in advance what failure will look like is the only way to make the settlement actually happen.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Can I find the original deck for the savings the last round promised? Was it ever settled?</li>
+<li>Is the money I'm asking for justified by new evidence, or by an unsettled promise from the last round?</li>
+<li>Does my own proposal state what counts as failure?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Questioning a number's honesty in public</strong>: it converts a technical problem into a personal one, and the cost far outweighs the gain. Same subject, two postures: asking about method is collaboration; asking about truth is audit.</li>
+<li><strong>The inverse error: refusing to invest because the method looks generous.</strong> Underdelivery doesn't mean no value — the use cases genuinely in use are genuinely in use. The difference is one thing only: <strong>don't let them serve as collateral for the next round.</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> find the most recent public "AI saved us X" in your organization and ask its author for the method — method only, no assessment.</p>
+<p><strong>Reflection:</strong> if your team underdelivers this year, in what forum, to whom, and in what words would you volunteer it? If you can't name the forum, you're rolling too.</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>The six dials behind any ROI number
+<span class="en">Ask for the Dial Settings Before the Value</span></h2>
+<span class="tag">Goodhart</span><span class="tag">interrogation list</span><span class="tag">self-reported vs measured</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">For the same project, legitimately turning six dials moves the ROI from 0.4x to 5x without a single false statement. So when you hear an ROI number, <strong>ask for the dial settings before you ask for the value</strong> — the value is a conclusion; the dials are the content.</div>
+<div class="quote">
+<span class="en">"Any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes."</span>
+<span class="source">— Charles Goodhart, "Problems of Monetary Management: The U.K. Experience" (1975), later generalized as Goodhart's Law</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Six dials: two legitimate ways to compute the same project</div>
+<div class="dials">
+<div class="dh">Dial</div>
+<div class="dh">Generous (flattering)</div>
+<div class="dh">Strict (auditable)</div>
+<div class="dk">Denominator</div>
+<div class="dw">tokens and licences only</div>
+<div class="ds">plus rework, eval sets, migration and ops hours</div>
+<div class="dk">Baseline</div>
+<div class="dw">compared with doing nothing</div>
+<div class="ds">compared with a serious non-AI alternative</div>
+<div class="dk">Inclusion</div>
+<div class="dw">only the surviving use cases</div>
+<div class="ds">denominator includes every attempt, including the dead</div>
+<div class="dk">Labour rate</div>
+<div class="dw">hours priced at average or senior rates</div>
+<div class="ds">priced at the actual owner's rate, counting only what's recoverable</div>
+<div class="dk">Window</div>
+<div class="dw">best month × 12</div>
+<div class="ds">measured across the full year, learning curve and regression included</div>
+<div class="dk">Source</div>
+<div class="dw">asking users "how much time do you feel you saved?"</div>
+<div class="ds">measured cycle time / throughput / defect rate</div>
+</div>
+<div class="dgm-note">All six turned generous can legitimately report an unprofitable project at 5x. Interrogation order: source → denominator → inclusion.</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: a peer team announces 4.2x ROI on AI code review. Your skip-level asks you: "Why aren't you doing this?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Don't say</div>
+<p>"That number isn't credible." — you have no evidence and an obvious motive (it looks like defending your own roadmap).</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: I want to do it, but let's align the method first</div>
+<p>"I want to do it, but I need to align on method first, or my 4.2x won't be the same object as theirs. I'll ask Marco six things: <strong>does the denominator include eval and rework hours; is the baseline 'nothing' or the existing lint rules; is the 4.2x over all 12 use cases or the 3 that survived; hours at whose rate; peak-month annualized or measured across the year; is the data a survey or cycle time.</strong> Then I'll give you an estimate on the same basis — <strong>possibly still very good, only this time auditable.</strong>"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ To Marco (peer to peer — must not read as an audit)</div>
+<p>"I'd like to copy your method for that 4.2x rather than invent my own and end up with clashing numbers. How did you set the denominator and the window?" — <strong>"I want to copy your method" is the least adversarial way to request a methodology</strong>: it puts you in the learner's seat, and to make his own number hold up he'll volunteer the details.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Does the denominator include rework and eval-set hours?</li>
+<li>Is the baseline "doing nothing," or a serious non-AI alternative?</li>
+<li>Is the success-rate denominator every attempt, or only the live use cases?</li>
+<li>Are the hours saved self-reported or measured? Is the window peak-annualized or full-year?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on gender</div>
+<div class="pitfall">
+<ul>
+<li><strong>Interrogating others but not yourself</strong>: your own proposal is probably on generous settings too, because generous settings get approved. Audit yourself first and the questions carry standing.</li>
+<li><strong>A note on gender</strong>: once ROI depends on self-report (dial 6), it becomes a self-promotion contest. Exley and Kessler found that at nearly identical objective performance, <strong>women describe their own performance to others systematically less favourably than men do</strong> (Christine L. Exley &amp; Judd B. Kessler, "The Gender Gap in Self-Promotion," <em>Quarterly Journal of Economics</em> 137(3), 2022). And self-report is the default in AI benefit accounting. Two things you can do: move the headline benefits to measurement; and when you must collect self-reports, supply a fixed template and unit ("which specific actions did you not have to do this week?") instead of free text.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> take one AI benefit number you currently cite and mark where each of the six dials sits. See which ones are generous.</p>
+<p><strong>Reflection:</strong> if every AI proposal had to use strict settings, which of your projects dies first? Should it?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>Decide which definition counts as success before you fund it
+<span class="en">Set the Bar Before You Fund It</span></h2>
+<span class="tag">Klein premortem</span><span class="tag">exit conditions</span><span class="tag">six-line bar</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Arguing after the fact about whether an AI project succeeded never resolves — because the criteria get picked backwards out of the result. The only fix is to <strong>freeze the criteria at the moment you approve the money</strong>: which metric, on what definition, at what threshold, reviewed on what date, and what happens if it misses. <strong>An investment with no exit condition never fails; it just extends forever.</strong></div>
+<div class="quote">
+<span class="en">"Unlike a typical critiquing session, in which project team members are asked what might go wrong, the premortem operates on the assumption that the 'patient' has died."</span>
+<span class="source">— Gary Klein, "Performing a Project Premortem," <em>Harvard Business Review</em>, September 2007</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripted scenario</div>
+<div class="scene">
+<div class="setup">Situation: you're requesting 3 people for a quarter to build AI-assisted test generation.</div>
+<div class="dialog bad">
+<div class="speaker">✗ How it usually gets written</div>
+<p>"Expected to significantly improve test coverage and developer efficiency." <strong>No definition, no threshold, no exit</strong> — the only possible ending is narrative: at quarter end it's judged on mood, and usually judged a success, because admitting failure has no upside.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Better: the criteria section of the proposal (six lines, frozen)</div>
+<p><strong>Metric ①</strong> merged AI-generated tests ≥ 25% of new tests (denominator includes rejected ones).<br/><strong>Metric ②</strong> those tests have caught ≥ 3 defects that would have reached production (per revert / hotfix records, not self-report).<br/><strong>Review date</strong>: last week of Q4, already fixed.<br/><strong>Both met</strong> → request expansion to 10 people. <strong>One met</strong> → hold at 3, no expansion. <strong>Neither</strong> → stop in Q1, and I write the conclusion in the same document.<br/>Full cost side: 3 person-quarters + roughly $6k inference and tooling + roughly 15% extra review hours.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ One line when you present it</div>
+<p>"I didn't write an ROI multiple, because any multiple I write today is a definition I chose myself. What I wrote is <strong>thresholds and exit conditions</strong> — so at the end of Q4 there's nothing to negotiate, you just read the table." <strong>In an environment where everyone reports multiples, criteria that can convict you are extremely scarce credibility.</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Does the proposal contain a specific number for "this much counts as failure"?</li>
+<li>Are the criteria measured or self-reported? Is the miss action written into the proposal, and who executes it?</li>
+<li>Is the cost side complete (rework, eval sets, extra review hours, inference)?</li>
+<li>Is the review date fixed, or is it "when we get around to it"?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Criteria written too soft</strong>: "continue if we see positive signal" is the same as writing nothing. Only criteria that can convict are criteria.</li>
+<li><strong>Success criteria with no exit condition</strong>: the project survives as "give it one more quarter" — the most expensive form of waste in AI investment, because it never spends a failure while permanently occupying your best people.</li>
+<li><strong>A trade-off worth admitting</strong>: strict criteria will block some exploration that genuinely deserves to happen. The honest move is to label it <strong>"learning investment, no ROI committed, capped at X person-months"</strong> rather than inventing an ROI to get it through review. <strong>Giving exploration the right name protects it better than giving it a flattering number.</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> add a six-line criteria block (metric / definition / threshold / date / action if met / action if missed) to your largest AI investment, and send it to the sponsor for a one-line confirmation.</p>
+<p><strong>Reflection:</strong> do you have a project that is already past the point where it should have been stopped? Is it still alive because of evidence, or because nobody wants to declare the settlement?</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>Deeper questions</h3>
+<details><summary>If I insist on strict settings while everyone else uses generous ones, don't I just lose?</summary><div>Short-term, yes, and that shouldn't be glossed over. The workable middle path is <strong>two lines side by side</strong>: report externally on the organization's prevailing definition (otherwise you're minting a currency nobody accepts), and add a second line on strict settings, noting which dial accounts for the gap. Two years later, when generous numbers start attracting accountability, you'll be the only one holding credible historical data. The dividing line: strict settings belong on <strong>large, long-horizon</strong> investments; running full accounting on a three-week pilot isn't worth it.</div></details>
+<details><summary>Won't "learning investment" become a shield against any accountability?</summary><div>It can, so give it three hard constraints: a spend cap, a time cap, and one non-ROI verifiable output (an eval set that changes the next decision, a technical hypothesis actually falsified). Its criterion isn't whether it saved money, it's this: <strong>what do we now know that we didn't three months ago, and which specific decision did it change?</strong> No answer means it wasn't learning, it was delay.</div></details>
+<details><summary>Does any of this hold at a startup?</summary><div>Partly, with different weights. Startup AI spend is often not about saving money but about not dying, and strict ROI gates would kill correct bets; but <strong>the two ledgers must still stay apart</strong> — one of the most common ways startups die is recording "the demo was stunning" as "the product is useful," then hiring and raising against the latter. What scale really changes is the settlement cycle: quarterly at a big company, weekly at a small one — and at a small one the person settling is usually the person who proposed it.</div></details>
+<details><summary>Leadership knows the numbers are on generous settings. Why report them anyway?</summary><div>Because in capital markets and internal competition, <strong>"having an AI strategy" carries value independent of ROI</strong>: it moves valuation, budget allocation, and who gets seen as the future. This isn't pure deception; it's two real objectives stacked onto one number. Understanding that saves you a great deal of futile correction — you can't change the external narrative, but you can defend the internal ledger. The line is: <strong>you may go along with the narrative externally; you must not use the narrative as an input internally.</strong> The moment it drives staffing and schedules, your team works real overtime for a benefit that doesn't exist.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 71 · 2026.07.30</footer>
+</div>
+</body>
+</html>
