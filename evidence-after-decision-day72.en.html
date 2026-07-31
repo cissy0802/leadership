@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 72: When the Evidence Doesn't Support the Decision You Already Made</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.tl-label{font-size:0.78rem;color:#8a6d3b;letter-spacing:1px;margin:12px 0 6px;font-weight:700}
+.tl-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.bar{border-radius:3px;padding:9px 7px;font-size:0.79rem;text-align:center;color:#5c3a18;line-height:1.45}
+.bar b{display:block;font-size:0.74rem;letter-spacing:0.5px;margin-bottom:3px;opacity:0.85}
+.bar.d1{background:#f3ece0;color:#8a7c62}
+.bar.d2{background:#e9dcc2}
+.bar.d3{background:#dcc194}
+.bar.d4{background:#c99a5e;color:#fffaf0}
+.bar.d5{background:#a8702d;color:#fffaf0}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.85rem;line-height:1.55}
+.twocol .th{font-weight:700;letter-spacing:1px;font-size:0.76rem;text-align:center;padding:7px 6px;border-radius:3px}
+.twocol .th.a{background:#e6efdc;color:#33441e}
+.twocol .th.b{background:#f5e0d0;color:#6b3a1a}
+.twocol .cell{padding:10px 12px;border-radius:3px;background:#f3ece0;color:#3a2f1c}
+.twocol .cell b{display:block;color:#a8702d;font-size:0.74rem;letter-spacing:1px;margin-bottom:3px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.tl-row{grid-template-columns:1fr 1fr}
+.twocol{grid-template-columns:1fr}
+.twocol .th{margin-top:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 72 · 2026.07.31</div>
+<h1>When the Evidence Doesn't Support the Decision You Already Made</h1>
+<div class="meta"><span>Topic: Decision Under Inconvenient Evidence</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"Irrefutability is not a virtue of a theory (as people often think) but a vice." — Karl Popper, 1963</div>
+</header>
+<div class="intro">
+<p>Through 2025–2026, half the Western world legislated phone bans in schools. Over the same window, four rigorous evaluations came back. <strong>Norway</strong>, national registry data (Abrahamsson, <em>Journal of Human Resources</em>, 2026): no effect on the full sample, but a significant effect for girls. <strong>England</strong>, 30 schools compared (Goodyear et al., <em>The Lancet Regional Health – Europe</em>, 2025): restrictive policies showed no association with better mental wellbeing, <strong>and did not reduce students' total daily phone use</strong>. <strong>United States</strong>, national lockable-pouch study (Allcott, Dee, Gentzkow et al., NBER 2026, 43,000+ secondary schools): average test-score effects near zero; wellbeing fell in year one and <strong>turned positive in later years</strong>. <strong>Florida</strong>, student-level panel (Figlio &amp; Özek, NBER 2025): suspensions rose in year one, concentrated among Black students, and <strong>test scores improved significantly in year two</strong>.</p>
+<p>This is not "phone bans don't work," and it is not "they do." It is <strong>a decision already made and announced publicly, colliding with a messy body of evidence</strong> — which happens in a large company every quarter. Four moves: <strong>separate the two kinds of reason</strong>; <strong>track the dose, not the label</strong>; <strong>stay falsifiable after you've announced</strong>; <strong>read the source when someone cites a study at you</strong>.</p>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Worth doing ≠ proven to work
+<span class="en">Two Kinds of Reason, Two Kinds of Credit</span></h2>
+<span class="tag">two kinds of reason</span><span class="tag">borrowed credibility</span><span class="tag">falsifiability</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">There are only two kinds of reason to back a policy: a <strong>values reason</strong> ("we believe classrooms shouldn't have phones, and we'll pay the cost") and an <strong>evidence reason</strong> ("research shows it improves mental health"). Both are legitimate, but <strong>dressing a values reason up as an evidence reason means that when the evidence turns, the policy takes your credibility down with it</strong> — when it could have stood perfectly well on the values reason alone.</div>
+<div class="quote">
+<span class="en">"A theory which is not refutable by any conceivable event is non-scientific. Irrefutability is not a virtue of a theory (as people often think) but a vice."</span>
+<span class="source">— Karl Popper, <em>Conjectures and Refutations</em>, ch. 1</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: at an all-hands, your VP announces "AI coding assistants are mandatory across the org — target is 30% efficiency in six months," and asks you to carry it to your team.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both of these hurt you</div>
+<p>"Research shows AI-assisted coding delivers 30%, so we're adopting it." — you have hung a company strategy bet on a causal claim you never verified; when the number doesn't land, you are the one who falls.<br/>"There's no evidence for that number, so I'll reserve judgment." — pure resistance with no alternative. It reads as not backing the company's direction, and the line gets delivered anyway, by someone else.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try this: pull the two reasons apart on the spot</div>
+<p>"Two separate things. <strong>Why we're doing it</strong>: this is a company strategy bet — a team that isn't using AI in three years won't be competitive. <strong>That judgment doesn't need a study to authorize it.</strong> <strong>What we actually know</strong>: there is no reliable evidence for 30%. So we adopt on the strategic reason, and <strong>we treat 30% as a hypothesis to be tested, not a known fact</strong>. We'll know in six months, because I've already written down what counts as working. <strong>Until then, anyone claiming it works or doesn't is not citing evidence.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>For the change I'm pushing, is the real reason a values reason or an evidence reason? Which one am I giving in public?</li>
+<li>If a strong study said tomorrow that it doesn't work, would my policy still stand? If it would, why did I reach for evidence to back it in the first place?</li>
+<li>That number I keep quoting — have I read the source, or did I lift it off someone's slide?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Borrowing credibility from evidence</strong>: an evidence reason sounds like a law of nature made the decision for you, and it hides the decision-maker — so people reach for it instinctively. The price is that <strong>you also give up your room to change your mind</strong>.</li>
+<li><strong>The reverse error</strong>: "there's no evidence for it" gets used to kill every new attempt. Absence of evidence isn't evidence of absence — what you want there is a values reason plus an evaluable pilot.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> take one change you're pushing and write two lines. "Even if this were proven ineffective, we'd still do it, because ___." "If ___, we should stop." <strong>Can't write the first line? It's being propped up by borrowed evidence. Can't write the second? It isn't falsifiable.</strong></p>
+<p><strong>Reflect:</strong> when did you last change a publicly stated position because of evidence?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>You implement a dose, not a label
+<span class="en">A Zero Result on a Label Tells You Nothing</span></h2>
+<span class="tag">label ≠ intervention</span><span class="tag">dose ladder</span><span class="tag">averages hide distributions</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">"Phone ban" isn't one thing; it's a spectrum of intensity, from "silent mode in class" to "handed in at the door, unreachable all day." In the Norwegian data the <strong>benefit tracks the intensity</strong>. England is the sharper finding: <strong>restrictive school policies did not reduce students' total daily phone use</strong> — the label changed, the dose didn't. <strong>When you evaluate a label instead of a dose, a zero result tells you nothing.</strong></div>
+<div class="quote">
+<span class="en">"Until new behaviors are rooted in social norms and shared values, they are subject to degradation as soon as the pressure for change is removed."</span>
+<span class="source">— John P. Kotter, <em>Leading Change</em>, ch. 1, on the error of "not anchoring changes firmly in the corporate culture"</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Five doses under one name</div>
+<div class="tl-row">
+<div class="bar d1"><b>Level 1</b>written in the handbook</div>
+<div class="bar d2"><b>Level 2</b>asked for verbally</div>
+<div class="bar d3"><b>Level 3</b>a gate in the process</div>
+<div class="bar d4"><b>Level 4</b>impossible to bypass</div>
+<div class="bar d5"><b>Level 5</b>old path removed</div>
+</div>
+<div class="dgm-note">Norway's gains sit in the two right-hand levels. You think you're evaluating the measure; you're evaluating its weakest implementation.</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: your boss says, "We've had the RFC process for six months and engineering efficiency hasn't moved. Should we drop it?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both directions are wrong</div>
+<p>"Let's give it another quarter." — no new information, just delay.<br/>"Let's drop it, clearly it doesn't work." — you're rejecting an intervention using <strong>a dose that was never actually administered</strong>.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try this: report the dose before you argue about the effect</div>
+<p>"First, let's be clear what we'd be dropping. <strong>Of 41 designs this half, 9 went through an RFC with a second signer. The other 32 were documents written after the code had already merged.</strong> We didn't run an RFC process; we ran an RFC folder.<br/>To judge whether it works, it has to reach that dose first: for the next two months, <strong>no cross-team interface change merges without an RFC</strong> — that gate only, roughly 20% of designs. <strong>The zero we get in two months is a real zero; and if it's still zero, I'll be the first to propose dropping it.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>When I say "we've already rolled out X," can I quote a dose number — coverage, compliance rate, times it actually blocked something?</li>
+<li>Does this measure have a way around it? What share of cases take it?</li>
+<li>Before I call it ineffective: has it run at full strength for one complete cycle?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>The most common cause of a null effect isn't that the intervention failed — it's that the intervention never happened.</strong> A policy gets diluted three times over: translated into process, waived under deadline, forgotten at the next manager handover.</li>
+<li><strong>Averages hide distributions</strong>: Norway's full-sample effect was zero — significant for girls, zero for boys. The organizational analogue is everywhere. A policy applied "equally to everyone" (return-to-office mandates, a wider on-call rotation, meetings pushed into the evening) can average out to zero <strong>while its costs land on the people carrying more caregiving load, who are disproportionately women</strong>. Break out a subgroup whenever you report an average.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> measure the real dose of your most important "already rolled out" measure: coverage, bypass rate, number of decisions it actually changed. <strong>Numbers, not impressions.</strong></p>
+<p><strong>Reflect:</strong> how many of your team's measures are in the state of "name still there, dose zero"? They occupy the slot marked "we're already doing this," <strong>which is exactly what blocks actually doing it.</strong></p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Staying falsifiable after you've announced
+<span class="en">Write the Failure Criteria While You Can Still Be Neutral</span></h2>
+<span class="tag">cognitive dissonance</span><span class="tag">criteria up front</span><span class="tag">effects have a time shape</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Once a decision is public, the cost of changing your mind isn't just admitting you judged wrong — it's admitting you had the whole team work for six months for nothing. That isn't a willpower problem, it's a structural one: <strong>a public position automatically recruits you to defend it.</strong> There is one countermeasure: at the moment you announce, write down what counts as failure and hand it to someone else to hold — <strong>because that version of you is the last one that can still be neutral.</strong></div>
+<div class="quote">
+<span class="en">"A man with a conviction is a hard man to change. Tell him you disagree and he turns away. Show him facts or figures and he questions your sources. Appeal to logic and he fails to see your point."</span>
+<span class="source">— Leon Festinger et al., <em>When Prophecy Fails</em> (1956), opening of ch. 1</span>
+</div>
+<p style="margin-top:14px;font-size:0.96rem;color:#3a2f1c">Criteria also need a time axis. In the pouch study wellbeing fell in year one and turned positive later; in Florida, test scores only improved in year two. <strong>Real organizational change almost always gets worse before it gets better — or just stays worse</strong>. Look at it without separate time windows and you'll pass final judgment at the bottom of the trough.</p>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: six months ago you pushed through a mandatory AI-assisted review gate on cross-team interface changes. Q2 data: defect escape rate flat, average review time up 20%. You present next week.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both directions are wrong</div>
+<p>"It's early, the tooling is still improving — I'd give it two more quarters." — each clause is defensible; together they're a cheque that never comes due.<br/>"I was wrong, let's kill it." — if you're at the bottom of the transition trough, you're cutting something that would have worked, at its lowest point — and <strong>next time nobody will dare push anything</strong>.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try this: read out the criteria you wrote six months ago</div>
+<p>"Going by the criteria we set then: <strong>at six months we look at adoption and review time (transition metrics); at twelve months, defect escape rate (the outcome metric)</strong>. The six-month bar was 'coverage &gt;80% and review-time increase &lt;30%' — we're at 87% and +20%, <strong>so that gate passes</strong>. The outcome criterion isn't due yet, <strong>so I'm not drawing a conclusion on it today</strong>. One cost we didn't anticipate: cross-timezone PRs wait about 4 hours longer. <strong>If defect escape hasn't dropped 15% at twelve months, then per what we wrote, we remove the gate and keep advisory mode only.</strong>"</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ If someone says "you just won't admit it isn't working"</div>
+<p>"Possibly. Which is why the criteria aren't mine as of today — they were set six months ago, they're on page 3 of the proposal, and Dana signed off on them. <strong>The only freedom I have today is to read them out.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>When I announced this change, did I also write down "how much / by when / what we do if it misses"?</li>
+<li>Do the criteria separate transition metrics from outcome metrics, with different due dates?</li>
+<li>Has a second person signed the criteria, or do they exist only in my head — which is to say, not at all?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Rewriting the criteria the moment they come due</strong>: when the data looks bad, the tempting move isn't stubbornness — it's "redefining the metric." That's more dangerous than stubbornness, because it looks like being data-driven. One defense only: <strong>any change of definition must leave a trace, stating what the number was before the change.</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> dig up your <strong>exact words</strong> from six months ago (email, slide, meeting notes) and compare them line by line with what you say now, <strong>to see whether the goal quietly moved</strong>. If it did, say so unprompted at the next review.</p>
+<p><strong>Reflect:</strong> in the last two years, did you have a project that "quietly faded" rather than being declared a failure? Who should have called it?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>When someone cites a study at you
+<span class="en">Both Sides Are Quoting Real Papers</span></h2>
+<span class="tag">read the source</span><span class="tag">both sides quote real papers</span><span class="tag">factual vs values disagreement</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">On phone bans, <strong>both sides are quoting real papers</strong>: supporters cite Norway's girls and Florida's second year, opponents cite England's null result and the pouch study's average. Nobody is fabricating; each side reports only the layer that suits them. Which is why <strong>"studies show" carries almost no information in a meeting</strong> — the information is in the questions below.</div>
+<div class="quote">
+<span class="en">"Thinking like a scientist... means being actively open-minded. It requires searching for reasons why we might be wrong—not for reasons why we must be right—and revising our views based on what we learn."</span>
+<span class="source">— Adam Grant, <em>Think Again</em>, ch. 1</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: in a cross-team review, a peer kills your proposal with an industry report — "the analysts say 70% of migrations like this fail."</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both of these lose</div>
+<p>"That report's methodology is flawed." — you haven't read it. It's a bluff, and it turns the argument personal.<br/>Say nothing and go find evidence later. — the decision in that room gets made <strong>today</strong>.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try this: break it into three checkable factual questions</div>
+<p>"I'd like to use that number, but three things first. <strong>How does the 70% define failure</strong> — does over-budget count? <strong>What migrations are in the sample</strong> — does it include same-stack moves like ours? <strong>What's the time window?</strong> I don't have those answers, so <strong>I won't use it to support my proposal, and I'd suggest we not use it to kill it either</strong> — I'll read the source this week and bring three answers next week."<br/>If they call that a delay: "I'm narrowing the disagreement. We don't disagree about whether to migrate; we disagree about whether that 70% applies to us. <strong>That's a factual disagreement solvable in a week, not a values disagreement.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li><strong>Level</strong>: is the figure from the full sample or a subgroup? "Significant in a subgroup, zero overall" is the most common way to mislead with true statements.</li>
+<li><strong>Magnitude and dose</strong>: how large is the effect ("significant" is a statistics word, not a business word)? Is its intervention intensity the same thing you're proposing to do?</li>
+<li><strong>Time window and cost side</strong>: is this year one or year three? Are costs reported at all — the Florida study reported a short-run rise in suspensions concentrated among Black students, <strong>which rarely appears on the slide that cites it</strong>.</li>
+<li>Has anyone in this room read the source, including me? And is this a factual disagreement or a values one?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Two cheap postures</strong>: citing without checking ("studies show"), and dismissing without checking ("academic research doesn't apply to industry"). Neither carries information.</li>
+<li><strong>The women's angle</strong>: asking to check a source in a meeting reads as "rigorous" from a man and more easily as "not a team player / slowing us down" from a woman. The lower-friction phrasing is to <strong>frame the move as progress rather than a brake</strong>: not "I disagree with that number," but "I'll go verify it and bring answers next week, so we don't have to argue about it again." <strong>The trade-off worth naming</strong>: this hands you extra work — a real cost, and not one you should be carrying alone. It's the cheapest available path in the current environment, <strong>not a fair arrangement</strong>.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> find a decision your team is making on the basis of a number "everyone knows," and chase it to its original source. <strong>If you can't find one, put that fact in the notes of the next review.</strong></p>
+<p><strong>Reflect:</strong> if a strong study tomorrow overturned your firmest technical conviction, what would you doubt first — the study, or yourself?</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>Going deeper</h3>
+<details><summary>Is "wait for the evidence" realistic in a fast-moving industry?</summary><div>Mostly not — it never arrives, and waiting has its own cost. The real first option is <strong>to build it as an evaluable pilot</strong>: narrow scope, full dose, criteria fixed in writing, a due date. "Wait" is only right when <strong>the action is irreversible and very expensive</strong> — layoffs, external commitments, deleting data. <strong>The dividing line is reversibility, not a preference for speed.</strong></div></details>
+<details><summary>My boss already announced it and I'm not the decision-maker. What can I do?</summary><div>You can't change the decision, but you can almost always change the <strong>record</strong>: add one line to the notes — "this decision rests on a strategic judgment, not on a verified effect." It challenges nobody, yet it fixes the terms. Then claim the job of writing the criteria, because <strong>whoever writes the criteria defines what counts as success</strong>. A year later, if it worked you're the reliable operator; if it didn't, <strong>you're the only person in the room with clean data</strong>.</div></details>
+<details><summary>Zero overall, significant in a subgroup — which do I decide on?</summary><div>First ask where the zero came from: <strong>genuinely no effect</strong>, or <strong>opposing effects cancelling out</strong> (some people gain, some lose)? In the second case, deciding on the average means systematically sacrificing the people who lose — and you won't see them in the report. The practice: <strong>for any org-wide policy, name two or three subgroups you have reason to worry about in advance, and report them separately afterwards</strong> — hunting for a significant subgroup after the fact is just another kind of fabrication.</div></details>
+<details><summary>Doesn't all this make me look indecisive?</summary><div>It does, if you only do the first half. "I'm not sure" with nothing after it reads as having no spine. <strong>The complete posture is "I'm not sure + I'm doing it + here are my criteria"</strong> — the uncertainty is about the effect, the commitment to act doesn't waver. Over time, the least credible person isn't the one who changes their mind often, <strong>it's the one who has never changed it for any evidence at all</strong>.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 72 · 2026.07.31</footer>
+</div>
+</body>
+</html>

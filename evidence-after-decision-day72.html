@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 72：当证据不足以支持你已经做出的决定</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
+.intro strong{color:#5c3a18}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
+.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
+.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
+.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
+.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
+.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
+.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
+.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#a04020}
+.dialog.good .speaker{color:#4a6a28}
+.dialog p{margin:6px 0;color:#3a2f1c}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
+.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f1ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #8a6d3b;font-size:0.94rem;color:#3a2f1c}
+.mini p{margin:4px 0}
+.mini strong{color:#5c3a18}
+.frame-diagram{background:#fcf6e8;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6d9bf}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a8702d;font-weight:700;text-align:center;margin-bottom:14px}
+.tl-label{font-size:0.78rem;color:#8a6d3b;letter-spacing:1px;margin:12px 0 6px;font-weight:700}
+.tl-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.bar{border-radius:3px;padding:9px 7px;font-size:0.79rem;text-align:center;color:#5c3a18;line-height:1.45}
+.bar b{display:block;font-size:0.74rem;letter-spacing:0.5px;margin-bottom:3px;opacity:0.85}
+.bar.d1{background:#f3ece0;color:#8a7c62}
+.bar.d2{background:#e9dcc2}
+.bar.d3{background:#dcc194}
+.bar.d4{background:#c99a5e;color:#fffaf0}
+.bar.d5{background:#a8702d;color:#fffaf0}
+.dgm-note{text-align:center;font-size:0.82rem;color:#8a6d3b;margin-top:12px;font-style:italic}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.85rem;line-height:1.55}
+.twocol .th{font-weight:700;letter-spacing:1px;font-size:0.76rem;text-align:center;padding:7px 6px;border-radius:3px}
+.twocol .th.a{background:#e6efdc;color:#33441e}
+.twocol .th.b{background:#f5e0d0;color:#6b3a1a}
+.twocol .cell{padding:10px 12px;border-radius:3px;background:#f3ece0;color:#3a2f1c}
+.twocol .cell b{display:block;color:#a8702d;font-size:0.74rem;letter-spacing:1px;margin-bottom:3px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
+nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffaf0;border-radius:8px;border-top:3px solid #5c3a18}
+.deep h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6d9bf;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6b4a1f;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a2f1c;padding-left:14px;border-left:2px solid #e6d9bf}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.tl-row{grid-template-columns:1fr 1fr}
+.twocol{grid-template-columns:1fr}
+.twocol .th{margin-top:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 72 · 2026.07.31</div>
+<h1>当证据不足以支持你已经做出的决定</h1>
+<div class="meta"><span>主题：Decision Under Inconvenient Evidence</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"Irrefutability is not a virtue of a theory (as people often think) but a vice." — Karl Popper, 1963</div>
+</header>
+<div class="intro">
+<p>2025–2026 年，半个西方世界立法禁止学生在校用手机。同期四项严格评估交卷：<strong>挪威</strong>全国登记册（Abrahamsson,《Journal of Human Resources》2026）——全样本效应为零，女生子群显著；<strong>英格兰</strong>30 校对照（Goodyear 等,《The Lancet Regional Health – Europe》2025）——校规与心理健康无关，<strong>也没降低全天手机总时长</strong>；<strong>美国</strong>锁袋全国研究（Allcott, Dee, Gentzkow 等, NBER 2026，4.3 万余所中学）——成绩平均效应近零，第一年幸福感下降、<strong>后续转正</strong>；<strong>佛州</strong>面板（Figlio &amp; Özek, NBER 2025）——第一年停学上升且集中在黑人学生，<strong>第二年成绩显著提升</strong>。</p>
+<p>这既不是「禁手机没用」也不是「有用」，而是<strong>一个已公开宣布的决定，撞上一份不干净的证据</strong>——大公司里每季度都在发生。四件事：<strong>分清两种理由</strong>、<strong>盯剂量不盯名字</strong>、<strong>宣布之后保住可证伪性</strong>、<strong>被人拿研究砸时怎么读原文</strong>。</p>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>值得做 ≠ 已被证明有效
+<span class="en">Worth Doing Is Not the Same as Proven to Work</span></h2>
+<span class="tag">两种理由</span><span class="tag">借证据的信用</span><span class="tag">可证伪性</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">支持一项政策只有两类理由：<strong>价值理由</strong>（我们认为课堂不该有手机，愿意付这个代价）和<strong>证据理由</strong>（有研究证明它改善心理健康）。两者都正当，但<strong>把价值理由包装成证据理由，代价是证据一翻盘，政策连同你的可信度一起塌</strong>——而它本可以只靠价值理由站着。</div>
+<div class="quote">
+<span class="en">"A theory which is not refutable by any conceivable event is non-scientific. Irrefutability is not a virtue of a theory (as people often think) but a vice."</span>
+<span class="zh">「不可能被任何可设想的事件所反驳的理论，是非科学的。不可反驳性不是理论的优点，而是缺点。」</span>
+<span class="source">— Karl Popper,《Conjectures and Refutations》第 1 章</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：VP 在 all-hands 宣布「全组强制使用 AI 编码助手，目标半年提效 30%」，要你在周会上转达并背书。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种反应都会伤到你</div>
+<p>「研究表明 AI 能提效 30%，所以我们要用。」——你把公司的战略选择挂到一个自己没验证过的因果声明上；数字不兑现，塌的是你。<br/>「没有证据支持，我保留意见。」——纯抵抗，会被读成不支持公司方向，话照样有人去讲。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：把两种理由当场拆开</div>
+<p>「两件事分开说。<strong>我们为什么做</strong>：这是公司的战略下注——三年后不会用 AI 的团队没有竞争力，<strong>这个判断不需要一份研究来批准</strong>。<strong>我们知道什么</strong>：没有可靠证据说它能提效 30%。所以按战略理由推行，<strong>把 30% 当成待检验的假设，不当成已知事实</strong>；六个月后会知道，因为我已写好怎么算有用。<strong>在那之前说有用或没用的，说的都不是证据。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我推的这项变革，真实理由是价值理由还是证据理由？公开说的是哪一种？</li>
+<li>若明天有研究说它无效，我的政策还站得住吗？站得住的话，当初何必拿证据背书？</li>
+<li>我引用的那个数字，我看过原文吗？还是从别人的 slide 上抄的？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>借证据的信用</strong>：证据理由听起来像自然规律替你做了决定，把决策者藏起来——人本能选它。代价是<strong>你同时失去了改主意的空间</strong>。</li>
+<li><strong>反向错误</strong>：「没有证据支持」被用来否掉一切新尝试。缺证据不等于无效——那时你要的是价值理由加一个可评估的试点。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>挑一项你在推的变革写两行——「即使被证明无效我们仍要做，因为＿＿」「如果＿＿就该停」。<strong>第一行写不出，说明它靠借来的证据撑着；第二行写不出，说明它不可证伪。</strong></p>
+<p><strong>思考：</strong>你上一次因为证据而改变一个已公开表态的立场，是什么时候？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>你推行的是剂量，不是名字
+<span class="en">You Implement a Dose, Not a Label</span></h2>
+<span class="tag">标签≠干预</span><span class="tag">剂量阶梯</span><span class="tag">平均数掩盖分布</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">「禁手机」不是一件事，是一条强度光谱：从「上课调静音」到「进校上交、全天不可及」。挪威数据里<strong>收益随强度走</strong>；英格兰更刺痛：<strong>限制性校规并没有降低学生全天的手机总时长</strong>——换了标签，没换剂量。<strong>评估标签而不是剂量，零结果什么也没告诉你。</strong></div>
+<div class="quote">
+<span class="en">"Until new behaviors are rooted in social norms and shared values, they are subject to degradation as soon as the pressure for change is removed."</span>
+<span class="zh">「在新行为扎根于社会规范与共同价值之前，只要推动变革的压力一撤，它们就会退化。」</span>
+<span class="source">— John P. Kotter,《Leading Change》第 1 章，八大错误之「未将变革锚定进企业文化」</span>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">同一个名字底下的五档剂量</div>
+<div class="tl-row">
+<div class="bar d1"><b>1 档</b>写进手册</div>
+<div class="bar d2"><b>2 档</b>口头要求</div>
+<div class="bar d3"><b>3 档</b>流程卡点</div>
+<div class="bar d4"><b>4 档</b>无法绕过</div>
+<div class="bar d5"><b>5 档</b>移除旧路径</div>
+</div>
+<div class="dgm-note">挪威的收益集中在右侧两档。你以为在评估这项措施，其实在评估它的最弱实现。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：老板说「RFC 制度推了半年，工程效率没变化，是不是该取消？」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两个方向都错</div>
+<p>「再给一个季度吧。」——没有新信息，只是拖。<br/>「取消吧，看来没用。」——你在用一个<strong>从未真正施加过的剂量</strong>去否定一个干预。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：先报剂量，再谈效果</div>
+<p>「先分清取消什么。<strong>这半年 41 个设计，走完 RFC 并有第二人签字的只有 9 个，另外 32 个是代码合完后补的文档。</strong>我们没推行 RFC 制度，我们推行了一个 RFC 文件夹。<br/>要判断有没有用，得先真加到那个剂量：接下来两个月<strong>跨团队接口变更没有 RFC 不许合</strong>，只卡这一处（约占两成）。<strong>两个月后的零才是真的零；那时还是零，我第一个提议取消。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我说「已经推行了 X」时，能报出一个剂量数字吗（覆盖率／合规率／被拦下的次数）？</li>
+<li>这项措施有可以绕过的口子吗？被绕过的比例是多少？</li>
+<li>判它无效之前，它在足量强度下完整跑过一个周期吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>零效应最常见的原因不是干预无效，是干预根本没发生。</strong>政策会被稀释三轮：翻译成流程、赶工期豁免、换一任 manager 遗忘。</li>
+<li><strong>平均数掩盖分布</strong>：挪威研究全样本为零，女生显著、男生为零。组织里同构——「一视同仁」的政策（强制回办公室、扩大 on-call、会排进晚间）平均效应可能是零，<strong>但成本集中落在承担更多照护责任的人身上，这部分人以女性居多</strong>。报平均数时顺手拆一次子群。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>给你手上最重要的一项「已推行」措施量一次真实剂量：覆盖率、绕过率、真正被它改变过的决定数。<strong>用数字，不用感觉。</strong></p>
+<p><strong>思考：</strong>你团队有多少项措施处在「名字还在、剂量为零」的状态？它们占着位置，<strong>挡住的正是真正去做这件事。</strong></p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>宣布之后，怎么保住可证伪性
+<span class="en">Staying Falsifiable After You've Announced</span></h2>
+<span class="tag">认知失调</span><span class="tag">判据前置</span><span class="tag">效应的时间形状</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">决定一旦公开，改主意的成本就不只是承认判断错了，还包括承认让全组白忙了半年。这不是意志力问题，是结构问题：<strong>公开表态会自动招募你为它辩护。</strong>对策只有一个：表态的同时把「什么算失败」写死、交给别人保管——<strong>那一刻的你，是最后一个还能中立的你。</strong></div>
+<div class="quote">
+<span class="en">"A man with a conviction is a hard man to change. Tell him you disagree and he turns away. Show him facts or figures and he questions your sources. Appeal to logic and he fails to see your point."</span>
+<span class="zh">「一个抱有信念的人很难被改变。你说不同意，他转身走开；你摆出事实和数据，他质疑你的来源；你诉诸逻辑，他看不出你的重点。」</span>
+<span class="source">— Leon Festinger 等,《When Prophecy Fails》(1956) 第 1 章开篇</span>
+</div>
+<p style="margin-top:14px;font-size:0.96rem;color:#3a2f1c">判据还必须带时间轴：锁袋研究第一年幸福感下降、后续转正，佛州第二年成绩才提升。<strong>真实变革几乎都是先变差再变好，或者一直差</strong>——不分时间窗看，你就会在谷底做终审。</p>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你半年前推动了「跨团队接口变更强制 AI 辅助 review 门禁」。Q2 数据：缺陷逃逸率没降，review 平均时长上升 20%。下周部门评审要讲。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两个方向都错</div>
+<p>「数据还早，工具也在迭代，建议再观察两个季度。」——每句单独看都成立，合起来是一张永不到期的支票。<br/>「我错了，取消。」——若正落在谷底，你会在最低点砍掉一件本来会成的事，而且<strong>下次没人敢再推任何东西</strong>。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：照半年前写好的判据念</div>
+<p>「按当时的判据讲：<strong>六个月看采纳与时长（过渡期指标），十二个月看缺陷逃逸率（结果指标）</strong>。六个月判据是『覆盖率 &gt;80% 且时长增幅 &lt;30%』——87%、+20%，<strong>这一档通过</strong>；结果判据还没到期，<strong>我今天不下结论</strong>。另报一个当时没预料到的代价：跨时区 PR 平均多等 4 小时。<strong>若十二个月缺陷逃逸率没降 15%，按当时写好的取消门禁、只留建议模式。</strong>」</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 若有人说「你就是不肯承认它没用」</div>
+<p>「有可能。所以判据不是我今天定的，是半年前定的，写在提案第 3 页，Dana 也签了字。<strong>我今天唯一的自由是照它念。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>宣布时有没有同时写下「多少／到什么时候／达不到就做什么」？</li>
+<li>判据区分了过渡期指标和结果指标吗？到期日分开了吗？</li>
+<li>判据有第二个人签字吗？还是只在我脑子里（那等于不存在）？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>判据到期时改判据</strong>：数据难看时最诱人的不是硬撑，是「重新定义指标」——它更危险，因为看起来像在做数据驱动。防线只有一条：<strong>改口径必须留痕，并写清改之前的数字。</strong></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>把你半年前公开宣布时的<strong>原话</strong>找出来（邮件／slide／纪要），跟今天的说法逐句对照，<strong>看有没有不知不觉改过目标</strong>。改了就在下次评审上主动说出来。</p>
+<p><strong>思考：</strong>过去两年，你有没有一个项目是「悄悄淡出」而不是「被判定失败」的？谁本该宣布结算？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>有人拿研究砸你的时候
+<span class="en">When Someone Cites a Study at You</span></h2>
+<span class="tag">读原文的追问</span><span class="tag">双方引的都是真论文</span><span class="tag">事实分歧 vs 价值分歧</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">关于禁手机，<strong>双方引的都是真论文</strong>：支持方引挪威的女生子群和佛州第二年的成绩，反对方引英格兰的零结果和锁袋研究的平均值。没人造假，双方只报了对自己有利的那一层。所以<strong>「有研究表明」几乎不携带信息量</strong>——携带信息量的是下面几个问题。</div>
+<div class="quote">
+<span class="en">"Thinking like a scientist... means being actively open-minded. It requires searching for reasons why we might be wrong—not for reasons why we must be right—and revising our views based on what we learn."</span>
+<span class="zh">「像科学家一样思考……意味着主动地开放：去搜寻我们可能错在哪里的理由——而不是我们必定正确的理由——并据此修正观点。」</span>
+<span class="source">— Adam Grant,《Think Again》第 1 章</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：跨团队评审上，一位 peer 引一份行业报告否掉你的方案：「分析机构说这类迁移 70% 会失败。」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种反应都会输</div>
+<p>「那份报告方法论有问题。」——你还没读，是虚张声势，还把辩论变成了对人。<br/>沉默，打算改天再找证据。——房间里的决定<strong>今天</strong>就做完了。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：拆成三个可查的事实问题</div>
+<p>「这个数字我想用，但得先对齐三件事：<strong>70% 里失败怎么定义</strong>，超预算算不算？<strong>样本是哪一类迁移</strong>，包不包括我们这种同栈？<strong>时间窗多长</strong>？我没有答案，所以<strong>我不用它支持我的方案，也建议先别用它否掉</strong>——这周我读原文，下周带三个答案再定。」<br/>若对方说这是拖进度：「我在缩小分歧——分歧不是要不要迁移，是那个 70% 适不适用我们。<strong>这是一周能解决的事实分歧，不是价值分歧。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li><strong>层级</strong>：报的是全样本还是子群？「子群显著、全样本为零」是最常见的真话式误导。</li>
+<li><strong>量级与剂量</strong>：效应量多大（「显著」是统计词不是商业词）？它的干预强度跟你要做的是同一件事吗？</li>
+<li><strong>时间窗与成本侧</strong>：报的是第一年还是第三年？有没有报代价——佛州研究报了短期停学上升且集中在黑人学生，<strong>这条通常不出现在引用它的 slide 上</strong>。</li>
+<li>这份研究，房间里有人真读过原文吗（包括我）？这是事实分歧还是价值分歧？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>两种廉价姿势</strong>：不加检验地引（「有研究表明」），和不加检验地否（「学术研究跟工业界不一样」）。都不携带信息。</li>
+<li><strong>女性视角</strong>：会上要求核对原文，男性常被读作「严谨」，女性更容易被读作「不配合／拖进度」。降摩擦的措辞是<strong>把动作说成推进而不是刹车</strong>：不说「我不同意这个数字」，说「我来查实，下周带答案回来，下次就不用再吵它」。<strong>要承认的 trade-off</strong>：这让你多担一份活，成本真实、也不该由你独担——它只是当前代价最小的路径，<strong>不是公平的安排</strong>。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>找出你团队正依据某个「大家都知道」的数字在做的决定，去追它的原始出处。<strong>追不到，就把这个事实写进下次评审的纪要。</strong></p>
+<p><strong>思考：</strong>若明天一份高质量研究推翻了你最坚定的技术判断，你会最先怀疑什么——那份研究，还是你自己？</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>「等证据」在快节奏行业里现实吗？</summary><div>基本不现实——等不到，且等本身有成本。真实的第一选项是<strong>做成可评估的试点</strong>：小范围、足剂量、判据写死、定期到期。「等」只在<strong>行动不可逆且代价极高</strong>时才对（裁员、对外承诺、数据删除）。<strong>分界线是可逆性，不是速度偏好。</strong></div></details>
+<details><summary>老板已经宣布了，我不是决策者，能做什么？</summary><div>你改不了决定，但几乎总能改<strong>记录</strong>：在纪要里补一句「本决定依据是战略判断，不是已验证的效果」——不挑战任何人，却把口径固定住了；再主动认领判据的书写权，<strong>写判据的人定义什么算成功</strong>。一年后它若成了你是靠谱的执行者，若没成，<strong>你是房间里唯一有干净数据的人</strong>。</div></details>
+<details><summary>全样本为零、子群显著，该按哪个决策？</summary><div>先问这个零怎么来的：是<strong>真的没效应</strong>，还是<strong>正负相消</strong>（一部分人受益、一部分人受损）？后者按平均数决策等于系统性牺牲受损的人，而你在报告里看不见他们。做法：<strong>任何全组政策，事前指定两三个你担心的子群，事后分别报</strong>——事后翻找显著子群是另一种造假。</div></details>
+<details><summary>这套东西会不会让我显得优柔寡断？</summary><div>会，如果你只做前半段。<strong>完整的姿势是「我不确定 + 我照做 + 这是我的判据」</strong>——不确定的是效果，不动摇的是行动。长期看最不可信的不是常改主意的人，<strong>而是从没因为任何证据改过主意的人</strong>。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 72 · 2026.07.31</footer>
+</div>
+</body>
+</html>
