@@ -5,65 +5,69 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>领导力 Day 4：难对话的工艺</title>
+<meta content="#262219" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#262219;color:#d6d0c4;line-height:1.75}
 .container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
-header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
-header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
-header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
-header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #917545;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#d29a57;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#dcba98;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#c3a674}
 header .meta span{margin:0 8px}
-header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
-.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
-.intro strong{color:#5c3a18}
-.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
-.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
-.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
-.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
-.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
-.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#d29a57;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#1d180e;border-left:4px solid #d29a57;border-radius:4px;font-size:0.97rem;color:#d5cab7}
+.intro strong{color:#dcba98}
+.card{margin-top:42px;background:#1d180e;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #d29a57}
+.card-header{border-bottom:1px solid #4f4228;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#d29a57;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#dcba98;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#c3a674;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#4e4226;color:#d8b78c;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
 .section{margin-top:20px}
-.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
-.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
-.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
-.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
-.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
-.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
-.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
-.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#d29a57;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#d5cab7;font-weight:600;background:#3d331c;padding:14px 18px;border-radius:4px;border-left:3px solid #dcba98}
+.quote{background:#312916;padding:16px 20px;border-radius:4px;font-style:italic;color:#d3c3a9}
+.quote .en{display:block;color:#d5cab7;margin-bottom:8px}
+.quote .zh{display:block;color:#d8b78c;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#c3a674;font-style:normal;text-align:right}
+.scene{background:#262012;padding:18px 20px;border-radius:4px;border:1px solid #4f4228}
+.scene .setup{color:#d8b78c;font-size:0.95rem;margin-bottom:10px}
 .dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
-.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
-.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog.bad{background:#3f2a1a;border-left:3px solid #c86c4a}
+.dialog.good{background:#2a3320;border-left:3px solid #95c373}
 .dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-.dialog.bad .speaker{color:#a04020}
-.dialog.good .speaker{color:#4a6a28}
-.dialog p{margin:4px 0;color:#3a2f1c}
+.dialog.bad .speaker{color:#dd7d5d}
+.dialog.good .speaker{color:#b0d08e}
+.dialog p{margin:4px 0;color:#d5cab7}
 ul.checklist{list-style:none;padding:0}
-ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#d5cab7;font-size:0.96rem;border-bottom:1px dashed #4f4228}
 ul.checklist li:last-child{border-bottom:none}
-ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
-.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;font-size:1.1rem;top:6px}
+.pitfall{background:#261b13;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#dcba9a}
 .pitfall ul{margin-left:20px;margin-top:6px}
 .pitfall li{margin:4px 0}
-.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
-.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
-.ref{font-size:0.9rem;color:#4a3a20}
-.ref strong{color:#5c3a18}
-.english{background:#eef0e8;padding:14px 18px;border-radius:4px;font-size:0.94rem;color:#3a4a20;border-left:3px solid #5c7a3a}
-.english .label{font-weight:700;color:#4a6a28;font-size:0.82rem;letter-spacing:2px;margin-bottom:8px;display:block}
-.english em{color:#5c8a3a;font-weight:600;font-style:normal}
+.female{background:#261b23;padding:16px 20px;border-radius:4px;border-left:3px solid #c373a3;font-size:0.94rem;color:#d4a9c4}
+.female-label{font-weight:700;color:#d080b0;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#d3c3a9}
+.ref strong{color:#dcba98}
+.english{background:#24261e;padding:14px 18px;border-radius:4px;font-size:0.94rem;color:#c3d3a9;border-left:3px solid #a4c282}
+.english .label{font-weight:700;color:#b0d08e;font-size:0.82rem;letter-spacing:2px;margin-bottom:8px;display:block}
+.english em{color:#95c373;font-weight:600;font-style:normal}
 .homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
 .homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
 .homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
-.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
-.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.homework .action{background:rgba(29,24,14,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #917545}
+.frame-diagram{background:#262012;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #4f4228;text-align:center}
 .frame-diagram svg{max-width:100%;height:auto}
-.template{background:#f5efe0;padding:16px 18px;border-radius:4px;border:1px dashed #c4a878;font-family:"Courier New",monospace;font-size:0.88rem;color:#3a2f1c;white-space:pre-wrap;line-height:1.6;margin-top:10px}
-.template .label-inline{color:#a8702d;font-weight:700}
-nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
-nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
-nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.template{background:#2e2819;padding:16px 18px;border-radius:4px;border:1px dashed #917545;font-family:"Courier New",monospace;font-size:0.88rem;color:#d5cab7;white-space:pre-wrap;line-height:1.6;margin-top:10px}
+.template .label-inline{color:#d29a57;font-weight:700}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #917545}
+nav.footer-nav a{color:#d29a57;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #917545;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#9e6623;color:#fffaf0}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
@@ -101,16 +105,16 @@ header h1{font-size:1.55rem}
 <div class="section-label">三层结构（一张图）</div>
 <div class="frame-diagram">
 <svg viewbox="0 0 560 290" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#e8dcc0" height="60" rx="4" stroke="#a8702d" stroke-width="1.5" width="480" x="40" y="30"></rect>
-<text fill="#5c3a18" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="280" y="55">Layer 1 · WHAT HAPPENED（事实层）</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="78">事实是什么？谁的责任？意图是什么？— manager 唯一准备的层</text>
-<rect fill="#f3e9d2" height="60" rx="4" stroke="#a8702d" stroke-width="1.5" width="480" x="40" y="105"></rect>
-<text fill="#5c3a18" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="280" y="130">Layer 2 · FEELINGS（情绪层）</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="153">他会感到 什么？羞愧？愤怒？被背叛？我自己感到什么？焦虑？内疚？</text>
-<rect fill="#f3e8f0" height="80" rx="4" stroke="#8a3a6a" stroke-width="1.5" width="480" x="40" y="180"></rect>
-<text fill="#7a2a5a" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="280" y="205">Layer 3 · IDENTITY（身份层）</text>
-<text fill="#4a1f3a" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="228">他听到的潜台词："我是不是个糟糕的工程师 / 妈妈 / 人？"</text>
-<text fill="#4a1f3a" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="248">这一层最深、最痛、manager 最少看见——但决定他事后能不能恢复</text>
+<rect fill="#4e4226" height="60" rx="4" stroke="#d29a57" stroke-width="1.5" width="480" x="40" y="30"></rect>
+<text fill="#dcba98" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="280" y="55">Layer 1 · WHAT HAPPENED（事实层）</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="78">事实是什么？谁的责任？意图是什么？— manager 唯一准备的层</text>
+<rect fill="#3d331c" height="60" rx="4" stroke="#d29a57" stroke-width="1.5" width="480" x="40" y="105"></rect>
+<text fill="#dcba98" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="280" y="130">Layer 2 · FEELINGS（情绪层）</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="153">他会感到 什么？羞愧？愤怒？被背叛？我自己感到什么？焦虑？内疚？</text>
+<rect fill="#261b23" height="80" rx="4" stroke="#c373a3" stroke-width="1.5" width="480" x="40" y="180"></rect>
+<text fill="#d080b0" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="280" y="205">Layer 3 · IDENTITY（身份层）</text>
+<text fill="#d4a9c4" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="228">他听到的潜台词："我是不是个糟糕的工程师 / 妈妈 / 人？"</text>
+<text fill="#d4a9c4" font-family="Georgia" font-size="11" text-anchor="middle" x="280" y="248">这一层最深、最痛、manager 最少看见——但决定他事后能不能恢复</text>
 </svg>
 </div>
 </div>
@@ -129,14 +133,14 @@ header h1{font-size:1.55rem}
 <div class="dialog bad">
 <div class="speaker">差版本（只打第一层）</div>
 <p>"X，我想跟你聊一下上周 design review。你对 Y 的方案的回应不太合适。我希望你以后注意。"</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 纯事实层。X 听到的是"manager 说我不合适"——身份层警报全开，他立刻防御："我哪里不合适？我只是直说了我的想法。"对话就此进入辩论。</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ 纯事实层。X 听到的是"manager 说我不合适"——身份层警报全开，他立刻防御："我哪里不合适？我只是直说了我的想法。"对话就此进入辩论。</p>
 </div>
 <div class="dialog good">
 <div class="speaker">好版本（三层都铺开）</div>
 <p>"X，想跟你聊一件事，可能你会有不同看法，所以我想先听你的版本。上周 design review，你对 Y 方案的回应——'这跟我们三年前丢掉的那个项目一模一样'——结束之后 Y 没再发言。我想先问：你那一刻的意图是什么？<br/><br/>
 （听完）<br/><br/>
 我相信你的意图是想保护团队不重蹈覆辙——这是 staff 该做的事。但落到 Y 身上的影响是她现在不敢再 propose。我不是在说你是个 mean person——我知道你不是。我是在说一个具体的 pattern，我需要它换一个表达方式。你愿意一起想想怎么换吗？"</p>
-<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ 三层都覆盖了：(1) 事实——具体那句话、具体后果；(2) 情绪——问他的意图、确认你自己的不适；(3) 身份——明确说"你不是 mean person"，把人和行为分开。Stone 把这叫做 "separate intent from impact"。</p>
+<p style="margin-top:8px;color:#b0d08e;font-size:0.88rem;">→ 三层都覆盖了：(1) 事实——具体那句话、具体后果；(2) 情绪——问他的意图、确认你自己的不适；(3) 身份——明确说"你不是 mean person"，把人和行为分开。Stone 把这叫做 "separate intent from impact"。</p>
 </div>
 </div>
 </div>
@@ -245,7 +249,7 @@ header h1{font-size:1.55rem}
 <div class="dialog bad">
 <div class="speaker">差版本（铺垫太长）</div>
 <p>"嘿 X，早。你周末怎么样？……嗯，我想跟你聊一下，最近这几个月其实我们都在讨论一些表现上的事情，你也知道 PIP 走得不太顺。公司这边也有一些……嗯，怎么说呢，整体的考虑……"</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ X 已经听到了：他将被解雇——但你没说。每过一秒都是折磨。Horowitz 称这是 "the worst kind of cruelty disguised as kindness"。</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ X 已经听到了：他将被解雇——但你没说。每过一秒都是折磨。Horowitz 称这是 "the worst kind of cruelty disguised as kindness"。</p>
 </div>
 <div class="dialog good">
 <div class="speaker">好版本（90 秒规则）</div>
@@ -334,7 +338,7 @@ header h1{font-size:1.55rem}
 <div class="dialog bad">
 <div class="speaker">差版本（保护他 = 伤害他）</div>
 <p>"X，关于 promo 我有点不太好的消息。这次没成。不过你真的非常 close——校准会上很多人都站你这边的，最后是几个 cross-team scope 的细节没撑住。下半年继续保持，下次应该没问题的，我对你有信心。"</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 三个问题：(1) "几个 cross-team scope 的细节"含糊，他不知道做什么；(2) "下次没问题"是你不能保证的承诺；(3) 暗示"系统差点点不公平"，把责任甩给校准会。他下半年大概率重复同样的 pattern，再次失败。</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ 三个问题：(1) "几个 cross-team scope 的细节"含糊，他不知道做什么；(2) "下次没问题"是你不能保证的承诺；(3) 暗示"系统差点点不公平"，把责任甩给校准会。他下半年大概率重复同样的 pattern，再次失败。</p>
 </div>
 <div class="dialog good">
 <div class="speaker">好版本（清晰 + 路径 + 守住希望但不掺假）</div>
@@ -416,28 +420,28 @@ header h1{font-size:1.55rem}
 <div class="section-label">两间房间（一张图）</div>
 <div class="frame-diagram">
 <svg viewbox="0 0 560 280" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#e6efdc" height="240" rx="6" stroke="#5c8a3a" stroke-width="1.5" width="250" x="20" y="20"></rect>
-<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="145" y="48">ROOM 1 · POSTMORTEM</text>
-<text fill="#4a6a28" font-family="Georgia" font-size="11" font-style="italic" text-anchor="middle" x="145" y="68">(Blameless · 全组在)</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="40" y="98">目标：榨出系统学习</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="40" y="118">主语："我们的系统..."</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="40" y="138">问题："guardrails 在哪缺失？"</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="40" y="158">产出：系统改动 + 流程改</text>
-<text fill="#4a6a28" font-family="Georgia" font-size="11" font-weight="700" x="40" y="185">不在这里讨论：</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="10" x="40" y="205">• 谁应该被惩罚</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="10" x="40" y="222">• 当事人的绩效</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="10" x="40" y="239">• 谁的"判断"有问题</text>
-<rect fill="#f5e0d0" height="240" rx="6" stroke="#b85c3a" stroke-width="1.5" width="250" x="290" y="20"></rect>
-<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="415" y="48">ROOM 2 · 1:1</text>
-<text fill="#a04020" font-family="Georgia" font-size="11" font-style="italic" text-anchor="middle" x="415" y="68">(私下 · 仅 manager + 当事人)</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="310" y="98">目标：个人学习与反馈</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="310" y="118">主语："你的判断..."</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="310" y="138">问题："那一刻你怎么想的？"</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11" x="310" y="158">产出：行为改 + 信任修复</text>
-<text fill="#a04020" font-family="Georgia" font-size="11" font-weight="700" x="310" y="185">这里才讨论：</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="10" x="310" y="205">• 绩效影响（如有）</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="10" x="310" y="222">• 你的判断模式</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="10" x="310" y="239">• 信任如何修复</text>
+<rect fill="#2a3320" height="240" rx="6" stroke="#95c373" stroke-width="1.5" width="250" x="20" y="20"></rect>
+<text fill="#b0d08e" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="145" y="48">ROOM 1 · POSTMORTEM</text>
+<text fill="#b0d08e" font-family="Georgia" font-size="11" font-style="italic" text-anchor="middle" x="145" y="68">(Blameless · 全组在)</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="40" y="98">目标：榨出系统学习</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="40" y="118">主语："我们的系统..."</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="40" y="138">问题："guardrails 在哪缺失？"</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="40" y="158">产出：系统改动 + 流程改</text>
+<text fill="#b0d08e" font-family="Georgia" font-size="11" font-weight="700" x="40" y="185">不在这里讨论：</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="10" x="40" y="205">• 谁应该被惩罚</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="10" x="40" y="222">• 当事人的绩效</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="10" x="40" y="239">• 谁的"判断"有问题</text>
+<rect fill="#3f2a1a" height="240" rx="6" stroke="#c86c4a" stroke-width="1.5" width="250" x="290" y="20"></rect>
+<text fill="#dd7d5d" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="415" y="48">ROOM 2 · 1:1</text>
+<text fill="#dd7d5d" font-family="Georgia" font-size="11" font-style="italic" text-anchor="middle" x="415" y="68">(私下 · 仅 manager + 当事人)</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="310" y="98">目标：个人学习与反馈</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="310" y="118">主语："你的判断..."</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="310" y="138">问题："那一刻你怎么想的？"</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11" x="310" y="158">产出：行为改 + 信任修复</text>
+<text fill="#dd7d5d" font-family="Georgia" font-size="11" font-weight="700" x="310" y="185">这里才讨论：</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="10" x="310" y="205">• 绩效影响（如有）</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="10" x="310" y="222">• 你的判断模式</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="10" x="310" y="239">• 信任如何修复</text>
 </svg>
 </div>
 </div>
@@ -456,7 +460,7 @@ header h1{font-size:1.55rem}
 <div class="dialog bad">
 <div class="speaker">差版本（"假 blameless"）</div>
 <p>"大家好。今天我们做这次 incident 的复盘。我先强调：这是 blameless 的。我们不是来追究是谁的错。X，你愿意先讲一下当时的情况吗？"</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ 三个问题：(1) "不追究是谁的错"——但所有人都知道这是关于 X，于是变成"假装无指责"的尴尬；(2) 让 X 第一个讲——把他放在被审判席上；(3) 没有定义这场会的产出是什么。</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ 三个问题：(1) "不追究是谁的错"——但所有人都知道这是关于 X，于是变成"假装无指责"的尴尬；(2) 让 X 第一个讲——把他放在被审判席上；(3) 没有定义这场会的产出是什么。</p>
 </div>
 <div class="dialog good">
 <div class="speaker">好版本（Allspaw 风格）</div>

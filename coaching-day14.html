@@ -5,73 +5,77 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>领导力 Day 14：Coaching 教练式带人</title>
+<meta content="#262219" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#262219;color:#d6d0c4;line-height:1.75}
 .container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
-header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
-header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
-header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
-header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #917545;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#d29a57;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#dcba98;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#c3a674}
 header .meta span{margin:0 8px}
-header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
-.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
-.intro strong{color:#5c3a18}
-.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
-.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
-.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
-.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
-.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
-.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#d29a57;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#1d180e;border-left:4px solid #d29a57;border-radius:4px;font-size:0.97rem;color:#d5cab7}
+.intro strong{color:#dcba98}
+.card{margin-top:42px;background:#1d180e;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #d29a57}
+.card-header{border-bottom:1px solid #4f4228;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#d29a57;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#dcba98;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#c3a674;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#4e4226;color:#d8b78c;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
 .section{margin-top:20px}
-.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
-.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
-.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
-.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
-.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
-.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
-.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
-.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#d29a57;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#d5cab7;font-weight:600;background:#3d331c;padding:14px 18px;border-radius:4px;border-left:3px solid #dcba98}
+.quote{background:#312916;padding:16px 20px;border-radius:4px;font-style:italic;color:#d3c3a9}
+.quote .en{display:block;color:#d5cab7;margin-bottom:8px}
+.quote .zh{display:block;color:#d8b78c;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#c3a674;font-style:normal;text-align:right}
+.scene{background:#262012;padding:18px 20px;border-radius:4px;border:1px solid #4f4228}
+.scene .setup{color:#d8b78c;font-size:0.95rem;margin-bottom:10px}
 .dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
-.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
-.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog.bad{background:#3f2a1a;border-left:3px solid #c86c4a}
+.dialog.good{background:#2a3320;border-left:3px solid #95c373}
 .dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-.dialog.bad .speaker{color:#a04020}
-.dialog.good .speaker{color:#4a6a28}
-.dialog p{margin:4px 0;color:#3a2f1c}
+.dialog.bad .speaker{color:#dd7d5d}
+.dialog.good .speaker{color:#b0d08e}
+.dialog p{margin:4px 0;color:#d5cab7}
 ul.checklist{list-style:none;padding:0}
-ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#d5cab7;font-size:0.96rem;border-bottom:1px dashed #4f4228}
 ul.checklist li:last-child{border-bottom:none}
-ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
-.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;font-size:1.1rem;top:6px}
+.pitfall{background:#261b13;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#dcba9a}
 .pitfall ul{margin-left:20px;margin-top:6px}
 .pitfall li{margin:4px 0}
-.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
-.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
-.ref{font-size:0.9rem;color:#4a3a20}
-.ref strong{color:#5c3a18}
-.qbank{background:#fcf6e8;border:1px solid #e6d9bf;border-radius:4px;overflow:hidden}
-.qbank .row{display:flex;border-bottom:1px solid #ede0c4;font-size:0.94rem}
+.female{background:#261b23;padding:16px 20px;border-radius:4px;border-left:3px solid #c373a3;font-size:0.94rem;color:#d4a9c4}
+.female-label{font-weight:700;color:#d080b0;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#d3c3a9}
+.ref strong{color:#dcba98}
+.qbank{background:#262012;border:1px solid #4f4228;border-radius:4px;overflow:hidden}
+.qbank .row{display:flex;border-bottom:1px solid #4b3e22;font-size:0.94rem}
 .qbank .row:last-child{border-bottom:none}
-.qbank .role{flex-shrink:0;width:118px;padding:10px 12px;background:#f3e9d2;color:#6b4a1f;font-weight:700;font-size:0.84rem}
-.qbank .q{padding:10px 14px;color:#3a2f1c}
+.qbank .role{flex-shrink:0;width:118px;padding:10px 12px;background:#3d331c;color:#d8b78c;font-weight:700;font-size:0.84rem}
+.qbank .q{padding:10px 14px;color:#d5cab7}
 .homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
 .homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
 .homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
-.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
-.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.homework .action{background:rgba(29,24,14,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #917545}
+.frame-diagram{background:#262012;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #4f4228;text-align:center}
 .frame-diagram svg{max-width:100%;height:auto}
-.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #c4a878}
-.deepthink h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin:14px 0 18px}
-.deepthink details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px}
-.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#5c3a18;font-size:0.98rem;list-style:none}
+.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #917545}
+.deepthink h3{font-size:1.15rem;color:#dcba98;letter-spacing:2px;margin:14px 0 18px}
+.deepthink details{background:#1d180e;border:1px solid #4f4228;border-radius:6px;margin-bottom:12px}
+.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#dcba98;font-size:0.98rem;list-style:none}
 .deepthink summary::-webkit-details-marker{display:none}
-.deepthink summary::before{content:"▸ ";color:#a8702d}
+.deepthink summary::before{content:"▸ ";color:#d29a57}
 .deepthink details[open] summary::before{content:"▾ "}
-.deepthink .answer{padding:0 20px 16px;color:#4a3a20;font-size:0.93rem;line-height:1.75}
-nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
-nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
-nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deepthink .answer{padding:0 20px 16px;color:#d3c3a9;font-size:0.93rem;line-height:1.75}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #917545}
+nav.footer-nav a{color:#d29a57;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #917545;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#9e6623;color:#fffaf0}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
@@ -117,39 +121,39 @@ header h1{font-size:1.55rem}
 <div class="section-label">GROW 四档</div>
 <div class="frame-diagram">
 <svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#fcf6e8" height="170" rx="6" stroke="#a8702d" stroke-width="2" width="160" x="14" y="40"></rect>
-<rect fill="#fcf6e8" height="170" rx="6" stroke="#a8702d" stroke-width="2" width="160" x="188" y="40"></rect>
-<rect fill="#fcf6e8" height="170" rx="6" stroke="#a8702d" stroke-width="2" width="160" x="362" y="40"></rect>
-<rect fill="#f3e9d2" height="170" rx="6" stroke="#5c3a18" stroke-width="2" width="150" x="536" y="40"></rect>
-<text fill="#5c3a18" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="94" y="68">G · 目标</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="94" y="88">Goal</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="26" y="118">你真正想要</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="26" y="138">的结果是</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="26" y="158">什么？</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11.5" x="26" y="186">这次聊完</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11.5" x="26" y="202">想带走什么？</text>
-<text fill="#5c3a18" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="268" y="68">R · 现状</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="268" y="88">Reality</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="200" y="118">现在实际</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="200" y="138">发生了什么？</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="200" y="158">你试过什么？</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11.5" x="200" y="186">事实，不是</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11.5" x="200" y="202">评判或假设</text>
-<text fill="#5c3a18" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="442" y="68">O · 选项</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="442" y="88">Options</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="374" y="118">有哪些可能</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="374" y="138">的做法？</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="374" y="158">还有呢？</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11.5" x="374" y="186">先穷举，</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11.5" x="374" y="202">别急着评价</text>
-<text fill="#5c3a18" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="611" y="68">W · 意愿</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="611" y="88">Will</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="548" y="118">你打算做</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="548" y="138">哪一个？</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="11.5" x="548" y="158">第一步是？</text>
-<text fill="#6b4a1f" font-family="Georgia" font-size="11.5" x="548" y="186">何时？要</text>
-<text fill="#6b4a1f" font-family="Georgia" font-size="11.5" x="548" y="202">我做什么？</text>
-<text fill="#a8702d" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="232">推进方向：你管节奏，下属填内容 →</text>
+<rect fill="#262012" height="170" rx="6" stroke="#d29a57" stroke-width="2" width="160" x="14" y="40"></rect>
+<rect fill="#262012" height="170" rx="6" stroke="#d29a57" stroke-width="2" width="160" x="188" y="40"></rect>
+<rect fill="#262012" height="170" rx="6" stroke="#d29a57" stroke-width="2" width="160" x="362" y="40"></rect>
+<rect fill="#3d331c" height="170" rx="6" stroke="#dcba98" stroke-width="2" width="150" x="536" y="40"></rect>
+<text fill="#dcba98" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="94" y="68">G · 目标</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="94" y="88">Goal</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="26" y="118">你真正想要</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="26" y="138">的结果是</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="26" y="158">什么？</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11.5" x="26" y="186">这次聊完</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11.5" x="26" y="202">想带走什么？</text>
+<text fill="#dcba98" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="268" y="68">R · 现状</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="268" y="88">Reality</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="200" y="118">现在实际</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="200" y="138">发生了什么？</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="200" y="158">你试过什么？</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11.5" x="200" y="186">事实，不是</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11.5" x="200" y="202">评判或假设</text>
+<text fill="#dcba98" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="442" y="68">O · 选项</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="442" y="88">Options</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="374" y="118">有哪些可能</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="374" y="138">的做法？</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="374" y="158">还有呢？</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11.5" x="374" y="186">先穷举，</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11.5" x="374" y="202">别急着评价</text>
+<text fill="#dcba98" font-family="Georgia" font-size="16" font-weight="700" text-anchor="middle" x="611" y="68">W · 意愿</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="611" y="88">Will</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="548" y="118">你打算做</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="548" y="138">哪一个？</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="11.5" x="548" y="158">第一步是？</text>
+<text fill="#d8b78c" font-family="Georgia" font-size="11.5" x="548" y="186">何时？要</text>
+<text fill="#d8b78c" font-family="Georgia" font-size="11.5" x="548" y="202">我做什么？</text>
+<text fill="#d29a57" font-family="Georgia" font-size="11" text-anchor="middle" x="350" y="232">推进方向：你管节奏，下属填内容 →</text>
 </svg>
 </div>
 </div>
@@ -364,26 +368,26 @@ header h1{font-size:1.55rem}
 <div class="section-label">Coach 还是 Tell？两个维度</div>
 <div class="frame-diagram">
 <svg viewbox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#8a6d3b" stroke-width="1.5" x1="60" x2="60" y1="40" y2="270"></line>
-<line stroke="#8a6d3b" stroke-width="1.5" x1="60" x2="610" y1="270" y2="270"></line>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" transform="rotate(-90 30 155)" x="30" y="155">时间 / 风险</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="335" y="298">下属是否具备做判断的能力与信息 →</text>
-<rect fill="#f5e0d0" height="105" rx="6" stroke="#b85c3a" stroke-width="1.5" width="255" x="70" y="50"></rect>
-<rect fill="#fbf0e8" height="105" rx="6" stroke="#c47040" stroke-width="1.5" width="260" x="340" y="50"></rect>
-<rect fill="#fcf6e8" height="100" rx="6" stroke="#a8702d" stroke-width="1.5" width="255" x="70" y="165"></rect>
-<rect fill="#e6efdc" height="100" rx="6" stroke="#5c8a3a" stroke-width="1.5" width="260" x="340" y="165"></rect>
-<text fill="#a04020" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="197" y="90">直接 TELL</text>
-<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="115">紧急 + 他还没能力</text>
-<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="135">事故、合规、安全</text>
-<text fill="#a05a20" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="470" y="90">TELL 后解释</text>
-<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="115">紧急但他有能力</text>
-<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="135">先给方向，事后复盘</text>
-<text fill="#a8702d" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="197" y="200">边教边给</text>
-<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="225">不急但他缺信息</text>
-<text fill="#5a3818" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="245">给材料，再让他想</text>
-<text fill="#4a6a28" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="470" y="200">COACH</text>
-<text fill="#2a3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="225">不急 + 他有能力</text>
-<text fill="#2a3a18" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="245">GROW 的黄金区</text>
+<line stroke="#c3a674" stroke-width="1.5" x1="60" x2="60" y1="40" y2="270"></line>
+<line stroke="#c3a674" stroke-width="1.5" x1="60" x2="610" y1="270" y2="270"></line>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" transform="rotate(-90 30 155)" x="30" y="155">时间 / 风险</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="335" y="298">下属是否具备做判断的能力与信息 →</text>
+<rect fill="#3f2a1a" height="105" rx="6" stroke="#c86c4a" stroke-width="1.5" width="255" x="70" y="50"></rect>
+<rect fill="#261b13" height="105" rx="6" stroke="#c47040" stroke-width="1.5" width="260" x="340" y="50"></rect>
+<rect fill="#262012" height="100" rx="6" stroke="#d29a57" stroke-width="1.5" width="255" x="70" y="165"></rect>
+<rect fill="#2a3320" height="100" rx="6" stroke="#95c373" stroke-width="1.5" width="260" x="340" y="165"></rect>
+<text fill="#dd7d5d" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="197" y="90">直接 TELL</text>
+<text fill="#dcba9a" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="115">紧急 + 他还没能力</text>
+<text fill="#dcba9a" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="135">事故、合规、安全</text>
+<text fill="#dd975d" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="470" y="90">TELL 后解释</text>
+<text fill="#dcba9a" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="115">紧急但他有能力</text>
+<text fill="#dcba9a" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="135">先给方向，事后复盘</text>
+<text fill="#d29a57" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="197" y="200">边教边给</text>
+<text fill="#dcba9a" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="225">不急但他缺信息</text>
+<text fill="#dcba9a" font-family="Georgia" font-size="11" text-anchor="middle" x="197" y="245">给材料，再让他想</text>
+<text fill="#b0d08e" font-family="Georgia" font-size="14" font-weight="700" text-anchor="middle" x="470" y="200">COACH</text>
+<text fill="#c8d8b6" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="225">不急 + 他有能力</text>
+<text fill="#c8d8b6" font-family="Georgia" font-size="11" text-anchor="middle" x="470" y="245">GROW 的黄金区</text>
 </svg>
 </div>
 </div>

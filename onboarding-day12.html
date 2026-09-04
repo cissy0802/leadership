@@ -5,64 +5,68 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>领导力 Day 12：入职 Onboarding — 设计新人的前 90 天</title>
+<meta content="#262219" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#262219;color:#d6d0c4;line-height:1.75}
 .container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
-header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
-header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
-header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
-header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #917545;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#d29a57;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#dcba98;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#c3a674}
 header .meta span{margin:0 8px}
-header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
-.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
-.intro strong{color:#5c3a18}
-.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
-.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
-.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
-.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
-.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
-.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#d29a57;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#1d180e;border-left:4px solid #d29a57;border-radius:4px;font-size:0.97rem;color:#d5cab7}
+.intro strong{color:#dcba98}
+.card{margin-top:42px;background:#1d180e;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #d29a57}
+.card-header{border-bottom:1px solid #4f4228;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#d29a57;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#dcba98;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#c3a674;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#4e4226;color:#d8b78c;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
 .section{margin-top:20px}
-.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
-.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
-.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20;margin-top:12px}
-.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
-.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
-.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
-.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
-.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#d29a57;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#d5cab7;font-weight:600;background:#3d331c;padding:14px 18px;border-radius:4px;border-left:3px solid #dcba98}
+.quote{background:#312916;padding:16px 20px;border-radius:4px;font-style:italic;color:#d3c3a9;margin-top:12px}
+.quote .en{display:block;color:#d5cab7;margin-bottom:8px}
+.quote .zh{display:block;color:#d8b78c;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#c3a674;font-style:normal;text-align:right}
+.scene{background:#262012;padding:18px 20px;border-radius:4px;border:1px solid #4f4228}
+.scene .setup{color:#d8b78c;font-size:0.95rem;margin-bottom:10px}
 .dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
-.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
-.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog.bad{background:#3f2a1a;border-left:3px solid #c86c4a}
+.dialog.good{background:#2a3320;border-left:3px solid #95c373}
 .dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-.dialog.bad .speaker{color:#a04020}
-.dialog.good .speaker{color:#4a6a28}
-.dialog p{margin:4px 0;color:#3a2f1c}
+.dialog.bad .speaker{color:#dd7d5d}
+.dialog.good .speaker{color:#b0d08e}
+.dialog p{margin:4px 0;color:#d5cab7}
 ul.checklist{list-style:none;padding:0}
-ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#d5cab7;font-size:0.96rem;border-bottom:1px dashed #4f4228}
 ul.checklist li:last-child{border-bottom:none}
-ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
-.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;font-size:1.1rem;top:6px}
+.pitfall{background:#261b13;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#dcba9a}
 .pitfall ul{margin-left:20px;margin-top:6px}
 .pitfall li{margin:4px 0}
-.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a;margin-top:14px}
-.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
-.cardwork{margin-top:20px;background:#f3ece0;padding:14px 18px;border-radius:4px;border-left:3px solid #a8702d;font-size:0.94rem;color:#4a3a20}
-.cardwork strong{color:#5c3a18}
-.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.female{background:#261b23;padding:16px 20px;border-radius:4px;border-left:3px solid #c373a3;font-size:0.94rem;color:#d4a9c4;margin-top:14px}
+.female-label{font-weight:700;color:#d080b0;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.cardwork{margin-top:20px;background:#2e271b;padding:14px 18px;border-radius:4px;border-left:3px solid #d29a57;font-size:0.94rem;color:#d3c3a9}
+.cardwork strong{color:#dcba98}
+.frame-diagram{background:#262012;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #4f4228;text-align:center}
 .frame-diagram svg{max-width:100%;height:auto}
-.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #c4a878}
-.deepthink h3{font-size:1.15rem;color:#5c3a18;letter-spacing:2px;margin:14px 0 18px}
-.deepthink details{background:#fffaf0;border:1px solid #e6d9bf;border-radius:6px;margin-bottom:12px}
-.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#5c3a18;font-size:0.98rem;list-style:none}
+.deepthink{margin-top:56px;padding-top:10px;border-top:2px solid #917545}
+.deepthink h3{font-size:1.15rem;color:#dcba98;letter-spacing:2px;margin:14px 0 18px}
+.deepthink details{background:#1d180e;border:1px solid #4f4228;border-radius:6px;margin-bottom:12px}
+.deepthink summary{cursor:pointer;padding:14px 20px;font-weight:700;color:#dcba98;font-size:0.98rem;list-style:none}
 .deepthink summary::-webkit-details-marker{display:none}
-.deepthink summary::before{content:"▸ ";color:#a8702d}
+.deepthink summary::before{content:"▸ ";color:#d29a57}
 .deepthink details[open] summary::before{content:"▾ "}
-.deepthink .answer{padding:0 20px 16px;color:#4a3a20;font-size:0.93rem;line-height:1.75}
-nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #c4a878}
-nav.footer-nav a{color:#a8702d;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #c4a878;border-radius:20px;transition:all 0.2s}
-nav.footer-nav a:hover{background:#a8702d;color:#fffaf0}
+.deepthink .answer{padding:0 20px 16px;color:#d3c3a9;font-size:0.93rem;line-height:1.75}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #917545}
+nav.footer-nav a{color:#d29a57;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #917545;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#9e6623;color:#fffaf0}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
@@ -104,30 +108,30 @@ header h1{font-size:1.55rem}
 <div class="section-label">30/60/90 地图</div>
 <div class="frame-diagram">
 <svg viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#fcf6e8" height="200" rx="6" stroke="#a8702d" stroke-width="2" width="205" x="20" y="30"></rect>
-<rect fill="#fcf6e8" height="200" rx="6" stroke="#a8702d" stroke-width="2" width="205" x="245" y="30"></rect>
-<rect fill="#fcf6e8" height="200" rx="6" stroke="#a8702d" stroke-width="2" width="210" x="470" y="30"></rect>
-<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="122" y="60">Day 1-30 · 学</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="122" y="82">建立 baseline</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="36" y="116">· 跑通环境</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="36" y="140">· 提交第一个 PR</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="36" y="164">· 读 3 个核心服务</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="36" y="188">  的设计文档</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="36" y="212">· 见 8 个关键的人</text>
-<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="347" y="60">Day 30-60 · 贡献</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="347" y="82">独立交付</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="261" y="116">· own 一个中等</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="261" y="140">  feature</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="261" y="164">· 从设计到上线</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="261" y="188">· 开始 review</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="261" y="212">  别人代码</text>
-<text fill="#5c3a18" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="575" y="60">Day 60-90 · 拥有</text>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" text-anchor="middle" x="575" y="82">承担责任</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="486" y="116">· 成为某子系统</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="486" y="140">  的 owner</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="486" y="164">· 进 on-call 轮值</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="486" y="188">· 能独立拍板</text>
-<text fill="#3a2f1c" font-family="Georgia" font-size="12" x="486" y="212">  小决策</text>
+<rect fill="#262012" height="200" rx="6" stroke="#d29a57" stroke-width="2" width="205" x="20" y="30"></rect>
+<rect fill="#262012" height="200" rx="6" stroke="#d29a57" stroke-width="2" width="205" x="245" y="30"></rect>
+<rect fill="#262012" height="200" rx="6" stroke="#d29a57" stroke-width="2" width="210" x="470" y="30"></rect>
+<text fill="#dcba98" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="122" y="60">Day 1-30 · 学</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="122" y="82">建立 baseline</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="36" y="116">· 跑通环境</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="36" y="140">· 提交第一个 PR</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="36" y="164">· 读 3 个核心服务</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="36" y="188">  的设计文档</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="36" y="212">· 见 8 个关键的人</text>
+<text fill="#dcba98" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="347" y="60">Day 30-60 · 贡献</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="347" y="82">独立交付</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="261" y="116">· own 一个中等</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="261" y="140">  feature</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="261" y="164">· 从设计到上线</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="261" y="188">· 开始 review</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="261" y="212">  别人代码</text>
+<text fill="#dcba98" font-family="Georgia" font-size="15" font-weight="700" text-anchor="middle" x="575" y="60">Day 60-90 · 拥有</text>
+<text fill="#c3a674" font-family="Georgia" font-size="11" text-anchor="middle" x="575" y="82">承担责任</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="486" y="116">· 成为某子系统</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="486" y="140">  的 owner</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="486" y="164">· 进 on-call 轮值</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="486" y="188">· 能独立拍板</text>
+<text fill="#d5cab7" font-family="Georgia" font-size="12" x="486" y="212">  小决策</text>
 </svg>
 </div>
 </div>
@@ -302,17 +306,17 @@ header h1{font-size:1.55rem}
 <div class="section-label">收支平衡点：你设计的 ramp 把它提前还是推后</div>
 <div class="frame-diagram">
 <svg viewbox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#a8702d" stroke-width="2" x1="60" x2="660" y1="190" y2="190"></line>
-<line stroke="#a8702d" stroke-width="2" x1="60" x2="60" y1="40" y2="190"></line>
-<line stroke="#c4a878" stroke-dasharray="5,4" stroke-width="1" x1="60" x2="660" y1="120" y2="120"></line>
-<text fill="#8a6d3b" font-family="Georgia" font-size="11" x="64" y="115">收支平衡（净贡献=0）</text>
-<path d="M60 175 C 200 173, 280 150, 360 120 S 540 60, 660 50" fill="none" stroke="#5c8a3a" stroke-width="3"></path>
-<path d="M60 178 C 250 177, 380 172, 480 155 S 620 110, 660 95" fill="none" stroke="#b85c3a" stroke-dasharray="6,5" stroke-width="3"></path>
-<circle cx="360" cy="120" fill="#5c8a3a" r="5"></circle>
-<text fill="#4a6a28" font-family="Georgia" font-size="11" x="345" y="108">好 ramp ≈ 90 天</text>
-<text fill="#a04020" font-family="Georgia" font-size="11" x="500" y="135">差 ramp ≈ 6 个月+</text>
-<text fill="#5c3a18" font-family="Georgia" font-size="12" text-anchor="middle" x="350" y="212">时间 →</text>
-<text fill="#5c3a18" font-family="Georgia" font-size="12" transform="rotate(-90 40 40)" x="40" y="40">净贡献 →</text>
+<line stroke="#d29a57" stroke-width="2" x1="60" x2="660" y1="190" y2="190"></line>
+<line stroke="#d29a57" stroke-width="2" x1="60" x2="60" y1="40" y2="190"></line>
+<line stroke="#917545" stroke-dasharray="5,4" stroke-width="1" x1="60" x2="660" y1="120" y2="120"></line>
+<text fill="#c3a674" font-family="Georgia" font-size="11" x="64" y="115">收支平衡（净贡献=0）</text>
+<path d="M60 175 C 200 173, 280 150, 360 120 S 540 60, 660 50" fill="none" stroke="#95c373" stroke-width="3"></path>
+<path d="M60 178 C 250 177, 380 172, 480 155 S 620 110, 660 95" fill="none" stroke="#c86c4a" stroke-dasharray="6,5" stroke-width="3"></path>
+<circle cx="360" cy="120" fill="#95c373" r="5"></circle>
+<text fill="#b0d08e" font-family="Georgia" font-size="11" x="345" y="108">好 ramp ≈ 90 天</text>
+<text fill="#dd7d5d" font-family="Georgia" font-size="11" x="500" y="135">差 ramp ≈ 6 个月+</text>
+<text fill="#dcba98" font-family="Georgia" font-size="12" text-anchor="middle" x="350" y="212">时间 →</text>
+<text fill="#dcba98" font-family="Georgia" font-size="12" transform="rotate(-90 40 40)" x="40" y="40">净贡献 →</text>
 </svg>
 </div>
 </div>

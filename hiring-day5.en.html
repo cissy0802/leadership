@@ -4,72 +4,76 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leadership Day 5: The Craft of Hiring</title>
+<meta content="#262219" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#2a2418;line-height:1.75}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#262219;color:#d6d0c4;line-height:1.75}
 .container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
-header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #c4a878;position:relative}
-header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a8702d;margin-bottom:10px;text-transform:uppercase;font-weight:700}
-header h1{font-size:2.05rem;font-weight:800;color:#5c3a18;letter-spacing:2px;line-height:1.3}
-header .meta{margin-top:14px;font-size:0.92rem;color:#8a6d3b}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #917545;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#d29a57;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#dcba98;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#c3a674}
 header .meta span{margin:0 8px}
-header .subtitle{margin-top:18px;font-size:1rem;color:#a8702d;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
-.intro{margin:36px 0 12px;padding:22px 26px;background:#fffaf0;border-left:4px solid #a8702d;border-radius:4px;font-size:0.97rem;color:#3a2f1c}
-.intro strong{color:#5c3a18}
-.card{margin-top:42px;background:#fffaf0;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(92,58,24,0.09);border-top:3px solid #a8702d}
-.card-header{border-bottom:1px solid #e6d9bf;padding-bottom:18px;margin-bottom:22px}
-.card-num{display:inline-block;font-size:0.76rem;color:#a8702d;letter-spacing:3px;font-weight:700;margin-bottom:6px}
-.card h2{font-size:1.42rem;color:#5c3a18;font-weight:700;line-height:1.35}
-.card h2 .en{display:block;font-size:0.92rem;color:#8a6d3b;font-weight:400;font-style:italic;margin-top:4px}
-.tag{display:inline-block;font-size:0.74rem;background:#e8dcc0;color:#6b4a1f;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#d29a57;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#1d180e;border-left:4px solid #d29a57;border-radius:4px;font-size:0.97rem;color:#d5cab7}
+.intro strong{color:#dcba98}
+.card{margin-top:42px;background:#1d180e;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #d29a57}
+.card-header{border-bottom:1px solid #4f4228;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#d29a57;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#dcba98;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#c3a674;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#4e4226;color:#d8b78c;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
 .section{margin-top:20px}
-.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a8702d;font-weight:700;margin-bottom:10px;text-transform:uppercase}
-.principle{font-size:1.08rem;color:#3a2f1c;font-weight:600;background:#f3e9d2;padding:14px 18px;border-radius:4px;border-left:3px solid #5c3a18}
-.quote{background:#f8f0dd;padding:16px 20px;border-radius:4px;font-style:italic;color:#4a3a20}
-.quote .en{display:block;color:#3a2f1c;margin-bottom:8px}
-.quote .zh{display:block;color:#6b4a1f;font-style:normal;font-size:0.94rem}
-.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#8a6d3b;font-style:normal;text-align:right}
-.scene{background:#fcf6e8;padding:18px 20px;border-radius:4px;border:1px solid #e6d9bf}
-.scene .setup{color:#6b4a1f;font-size:0.95rem;margin-bottom:10px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#d29a57;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#d5cab7;font-weight:600;background:#3d331c;padding:14px 18px;border-radius:4px;border-left:3px solid #dcba98}
+.quote{background:#312916;padding:16px 20px;border-radius:4px;font-style:italic;color:#d3c3a9}
+.quote .en{display:block;color:#d5cab7;margin-bottom:8px}
+.quote .zh{display:block;color:#d8b78c;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#c3a674;font-style:normal;text-align:right}
+.scene{background:#262012;padding:18px 20px;border-radius:4px;border:1px solid #4f4228}
+.scene .setup{color:#d8b78c;font-size:0.95rem;margin-bottom:10px}
 .dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
-.dialog.bad{background:#f5e0d0;border-left:3px solid #b85c3a}
-.dialog.good{background:#e6efdc;border-left:3px solid #5c8a3a}
+.dialog.bad{background:#3f2a1a;border-left:3px solid #c86c4a}
+.dialog.good{background:#2a3320;border-left:3px solid #95c373}
 .dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-.dialog.bad .speaker{color:#a04020}
-.dialog.good .speaker{color:#4a6a28}
-.dialog p{margin:4px 0;color:#3a2f1c}
+.dialog.bad .speaker{color:#dd7d5d}
+.dialog.good .speaker{color:#b0d08e}
+.dialog p{margin:4px 0;color:#d5cab7}
 ul.checklist{list-style:none;padding:0}
-ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a2f1c;font-size:0.96rem;border-bottom:1px dashed #e6d9bf}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#d5cab7;font-size:0.96rem;border-bottom:1px dashed #4f4228}
 ul.checklist li:last-child{border-bottom:none}
-ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a8702d;font-size:1.1rem;top:6px}
-.pitfall{background:#fbf0e8;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3818}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;font-size:1.1rem;top:6px}
+.pitfall{background:#261b13;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#dcba9a}
 .pitfall ul{margin-left:20px;margin-top:6px}
 .pitfall li{margin:4px 0}
-.female{background:#f3e8f0;padding:16px 20px;border-radius:4px;border-left:3px solid #8a3a6a;font-size:0.94rem;color:#4a1f3a}
-.female-label{font-weight:700;color:#7a2a5a;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
-.ref{font-size:0.9rem;color:#4a3a20}
-.ref strong{color:#5c3a18}
+.female{background:#261b23;padding:16px 20px;border-radius:4px;border-left:3px solid #c373a3;font-size:0.94rem;color:#d4a9c4}
+.female-label{font-weight:700;color:#d080b0;font-size:0.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block}
+.ref{font-size:0.9rem;color:#d3c3a9}
+.ref strong{color:#dcba98}
 .homework{margin-top:50px;padding:28px 26px;background:linear-gradient(135deg,#5c3a18 0%,#7a4a20 100%);color:#f5f1e8;border-radius:8px}
 .homework h3{font-size:1.15rem;letter-spacing:2px;margin-bottom:14px;color:#f5e8c8}
 .homework p{font-size:1rem;color:#f0e4c8;margin-bottom:8px}
-.homework .action{background:rgba(255,250,240,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #c4a878}
-.frame-diagram{background:#fcf6e8;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #e6d9bf;text-align:center}
+.homework .action{background:rgba(29,24,14,0.1);padding:14px 18px;border-radius:4px;margin-top:12px;font-style:italic;border-left:3px solid #917545}
+.frame-diagram{background:#262012;padding:22px;border-radius:6px;margin:16px 0;border:1px solid #4f4228;text-align:center}
 .frame-diagram svg{max-width:100%;height:auto}
-.template{background:#f5efe0;padding:16px 18px;border-radius:4px;border:1px dashed #c4a878;font-family:"Courier New",monospace;font-size:0.88rem;color:#3a2f1c;white-space:pre-wrap;line-height:1.6;margin-top:10px}
-.template .label-inline{color:#a8702d;font-weight:700}
-.resources{margin-top:50px;padding:24px 26px;background:#fffaf0;border:1px solid #c4a878;border-radius:6px}
-.resources h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
+.template{background:#2e2819;padding:16px 18px;border-radius:4px;border:1px dashed #917545;font-family:"Courier New",monospace;font-size:0.88rem;color:#d5cab7;white-space:pre-wrap;line-height:1.6;margin-top:10px}
+.template .label-inline{color:#d29a57;font-weight:700}
+.resources{margin-top:50px;padding:24px 26px;background:#1d180e;border:1px solid #917545;border-radius:6px}
+.resources h3{font-size:1.1rem;color:#dcba98;letter-spacing:1.5px;margin-bottom:14px}
 .resources ul{list-style:none;padding:0}
-.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#3a2f1c;border-bottom:1px dashed #e6d9bf}
+.resources li{padding:8px 0 8px 18px;position:relative;font-size:0.93rem;color:#d5cab7;border-bottom:1px dashed #4f4228}
 .resources li:last-child{border-bottom:none}
-.resources li::before{content:"▸";position:absolute;left:0;color:#a8702d;font-weight:700}
-.resources li strong{color:#5c3a18}
-.deepthink{margin-top:50px;padding:24px 26px;background:#f8f0dd;border-radius:6px;border:1px solid #c4a878}
-.deepthink h3{font-size:1.1rem;color:#5c3a18;letter-spacing:1.5px;margin-bottom:14px}
-.deepthink details{margin:10px 0;padding:12px 16px;background:#fffaf0;border-radius:4px;border-left:3px solid #a8702d}
-.deepthink summary{cursor:pointer;font-weight:600;color:#5c3a18;font-size:0.97rem;line-height:1.5}
-.deepthink summary:hover{color:#a8702d}
-.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #e6d9bf;font-size:0.93rem;color:#3a2f1c;line-height:1.7}
+.resources li::before{content:"▸";position:absolute;left:0;color:#d29a57;font-weight:700}
+.resources li strong{color:#dcba98}
+.deepthink{margin-top:50px;padding:24px 26px;background:#312916;border-radius:6px;border:1px solid #917545}
+.deepthink h3{font-size:1.1rem;color:#dcba98;letter-spacing:1.5px;margin-bottom:14px}
+.deepthink details{margin:10px 0;padding:12px 16px;background:#1d180e;border-radius:4px;border-left:3px solid #d29a57}
+.deepthink summary{cursor:pointer;font-weight:600;color:#dcba98;font-size:0.97rem;line-height:1.5}
+.deepthink summary:hover{color:#d29a57}
+.deepthink details > div{margin-top:12px;padding-top:10px;border-top:1px dashed #4f4228;font-size:0.93rem;color:#d5cab7;line-height:1.7}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
@@ -122,7 +126,7 @@ header h1{font-size:1.55rem}
 <div class="dialog bad">
 <div class="speaker">Bad version (caving under scarcity)</div>
 <p>"OK, 3:2 leaning Hire. What were the specific concerns from the No Hires? … Right, coding was weaker but system design was solid … Overall I think we can take him; we'll closely manage him in year one. The seat's been open too long, the team is burning out."</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Three red flags: (1) "closely manage" is compensating for a capability gap — you're already absorbing the cost; (2) "seat open too long" is a scarcity argument, not a signal-quality argument; (3) no one asked "which dimension does he raise?"</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ Three red flags: (1) "closely manage" is compensating for a capability gap — you're already absorbing the cost; (2) "seat open too long" is a scarcity argument, not a signal-quality argument; (3) no one asked "which dimension does he raise?"</p>
 </div>
 <div class="dialog good">
 <div class="speaker">Good version (default No)</div>
@@ -199,13 +203,13 @@ So: can he do the job? Yes. Does he raise the bar? No — he lowers it. I'm a No
 <div class="dialog bad">
 <div class="speaker">Bad version (open but uncalibratable)</div>
 <p>"Tell me how you make technical decisions at your current company."</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ Too broad. The candidate tells their most comfortable story. Two candidates give stories on entirely different dimensions — what are you comparing? You end up with a "feeling."</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ Too broad. The candidate tells their most comfortable story. Two candidates give stories on entirely different dimensions — what are you comparing? You end up with a "feeling."</p>
 </div>
 <div class="dialog good">
 <div class="speaker">Good version (structured STAR + same prompt)</div>
 <p>"Walk me through a specific example. A time when you were handed a fuzzy problem — no clear spec — and you had to frame it yourself, and your framing ended up changing the team's direction.<br><br>
 I'm going to ask: (1) what did the problem look like at the start? (2) what concrete steps did you take to frame it? (3) where did your framing diverge from the default path? (4) how did others react? (5) six months later, looking back — was your framing right?"</p>
-<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ This question: (a) asked of every candidate; (b) five sub-questions force a STAR structure out of the story; (c) "six months later" probes self-awareness and can't be rehearsed; (d) the rubric distinction between "frame changed direction" (staff bar) and "just executed someone else's frame" (senior bar) maps cleanly.</p>
+<p style="margin-top:8px;color:#b0d08e;font-size:0.88rem;">→ This question: (a) asked of every candidate; (b) five sub-questions force a STAR structure out of the story; (c) "six months later" probes self-awareness and can't be rehearsed; (d) the rubric distinction between "frame changed direction" (staff bar) and "just executed someone else's frame" (senior bar) maps cleanly.</p>
 </div>
 </div>
 </div>
@@ -293,7 +297,7 @@ I'm going to ask: (1) what did the problem look like at the start? (2) what conc
 <div class="dialog bad">
 <div class="speaker">Bad version (default anchoring)</div>
 <p>"OK, M says strong hire. Others? … N says hire … P says hire … Q is weak hire … 4:0 hire, let's wrap."</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ You didn't get 4 independent signals. You got one signal echoed 4 times. M's anchor decided everything. The next time M is wrong, the whole loop is wrong with him.</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ You didn't get 4 independent signals. You got one signal echoed 4 times. M's anchor decided everything. The next time M is wrong, the whole loop is wrong with him.</p>
 </div>
 <div class="dialog good">
 <div class="speaker">Good version (synthesis, not aggregation)</div>
@@ -301,7 +305,7 @@ I'm going to ask: (1) what did the problem look like at the start? (2) what conc
 (after the round)<br><br>
 Here's what I'm hearing: four people independently noted above-bar depth signal — that's a converging signal. P and Q both independently observed 'didn't proactively reframe upstream' — also converging. The question we have to decide: strong Depth + weak Scope — does that combination fit the role?<br><br>
 M — on Scope, what's your read?"</p>
-<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ This protocol does three things: (1) anti-anchoring (most junior first, HM last); (2) evidence-first (no overall verdicts until specific signals are aired); (3) reframes the goal as "find converging vs diverging signals," not "count votes."</p>
+<p style="margin-top:8px;color:#b0d08e;font-size:0.88rem;">→ This protocol does three things: (1) anti-anchoring (most junior first, HM last); (2) evidence-first (no overall verdicts until specific signals are aired); (3) reframes the goal as "find converging vs diverging signals," not "count votes."</p>
 </div>
 </div>
 </div>
@@ -360,7 +364,7 @@ M — on Scope, what's your read?"</p>
 <div class="dialog bad">
 <div class="speaker">Bad version (outsourced template)</div>
 <p>(recruiter email)<br>"Thank you for interviewing with us. After careful consideration, we've decided to move forward with other candidates whose experience more closely aligns with the role. We wish you the best in your search."</p>
-<p style="margin-top:8px;color:#7a2a1a;font-size:0.88rem;">→ She invested a day; you returned 30 words of template. She won't apply again for two years, and she'll tell every senior in her network. The real cost isn't this email — it's the ten future candidates you'll never see.</p>
+<p style="margin-top:8px;color:#de8e7e;font-size:0.88rem;">→ She invested a day; you returned 30 words of template. She won't apply again for two years, and she'll tell every senior in her network. The real cost isn't this email — it's the ten future candidates you'll never see.</p>
 </div>
 <div class="dialog good">
 <div class="speaker">Good version (15-minute call)</div>
@@ -369,7 +373,7 @@ M — on Scope, what's your read?"</p>
 <strong>Second</strong>, here's the share-able feedback: your system design round showed real depth — you'd rank in the top 30% of our current staff engineers on that signal. The hesitation was on ambiguity and problem framing. This role spends 60% of its time framing problems no one has framed yet — we needed more evidence there. This <strong>doesn't</strong> mean you can't — it means the shape of this specific role and the shape you could show us didn't fully align.<br><br>
 <strong>Third</strong>, if you'd like to re-engage in 9–12 months, I'd welcome it. I'll flag in the ATS that you're worth re-evaluating.<br><br>
 What questions do you have?"</p>
-<p style="margin-top:8px;color:#4a6a28;font-size:0.88rem;">→ This 15-minute call does five things: (a) acknowledges their investment; (b) is delivered personally; (c) gives one <strong>actionable</strong> piece of feedback (not vague encouragement); (d) separates "rejected" from "you're not good enough"; (e) opens a future path — many onsite rejections become your most-wanted senior hire 18 months later.</p>
+<p style="margin-top:8px;color:#b0d08e;font-size:0.88rem;">→ This 15-minute call does five things: (a) acknowledges their investment; (b) is delivered personally; (c) gives one <strong>actionable</strong> piece of feedback (not vague encouragement); (d) separates "rejected" from "you're not good enough"; (e) opens a future path — many onsite rejections become your most-wanted senior hire 18 months later.</p>
 </div>
 </div>
 </div>
