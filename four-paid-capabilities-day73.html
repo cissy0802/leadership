@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 73：用「四种付费能力」培养下属</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.ladder{display:flex;flex-direction:column-reverse;gap:6px}
+.rung{display:grid;grid-template-columns:118px 1fr 1fr 1fr;gap:6px;font-size:0.82rem;line-height:1.5}
+.rung div{padding:8px 10px;border-radius:3px}
+.rung .lv{font-weight:700;color:#fffaf0;text-align:center}
+.rung .c{background:#f4ecdb;color:#3a3630}
+.rung.r1 .lv{background:#b89a6a}
+.rung.r2 .lv{background:#a07a40}
+.rung.r3 .lv{background:#8a5e2a}
+.rung.r4 .lv{background:#6e4318}
+.rung.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+table.diag{width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:8px}
+table.diag th,table.diag td{border-bottom:1px solid #e6dcc8;padding:8px 10px;text-align:left;vertical-align:top}
+table.diag th{color:#a0662a;font-size:0.78rem;letter-spacing:1px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.rung{grid-template-columns:1fr 1fr}
+.rung .lv{grid-column:1 / -1}
+.rung.head{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 73 · 2026.10.01</div>
+<h1>用「四种付费能力」培养下属</h1>
+<div class="meta"><span>主题：Developing People Layer by Layer</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"The output of a manager is the output of the organizational units under his or her supervision or influence." — Andrew S. Grove, 1983</div>
+</header>
+<div class="intro">
+<p>有一个流传很广的说法：别人愿意为你付钱，无非四种能力。<strong>执行</strong>——任务、方法、标准都明确，你更快更准更稳，解决有答案的问题；<strong>专业</strong>——对方只给问题，你凭积累给方案，解决没答案的问题；<strong>信任</strong>——事情复杂、各方有冲突、对方自己都说不清，但大家信你能办成，解决搞不清的关系；<strong>判断</strong>——没人找你，你自己看见机会、先投入、承担风险，解决本不存在的问题。</p>
+<p>这四层背后是同一条线：<strong>你替别人消化的不确定性越来越多</strong>。带人就是沿这条线，<strong>一层一层把不确定性交出去</strong>——先交「怎么做」，再交「做什么」，再交「和谁一起做」，最后交「做不做」。管理者的角色也得跟着换：<strong>教练 → 导师 → 保护伞 → 投资人</strong>。</p>
+<p>两条原则贯穿全篇：<strong>叠加，不是替换</strong>——升到第 2 层的人，第 1 层仍要稳，信任是每一层的地基；<strong>每次只移交一种不确定性</strong>——新任务里只放一个 TA 没把握的变量，其余都是熟悉的。</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">四层付费能力 · 下属承担什么 · 你扮演谁</div>
+<div class="ladder">
+<div class="rung head"><div></div><div>解决什么问题</div><div>下属承担的</div><div>你的角色</div></div>
+<div class="rung r1"><div class="lv">1 · 执行</div><div class="c">有答案的问题</div><div class="c">做得快、准、稳</div><div class="c">教练：给标准、给反馈</div></div>
+<div class="rung r2"><div class="lv">2 · 专业</div><div class="c">没答案的问题</div><div class="c">方案对不对</div><div class="c">导师：问思路，不给答案</div></div>
+<div class="rung r3"><div class="lv">3 · 信任</div><div class="c">说不清的关系</div><div class="c">人和局面</div><div class="c">保护伞：给舞台、兜底</div></div>
+<div class="rung r4"><div class="lv">4 · 判断</div><div class="c">本不存在的问题</div><div class="c">投入的风险</div><div class="c">投资人：给小额试错资本</div></div>
+</div>
+<div class="dgm-note">越往上，你交出去的不确定性越多，你亲手做的越少。</div>
+</div>
+<div class="intro">
+<p><strong>第 0 步：先诊断 TA 在哪一层。</strong>看 TA 独立做成的事里，不确定性最高的是哪一类。自下而上问四个问题，<strong>第一个答「否」的就是 TA 要练的层</strong>：</p>
+<table class="diag">
+<tr><th>层</th><th>诊断问题</th></tr>
+<tr><td>执行</td><td>要求讲清楚的任务，能否不返工、不催促地按时交付？</td></tr>
+<tr><td>专业</td><td>只给问题不给方法，TA 能否拿出两个以上可选方案并讲清取舍？</td></tr>
+<tr><td>信任</td><td>涉及多方、有分歧的事，其他团队是否愿意直接找 TA、信 TA 的话？</td></tr>
+<tr><td>判断</td><td>过去半年，TA 是否主动提过一件没人安排、事后证明有价值的事？</td></tr>
+</table>
+<p>两个常见假象：<strong>会说术语不等于在第 2 层；人缘好不等于在第 3 层</strong>——第 3 层看的是有冲突时大家还信不信 TA。诊断结果要和本人对齐，让 TA 知道下一步练什么。这一步对应 Andy Grove 的「任务相关成熟度」（task-relevant maturity）：<strong>同一个人，在不同任务上可能处在不同的层</strong>，带法按任务定，不按人定。</p>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · 执行</div>
+<h2>把「做对」变成「做稳」
+<span class="en">Layer 1 — Execution: From Right to Reliable</span></h2>
+<span class="tag">教练</span><span class="tag">示范-陪做-放手</span><span class="tag">自检清单</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">目标是交代过的事不用再惦记。这一层的任务、方法、标准都由你定，<strong>TA 承担的只有执行风险</strong>。先要准和稳，再要快——速度是熟练的副产品，过早压速度只会压出返工。</div>
+<div class="quote">
+<span class="en">"The output of a manager is the output of the organizational units under his or her supervision or influence."</span>
+<span class="zh">「一个经理人的产出，是他所管辖或影响的组织单位的产出。」</span>
+<span class="source">— Andrew S. Grove,《High Output Management》</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：新人第三次交周报数据，又有两处口径错误，离评审会只剩一小时。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种反应都在拖慢 TA</div>
+<p>「算了，我来改。」——你今天省了半小时，TA 下周还会错。<br/>「怎么又错了？再细心一点。」——「细心」不是一个可以执行的动作。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：把标准拆成可检查的动作</div>
+<p>「这两处都是活跃用户的口径问题：<strong>我们按 7 日去重，你按的是自然周</strong>。今天我来改，你在旁边看我怎么核。下周你自己做，交之前对一遍这三项：<strong>口径、时间窗、和上周的环比是否超过 20%</strong>。做完第三次后，你把自己的核对清单写出来给我看。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>交代任务时，我讲清楚了「做什么、怎么算做完、什么时候要」吗？TA 复述过吗？</li>
+<li>新任务我是否走过「我做 TA 看 → TA 做我看 → TA 独立做」三步？</li>
+<li>反馈是否在 24 小时内、指出了具体哪里差、差多少？</li>
+<li>同类任务做到第三次，TA 有没有自己的自检清单？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>替做</strong>：你亲手改掉的每一处错误，都是 TA 少练的一次。时间紧可以替做，但事后必须讲一遍。</li>
+<li><strong>升级信号被忽略</strong>：连续一个月交付无需返工、并开始问「为什么要这么做」——这时还按执行层带，TA 会觉得被困住。</li>
+<li><strong>女性视角</strong>：Babcock 等人在《The No Club》(2022) 里发现，<strong>不计入晋升的杂事（订会议室、记纪要、组织团建）更常被派给女性，女性也更常答应</strong>。把执行任务分给谁时问一句：这件事能不能帮 TA 往上走一层？不能的话，轮流分配。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>挑一个你最近「自己做更快」的任务，下周按「示范-陪做-放手」交给一个下属。<strong>记下你忍住没插手的次数。</strong></p>
+<p><strong>思考：</strong>你团队里谁的执行已经足够稳，你却还在按执行层带 TA？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · 专业</div>
+<h2>只给问题，不给答案
+<span class="en">Layer 2 — Expertise: Hand Over the Problem, Not the Answer</span></h2>
+<span class="tag">导师</span><span class="tag">带方案来问</span><span class="tag">复盘</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">目标是 TA 能对没有标准答案的问题，独立拿出靠谱的方案。你还定目标和约束，<strong>但不再定方法</strong>。你的答案再好，说出口 TA 就不动脑了；只要错误可恢复，就让 TA 按自己的方案走。</div>
+<div class="quote">
+<span class="en">"Stay curious a little longer, and rush to action and advice-giving a little more slowly."</span>
+<span class="zh">「多好奇一会儿，晚一点再急着行动和给建议。」</span>
+<span class="source">— Michael Bungay Stanier,《The Coaching Habit》</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：工程师来问：「这个服务延迟一直超标，要不要加缓存？」你一眼就看出问题在数据库查询。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 最快的回答，最慢的成长</div>
+<p>「别加缓存，先看那几条慢查询。」——你答对了，TA 学到的是「遇到问题来问你」。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：用问题把 TA 带到答案旁边</div>
+<p>「加缓存是一个选项。<strong>你觉得延迟主要花在哪一段？依据是什么？</strong>」<br/>（TA 说没量过。）<br/>「那先量一下，再带两个方案来，<strong>每个写清代价和你倾向哪个</strong>。如果你的方案我觉得不是最好，但出了问题能回退，我也让你按你的做。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>交代任务时，我说的是「要解决什么、为什么重要、约束是什么」，而不是「怎么做」吗？</li>
+<li>TA 来找我时，是否带着至少两个选项和自己的倾向？</li>
+<li>我是否给 TA 补过「见过」：历史案例、外部做法、和老手聊一次？</li>
+<li>项目结束后，有没有对照「当时怎么想、结果怎样、下次改什么」复盘？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>用教练方式带专家</strong>：TA 已经在第 2 层，你还在定方法——TA 要么不再动脑，要么离开。</li>
+<li><strong>升级信号</strong>：其他人开始绕过你、直接向 TA 请教；你对 TA 的方案多半只是补充，不再推翻。</li>
+<li><strong>女性视角</strong>：「带方案来问」这条规则，对不太习惯在会上先开口的人尤其有用——<strong>它把「表达观点」从性格要求变成了流程要求</strong>。不要只在会上收方案，也接受会前书面提交。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>下一次有人来问你「该怎么办」，<strong>先问三个问题再给任何建议</strong>。记下有几次 TA 在你开口前就自己找到了答案。</p>
+<p><strong>思考：</strong>你有没有因为「我的方案更好」，而错过了让 TA 犯一个可恢复的错误的机会？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · 信任</div>
+<h2>把 TA 推到复杂局面里
+<span class="en">Layer 3 — Trust: Put Them in the Room Where It's Messy</span></h2>
+<span class="tag">保护伞</span><span class="tag">信用记录</span><span class="tag">出事你先担</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">目标是多方利益交织、谁都说不清的事，大家也愿意交给 TA。<strong>这一层教不会，只能在局里长出来</strong>。你的任务是给舞台、给兜底：让 TA 去主持、去面对冲突，搞砸时对外你承担、对内再复盘。</div>
+<div class="quote">
+<span class="en">Trustworthiness = (Credibility + Reliability + Intimacy) / Self-Orientation</span>
+<span class="zh">「可信度 =（专业可信 + 言行可靠 + 关系亲近）÷ 自我导向」</span>
+<span class="source">— David Maister, Charles Green, Robert Galford,《The Trusted Advisor》(2000)</span>
+</div>
+<p style="margin-top:14px;font-size:0.96rem;color:#3a3630">这个公式能直接拿来带人：<strong>可信</strong>靠第 2 层的专业，<strong>可靠</strong>靠说到做到的次数，<strong>亲近</strong>靠愿意听各方的顾虑，而分母——<strong>只顾自己的利益、只想自己表现</strong>——会把前面三项全部抵消。</p>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：产品和运营为一个功能的上线时间吵了两周，你想让一位资深下属去牵头协调。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 只交事，不交权</div>
+<p>「你去协调一下，有结论告诉我，我来拍板。」——TA 只能传话。两边都知道真正的决定在你那里，没人会对 TA 说真话。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：给权限、给边界、给兜底</div>
+<p>「这件事你来定。<strong>边界只有两条：不晚于 Q4，不砍合规那部分。</strong>先分别找两边，把各自真正担心的是什么讲给我听，再开联合会，你主持，我旁听不发言。<strong>结论用你的名字发；要是砸了，对上我来解释。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>TA 对任何人的承诺都兑现了吗？做不到时有没有提前说？</li>
+<li>跨部门会议是 TA 主持、我旁听，还是我主持、TA 旁听？</li>
+<li>遇到冲突时，TA 能否先把每一方的诉求和顾虑讲清楚，再谈解法？</li>
+<li>这个季度，TA 有没有直接向我的上级汇报过一次、功劳记在 TA 名下？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>跨层拔苗</strong>：执行还不稳就让 TA 负责跨部门项目——局面失控，TA 的信心和信用一起受挫。</li>
+<li><strong>升级信号</strong>：其他部门遇到棘手的事会点名要 TA；立场对立的几方，也都认可 TA 公平。</li>
+<li><strong>女性视角</strong>：Tanya Reilly 把协调、对齐、补位这类工作叫作「胶水工作」（Being Glue, 2019）——<strong>它恰恰是第 3 层的核心，却常常不被算作晋升依据</strong>。Ibarra 等人在 HBR (2010) 指出，女性得到的「指导」不少，<strong>缺的是「赞助」：有人在关键场合替她背书、给她舞台</strong>。第 3 层要的正是赞助：把 TA 的名字带进 TA 不在场的会议。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>找一个下周你本来要亲自去的跨部门会，<strong>让 TA 主持，你只旁听</strong>。会后问 TA 一个问题：「哪一方最没有说出真话？」</p>
+<p><strong>思考：</strong>如果你的下属搞砸了一个局面，TA 是相信你会兜底，还是担心你会撇清？TA 的判断依据是你过去的哪件事？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · 判断</div>
+<h2>给 TA 一笔小额「试错资本」
+<span class="en">Layer 4 — Judgment: Fund Small, Owned Bets</span></h2>
+<span class="tag">投资人</span><span class="tag">下注书</span><span class="tag">奖励好判断</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">目标是 TA 能看见没人安排的机会，并愿意为结果负责。<strong>信息本身没有价值，愿意为信息的结果负责才有价值</strong>——判断只能在真实的输赢里练出来。你像投资人一样控制下注大小，<strong>但不替 TA 做决定</strong>。</div>
+<div class="quote">
+<span class="en">"Most decisions should probably be made with somewhere around 70% of the information you wish you had. If you wait for 90%, in most cases, you're probably being slow."</span>
+<span class="zh">「大多数决定，大概在掌握你希望拥有的信息的 70% 时就该做了。如果等到 90%，多数情况下你可能已经太慢了。」</span>
+<span class="source">— Jeff Bezos, 2016 年致股东信</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一位下属在客户访谈里注意到，有三家客户都在用表格手动导出数据，TA 想试做一个自动导出工具。不在任何计划里。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种反应都在消灭判断力</div>
+<p>「先把手上的事做好，这个以后再说。」——TA 学到的是：别多看。<br/>「好主意，我来排进下季度的计划。」——你把 TA 的判断拿走了，结果归属也变了。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试着说：批一笔输得起的资源，结果归 TA</div>
+<p>「写一页纸给我：<strong>你看到了什么、赌什么、要投多少、什么结果算成、什么信号说明该停</strong>。我批你接下来四周每周一天，项目写你的名字。<strong>成了是你的，停了也是你的判断，我们一起复盘当时哪些假设对、哪些错。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>TA 有没有不被安排的时间（比如每周半天，或约 10% 的工时）？</li>
+<li>TA 能否直接接触一线信息：客户、数据、竞品？还是只能听我转述？</li>
+<li>下注前有没有写清「看到什么、赌什么、投多少、何时停」？</li>
+<li>依据充分但失败的尝试，有没有被公开认可？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>只奖结果</strong>：失败的尝试一律扣分，就没人再主动发现机会。复盘要看判断过程，不只看输赢。</li>
+<li><strong>成熟信号</strong>：TA 开始给你带来你自己没想到的方向。这时 TA 已经可以带自己的人了。</li>
+<li><strong>女性视角</strong>：「允许试错」常常是不均匀的——同样一次失败，有人被看作「有魄力」，有人被看作「不够稳」。<strong>事前写好判据、事后按判据复盘</strong>，能把评价从印象拉回事实。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>问每位下属同一个问题：「如果给你四周、每周一天，你最想验证什么？」<strong>挑一个，批下去。</strong></p>
+<p><strong>思考：</strong>过去一年，你的团队里有哪个好方向是下属先看到的？你当时是怎么回应的？</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>这个框架有出处吗？</summary><div>原文更像中文自媒体的归纳，但每一层都有扎实的来源。第 1、2 层对应 David Maister 在《Managing the Professional Service Firm》里对客户问题的分类：<strong>Procedure（流程型）、Grey Hair（经验型）、Brains（创新型）</strong>。第 3 层对应《The Trusted Advisor》的信任公式。第 4 层对应 Frank Knight《风险、不确定性与利润》(1921)：<strong>利润是对承担不可计量的不确定性的回报</strong>。按层次调整带法，则是 Andy Grove 的「任务相关成熟度」。</div></details>
+<details><summary>带不出人，最常见的原因是什么？</summary><div>多数是<strong>管理者的角色没跟着层次切换</strong>：执行不稳就让 TA 负责跨部门项目（跨层拔苗）；已到第 2 层还在定方法（用教练方式带专家）；让 TA 协调各方却不给决定权（只交事不交权）；失败一律扣分（只奖结果）；对上汇报只提自己（揽功劳，TA 的信用积累不起来）。</div></details>
+<details><summary>每季度对每位下属自检什么？</summary><div>五个问题：<strong>我知道 TA 在哪一层，TA 本人也知道吗？</strong>我的带法（教练／导师／保护伞／投资人）和 TA 的层次匹配吗？TA 手上是否至少有一件事比现在的层次高半步？这个季度我替 TA 争取过功劳或担过责任吗？<strong>如果我明天不在，TA 能接住我哪一部分工作？</strong></div></details>
+<details><summary>AI 会怎样改变这四层？</summary><div>有标准答案的部分——第 1 层，和第 2 层里「见过就会」的那部分——正在被快速压价。最难被替代的是<strong>第 3 层的信任和第 4 层的担责</strong>。这意味着带人的重心要更早往上移：<strong>别让下属在第 1 层停留太久</strong>，那一层的价值缩得最快。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 73 · 2026.10.01</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>

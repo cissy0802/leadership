@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 73: Developing People Through the Four Capabilities People Pay For</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.ladder{display:flex;flex-direction:column-reverse;gap:6px}
+.rung{display:grid;grid-template-columns:118px 1fr 1fr 1fr;gap:6px;font-size:0.82rem;line-height:1.5}
+.rung div{padding:8px 10px;border-radius:3px}
+.rung .lv{font-weight:700;color:#fffaf0;text-align:center}
+.rung .c{background:#f4ecdb;color:#3a3630}
+.rung.r1 .lv{background:#b89a6a}
+.rung.r2 .lv{background:#a07a40}
+.rung.r3 .lv{background:#8a5e2a}
+.rung.r4 .lv{background:#6e4318}
+.rung.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+table.diag{width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:8px}
+table.diag th,table.diag td{border-bottom:1px solid #e6dcc8;padding:8px 10px;text-align:left;vertical-align:top}
+table.diag th{color:#a0662a;font-size:0.78rem;letter-spacing:1px}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+.rung{grid-template-columns:1fr 1fr}
+.rung .lv{grid-column:1 / -1}
+.rung.head{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 73 · 2026.10.01</div>
+<h1>Developing People Through the Four Capabilities People Pay For</h1>
+<div class="meta"><span>Topic: Developing People Layer by Layer</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"The output of a manager is the output of the organizational units under his or her supervision or influence." — Andrew S. Grove, 1983</div>
+</header>
+<div class="intro">
+<p>A widely shared idea says people pay you for one of four capabilities. <strong>Execution</strong>: the task, method and standard are all clear, and you are faster, more accurate and more reliable — you solve problems that have answers. <strong>Expertise</strong>: you are handed only the problem and draw on accumulated knowledge to propose a solution — you solve problems without answers. <strong>Trust</strong>: the matter is complex, the parties are in conflict, the client can't even articulate it, yet everyone trusts you to get it done — you untangle relationships. <strong>Judgment</strong>: nobody comes to you; you spot the opportunity, invest first and carry the risk — you solve problems that didn't exist yet.</p>
+<p>One thread runs through all four: <strong>the amount of uncertainty you absorb for others keeps growing</strong>. Developing people means moving along that thread, <strong>handing over uncertainty one layer at a time</strong> — first "how to do it," then "what to do," then "who to do it with," and finally "whether to do it at all." The manager's role has to change with it: <strong>coach → mentor → umbrella → investor</strong>.</p>
+<p>Two principles hold throughout. <strong>Layers stack; they don't replace each other</strong> — someone who reaches layer 2 still needs a solid layer 1, and trust is the foundation of every layer. <strong>Hand over one kind of uncertainty at a time</strong> — a new assignment should contain one variable they're unsure about, and everything else should be familiar.</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Four capabilities · what they carry · who you are</div>
+<div class="ladder">
+<div class="rung head"><div></div><div>Problem solved</div><div>What they carry</div><div>Your role</div></div>
+<div class="rung r1"><div class="lv">1 · Execution</div><div class="c">Problems with answers</div><div class="c">Fast, accurate, reliable delivery</div><div class="c">Coach: set standards, give feedback</div></div>
+<div class="rung r2"><div class="lv">2 · Expertise</div><div class="c">Problems without answers</div><div class="c">Whether the solution is right</div><div class="c">Mentor: ask about reasoning, withhold answers</div></div>
+<div class="rung r3"><div class="lv">3 · Trust</div><div class="c">Tangled relationships</div><div class="c">People and the situation</div><div class="c">Umbrella: give them the stage, catch the fall</div></div>
+<div class="rung r4"><div class="lv">4 · Judgment</div><div class="c">Problems that didn't exist</div><div class="c">The risk of investing</div><div class="c">Investor: fund small bets</div></div>
+</div>
+<div class="dgm-note">The higher you go, the more uncertainty you hand over and the less you do yourself.</div>
+</div>
+<div class="intro">
+<p><strong>Step 0: diagnose which layer they're on.</strong> Look at what they've delivered on their own and ask which kind of uncertainty was highest. Ask these four questions from the bottom up; <strong>the first "no" marks the layer to work on</strong>:</p>
+<table class="diag">
+<tr><th>Layer</th><th>Diagnostic question</th></tr>
+<tr><td>Execution</td><td>Given a clearly specified task, do they deliver on time without rework or reminders?</td></tr>
+<tr><td>Expertise</td><td>Given a problem but no method, can they bring two or more options and explain the trade-offs?</td></tr>
+<tr><td>Trust</td><td>On contested, multi-party work, do other teams come to them directly and take them at their word?</td></tr>
+<tr><td>Judgment</td><td>In the past six months, have they raised something nobody assigned that later proved valuable?</td></tr>
+</table>
+<p>Two common illusions: <strong>fluent jargon doesn't mean layer 2, and being well-liked doesn't mean layer 3</strong> — layer 3 is about whether people still trust them when there's a conflict. Share the diagnosis with the person so they know what to practise next. This step maps onto Andy Grove's <em>task-relevant maturity</em>: <strong>the same person can sit on different layers for different tasks</strong>, so match your approach to the task, not the person.</p>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · EXECUTION</div>
+<h2>From Right to Reliable
+<span class="en">Layer 1 — Execution</span></h2>
+<span class="tag">coach</span><span class="tag">show, do together, let go</span><span class="tag">self-check lists</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">The goal: once you've handed something over, you can stop thinking about it. On this layer you set the task, method and standard; <strong>they carry only execution risk</strong>. Accuracy and reliability come first, speed second — speed is a by-product of fluency, and pushing it too early only produces rework.</div>
+<div class="quote">
+<span class="en">"The output of a manager is the output of the organizational units under his or her supervision or influence."</span>
+<span class="source">— Andrew S. Grove, <em>High Output Management</em></span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: a new hire submits the weekly metrics for the third time, again with two definition errors, one hour before the review meeting.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both reactions slow them down</div>
+<p>"Never mind, I'll fix it." — You save half an hour today; they'll make the same mistake next week.<br/>"Wrong again? Be more careful." — "Careful" isn't an action anyone can execute.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: break the standard into checkable actions</div>
+<p>"Both errors are about how we define active users: <strong>we de-duplicate over a rolling 7 days, and you used the calendar week</strong>. I'll fix it today — sit with me and watch how I check it. Next week you do it yourself, and before you send it, check three things: <strong>the definition, the time window, and whether week-over-week change exceeds 20%</strong>. After your third run, write up your own checklist and show it to me."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>When I assign work, have I made clear what to do, what "done" means and when it's due? Did they repeat it back?</li>
+<li>For new tasks, did I go through "I do, you watch → you do, I watch → you do it alone"?</li>
+<li>Is my feedback within 24 hours, and does it say exactly what fell short and by how much?</li>
+<li>By the third run of a similar task, do they have their own self-check list?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Doing it for them</strong>: every error you fix yourself is one less repetition for them. Fine when time is short — but walk them through it afterwards.</li>
+<li><strong>Missing the promotion signal</strong>: a month of deliveries with no rework, and they start asking "why do we do it this way?" Keep managing them as an executor and they'll feel stuck.</li>
+<li><strong>The women's angle</strong>: in <em>The No Club</em> (2022), Babcock and colleagues found that <strong>non-promotable tasks — booking rooms, taking notes, organising offsites — are more often asked of women, and women more often say yes</strong>. When you hand out execution work, ask: will this help them move up a layer? If not, rotate it.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> pick a task you've recently kept because "it's faster if I do it," and next week hand it to someone using show, do together, let go. <strong>Count how many times you resisted stepping in.</strong></p>
+<p><strong>Reflect:</strong> whose execution is already solid, yet you're still managing them as if it weren't?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · EXPERTISE</div>
+<h2>Hand Over the Problem, Not the Answer
+<span class="en">Layer 2 — Expertise</span></h2>
+<span class="tag">mentor</span><span class="tag">come with options</span><span class="tag">retrospectives</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">The goal: on problems without a standard answer, they produce a sound solution on their own. You still set goals and constraints, <strong>but no longer the method</strong>. However good your answer is, once you say it they stop thinking; as long as the mistake is recoverable, let them go with their own plan.</div>
+<div class="quote">
+<span class="en">"Stay curious a little longer, and rush to action and advice-giving a little more slowly."</span>
+<span class="source">— Michael Bungay Stanier, <em>The Coaching Habit</em></span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: an engineer asks, "This service keeps missing its latency target — should we add a cache?" You can see at a glance that the problem is the database queries.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The fastest answer, the slowest growth</div>
+<p>"Don't add a cache, look at those slow queries first." — You're right, and what they learn is "bring problems to you."</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: use questions to bring them next to the answer</div>
+<p>"A cache is one option. <strong>Where do you think most of the latency goes? What's that based on?</strong>"<br/>(They haven't measured it.)<br/>"Then measure first, and come back with two options, <strong>each with its cost and which one you'd pick</strong>. Even if I don't think your option is the best one, as long as we can roll back if it goes wrong, you'll go with yours."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>When I assign work, do I explain what to solve, why it matters and the constraints — rather than how?</li>
+<li>When they come to me, do they bring at least two options and their own preference?</li>
+<li>Have I helped them "see more": past cases, outside practice, a conversation with a veteran?</li>
+<li>After a project, do we review what we thought then, what happened, and what we'd change?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Coaching an expert like a beginner</strong>: they're on layer 2 and you're still dictating the method — they either stop thinking or leave.</li>
+<li><strong>Promotion signal</strong>: people start going around you to ask them directly; your input on their plans is mostly additive, not a rewrite.</li>
+<li><strong>The women's angle</strong>: the "come with options" rule helps most for people who don't tend to speak first in meetings — <strong>it turns voicing a view from a personality trait into a process step</strong>. Don't only collect options in the meeting; accept written proposals beforehand too.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> next time someone asks "what should I do?", <strong>ask three questions before giving any advice</strong>. Note how often they find the answer before you speak.</p>
+<p><strong>Reflect:</strong> have you ever denied someone a recoverable mistake because "my plan is better"?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · TRUST</div>
+<h2>Put Them in the Room Where It's Messy
+<span class="en">Layer 3 — Trust</span></h2>
+<span class="tag">umbrella</span><span class="tag">track record</span><span class="tag">you take the hit first</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">The goal: on matters where interests collide and nobody can quite say what's wrong, people still want to hand it to them. <strong>This layer can't be taught; it only grows inside real situations</strong>. Your job is to give them the stage and catch the fall: let them chair, let them face the conflict, and if it goes badly, take responsibility externally and debrief internally.</div>
+<div class="quote">
+<span class="en">Trustworthiness = (Credibility + Reliability + Intimacy) / Self-Orientation</span>
+<span class="source">— David Maister, Charles Green, Robert Galford, <em>The Trusted Advisor</em> (2000)</span>
+</div>
+<p style="margin-top:14px;font-size:0.96rem;color:#3a3630">You can use the formula directly to develop people: <strong>credibility</strong> comes from layer-2 expertise, <strong>reliability</strong> from the number of promises kept, <strong>intimacy</strong> from a willingness to hear every side's concerns — and the denominator, <strong>focus on one's own interests and one's own image</strong>, cancels out all three.</p>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: product and operations have argued for two weeks over a feature's launch date, and you want a senior report to lead the resolution.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Handing over the task without the authority</div>
+<p>"Go coordinate, tell me where it lands, and I'll decide." — They can only relay messages. Both sides know the real decision sits with you, so no one tells them the truth.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: give authority, boundaries and cover</div>
+<p>"This one's your call. <strong>Only two boundaries: no later than Q4, and don't cut the compliance piece.</strong> Talk to each side separately first and tell me what each is really worried about; then run a joint meeting — you chair, I'll sit in silently. <strong>The decision goes out under your name; if it goes wrong, I'll explain it upward.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Do they keep every promise to everyone? When they can't, do they say so early?</li>
+<li>In cross-team meetings, do they chair while I observe — or the other way round?</li>
+<li>In a conflict, can they lay out each party's interests and concerns before proposing a fix?</li>
+<li>This quarter, have they presented directly to my manager, with the credit in their name?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Skipping layers</strong>: giving a cross-team project to someone whose execution isn't solid yet — the situation spirals, and their confidence and credibility take the hit together.</li>
+<li><strong>Promotion signal</strong>: other teams ask for them by name when things get hard; parties on opposite sides both see them as fair.</li>
+<li><strong>The women's angle</strong>: Tanya Reilly calls coordination, alignment and filling gaps "glue work" (<em>Being Glue</em>, 2019) — <strong>exactly the core of layer 3, yet often not counted toward promotion</strong>. Ibarra and colleagues (HBR, 2010) found that women receive plenty of mentoring but <strong>less sponsorship: someone who vouches for them in key rooms and gives them the stage</strong>. Layer 3 needs sponsorship — bring their name into meetings they aren't in.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> pick a cross-team meeting you'd normally attend next week; <strong>let them chair and just observe</strong>. Afterwards ask one question: "Which party held back the most?"</p>
+<p><strong>Reflect:</strong> if one of your reports botched a situation, would they trust you to cover them or fear you'd distance yourself? Which of your past actions would they base that on?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · JUDGMENT</div>
+<h2>Fund Small, Owned Bets
+<span class="en">Layer 4 — Judgment</span></h2>
+<span class="tag">investor</span><span class="tag">one-page bet</span><span class="tag">reward good judgment</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">The goal: they spot opportunities nobody assigned and are willing to own the outcome. <strong>Information has no value in itself; the value lies in being willing to answer for what you do with it</strong> — judgment is only built through real wins and losses. Like an investor, you control the size of the bet, <strong>but you don't make the call for them</strong>.</div>
+<div class="quote">
+<span class="en">"Most decisions should probably be made with somewhere around 70% of the information you wish you had. If you wait for 90%, in most cases, you're probably being slow."</span>
+<span class="source">— Jeff Bezos, 2016 letter to shareholders</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: in customer interviews, one of your reports notices three customers exporting data by hand into spreadsheets, and wants to try building an automated export. It's not on any roadmap.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both reactions kill judgment</div>
+<p>"Finish what's on your plate first; we'll talk about this later." — What they learn: don't look too hard.<br/>"Great idea, I'll put it on next quarter's plan." — You've taken their judgment away, and the ownership of the outcome with it.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: approve a loss you can afford, and let them own it</div>
+<p>"Write me one page: <strong>what you saw, what you're betting on, how much you need, what counts as success, and what signal means stop</strong>. I'll give you one day a week for the next four weeks, with the project under your name. <strong>If it works, it's yours; if you stop it, that's your call too — and we'll review which assumptions held and which didn't.</strong>"</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Do they have unassigned time (say, half a day a week, or about 10% of their hours)?</li>
+<li>Do they see first-hand information — customers, data, competitors — or only what I relay?</li>
+<li>Before a bet, is it written down: what they saw, what they're betting, how much, when to stop?</li>
+<li>Are well-reasoned attempts that failed publicly recognised?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Rewarding only outcomes</strong>: if every failed attempt costs points, nobody looks for opportunities again. Review the reasoning, not just the result.</li>
+<li><strong>Maturity signal</strong>: they start bringing you directions you hadn't thought of. At that point they're ready to develop people of their own.</li>
+<li><strong>The women's angle</strong>: "permission to fail" is often unevenly granted — the same failure reads as "bold" for one person and "not steady enough" for another. <strong>Writing the criteria before the bet and reviewing against them afterwards</strong> pulls the evaluation back from impression to fact.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Action:</strong> ask each report the same question: "If you had one day a week for four weeks, what would you most want to test?" <strong>Pick one and approve it.</strong></p>
+<p><strong>Reflect:</strong> in the past year, which good direction did one of your reports see before you did? How did you respond?</p>
+</div>
+</div>
+</div>
+<div class="deep">
+<h3>Going deeper</h3>
+<details><summary>Where does this framework come from?</summary><div>The original reads like a social-media summary, but each layer has solid roots. Layers 1 and 2 match David Maister's classification of client problems in <em>Managing the Professional Service Firm</em>: <strong>Procedure, Grey Hair and Brains</strong>. Layer 3 matches the trust equation in <em>The Trusted Advisor</em>. Layer 4 matches Frank Knight's <em>Risk, Uncertainty and Profit</em> (1921): <strong>profit is the reward for bearing uncertainty that can't be measured</strong>. Adjusting your approach by layer is Andy Grove's task-relevant maturity.</div></details>
+<details><summary>Why do managers fail to develop people?</summary><div>Usually because <strong>the manager's role didn't change with the layer</strong>: giving a cross-team project to someone whose execution isn't solid (skipping layers); still dictating methods to someone on layer 2 (coaching an expert like a beginner); asking them to coordinate without giving them decision rights (task without authority); penalising every failure (rewarding only outcomes); presenting only yourself upward (taking credit, so their track record never builds).</div></details>
+<details><summary>What should I check for each report every quarter?</summary><div>Five questions: <strong>Do I know which layer they're on, and do they?</strong> Does my approach (coach / mentor / umbrella / investor) match their layer? Do they own at least one thing half a step above their current layer? Did I win credit or take responsibility for them this quarter? <strong>If I disappeared tomorrow, which part of my job could they pick up?</strong></div></details>
+<details><summary>How will AI change these four layers?</summary><div>The parts with standard answers — layer 1, and the "seen it before" part of layer 2 — are being repriced fast. The hardest to replace are <strong>layer-3 trust and layer-4 accountability</strong>. That means shifting the focus upward earlier: <strong>don't let people linger on layer 1</strong>, the layer whose value is shrinking fastest.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 73 · 2026.10.01</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>
