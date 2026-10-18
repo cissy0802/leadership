@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -367,6 +379,31 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>我最信任的那个"专业直觉"，是在规律、快反馈的环境里练出来的吗？若不是（比如只押过两三次的低频领域），它可能只是包装成经验的运气。</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · 扎哈维的累赘原理（1975）</b>：孔雀的大尾巴之所以可信，是因为它昂贵，病弱的个体养不起；便宜的信号很快会被作弊者模仿而失效。配对指标是同一招：覆盖率能靠空测试刷，变异测试分却很难造假。不像的是，自然选择要很多代才淘汰假信号，管理者当季就能换指标。</li>
+<li><b>分布式系统 · 健康检查</b>：存活探针只确认进程还能回 200，服务卡在坏状态时它照样亮绿灯；所以运维再加一条跑通真实请求的端到端探测，和覆盖率配变异分是同一个结构。不同在于，探针不会为了考核去讨好自己，人会。</li>
+<li><b>神经科学 · 加扎尼加的「解释器」</b>：裂脑病人的右脑接到指令做了动作，左脑看不到原因，却会当场编出一个顺口的理由。HARKing 是同一个结构：结果先到，故事后补。不像的是，解释器自动运转、本人毫无察觉，事后编假设却能靠预注册拦住。</li>
+<li><b>东方哲学 · 庄子「庖丁解牛」</b>：庖丁的刀用了十九年仍像新磨的，靠的是牛的筋骨结构固定、每一刀顺不顺立刻知道，正合「环境规律＋快速反馈」的直觉条件。不像的是，庖丁面对的每头牛大同小异，高管的大决策一辈子往往只遇两三次。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Goodhart 陷阱：指标一旦被拿来考核施压，人就会去优化指标本身，指标随即失真。</li>
+<li>解药不是丢掉指标，而是配对指标：量与质同时测，让刷量在另一个维度露馅。</li>
+<li>把代码覆盖率这类代理指标当诊断仪表，而不是决定谁升谁降的审判工具，博弈压力才会小。</li>
+<li>定量回答发生了什么、有多大，定性回答为什么；数字负责圈出范围，访谈负责找到原因。</li>
+<li>「测不了」往往只是还没想清楚怎么测，技术债、信任、胶水工作不能因进不了 dashboard 就当成零。</li>
+<li>把意见之争变成预注册实验：开跑前写死可证否假设、成功阈值、样本量和回滚条件。</li>
+<li>精心设计的实验里只有约三分之一真正改进了关键指标，多数自信的好点子其实没用。</li>
+<li>看完结果再编假设（HARKing）会让任何噪声都变成故事，就像裂脑研究里左脑解释器的事后圆说。</li>
+<li>Kahneman 与 Klein 指出，直觉只在环境规律、反馈快时可信；新颖低频的决策里数据只是输入。</li>
+<li>别用数据给已定的决策洗白，也别用「数据不足」拖延本该由自己拍板的判断。</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

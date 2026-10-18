@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -425,6 +437,30 @@ Research repeatedly shows women are more often interrupted in meetings and have 
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · The illusion of explanatory depth</b>: Rozenblit and Keil (2002) had people rate how well they understood a zipper or a flush toilet, then asked for a step-by-step explanation; the ratings dropped. A memo runs the same test: if you can't write it, you haven't thought it through. The difference is that the experiment exposes one person's illusion, while the memo turns the test into a standing gate for a team.</li>
+<li><b>Complexity science · Stigmergy</b>: Grassé (1959) saw that termites building a nest don't signal each other directly; each one reads the traces others left in the structure and acts on them, and a whole nest gets coordinated that way. A doc-first org also coordinates through traces left in the repo and the wiki rather than everyone being present at once. Unlike termite traces, which only record what was done, RFCs and ADRs also record why, so newcomers can build on the reasoning and not just the shape.</li>
+<li><b>Distributed systems · The append-only event log</b>: event sourcing never edits an old record; when state changes it appends a new event, so history is always intact. That is the ADR rule of writing a new record and marking the old one superseded. The difference: an event log can be replayed to rebuild current state, while the constraints an ADR captured can't be replayed, only understood by whoever reads them later.</li>
+<li><b>Neuroscience · Attention residue</b>: Sophie Leroy (2009) found that switching away from an unfinished task leaves part of your attention stuck on it, and performance on the next task suffers. It is the in-the-head version of Paul Graham's meeting that blows a whole afternoon. The difference: clearing a meeting from the calendar gives the block back, but residue only fades once the earlier task reaches a stopping point.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Doc-first is not a trick for having fewer meetings; it is an org design that separates thinking from broadcasting.</li>
+<li>Write important decisions up as a narrative memo before meeting; coherent prose forces clearer thinking than slides do.</li>
+<li>Amazon-style meetings open with silent reading of the memo, so everyone starts from the same baseline and the time goes to trade-offs and dissent.</li>
+<li>If you can't write it clearly, you haven't thought it clearly; like the explanatory-depth experiments, a memo exposes what you only thought you understood.</li>
+<li>Ideas written in documents with names and timestamps counter the pattern of women being interrupted and losing credit in meetings.</li>
+<li>An RFC is a public, async-commentable proposal with a lifecycle, and it needs a comment deadline and a named decision-maker (DRI).</li>
+<li>The most valuable section of a design doc is the one on alternatives that were considered and rejected, with the reasons.</li>
+<li>An ADR records the context and constraints at the time of a decision, moving the argument from "who was wrong" to "have the constraints changed".</li>
+<li>Paul Graham's maker's schedule shows one meeting can wreck a whole afternoon, so default to async and treat meetings as escalation.</li>
+<li>Cutting meetings takes a system: no-meeting days, resetting recurring meetings and re-adding only on demand, async standups, but never cutting 1:1s.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Your Day 18 Action</h3>

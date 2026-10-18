@@ -61,6 +61,18 @@ summary{cursor:pointer;font-weight:600;color:#dcba98;font-size:0.98rem}
 details .body{margin-top:10px;font-size:0.93rem;color:#d3c3a9;line-height:1.7}
 details .body strong{color:#dcba98}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
 .card{padding:24px 20px}
@@ -343,6 +355,33 @@ Board diversity is itself a governance issue: research (Adams &amp; Ferreira, 20
 </div>
 </div>
 </div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Eastern philosophy · Laozi on the ruler barely known</b>: The Tao Te Ching says the best ruler is one whose people hardly know he is there, the same direction as a board keeping its fingers out. The difference: Laozi's non-action is close to withdrawal, while governance still needs noses in, and will replace a CEO when it must.</li>
+<li><b>Evolutionary biology · The agency problem inside a body</b>: A cancer cell is an agent that defects from the whole to multiply for itself, and the body restrains it with structures such as programmed cell death and immune surveillance, just as governance does not bet on character. The difference: cells owe no duty of loyalty; only mechanisms hold them.</li>
+<li><b>Psychology · Diffusion of responsibility (Darley and Latan&eacute;, 1968)</b>: In their experiments, the more people present, the less anyone felt it was on them to help. User experience and maintainability get neglected in meetings the same way: everyone assumes someone else will speak for them. The difference: the person in the study could still call out; silent stakeholders cannot.</li>
+<li><b>Neuroscience · Predictive coding and Friston's free-energy principle</b>: On this view, higher brain areas do not take in the full sensory stream; they mostly handle prediction errors, the parts that break expectations, and the whole system works to minimize surprise. Bringing decisions and risks upward instead of status logs, and delivering bad news early, has the same shape. The difference: a brain sometimes kills surprise by ignoring the signal, which is exactly the move that ruins managing up.</li>
+<li><b>Distributed systems · Fail-fast</b>: A good system raises an error the moment something breaks instead of letting a corrupted state drift downstream, since silent corruption is far harder to trace than a crash. Bad news under "no surprises" is likewise cheaper the earlier it surfaces. The difference: people must also pick the setting and tell the boss privately first.</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>A board does not run the company; it approves strategy, hires, fires and pays the CEO, and watches financial, compliance and major risks.</li>
+<li>"Noses in, fingers out" means asking hard questions without doing management's job; meddling in daily work oversteps, and looking away is negligence.</li>
+<li>In front of senior leaders or a steering committee, bring decisions and risks that need their judgment, not a list of completed tasks.</li>
+<li>Directors owe shareholders a fiduciary duty with two parts: a duty of loyalty that rules out self-dealing and a duty of care to oversee diligently.</li>
+<li>The agency problem is the core puzzle of governance: those running a company may not act in the owners' interest, so independent directors, audits and stock-linked pay exist to narrow the gap.</li>
+<li>Agency problems are solved by structure, not by betting on character; aligning incentives and accountability works better than appeals to team spirit.</li>
+<li>Shareholder primacy (Friedman) and stakeholder theory (Freeman) have clashed for half a century, and real boards always weigh competing claims.</li>
+<li>Before a major decision, put every stakeholder on the table so that silent parties such as users and downstream teams do not pay for the loudest one.</li>
+<li>Trust between a CEO and the board rests on "no surprises": deliver bad news early, privately and before the formal meeting, with a plan attached.</li>
+<li>"No surprises" does not mean asking permission for everything; agree with your boss on what level of news they want early, and decide the rest yourself.</li>
+</ol>
+</div>
+
 <!-- ============ Deep Dive ============ -->
 <div class="deep">
 <h3>Deeper Reflection</h3>

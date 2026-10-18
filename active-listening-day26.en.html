@@ -72,6 +72,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -402,6 +414,32 @@ Research shows the same statement is more likely to be coded as "personal opinio
 </div>
 </div>
 
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Neuroscience · Predictive processing</b>: The brain guesses what the speaker is about to say from its priors, then corrects the guess with what actually arrives; the downloading level is priors so strong that anything unexpected gets discarded as noise. The difference: the brain's correction runs automatically below awareness, while listening for premises means deliberately holding your own prediction down.</li>
+<li><b>Psychology · The fundamental attribution error (Lee Ross, 1977)</b>: We explain other people's behavior by character and underweight their situation; hearing "I can't estimate this" as "he can't handle pressure" is exactly that bias. Unlike attribution research, which only names the bias, premise-level listening goes on to ask what situation he is guarding against, such as a culture that punishes overruns.</li>
+<li><b>Complexity science · Attack tolerance of networks (Albert, Jeong and Barabási, 2000)</b>: Scale-free networks barely notice random node removal but fall apart fast when a few hubs are targeted; the load-bearing premise is that hub, and a few decorative walls can fail without consequence. Where it differs: a network's hubs can be found by counting links, while a load-bearing premise is usually hidden and has to be estimated by how much collapses if it is false.</li>
+<li><b>Distributed systems · Correlated failure</b>: Three replicas seem able to survive two machine crashes, but if they share one power feed or one buggy software version, they go down together, just as several small premises can share one root cause. The difference: engineers break the correlation by spreading across data centers and staggering versions, while dependencies among premises are rarely drawn at all.</li>
+<li><b>Philosophy of science · Popper's falsifiability (1934)</b>: "Can you imagine data that would make one side concede?" is close to Popper's criterion for demarcating science: a fact-claim can be refuted by experience. The difference: Popper did not hold that unfalsifiable statements are meaningless, and value-claims are not empty either; they are settled by an owner rather than by data.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Most misjudgments a tech leader makes come not from too little information but from reasoning all the way down on an unspoken, wrong premise.</li>
+<li>Scharmer's four levels of listening are downloading, fact, emotion and premise; most people stop at downloading and hear only what they already know.</li>
+<li>You have left the downloading level only when you can paraphrase someone's view until they nod and say "yes, exactly"; parroting their words does not count.</li>
+<li>Premise-level listening asks what the other person is really defending against, such as being blamed; what needs fixing is that premise, not their attitude.</li>
+<li>Before a high-stakes call, ask what you are optimizing for if the judgment is true, and which premise would flip the conclusion if it were false.</li>
+<li>Reversing the assumption, by asking what would all have to be true at once for this to hold, turns a clash of positions into a test of premises.</li>
+<li>Premises are not equally weighted: rank them by collapse area if false times current uncertainty, and the highest product is the load-bearing wall.</li>
+<li>Disprove the load-bearing premise first and as cheaply as possible, for example by interviewing three target teams rather than writing code for six months.</li>
+<li>A fact-claim can be refuted by data and should be checked; a value-claim cannot be proven right or wrong and needs a clear owner to decide it.</li>
+<li>The disagreement test of imagining data that would make one side concede is close to Popper's falsifiability criterion for demarcating science.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Practice · Reflection</h3>

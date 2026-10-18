@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -381,6 +393,30 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Tomas Chamorro-Premuzic,《Why Do So Many Incompetent Men Become Leaders?》</strong>—自信 ≠ 能力，及其对晋升机制的扭曲。<br/><strong>Machiavelli,《君主论》</strong>（第 18 章）—"人们凭眼睛判断，少数凭手触摸"：形象管理的现实主义视角，及其道德成本。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>佛学 · 假名</b>：中观说「我」没有独立自性，只是在众缘和他人的称谓里被安立的假名；品牌同样不归你自己定义，是在别人口中被说出来才成立。不像的是，佛学要人看破假名、不再执著，个人品牌却要人有意经营这个假名。</li>
+<li><b>分布式系统 · Gossip 协议</b>：没有中央节点能一次写入全网，状态靠节点之间一传一地扩散，最终收敛成同一份；你也没法直接改写所有同事的印象，只能让每次汇报、文档都广播同一个定位，等它在人群里收敛。不像的是，机器传话逐字照抄，人传话会把你压缩成一句标签，模糊的定位在转述中最先走样。</li>
+<li><b>生物进化 · 昂贵信号（Zahavi 的累赘原理，1975）</b>：孔雀尾巴可信，正因为它造价高、难伪造；一手、带伤疤的复盘可信，也因为没亲历过的人写不出来，趋势综述则是谁都发得起的廉价信号。不像的是，生物信号的代价由身体硬付，人的作品却可以被包装甚至代笔。</li>
+<li><b>心理学 · 概率校准（Lichtenstein 与 Fischhoff，1977）</b>：实验里人们自称「九成有把握」的判断，实际正确率常明显更低，这就是过度自信；「我有信心，但 X 部分还没验证」正是在报一个校准过的置信度。不像的是，实验能在事后立刻对答案，职场里的自信要等很久才被交付检验。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>个人品牌就是你不在场时别人一句话怎么描述你，而不是你对自己的自夸。</li>
+<li>品牌定位宁窄勿全：只选一个能力标签，用一年一致的交付反复钉牢，直到别人自己说出来。</li>
+<li>女性自我推销更易遭遇 backlash，用数据、sponsor 和文档这类第三方证据替代自夸更稳妥。</li>
+<li>对大厂 tech lead manager，晋升在 calibration 房间里决定，品牌要先向内建，再向外扩。</li>
+<li>每月更新一份 brag doc，写清影响和证据链接，promo 前整理好给老板当争取晋升的弹药。</li>
+<li>写作与演讲让作品复利：一篇好的 RFC 或博客，是一个 24 小时替你工作的分身。</li>
+<li>一篇一手、具体、带代价的复盘胜过十篇趋势综述，空心综述只会稀释品牌。</li>
+<li>品牌的一致性让人能预测你、敢押注你，但形象跑在交付前面时，信誉会一次性暴跌。</li>
+<li>校准过的自信比永远自信更可靠：承认边界、先做 spike 再下结论，反而强化「可靠」的品牌。</li>
+<li>作为 manager，可以在 calibration 里把「谁声音大」和「谁交付强」分开评，替不擅自夸的人背书。</li>
+</ol>
 </div>
 <!-- ============ Deep think ============ -->
 <div class="deepthink">

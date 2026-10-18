@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -357,6 +369,34 @@ Taking retro notes, maintaining the wiki, chasing action-item progress — this 
 </div>
 </div>
 </div>
+<!-- ============ Crossovers + Ten takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Fundamental attribution error (Lee Ross, 1977)</b>: When others slip up, we blame their character or carelessness and underrate the pull of the situation; "who changed this config?" is that reflex. The difference: hunting for a culprit in a postmortem adds a motive beyond bias, the comfort of "someone is accountable now."</li>
+<li><b>Distributed systems · Replicas and single points of failure</b>: Data kept in one copy vanishes when that machine dies, so production systems often keep three and keep serving through a failure. Bus factor = 1 is knowledge with a single replica. Unlike data, though, tacit knowledge can't be copied byte for byte; it only spreads by pairing on real work.</li>
+<li><b>Neuroscience · Hierarchical predictive coding (Rao &amp; Ballard, 1999)</b>: In these models, lower layers of the brain use prediction errors to fix detailed guesses, and only errors they can't absorb travel upward to revise higher-level assumptions. Single-loop learning patches at the bottom; double-loop learning lets the error climb and rewrite the prior. The difference: the brain passes errors up automatically, while an organization needs someone willing to speak up, especially when the leader set the premise.</li>
+<li><b>Neuroscience · Procedural memory</b>: Learning to drive, you think through every step; once practiced, the basal ganglia run it automatically and free your attention. Knowledge sinking from documents into code and automated checks follows the same path. The difference: the brain gets there through repetition, while a team needs someone to deliberately turn rules into checks.</li>
+<li><b>Buddhism · Hearing, reflecting, cultivating</b>: Buddhism names three kinds of wisdom: after hearing and reflecting, you must cultivate, practicing in conduct and mind until it is truly yours. A postmortem doc stops at hearing and reflecting; a landed action item is cultivation. The difference: cultivation transforms the self, while closing an organizational loop changes processes and who owns what.</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>A blameless postmortem asks only what made the error easy and unblocked; once you ask "who did it," everyone hides next time.</li>
+<li>"Human error" is where an investigation starts, not where it ends; every action item should change the system, not ask people to be more careful.</li>
+<li>Blamelessness is behavior, not a slogan: promise no blame, then move the engineer off the core module, and the team will hide again.</li>
+<li>Knowledge that lives in only one person's head is a liability, and a system with a bus factor of 1 is a red light.</li>
+<li>Knowledge moves from heads to chats to searchable docs to code and automation, and the further down it lives, the less it leaves with people.</li>
+<li>Tacit knowledge, in Nonaka's sense, must be made explicit continuously through pairing and runbooks; a two-week handover before someone quits can't rescue it.</li>
+<li>Single-loop learning adjusts the action to patch this failure; Argyris's double-loop learning questions the premises and goals behind the action.</li>
+<li>When a retro keeps tuning the same process with no result, the question is not how to speed it up but whether it should exist.</li>
+<li>Pages of action items nobody follows up on are learning theater; learning only happens when the next action actually changes.</li>
+<li>Every action item needs a named owner, a due date, and a verifiable definition of done, reviewed at the start of each sprint.</li>
+</ol>
+</div>
+
 <!-- ============ Deep Thinking ============ -->
 <div class="deep">
 <h3>Deeper Questions</h3>

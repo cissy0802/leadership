@@ -85,6 +85,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .tl-row{grid-template-columns:1fr 1fr}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -357,6 +369,31 @@ header h1{font-size:1.55rem}
 <p><strong>思考：</strong>你团队上一次「改完了、并且留下来了」的变革是哪一件？它和现在这几件有何结构差异？</p>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学 · 习惯化（Kandel 的海兔实验）</b>：同一刺激反复出现，海兔的缩鳃反射会越来越弱，神经系统把不变的信号降级为背景；kickoff 后赞助人重复同一句表态，组织也会这样把它听成噪声。不像的是，习惯化发生在接收端，赞助衰减却常是发送端自己先停了，所以要排的是新的出场和新的决定，而不是同一句话说得更响。</li>
+<li><b>分布式系统 · 租约（Gray 与 Cheriton，1989）</b>：持有者必须在到期前续约，否则权限自动失效，系统从不依赖「对方说过会一直在」。第 6、12、20 周的赞助同步就是续约。不像的是，租约过期系统立刻知道，赞助过期却悄无声息，常要到排期冲突才暴露。</li>
+<li><b>生物进化 · 选择压力</b>：性状不问意图，只看什么被筛选留下；考核只计旧指标时中层挡住迁移，是被选择压力塑造的适应，不是性格缺陷。不像的是，自然界的适应度函数没人能改，组织的考核目标一次会议就能改写。</li>
+<li><b>心理学 · 工作记忆容量（Cowan，2001）</b>：人能同时维持的信息块约四个，超出后不是慢一点，而是开始丢。团队的变革吸收能力也是硬上限，三件并行就是三件都掉。不像的是，工作记忆容量基本固定，吸收能力能靠排序和试点在时间上错开。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>跨团队的事推不动时，缺的通常不是执行力，而是赞助人的日程和出场。</li>
+<li>Prosci 历次研究中，积极且可见的高管赞助始终是变革成功的第一贡献因子。</li>
+<li>「需要什么随时找我」是撒手而非赞助，要当场翻译成发声、背书、仲裁三件带日期的事。</li>
+<li>赞助人只接一部分时，把赞助缺口的成本当场记在明处，否则它会被记成你的执行力问题。</li>
+<li>赞助可见度在 kickoff 后单调下降，阻力在第 6–12 周才到峰值，两线交叉处转型最容易死掉。</li>
+<li>kickoff 当天就把第 6、12、20 周的 15 分钟同步排进赞助人日历，议程只有一个待拍的决定。</li>
+<li>技术异议不等于阻力：能写成可验证失败场景的是技术问题，写不出的才是排期冲突。</li>
+<li>「冻结的中层」缺乏实证，中层深度参与的转型反而成功率更高，所谓阻挡多是激励错位。</li>
+<li>先对齐激励再动员：把诉求写进对方的考核目标，升级给共同上级时抄送当事人。</li>
+<li>团队的变革吸收能力有硬上限，三件并行等于三件都不落地，要用排序和试点把它们错开。</li>
+</ol>
 </div>
 <div class="deep">
 <h3>深入思考</h3>

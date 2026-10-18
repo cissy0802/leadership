@@ -76,6 +76,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -389,6 +401,32 @@ header h1{font-size:1.55rem}
 <div class="ref"><strong>动作：</strong>选下周一个重要会议，列出会发声的 5 个人，每个人都安排会前 1:1 或异步消息。会上观察："意外"的 concern 出现了几个？<br/><strong>反思：</strong>你过去一年里，多少次"会议时被突然冒出的反对意见 derail"——其中多少本来可以靠会前一个 15 分钟的 1:1 避免？</div>
 </div>
 </div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · Gary Klein 的事前验尸（premortem）</b>：开工前先假设「一年后这件事已经失败了」，让每个人写下失败原因；和庙算一样，是把输的情形提前搬进推演里算。不像在于：premortem 只找失败路径，庙算还要给双方逐项打分，直接决定这一仗现在打不打。</li>
+<li><b>东方哲学 · 庄子的庖丁解牛</b>：庖丁「依乎天理，批大郤，导大窾」，刀只走骨节间的空隙，所以十九年刀刃还像新磨的；避实击虚找的也是组织里的缝。不像在于：牛的骨节是固定的，组织里的「虚」会移动，还可能是别人试过失败留下的雷区。</li>
+<li><b>生物进化 · 空生态位与适应辐射</b>：约 6600 万年前非鸟恐龙灭绝后，哺乳类很快占满了空出来的生态位；在没人真正 own 的空白插旗是同一个结构。不像的是，演化不需要谁同意，组织里的空白却有名义上的 owner，要靠 framing 让他成为受益方。</li>
+<li><b>心理学 · 虚假共识效应（Lee Ross 等，1977）</b>：人会高估别人和自己想法一致的比例；以为 Sara 也关心长期技术债，正是这个偏差。不同在于，心理学把它当普遍规律来描述，正文给的是校正办法：拿一手数据读对方，用对方的 OKR 语言重述提议。</li>
+<li><b>分布式系统 · 两阶段提交（2PC）</b>：协调者先逐个问参与者「能提交吗」，全票同意才发 commit；pre-wiring 的 T-7 到 T-2 就是 prepare 阶段，Day 0 的会只是 commit。不像在于：2PC 遇到一票否决只能整体回滚，人却可以按反对意见改方案，把反对者变成 co-author。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>孙子兵法的硬核不是阴谋，而是对资源、时机、信息和心智的冷静核算。</li>
+<li>五事七计是开战前的庙算：七计里有四项以上劣势，这场仗就不该现在打。</li>
+<li>庙算的目的是修正方案而不是制造焦虑：算出劣势，就缩小战役范围或换个时点再打。</li>
+<li>庙算要连对手方一起算，对方「道」的裂痕或「将」的换人，往往才是真正的机会窗口。</li>
+<li>避实击虚：不去撞强势话语权，找没人真正 own 的空白插旗，但先查清它为什么空着。</li>
+<li>因势利导：把提议挂上 CEO、CFO 正在推的议题，让名义上的 owner 挂名 chair、成为受益方。</li>
+<li>知彼知己最难的是知己：照镜子看到的常是镜像投射，要剥掉对自己的浪漫想象。</li>
+<li>stakeholder pre-read 分三轮：读对方公开的 OKR，背靠背问合作过的人，再反问自己的 pitch 是对方有用还是自己想说。</li>
+<li>孙子说的不战而屈人之兵，落到组织里就是：会议只 ratify 会前已达成的共识，会上才开始辩论就已输了一半。</li>
+<li>Pre-wiring 是听 concern、改方案，不是游说；它像两阶段提交，会前逐个收齐同意，会上只做 commit。</li>
+</ol>
+</div>
+
 <!-- ============ Deep Reflection ============ -->
 <div class="deep">
 <h3>深入思考 · Going Deeper</h3>

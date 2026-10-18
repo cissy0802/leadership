@@ -72,6 +72,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -646,6 +658,33 @@ There's a counterintuitive channel trap for women leaders: <strong>written feedb
 <p>"<em>Public praise, private critique.</em>" — Four-word rule.</p>
 </div>
 </div>
+</div>
+
+<!-- ============ Crossovers + takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Buddhism · Right speech (the Abhaya Sutta)</b>: The Buddha says he will speak words that are true and beneficial even when unwelcome, but knows the proper time to say them; untrue or useless words he will not speak, however pleasing. That is nearly Radical Candor plus the timing matrix: true and beneficial maps to challenging directly, and timing is a separate axis. The difference: right speech starts from the speaker's own practice, while feedback is aimed at the other person's growth.</li>
+<li><b>Psychology · The fundamental attribution error (Lee Ross, 1977)</b>: When others slip, we blame their character and underrate the situation. "You're too dominant" is that bias talking; SBI puts the Situation first, forcing the context back in. The difference: psychology describes a bias, SBI is a speaking format built to correct it.</li>
+<li><b>Neuroscience · Reward prediction error and credit assignment</b>: Schultz and colleagues showed in 1997 that dopamine neurons signal how much better or worse an outcome was than expected, and learning runs on that signal; the further the outcome from the action, the harder it is to credit the right step. Saving feedback for the perf review is a credit-assignment failure. The difference: language can bridge the delay, and SBI's Situation pins the signal back to the moment.</li>
+<li><b>Distributed systems · Write-ahead logging</b>: A database counts a change as committed only once it is in a durable log, and after a crash the log, not any node's memory, is the truth. The one-line written recap after a high-stakes talk is that log. The difference: a log only has to be faithful, while a recap must also be neutral, because people will read and interpret it.</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Kim Scott's Radical Candor has two independent axes, caring personally and challenging directly, and you need both.</li>
+<li>Ruinous Empathy is the nice person's classic mistake: swallowing the criticism so the person only learns of the problem at a PIP.</li>
+<li>Radical Candor is not a license to be harsh; Care Personally is a precondition, and praise also needs the specific action and its impact.</li>
+<li>Give feedback on behavior, never on personality: use SBI to name the specific Situation, the camera-visible Behavior, and the Impact that already happened.</li>
+<li>SBI opens a conversation rather than delivering a verdict; adding "what was your intent?" (SBI-Q) keeps you from misreading motives.</li>
+<li>Feedback timing is a design choice: default to within 24 hours, then adjust for your emotional temperature, the person's capacity to absorb, and the stakes.</li>
+<li>Above an emotional temperature of 6, don't give feedback on the spot; for high stakes, cool off 12 to 24 hours and book a dedicated meeting rather than letting it become an ambush.</li>
+<li>Praise in public, criticize in private: negative feedback in front of a third party is public shaming, however gently it is phrased.</li>
+<li>The channel is part of the message: negative feedback goes face to face or on video, never as a long Slack message, and high-stakes talks get a one-line written recap.</li>
+<li>We tend to blame others' mistakes on character; putting the Situation first in SBI deliberately corrects the fundamental attribution error.</li>
+</ol>
 </div>
 
 <!-- ============ Homework ============ -->

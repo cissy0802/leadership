@@ -73,6 +73,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -460,6 +472,30 @@ header h1{font-size:1.55rem}
 <p>"Skip-level 1:1" — 每季度跟下属的下属开一次 1:1，这是 Camille Fournier 强调的盲区扫描机制。</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 心跳与 φ 累积故障检测（Hayashibara 等，2004）</b>：每周固定的 1:1 像节点间的心跳，连丢几拍，对方就开始怀疑你「挂了」，而且怀疑度随沉默时长连续上升，不是一刀切。不像的是，节点收到下一拍就清零，人却记得每一次被取消。</li>
+<li><b>神经科学 · 关键期（Hubel 与 Wiesel，1960 年代）</b>：小猫幼年一只眼被遮住几周，视觉皮层就把位置让给另一只眼，成年后再遮却几乎没影响：可塑性有窗口，窗口关了再改代价陡增。新人前 90 天的信任契约是同一个结构。不像的是，关键期由发育时钟硬性关闭，信任窗口靠的是双方期待，晚了贵，但不是不可能。</li>
+<li><b>教育心理学 · 等待时间（Mary Budd Rowe，1974）</b>：Rowe 录下大量课堂发现，老师提问后平均只等约 1 秒就自己接话；拉到 3 秒以上，学生的回答变长、更多推测和追问。「沉默 8 秒」是同一招。不像的是，课堂是一对多，1:1 里沉默只压在一个人身上，更需要喝口咖啡这类动作来卸力。</li>
+<li><b>哲学 · 波兰尼的默会知识（《The Tacit Dimension》，1966）</b>：波兰尼说「我们知道的多于我们能说出的」，最要紧的东西写不进文档，只能在面对面里流露。「状态属于书面，1:1 留给写不进文档的」正是这条分界。不像的是，默会知识是说不出，1:1 里的情绪和顾虑多半说得出，只是写下来风险太高。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>1:1 是下属的会：他拟议程、定基调，主管的角色是提问的顾问。</li>
+<li>1:1 的物理设计是每周一次、每次 30 分钟、地点固定，要改就提前改，不在当天取消。</li>
+<li>议程放在共享文档里由下属提前写，空着就取消，主管只在下方加一两条自己想确认的。</li>
+<li>新人前 90 天的 1:1 用来建立「说真话不会被惩罚」的契约，这个窗口关上后再打开代价高得多。</li>
+<li>前 30 天用 user manual 式提问摸清新人：最好和最差的老板、怎么接收反馈、怎么获取信息。</li>
+<li>「How's it going?」只会换来「挺好的」，要换成带时间锚、具体、低风险的问题，比如「上周哪一刻最 frustrated」。</li>
+<li>问出真问题后忍住沉默数到 8 秒，真正的洞察往往出现在第 5 到 8 秒之间。</li>
+<li>Kim Scott 的提醒：想要坦诚先得主动征求，邀请批评后立刻辩护，下属下次就不再说真话。</li>
+<li>全程过项目状态的 1:1 已浪费了大部分杠杆，状态交给 Slack、standup 和 Jira，1:1 留给情绪、关系、成长和信任。</li>
+<li>借 Camille Fournier 的思路，按每周战术、每月战略、每季职业三种 1:1 轮换，退化时主动 reset 并认下 ownership。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

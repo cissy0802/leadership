@@ -76,6 +76,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -353,6 +365,30 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Cal Newport,《Deep Work》</strong>(2016)— 深度工作的定义、时间块法与 shutdown ritual。<br/><strong>Sophie Leroy,《Why Is It So Hard to Do My Work?》</strong>(2009)— "注意力残留"(attention residue) 的原始研究。<br/><strong>Oliver Burkeman,《Four Thousand Weeks》</strong>— 接受"做不完"是常态，专注真正重要的少数。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>西方哲学 · 塞涅卡《论生命之短暂》</b>：塞涅卡说人守财产寸步不让，时间却任人取走；生命不短，是被浪费了。这正是「空白格子是公开邀请函」。不像的是，他的药方是退出公务，领导者却得留在日程里，靠重新设计时间来守住它。</li>
+<li><b>认知心理学 · 任务切换代价（Rogers 与 Monsell，1995）</b>：在两种简单任务间交替，反应明显变慢，留足准备时间也降不到零；会间 1 小时打开 RFC 正撞上这堵墙。不同在于，实验里的代价只有几百毫秒，RFC 要重建的上下文大得多，代价按分钟算。</li>
+<li><b>分布式系统 · 中断合并与轮询（Linux NAPI）</b>：每个包都打断一次 CPU，流量一大就光忙中断、正事做不成，NAPI 于是在高负载时改成批量轮询，office hours 是同一招。不像的是，内核不怕被说不及时，人收拢打断前得先讲明紧急通道。</li>
+<li><b>排队论 · Kingman 公式（1961）</b>：利用率趋近 100% 时，排队时间按 ρ/(1−ρ) 暴涨，从 80% 到 95% 等待翻好几倍，排满的日历同样一延误就雪崩。不同在于，排队论的到达是随机的，日历插单却多半能用拒绝话术挡回。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>对 leader 而言，时间管理是对优先级的公开声明：日历长什么样，团队就知道什么重要。</li>
+<li>管理者日程按小时切片，制造者日程要半天整块，TLM 必须把这两种时间在日历上物理隔离。</li>
+<li>Paul Graham 指出，一个会就能把整个下午劈成两段，每段都小到做不了硬事。</li>
+<li>时间不够常是形状不对：同样 8 小时，8 个 1 小时碎片远不如 2 个 4 小时整块。</li>
+<li>日历是防御工事而非记录本，要像理财「先付自己」一样先占住 Focus Block。</li>
+<li>健康的日历留约 20% 空白，排到 100% 满会让一次延误引发整天雪崩。</li>
+<li>时间是固定的，每个 yes 都在对别的事说 no；专注的本质是有勇气放弃很多好东西。</li>
+<li>拒绝时别给硬墙也别无脑答应，把取舍和替代方案交给提出者，让对方为优先级做决策。</li>
+<li>女性更常被派到非晋升性杂活，把拒绝制度化成轮值规则，比个人说不更不踩 likability 的雷。</li>
+<li>每次切换都留下注意力残留，Cal Newport 的深度工作因此要靠关通知、批量查消息和 shutdown 仪式保护。</li>
+</ol>
 </div>
 <!-- ============ Deep Think ============ -->
 <div class="deepthink">

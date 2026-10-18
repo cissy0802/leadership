@@ -92,6 +92,18 @@ header h1{font-size:1.55rem}
 .funnel-row{flex-direction:column;align-items:flex-start}
 .funnel-row .funnel-bar{width:100%!important}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -372,6 +384,32 @@ Babcock、Recalde、Vesterlund 与 Weingart（《American Economic Review》2017
 </div>
 </div>
 </div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 告警看症状不看原因（Google SRE）</b>：SRE 按用户感受得到的症状（延迟、错误率）设目标和告警，CPU 占用这类内部数字只当排查线索，和「活动不算成绩」同构。不像的是，SLO 有错误预算自动结算，平台团队的结果层没人替你结算。</li>
+<li><b>心理学 · 认知失调（Festinger 与 Carlsmith，1959）</b>：做完枯燥任务只拿 1 美元的人，事后比拿 20 美元的更说任务有趣：报酬解释不了付出，就用「我喜欢」补上。不像在于，这是本人替自己找理由，使命的风险是 leader 替他找。</li>
+<li><b>复杂性科学 · 共识主动性（stigmergy，Grassé，1959）</b>：白蚁不听指挥，靠前一只留在泥球上的痕迹决定下一只往哪放，工作本身就是信号。拆好的 15 分钟首单和模板也是这样：不用开会，任务自己招人。不像的是，白蚁不要署名，人要。</li>
+<li><b>生物进化 · 蜂群选巢（Thomas Seeley）</b>：分蜂时没有哪只蜂、包括蜂王能拍板新家；侦察蜂用摇摆舞各自游说，某处聚够法定数才定案，还会用「停止信号」顶撞替别处跳舞的同伴，正是立法式领导。不像的是，侦察蜂的舞会自己递减降温，人的诉求不会，所以得逼「加」转成「换」。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Collins 指出社会部门里钱只是投入，没有利润表的团队必须自己造一把代理指标的尺。</li>
+<li>那把尺要先承认是代理指标，再承诺至少三个季度不换，换尺本身就在说上一把没用。</li>
+<li>汇报按逻辑模型分层：活动量不当成绩，守住产出与结果两层，影响层别独占功劳。</li>
+<li>反事实句最能证明价值：本团队冻结一个季度，第一个可测的坏事是什么、多久出现。</li>
+<li>每把尺都有作弊路径，主动自曝并配一个制衡指标一起报，比如部署耗时配安全检查覆盖率。</li>
+<li>使命感能替代一部分薪酬，越会讲使命的 leader，越有义务自己守住剥削线。</li>
+<li>动员加班要给可核查的对价和无成本的退出；没有无成本的退出，其余承诺都只是包装。</li>
+<li>志愿者考核不了，管理重心要从分配任务、追进度，移到降低首次贡献成本和保证署名。</li>
+<li>志愿者流失多发生在摩擦与冷落两层，PR 首次回应超过 24 小时就先修这个，再谈招募。</li>
+<li>没人有足够结构性权力拍板时，按 Collins 说的切到立法式领导，把只加不减改成交换。</li>
+</ol>
+</div>
+
 <!-- ============ Deep ============ -->
 <div class="deep">
 <h3>深入思考</h3>

@@ -92,6 +92,18 @@ header h1{font-size:1.55rem}
 .twocol{grid-template-columns:1fr}
 .twocol .th{margin-top:8px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -345,6 +357,30 @@ header h1{font-size:1.55rem}
 <p><strong>思考：</strong>若明天一份高质量研究推翻了你最坚定的技术判断，你会最先怀疑什么——那份研究，还是你自己？</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 期望状态与实际状态</b>：Kubernetes 把期望 (spec) 和实际 (status) 分开记，控制器不停把后者拉向前者。「推行了 RFC 制度」是 spec，41 个走完 9 个是 status。不像的是，控制循环从不下班；组织里没人持续对账，政策就稀释到名字还在、剂量归零。</li>
+<li><b>生物进化 · 适应度地形上的谷（Sewall Wright，1932）</b>：种群从小峰挪向更高的峰，常得先穿过适应度更低的谷。锁袋研究第一年幸福感下降、后来转正，是同一个形状。不像在于，演化没人站在谷底做终审。</li>
+<li><b>心理学 · 预先承诺（Jon Elster，1979）</b>：奥德修斯预知听见塞壬会失去判断，先让水手把他绑上桅杆、求饶不算。把失败判据交给别人保管是同一招：趁还中立，替未来的自己上锁。不像的是，塞壬何时唱可预知，坏数据何时来不能。</li>
+<li><b>佛学 · 盲人摸象（巴利《自说经》）</b>：盲人各摸到象的一部分，说的都是真话，却为「象是什么」吵成一团，正像双方各引一层真论文。不像在于，经里劝人放下一边之见；这里的解药更具体：问子群、问第几年、问代价落在谁身上。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>支持一项政策有价值理由和证据理由两类，两者都正当，但不能拿一种冒充另一种。</li>
+<li>把价值理由包装成证据理由，证据一翻盘，政策和决策者的可信度会一起塌。</li>
+<li>缺证据不等于无效，这时需要的是价值理由加上一个可评估、足剂量的试点。</li>
+<li>英格兰研究里限制性校规没降低全天手机总时长：换了名字，不等于换了剂量。</li>
+<li>零效应最常见的原因不是干预无效，而是干预在层层稀释中根本没发生。</li>
+<li>挪威研究全样本为零、女生显著：平均数会掩盖分布，全组政策要事前指定子群分别报告。</li>
+<li>公开表态会自动招募你为它辩护，所以宣布时就要写死失败判据，交给别人保管。</li>
+<li>判据要分过渡期指标和结果指标并各设到期日，因为真实变革常常先变差再变好。</li>
+<li>数据难看时改指标口径比硬撑更危险，改口径必须留痕，并写清改之前的数字。</li>
+<li>有人拿研究压你时，追问层级、剂量、时间窗和成本侧，并分清事实分歧与价值分歧。</li>
+</ol>
 </div>
 <div class="deep">
 <h3>深入思考</h3>

@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -402,6 +414,30 @@ Disagree and commit <strong>不适用于</strong>"不可逆 + 高风险 + 你判
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Jeff Bezos,</strong> Amazon 致股东信 2016 — "disagree and commit" 出处。<br/><strong>Patrick Lencioni,《The Five Dysfunctions of a Team》</strong>— "Commitment is a function of clarity and buy-in"：承诺不等于共识，只需清晰 + 被听见。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · Dollo 定律（1893）</b>：复杂结构一旦在演化中丢失，几乎不会原样再长回来，而大量单点突变可以被回复突变抹平，进化里也有单向门和双向门。不像的是，自然选择从不事先分诊，也不会在单向门前放慢脚步。</li>
+<li><b>分布式系统 · Raft 的 leader 选举（Ongaro &amp; Ousterhout，2014）</b>：Raft 保证每个任期至多一个 leader，两个节点同时自认 leader 就是脑裂，数据会分叉，这正是「两个 D 等于没有 D」。不像的是，Raft 的 leader 由多数投票选出，RAPID 的 D 是事先指定的，Input 也不投票。</li>
+<li><b>神经科学 · 基底神经节的动作选择（Redgrave 等，1999）</b>：皮层同时递上许多动作方案，基底神经节默认全部抑制，只放行胜出的一条，落选通道随即被压住，像拍板之后全员执行。不像的是，落选的神经通道不需要被听见，人的异议要在决策前被摊开、被记录，压而不听只会变成阳奉阴违。</li>
+<li><b>心理学 · 可逆选择的满意度（Gilbert &amp; Ebert，2002）</b>：被试更愿意选择事后还能换的选项，可真拿到可换的那一份，满意度反而低于不能换的人；留着退路，心就一直悬在「要不要换」上。这和双向门的提速逻辑不冲突：可逆让决策更快，却不该让执行者一直想着反悔。Disagree and commit 恰好补上这一截，决定之后就当它不可退地全力去做。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>技术 leader 上行的瓶颈，往往不是不会做技术决策，而是组织里的决策机制坏了。</li>
+<li>Bezos 的门比喻要求决策前先分诊：双向门可逆就授权求快，单向门不可逆才值得慢和共识。</li>
+<li>给不可逆决策走过轻的流程，比给可逆决策套重流程更危险；工程量大也不等于回不了头。</li>
+<li>RAPID 把决策拆成推荐、同意、执行、输入、拍板五个角色，拍板的 D 必须是单独一个人。</li>
+<li>把谁是 Recommend、谁是 D 白纸黑字写下来，能防止女性的贡献在会上被悄悄转移给别人。</li>
+<li>分布式共识 Raft 每个任期只许一个 leader，两个 leader 会脑裂，正对应 RAPID 的两个 D 等于没有 D。</li>
+<li>日常可逆的团队内决策用 DACI：一个 Driver 推进、一个 Approver 拍板、贡献者限时异步输入。</li>
+<li>决策要留下两行理由记录，否则团队会在同一个问题上反复从零争论。</li>
+<li>Disagree and commit 的纪律是异议在决策之前说清，拍板之后全力执行，不背后唱衰。</li>
+<li>不可逆、高风险且判断会造成真实伤害的决策要正式 escalate，不能拿 commit 回避冲突。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

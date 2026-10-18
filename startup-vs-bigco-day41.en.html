@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -446,6 +458,30 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Buddhism · The parable of the raft (Majjhima Nikaya 22)</b>: The Buddha compares his teaching to a raft: you use it to cross the river, then leave it on the bank instead of carrying it on your head. Wartime and peacetime styles are rafts, not personalities. The difference: the Buddha asks you to let go even of the teaching, while a leader changing stages just swaps rafts and must build another for the next river.</li>
+<li><b>Distributed systems · The CAP theorem</b>: Conjectured by Eric Brewer in 2000 and proved by Gilbert and Lynch in 2002: during a network partition you can keep consistency or availability, not both. A startup picks availability, answering now and reconciling later; a big company picks consistency, slower but with every affected node informed. Unlike CAP, where the trade-off is forced only during a partition, organizations often treat the wartime trade-off as permanent.</li>
+<li><b>Biology · Differentiation and reprogramming</b>: A stem cell can become anything; a differentiated cell does one job, much like the generalist of 0→1 and the specialist of 1→100. In 2006 Shinya Yamanaka used four factors to turn adult cells back into pluripotent ones, a close cousin of unloading old habits. The difference: reprogramming works for only a tiny fraction of cells, while a person can at least choose what to unload.</li>
+<li><b>Psychology · The Einstellung effect (Luchins's water jars, 1942)</b>: After solving several problems with a long formula, subjects kept using it on problems with a one-step answer, and some failed problems the old formula could not solve. Carrying old muscle memory into a new stage is the same effect. The difference: in the jar task the old method only takes longer, while at work colleagues read your old habits as your character.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>No leadership style is right or wrong in itself, only fitted to a stage: bypassing process saves a startup and creates single points of failure at a mature company.</li>
+<li>Horowitz's wartime CEO breaks protocol to win while the peacetime CEO wins by following it; the rare leader can switch between the two.</li>
+<li>At a big company, a production incident calls for the incident process and the emergency review path, with the hotfix turned into a runbook afterward, not a solo bypass of review.</li>
+<li>Going from 0 to 1 runs on hands-on work and speed, going from 1 to 100 on systems and delegation; scaling the way you build makes you the bottleneck.</li>
+<li>The key move when scaling is turning your own judgment into standards and checklists others can use, then stepping back to a guardrail role that only watches red lines.</li>
+<li>Intrapreneurs inside big companies lose the window if they wait for approval, and get labeled uncontrollable if they ship first and ask later.</li>
+<li>The intrapreneur's middle path is a small prototype within your own permissions, then bringing a working demo, not a deck, to the owner as an offer to collaborate.</li>
+<li>The biggest risk in switching stages is keeping old muscle memory: big-company people over-structure startups, and startup people ignore big-company systems.</li>
+<li>Before switching, separate your own abilities from those the platform lent you, and spend the first 90 days understanding before changing things.</li>
+<li>The Einstellung effect in psychology shows how a well-practiced old solution blocks a simpler new one, just as old habits do in a new stage.</li>
+</ol>
+</div>
 <!-- ============ Deep Think ============ -->
 <div class="deepthink">
 <h3>Deeper Questions · Pushed to the Edge</h3>

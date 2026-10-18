@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -380,6 +392,30 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>孙子《孙子兵法·谋攻篇》</strong>— "知可以战与不可以战者胜"，分清可战与不可战即退场判断的内核。<br/><strong>Albert Hirschman《Exit, Voice, and Loyalty》(1970)</strong>— 退出、发声、忠诚三选项的经典框架（呼应 Day 28）。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>佛学 · 第二支箭</b>：《箭经》（相应部 36.6）说，凡夫中了第一支箭，还会自己补上第二支：在苦受之上再加忧恼和抗拒。被低估是第一支箭，"我没价值"和怨恨是第二支，这和把事实与判断切开是同一个结构。不同在于，佛陀要人连对认可的渴求一起放下，本篇还要你下个 cycle 主动去争取被看见。</li>
+<li><b>生物进化 · 扎哈维的累赘原理</b>：Amotz Zahavi 1975 年提出，信号要可信就得难以伪造，廉价的炫耀会被接收方学会忽略。经得起追问的"翻译"是诚实信号，浮夸是廉价信号，被识破即归零。不像的是，孔雀靠浪费来证明实力，职场可见性靠可核查的数据，不必付出累赘。</li>
+<li><b>心理学 · 潜伏学习</b>：Tolman 与 Honzik 1930 年让老鼠在没有食物的迷宫里游荡十天，第 11 天放上食物，它们的错误立刻骤降：没奖励时学到的认知地图一直都在。这像默默积累，学到不等于表现出来。不像在于，人的积累若不留痕，到兑现那天连自己都讲不清。</li>
+<li><b>分布式系统 · 故障检测</b>：异步网络里，一个节点久久沉默，你分不清它是慢还是已经挂了，FLP 不可能性定理（1985）的难点正在这里；工程上的解法是主动发心跳、设超时。"发声测试 + 验证窗口"是同一招。不像的是，节点不会含糊打太极，而老板的回答方式本身就是信号。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>怀才不遇真正的毒，是开始相信组织对你的估值就是你的真实价值。</li>
+<li>把"这件事没被认可"的事实和"我这个人没价值"的判断切开，只为事实行动。</li>
+<li>报复式躺平用降低产出抗议组织，组织毫发无伤，贬值的是你自己的复利。</li>
+<li>怨恨会复利：bitter 渗进每次互动，最终把"不被认可"变成"不值得认可"。</li>
+<li>可见性是把已经发生的价值翻译给看不见它的人，既不是隐形，也不是抢功浮夸。</li>
+<li>用商业语言量化影响、归功到具体的人、写成能被转述的 memo，让作品替你说话。</li>
+<li>女性自我推销更易遭 backlash，可改用团队语言、归功他人和盟友背书做"代理推销"。</li>
+<li>有纪律的积累说得清自己在哪个维度变强，并用 brag doc 每两周留一行痕。</li>
+<li>给积累设一个验证点，优先积累技能、声誉、关系这类不随重组清零的可携带资产。</li>
+<li>等还是走，先分清季节性低估和结构性天花板，走之前先发声，给组织一个验证窗口。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

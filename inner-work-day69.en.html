@@ -82,6 +82,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .quad,.six{grid-template-columns:1fr}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -353,6 +365,30 @@ The same blunt line reads as "emotional" rather than "holding a standard" when a
 <p><strong>Reflection:</strong> If burnout is a reading on the environment, whom is your team's reading measuring?</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Nisbett and Wilson, "Telling More Than We Can Know" (1977)</b>: Subjects confidently reported what had influenced their choices and were often wrong, giving much the same answers as observers guessing from common sense; introspection hands back a plausible story, not a reading. The difference: the study only shows introspection is unreliable, while Card 1 adds a way out: go to other people for concrete behavioral samples.</li>
+<li><b>Distributed systems · Failure detectors</b>: A node struggles to tell whether it has slowed down or been partitioned off, so the cluster judges its state from other nodes' heartbeats and timeouts; self-awareness likewise depends on outside observation. Unlike heartbeats, which never defer to rank, the signals people send you get more filtered the higher you sit.</li>
+<li><b>Buddhism · The two arrows (Sallatha Sutta, SN 36.6)</b>: An untrained person, struck by the first arrow of pain, adds a second arrow of distress and resistance; the "extra 6 points" in the intensity-gap check is that second arrow. The difference: practice aims for the second arrow to stop arising, while the meeting protocol does not ask you not to be angry, only to follow the protocol while angry.</li>
+<li><b>Ecology · Indicator species</b>: Amphibians have permeable skin, so when a population crashes, ecologists test the water before blaming frail frogs; treating burnout as a reading on the environment follows the same logic. The difference: a frog cannot say which pollutant it is, but a person can tell you which of the six cells is broken, so ask first, then fix.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Gains in self-awareness come mostly from concrete behavior other people observe; introspection mostly produces stories that make you comfortable.</li>
+<li>Eurich estimates only 10%–15% of people truly meet the criteria for self-awareness, and promotion shrinks the number of people willing to give you raw data.</li>
+<li>When feedback is vague, like "hard to approach," replace "why am I like this" with "which moment, and what did you see."</li>
+<li>Appoint a loving critic who will say hard things on the spot; your reaction the first time decides whether the mechanism survives.</li>
+<li>The most dangerous form of the Jungian shadow under pressure is one disguised as an objective performance judgment, such as an unfalsifiable "show-off."</li>
+<li>The intensity-gap check: when your reaction far exceeds the actual damage, the excess is yours, so strip it out before writing feedback.</li>
+<li>The only deliverable of mindfulness for a leader is noticing you are triggered within those ten seconds and running a pre-written move.</li>
+<li>When challenged in public, name the emotion, buy a few seconds, then use a prepared line to turn a personal doubt into a technical question.</li>
+<li>Maslach's burnout has three dimensions, exhaustion, cynicism and collapsed efficacy, produced by six mismatches: workload, control, reward, community, fairness and values.</li>
+<li>When a report says they are exhausted, locate which of the six cells is broken, move the ones you can, and say plainly which you cannot, instead of suggesting rest.</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

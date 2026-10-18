@@ -73,6 +73,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -432,6 +444,30 @@ Women voicing dissent are more readily labeled "not a team player" or "difficult
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Evolution · Dollo's law (1893)</b>: once a complex structure is lost in evolution it almost never re-evolves in the same form, while many point mutations can be undone by back-mutation, so evolution has its own one-way and two-way doors. The difference: natural selection never triages in advance, and it never slows down in front of a one-way door.</li>
+<li><b>Distributed systems · Raft leader election (Ongaro &amp; Ousterhout, 2014)</b>: Raft guarantees at most one leader per term; two nodes both believing they lead is split-brain, and the data forks. That is exactly "two Ds means no D." The difference: Raft's leader is elected by majority vote, whereas RAPID's D is assigned up front and Input does not vote.</li>
+<li><b>Neuroscience · action selection in the basal ganglia (Redgrave et al., 1999)</b>: the cortex submits many competing action plans; the basal ganglia inhibit them all by default and release only the winner, suppressing the rest, much like a whole team executing once the call is made. The difference: losing neural channels need no hearing, while human dissent must be voiced and recorded before the decision, or suppression turns into quiet sabotage.</li>
+<li><b>Psychology · satisfaction with reversible choices (Gilbert &amp; Ebert, 2002)</b>: people prefer options they can exchange later, yet those who got the exchangeable option ended up liking it less than those whose choice was final; keeping the exit open keeps the mind stuck on "should I switch?" This does not undercut the two-way-door logic: reversibility should make deciding faster, not keep the people executing forever half-committed. Disagree and commit fills that gap: once decided, act as if there is no going back.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>The ceiling for a rising tech leader is rarely bad technical judgment; it is usually a broken decision-making system in the organization.</li>
+<li>Bezos's door metaphor means triage first: delegate and move fast on reversible two-way doors, and save slowness and consensus for irreversible one-way doors.</li>
+<li>Running an irreversible decision through too light a process is more dangerous than over-processing a reversible one, and a big build is not automatically irreversible.</li>
+<li>RAPID splits a decision into five roles: Recommend, Agree, Perform, Input and Decide, and the D must be exactly one person.</li>
+<li>Writing down who is Recommend and who is D guards against women's contributions being quietly reassigned to someone else in meetings.</li>
+<li>Raft allows only one leader per term because two leaders cause split-brain, the same reason two Ds in RAPID means no D.</li>
+<li>For everyday, reversible decisions inside a team, use DACI: one Driver pushes, one Approver decides, Contributors give time-boxed async input.</li>
+<li>Record two lines of rationale for each decision, or the team will re-argue the same question from scratch again and again.</li>
+<li>The discipline of disagree and commit is to voice dissent clearly before the decision and execute fully after it, without undermining it behind the scenes.</li>
+<li>Irreversible, high-risk decisions you judge to cause real harm call for formal escalation, not using commit to dodge the conflict.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Your Day 15 Action</h3>

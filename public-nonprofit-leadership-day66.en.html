@@ -91,6 +91,18 @@ header h1{font-size:1.55rem}
 .funnel-row{flex-direction:column;align-items:flex-start}
 .funnel-row .funnel-bar{width:100%!important}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -368,6 +380,32 @@ Babcock, Recalde, Vesterlund &amp; Weingart (<em>American Economic Review</em>, 
 </div>
 </div>
 </div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Alert on symptoms, not causes (Google SRE)</b>: SRE practice sets targets and alerts on what users feel, latency and error rate, and treats internal numbers like CPU load as debugging clues, the same move as refusing to count activity as success. The difference: an SLO has an error budget that settles accounts automatically; nobody settles the outcome layer for a platform team.</li>
+<li><b>Psychology · Cognitive dissonance (Festinger and Carlsmith, 1959)</b>: people paid $1 for a dull task later rated it more enjoyable than people paid $20: when pay can't explain the effort, "I love it" fills the gap. The difference: there the worker justifies himself; the risk with mission is the leader doing the justifying for him.</li>
+<li><b>Complexity science · Stigmergy (Grass&eacute;, 1959)</b>: termites take no orders; each one places its mud pellet according to traces left by the last, so the work itself is the signal. A pre-split 15-minute first task with a template works the same way: no meeting, the task recruits its own contributors. The difference: termites need no credit line. People do.</li>
+<li><b>Evolutionary biology · How honeybee swarms choose a home (Thomas Seeley)</b>: no bee, not even the queen, can pick the new site. Scouts lobby with waggle dances, a site wins once a quorum gathers there, and scouts even head-butt dancers for rival sites with "stop signals." That is legislative leadership. The difference: each scout's dancing tapers off on its own, so advocacy cools by itself. Human demands don't, which is why every "add" has to be forced into a "swap."</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Collins argues that in the social sectors money is only an input, so a team with no profit line must build its own proxy ruler.</li>
+<li>Admit the ruler is a proxy, then commit to keeping it for at least three quarters; swapping it admits the last one was useless.</li>
+<li>Report along the logic model: don't count activity as success, hold the output and outcome layers, and don't claim sole credit for impact.</li>
+<li>A counterfactual proves value best: if the team froze for a quarter, what is the first measurable thing to break, and how soon?</li>
+<li>Every metric can be gamed, so disclose the cheat path and pair it with a counterweight, such as deploy time with security-check coverage.</li>
+<li>Mission can substitute for part of pay, and the better a leader tells the mission story, the more they must guard the exploitation line.</li>
+<li>Asking for extra effort needs verifiable compensation and a costless exit; without the costless exit, every other promise is packaging.</li>
+<li>Volunteers can't be evaluated by you, so shift from assigning and tracking tasks to cutting first-contribution cost and guaranteeing credit.</li>
+<li>Volunteers drop out at friction and neglect, not at willingness; if first PR review takes over 24 hours, fix that before recruiting.</li>
+<li>When no one holds enough structural power to decide, switch to Collins's legislative leadership and force every pure "add" into a trade.</li>
+</ol>
+</div>
+
 <!-- ============ Deep ============ -->
 <div class="deep">
 <h3>Deeper Questions</h3>

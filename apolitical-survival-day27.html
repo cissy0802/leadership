@@ -67,6 +67,18 @@ ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;f
 .deepen details[open] summary{border-bottom:1px dashed #4f4228}
 .deepen .think{padding:12px 18px;font-size:0.93rem;color:#d3c3a9}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888;margin-top:40px;border-top:1px solid #917545}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
 .card{padding:24px 20px}
@@ -355,6 +367,31 @@ header h1{font-size:1.55rem}
 Hewlett 的研究有个尖锐发现：女性更容易获得 mentor（被给建议），却更缺 sponsor（被真正提携）——<strong>over-mentored, under-sponsored</strong>。如果你已经收集了一堆「人生导师」却始终没晋升，问题可能不是建议不够，而是没人在关键的房间里替你押注。主动求 <strong>sponsorship</strong> 而非更多 mentorship，是破局的关键一步。
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · 维持现状偏差（Samuelson 与 Zeckhauser，1988）</b>：人做选择时不成比例地偏向「什么都不改」的默认项；组织里的缺席，同样是把票投给了默认分配。不像在：心理学讲的是个人决策的惰性，组织里的默认项却是在场的人提前替你设好的。</li>
+<li><b>分布式系统 · 两阶段提交（2PC）</b>：协调者先发 prepare，逐个收齐参与者的「可以提交」，再统一 commit；pre-wire 就是会前的 prepare，评审会只剩 commit。不像在：2PC 要全票、一票否决就回滚，人的共识只需关键几票，反对者被听见本身就有价值。</li>
+<li><b>神经科学 · 偏置竞争（Desimone 与 Duncan，1995）</b>：多个刺激争夺有限的神经表征，和自上而下的目标相符的那个胜出；把成果翻译成钱、风险、用户，就是去对准决策者的目标模板。不像在：大脑的目标是它自己的，述职时你只能去猜别人的。</li>
+<li><b>生物进化 · 累赘原理（Amotz Zahavi，1975）</b>：信号可信，是因为发出它有代价、弱者付不起，孔雀的长尾就是例子。sponsor 在你不在的房间押上自己的信用，是一种昂贵信号；自夸几乎零成本，是经济学说的「廉价话」（cheap talk），所以没人当真。不像在：孔雀的代价自己承担，sponsor 的背书是别人替你付的代价，这也正是它稀缺的原因。</li>
+<li><b>复杂性科学 · 合作的演化（Robert Axelrod）</b>：在 Axelrod 的重复囚徒困境锦标赛里，第一步就合作、之后照对方上一步回应的「一报还一报」胜出，和「互惠在先」同构。不像在：锦标赛的回报是固定数字，人情难以记账，还会随时间折旧。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>在资源有限的组织里，不参与分配的人得不到「公平」的默认值，只能拿到别人挑剩的。</li>
+<li>组织里没有中立，只有缺席，而缺席等于给「维持现状」投了一票。</li>
+<li>政治冷感的代价常常不由自己承担，而是落在信任你的下属身上：没招到的人、没争到的晋升名额。</li>
+<li>最低限度的政治参与只有三件事：让对的人知道你在做什么、维护跨部门弱连接、关键决策前做 pre-wire。</li>
+<li>Pre-wire 要优先约最可能反对的人，让异议在私下有尊严地说出来，决策会就变成确认会。</li>
+<li>好作品是被看见的必要条件而非充分条件，它得被翻译成决策者在意的钱、风险或用户语言。</li>
+<li>「用作品说话」要三个条件才生效：翻译成听众的语言、出现在对的场合、有人愿意替你复述。</li>
+<li>Mentor 跟你谈，sponsor 在你不在的房间替你谈并押上信用；Hewlett 发现女性常被过度指导却缺少提携。</li>
+<li>第三方背书可信，和累赘原理同构：押上信用是昂贵信号，而自夸几乎零成本，所以没人当真。</li>
+<li>借盟友之口要互惠在先：先帮对方解决痛点，再让多个组提出同一诉求，个人主张就变成组织共识。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

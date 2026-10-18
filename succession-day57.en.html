@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -356,6 +368,31 @@ The handoff carries a hidden cost for women: once she hands off what she built, 
 <div class="setup"><strong>Reflection:</strong> The "irreplaceability" I'm proudest of — is it my moat, or the ceiling on my own promotion?</div>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Hot standby and failover</b>: A database primary keeps a hot standby that replays its log continuously, so it can take over the moment the primary dies. Building a bench has the same structure: candidates stay synced on context all along, instead of copying data after the crash. The difference: a replica should match the primary exactly, while a successor must not be your clone.</li>
+<li><b>Evolution · The fragility of clones</b>: An asexually reproducing population is genetically uniform, so a single pathogen can wipe it out. In the 1950s Panama disease nearly destroyed the Gros Michel banana, because the world was growing one clone. A bench built on "clone bias" meets change the same way; unlike bananas, people can restore diversity by choosing it deliberately instead of waiting for mutation.</li>
+<li><b>Psychology · The generation effect (Slamecka &amp; Graf, 1978)</b>: Answers you produce yourself stick better than answers you read. "Successors learn by doing, not watching" is this mechanism: asking them to state their leaning and their worry turns passive reception into active generation. Unlike the lab, a real decision also carries consequences they have to own.</li>
+<li><b>Buddhism · Grasping (upādāna)</b>: In dependent origination, upādāna is clinging, and suffering comes from holding on. Founder's syndrome is clinging to "what I built": stepping back in name but not in mind. The difference: Buddhism lets go of the self itself, while a handoff only asks you to release the seat and the spotlight; who built it should stay on the record.</li>
+<li><b>Philosophy · Tacit knowledge (Michael Polanyi, 1966)</b>: Polanyi argued we know more than we can tell; riding a bike or making a diagnosis runs on judgment we cannot fully articulate. "Documenting the how but not the why" stalls on exactly this tacit part. Clock building means spelling out as much judgment as possible, and passing on the rest by doing it together in the shadow and side-by-side phases.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Succession planning means continuously identifying and growing a bench; successors are raised years ahead, not found when the seat empties.</li>
+<li>Pick successors on potential, not just current performance: can they keep growing in a bigger, more ambiguous role?</li>
+<li>The 9-box sorts people by performance and potential; invest in the top-right candidates, and don't force high-performing specialists into management.</li>
+<li>A bench with only one candidate is a single point of failure, just like a system with only one node.</li>
+<li>Successors learn by doing, not watching: hand them real decisions, including mistakes the team can afford.</li>
+<li>When a report asks which option to pick, give information rather than a verdict, and leave ownership of the decision with them.</li>
+<li>A handoff runs through shadow, side-by-side, reversal and exit phases; most people stall at side-by-side, which is just co-management.</li>
+<li>When a handed-off system breaks, publicly send the ball back to the successor and fill in the background privately, protecting their authority.</li>
+<li>Collins and Porras's clock building, not time telling: turn your judgment into systems, docs and decision principles so the organization runs without you.</li>
+<li>Being indispensable with a bus factor of 1 is a ceiling, not a moat; documenting the how without the why still breaks when people change.</li>
+</ol>
 </div>
 <!-- ============ Deep Questions ============ -->
 <div class="deep">

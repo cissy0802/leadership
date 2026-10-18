@@ -82,6 +82,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -388,6 +400,33 @@ M 你的 strong hire 里，Scope 这一条你怎么看？"</p>
 </div>
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>投资 · 巴菲特的「没有好球判罚」</b>：巴菲特常说投资不像棒球，没人判你好球，可以一直等到球落进最甜的位置再挥棒。默认 No 是同一种耐心：「还可以」的球不打。不像的是，投资者等待几乎没有成本，空着的岗位却让团队天天加班。</li>
+<li><b>生物进化 · 扎哈维的累赘原理（1975）</b>：Amotz Zahavi 提出，孔雀的大尾巴之所以可信，正因为它昂贵、弱者装不出来。追问「半年后回看」也是在找难伪造的信号。不像在于：孔雀自己付成本炫耀，面试里是面试官把题设计得让编故事变贵。</li>
+<li><b>心理学 · 光环效应（Thorndike，1920）</b>：Thorndike 发现军官给下属打分时，体格、智力、领导力各项高度相关，一项好就样样好。「system design 很强」一路滑成总评 strong hire 就是它。不像在于：Thorndike 只诊断了这种误差，按维度拆开、每项挂具体证据的 scorecard 则是对它的解药。</li>
+<li><b>分布式系统 · 共模故障</b>：三个副本跑同一份带 bug 的代码，会在同一刻一起崩，冗余只是假象。被资深者定调的 debrief 里，四票 hire 其实是一个信号复述四遍。不像的是，机器的相关性写在代码里，人的相关性来自地位和发言顺序，改流程就能拆掉。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>招聘决策问的不是「他能不能干这份活」，而是「他加入后，团队的平均水平会上升还是下降」。</li>
+<li>Bezos 把招聘看作单向门：拿不准的候选人默认是 No，一个平庸 hire 的代价要付好几年。</li>
+<li>岗位空缺的压力不是信号；入职前就想着要「closely manage」，说明这个人还没来就已成本超标。</li>
+<li>非结构化面试的预测力约 0.14，结构化面试能到 0.26 以上，差别在纪律而不在问什么。</li>
+<li>Laszlo Bock 在 Google 推行的结构化面试：同题、预定 rubric、独立评分后再讨论。</li>
+<li>好的结构化行为题对应一个具体维度，用预设追问把故事压实，并问「半年后回看」这类编不了的问题。</li>
+<li>Debrief 的目标是把各面试官的独立信号合成一个判断，不是数票；3:2 是分裂信号，不是决策。</li>
+<li>反 anchoring：面完 30 分钟内写好 scorecard，最 junior 的先发言，Hiring Manager 最后说。</li>
+<li>onsite 后的拒绝由 Hiring Manager 亲自打电话，给一条具体反馈，并把「被拒」和「你不行」分开。</li>
+<li>被资深者定调的 debrief 像分布式系统的共模故障：四票 hire 其实是同一个信号复述了四遍。</li>
+</ol>
+</div>
+
 <!-- ============ Resources ============ -->
 <div class="resources">
 <h3>深入资源 · Further Reading</h3>

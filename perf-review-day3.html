@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -468,6 +480,32 @@ Exceeds 在我们这个 level 的门槛具体是两条：(1) Scope expansion—�
 </div>
 </div>
 </div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · Kahneman 的峰终定律</b>：1993 年的冷水实验里，受试者宁可重来那段更长、但结尾水温略回升的痛苦；记忆按高峰和结尾打分，不按总量。recency bias 是同一个结构。不像在于：实验测的是自己的感受，review 评的是别人整整半年，解药是月度 running notes 这种外部记忆。</li>
+<li><b>分布式系统 · 时钟同步（NTP）</b>：每台机器的本地时钟都会漂移，NTP 拿参考服务器比对、校正偏移，日志时间才能跨机器比较；校准会把每个 manager 的 Exceeds 拉到同一把尺上。不像的是：时钟背后有原子钟当真值，level rubric 没有，尺子本身要在房间里争出来。</li>
+<li><b>心理学 · Rosenthal 的实验者期望效应</b>：1963 年学生被告知手里的大鼠「聪明」或「迟钝」，结果「聪明」组走迷宫成绩更好，评估者的预期渗进了测量。双盲设计和名字遮蔽测试是同一种解药。不像的是：manager 无法真正盲评，遮名只在重读文字那一步起作用。</li>
+<li><b>佛学 · 《无畏王子经》</b>：佛陀说，真实、有益而对方不爱听的话，他会择时说出；不真或无益的话，再动听也不说。「藏起反馈不是善良」与它同构。不像在于：佛陀把时机列为条件，review 的日期和比例却是公司定的，manager 只能在措辞上择时。</li>
+<li><b>生物进化 · Zahavi 的累赘原理</b>：孔雀尾巴昂贵，所以可信，成本让信号诚实。人人都提 Exceeds，就是没有成本的信号，校准会自然打折。不像在于：孔雀付的是体能，manager 付的是重复博弈里攒下的信用，花掉一次，下一轮所有评分都跟着贬值。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Perf review 是评判而不是总结：先给出 above / at / below 的论点，再举证，最后给方向。</li>
+<li>OVERALL 段是整篇 review 的论点，要放在开头，能用一句话说出来才算想清楚。</li>
+<li>每个 strength 和 growth area 都要挂一个具体场景，「沟通需要改善」这类话什么都没说。</li>
+<li>校准会是谈判加集体仲裁：要在 90 秒内把评级锚定在 level rubric 上，扛住其他 manager 的质疑。</li>
+<li>过度提名 Exceeds 会透支 manager 的信用，下次校准时你所有的评分都会被打折看。</li>
+<li>公平是一种工艺而不是愿望：大脑会用印象代替证据，只能靠流程压制 bias，不能靠善意。</li>
+<li>Snyder 分析 248 份 review 发现，女性更常拿到主观的性格批评，男性更常拿到挂钩业务结果的反馈。</li>
+<li>名字遮蔽测试：把姓名和性别换掉重读一遍，想改的那句评语原本就带着 bias。</li>
+<li>Meets 不是失败也不是安慰奖；回答「为什么不是 Exceeds」要说清具体门槛和差在哪，不能甩给比例限制。</li>
+<li>含糊鼓励是 Ruinous Empathy 的教科书版，Kim Scott 的意思是：藏起诚实的反馈，等于剥夺对方成长所需的信息。</li>
+</ol>
+</div>
+
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>本周习作 · Your Day 3 Action</h3>

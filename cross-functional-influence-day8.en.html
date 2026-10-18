@@ -79,6 +79,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -395,6 +407,32 @@ Research (Babcock, Grant, et al.) shows women are more often asked to do "office
 "Give away the credit" is double-edged for women: research (e.g., Heilman) shows women's contributions are more readily overlooked or reattributed to male colleagues (a man repeats the idea and suddenly it's his). Give away credit on top of that and you can vanish entirely. The fix isn't to stop giving, but to <strong>give on the record</strong>: (1) use written/async trails (docs, email, PRs) to timestamp your original contribution; (2) borrow the Obama-staffer "amplification" tactic—ally up and name each other: "as XX just proposed…", pointing credit back to its real source. Giving credit is a tactic, not self-erasure.
 </div>
 </div>
+</div>
+
+<!-- ============ Crossovers + Ten takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Complexity science · Axelrod's iterated prisoner's dilemma tournaments (1980)</b>: Anatol Rapoport's Tit for Tat won; it always cooperates on the first move, then mirrors the other side's last move, which is the same logic as "give first, then ask." Cooperation holds because of "the shadow of the future": both sides know they will meet again. The difference: in the tournament every move is perfectly visible, while the ledger of favors between teams is fuzzy, so keeping score and occasionally forgiving matter more.</li>
+<li><b>Distributed systems · Two-phase commit</b>: the coordinator first asks each participant "can you commit?" and only issues the commit when every vote is yes; a single no rolls the whole thing back. Sounding people out one by one and letting the meeting merely ratify is the same structure. The difference: in the protocol a no vote just aborts the transaction, whereas pre-wiring folds the objection into the proposal and turns the same person into a yes.</li>
+<li><b>Psychology · The IKEA effect (Norton, Mochon, Ariely, 2012)</b>: people value what they assembled themselves more highly, and letting the other team author a section of the standard under their name taps exactly that sense of ownership. The difference: in the experiments the effect vanished when the assembly was left unfinished; a co-built standard likewise needs real hands-on work, not just a name on it.</li>
+<li><b>Eastern philosophy · Laozi, "when the work is done, the people all say: we did it ourselves"</b>: chapter 17 of the Tao Te Ching says the best ruler finishes the task and the people credit themselves, the same shape as "make it their win." The difference: Laozi's ruler holds power and steps back, while someone without authority yields credit because it is the only lever they have, and still has to give it away on the record.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Positional power ends at your team's boundary; beyond it only influence moves work, and influence is slower and costlier than command.</li>
+<li>Cohen and Bradford sort influence currencies into five kinds: inspiration, task, position, relationship, and personal. Learn which one the other side wants before you ask.</li>
+<li>Your own urgency persuades no one; translate the request into a gain the other team cares about this quarter, and give before you ask.</li>
+<li>Keep a ledger of favors owed and repay them on time; an IOU you cannot honor damages lateral trust more than never borrowing.</li>
+<li>Before pushing a cross-team effort, map stakeholders on power and interest, and treat each quadrant with a different level of effort.</li>
+<li>A stakeholder map should trace the real influence network rather than the org chart, since the true veto often sits with a staff engineer.</li>
+<li>Pre-wiring means the meeting ratifies consensus rather than forming it, so every key person is talked through one-on-one beforehand.</li>
+<li>Bring the likeliest opponent into the tent early and genuinely change the plan for their concerns; fake consultation angers people more than none.</li>
+<li>Lateral leadership works by letting others feel the idea and the credit are theirs; the harder you chase the byline, the less moves.</li>
+<li>Giving credit away is not self-erasure; women especially should timestamp original contributions in docs, email, and PRs and amplify each other by name.</li>
+</ol>
 </div>
 
 <!-- ============ Resources ============ -->

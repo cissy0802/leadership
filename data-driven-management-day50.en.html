@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -362,6 +374,31 @@ A "count only quantifiable output" performance culture systematically undervalue
 <div class="setup"><strong>Reflection:</strong> That "professional intuition" I trust most—was it trained in a regular, fast-feedback environment? If not (e.g., a low-frequency domain I've bet on only two or three times), it may just be luck dressed as experience.</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Evolution · Zahavi's handicap principle (1975)</b>: A peacock's tail is a credible signal because it is expensive; a sickly bird cannot afford one, while cheap signals get mimicked by cheaters until they mean nothing. Pairing metrics plays the same trick: coverage can be padded with empty tests, a mutation score is hard to fake. The difference: natural selection takes generations to weed out a false signal, a manager can swap a metric this quarter.</li>
+<li><b>Distributed systems · Health checks</b>: A liveness probe only confirms the process still answers 200, so it stays green while the service is stuck in a bad state; operators add an end-to-end probe that runs a real request, the same shape as pairing coverage with mutation score. Unlike people, a probe never games itself to look good at review time.</li>
+<li><b>Neuroscience · Gazzaniga's "interpreter"</b>: When a split-brain patient's right hemisphere acts on an instruction, the left hemisphere, blind to the cause, instantly invents a plausible reason. HARKing has the same structure: the result arrives first, the story later. The difference: the interpreter runs automatically and unnoticed, while after-the-fact hypotheses can be blocked by preregistration.</li>
+<li><b>Eastern philosophy · Zhuangzi's Cook Ding</b>: Cook Ding's knife stays sharp after nineteen years because an ox's joints follow a fixed structure and every cut tells him at once whether it slid true, exactly the "regular environment plus rapid feedback" condition for intuition. Unlike him, an executive rarely meets the same big decision more than two or three times in a career.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Goodhart's trap: once a metric is used to judge people, they optimize the number itself and it stops reflecting reality.</li>
+<li>The cure is not dropping metrics but pairing them, measuring quantity and quality together so gaming shows up elsewhere.</li>
+<li>Treat proxies like code coverage as diagnostic gauges, not as verdicts on who gets promoted, and gaming pressure falls.</li>
+<li>Numbers tell you what happened and how big; stories tell you why, so let data locate the problem and interviews explain it.</li>
+<li>"Unmeasurable" usually means "not yet thought through"; tech debt, trust and glue work are not zero just because no dashboard shows them.</li>
+<li>Turn opinion fights into preregistered experiments with a falsifiable hypothesis, success threshold, sample size and rollback rule.</li>
+<li>Only about a third of well-designed experiments actually improve the key metric; most confident good ideas do nothing.</li>
+<li>Inventing hypotheses after seeing results (HARKing) turns any noise into a story, like the split-brain interpreter's post-hoc excuses.</li>
+<li>Kahneman and Klein show intuition is trustworthy only in regular, fast-feedback environments; for novel, rare decisions data is just an input.</li>
+<li>Never use data to whitewash a decision already made, and never hide behind "not enough data" to dodge a call that is yours.</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

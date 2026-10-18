@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -380,6 +392,33 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · 竞争排斥原理（Gause，1934）</b>：高斯用草履虫做实验，两个物种抢同一种食物，总有一方被挤出去；能长期共存的，是各占一个生态位的。挤热门赛道就是抢同一个生态位。不像在于：物种分化靠漫长的自然选择，人可以主动挑一个空档去占。</li>
+<li><b>分布式系统 · Raft 的提交追认</b>：Raft 里一条日志先复制到多数节点，leader 才把它标为已提交，提交只是追认已经成立的事实。头衔同理，下一级的事先做稳，晋升才落笔。不像的是，Raft 的多数票自动计数，calibration 会上的票要靠 sponsor 在场替你争。</li>
+<li><b>生物进化 · 世代交替</b>：蕨类一生在孢子体和配子体两种形态间轮换，两者形态、染色体倍数都不同，谈不上哪一代更高级，正像管理线和 IC 线是两门职业而非高低。不像在于：植物的轮换是写死的周期，人的钟摆何时摆、摆几次全凭自己判断。</li>
+<li><b>生物进化 · 边际价值定理（Charnov，1976）</b>：觅食的动物在一片食物上待得越久，收获越慢；最优策略是在眼前这片的收益率掉到整个栖息地的平均水平时就离开，而不是等吃光。这就是按未来的机会成本、而非已投入的时间来定去留。不像在于：动物只看收益率，从不为已经花掉的时间心疼，人偏偏会被沉没成本和面子拖住。</li>
+<li><b>复杂性科学 · 临界慢化（Scheffer 等，2009）</b>：湖泊、气候这类系统在突变之前常有预警：受扰动后恢复得越来越慢、波动越来越大。Grove 说雪先从边缘融化，看的也是这种早期信号。不像在于：湖泊看到信号也挪不了窝，人看到了就该启动止损线。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>职业像一家自己终身持有、自己当 CEO 的一人公司，要主动做定位、迭代、转型和择时退出。</li>
+<li>好的个人定位落在三圈交集：组织稀缺什么、自己能做到前 10%、自己愿意长期投入。</li>
+<li>最热的赛道往往最拥挤，定位要窄到能说清「我解决哪一类别人解决不了的问题」。</li>
+<li>晋升是滞后指标：先稳定做两个季度下一级的事，头衔只是对既成事实的追认。</li>
+<li>谈晋升要举证而非讨要，用持续更新的 brag doc 记录可归因、可量化的影响。</li>
+<li>mentor 给建议，sponsor 给机会；晋升需要有决策权的人在你不在的房间替你背书。</li>
+<li>照 Charity Majors 的说法，管理不是晋升而是转行，IC 高线与管理线是平级的两条路。</li>
+<li>在 Manager 与 IC 之间来回摆动不是退步，选轨该问能量和长期定位，不问面子。</li>
+<li>Annie Duke 提醒，走对时机通常感觉像走早了；去留按未来机会算，不按沉没成本算。</li>
+<li>止损线要在冷静时预先写下，并留意好同事离开、一年没学到新东西这类边缘信号。</li>
+</ol>
+</div>
+
 <!-- ============ Deep Think ============ -->
 <div class="deepthink">
 <h3>深入思考</h3>

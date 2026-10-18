@@ -87,6 +87,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .matrix{font-size:0.78rem}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
 </style>
 </head>
 <body>
@@ -372,6 +384,30 @@ Firefighting and "glue work" (coordinating, covering, cleaning up) often count a
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Biology · Liebig's law of the minimum</b>: a plant grows only as far as its scarcest nutrient allows; piling on the others changes nothing. Rumelt's diagnosis is the hunt for that limiting factor inside an organization. The difference: a plant can only suffer its limit, while a strategy picks a guiding policy to route around or remove it.</li>
+<li><b>Distributed systems · Amdahl's law (1967)</b>: the serial fraction of a program caps the speedup no matter how many cores you add. Six teams sharing one staging environment turn releases into a serial section, so hiring is just adding cores. Unlike Amdahl, who treats the serial fraction as a constant, a strategy sets out to rewrite it, splitting the shared environment into isolated ones that run in parallel.</li>
+<li><b>Psychology · tunneling under scarcity (Mullainathan &amp; Shafir, 2013)</b>: when time or money runs short, attention narrows to whatever is most urgent and the important-but-not-urgent drops out of view. A firefighting team is a whole group inside the tunnel, and their remedy is similar too: build in slack, much like protected fire-prevention capacity.</li>
+<li><b>Neuroscience · the default mode network (Raichle, 2001)</b>: when the brain is off-task, a set of regions becomes more active, linked to recalling the past and imagining the future, often rising as task-focused networks fall. A weekly zoom-out block gives a team that off-task mode. Unlike the brain, which switches in seconds on its own, an organization has to lock it into the calendar.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>The quietest failure in a large company is not a wrong strategy but no strategy, disguised by a pile of tactical activity.</li>
+<li>Rumelt's kernel of strategy has three parts: a diagnosis of the core obstacle, a guiding policy, and coherent actions that reinforce each other.</li>
+<li>A goal list with no diagnosis and no trade-offs is what Rumelt calls bad strategy; OKRs measure progress but do not say how to win.</li>
+<li>The essence of strategy is choosing what not to do; refusing to trade off spreads resources too thin to finish anything.</li>
+<li>Firefighting makes you feel indispensable, but nearly all high-leverage work sits in the important-but-not-urgent second quadrant.</li>
+<li>After every fire, turn the root cause into an action with an owner and a deadline, and protect capacity for prevention that cannot be borrowed.</li>
+<li>Firefighting and glue work are often non-promotable; cap them, rotate them, and move the time you save into Q2 work.</li>
+<li>Strategic thinking squeezed in by willpower always loses; make it a fixed weekly block, cut off from execution and written into a rolling doc.</li>
+<li>Tech debt and trust debt never show up on this quarter's bill but keep accruing interest, so log them explicitly and cap new hacks.</li>
+<li>Short-termism should not be demonized wholesale, yet long-term thinking never excuses you from delivering without stealing from the future.</li>
+</ol>
+</div>
 <!-- ============ Deep Think ============ -->
 <div class="deepthink">
 <h3>Going Deeper · Pushing the Edges</h3>

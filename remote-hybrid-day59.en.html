@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -311,6 +323,32 @@ Proximity bias hits women who depend more on flexible work harder: carrying more
 <div class="setup"><strong>Reflection:</strong> if my team could only know me as a leader through the words I type, would they experience "caring and clear," or "busy and cold"?</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Logical clocks (Leslie Lamport, 1978)</b>: A distributed system has no global clock, so Lamport ordered events by the causal sequence of messages instead of assuming every node sees the same "now." Async-first starts from the same premise and lets the written record do the aligning. The difference: nodes can stay out of sync forever, while people with a hard disagreement still need to meet once.</li>
+<li><b>Psychology · Mere-exposure effect (Robert Zajonc, 1968)</b>: People come to like what they see more often, even meaningless symbols. Proximity bias is its office version: the person you see daily comes to mind first and seems more reliable. The difference is that desk-side chat does carry some real information, which makes the bias harder to notice.</li>
+<li><b>Evolutionary biology · Handicap principle (Amotz Zahavi, 1975)</b>: A peacock's tail is believable because it is costly and cannot be faked. Green dots and instant replies are the opposite: nearly free, so anyone can keep them on, and they prove only presence, never output. The deliverable is the real tail; you cannot show it without having done the work.</li>
+<li><b>Psychology · Egocentrism over e-mail (Kruger, Epley et al., 2005)</b>: In the experiments, senders expected their sarcasm or sincerity to come through, yet recipients identified it at close to chance; the writer hears the tone in their head, the reader gets only the words. That is exactly how a bare "Got it" reads as displeasure. The lesson matches this issue: tone will not travel on its own, so write it into the words.</li>
+</ul>
+</div>
+<!-- ============ Takeaways ============ -->
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>The real difficulty of hybrid work is not tooling but losing the cheap channel of peripheral vision without replacing it with a fairer system.</li>
+<li>Async-first does not mean fewer meetings; it flips the default so things get written down first, and only what writing cannot settle becomes a meeting.</li>
+<li>Defaulting meetings to the manager's own daytime pushes the time-zone cost onto the same people and slowly drops them from key decisions.</li>
+<li>Online hours, reply speed and green dots measure the ability to perform busyness; manage against clear deliverables and outcomes instead.</li>
+<li>Trust is not hands-off: replace "always be online" with an explicit response agreement on what counts as urgent and how fast to reply.</li>
+<li>Proximity bias makes managers trust and remember the people they see daily, so equally capable remote colleagues get fewer chances and slower promotions.</li>
+<li>In Bloom and colleagues' Ctrip experiment, home workers were more productive yet were promoted at about half the rate of office workers.</li>
+<li>Hybrid fairness rests on checkable rules: rotate high-visibility opportunities, write hallway decisions down, and run meetings all in-room or all on-screen.</li>
+<li>Remote work strips out nods and tone of voice, so the words you type become the "you" your team experiences; clear writing is the new presence.</li>
+<li>A free green dot proves only presence, while a deliverable you cannot fake proves output, the same logic as the handicap principle.</li>
+</ol>
 </div>
 <!-- ============ Deep Reflection ============ -->
 <div class="deep">

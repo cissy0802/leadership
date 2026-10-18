@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -558,6 +570,33 @@ I'm asking because if we don't surface the pattern in that judgment, the same pr
 <p>• Mark the boundary: <em>"Performance discussions live in 1:1s, not here. Today is about the system."</em></p>
 </div>
 </div>
+</div>
+
+<!-- ============ Crossovers + Ten takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Self-affirmation theory (Claude Steele, 1988)</b>: when self-image is threatened, people guard the self first; affirm a value they hold and the defenses drop. That is the "you're not a mean person" move. Unlike here, Steele's subjects mostly affirmed an unrelated value.</li>
+<li><b>Buddhism · The second arrow (Sallatha Sutta)</b>: struck by pain, the first arrow, the untrained mind shoots itself with a second through rumination; post-conversation guilt is that arrow. The difference: Buddhism releases it by seeing clearly; this piece gives a rule, no "repair" for 24 hours.</li>
+<li><b>Distributed systems · Fail-fast and zombie nodes</b>: Jim Gray argued in 1985 that a failing module should stop and report at once rather than keep running in a bad state; the nastiest case is a node that has been evicted and doesn't know it. Blur the firing and the person shows up next morning: a human zombie node. The difference: fencing off a node takes one token; walking a person out must also keep his dignity intact.</li>
+<li><b>Complexity science · Normal accidents (Charles Perrow, 1984)</b>: in tightly coupled complex systems, small failures combine unexpectedly, so accidents are a property of the system, not one person's slip. The difference: Perrow thought some systems can't be fixed; a postmortem assumes guardrails will do.</li>
+<li><b>Investing · The disposition effect (Shefrin &amp; Statman, 1985)</b>: people sell winners early and ride losers to avoid admitting regret; postponing a hard conversation is refusing to realize the loss. The difference: a losing stock doesn't drag your other holdings, but the team pays for the person you keep.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Stone and co-authors' three-layer model: a hard conversation runs on facts, feelings and identity at once, and preparing only facts is how it spins out.</li>
+<li>Shift from "I understand" to "help me understand": ask about intent first, then name the impact, and keep the two separate.</li>
+<li>The feedback sandwich leaves people remembering only the last compliment; it is built for the manager's comfort.</li>
+<li>Horowitz's 90-second rule: a firing announces a decision already made, so say up front that today is the last day.</li>
+<li>A termination meeting should take 12 to 15 minutes; past 20 you are re-explaining, and dragging it out is the least kind option.</li>
+<li>Promotion-denial conversations usually fail by being too soft: vague encouragement traps people in another year of guessing.</li>
+<li>An honest promotion denial states the verdict, two or three concrete gaps and a timeline, then follows up in writing within 24 hours.</li>
+<li>Blameless is not consequence-free: the postmortem dissects the system, and individual feedback goes to a separate private 1:1.</li>
+<li>Run postmortems with "the system" and "the change" as subjects, ban hindsight, and ask only what the person knew then.</li>
+<li>Post-conversation guilt is the Buddhist second arrow; set a rule not to reach out and "repair" anything for 24 hours.</li>
+</ol>
 </div>
 
 <!-- ============ Homework ============ -->

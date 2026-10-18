@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -348,6 +360,34 @@ Collective creation carries a wound women know well: an idea you throw out gets 
 </div>
 </div>
 </div>
+<!-- ============ Crossovers + Ten takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Eastern philosophy · Laozi on work done unseen</b>: Chapter 17 of the Tao Te Ching says the best ruler is one the people barely know exists; when the work is done, they all say "we did it ourselves." That is the same shape as a conductor who makes no sound while others' hands produce the results. The difference: wu wei leans toward not intervening, while a conductor keeps a firm hold on tempo, dynamics and entrances.</li>
+<li><b>Complexity science · Coupled oscillators (Kuramoto, 1975)</b>: A population of oscillators, each with its own rhythm, falls into sync on its own once the coupling between them is strong enough; whole riverbanks of fireflies in Southeast Asia flashing in unison are the classic case. A team syncing to a shared beat works the same way. Unlike fireflies, an orchestra still needs someone to give the first downbeat and keep listening for drift.</li>
+<li><b>Distributed systems · Orchestration vs choreography</b>: Microservices coordinate in two ways: orchestration has one central service call the others step by step, while choreography lets each service listen for events and decide how to react. The first is the symphony, the second the jazz band, and the trade-off is similar: choose orchestration for traceability and consistency, choreography for loose coupling and fast evolution. The difference: choreographed services react only by hard-coded event contracts and never change their minds mid-phrase the way players do.</li>
+<li><b>Neuroscience · The brain switches off its monitor (Limb and Braun, 2008)</b>: fMRI scans of jazz pianists found that improvising quieted wide areas of the dorsolateral prefrontal cortex while the medial prefrontal cortex lit up, which the authors read as self-monitoring relaxing; it mirrors "yes, and" holding judgment back. The difference: one brain can leave its monitor off, but a team has to bring judgment back when it converges.</li>
+<li><b>Buddhism · Dependent origination</b>: Buddhism holds that all things arise from causes and conditions coming together, with no independent author behind them. Music that emerges only in the act of playing together, and can't be traced to one person, has that shape, and a leader can only arrange the conditions. The difference: Buddhism uses the idea to loosen attachment to the self, while a team still has to credit whoever played the note first.</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Zander points out that the conductor is the only person on stage who makes no sound; a tech lead's hardest leap is letting results come from other people's hands.</li>
+<li>When a design is stuck, offer structure instead of the answer, hand ownership to the best-placed person, and hold back your own clever solution.</li>
+<li>Making no sound is not doing nothing: a conductor sets tempo, dynamics and entrances, which is powerful shaping.</li>
+<li>What a good conductor does most is listen: whether the whole is together, which section is rushing and which is falling behind.</li>
+<li>When coordination overhead explodes, don't add meetings; give one clear downbeat, a main theme everyone can recite, and let the team self-sync.</li>
+<li>A quarter can carry only one main theme; five "top priorities" means no priority at all.</li>
+<li>The symphony mode fits work that is known and needs precision and scale; the jazz mode fits high uncertainty and innovation, and mixing them up is a disaster.</li>
+<li>Jazz is not disorganized: chords, tempo and trading solos form a hidden structure that is never written down.</li>
+<li>Sawyer's group genius emerges in the playing; a leader can only design the conditions, catching ideas with "yes, and" and treating mistakes as new material.</li>
+<li>"Yes, and" is for diverging; decisions need converging. Give the quiet sections a solo, and credit an idea to whoever voiced it first.</li>
+</ol>
+</div>
+
 <!-- ============ Deeper Thinking ============ -->
 <div class="deep">
 <h3>Deeper Thinking</h3>

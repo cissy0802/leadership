@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -319,6 +331,34 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · 心理对照（Gabriele Oettingen）</b>：Oettingen 发现，只沉浸在美好愿景里的人反而更不努力；把想要的结果和眼前的障碍放在一起想，人才动得起来，和斯托克代尔悖论同构。不像在于：心理对照管个人目标，斯托克代尔的信念押的是全队的结局，还得当众说出口。</li>
+<li><b>神经科学 · 不确定比疼痛更难熬（de Berker 等，2016）</b>：实验里受试者在「一半机会挨电击」时应激最强，确定会挨电反而没那么紧张，重组传闻让人内耗正是如此。不像的是，实验概率固定，leader 没答案时也能靠固定同步压低不确定感。</li>
+<li><b>生物进化 · 间接互惠（Nowak 与 Sigmund，1998）</b>：「形象评分」模型里，合作靠旁观者记下的名声维持，人看你怎么对待第三方再决定信不信你。不像在于：模型里看的是帮不帮人，裁员里看的是不得不伤人时怎么伤。</li>
+<li><b>分布式系统 · 级联故障与降载</b>：几台机器宕掉，负载压到剩下的节点，过载再倒，一路连锁崩溃；解法是主动丢掉低优先级请求。裁人不减事就是没降载。不像的是，服务器过载才倒，人看到苗头就先走。</li>
+<li><b>生物进化 · 大灭绝后的适应辐射</b>：约 6600 万年前白垩纪末的大灭绝清空了恐龙的生态位，哺乳动物随后大量分化。低谷变拐点也是旧格局破了才有空位。不像的是，灭绝是盲目的，重组后的聚焦方向却由 leader 来选。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>斯托克代尔悖论要求同时握住两样：直面最残酷的现实，和「最终会赢」的信念，丢了哪样团队都会散。</li>
+<li>逆境里别许控制不了的时间表，盲目乐观一旦落空，leader 之后再打气就没人信了。</li>
+<li>承认坏消息之后，要立刻给出一个本周可做的具体下一步，不让团队悬在绝望里。</li>
+<li>低谷期 leader 最重要的产出是意义：把散落的坏消息串成「为什么」和「往哪走」的叙事。</li>
+<li>不确定时沉默并不安全，团队会用最坏的想象填满空白，所以要定期、可预期地同步，哪怕没有新进展。</li>
+<li>划清能控制和控制不了的事，把团队精力引向前者；自己的恐慌先找同侪或教练消化，别甩给下属。</li>
+<li>裁员要亲自谈、前 30 秒说清、责任自己担、给出补偿和推荐信等具体帮助，别外包给 HR。</li>
+<li>人道裁员改变不了结果，但留下的人会从你怎么对待离开者，推断你将来会怎么对待他们。</li>
+<li>重组可以成为 Grove 说的战略拐点，前提是承认损失，再一对一重新招募每个留下的人。</li>
+<li>人少了必须做减法，裁人不减事会陷入「裁员、过劳、再流失」的死亡螺旋。</li>
+</ol>
+</div>
+
 <!-- ============ 深入思考 ============ -->
 <div class="deep">
 <h3>深入思考</h3>

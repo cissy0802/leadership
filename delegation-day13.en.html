@@ -73,6 +73,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -415,6 +427,34 @@ Two effects stack on women leaders (Babcock, <em>The No Club</em>, on "non-promo
 <div class="cardwork">
 <strong>This week:</strong> When you hit a "report did it differently but it's reversible" moment, force yourself not to take over—just say "your call, we'll look at the data in two weeks."<br><strong>Reflection:</strong> Your most recent takeover of a report's work—was that truly a "one-way door"? Or were you just uncomfortable that it "wasn't my way"?
 </div>
+</div>
+
+<!-- ============ Crossovers + Ten takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Amdahl's law (Gene Amdahl, 1967)</b>: the part of a program that must run serially sets a speedup ceiling no number of processors can break. "Team output capped at your personal bandwidth" is the same equation: the bottleneck is whatever can only pass through your hands, and the short "only I can do this" list is an effort to shrink the serial fraction. Where it breaks: an algorithm's serial part is usually dictated by the problem, while a team's serial part is often manufactured by the manager.</li>
+<li><b>Psychology · The generation effect (Slamecka &amp; Graf, 1978)</b>: answers you produce yourself stick far better than answers you read, which is exactly why you hand the monkey back; only a conclusion he reached himself grows into judgment. Where it breaks: the experiments measure memory, while coaching also makes him own the consequences.</li>
+<li><b>Buddhism · Self-grasping</b>: the urge to answer instantly, that quiet need to be needed, resembles what Buddhism calls clinging to self: you have mistaken "the one with answers" for who you are, so letting go feels like losing yourself. Where it breaks: Buddhism asks you to release the self; delegation releases only control, and the accountability upward stays with you.</li>
+<li><b>Distributed systems · Sagas and compensating transactions (Garcia-Molina &amp; Salem, 1987)</b>: a long transaction does not hold locks throughout; each step commits, and a failure triggers compensating actions to undo it, so only the irreversible steps deserve heavy locking. Same shape as two-way doors versus one-way doors. Where it breaks: compensation logic is written in advance, while a retrospective after a mistake usually comes afterward.</li>
+<li><b>Complexity science · Termite stigmergy (Grass&eacute;, 1959)</b>: termites have no foreman; each responds to traces left in the environment, yet together they build intricate nests, with order coming from rules and cues rather than surveillance. Guardrails instead of monitoring follow the same logic. Where it breaks: termite rules are fixed by evolution, while a team's guardrails must be agreed up front and shift with the delegation level.</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Start delegation by listing the short set of things only you can do, usually five or fewer, and delegate everything else by default.</li>
+<li>The delegation matrix uses just two axes: how much leverage a task has for the organization, and whether someone else can do it to 80%.</li>
+<li>"I'm faster at it" only counts today's cost; teaching is slow the first time, but by the tenth solo run you have earned it back.</li>
+<li>Delegating only the boring chores while keeping the high-leverage growth opportunities for yourself will eventually drive people away.</li>
+<li>Appelo's trust ladder splits delegation into seven levels; the same task sits at different levels for a newcomer and a veteran, so say the level out loud.</li>
+<li>Granting full authority in words while quietly rewriting someone's work does more damage to trust than saying up front that you will watch closely.</li>
+<li>When you answer a report's problem on the spot, ownership of the problem jumps from their back to yours, and they will come back next time.</li>
+<li>Coaching starts by asking which option they lean toward, but when things are urgent, safety is involved, or they truly lack context, just telling them is the responsible move.</li>
+<li>Before stepping in, sort Bezos's one-way doors from two-way doors: let people experiment on reversible decisions and slow down only on irreversible ones.</li>
+<li>Responsibility can be delegated but final accountability cannot, so credit for success goes publicly to the report and the leader takes the blame upward.</li>
+</ol>
 </div>
 
 <!-- ============ Deep Thinking ============ -->

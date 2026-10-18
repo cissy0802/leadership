@@ -81,6 +81,18 @@ header h1{font-size:1.55rem}
 .matrix{grid-template-columns:1fr}
 .matrix .rl{text-align:left}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -349,6 +361,31 @@ Research repeatedly finds women get interrupted more often in meetings, and are 
 <p><strong>Ask:</strong> the discomfort you feel writing "what I won't go deep on" — is it fear of disappointing people, or of admitting you can't cover everything?</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Neuroscience · Working-memory capacity (Nelson Cowan, 2001)</b>: Cowan re-estimated working memory's limit at about four chunks, the same kind of hard ceiling as "three slots": go past it and you don't slow down, you start dropping things. The difference: working memory lasts seconds, a slot lasts weeks.</li>
+<li><b>Distributed systems · Context switches and cold caches</b>: when a CPU switches processes, saving registers is nearly free; the cost is the cold cache that must warm up again, just as an interruption's tax lands in the half hour after you return. Unlike a machine, a person can't save full state, only one line as half a checkpoint.</li>
+<li><b>Buddhism · Noting in insight meditation (Mahasi Sayadaw)</b>: when a thought arises, you softly label it "thinking," and once it is named the mind lets go, the same gesture as writing one closing line before switching. The difference: noting is for letting go, the closing line is for picking it back up later.</li>
+<li><b>Psychology · Dual-process thinking (Daniel Kahneman)</b>: writing two-way doors into default rules hands decisions down from effortful System 2 to automatic System 1, saving slow thinking for one-way doors. Unlike System 1, which can't be audited, default rules are explicit and can be reviewed and revised when wrong.</li>
+<li><b>Evolutionary biology · The handicap principle (Amotz Zahavi, 1975)</b>: Zahavi argued a signal is believable because it is expensive and hard to fake, like a peacock's tail. A leader's calendar is a costly signal and an announcement is cheap talk, so when they disagree the team trusts the calendar. The difference: signals in nature often play a game of deception and detection, while you want an honest signal, so you volunteer the two lines you won't go deep on.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Time adds up but attention doesn't: a week holds only three or four slots for problems you can genuinely think through.</li>
+<li>Keep at most three problems that need your own judgment in flight; a fourth gets in only after one slot is freed.</li>
+<li>When someone adds work, offer three downgrade options with their risks priced, so the sacrificed item carries your boss's signature.</li>
+<li>Report judgment bandwidth upward, not hours, because adding people can't substitute for your judgment.</li>
+<li>Leroy's research on attention residue shows the real cost of an interruption is the half hour afterward at seventy percent of yourself.</li>
+<li>Interruption is an organizational behavior, fixed by one escalation channel, an on-point rotation, and a one-line close before switching.</li>
+<li>Put irreversible one-way-door decisions in your peak window and hand reversible two-way doors to "no need to ask me" default rules.</li>
+<li>One question separates one-way from two-way doors: if this decision is wrong, how long does it take to undo?</li>
+<li>Every deferred decision needs a date and a list of inputs; an undated "let me think about it" leaves the team spinning.</li>
+<li>A leader's attention is a public strategy signal: if you don't announce what you won't go deep on, the team reads neglect as abandonment.</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

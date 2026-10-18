@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -450,6 +462,31 @@ Multiple studies of meeting dynamics show women are interrupted and talked over 
 </div>
 </div>
 
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Raft's commit rule (Ongaro and Ousterhout, 2014)</b>: In Raft, a log entry counts as committed only once the single leader has replicated it to a majority; an uncommitted entry can still be overwritten. "Let's go with that for now" at the end of a meeting is an uncommitted entry, and three weeks later nobody owns it. The difference: Raft commits by majority acknowledgment, while a meeting commits by naming one owner and one deadline and writing them into the notes.</li>
+<li><b>Complexity science · The independence condition of crowd wisdom (Galton, 1907)</b>: Galton tallied nearly 800 guesses of an ox's weight and found the median within 1% of the truth, because each person guessed alone. Silent pre-reading and anonymous question collection protect that independence; letting the HiPPO speak first is like showing everyone the other ballots before they vote. Unlike the ox, most meeting disagreements have no answer key.</li>
+<li><b>Neuroscience · Synaptic pruning</b>: The developing brain overproduces synapses, then prunes the connections that go unused. Pausing every recurring meeting for two weeks and restoring only those someone asks for back follows the same rule: delete by default, keep what gets used. The difference: pruning is gradual and local, while a calendar reset is one global sweep.</li>
+<li><b>Psychology · Attention residue (Sophie Leroy, 2009)</b>: Leroy found that after switching from task A to task B, part of your attention stays stuck on A and B suffers. A calendar chopped up by meetings costs more than the meeting hour; it also burns the focus on either side, which is exactly what a no-meeting day protects. Unlike meetings, residue also comes from checking Slack, so cutting meetings closes only one leak.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Every meeting should have one main output; if you can't say what kind of meeting it is and what it must produce, don't hold it.</li>
+<li>A meeting's real cost is duration × headcount × hourly rate, so eight people for one hour burn a full workday.</li>
+<li>Grove splits meetings in two: process-oriented ones exchange information, mission-oriented ones solve a specific problem and often produce a decision.</li>
+<li>A standup exists to surface blockers and trigger collaboration, so walk the board asking who each card needs instead of reporting to the manager in turn.</li>
+<li>Move numbers and progress in an all-hands to async, and spend the live time on the why, the hard truths, and real questions.</li>
+<li>A facilitator has two jobs: allocating airtime, and landing the discussion as a decision plus owner plus deadline written into the notes.</li>
+<li>Silent memo reading and anonymous pre-collected questions both guard against the HiPPO effect by keeping each person's judgment independent.</li>
+<li>Cutting meetings means building an async-by-default habit and saving synchronous time for emotional, ambiguous, rapid back-and-forth decisions.</li>
+<li>To clean up recurring meetings, pause them all for two weeks and restore only the ones someone actively asks for.</li>
+<li>A cancelled meeting must be backfilled with a weekly written update; otherwise information really is lost, the cut fails, and you lose credibility.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Your Day 17 Action</h3>

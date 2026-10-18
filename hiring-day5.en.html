@@ -81,6 +81,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -413,6 +425,33 @@ What questions do you have?"</p>
 <p><strong>(3) Hand off into a development conversation:</strong> "Let's do a 1:1 next week to talk about how you build that missing piece over the next 6–12 months — next time your case will be much stronger." That signals <strong>continued investment</strong>, not a closed door. Sandberg in <em>Option B</em>: people don't need post-rejection comfort — they need a <strong>next step</strong>.</p>
 </div>
 </div>
+</div>
+
+<!-- ============ Crossovers + Ten takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Investing · Buffett's "no called strikes"</b>: Buffett likes to say investing beats baseball because nobody calls strikes on you; you can wait for the pitch right in your sweet spot. Default-No is the same patience: you don't swing at "fine." The difference: waiting costs an investor almost nothing, while an open seat has the team working late every night.</li>
+<li><b>Evolutionary biology · Zahavi's handicap principle (1975)</b>: Amotz Zahavi argued a peacock's tail is believable precisely because it is costly and a weak bird can't fake it. Asking "looking back six months later" hunts for the same hard-to-fake signal. The difference: the peacock pays to show off, while in an interview the interviewer designs the question so that making things up gets expensive.</li>
+<li><b>Psychology · The halo effect (Thorndike, 1920)</b>: Thorndike found that when officers rated their soldiers, physique, intelligence and leadership scores moved together, as if one good trait made everything good. "Great at system design" sliding into an overall strong hire is exactly this. The difference: Thorndike only diagnosed the error; a scorecard split by dimension, each score tied to evidence, is the remedy.</li>
+<li><b>Distributed systems · Common-mode failure</b>: three replicas running the same buggy code crash at the same instant, so the redundancy was an illusion. In a debrief set by its most senior voice, four hire votes are one signal repeated four times. The difference: machines are correlated by their code, people by status and speaking order, which a process change can break.</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>A hiring decision asks not "can they do the job" but "will the team's average go up or down once they join."</li>
+<li>Bezos treats hiring as a one-way door: an unclear candidate is a default No, because a mediocre hire costs you for years.</li>
+<li>Pressure from an open seat is not a signal; planning to "closely manage" someone means they are over budget before day one.</li>
+<li>Unstructured interviews predict performance at about 0.14 and structured ones at 0.26 or more; the gap comes from discipline, not the questions.</li>
+<li>The structured interviewing Laszlo Bock brought to Google means the same questions, a predefined rubric, and independent scoring before any discussion.</li>
+<li>A good structured behavioral question maps to one dimension, uses prepared follow-ups to pin the story down, and asks things that can't be faked, like "looking back six months later."</li>
+<li>A debrief exists to synthesize independent signals into one judgment, not to count votes; a 3:2 split is a divided signal, not a decision.</li>
+<li>The anti-anchoring rules: write the scorecard within 30 minutes, let the most junior interviewer speak first, and have the hiring manager speak last.</li>
+<li>After an onsite, the hiring manager delivers the rejection by phone, gives one specific piece of feedback, and separates "not this role" from "not good enough."</li>
+<li>A debrief anchored by its most senior voice is a common-mode failure: four hire votes are really one signal repeated four times.</li>
+</ol>
 </div>
 
 <!-- ============ Resources ============ -->

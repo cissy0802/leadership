@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -356,6 +368,31 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Annie Duke,《Thinking in Bets》</strong>— 概率思维、resulting、过程 vs 结果。<br/><strong>Richard Rumelt,《Good Strategy Bad Strategy》</strong>— "proximate objective（近端目标）"：选一个近到可行的目标当抓手。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · Raft 的单一 leader（Ongaro &amp; Ousterhout, 2014）</b>：Raft 规定同一任期只能有一个 leader，所有写入都经它排序，否则就会脑裂；北极星超过一个，团队也会脑裂成各自优化的派系。不像的是，Raft 的 leader 挂了会自动重新选举，北极星的更换却应当是一次刻意的重新诊断。</li>
+<li><b>佛学 · 四谛</b>：苦、集、灭、道和 Rumelt 的内核几乎同构：先认清问题（苦）并追到根因（集），再立总方向（灭），最后给出一组互相支撑的修行（八正道）。不同在于，四谛要消解的是执取本身，战略却是在既定目标下绕过障碍去赢。</li>
+<li><b>科学哲学 · Lakatos 的研究纲领（1970）</b>：Lakatos 把理论分成不容动摇的「硬核」和可以随时修补的「保护带」，正对应方向坚定、路径可改。他还警告：如果只靠不断修补保护带来挡住反例、却再也预测不出新东西，纲领就在退化；这和战略的重写触发一致，诊断里的关键事实失效时，该动的就是硬核了。</li>
+<li><b>生物进化 · 两头下注（Dan Cohen, 1966）</b>：沙漠一年生植物的种子不会在同一年全部萌发，一部分留在土里休眠，用少长一点换不被一场旱年团灭。两个候选框架各做 spike 也是这种分散押注；区别是植物永远在分散，团队要在 3 个月后用数据收拢到一个选择。</li>
+<li><b>心理学 · Tetlock 的超级预测者</b>：在 IARPA 资助的预测竞赛（2011–2015）里，Tetlock 的 Good Judgment Project 发现，成绩最好的人习惯把判断写成具体概率，并随新证据小步修正。这正是公开「置信度约六成、出现 X 信号就改」的做法；不同的是预测者只需报数，leader 还得让团队据此行动。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>技术 leader 往上走的瓶颈很少是执行不力，而是方向不清：团队很忙，却说不清在为什么价值用力。</li>
+<li>北极星指标是最能代表用户核心价值的单一指标，它是营收的前置因，而不是营收本身。</li>
+<li>延迟、可用性、新 feature 应退为北极星的输入杠杆，并配一个护栏指标，防止为提速牺牲质量。</li>
+<li>北极星指标超过一个就等于没有，团队会重新在多个数字之间分裂、各自为政。</li>
+<li>OKR 中 Objective 回答要去哪里，Key Results 回答怎么知道到了，而且 KR 必须能被诚实地证伪。</li>
+<li>含「完成、上线、交付」动词的 KR 多半是待办；结果式 KR 要写清从起点到终点的数字。</li>
+<li>好 OKR 约七成达成才算够野心，OKR 一旦绑定个人考核，人人都会故意定低目标。</li>
+<li>Rumelt 的战略内核是诊断、指导方针、连贯行动三件事，缺了诊断的战略只是愿望清单。</li>
+<li>真战略一定说清「我们不做什么」，回避取舍、堆砌形容词都是坏战略的典型特征。</li>
+<li>信息永远不全时，先定一个足够近的近端目标，公开当前置信度和改向信号：方向坚定，路径可改。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

@@ -92,6 +92,18 @@ header h1{font-size:1.55rem}
 .twocol{grid-template-columns:1fr}
 .twocol .th{margin-top:8px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -341,6 +353,30 @@ header h1{font-size:1.55rem}
 <p><strong>Reflect:</strong> if a strong study tomorrow overturned your firmest technical conviction, what would you doubt first — the study, or yourself?</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · desired state vs. actual state</b>: Kubernetes records what you want (spec) separately from what the cluster actually is (status), and a controller keeps pulling the second toward the first. "We rolled out RFCs" is the spec; 9 of 41 designs going through is the status. The difference: a control loop never clocks off; in an organization nobody keeps reconciling, so the policy dilutes until the name survives and the dose is zero.</li>
+<li><b>Evolution · fitness valleys (Sewall Wright, 1932)</b>: to move from a lower peak to a higher one, a population often has to cross a valley of lower fitness first. Wellbeing falling in year one of the pouch study and turning positive later is the same shape. The difference: nobody stands in the valley delivering a final verdict on evolution.</li>
+<li><b>Psychology · precommitment (Jon Elster, 1979)</b>: Odysseus knew the Sirens would wreck his judgment, so he had the crew tie him to the mast and ignore his pleas. Writing down your failure criteria and handing them to someone else is the same move: lock up your future self while you are still neutral. The difference: Odysseus knew when the Sirens would sing; you don't know when the ugly data will arrive.</li>
+<li><b>Buddhism · the blind men and the elephant (Pali Udana)</b>: each blind man touches a real part of the elephant, and they still come to blows over what an elephant is. Both sides of the phone-ban fight likewise cite real papers, each reporting one layer. The difference: the sutta asks you to drop one-sided views; the remedy here is concrete: ask which subgroup, which year, and who bears the cost.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>A policy can rest on a value reason or an evidence reason; both are legitimate, but one must not pose as the other.</li>
+<li>Dress a value reason up as an evidence reason, and when the evidence flips, the policy and its owner's credibility fall together.</li>
+<li>Absence of evidence is not proof of failure; what you need then is a value reason plus an evaluable, full-dose pilot.</li>
+<li>In the England study, restrictive policies did not cut total daily phone use: changing the label is not changing the dose.</li>
+<li>The most common cause of a zero effect is not an intervention that fails but one that was diluted until it never happened.</li>
+<li>Norway showed zero overall but a significant effect for girls: averages hide distributions, so name subgroups in advance and report them separately.</li>
+<li>A public announcement recruits you to defend it, so fix the failure criteria in writing when you announce and hand them to someone else.</li>
+<li>Criteria should separate transitional metrics from outcome metrics, each with its own due date, because real change often gets worse before it gets better.</li>
+<li>When the data look bad, redefining the metric is more dangerous than stubbornness; any change of definition must be logged alongside the old number.</li>
+<li>When someone cites a study at you, ask about level, dose, time window and costs, and tell factual disagreement apart from value disagreement.</li>
+</ol>
 </div>
 <div class="deep">
 <h3>Going deeper</h3>

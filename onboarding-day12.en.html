@@ -73,6 +73,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
 </style>
 </head>
 <body>
@@ -382,6 +394,30 @@ The onboarding period is a high-risk window for <strong>glue work / office house
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Raft membership changes</b>: In the Raft paper (Ongaro and Ousterhout, 2014), new servers join as non-voting members and only count toward the majority once their logs have caught up, the same rhythm as learn at 30, contribute at 60, own at 90. Unlike a node, a new hire can't copy the full state: half of what they need is in no log at all.</li>
+<li><b>Philosophy · Polanyi's tacit knowledge</b>: In The Tacit Dimension (1966), Michael Polanyi argued that we know more than we can tell, as when we recognize a face without being able to say how. Unwritten rules are that kind of knowledge. The difference: the face trick truly can't be put into words, while "who really decides" can be, and nobody bothers.</li>
+<li><b>Evolutionary biology · Lorenz's imprinting</b>: In the 1930s Konrad Lorenz showed that greylag goslings take the first moving thing they see after hatching as their mother, and the bond is hard to undo. Glue-work roles assigned in a new hire's first weeks set the same way. Unlike imprinting, which is left to chance, the first task and who gets it can be designed by the manager.</li>
+<li><b>Neuroscience · habituation (Eric Kandel)</b>: Kandel showed in the sea slug Aplysia that a repeated touch weakens the gill-withdrawal reflex as synaptic transmission drops, work that shared the 2000 Nobel Prize. A team's numbness to broken processes is habituation, and a new hire hasn't been dulled yet. The difference: a brain tunes out harmless stimuli to save effort, while a team tunes out real process debt.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Michael Watkins estimates an external hire takes about 6 months to reach breakeven; good onboarding can pull that forward to 90 days.</li>
+<li>Before Day 1, a new hire should have a written 30/60/90 plan: learn by 30, contribute by 60, own by 90.</li>
+<li>30/60/90 milestones must be verifiable, like "ship your first PR", not "get familiar with the business", which can never be marked done.</li>
+<li>"Take your time" without milestones leaves the new hire carrying the anxiety and guessing whether they are on track.</li>
+<li>The best early win in the first 30 days is a small, real release: a good first issue that runs the whole pipeline from code to monitoring.</li>
+<li>New hires rarely fail on technical skill; they fail on unwritten rules such as who decides, how to disagree, and what counts as done.</li>
+<li>An onboarding buddy should be a peer, not the manager, because new hires won't ask their manager the dumb questions.</li>
+<li>The first weeks are when glue work gets assigned and sticks, so deliberately give women and minority hires a first task with technical visibility.</li>
+<li>Watkins's 90 days are also the window for fresh eyes: at 30 days ask what feels strange or confusing, and give a "keep going / adjust" signal.</li>
+<li>A team's numbness to broken processes works like habituation in neuroscience; new hires aren't dulled yet, and that window closes fast.</li>
+</ol>
+</div>
 <!-- ============ Deep Thinking ============ -->
 <div class="deepthink">
 <h3>Deeper Questions</h3>

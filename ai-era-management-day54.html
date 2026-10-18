@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -324,6 +336,32 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>如果下周一个 AI 幻觉悄悄进了生产，我今天的流程能兜住它吗？还是只能事后追责？</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · 内共生（Lynn Margulis，1967）</b>：线粒体原是独立细菌，被宿主细胞吞入后分工合作，一个管供能、一个管其余。像在按所长分工；不像在于线粒体把大部分基因交给了细胞核、再也无法独立生存，那正是本篇提醒别走到的「人机混同体」，半人马要的是分工却不交出判断。</li>
+<li><b>心理学 · 合意困难（Robert Bjork，1994）</b>：学习时适度的费力，比如自己回忆、间隔练习，当下更慢却记得更牢。初级的「练手悖论」就是 AI 把这份费力拿走了；改做 AI 输出的审阅者，等于换一种困难，而不是取消困难。</li>
+<li><b>心理学 · 加工流畅性（Reber &amp; Schwarz，1999）</b>：读起来越顺的句子，越容易被判断为真。AI 输出越流畅越没人验，是同一个偏差。不同在于，实验里流畅只是字体和措辞，AI 的流畅却是它的强项，越进步越难靠「读着别扭」来报警。</li>
+<li><b>分布式系统 · Raft 的单一 leader（Ongaro &amp; Ousterhout，2014）</b>：Raft 规定每个任期只有一个 leader 负责写入，免得多个节点各自以为别人会处理。「谁提交谁负责」也是给责任指定唯一节点。不像的是，Raft 的 leader 挂了能自动重选，人的署名不能临时转给 AI。</li>
+</ul>
+</div>
+<!-- ============ Takeaways ============ -->
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>管理 AI 增强的团队，答案不是一刀切地禁用或放养，而是为每类任务划清人机分工线。</li>
+<li>半人马式分工：AI 负责起草、穷举选项、写样板，人负责判断、取舍、担责和处理边界情况。</li>
+<li>「AI 可以起草，人必须签字」这类规则要让团队一句话复述，并随模型进步定期重划分工线。</li>
+<li>AI 拉平了执行门槛，稀缺性转向品味、问题定义、验证和跨领域整合，执行被商品化而判断在升值。</li>
+<li>Dell'Acqua 等人的哈佛与 BCG 实验显示，用 AI 的顾问更快、质量更高，原本较弱的人收益最大。</li>
+<li>技能再造不是 prompt 培训打卡，而是在真实任务里把每个人从执行端推向判断端。</li>
+<li>练手悖论：AI 接走了初级打基础的活，可以让他们改做 AI 输出的审阅者和验证者来长判断力。</li>
+<li>面对自动化焦虑，空洞安慰让员工不再交底；要诚实承认哪些任务会消失，同时给出带项目和时间线的转型路径。</li>
+<li>谁提交谁负责，「是 AI 写的」不能当免责借口；安全、钱、数据等高风险区的 AI 输出要人工核验或双人核。</li>
+<li>AI 输出越流畅自信，人越懒得验证，这正是最危险的时候，和心理学的加工流畅性效应同构。</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

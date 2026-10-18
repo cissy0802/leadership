@@ -72,6 +72,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -499,6 +511,30 @@ Women managers are often expected to absorb extra emotional labor — reports tr
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Heartbeats and the phi accrual failure detector (Hayashibara et al., 2004)</b>: A fixed weekly 1:1 works like a heartbeat between nodes: miss a few beats and the other side starts to suspect you are down, with suspicion rising continuously as the silence lengthens rather than flipping at one cutoff. The difference: a node resets the moment the next beat arrives, while a person remembers every cancellation.</li>
+<li><b>Neuroscience · Critical periods (Hubel and Wiesel, 1960s)</b>: Cover one eye of a young kitten for a few weeks and the visual cortex hands its territory to the other eye; do the same to an adult cat and almost nothing changes. Plasticity has a window, and rewiring after it closes costs far more, which is the shape of a new hire's first 90 days. The difference: a critical period is shut by a developmental clock, while the trust window rests on mutual expectations, so reopening it late is expensive but not impossible.</li>
+<li><b>Educational psychology · Wait time (Mary Budd Rowe, 1974)</b>: Recording many classrooms, Rowe found teachers waited only about one second after a question before filling the gap themselves; stretching it past three seconds made answers longer and more speculative. The 8-second silence is the same move. The difference: a classroom spreads the silence across many students, while in a 1:1 it lands on one person, so a prop like the coffee cup helps take the edge off.</li>
+<li><b>Philosophy · Polanyi's tacit knowledge (The Tacit Dimension, 1966)</b>: Polanyi argued that we know more than we can tell, and that the most important things surface only face to face, never in a document. "Status belongs in writing; the 1:1 is for what you can't put in a doc" draws the same line. The difference: tacit knowledge cannot be put into words at all, while the worries in a 1:1 usually can be said aloud; they just feel too risky to write down.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>A 1:1 belongs to the direct report, who sets the agenda and tone, while the manager acts as a consultant who asks questions.</li>
+<li>The physical design of a 1:1 is weekly, 30 minutes, in a fixed place, and any change is made in advance, never cancelled the same day.</li>
+<li>The report writes the agenda ahead of time in a shared doc, the manager adds only a line or two, and an empty doc means cancel.</li>
+<li>The first 90 days of 1:1s with a new hire build a contract that speaking up will not be punished, and that window is far costlier to reopen later.</li>
+<li>In the first 30 days, user-manual questions map a new hire: best and worst past bosses, how they take feedback, and how they get information.</li>
+<li>"How's it going?" only earns "fine"; replace it with specific, low-risk questions anchored in time, such as "When were you most frustrated last week?"</li>
+<li>After asking a real question, hold the silence for eight seconds, because the real insight usually arrives between seconds five and eight.</li>
+<li>As Kim Scott warns, candor has to be solicited first, and getting defensive after inviting criticism means the report stops telling the truth.</li>
+<li>A 1:1 spent on project status wastes most of its leverage; status goes to Slack, standup and Jira, and the 1:1 is for feelings, relationships, growth and trust.</li>
+<li>Following Camille Fournier, rotate weekly tactical, monthly strategic and quarterly career 1:1s, and when one decays, reset it and own the decline yourself.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Practice · Your Day 1 Action</h3>

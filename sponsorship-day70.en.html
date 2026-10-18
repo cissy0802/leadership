@@ -85,6 +85,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .tl-row{grid-template-columns:1fr 1fr}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -353,6 +365,31 @@ header h1{font-size:1.55rem}
 <p><strong>Reflection:</strong> what was the last change on your team that finished <em>and stayed</em>? What was structurally different about it?</p>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Neuroscience · Habituation (Kandel's Aplysia)</b>: Repeat the same touch and the sea slug's gill-withdrawal reflex weakens; the nervous system demotes an unchanging signal to background. A sponsor repeating the same kickoff line gets filtered the same way. The difference: habituation happens at the receiver, while sponsor decay usually starts with the sender going quiet, so the fix is new appearances and new decisions, not the same sentence said louder.</li>
+<li><b>Distributed systems · Leases (Gray and Cheriton, 1989)</b>: A holder must renew before expiry or its rights lapse automatically; the system never trusts "I said I'd be here." The week 6, 12 and 20 sponsor check-ins are renewals. Unlike a lease, an expired sponsorship raises no alarm and often surfaces only as a scheduling fight.</li>
+<li><b>Evolution · Selection pressure</b>: Traits don't answer to intent, only to what gets selected. A middle manager blocking a migration while reviewed on old metrics is an adaptation to selection pressure, not a character flaw. Unlike nature's fitness function, a review target can be rewritten in one meeting.</li>
+<li><b>Psychology · Working-memory capacity (Cowan, 2001)</b>: People hold about four chunks at once; past that, they don't slow down, they start dropping items. A team's change-absorption capacity is a similar hard ceiling: three in parallel means all three fall. Unlike working memory, absorption can be stretched by sequencing and pilots over time.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>When a cross-team effort won't move, what's missing is usually the sponsor's calendar and presence, not your execution.</li>
+<li>Across Prosci's research, active and visible executive sponsorship has always been the top contributor to change success.</li>
+<li>"Come to me for anything" is abdication, not sponsorship; translate it on the spot into three dated acts: announce, sign, arbitrate.</li>
+<li>When a sponsor takes only part of the ask, record the cost of the gap openly, or it gets booked as your execution problem.</li>
+<li>Sponsor visibility falls steadily after kickoff while resistance peaks in weeks 6 to 12; transformations die where the lines cross.</li>
+<li>On kickoff day, book 15-minute sponsor syncs for weeks 6, 12 and 20, each with a single decision on the agenda.</li>
+<li>Technical objection is not resistance: if it can be written as a testable failure scenario, it's a technical problem, not a scheduling fight.</li>
+<li>The "frozen middle" lacks evidence; transformations with deeply involved middle managers succeed more often, and apparent blocking is usually misaligned incentives.</li>
+<li>Align incentives before mobilizing: get the ask into the other manager's goals, and copy them when escalating to a shared boss.</li>
+<li>A team's change-absorption capacity has a hard ceiling; three changes in parallel means none land, so sequence them and pilot.</li>
+</ol>
 </div>
 <div class="deep">
 <h3>Going deeper</h3>

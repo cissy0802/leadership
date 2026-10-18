@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -396,6 +408,30 @@ Women leaders who stay calm in a crisis are often read as "cold, lacking empathy
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Neuroscience · Uncertainty and stress (de Berker et al., 2016)</b>: Volunteers guessed whether turning over a rock would bring an electric shock; cortisol, sweating and pupil dilation peaked when the odds were near fifty-fifty, and a certain shock was less stressful. "Teams fear silence and uncertainty most" is literally physiology. The difference: in the lab the odds were fixed, while a "next update time" is the leader actively compressing uncertainty into a moment people can wait for.</li>
+<li><b>Distributed systems · Heartbeats and timeout-based failure detection</b>: A node sends heartbeats at fixed intervals even with nothing to report; miss the timeout and the cluster declares it dead. "Update on schedule, progress or not" is a heartbeat to the team, and silence reads as loss of control. Unlike a heartbeat, which only says "still alive", an incident update must also separate confirmed facts from guesses.</li>
+<li><b>Complexity science · Perrow's Normal Accidents (1984)</b>: Sociologist Charles Perrow argued that in interactively complex, tightly coupled systems, small failures will eventually combine into accidents, and the operator is not the root cause. A blameless postmortem asking "why did the system let one slip get amplified" takes exactly that view. The difference: Perrow was close to pessimistic about some systems, while a postmortem assumes added guardrails can fix them.</li>
+<li><b>Buddhism · The second arrow (Sallatha Sutta)</b>: The Buddha said an untrained person struck by the first arrow of bodily pain shoots a second one into himself through distress and resistance. The crisis is the first arrow; the leader's panic is the second. The difference: in the sutta the second arrow hits only oneself, while a leader's panic is contagious and lands on the whole team.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>In a crisis, teams fear silence and uncertainty more than bad news; vague words cause more anxiety than bad news does.</li>
+<li>In the first hour of a crisis you need no answers, but you must give three things: known facts, scope of impact and the next update time.</li>
+<li>Name a single outward channel during an incident so engineers can focus on the fix instead of being chased by five group chats.</li>
+<li>Assigning blame mid-crisis shuts everyone's mouth on the spot, and the leader stops getting true information.</li>
+<li>Horowitz argues painful decisions should not be done in installments: deliver layoffs in person, all at once, with the reason stated plainly.</li>
+<li>Those who stay care most about how you treat those who leave; unaddressed survivor fear and guilt trigger a later wave of departures.</li>
+<li>A blameless postmortem exists to fix the system, not find a culprit: you cannot fix people, but you can fix systems and processes.</li>
+<li>A sound postmortem has an objective timeline, contributing factors traced through five whys, and systemic action items with an owner and deadline.</li>
+<li>After a crisis, openly acknowledge it happened, offer security grounded in facts rather than empty promises, and slow the pace so the team can recover.</li>
+<li>People are most stressed at roughly even odds of a shock; uncertainty hurts more than certain bad news, which is why scheduled updates matter.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Your Day 20 Action</h3>

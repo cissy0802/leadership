@@ -76,6 +76,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -384,6 +396,31 @@ header h1{font-size:1.55rem}
 <div class="section-label">本周习作 + 思考题</div>
 <div class="ref"><strong>习作：</strong>本周一次会上，把"还有问题吗？"换成"每人说一个我们该改的地方，从你开始，我最后说"，强制输出，别给沉默留位置。<br/><strong>思考：</strong>你团队的"和谐"，是大家信任彼此能扛住分歧，还是没人觉得说了有用、说了安全？两者外表一样，代价天差地别。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · Yerkes–Dodson 定律（1908）</b>：后人把它概括成倒 U 曲线：唤醒太低人懒散，太高人慌乱，中间表现最好，很像四象限里的冷漠区和焦虑区。不同在于它只有一根轴，压力和表现此消彼长；Edmondson 拆成两根轴，标准可以一直往上拉，只要说真话的代价同时降下来。</li>
+<li><b>神经科学 · 奖赏预测误差（Schultz 等，1997）</b>：多巴胺神经元对「比预期好或差」放电，大脑靠这份误差信号学习；领导者当众认错，等于让团队的误差信号能传上来。不像的是，神经元报错不会挨罚，人会，所以得有人先示范报错无害。</li>
+<li><b>心理学 · Asch 从众实验（1951）</b>：明知线段长短，被试仍常跟着一致答错的多数走；只要有一个同伴先说出正确答案，从众就大幅减少。指定 devil's advocate 就是人为放进那个同伴。不同在于 Asch 的答案一眼可验，会议里的对错往往半年后才见分晓。</li>
+<li><b>分布式系统 · 心跳检测</b>：集群不把节点的沉默当「一切正常」，心跳一断就判它可能已经挂掉；表面和谐的团队恰好相反，把没有声音当健康。不像的是，机器失联基本就是坏了，人沉默可能是害怕，也可能是已经放弃，得分开诊断。</li>
+<li><b>中国哲学 · 和而不同（《论语·子路》）</b>：「君子和而不同，小人同而不和」几乎就是真安全与表面和谐的分界：观点不同，关系照样和；人人附和，底下却不和。不同在于孔子讲的是个人修养，本篇要的是把「不同」写进流程。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Google 的 Project Aristotle 研究 180 个团队，发现团队高效的首要因素是心理安全感，而不是成员多聪明。</li>
+<li>心理安全感的反面不是冲突而是沉默，它的孪生兄弟不是低标准而是高标准。</li>
+<li>安全感加高标准是学习区，安全感加低标准只是舒适区；缺了安全感，则会落进冷漠区或焦虑区。</li>
+<li>分辨高标准和不安全，要看反馈针对的是行为产出还是人本身，以及有没有给出改进路径。</li>
+<li>Edmondson 强调安全感靠示范：领导者当众承认一次「我错了」，比一百句「欢迎提意见」管用。</li>
+<li>认错后立刻找补、把责任转嫁给别人，或把示弱当成亲民人设来表演，都会让认错前功尽弃。</li>
+<li>「有问题随时提」把开口的成本和风险全留给员工，异议要靠流程里的强制动作来产生。</li>
+<li>Pre-mortem 先假设方案已经失败再问原因，把批评伪装成预测，大幅降低提出异议的门槛。</li>
+<li>轮值 devil's advocate 把异议变成分配的职责，最初级先说、老板最后开口能避开权力锚定。</li>
+<li>从不争论的团队往往是高恐惧或已放弃；公开争论一旦缺席，会转成更恶劣的背后攻击。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

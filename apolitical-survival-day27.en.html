@@ -66,6 +66,18 @@ ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;f
 .deepen details[open] summary{border-bottom:1px dashed #4f4228}
 .deepen .think{padding:12px 18px;font-size:0.93rem;color:#d3c3a9}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888;margin-top:40px;border-top:1px solid #917545}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
 .card{padding:24px 20px}
@@ -380,6 +392,31 @@ Hewlett's research has a sharp finding: women more easily get mentors (advice) b
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Status quo bias (Samuelson and Zeckhauser, 1988)</b>: People disproportionately stick with the "change nothing" default; absence in an organization likewise casts a vote for the default allocation. The difference: psychology describes one person's inertia, while an organization's default is set in advance by whoever was in the room.</li>
+<li><b>Distributed systems · Two-phase commit (2PC)</b>: The coordinator sends prepare, collects a "ready to commit" from every participant, then commits; pre-wiring is the prepare phase, leaving the review meeting only the commit. The difference: 2PC needs unanimity and rolls back on a single no, while human consensus needs only the key votes, and an objector who has been heard still counts for something.</li>
+<li><b>Neuroscience · Biased competition (Desimone and Duncan, 1995)</b>: Stimuli compete for limited neural representation, and the one matching top-down goals wins; translating your results into money, risk or users is aligning with the decision-maker's goal template. The difference: the brain's goals are its own, while in a review you can only guess someone else's.</li>
+<li><b>Evolutionary biology · The handicap principle (Amotz Zahavi, 1975)</b>: A signal is believable because it is costly and the weak cannot afford it, as with the peacock's tail. A sponsor staking their own credibility in a room you are not in sends a costly signal; self-promotion costs almost nothing, the "cheap talk" economists describe, so nobody takes it seriously. The difference: the peacock pays its own cost, while a sponsor's endorsement is a cost someone else pays for you, which is exactly why it is scarce.</li>
+<li><b>Complexity science · The evolution of cooperation (Robert Axelrod)</b>: In Axelrod's iterated prisoner's dilemma tournaments, tit-for-tat won by cooperating on the first move and then mirroring the other side's last move, the same shape as "give first." The difference: tournament payoffs are fixed numbers, while favors are hard to keep accounts of and depreciate over time.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>In an organization with limited resources, people who sit out allocation get no "fair" default, only whatever is left over.</li>
+<li>There is no neutrality in an organization, only absence, and absence is a vote for the status quo.</li>
+<li>The cost of political indifference often falls not on you but on the reports who trust you: the hires and promotions never won.</li>
+<li>Minimum viable politics is three things: let the right people know your work, maintain cross-team weak ties, and pre-wire key decisions.</li>
+<li>Pre-wire the most likely objector first, so dissent is voiced privately and with dignity, and the decision meeting becomes a confirmation.</li>
+<li>Good work is necessary but not sufficient for being seen; it has to be translated into the money, risk or user terms decision-makers care about.</li>
+<li>"Let the work speak" only works when it is translated for the audience, shown in the right venue, and repeated by someone else.</li>
+<li>A mentor talks with you, a sponsor talks about you and stakes credibility; Hewlett found women are often over-mentored and under-sponsored.</li>
+<li>Third-party endorsement is credible for the same reason as the handicap principle: staked credibility is a costly signal, while self-praise is nearly free.</li>
+<li>Borrowing allies' voices requires giving first: solve their pain point, let several teams raise the same need, and a personal ask becomes organizational consensus.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Reflection</h3>

@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -360,6 +372,31 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Robert Axelrod,《The Evolution of Cooperation》</strong>— "未来的阴影"（the shadow of the future）：当重逢概率高，合作就会自发涌现；tit-for-tat 策略胜出。<br/><strong>Adam Grant,《Give and Take》</strong>— giver 为何在长期跑赢，以及如何不被 taker 榨干。</div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学 · 两套估值系统（McClure 等，2004）</b>：fMRI 实验里，眼前就能到手的钱会额外点亮边缘系统，外侧前额叶则在长短选项里都在算账，像脑子里也装着一个短钟一个长钟。不像的是，脑内两套系统靠竞争决出胜负，有限与无限游戏却要靠翻译，让两个时钟同时被照顾到。</li>
+<li><b>复杂性科学 · 优先连接（Barabási 与 Albert，1999）</b>：网络里连接越多的节点越容易拿到新连接，早期的微小差距就这样滚成枢纽，声誉和关系网的复利是同一个结构。不像的是，优先连接只奖励「已经多」，不问质量；职业复利还得选对资产，否则只是给贬值资产加杠杆。</li>
+<li><b>生物进化 · 适应度景观（Sewall Wright，1932）</b>：种群要从一座小山走到更高的山峰，往往得先穿过一段适应度更低的谷地，而自然选择每一步只认眼前收益，所以常被困在局部高点，这和失望之谷是同一个形状。不像的是，进化没有远见，只能靠遗传漂变碰运气越谷；人能事先看懂地形、盯领先指标，也能发现那座高峰根本不存在而及时止损。</li>
+<li><b>心理学 · 理性的不等待（Kidd、Palmeri、Aslin，2013）</b>：棉花糖实验前，实验者若先食言过，孩子平均只等约 3 分钟，守信组则约 12 分钟；「沉不住气」可能是对不可靠环境的理性回应，频繁 reorg 的公司里不敢押长期也是如此。不像的是，成年人能把注押在技能、声誉这类可携带的资产上，孩子只有眼前那一块棉花糖。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>长期主义之所以孤独，是因为你押注的时间尺度比给你打分的考核周期更长。</li>
+<li>按 Carse 的区分，半年考核是有终点、有输赢的有限游戏，职业生涯是只求继续玩下去的无限游戏。</li>
+<li>做长线投资时从中切出本周期可演示的里程碑，并向老板讲清哪部分是交付、哪部分是下注。</li>
+<li>救火和重复劳动是做完即归零的线性消耗，深度技能、声誉、关系网和可复用作品才是复利资产。</li>
+<li>给每块工作时间做复利体检，问一句：这件事一年后还在替我产生回报吗？</li>
+<li>带人和跨团队黏合是回报慢、难量化的高复利工作，要用杠杆语言写进 perf 文档让它被看见。</li>
+<li>复利回报先平后陡，James Clear 把临界点之前那段叫失望之谷，大多数人在这里放弃。</li>
+<li>判断是低谷还是死路，看核心假设是否仍成立、领先指标是否在动，而不是看已经投入了多少。</li>
+<li>和多数同事是会反复重逢的重复博弈，按 Axelrod 的 tit-for-tat 以善意开局、被坑就回应、留原谅余地。</li>
+<li>在频繁 reorg 的环境里，优先投资技能、声誉、关系这类随身携带、不随重组清零的复利资产。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

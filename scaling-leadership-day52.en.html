@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -364,6 +376,31 @@ The most easily ignored work in scaling is "glue work" (Tanya Reilly, <em>Being 
 <div class="setup"><strong>Reflection:</strong> When did I last turn a blind eye to a values-violating behavior for the sake of "results"? What rule did the team learn from my silence?</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Evolutionary biology · Galileo's square-cube law (1638)</b>: scale an animal's length by 10 and its weight grows 1,000-fold while bone cross-section grows only 100-fold, so an elephant cannot be a blown-up mouse; the skeleton has to change proportions. That is exactly why leading 50 is not leading 5, scaled up. The difference: species reshape over generations, while an organization can redraw its structure on purpose.</li>
+<li><b>Computer architecture · Amdahl's law (1967)</b>: the speedup from parallelism is capped by the part that must run serially, no matter how many processors you add. If every PR waits for your review, you are that serial section, and hiring just lengthens the queue. Unlike a program, whose serial fraction is often fixed by the algorithm, a manager can shrink it with red lines and delegation.</li>
+<li><b>Psychology · Bartlett's serial reproduction (1932)</b>: Frederic Bartlett had people retell an unfamiliar Native American folk tale, "The War of the Ghosts," one to the next. Within a few retellings it grew shorter, odd details vanished, and what remained was rewritten to fit the teller's own common sense, the same process by which the dilution funnel rounds off trade-offs until only "business as usual" is left. The difference: no one in the experiment could check the original, while an organization can add checksums with written memos and read-backs.</li>
+<li><b>Complexity science · stigmergy in termites (Grassé, 1959)</b>: termites have no foreman; each one decides its next move from the traces already in the nest, and the traces coordinate the colony. Incentives and processes are an organization's traces, deciding for you when you are absent. Unlike termites, people read between the lines and spot rules such as "rushing gets rewarded."</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Leading 5 people well and leading 50 people well are two different jobs, not one job scaled up.</li>
+<li>By Andy Grove's definition, a manager's output is the output of their organization plus the neighboring organizations they influence.</li>
+<li>Moving from managing people to managing systems means keeping a few red lines you must review and handing the rest to peer review and on-call runbooks.</li>
+<li>Delegation hands over decision rights, context and a safety net; delegate tasks but not judgment and you remain the bottleneck.</li>
+<li>Conway's law says a system copies its team's communication structure, so drawing team boundaries is designing software boundaries in advance.</li>
+<li>When a team slows down, check boundaries and cognitive load before hiring; adding people without changing structure makes coordination slower still.</li>
+<li>Direction gets rounded off at every layer, so "focus on stability" often reaches the front line as "do everything."</li>
+<li>Fighting dilution takes three moves: write key decisions down including what you will not do, have people restate them, and repeat across channels.</li>
+<li>Culture is how people decide when you are not in the room, defined by what you reward, punish and tolerate, not by slogans on the wall.</li>
+<li>Bartlett's serial reproduction experiment mirrors the dilution funnel: every retelling wears away unfamiliar details and trade-offs.</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

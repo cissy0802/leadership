@@ -56,6 +56,18 @@ ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;f
 .frame-diagram svg{max-width:100%;height:auto}
 .deep{margin-top:50px}
 .deep h3{font-size:1.2rem;color:#dcba98;letter-spacing:2px;margin-bottom:16px;text-align:center}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 details{background:#0b1420;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #d29a57}
 summary{cursor:pointer;font-weight:600;color:#dcba98;font-size:0.98rem}
 details .body{margin-top:10px;font-size:0.93rem;color:#d3c3a9;line-height:1.7}
@@ -325,6 +337,31 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>我是在"支持"下属，还是在无边界地"拯救"下属直到耗尽自己？两者的界线，我清楚吗？</div>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>统计学 · 生态谬误</b>：社会学家 W. S. Robinson 1950 年指出，群体层面的相关不能直接搬到个体身上：州一级的移民比例和识字率正相关，个体层面移民的识字率却更低。「这代人怎样」即使有统计支撑，也只描述一个分布的中心，推不出眼前这个 23 岁的人。不像的是，代际标签连群体层面的相关都很弱，比生态谬误还多错一步。</li>
+<li><b>进化生物学 · 表型可塑性</b>：同一基因型在不同环境里长出不同表型，水蚤嗅到捕食者的化学信号会长出头盔和长尾刺。像在差异真实、却来自环境而非「物种」改变；不像在人能意识到环境塑造了自己，并主动改写反应。</li>
+<li><b>神经科学 · 奖励预测误差</b>：Schultz 等人 1997 年发现，多巴胺神经元编码的是「结果比预期好多少」，信号要紧贴事件才能把功劳记到对的动作上。年底才给的反馈，就像隔了三个月的奖励，大脑无从归因。不像的是，人能用语言把延迟的反馈挂回事件，只是代价是记忆早已模糊。</li>
+<li><b>分布式系统 · 心跳与故障检测</b>：节点靠高频、低成本的心跳互报状态，超时设得太长，故障要很久才被发现。一年一次的 perf review 就是超长超时。不像的是，心跳只报「活着」，好的反馈还得带上具体行为和影响。</li>
+<li><b>佛学 · 舍与「近敌」</b>：南传论典讲四无量心，悲的「近敌」是貌似慈悲的世俗忧伤，被对方的痛苦卷进去；所以悲之外还要修「舍」，保持平衡不失温度。经理接住情绪又不当治疗师，是同一个平衡；不同在于经理的边界还靠制度转介撑着，不全靠内在修为。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>按 Jennifer Deal 等人的研究，不同世代想要的东西本质相同，只是表达方式不同。</li>
+<li>代际归属与工作态度的相关小到接近零，「Z 世代懒、玻璃心」这类断言经不起数据检验。</li>
+<li>看起来像代际差异的东西，多半来自人生阶段、技术环境和入职时的经济周期，而不是人格。</li>
+<li>与其猜「这代人」要什么，不如直接问这个人希望怎样被反馈、多频繁。</li>
+<li>「年轻人都要意义感」同样是标签，反向刻板印象一样会错判具体的人。</li>
+<li>下属问「这有什么意义」是动机信号，不是挑衅，该把任务连回它撬动的真实结果。</li>
+<li>意义驱动必须同时交出方法自主权，讲完 why 又规定每一步，动机会瞬间归零。</li>
+<li>年轻员工要的不是更温柔的反馈，而是小剂量、高频率、贴着事发生的反馈。</li>
+<li>用 SBI 把反馈锚在可观察的行为与影响上；perf review 里不该出现对方第一次听说的内容。</li>
+<li>面对下属的心理困扰，经理该致谢接住、调整可控的工作因素、转介专业资源，而不是当治疗师。</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

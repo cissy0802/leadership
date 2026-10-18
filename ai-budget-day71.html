@@ -94,6 +94,18 @@ header h1{font-size:1.55rem}
 .dials .dh{display:none}
 .dials .dk{margin-top:8px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -394,6 +406,30 @@ header h1{font-size:1.55rem}
 <p><strong>思考：</strong>你有没有一个项目已经过了本该被停掉的时点？让它还活着的是证据，还是没人愿意宣布结算？</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>东西方哲学 · 孔子的「正名」</b>：《论语·子路》说「名不正，则言不顺」。「AI 成功」一个名字同时装着「上了生产」和「省了钱」两件事，汇报便处处说不顺。不像在于：孔子要名实归位以守秩序，这里的解法是把一个名拆成两本账。</li>
+<li><b>神经科学 · 奖赏预测误差（Schultz、Dayan、Montague，1997）</b>：多巴胺神经元报的不是奖赏本身，而是「实际减预期」的差，学习全靠这个差。上一轮节省不结算就折进下一轮假设，等于掐掉误差信号，模型永远不更新。不像的是，大脑每次自动算差，组织得有人专门约一个结算日。</li>
+<li><b>心理学 · 研究者自由度与预注册（Simmons、Nelson、Simonsohn，2011）</b>：他们演示，在样本量、剔除规则、因变量上灵活取舍，就能把假阳性率从 5% 抬到六成左右，每一步都不算造假，这正是 ROI 的六个旋钮。心理学的解药是预注册：收数据前写死假设和分析方案，对应「先定判据再批钱」。不像在于，预注册有公开存档背书，提案判据只靠赞助人一句确认。</li>
+<li><b>分布式系统 · Raft 的「提交」</b>：日志条目写进 leader 本地只算追加，复制到多数节点才算提交，之后才能对外生效。漏斗账像本地追加，利润账要非本人签字才算提交。不像的是，Raft 的多数派是机械计数，财务认账还掺着谁愿意背书。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>AI 项目有两本账：漏斗账看用例是否上了生产，利润账看某个财务科目是否真的下降。</li>
+<li>上了生产不等于省了钱，两本账一旦混进同一张 slide 就再也拆不开。</li>
+<li>节省的小时若没换成更少的人或更多产出，只是 slack，不能记进利润账。</li>
+<li>Grove 主张给指标配对：报 AI 收益时，同时记下新增成本、review 额外工时等反效果。</li>
+<li>Bain 调查发现约 44% 的大企业用先前自动化未兑现的节省为新一轮 AI 投资背书。</li>
+<li>上一轮的节省差额若不结算，就会被折进下一轮假设，只往前滚而不消失。</li>
+<li>质疑别人的节省数字时，问口径而不问真伪，口径一摊开差额自己会显形。</li>
+<li>ROI 有分母、标尺、准入、职级、时间窗、来源六个旋钮，全调宽能把亏钱项目合法报成 5x。</li>
+<li>先定判据再批钱：写死指标、阈值、复盘日期和退出条件，道理与心理学的预注册相同。</li>
+<li>值得做却无法承诺回报的探索，应标成有金额和时间上限的学习性投入，而不是编一个 ROI。</li>
+</ol>
 </div>
 <div class="deep">
 <h3>深入思考</h3>

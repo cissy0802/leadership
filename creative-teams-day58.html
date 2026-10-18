@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -390,6 +402,34 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · 过度辩护效应（Lepper 等，1973）</b>：本来爱画画的幼儿园孩子，被事先许诺「画了有奖状」之后，自由时间里反而画得少了；外部控制会挤掉内在动机，和「给上下文，别给控制」同构。不像在于：实验里被挤掉的是兴趣，研发团队里控制过密，先被挤掉的是判断。</li>
+<li><b>复杂性科学 · Boids 鸟群（Craig Reynolds，1987）</b>：每只鸟只守三条规则：别相撞、对齐方向、向群体靠拢，整群就飞出复杂而协调的队形，像「护栏说清、说少」换来的自由区。不像的是，鸟群往哪飞是涌现的；研发团队要解哪个问题，必须事先锁死。</li>
+<li><b>生物进化 · 体细胞高频突变</b>：B 细胞在生发中心里让抗体基因大量随机突变，再由抗原严格筛选，只留结合得最好的一批；变异放得开、筛选卡得严，正是「高安全 × 高标准」。不像在于：落选的细胞直接凋亡，被否的想法却要留住提出它的人。</li>
+<li><b>神经科学 · 奖励预测误差（Schultz 等，1997）</b>：多巴胺神经元对「结果比预期好或差」的差值放电，大脑靠这个误差更新判断，所以没跑赢 baseline 的实验同样有信息量。不像的是，大脑自动记账；团队的误差不写成那一页 learnings，就跟着人蒸发。</li>
+<li><b>分布式系统 · 混沌工程（Netflix Chaos Monkey，2011）</b>：在生产环境里随机关掉实例，用小而可控的故障提前暴露系统弱点，等于把「聪明的失败」写成制度。不像在于：混沌工程找的是已有系统的弱点，研发实验探索的是还不存在的东西。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>用管流水线的方式管研发团队，会同时压死创造力，并让最强的人最先离开。</li>
+<li>Hastings 主张用上下文领导而非控制：把做决定所需的 why 给足，让人自己做出你也会做的决定。</li>
+<li>研究员想追 roadmap 外的方向时，别直接否决，先讲清自己的约束，再约定一个两周可证伪的最小实验。</li>
+<li>把「过程可见」当成「过程可控」，聪明人会把精力花在让你安心，而不是把问题想对。</li>
+<li>框架内的自由：锁死要解的问题、北极星和少数护栏，把「怎么解」完全交给团队。</li>
+<li>假授权和护栏漂移都会让团队缩回去等你拍板，自主就此死掉。</li>
+<li>Edmondson 说的心理安全不是一团和气；高安全 × 高标准的学习区才孕育创新。</li>
+<li>评审时把「这行不通」改写成「它靠哪条假设」，否定假设而不是否定提出想法的人。</li>
+<li>按 Edmondson 的失败光谱分级：疏忽型失败要问责，聪明的失败要奖励，并写成一页 learnings 公开传播。</li>
+<li>现实里的失败常混着疏忽与探索，要拆成具体决策逐条归因，而不是给整件事打一个模糊总分。</li>
+</ol>
+</div>
+
 <!-- ============ Deep Questions ============ -->
 <div class="deep">
 <h3>深入思考</h3>

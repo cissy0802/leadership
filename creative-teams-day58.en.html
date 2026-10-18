@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -386,6 +398,34 @@ Research (including the glass-cliff literature) shows the failures of women and 
 </div>
 </div>
 </div>
+<!-- ============ Crossovers + Takeaways ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · The overjustification effect (Lepper et al., 1973)</b>: Preschoolers who already loved drawing drew less in free time after being promised a certificate for it; external control crowds out intrinsic motivation, the same shape as "lead with context, not control." The difference: in the experiment what gets crowded out is interest, while on an R&amp;D team over-control first crowds out judgment.</li>
+<li><b>Complexity science · Boids (Craig Reynolds, 1987)</b>: Each simulated bird follows three rules (don't collide, align, move toward the flock), and the flock produces complex, coordinated motion, much like the freedom zone bought by few, clear guardrails. Unlike a flock, whose heading emerges, an R&amp;D team needs the problem to solve fixed in advance.</li>
+<li><b>Evolutionary biology · Somatic hypermutation</b>: In germinal centers, B cells mutate their antibody genes heavily at random, then antigens select hard for the best binders; loose variation plus strict selection is exactly "high safety × high standards." The difference: rejected cells simply die, while a rejected idea must keep the person who raised it.</li>
+<li><b>Neuroscience · Reward prediction error (Schultz et al., 1997)</b>: Dopamine neurons fire on the gap between expected and actual outcomes, and the brain updates on that error, so an experiment that loses to the baseline still carries information. Unlike the brain, which keeps the books automatically, a team loses its error signal unless someone writes the one-page learnings.</li>
+<li><b>Distributed systems · Chaos engineering (Netflix Chaos Monkey, 2011)</b>: Randomly killing production instances exposes weaknesses through small, controlled failures, which turns intelligent failure into policy. The difference: chaos engineering probes a system that already exists, while R&amp;D experiments explore something that does not exist yet.</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Managing an R&amp;D team like an assembly line both kills creativity and drives the strongest people out first.</li>
+<li>Hastings argues for leading with context, not control: give people the why they need so they reach the decision you would have made.</li>
+<li>When a researcher wants to chase an off-roadmap idea, don't veto it; state your constraints and agree on a two-week falsifiable minimal experiment.</li>
+<li>Treating process visibility as process control makes smart people spend their energy reassuring you instead of getting the problem right.</li>
+<li>Freedom within a frame means locking down the problem, the north star and a few guardrails, and leaving the how entirely to the team.</li>
+<li>Fake delegation and drifting guardrails both teach a team to wait for your call, and autonomy dies there.</li>
+<li>Edmondson's psychological safety is not niceness; innovation happens in the learning zone where high safety meets high standards.</li>
+<li>In a review, turn "this won't work" into "which assumption does it rest on?" so you reject the assumption, not the person.</li>
+<li>Grade failures on Edmondson's spectrum: hold people accountable for preventable failures, reward intelligent ones, and publish their one-page learnings.</li>
+<li>Real failures often mix carelessness and exploration, so attribute them decision by decision instead of giving the whole event one vague score.</li>
+</ol>
+</div>
+
 <!-- ============ Deep Questions ============ -->
 <div class="deep">
 <h3>Deeper Questions</h3>

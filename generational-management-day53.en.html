@@ -56,6 +56,18 @@ ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#d29a57;f
 .frame-diagram svg{max-width:100%;height:auto}
 .deep{margin-top:50px}
 .deep h3{font-size:1.2rem;color:#dcba98;letter-spacing:2px;margin-bottom:16px;text-align:center}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 details{background:#0b1420;border-radius:6px;padding:14px 18px;margin-bottom:10px;border-left:3px solid #d29a57}
 summary{cursor:pointer;font-weight:600;color:#dcba98;font-size:0.98rem}
 details .body{margin-top:10px;font-size:0.93rem;color:#d3c3a9;line-height:1.7}
@@ -321,6 +333,31 @@ Emotional labor is distributed unequally: reports (of any gender) are more likel
 <div class="setup"><strong>Reflection:</strong> Am I "supporting" my report, or boundlessly "rescuing" him until I'm drained? Do I know clearly where that line is?</div>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Statistics · The ecological fallacy</b>: In 1950 the sociologist W. S. Robinson showed that group-level correlations do not carry over to individuals: US states with more immigrants had higher literacy, yet immigrants themselves were less literate. Even a well-supported claim about "this generation" describes the center of a distribution, not the 23-year-old in front of you. The difference: generational labels rarely show even a strong group-level correlation, so they are one step worse than the classic fallacy.</li>
+<li><b>Evolutionary biology · Phenotypic plasticity</b>: One genotype can grow different phenotypes in different environments; water fleas that sense predator chemicals grow helmets and longer tail spines. The parallel: the differences are real but come from context, not a new species. The gap: people can notice what shaped them and rewrite their response.</li>
+<li><b>Neuroscience · Reward prediction error</b>: Schultz and colleagues (1997) found that dopamine neurons signal how much better an outcome was than expected, and the signal must sit close to the event to credit the right action. Feedback given at year-end is a reward three months late; the brain cannot assign it. Unlike neurons, people can use language to tie late feedback back to the event, though memory has blurred by then.</li>
+<li><b>Distributed systems · Heartbeats and failure detection</b>: Nodes exchange frequent, cheap heartbeats; set the timeout too long and a failure goes unnoticed for ages. An annual review is a very long timeout. The difference: a heartbeat only says "alive," while good feedback must name the behavior and its impact.</li>
+<li><b>Buddhism · Equanimity and the "near enemy"</b>: Theravada commentaries on the four immeasurables say the near enemy of compassion is worldly grief that looks like compassion, being swept into the other's pain; so compassion is paired with equanimity, balance that keeps its warmth. Holding an employee's distress without playing therapist is the same balance, except a manager's boundary also rests on referral systems, not inner practice alone.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Research by Jennifer Deal and others finds that every generation wants essentially the same things from work, expressed differently.</li>
+<li>Generational membership barely correlates with work attitudes, so claims that Gen Z is lazy or fragile fail the data.</li>
+<li>What looks like a generational gap usually comes from life stage, technology, and the economy people entered work in, not personality.</li>
+<li>Instead of guessing what "this generation" wants, ask the individual how and how often they want feedback.</li>
+<li>"Young people all want meaning" is a label too; reverse stereotypes misjudge real individuals just as badly.</li>
+<li>"What's the point of this?" is a motivation signal, not defiance; connect the task to the real outcome it moves.</li>
+<li>Purpose only works with autonomy over method; explaining the why and then scripting every step kills motivation.</li>
+<li>Young employees want feedback that is not softer but smaller, more frequent, and delivered close to the event.</li>
+<li>Anchor feedback in observable behavior and impact using SBI, and never let a performance review contain surprises.</li>
+<li>When an employee struggles with mental health, thank them, adjust the workload you control, and refer to professionals rather than act as therapist.</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

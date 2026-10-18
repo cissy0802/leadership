@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -389,6 +401,30 @@ Research (Bowles, Babcock) shows female leaders face a double bind in self-advoc
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · The curse of knowledge (Newton, 1990)</b>: In a Stanford study, people who tapped out the rhythm of well-known songs predicted listeners would name half of them; listeners got about 2.5%. "Cleaner code" is a tune playing only in the engineer's head, and the boss hears knocking. Translating it into a number on his ledger is singing it aloud. The difference: the tappers were stuck with one channel, and you are not.</li>
+<li><b>Evolutionary biology · Zahavi's handicap principle (1975)</b>: A signal is credible only if it is hard to fake. Anyone can write "the team is on track"; "P95 down from 480ms to 310ms, led by A" can be checked. The difference: a peacock proves itself through waste, a good weekly update through verifiability, at almost no cost.</li>
+<li><b>Distributed systems · Three-phase commit (Skeen, 1981)</b>: In two-phase commit, a silent coordinator leaves participants waiting; three-phase commit adds a timeout with a default outcome, so nobody blocks forever. "If no objection by Friday, live Monday" is that timeout on a memo. The difference: the protocol trusts its clock, while a silent boss counts only if he actually read it.</li>
+<li><b>Buddhism · Right speech (Majjhima Nikaya 58, the sutta to Prince Abhaya)</b>: The Buddha's speech passes two gates, true and beneficial, and even beneficial truth waits for the right time. Your boss's bad mood is true but does the team no good, so you absorb it; a decided change of direction is true and useful, so it goes down that week. The difference: the Buddha times speech by wisdom, the umbrella replaces judgment with one hard rule.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Managing up is not sucking up but two-way alignment: your boss gets low-noise information, you get resources and cover.</li>
+<li>Julie Zhuo's reminder that your boss has a boss means reading his ledger first: KPIs, his boss, his pain points, his preferences.</li>
+<li>Translate every proposal into a plus on your boss's ledger: "cleaner code" is not a KPI, "launch cycle down 4 days" is.</li>
+<li>In a large company nobody is obliged to track your team's wins; silence is not modesty, it lets others write your story.</li>
+<li>Write upward updates as fact, impact, and attribution: give numbers, name who led, tie it to your boss's OKRs, and list risks.</li>
+<li>A brag doc with What, So what, and Who columns, updated ten minutes a week, means no scrambling to remember at review time.</li>
+<li>Bring options with a recommendation, not problems; Camille Fournier holds that a crisp one-pager beats a 30-minute meeting.</li>
+<li>A one-page memo has five parts: context, two or three options, recommendation and reasons, the ask, and the default action if nobody replies.</li>
+<li>Be the shit umbrella, not the megaphone: absorb moods, rumors, and in-flight numbers; pass down decided changes and real constraints.</li>
+<li>When torn between absorbing and sharing, anchor on one rule: anything touching the team's jobs or daily work gets said that week.</li>
+</ol>
+</div>
 <!-- ============ Deep Reflection ============ -->
 <div class="deep">
 <h3>Going Deeper</h3>

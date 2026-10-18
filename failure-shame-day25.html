@@ -73,6 +73,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -416,6 +428,32 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Sheryl Sandberg &amp; Adam Grant,《Option B》</strong>（Ch. 1）— 三个 P 与复原力的实操化。<br/><strong>Martin Seligman,《Learned Optimism》</strong>— 三个 P（解释风格）的研究源头。<br/><strong>Daniel Gilbert,《Stumbling on Happiness》</strong>— "impact bias"：我们系统性高估负面事件影响自己的时长。</div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>佛学 · 二箭喻（《箭经》，相应部 36.6）</b>：中了第一支箭是身体的痛，凡夫又给自己补上第二支——忧悲与抗拒。故障本身是第一箭，「我就是不行」是自己补的第二箭，羞耻正是那支。不像的是，佛陀连那个被审判的「我」也要看空，内疚却仍需要一个站出来认账的「我」。</li>
+<li><b>东方哲学 · 孟子「羞恶之心，义之端也」</b>：孟子把羞看作义的萌芽，乍看和「羞耻只会驱动隐藏」唱反调。细看孟子的羞恶指向自己做了不义之事，结构上更接近 Brown 说的内疚；两边的分歧多半在用词，不在机制。</li>
+<li><b>神经科学 · 社会评价威胁（Dickerson &amp; Kemeny，2004）</b>：汇总两百多项实验发现，既被人评价、又无法控制的压力任务引起的皮质醇反应最大，公开失败两样全占。不像的是，激素一小时左右就回落，真正拖长痛苦的是叙事空白引来的反复回想。</li>
+<li><b>分布式系统 · 无责复盘（blameless postmortem）</b>：Google 的《SRE》手册（2016）要求复盘对事不对人，把故障归到系统和流程，和「把失败从身份里剥出来」同一个方向。不像的是，无责复盘刻意不点名，本篇的 ownership 叙事却要第一人称写出「我的决策在哪一步出了问题」。</li>
+<li><b>生态学 · 韧性与稳定性（Holling，1973）</b>：Holling 区分稳定性（受扰后多快回到原平衡）和韧性（吸收冲击后仍能存续，哪怕落到新状态）。「复原是带着教训抵达新位置，而非回到原点」说的正是韧性；不像的是，生态系统不用修一段自我叙事。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Brené Brown 区分内疚与羞耻：内疚指向行为，能驱动修复；羞耻指向自我，只会驱动隐藏。</li>
+<li>失败后第一件事是辨认自己陷在内疚还是羞耻里，因为羞耻让人藏，藏让真因漏掉、失败复发。</li>
+<li>能说出一个具体修复动作，就还在内疚轨道；一个都说不出，说明已经滑进羞耻。</li>
+<li>失败时女性更易归因于能力而非情境，刻意写下外部因素和可改的行为，能挡住滑向羞耻。</li>
+<li>公开失败后决定声誉的不是失败大小，而是接下来 72 小时的叙事；沉默和甩锅都会被填空成最坏版本。</li>
+<li>Ownership 式复盘把「我的疏失」和「我的改进计划」放在一起，认责任但不自我鞭笞。</li>
+<li>别人的履历只列成功，只看这些会掉进幸存者偏差，误以为只有自己在失败。</li>
+<li>失败简历把每次失败和它教会的具体能力并列，伤疤就变成可调用的资产；领导先讲自己的失败，下属才敢讲。</li>
+<li>Seligman 的三个 P——个人化、普遍化、永久化——会把暂时的低谷错读成永久判决。</li>
+<li>复原不是回到失败前，而是带着教训抵达新位置，正如生态学里的韧性不同于回到原平衡的稳定性。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

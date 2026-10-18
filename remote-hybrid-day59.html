@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -315,6 +327,32 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>如果我的团队只能通过我打的字来认识我这个 leader，他们感受到的是"在意且清晰"，还是"忙碌而冷淡"？</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 逻辑时钟（Leslie Lamport，1978）</b>：分布式系统没有全局时钟，Lamport 改用消息的因果先后给事件排序，不假设各节点同一刻看见同一个「现在」。异步优先是同一个前提：让书面记录承担对齐。不像的是，节点可以永不同步，人遇到硬分歧还得碰一次面。</li>
+<li><b>心理学 · 单纯曝光效应（Robert Zajonc，1968）</b>：人对见得越多的东西越有好感，哪怕只是无意义的字符。邻近偏见是它的办公室版本：天天照面的人先冒出来、显得更靠谱。不同在于，工位边的闲聊确实带点信息，偏见于是更难察觉。</li>
+<li><b>生物进化 · 累赘原理（Amotz Zahavi，1975）</b>：孔雀的大尾巴可信，是因为它代价高、装不出来。绿点和秒回恰好相反：几乎零成本，谁都能挂着，所以只能证明在线，证明不了产出。交付物才更像那条尾巴，做不出来就拿不出手。</li>
+<li><b>心理学 · 邮件里的自我中心（Kruger、Epley 等，2005）</b>：实验里发件人以为自己的讽刺或认真能被读出来，收件人的辨认率却接近瞎猜；写的人脑中自带语气，读的人只拿到字。一句「收到」被读成不满，就是这个机制。和本篇的结论一致：别指望语气自己传过去，要把它写进字里。</li>
+</ul>
+</div>
+<!-- ============ Takeaways ============ -->
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>混合办公真正的难题不是工具，而是失去了「余光」这条廉价信息通道，却没换上更公平的系统。</li>
+<li>异步优先不是少开会，而是把默认反过来：先写清楚，写不清、要现场碰撞的才升级成会。</li>
+<li>会议默认压在管理者自己的白天，等于把时区成本转嫁给同一批人，让他们从关键讨论里消失。</li>
+<li>在线时长、回话速度和绿点只衡量「表演忙碌」，管理应锚在清晰的交付物和结果上。</li>
+<li>信任不是撒手不管：用明确的响应约定（什么算紧急、多久要回）取代「随时在线」的要求。</li>
+<li>邻近偏见让人更信任、更常想起天天照面的人，同样能干的远程同事机会更少、晋升更慢。</li>
+<li>Bloom 等人的携程实验中，在家办公者产出更高，晋升率却只有办公室同事的一半左右。</li>
+<li>混合公平靠可检查的制度：关键机会轮换、非正式信息回流成书面、会议要么全同房要么全上线。</li>
+<li>远程掐掉了点头和语气这些非语言信号，你打的字就是团队感受到的「你」，写清楚就是新的存在感。</li>
+<li>零成本的绿点只能证明在线，做不出来就拿不出手的交付物才能证明产出，和累赘原理同一个逻辑。</li>
+</ol>
 </div>
 <!-- ============ 深入思考 ============ -->
 <div class="deep">

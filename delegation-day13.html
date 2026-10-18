@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -399,6 +411,34 @@ header h1{font-size:1.55rem}
 <strong>本周习作：</strong>这周遇到"下属做得和你不一样但可逆"的时刻，强迫自己不接管，只说"你来定，两周后看数据"。<br/><strong>思考题：</strong>你最近一次接管下属的工作，那真的是"单向门"吗？还是你只是不舒服于"不是我的做法"？
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 阿姆达尔定律（Gene Amdahl，1967）</b>：程序里必须串行执行的那一段，决定了加多少处理器都突破不了的加速上限；「团队产出上限 = 你一个人的带宽」是同一个算式，卡点在只能经你手的那部分，「只有你能做」的短清单就是在压缩串行段。不像在于：算法的串行段多半由问题本身决定，团队的串行段却常常是 manager 自己造出来的。</li>
+<li><b>心理学 · 生成效应（Slamecka 与 Graf，1978）</b>：自己想出来的答案比读到的答案记得更牢，这正是把猴子还回去的道理，他自己走到的结论才会长成判断力。不像的是，实验只测记忆，coaching 还要他为自己的结论承担后果。</li>
+<li><b>佛学 · 我执</b>：忍不住秒答下属，背后那点「被需要感」很像佛学说的我执，把「有答案的人」当成了自己，放手就像丢掉自我。不像在于：佛学要放下的是对自我的执取，授权放下的只是控制，对上担责的那一份不能放。</li>
+<li><b>分布式系统 · Saga 与补偿事务（Garcia-Molina 与 Salem，1987）</b>：长事务不全程锁资源，每一步先提交，出错再跑补偿操作撤回，只有撤不回的步骤才值得重锁，和双向门放手、单向门放慢同构。不像的是，补偿逻辑事先写好，试错后的复盘多半事后才做。</li>
+<li><b>复杂性科学 · 白蚁的 stigmergy（Grassé，1959）</b>：白蚁没有工头，各自按环境里留下的痕迹行事，却筑出复杂的巢，秩序靠规则和线索，不靠监视。护栏代替监控是同一思路。不像在于：白蚁的规则由演化写死，团队的护栏要事先说好，还会随档位调整。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>授权先列「只有你能做」的短清单，通常不超过五项，其余事情默认全部授权出去。</li>
+<li>授权决策矩阵只看两轴：任务对组织的杠杆高低，以及别人能不能做到 80%。</li>
+<li>「我做更快」是只算今天的账，第一次教确实慢，等他第十次独立完成时成本早已赚回。</li>
+<li>只把无聊杂活授权出去、把高杠杆的成长机会留给自己，下属迟早会走。</li>
+<li>Appelo 的信任阶梯把授权分成七档，同一件事对新人和资深该用不同档位，派活时要把档位说出口。</li>
+<li>口头全权、行为上却偷改下属成果，这种说一档做另一档比一开始就说要盯着更伤信任。</li>
+<li>下属带问题来时直接给答案，问题的所有权就从他背上跳到你背上，他下次还会来问。</li>
+<li>教练式提问先问对方自己倾向哪个，但任务紧急、涉及安全或对方确实没背景时，直接告知才负责。</li>
+<li>介入前先分 Bezos 说的单向门和双向门：可逆的决定放手让下属试错，不可逆的才介入放慢。</li>
+<li>执行责任可以委派、最终担责不能，所以成功功劳公开归下属，失败的锅由 leader 对上扛。</li>
+</ol>
+</div>
+
 <!-- ============ 深入思考 ============ -->
 <div class="deepthink">
 <h3>深入思考</h3>

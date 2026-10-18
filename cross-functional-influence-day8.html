@@ -80,6 +80,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -367,6 +379,32 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>复杂性科学 · Axelrod 的重复囚徒困境锦标赛（1980）</b>：Anatol Rapoport 提交的「一报还一报」赢下比赛，它第一步总是合作，之后照对方上一步回应，和「先付出，再开口」是同一个逻辑；合作能维持，靠的是「未来的阴影」，即双方知道还会再碰面。不像的是，比赛里每一步都清清楚楚，跨部门的人情账却很模糊，记账和偶尔宽恕更要紧。</li>
+<li><b>分布式系统 · 两阶段提交</b>：协调者先逐个问参与者「你能提交吗」，全票同意才下提交令，任何一票反对就整体回滚；会前逐个摸底、大会只确认，是同一个结构。不像的是，协议里的反对票只会让事务中止，会前布局却把反对吸收进方案，让同一个人改投赞成。</li>
+<li><b>心理学 · 宜家效应（Norton、Mochon、Ariely，2012）</b>：人对自己亲手组装的东西估值更高，让对方主笔一块标准、署他的名，借的正是这股所有感。不像的是，实验里组装没做完，效应就消失了；共建标准也得让对方真动手，挂个名不算。</li>
+<li><b>东方哲学 · 老子「功成事遂，百姓皆谓我自然」</b>：《道德经》第十七章说，最好的治理者把事办成后，百姓都说是自己做成的，和「让这件事成为他们的胜利」同构。不像的是，老子的君主手握权力而退后，没职权的人让功却是唯一的推动方式，还得让得有记录。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>职位权力在团队边界就用完了，跨部门推事只能靠影响力，它比命令更慢，也要付出代价。</li>
+<li>Cohen 和 Bradford 把影响力的货币分成启发、任务、地位、关系、个人五类，开口前先弄清对方要哪种。</li>
+<li>求人配合时只讲自己的紧急没用，要把需求翻译成对方这季度在意的收益，先付出再开口。</li>
+<li>欠下的人情要记账、按时还，还不起的空头人情比不借更伤横向信任。</li>
+<li>推跨团队的事之前，先按权力和利益两轴画利益相关方地图，对不同象限用不同力度。</li>
+<li>利益相关方地图要画真实的影响网而不是 org chart，真正的否决权常握在某位 staff 工程师手里。</li>
+<li>会前布局的要义是会议只确认共识、不形成共识，关键人要在会前逐个一对一谈过。</li>
+<li>最可能反对的人最该提前请进帐篷，并把他的顾虑真的改进方案，假咨询比不咨询更激怒人。</li>
+<li>横向领导力靠让对方觉得主意是他的、功劳是他的，你越想署名，事情越推不动。</li>
+<li>让功劳不等于自我抹除，女性尤其要用文档、邮件、PR 给原始贡献留痕，并结盟互相点名。</li>
+</ol>
+</div>
+
 <!-- ============ Resources ============ -->
 <div class="resources">
 <h3>深入资源 · Further Reading</h3>

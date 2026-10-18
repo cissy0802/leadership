@@ -72,6 +72,18 @@ summary{cursor:pointer;font-weight:600;color:#dcba98;font-size:0.98rem}
 details .body{margin-top:10px;font-size:0.93rem;color:#d3c3a9;line-height:1.7}
 details .body strong{color:#dcba98}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
 .card{padding:24px 20px}
@@ -354,6 +366,31 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>如果不辞职，我能否用一个 20% 的小实验，本季度就先试一口"下一段"的味道？</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · 边际价值定理（Charnov，1976）</b>：觅食动物在一块草地上吃到收益率跌到整片栖息地的平均水平时就该挪窝，而不是吃光再走；「学习曲线趋平」正是这条边际信号。不像的是，觅食者没有发声这个选项，没法要求草地自己长回来，而人走之前还能先试着修组织。</li>
+<li><b>演化博弈论 · 间接互惠（Nowak 与 Sigmund，1998）</b>：Axelrod 的重复博弈靠「我们还会再见」，间接互惠更进一步：我帮你，是因为旁观者会记住、会传话，名声替人去和陌生人合作。exit interview 上的一句宣泄就是这样流到你从没共事过的人那里。不同在于，模型里的名声是准确记录，现实里的传言会走样，所以只给对事、书面的建议。</li>
+<li><b>分布式系统 · 优雅下线（graceful shutdown）</b>：节点退出集群前先停止接新请求、处理完手上的、交出租约，再通知其他节点改路由，而不是突然掉线等别人靠超时发现；两周交接加「老板第一个知道」是同一套协议。不像的是，节点重新加入时是空白的，人回来时却带着上次离开的全部记忆。</li>
+<li><b>西方哲学 · 萨特「存在先于本质」</b>：萨特说人没有预先写好的本质，是靠行动把自己做出来的，和 Ibarra 说身份要在行动中试出来同一个方向。不像的是，萨特强调自由带来的焦虑和孤注一掷的承担，Ibarra 给的却是低成本、可撤回的小实验。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>该走的理由不是心情不好，而是发声已系统性失效：诉求没人接、价值观不可调和、学习曲线趋平。</li>
+<li>Hirschman 的忠诚、发声、退出要依次走，先穷尽发声再退出，才带得走「我尽力过」的清白。</li>
+<li>区分该走与在逃：该走的信号要有事实、次数、期限和结构性，情绪化的抱怨换一家多半复现。</li>
+<li>重大去留决定别在情绪峰值做，刚被否掉项目或开完糟糕的 1:1，先压 72 小时。</li>
+<li>辞职谈话先给结论，把理由归于自己的成长，再立刻抛出交接方案；直属老板要第一个当面知道。</li>
+<li>并不想留就别拿 counter-offer 逼加薪，一旦接受就被看作随时会走，信任很难回来。</li>
+<li>行业是重复博弈的小圈子，离开时的每句话都在为「以后还有没有人愿意和你合作」投票。</li>
+<li>exit interview 只给对事、书面、可执行的建议，人身指控会以你控制不了的方式传开。</li>
+<li>Ibarra 认为新身份是在行动中试出来的：先备好至少 6 个月的财务缓冲，在职用副项目和咨询试单去试。</li>
+<li>按边际价值定理，觅食者在收益率跌到环境平均时就挪窝，学习曲线趋平就是那条边际信号。</li>
+</ol>
 </div>
 <div class="deep">
 <h3>深入思考</h3>

@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -368,6 +380,31 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>我最近一次为了"结果"对违背价值观的行为睁只眼闭只眼，是什么时候？团队从我的沉默里学到了什么规则？</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · 伽利略的平方–立方定律（1638）</b>：动物身长放大 10 倍，体重涨 1000 倍，骨骼截面只涨 100 倍，所以大象不能是放大的老鼠，骨架得换比例。这正是「带 50 人不是带 5 人的放大版」。不像的是，物种要靠世代演化改形，组织可以主动重画结构。</li>
+<li><b>计算机体系结构 · Amdahl 定律（1967）</b>：并行加速的上限由必须串行的那一段决定，处理器加再多也绕不过去。每个 PR 都要你 review，你就是那段串行代码，加人只会让队排得更长。不同在于，程序的串行比例常由算法定死，管理者可以靠划红线、授权把它压小。</li>
+<li><b>心理学 · Bartlett 的系列再现实验（1932）</b>：Frederic Bartlett 让受试者一个传一个地复述陌生的北美民间故事《鬼魂之战》，几轮之后故事变短，陌生细节被删，剩下的被改写得合乎传述者自己的常识，和「衰减漏斗」里取舍被磨圆、最后剩「按老样子干」是同一个过程。不像的是，实验里没人能回头核对原文，组织里可以用书面备忘和复述确认给链条加上校验。</li>
+<li><b>复杂性科学 · 白蚁的痕迹协同（stigmergy，Grassé 1959）</b>：白蚁没有总指挥，个体按巢里已有的痕迹决定下一步，痕迹本身在协调整个群体。激励和流程就是组织里的痕迹，你不在场时由它们替你决定。不像的是，白蚁不会揣摩痕迹，人会读出「赶工得赏」这类言外之意。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>把 5 个人带好和把 50 个人带好是两种不同的工作，不是同一件事的放大版。</li>
+<li>按 Andy Grove 的定义，经理的产出是所辖组织加上受其影响的相邻组织的总产出。</li>
+<li>从管人到管系统，就是只留几条必须亲审的红线，其余交给互审、on-call runbook 等机制。</li>
+<li>授权要同时交出决策权、上下文和安全网；只授权任务不授权判断，你会一直是瓶颈。</li>
+<li>Conway 定律说系统结构会复制团队的沟通结构，所以切团队边界就是提前切软件边界。</li>
+<li>团队变慢时先查边界和认知负荷，再谈招人；只加人不改结构，协调成本会让速度更慢。</li>
+<li>方向每往下传一层就被磨圆一次，传到一线时「聚焦稳定性」常常变成「什么都要」。</li>
+<li>抗稀释靠三件事：关键决策写成文字并写明不做什么，让下级用自己的话复述，跨渠道反复讲。</li>
+<li>文化是你不在场时大家怎么做决定，由你奖励、惩罚和容忍的行为定义，不由墙上的口号定义。</li>
+<li>Bartlett 的系列再现实验和衰减漏斗同构：每转述一次，陌生细节和取舍都会被磨掉一些。</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

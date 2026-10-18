@@ -88,6 +88,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .matrix{font-size:0.78rem}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
 </style>
 </head>
 <body>
@@ -347,6 +359,30 @@ header h1{font-size:1.55rem}
 </ul>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物学 · 李比希最小因子定律</b>：植物长多大，取决于最稀缺的那种养分，别的养分加得再多也没用；Rumelt 的「诊断」就是在组织里找这块最短的木板。不像在于：植物只能被动受限，战略还要求选一条方针绕开或拆掉这个约束。</li>
+<li><b>分布式系统 · Amdahl 定律（1967）</b>：程序里串行部分占多少，就决定了加多少核也快不过的上限。六个团队共享一套预发环境，就是把发布变成了串行段，加人等于加核。不同的是，Amdahl 把串行比例当常数，战略的目标恰恰是改写这个比例，把共享环境拆成可并行的隔离环境。</li>
+<li><b>心理学 · 稀缺心态的「隧道效应」（Mullainathan & Shafir，2013）</b>：时间或钱一紧，注意力就收窄到眼前最急的事，重要但不急的事被挤出视野。救火团队正是集体进了隧道；两人开出的药方也相近：预留宽裕（slack），这正对应不可挪用的防火容量。</li>
+<li><b>神经科学 · 默认模式网络（Raichle，2001）</b>：大脑不做具体任务时，有一组脑区反而更活跃，和回想过去、设想未来有关，并常与专注任务时的网络此消彼长。每周的 zoom-out 块像是给组织留出这种离开任务的状态。不像的是，大脑几秒内就能自动切换，组织得靠日历硬锁。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>大公司最隐蔽的失败不是战略做错，而是根本没有战略，却用一堆战术活动假装有。</li>
+<li>Rumelt 的战略内核有三部分：诊断核心障碍、确定指导方针、采取互相增强的连贯行动。</li>
+<li>没有诊断和取舍的目标清单是 Rumelt 所说的坏战略，OKR 是度量，不回答怎么赢。</li>
+<li>战略的本质是选择不做什么，不敢取舍就会把资源摊薄到每件事都做不透。</li>
+<li>救火让人感觉不可或缺，但高杠杆的活动几乎都在重要不紧急的第二象限。</li>
+<li>每次救火后要把根因变成有 owner、有 deadline 的 action，并保留不可挪用的防火容量。</li>
+<li>救火和 glue work 常是不可晋升的工作，应设上限、要求轮值，把省下的时间投到 Q2。</li>
+<li>战略思考靠意志力抽空必然失败，要做成每周固定、与执行隔离、落进滚动文档的节奏。</li>
+<li>技术债、信任债不出现在本季度账单上却在计息，要显式记账，并给新的 hack 设上限。</li>
+<li>短期主义不该全盘妖魔化，但长期主义也不豁免交付，交付的同时不能偷未来的钱。</li>
+</ol>
 </div>
 <!-- ============ Deep Think ============ -->
 <div class="deepthink">

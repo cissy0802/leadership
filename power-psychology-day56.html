@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -340,6 +352,30 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>我上一次因为别人的反馈而真的改掉一个行为，是什么时候？想不起来的话，是我没收到，还是收到了没当回事？</div>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · 洞穴鱼的眼睛</b>：墨西哥丽脂鲤迁进无光的洞穴后，经过许多代，眼睛退化了，因为维持用不上的器官太耗能。权力让换位能力变得「用不上」，大脑也跟着省掉。像在都是环境不再奖励就关掉；不像在鱼的退化写进了基因，权力的效应是一种状态，装上护栏就能拉回来。</li>
+<li><b>佛学 · 慢结（māna）</b>：上座部把「慢」列为五上分结之一，要到阿罗汉才断尽，是最细、最晚看清的那层自我。「我不是那种人」正是慢的样子：越觉得自己免疫，越看不见。不像的是，佛学要连根拔掉「我」，本篇只求给「我」装上外部护栏。</li>
+<li><b>东方哲学 · 老子「功成事遂」</b>：《道德经》第十七章说，最好的统治者让人几乎感觉不到，事成之后百姓都说「我们本来就这样」。这是功劳归窗外推到了极致。不像在 Level 5 还有钢的意志、对结果当众强硬，老子的「太上」连存在感都收掉了。</li>
+<li><b>分布式系统 · 灰色故障（Peng Huang 等，2017）</b>：这篇 HotOS 论文指出，云系统最难缠的故障是监控显示一切正常、用户那头却已出错，作者称之为「差异可观测性」。权力者就是盯着仪表盘的人：自己视角里挺好，下属那头早出了问题。解法也一样，从用户侧装探针，对应匿名问卷和真话之友。不像的是探针不怕你，人会怕，所以人的回路还得保护说真话的人。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Keltner 的权力悖论：人靠同理、协作、克制获得权力，坐上位子后，权力会系统性地削弱这些能力。</li>
+<li>权力的腐蚀是可预测的机制而不是品德问题，所以要靠制度护栏，不要赌自己不会变。</li>
+<li>决策会上最后一个发言、否决异议前先复述对方的担忧，都是能写进流程的权力护栏。</li>
+<li>权力降低换位能力：Galinsky 的实验里，被激发权力感的人更常把 E 写成只有自己看得懂的方向。</li>
+<li>估工期和难度要按执行者的熟练度而不是自己的；地位差之下的沉默往往不等于同意。</li>
+<li>Collins 的 Level 5 领导者把个人谦逊和职业意志结合在一起：对结果强硬，对自己低调。</li>
+<li>窗户与镜子：成功时看向窗外，归功团队和时机；失败时照镜子，承担自己的责任。</li>
+<li>位子越高，收到的诚实反馈越少，却越需要它，这个缺口只能靠主动搭建的反馈回路来补。</li>
+<li>匿名问卷、授权一位真话之友、听到批评先道谢不辩护，是让真话持续流向上位者的三个做法。</li>
+<li>像分布式系统的灰色故障一样，权力者自己视角里一切正常，不代表下属那一侧没有出问题。</li>
+</ol>
 </div>
 <!-- ============ Deep Questions ============ -->
 <div class="deep">

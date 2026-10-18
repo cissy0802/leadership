@@ -93,6 +93,18 @@ header h1{font-size:1.55rem}
 .dials .dh{display:none}
 .dials .dk{margin-top:8px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -389,6 +401,30 @@ header h1{font-size:1.55rem}
 <p><strong>Reflection:</strong> do you have a project that is already past the point where it should have been stopped? Is it still alive because of evidence, or because nobody wants to declare the settlement?</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Eastern philosophy · Confucius on the rectification of names</b>: The Analects (Zilu) warn that when names are not correct, speech does not flow. "AI success" is one name holding two facts, shipped and saved, so every report stumbles. The difference: Confucius restores names to keep order; the fix here is splitting one name into two ledgers.</li>
+<li><b>Neuroscience · Reward prediction error (Schultz, Dayan &amp; Montague, 1997)</b>: Dopamine neurons signal not the reward but actual minus expected, and learning runs on that gap. Folding unsettled savings into next year's assumptions silences the error signal, so the model never updates. Unlike a brain, which computes the gap automatically, an organization has to book a settlement date.</li>
+<li><b>Psychology · Researcher degrees of freedom and preregistration (Simmons, Nelson &amp; Simonsohn, 2011)</b>: They showed that flexible choices about sample size, exclusions and outcome measures can lift false-positive rates from 5% to around 60%, with no single step counting as fraud: the six ROI dials exactly. Psychology's remedy is preregistration, fixing hypotheses and analysis before data arrive, which is setting the bar before funding. The difference: preregistrations sit in public archives, while a proposal's criteria rest on one sponsor's nod.</li>
+<li><b>Distributed systems · Commit in Raft</b>: A log entry written to the leader is only appended; it is committed once replicated to a majority, and only then takes effect. The funnel ledger is a local append; the P&amp;L ledger needs someone else's signature to commit. Unlike Raft's mechanical quorum, finance sign-off also depends on who is willing to vouch.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>An AI project keeps two ledgers: the funnel ledger tracks whether it shipped, the P&amp;L ledger whether a financial line actually fell.</li>
+<li>Shipping is not saving, and once both ledgers share one slide they can never be pulled apart again.</li>
+<li>Saved hours that never become fewer people or more output are slack, and slack does not belong in the P&amp;L ledger.</li>
+<li>Grove's advice to pair indicators means reporting AI gains alongside counter-effects such as new costs and extra review hours.</li>
+<li>Bain found about 44% of large firms justify new AI spending with savings from earlier automation that never materialized.</li>
+<li>An unsettled savings gap from one round is folded into the next round's assumptions, so it rolls forward instead of disappearing.</li>
+<li>When challenging someone's savings figure, ask about the method, not the truth; once the method is laid out, the gap shows itself.</li>
+<li>Every ROI number has six dials (denominator, baseline, inclusion, labour rate, window, source), and setting all wide can legally turn a loss into 5x.</li>
+<li>Set the bar before funding: fix the metric, threshold, review date and exit condition, the same logic as preregistration in psychology.</li>
+<li>Exploration worth doing but unable to promise returns should be labeled a capped learning investment, not dressed up with an invented ROI.</li>
+</ol>
 </div>
 <div class="deep">
 <h3>Deeper questions</h3>

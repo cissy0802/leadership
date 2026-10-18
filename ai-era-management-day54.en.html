@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -320,6 +332,32 @@ Blame for "the AI got it wrong" is often assigned unevenly: in murky, many-hands
 <div class="setup"><strong>Reflection:</strong> If an AI hallucination quietly reached production next Monday, would today's process catch it—or could I only assign blame after the fact?</div>
 </div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Evolution · Endosymbiosis (Lynn Margulis, 1967)</b>: Mitochondria were once free-living bacteria that, swallowed by a host cell, settled into a division of labor: one makes energy, the other runs everything else. The likeness is splitting work by strength; the difference is that mitochondria handed most of their genes to the nucleus and can no longer live alone. That is the fused cyborg this issue warns against; the centaur divides labor without surrendering judgment.</li>
+<li><b>Psychology · Desirable difficulties (Robert Bjork, 1994)</b>: Effortful learning, such as recalling from memory or spacing practice, feels slower but sticks better. The juniors' practice paradox is AI removing that effort; making them reviewers of AI output swaps in a different difficulty rather than abolishing it.</li>
+<li><b>Psychology · Processing fluency (Reber &amp; Schwarz, 1999)</b>: Statements that are easier to read are more likely to be judged true. Smooth AI output escaping verification is the same bias. The difference: in the lab, fluency was a matter of font and phrasing; for AI it is a core strength, so the better it gets, the less "this reads oddly" can serve as an alarm.</li>
+<li><b>Distributed systems · Raft's single leader (Ongaro &amp; Ousterhout, 2014)</b>: Raft allows one leader per term to handle writes, so no two nodes each assume the other will act. "Whoever submits it owns it" likewise assigns responsibility to a single node. Unlike Raft, where a failed leader is re-elected automatically, a human signature cannot be handed off to the AI.</li>
+</ul>
+</div>
+<!-- ============ Takeaways ============ -->
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Managing an AI-augmented team is neither a blanket ban nor a free-for-all; it means drawing a human-machine line for each type of task.</li>
+<li>In centaur-style division of labor, AI drafts, enumerates options and writes boilerplate, while people judge, make trade-offs, own outcomes and handle edge cases.</li>
+<li>A rule like "AI may draft, a human must sign" should be repeatable in one sentence, and the line should be redrawn as models improve.</li>
+<li>Once AI levels the bar for execution, scarcity shifts to taste, problem framing, verification and cross-domain synthesis: doing is commoditized, judging appreciates.</li>
+<li>In the Harvard and BCG experiment by Dell'Acqua and colleagues, consultants using AI were faster and better, with the weakest performers gaining most.</li>
+<li>Reskilling is not prompt-training checkboxes; it is pushing each person from the doing end toward the judging end through real work.</li>
+<li>The practice paradox: AI takes the groundwork juniors learned from, so have them review and verify AI output to build judgment instead.</li>
+<li>For automation anxiety, empty reassurance makes people stop confiding; honestly name which tasks will disappear and pair it with a transition path with projects and timelines.</li>
+<li>Whoever submits it owns it, and "the AI wrote it" is no excuse; AI output in high-risk areas like security, money and data needs human or two-person review.</li>
+<li>The more fluent and confident AI output looks, the less people check it, which is exactly when it is most dangerous, mirroring the processing-fluency effect.</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

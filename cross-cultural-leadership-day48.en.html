@@ -77,6 +77,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .spectrum .marks{font-size:0.68rem}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -378,6 +390,30 @@ Decisions are fast; the boss calls it = small-d, revisable anytime.
 <div class="setup"><strong>Reflection:</strong> Between "when in Rome" and "staying true to myself," where is my non-negotiable line?</div>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Neuroscience · Predictive coding</b>: Along sensory pathways the brain mostly passes on prediction errors; what was expected gets suppressed. High-context communication has the same shape: the thicker the shared prior, the less the literal message needs to carry beyond the surprise. Where it breaks: a brain's priors come from one body's experience, while two people from different cultures hold different priors, so a compressed message decodes into a different sentence.</li>
+<li><b>Psychology · The spiral of silence</b>: Noelle-Neumann proposed in 1974 that people who think they hold a minority view fall quiet for fear of isolation, which makes the majority look bigger still. The meeting where "no one objects" gets amplified the same way; the difference is that the spiral fears peers, while power distance fears the boss.</li>
+<li><b>Distributed systems · The commit point in consensus</b>: In Raft a leader can append a log entry quickly, but it only counts as committed once a majority acknowledges it, and is never rolled back after that; uncommitted entries can be overwritten. A big-D decision is a committed entry, a small-d one is still uncommitted. Machines state in the protocol which step counts; people each assume their own, which is why Principle 03 asks you to spell out the decision rule, in effect handing the team a protocol.</li>
+<li><b>Evolutionary biology · Within-group variation</b>: Lewontin found in 1972 that about 85% of human genetic variation lies within populations, with only a small share between them. "Individual differences often exceed differences in cultural averages" has the same structure. Where it breaks: culture is learned and can be rewritten within one lifetime, as Kenji's directness from his US PhD shows.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Most cross-cultural friction is not about skill or attitude; cultures simply encode "professional" in different ways.</li>
+<li>In Hall's terms, low-context cultures put meaning in the words, while high-context cultures leave it in relationships, setting and silence.</li>
+<li>Give negative feedback to high-context colleagues privately and indirectly; when unsure, start subtle and add directness as you read the response.</li>
+<li>In high-context cultures, "yes" often means "I heard you," not "I agree."</li>
+<li>Silence in a high power distance team is not consensus; it means no one dares to contradict the boss in public.</li>
+<li>Surface dissent structurally: a written comment window, private 1:1 questions, an assigned devil's advocate, and the boss speaking last.</li>
+<li>In consensus cultures a decision is a hard-to-change big D; in top-down cultures it is a small d, open to revisiting anytime.</li>
+<li>For every decision, state up front who decides, whether it is consensus or top-down, and when it locks, then put it in a written doc.</li>
+<li>Rotate meeting times to share the time-zone pain, so headquarters is not treated as the center of the universe.</li>
+<li>Cultural dimensions are only priors; observe the specific person and update, since individual differences often exceed cultural averages.</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

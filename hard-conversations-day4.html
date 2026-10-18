@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -523,6 +535,33 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · 自我肯定理论（Claude Steele，1988）</b>：自我形象受威胁时人先护住自己，先肯定他看重的价值，防御才会降。像「你不是 mean person」那句；不像的是，Steele 让人肯定的多是无关领域。</li>
+<li><b>佛学 · 第二支箭（《箭经》）</b>：中了痛这第一支箭，凡夫还会用反刍给自己补第二支；难对话后的内疚反刍就是它。不像在于：佛学靠看清念头放下，正文给的是 24 小时不「补救」的规则。</li>
+<li><b>分布式系统 · fail-fast 与僵尸节点</b>：Jim Gray 1985 年主张模块出错就立刻停下并报告；最难缠的是不知道自己已被踢出、还在干活的节点。解雇说得含糊，对方第二天照常上班，就是人版僵尸节点。不像的是，隔离节点只要一个 fencing token，请人出门还得保住尊严。</li>
+<li><b>复杂性科学 · 常态事故（Charles Perrow，1984）</b>：紧耦合的复杂系统里，小故障会意外叠加，事故是系统属性而非个人失误。不像在于：Perrow 认为有些系统修不好该放弃，复盘默认补上 guardrail 就行。</li>
+<li><b>投资 · 处置效应（Shefrin &amp; Statman，1985）</b>：人倾向早卖赚钱股、死扛亏钱股，免得承认后悔；拖延难对话也是不肯兑现亏损。不像的是，亏损股不拖累别的持仓，拖着的人由团队替你买单。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Stone 等人的三层对话模型：难对话同时发生在事实、情绪、身份三层，只准备事实层最易失控。</li>
+<li>把姿态从「我懂了」换成「帮我理解」，先问对方意图，再谈影响，意图和影响分开谈。</li>
+<li>三明治反馈让对方只记得最后一句好话，是为 manager 自己舒服设计的话术。</li>
+<li>Horowitz 的 90 秒规则：解雇是宣布已做完的决定，开场就说清今天是最后一天。</li>
+<li>解雇谈话以 12 到 15 分钟为宜，超过 20 分钟说明你在反复解释，拖泥带水最不仁慈。</li>
+<li>拒绝晋升的对话常败在太软，模糊的鼓励让下属困在又一年的瞎猜里。</li>
+<li>诚实的拒绝晋升要讲清判定、两三个具体差距和时间表，24 小时内书面跟进。</li>
+<li>Blameless 不等于没有后果：复盘会只拆系统，个人反馈放进另一场私下 1:1。</li>
+<li>主持复盘用「系统」「这次变更」做主语、禁用后见之明，只问当事人当时知道什么。</li>
+<li>难对话后的内疚反刍像佛学的第二支箭，给自己定规则：24 小时内不主动去「补救」。</li>
+</ol>
+</div>
+
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>本周习作 · Your Day 4 Action</h3>

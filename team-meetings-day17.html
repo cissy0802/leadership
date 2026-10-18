@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -415,6 +427,31 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Jason Fried &amp; DHH,《Rework》《It Doesn't Have to Be Crazy at Work》</strong>— 会议是成本，async 为默认。<br/><strong>Cal Newport,《A World Without Email》</strong>— "hive mind"与注意力资本：别把会议搬进聊天软件。<br/><strong>GitLab Handbook</strong>— async-first 与"没记录就等于没发生"。</div>
 </div>
+</div>
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · Raft 的提交规则（Ongaro、Ousterhout，2014）</b>：日志由 leader 复制到多数节点才算 committed，否则随时会被覆盖；散会时一句「那就先这样吧」就是没提交的日志，三周后没人认账。不像的是，Raft 靠多数派确认，会议靠点名 owner 和期限。</li>
+<li><b>复杂性科学 · 群体智慧的独立性条件（Galton，1907）</b>：近 800 人各自猜牛重，中位数离真值不到 1%，前提是互不知情。会前静读、匿名收集提问在保这份独立；HiPPO 先开口，等于先亮出别人的票。不像的是，会上的分歧常常没有标准答案。</li>
+<li><b>神经科学 · 突触修剪</b>：发育中的大脑先过量长出突触，再修掉没被用到的连接。recurring 会全停两周、只恢复有人要回来的，也是「默认删除、用到才留」。不像的是，修剪是渐进局部的，清零是一次全局动作。</li>
+<li><b>心理学 · 注意力残留（Sophie Leroy，2009）</b>：从任务 A 切到 B 后，部分注意力仍挂在 A 上，B 做得更差。会议切碎日历，代价还包括前后被残留吃掉的专注，无会日护的正是这段。不像的是，残留也来自切 Slack，砍会只堵一个口。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>每个会只该有一个主要产出，开会前说不清这是哪种会、要拿到什么，就别开。</li>
+<li>会议的真实成本是时长 × 人数 × 时薪，8 人开 1 小时就是一整个工作日的产能。</li>
+<li>Grove 把会议分成两种：流程型会议交换信息，任务型会议解决具体问题、常产出决策。</li>
+<li>Standup 的目的是暴露阻塞、触发协作，应走看板而不是轮流向经理汇报。</li>
+<li>All-hands 把数字和进度挪到 async，现场只讲 why、讲 hard truth、答真问题。</li>
+<li>主持人的两件活是分配发言权，以及把讨论收敛成「决策 + owner + 期限」并写进纪要。</li>
+<li>会前静读备忘录、匿名预收集提问，都是在防 HiPPO 效应，保住每个人判断的独立性。</li>
+<li>减会要建立默认异步的机制，把同步带宽留给高情绪、高歧义、需要实时来回的决策。</li>
+<li>清理 recurring 会可以先全部暂停两周，只恢复真有人主动要求的那些。</li>
+<li>取消会议必须用每周书面 update 补位，否则信息真丢了，减会失败还会损信用。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

@@ -90,6 +90,18 @@ header h1{font-size:1.55rem}
 .matrix{grid-template-columns:1fr}
 .matrix .rl{text-align:left}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -362,6 +374,31 @@ header h1{font-size:1.55rem}
 <p><strong>思考：</strong>写下「我不深入什么」时的不适，来自怕别人失望，还是怕承认自己做不了全部？</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学 · 工作记忆的容量（Nelson Cowan，2001）</b>：Cowan 把工作记忆上限重估为约 4 个组块，和「三个槽位」同是硬天花板：超了不是变慢，是开始掉东西。不像的是，工作记忆以秒计，槽位以周计。</li>
+<li><b>分布式系统 · 上下文切换与缓存变冷</b>：CPU 切进程，存寄存器只要一瞬，贵的是之后缓存全冷、要重新预热，正像中断的税落在回来后的半小时。不像的是，机器能完整存档，人只能写一行做半个 checkpoint。</li>
+<li><b>佛学 · 内观的「标记」（Mahasi Sayadaw）</b>：念头生起时轻轻标一句「想」，名字落下，心就松开它，和切换前写一行收尾是同一个动作。不像在于，标记是为了放下，收尾那一行是为了日后捡回来。</li>
+<li><b>心理学 · 双系统（Daniel Kahneman）</b>：把双向门写成默认规则，等于把决策从费力的系统 2 下放给自动的系统 1，慢思考只留给单向门。不像的是，系统 1 不可审计，默认规则是明文，错了能复盘修订。</li>
+<li><b>生物进化 · 累赘原理（Amotz Zahavi，1975）</b>：Zahavi 认为信号可信正因为昂贵、难伪造，如孔雀的尾巴。领导者的日历是代价信号，宣言是廉价信号，两者不一致时团队信日历。不像的是，自然界的信号常在欺骗与识破间博弈，而你要的是诚实信号，所以得主动说出不深入的那两条线。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>时间可以加，注意力不能加：一周只有三四个能真正想清楚问题的槽位。</li>
+<li>需要你亲自想清楚的问题同时最多三件，第四件进来之前必须先腾出一个槽位。</li>
+<li>有人往你手上加事时，给三个带风险标价的降级选项，让被牺牲的那件有老板的签名。</li>
+<li>向上沟通要报判断带宽而不是小时数，判断量不能靠加人来替代。</li>
+<li>Leroy 的注意力残留研究说明，中断的真实成本是回来后那半小时只剩七成的自己。</li>
+<li>中断是组织行为，靠单一升级通道、on-point 轮值和切换前写一行收尾来治理。</li>
+<li>不可逆的单向门决策放进峰值窗口，可逆的双向门交给「不用问我」的默认规则。</li>
+<li>区分单向门和双向门只问一句：这个决定错了，多久能改回来？</li>
+<li>延迟决策必须带日期和输入清单，没有日期的「我再想想」会让团队空转。</li>
+<li>领导者的注意力是公开的战略信号，不宣布不深入什么，团队会把冷落读成放弃。</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

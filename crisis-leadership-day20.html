@@ -76,6 +76,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -367,6 +379,30 @@ header h1{font-size:1.55rem}
 <div class="section-label">本周习作 + 思考题</div>
 <div class="ref"><strong>习作：</strong>给自己建一个"卸压清单"——危机来时你会找谁说话、做哪个动作让自己回到镇定（散步 / 写下来 / 睡一觉再回邮件）。本周先确认那个"可以打电话的人"是谁。<br/><strong>思考：</strong>上一次危机之后，你的团队是更紧密了，还是开始流失？差别就在你事后做了什么。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学 · 不确定性与应激（de Berker 等，2016）</b>：受试者翻石头猜会不会挨电击，皮质醇、出汗和瞳孔在电击概率约五成时最高，明知必挨反而没那么紧张；「团队最怕沉默和不确定」在生理上就是这样。不像的是，实验里的概率是给定的，事故中的「下次更新时间」却是 leader 主动把不确定压缩成一个可以等待的钟点。</li>
+<li><b>分布式系统 · 心跳与超时判死</b>：节点按固定间隔发心跳，哪怕无事可报；超时没收到，集群就判它挂了。「无论有无进展都按时更新」就是给团队发心跳，沉默会被读成失控。不同在于，心跳只报「我还活着」，事故更新还得把已确认的事实和猜测分开写。</li>
+<li><b>复杂性科学 · Perrow 的常态事故（1984）</b>：社会学家 Charles Perrow 认为，交互复杂又紧密耦合的系统里，几个小故障叠在一起出事是迟早的，操作员不是根因。blameless 复盘问「系统为何允许一次手滑被放大」正是这个视角。不像的是，Perrow 对某些系统近乎悲观，复盘则相信补上护栏就能修。</li>
+<li><b>佛学 · 第二支箭（《箭经》）</b>：佛陀说，凡夫中了身体之痛这第一支箭，还会用忧恼和抗拒给自己补上第二支。危机本身是第一支箭，leader 的慌乱就是第二支。不同在于，经里的第二支箭只射向自己，领导者的慌乱却会传染，射中的是整个团队。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>危机里团队最怕的不是坏消息，而是沉默和不确定；模糊的话比坏消息更让人焦虑。</li>
+<li>危机第一小时不必有答案，但要给出已知事实、影响范围和下次更新时间这三样东西。</li>
+<li>事故中指定单一对外出口，让工程师专心修复，不必边修边被五个群追问。</li>
+<li>危机进行中就开始追责，会当场关上所有人说真话的口，leader 从此拿不到真实信息。</li>
+<li>Horowitz 主张痛苦的决定别分批做：裁员要亲自传达、一次讲完、讲清原因，挤牙膏式坏消息摧毁信任。</li>
+<li>留下的人最在意你怎么对待离开的人，幸存者的恐慌和负罪感无人安抚，就会引发后续离职潮。</li>
+<li>Blameless postmortem 的目的是修系统而非找罪人：人修不好，系统和流程能修。</li>
+<li>合格的复盘有客观时间线、追问五个为什么的贡献因素，以及带 owner 和 deadline 的系统性行动项。</li>
+<li>危机过后要公开承认它发生过，用事实而非空头保证给安全感，并暂时调慢节奏让团队恢复。</li>
+<li>研究发现，人在约五成概率挨电击时最紧张；不确定比确定的坏消息更折磨人，这正是按时更新的意义。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

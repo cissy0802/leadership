@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
 </style>
 </head>
 <body>
@@ -357,6 +369,30 @@ header h1{font-size:1.55rem}
 <div class="cardwork">
 <strong>本周习作：</strong>给一位入职 30 天内的人做一次 fresh-eyes check-in，记下他指出的第一个"你们很奇怪"的点。<br/><strong>思考题：</strong>你团队哪个流程，新人每次都问"为什么"，而你每次都答"历史原因"？那就是债。
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · Raft 的新成员加入</b>：Raft 论文（Ongaro 与 Ousterhout，2014）让新节点先以不投票的成员身份追平日志，追上了才计入多数派，和 30 天学、60 天贡献、90 天拥有是同一个节奏。不像在于：节点只需复制一份完整日志，新人要学的那一半根本不在任何日志里。</li>
+<li><b>哲学 · 波兰尼的默会知识</b>：Michael Polanyi 在《The Tacit Dimension》（1966）里说，人知道的比能说出来的多，比如认得一张脸却讲不清凭什么认出。写不进 wiki 的隐性规则正是这种知识。不同在于，认脸的诀窍确实说不出，"谁真正拍板"其实说得出，只是没人开口。</li>
+<li><b>生物进化 · 洛伦茨的印随</b>：Konrad Lorenz 在 1930 年代发现，灰雁雏鸟会把孵化后不久最先看到的移动对象认作母亲，此后很难改。新人头几周被派定的 glue work 角色也是这样定型的。不像的是，印随对象由偶然决定，入职第一个任务给谁、给什么，manager 可以有意设计。</li>
+<li><b>神经科学 · 习惯化（Eric Kandel）</b>：Kandel 在海兔身上证明，同一个触碰反复出现，缩鳃反射会越来越弱，突触传递随之减弱，他因此获得 2000 年诺贝尔奖。团队对烂流程的麻木就是习惯化，新人还没被重复训练钝化。不同在于，大脑过滤无害刺激是节能，团队过滤掉的却是真实的流程债。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Michael Watkins 估算，空降的人平均要 6 个月才到收支平衡点，好的 onboarding 能把它提前到 90 天。</li>
+<li>新人 Day 1 之前就该有一份写好的 30/60/90 文档：30 天学、60 天贡献、90 天拥有。</li>
+<li>30/60/90 里程碑要可验证，比如"提交第一个 PR"，不能写"熟悉业务"这种没法判断完成的词。</li>
+<li>没有里程碑的"慢慢来"，等于让新人自己背焦虑、靠读空气猜自己做得对不对。</li>
+<li>前 30 天最该得到的是一次小而真实的上线，good first issue 要走完改代码到看监控的整条流水线。</li>
+<li>新人失败很少因为技术，多因为没搞懂谁拍板、怎么提异议、什么叫做完这些隐性规则。</li>
+<li>onboarding buddy 应该是一位 peer 而不是 manager，因为新人不敢问 manager 蠢问题。</li>
+<li>新人期是 glue work 分派定型的高危期，要有意把第一个有技术可见度的任务交给女性和少数族裔新人。</li>
+<li>Watkins 的 90 天也是收割局外人之眼的窗口：30 天 check-in 问新人哪里奇怪、哪里困惑，并给"继续 / 调整"的方向性反馈。</li>
+<li>团队对烂流程的麻木像神经科学里的习惯化，新人还没被钝化，这个窗口关得很快。</li>
+</ol>
 </div>
 <!-- ============ 深入思考 ============ -->
 <div class="deepthink">

@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -394,6 +406,30 @@ header h1{font-size:1.55rem}
 <div class="section-label">关键参考</div>
 <div class="ref"><strong>Paul Graham,《Maker's Schedule, Manager's Schedule》(2009)</strong>— 整块时间为何对创造者至关重要。<br/><strong>Jason Fried &amp; DHH,《It Doesn't Have to Be Crazy at Work》</strong>— "会议是最后手段"与异步默认文化。<br/><strong>GitLab Handbook</strong>— "handbook-first"：默认把一切写下来的极致实践。</div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · 解释深度错觉</b>：Rozenblit 与 Keil（2002）让人逐步写出拉链的原理，自评的理解程度随即下跌；备忘录也是写不清就暴露没想清。不像在于，实验拆穿的是个人错觉，备忘录把它变成团队的固定关卡。</li>
+<li><b>复杂性科学 · 共识主动性（stigmergy）</b>：Grassé（1959）发现白蚁筑巢不靠彼此沟通，而是看巢上别人留下的痕迹决定下一步。文档优先的组织也靠 repo 里的痕迹协同，不要求人同时在场。不像的是，白蚁的痕迹只有「做了什么」，RFC 和 ADR 还写下「为什么」。</li>
+<li><b>分布式系统 · 只追加的事件日志</b>：事件溯源从不改旧记录，状态变了就追加新事件，正是 ADR「写新的、标 superseded」的规则。不像在于，事件日志能重放出当前状态，ADR 记下的约束却没法重放，只能靠后人读懂。</li>
+<li><b>神经科学 · 注意力残留</b>：Sophie Leroy（2009）发现，没做完就切走的任务会拖住一部分注意力，拖累下一件事，是「一场会切碎下午」在脑内的版本。差别是，清掉会议就能还回整块时间，残留却要等手头的事收尾才散。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>文档优先不是少开会的技巧，而是把「思考」和「广播」分开的组织设计。</li>
+<li>重要的决定先写成叙事备忘录再开会，连贯的叙事比 PPT 更能逼出清晰的思考。</li>
+<li>Amazon 式的会议以默读备忘录开场，让所有人站在同一信息基线上，时间全留给取舍和异议。</li>
+<li>写不清说明没想清，备忘录和解释深度错觉的实验一样，专门暴露自以为懂的地方。</li>
+<li>想法写进带署名和时间戳的文档，能纠正会议里女性被打断、被抢功的问题。</li>
+<li>RFC 是公开、可异步评论、有生命周期的提案，必须设评论截止日和明确的拍板人（DRI）。</li>
+<li>设计文档里价值最高的一节，是「考虑过又否决的替代方案」以及否决的理由。</li>
+<li>ADR 记录决定当时的上下文和约束，把争论从「谁错了」拉回到「约束变了吗」。</li>
+<li>按 Paul Graham 的创造者时间表，一场会就能切碎整个下午，所以默认异步，会议只做升级手段。</li>
+<li>减会要成系统：设无会日、清零 recurring 会议再按需重建、standup 改异步，但 1:1 不能砍。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="homework">

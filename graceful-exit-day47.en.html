@@ -71,6 +71,18 @@ summary{cursor:pointer;font-weight:600;color:#dcba98;font-size:0.98rem}
 details .body{margin-top:10px;font-size:0.93rem;color:#d3c3a9;line-height:1.7}
 details .body strong{color:#dcba98}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
 .card{padding:24px 20px}
@@ -359,6 +371,31 @@ Women's professional networks often lean more on "relational" trust, so goodwill
 </div>
 </div>
 
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Evolutionary biology · The marginal value theorem (Charnov, 1976)</b>: A forager should leave a patch once its intake rate falls to the average of the whole habitat, not after stripping it bare; a flattening learning curve is exactly that marginal signal. The difference: a forager has no voice and cannot ask the patch to regrow, while a person can try to fix the organization before leaving.</li>
+<li><b>Evolutionary game theory · Indirect reciprocity (Nowak and Sigmund, 1998)</b>: Axelrod's repeated game runs on "we will meet again"; indirect reciprocity goes further: I help you because bystanders remember and talk, so reputation does the cooperating with strangers for you. One venting line in an exit interview travels this way to people you never worked with. Unlike the model, where reputation is an accurate record, real gossip distorts, which is why feedback should stay factual and written.</li>
+<li><b>Distributed systems · Graceful shutdown</b>: Before leaving a cluster, a node stops accepting new requests, finishes in-flight work, releases its leases and tells peers to reroute, rather than vanishing and letting others notice by timeout; a two-week handover with your manager told first is the same protocol. Unlike a node, which rejoins blank, a person who comes back carries the full memory of how they left.</li>
+<li><b>Western philosophy · Sartre's "existence precedes essence"</b>: Sartre held that people have no pre-written essence and make themselves through action, the same direction as Ibarra's identity tested in practice. The difference: Sartre stresses the anguish of freedom and all-in commitment, while Ibarra offers cheap, reversible small experiments.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>The reason to leave is not a bad mood but voice that has failed systematically: ignored asks, irreconcilable values, a flat learning curve.</li>
+<li>Hirschman's loyalty, voice and exit come in order; exhaust voice before exit and you leave with an "I tried" record.</li>
+<li>To tell leaving from fleeing, a real signal has facts, counts, deadlines and a structural cause; mood-driven complaints follow you to the next job.</li>
+<li>Never decide to quit at an emotional peak, right after a killed project or a bad 1:1; wait 72 hours.</li>
+<li>In the resignation talk, lead with the decision, frame it as your own growth, offer a handover plan, and tell your manager first, in person.</li>
+<li>If you do not intend to stay, do not use a counter-offer as leverage; accepting it marks you as a flight risk and trust rarely recovers.</li>
+<li>Your industry is a small repeated game, so every word on the way out is a vote on whether anyone will work with you again.</li>
+<li>In the exit interview, give only factual, written, actionable suggestions; personal accusations spread in ways you cannot control.</li>
+<li>Ibarra argues new identities are found by doing: build at least six months of financial runway and test directions with side projects and trial consulting while still employed.</li>
+<li>By the marginal value theorem a forager leaves a patch when its yield drops to the habitat average; a flat learning curve is that signal.</li>
+</ol>
+</div>
 <div class="deep">
 <h3>Going Deeper</h3>
 <details>

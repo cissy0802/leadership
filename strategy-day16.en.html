@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -384,6 +396,31 @@ Research shows that for the same strategy memo, women authors are more likely to
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Distributed systems · Raft's single leader (Ongaro &amp; Ousterhout, 2014)</b>: Raft allows only one leader per term, and every write is ordered through it; otherwise the cluster splits its brain. More than one North Star splits a team the same way, into factions each optimizing its own number. The difference: a failed Raft leader is replaced by automatic election, while changing a North Star should be a deliberate re-diagnosis.</li>
+<li><b>Buddhism · The Four Noble Truths</b>: Suffering, its origin, its cessation and the path map almost exactly onto Rumelt's kernel: name the problem, trace it to its cause, set an overall direction, then prescribe a set of mutually supporting practices, the Eightfold Path. The difference: the Four Truths aim to dissolve craving itself, while a strategy works around an obstacle to win toward a goal it keeps.</li>
+<li><b>Philosophy of science · Lakatos's research programmes (1970)</b>: Lakatos split a theory into a "hard core" held fixed and a "protective belt" of auxiliary hypotheses that can be patched freely, which mirrors firm direction and revisable paths. He also warned that a programme which only patches its belt to absorb anomalies, and stops predicting anything new, is degenerating. That matches the trigger for rewriting a strategy: when a key fact in the diagnosis fails, it is the core that has to move.</li>
+<li><b>Evolutionary biology · Bet-hedging (Dan Cohen, 1966)</b>: Seeds of desert annuals do not all germinate in the same year; some stay dormant in the soil, trading a little growth for not being wiped out by one drought year. Running a spike on each of two candidate frameworks is the same spread bet. The difference: the plant hedges forever, while the team must converge on one choice with data after three months.</li>
+<li><b>Psychology · Tetlock's superforecasters</b>: In the IARPA-funded forecasting tournament of 2011 to 2015, Tetlock's Good Judgment Project found that the best performers stated judgments as specific probabilities and revised them in small steps as evidence arrived. That is the practice of saying "about 60% confident, and I will change course if X appears." The difference: a forecaster only reports a number, while a leader also has to get a team to act on it.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>What blocks a tech leader from leveling up is rarely weak execution but unclear direction: the team is busy yet cannot say what value it serves.</li>
+<li>A North Star metric is the single metric that best captures the core value delivered to users; it is a leading cause of revenue, not revenue itself.</li>
+<li>Latency, availability and new features should become input levers under the North Star, paired with a guardrail metric so speed never costs quality.</li>
+<li>Having more than one North Star metric is the same as having none, because the team splits again across competing numbers.</li>
+<li>In an OKR, the Objective says where we are going and the Key Results say how we know we arrived, and each KR must be honestly falsifiable.</li>
+<li>A KR built on verbs like complete, launch or ship is usually a task; an outcome KR states a number with both a starting point and a target.</li>
+<li>A good OKR is ambitious enough to land around 70%, and tying OKRs to individual performance reviews makes everyone sandbag.</li>
+<li>Rumelt's kernel of strategy is a diagnosis, a guiding policy and a set of coherent actions; a strategy without a diagnosis is a wish list.</li>
+<li>A real strategy states what we will not do; dodging trade-offs and piling on adjectives are the signature traits of bad strategy.</li>
+<li>When information is never complete, set a near enough proximate objective and share your confidence and change signals: firm direction, revisable path.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Your Day 16 Action</h3>

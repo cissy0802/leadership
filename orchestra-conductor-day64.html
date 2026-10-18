@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -349,6 +361,34 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>东方哲学 · 老子「功成事遂」</b>：《道德经》第十七章说，最好的统治者，百姓只知道有他；事情办成了，百姓都说「我们本来就是这样」。这和指挥不发声、成绩由别人的手打出来是同一个结构。不像在于：无为偏向不去干预，指挥却牢牢掌握速度、力度和进入时机。</li>
+<li><b>复杂性科学 · 耦合振子同步（Kuramoto，1975）</b>：一群各有节律的振子，只要彼此耦合够强，就会自发同步，东南亚河边成片萤火虫一齐闪烁就是例子。团队靠共享节拍自同步是同一回事。不像的是，萤火虫没有谁起拍，乐团还要指挥给第一拍，并一直听哪里跑偏。</li>
+<li><b>分布式系统 · 编排与协同（orchestration vs choreography）</b>：微服务有两种协作法：编排由一个中心服务按流程逐个调用，协同则让各服务监听事件、自己决定怎么反应。前者像交响乐团，后者像爵士乐队，取舍也相似：要可追踪、要一致选编排，要松耦合、要演化快选协同。不像在于：协同里的服务只按写死的事件契约反应，不会像乐手那样边听边改主意。</li>
+<li><b>神经科学 · 即兴时大脑关掉「监工」（Limb 与 Braun，2008）</b>：fMRI 扫描爵士钢琴手发现，即兴时背外侧前额叶大片降低活动、内侧前额叶活跃，研究者解读为自我监控放松了，和「yes, and」先不判死同构。不像的是，一个大脑里监工关掉无妨，团队到收敛阶段还得把判断请回来。</li>
+<li><b>佛学 · 缘起</b>：佛学讲诸法因缘和合而生，没有一个独立自存的作者；音乐只在合奏那一刻涌现、归不到某一个人头上，正是这个结构，领导者能做的也只是布置因缘。不像在于：佛学借缘起放下对「我」的执着，团队里却仍要把功劳准确记到先弹出那个音的人名下。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Zander 说指挥是全场唯一不发声的人，技术 leader 最难的一跃，是让成绩由别人的手打出来。</li>
+<li>方案卡住时给结构、不给答案，把主导权交给最合适的人，心里的漂亮解法先忍住。</li>
+<li>不发声不等于不作为：指挥决定速度、力度和进入时机，本身就是很强的塑造。</li>
+<li>好指挥在台上做得最多的事是听：整体是否在一起，哪个声部抢了拍、哪个被落下。</li>
+<li>协调开销爆炸时别靠加会，给一次清晰的起拍，用人人背得出的主旋律让团队自同步。</li>
+<li>一个季度只能有一个主旋律，五个「最重要」等于没有重要。</li>
+<li>交响模式适合确定、要精度和规模的场，爵士模式适合高不确定、要创新的场，用错场就是灾难。</li>
+<li>爵士不是无组织，和弦、节拍和轮流 solo 构成了不写在纸上的隐性结构。</li>
+<li>Sawyer 说的群体天才在合奏中涌现，leader 只能设计条件：用「yes, and」接住想法，把失误当新素材。</li>
+<li>「yes, and」只管发散阶段，决策时要收敛拍板；安静的声部要主动给 solo，功劳要记到先提出的人名下。</li>
+</ol>
+</div>
+
 <!-- ============ 深入思考 ============ -->
 <div class="deep">
 <h3>深入思考</h3>

@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -409,6 +421,31 @@ There's a real asymmetry: when a man says "I don't know," it often reads as "can
 </div>
 </div>
 
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · The Yerkes–Dodson law (1908)</b>: Later readers turned it into an inverted U: too little arousal and people coast, too much and they panic, with peak performance in between, much like the apathy and anxiety zones of the quadrant. The difference: it has a single axis, so pressure and performance trade off; Edmondson splits it into two, so standards can keep rising as long as the cost of candor falls at the same time.</li>
+<li><b>Neuroscience · Reward prediction error (Schultz et al., 1997)</b>: Dopamine neurons fire on "better or worse than expected," and the brain learns from that error signal; a leader admitting a mistake in public lets the team's error signals travel upward. The difference: neurons are never punished for reporting an error, people are, so someone has to show first that reporting is harmless.</li>
+<li><b>Psychology · Asch's conformity experiments (1951)</b>: Subjects who could plainly see which line was longer still often followed a unanimous wrong majority; a single ally giving the right answer cut conformity sharply. Assigning a devil's advocate plants that ally on purpose. The difference: Asch's answers could be checked at a glance, while a meeting's right answer may not show for six months.</li>
+<li><b>Distributed systems · Heartbeat detection</b>: A cluster never reads a node's silence as "all is well"; once the heartbeat stops, the node is presumed down. A team in artificial harmony does the opposite and reads silence as health. The difference: a silent machine is almost always broken, while a silent person may be afraid or may have given up, and those need separate diagnoses.</li>
+<li><b>Chinese philosophy · Harmony without sameness (Analects, Zilu)</b>: "The gentleman is harmonious but not conforming; the small man conforms but is not harmonious" nearly draws the line between real safety and artificial harmony: views differ while relationships hold, versus everyone nodding while the ties underneath fray. The difference: Confucius was describing personal character, while this piece wants difference written into the process.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Google's Project Aristotle studied 180 teams and found psychological safety, not how smart the members were, was the top driver of team effectiveness.</li>
+<li>The opposite of psychological safety is silence, not conflict, and its twin is high standards, not low ones.</li>
+<li>Safety plus high standards is the learning zone, safety plus low standards is only a comfort zone, and without safety teams fall into apathy or anxiety.</li>
+<li>To tell high standards from an unsafe climate, ask whether feedback targets the work or the person, and whether it offers a path to improve.</li>
+<li>Edmondson stresses that safety is modeled: one public "I was wrong" from a leader beats a hundred "feel free to push back"s.</li>
+<li>Hedging or shifting blame right after admitting a mistake, or performing humility as a relatable persona, undoes the admission.</li>
+<li>"Raise issues any time" leaves all the cost and risk of speaking up on employees, so dissent has to be a required step in the process.</li>
+<li>A pre-mortem assumes the plan has already failed and asks why, disguising criticism as prediction and sharply lowering the bar for dissent.</li>
+<li>A rotating devil's advocate turns dissent into an assigned duty, and having the most junior speak first and the boss last avoids anchoring on power.</li>
+<li>A team that never argues is often afraid or has given up, and when open debate disappears it turns into nastier back-channel attacks.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Your Day 21 Action</h3>

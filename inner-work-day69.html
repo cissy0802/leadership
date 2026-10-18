@@ -83,6 +83,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .quad,.six{grid-template-columns:1fr}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -358,6 +370,30 @@ header h1{font-size:1.55rem}
 <p><strong>思考：</strong>如果倦怠是环境的读数，你团队的读数在测量谁？</p>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · Nisbett 与 Wilson「说出比知道的更多」（1977）</b>：实验里被试自信地报告是什么影响了自己的选择，却常常说错，答案和旁观者凭常识猜的几乎一样；内省交出的是合理化的故事，不是读数。不同在于，这项研究只证明内省靠不住，卡 1 还给了出路：去别人那里要具体的行为样本。</li>
+<li><b>分布式系统 · 故障检测器</b>：一个节点很难判断自己是否已经变慢或被隔离，集群靠其他节点的心跳和超时来判定它的状态，自知同样得靠外部观测。不像的是，节点之间的心跳不看对方脸色；人的位置越高，别人报给你的信号越经过过滤。</li>
+<li><b>佛学 · 两支箭（《箭经》，相应部 36.6）</b>：凡夫中了第一支箭的痛，又自己补上第二支箭的懊恼与抗拒；强度落差检查里「多出来的 6 分」正是第二支箭。不像的是，修行求的是第二支箭不再生起，会中协议并不要求不生气，只要求生气时照协议行动。</li>
+<li><b>生态学 · 指示物种</b>：两栖类皮肤透水，种群一垮，生态学家先去查水质，而不是怪青蛙体弱；把倦怠当作环境的读数是同一个思路。不同在于，青蛙说不出是哪种污染，人却能回答六格里是哪一格坏了，所以要先问再修。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>自知的增量主要来自别人看到的具体行为样本，内省多半只产出让自己舒服的叙事。</li>
+<li>Eurich 估计只有 10%–15% 的人真正符合自知标准，而升职会让愿意给你原始数据的人越来越少。</li>
+<li>收到「不好接近」这类模糊反馈时，把「我为什么这样」换成「哪一次、你看到了什么」。</li>
+<li>指定一位敢说难听话的 loving critic 并授权他当场指出，你第一次的反应决定这个机制能否存活。</li>
+<li>Jung 所说的阴影在压力下最危险的形态，是伪装成客观的绩效判断，比如无法证伪的「爱表现」。</li>
+<li>强度落差检查：反应强度远超实际损害时，多出来的部分属于自己，先剥掉再写反馈。</li>
+<li>正念对 leader 唯一可交付的，是被触发的 10 秒里能察觉自己被触发，并执行事先写好的动作。</li>
+<li>被当众质疑时先给情绪命名、再用几秒买时间，最后用写好的句式把人身怀疑转成技术问题。</li>
+<li>Maslach 的倦怠有耗竭、犬儒、效能感崩塌三个维度，由工作量、控制感、回报、共同体、公平、价值观六类错配产生。</li>
+<li>听到下属说累，先定位六格里哪一格坏了，能动的立刻动，动不了的明说动不了，而不是劝他休息。</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

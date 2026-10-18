@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -377,6 +389,32 @@ Bill Campbell 式的"关怀型教练"对女性 leader 是双刃剑：关怀既�
 高压快决策里，女性 leader 面临尖锐的双重标准：同样 50% 信息下的果断决定，男性常被读作"有魄力"，女性可能被读作"激进/情绪化"；而多等信息求稳，又被贴"犹豫/不够 leader"。务实对策：把决策<strong>逻辑显性化</strong>——"信息到 50%、这是可逆动作，所以现在动、边做边看"。让在场者看到你走的是一套<strong>方法</strong>而非冲动，用透明化对冲归因偏见。
 </div>
 </div>
+</div>
+<!-- ============ 越界 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 把计算搬到数据旁边</b>：MapReduce（Dean 与 Ghemawat，2004）不把海量数据拉回中心机器，而是把计算派到数据所在的节点，和「把权力搬到信息所在处」算的是同一笔账：搬信息比搬决策贵。不像的是，各节点跑同一份代码，人不是；所以任务式指挥还得多传一份指挥官意图，让各自的判断朝同一个方向。</li>
+<li><b>东方哲学 · 老子「太上，不知有之」</b>：《道德经》第十七章说最好的统治者，百姓只知道有他；事情办成了，大家都说「我们本来就是这样」。教练的成绩由别人打出来，是同一种退到幕后的功劳观。不像的是，老子讲少干预，Wooden 却要主动去教，并验证对方真的学会。</li>
+<li><b>生物进化 · 代价信号（Zahavi 不利条件原理，1975）</b>：孔雀的大尾巴之所以可信，正因为它昂贵、装不出来。「领导者最后吃饭」同理：付出真代价的牺牲才换得来信任，摆拍式的牺牲没有成本，所以没人信。不像的是，孔雀的信号由演化写进身体，领导者的牺牲每一次都得重新选择。</li>
+<li><b>神经科学 · 预测加工</b>：大脑不是被动接收感官，而是先用内部模型去猜，再拿输入修正；这个内部模型就像 OODA 里的定向，决定同样的信息被读成什么。不像的是，大脑要压低的是自己的预测误差，Boyd 的打法却是用更快的节奏去放大对手的误差。</li>
+<li><b>投资 · 实物期权（Dixit 与 Pindyck，1994）</b>：不可逆投资里，「等一等」本身是一份有价值的期权，新信息可能让你庆幸没下注；可逆动作几乎不含这份期权，越早做越好。这正是「可逆就快做、不可逆才值得多等」的经济学版本。不像的是，期权定价要给不确定性一个数字，事故现场只能凭感觉估。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>军事和体育的领导工具值得借，但公司不是战场，服从不是默认，照搬会割伤团队。</li>
+<li>任务式指挥只下达做什么和为什么，再划出硬边界，把怎么做交给离信息最近的人。</li>
+<li>嘴上说「你定」、事后又推翻下属不同的做法，这种假放权比直接下命令更伤信任。</li>
+<li>教练式 leader 不亲自上场，全部价值在于让场上的人打得更好。</li>
+<li>Wooden 的标准是对方没学会就等于没教，纠正要针对行为和机制，不引发怨恨。</li>
+<li>真正预测战斗力的是任务凝聚，社交凝聚过头反而让人怕伤和气、不敢说真话。</li>
+<li>凝聚要靠领导者在关键时刻先让渡时间、功劳和舒适去换，团建聚餐买不来。</li>
+<li>高压下赢的是 OODA 环转得比对手快的人，定向一环决定同样的信息被读成什么。</li>
+<li>Powell 的 40-70 法则：信息不足 40% 别动手，超过 70% 再动往往已经太晚。</li>
+<li>可逆动作要快做、边做边修，不可逆的大决策才值得慢下来，把信息推得更足。</li>
+</ol>
 </div>
 <!-- ============ Homework ============ -->
 <div class="card">

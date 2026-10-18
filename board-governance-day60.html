@@ -61,6 +61,18 @@ summary{cursor:pointer;font-weight:600;color:#dcba98;font-size:0.98rem}
 details .body{margin-top:10px;font-size:0.93rem;color:#d3c3a9;line-height:1.7}
 details .body strong{color:#dcba98}
 footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#b8a888}
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 @media(max-width:600px){
 header h1{font-size:1.55rem}
 .card{padding:24px 20px}
@@ -343,6 +355,33 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>东方哲学 · 老子「太上，不知有之」</b>：《道德经》说最好的统治者，百姓几乎感觉不到他在，和董事会「把手拿出去」同一个方向。不像在于：老子的无为近乎退场，治理还要「把鼻子伸进来」，该换人时出手。</li>
+<li><b>生物进化 · 多细胞体里的代理问题</b>：癌细胞就是背弃整体、只顾自己增殖的代理人，机体靠细胞凋亡、免疫监视这些结构来管它，和治理不赌人性一样。不像的是，细胞谈不上忠实义务，只能靠机制约束。</li>
+<li><b>心理学 · 责任分散（Darley 与 Latané，1968）</b>：实验里在场的人越多，越没人觉得该自己出手求助。用户体验、可维护性在会上被冷落也是这样：人人以为有别人替它说话。不像的是，实验里的求助者还会喊，沉默方连声音都没有。</li>
+<li><b>神经科学 · 预测编码与 Friston 的自由能原理</b>：按这套理论，大脑高层不接收全部感官流水，主要处理和预期对不上的预测误差，整个系统都在把意外压到最低。给上层只带决策与风险、坏消息趁早说，是同一个结构。不像在于：大脑有时靠忽略信号消灭意外，向上管理最忌的正是把坏消息藏起来。</li>
+<li><b>分布式系统 · 快速失败（fail-fast）</b>：好的系统一出错就立刻报错，不让带病状态悄悄传到下游，因为静默损坏比崩溃难查得多。「无意外」对坏消息也是越早暴露越便宜。不像的是，人还得挑场合，先单独告诉老板再上会。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>董事会不经营公司，只做三件大事：批准战略、聘免 CEO 并定薪、盯住财务合规和重大风险。</li>
+<li>「鼻子伸进来，手拿出去」：该问的问清楚，但别替管理层动手；插手日常是越权，撒手不问是失职。</li>
+<li>面对高层或指导委员会，要带去待批的决策和风险，而不是一份已完成的任务清单。</li>
+<li>董事对股东负有受托责任，核心两条：不谋私、不利益冲突的忠实义务，和认真监督的勤勉义务。</li>
+<li>代理问题是治理的核心难题：经营者未必按所有者利益行事，独立董事、审计、薪酬绑股价都为补这道缝。</li>
+<li>代理问题靠结构解决而不是赌人性，对齐激励和问责，比呼吁觉悟更能让个人利益服从团队利益。</li>
+<li>股东至上（Friedman）和利益相关方主义（Freeman）争了半世纪，真实的董事会总在多方间权衡。</li>
+<li>做重要决定前先把所有利益相关方摊上桌，别让用户、下游团队这些沉默的一方替最吵的一方买单。</li>
+<li>CEO 与董事会靠「无意外」维系信任：坏消息要早说、单独说、在正式会议前说，并带上应对方案。</li>
+<li>「无意外」不等于事事请示：和老板讲清什么级别要提前知道，其余该自己扛的独立拍板。</li>
+</ol>
+</div>
+
 <!-- ============ 深入思考 ============ -->
 <div class="deep">
 <h3>深入思考</h3>

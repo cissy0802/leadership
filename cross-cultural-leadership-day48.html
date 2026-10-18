@@ -77,6 +77,18 @@ header h1{font-size:1.55rem}
 .container{padding:16px 14px 60px}
 .spectrum .marks{font-size:0.68rem}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -382,6 +394,30 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>在"入乡随俗"和"保持真实自我"之间，我不可迁就的底线在哪里？</div>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学 · 预测编码</b>：大脑沿感觉通路主要传递“预测误差”，预期之内的信号被压掉。高语境沟通是同一个结构：双方共享的先验越厚，字面只需送出意外的那一点。不像在哪：大脑的先验来自同一具身体的经验，跨文化的两个人先验不同，压缩过的讯息会被解成另一句话。</li>
+<li><b>心理学 · 沉默螺旋</b>：Noelle-Neumann 1974 年提出，人觉得自己属于少数时会因怕被孤立而闭嘴，沉默又让多数看起来更大。会上“没人反对”也是这样被放大的；不同在于沉默螺旋怕的是同侪，权力距离里怕的是上级。</li>
+<li><b>分布式系统 · 共识协议的提交点</b>：Raft 里 leader 可以很快写下一条日志，但只有在多数节点确认后才算“已提交”，之后不再回滚；未提交的条目可以被覆盖。大写 D 像已提交，小写 d 像未提交。机器靠协议事先写明哪一步算数，人往往各自默认，所以第三张卡片要把决策规则说出来，等于给团队补一份协议。</li>
+<li><b>生物进化 · 群体内变异</b>：Lewontin 1972 年发现，人类遗传变异约 85% 存在于群体内部，群体之间只占小头。“个体差异常大于文化均值差异”是同一个结构。不像在哪：文化是习得的，一代人之内就能改写，Kenji 的直率就是留学经历改出来的。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>跨文化摩擦大多不是能力或态度问题，而是文化把“专业”编码成了不同的样子。</li>
+<li>Hall 区分的低语境文化把意思写进字面，高语境文化把意思藏在关系、场合和沉默里。</li>
+<li>给高语境成员的负面反馈走私下渠道、先肯定再迂回；拿不准时先含蓄，再按反应加直白。</li>
+<li>高语境文化里的“Yes”常常只是“我听到了”，不等于“我同意”。</li>
+<li>高权力距离团队的沉默不是共识，而是没人敢在公开场合反对上级。</li>
+<li>取异议要靠结构：书面评论期、1:1 私下问、明确授权一人唱反调，老板最后表态。</li>
+<li>共识文化的决定是难改的大写 D，自上而下文化的决定是可随时重议的小写 d。</li>
+<li>每个决定事先写明谁是 decider、用共识还是 top-down、何时锁定，并落到书面 doc。</li>
+<li>会议时间要轮值分摊时差痛苦，别让总部时区成为默认的宇宙中心。</li>
+<li>文化维度只是先验假设，要对眼前的具体个人观察并更新，个体差异常大于文化均值差异。</li>
+</ol>
 </div>
 <!-- ============ Deep ============ -->
 <div class="deep">

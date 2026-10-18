@@ -73,6 +73,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -581,6 +593,33 @@ SBI 对女性领导有意外的"保护"作用。当你被反指"过于情绪化"
 </div>
 </div>
 </div>
+<!-- ============ 越界 + 十条要点 ============ -->
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>佛学 · 正语（《无畏王子经》）</b>：佛陀在经中说，真实、有益却不中听的话，如来会说，但要知道说的时机；不真实或无益的话，再动听也不说。这几乎就是 Radical Candor 加上时机矩阵：真实有益对应直接挑战，时机是独立的一轴。不像在于：正语的出发点是说者自己的修行，反馈的落点是对方的成长。</li>
+<li><b>心理学 · 基本归因错误（Lee Ross，1977）</b>：人看别人出错，习惯归到性格上，低估情境的作用。「你太 dominant」正是这个偏差的产物，SBI 把 S 放在第一位，等于强制把情境写回来。不像在于：心理学描述的是一种偏差，SBI 是刻意纠偏的说话格式。</li>
+<li><b>神经科学 · 奖赏预测误差与信用分配</b>：Schultz 等 1997 年发现，多巴胺神经元编码「结果比预期好多少或差多少」，学习靠这个信号；结果离动作越远，越难判断该记在哪一步上。拖到 perf review 才说就是信用分配失败。不像的是，人能用语言补上延迟，SBI 的 S 就是把信号钉回那一刻。</li>
+<li><b>分布式系统 · 预写日志（WAL）</b>：数据库先把变更写进持久日志才算提交，宕机重启以日志为准，不靠各节点的记忆。高 stakes 谈话后的一行书面 recap 就是这份日志。不像的是，日志只求忠实，recap 还得措辞中性，因为它会被人读、被人解读。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>Kim Scott 的 Radical Candor 有两条独立的轴：真心关心这个人、敢于直接挑战，两者都满足才算。</li>
+<li>Ruinous Empathy 是好人最常犯的错：为了不伤感情把话咽回去，对方直到 PIP 时才知道问题。</li>
+<li>Radical Candor 不等于可以直接开骂，Care Personally 是前置条件；正面反馈也要说清具体动作和影响。</li>
+<li>永远只给行为反馈、不给人格反馈：用 SBI 说清具体情境、摄像机拍得到的行为、已经发生的影响。</li>
+<li>SBI 不是宣判，结尾要把话留给对方；加一问「你当时想做什么」的 SBI-Q 能避免误读动机。</li>
+<li>反馈时机是设计选择：默认 24 小时内给，再按情绪温度、对方吸收能力和 stakes 调整。</li>
+<li>情绪温度 6 分以上不立刻给反馈；高 stakes 的事冷却 12–24 小时后预约专门会议，别拖成 ambush。</li>
+<li>Praise in public, criticize in private：当着第三方说负面反馈，语气再温和也是公开羞辱。</li>
+<li>渠道本身是信息：负面反馈默认面对面或视频，不发 Slack 长文，高 stakes 谈话后补一行书面 recap。</li>
+<li>人看别人出错习惯归因于性格，SBI 把情境放在第一位，就是在刻意纠正基本归因错误。</li>
+</ol>
+</div>
+
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>本周习作 · Your Day 2 Action</h3>

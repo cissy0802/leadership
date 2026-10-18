@@ -67,6 +67,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -359,6 +371,31 @@ header h1{font-size:1.55rem}
 <div class="setup"><strong>思考题：</strong>我最引以为傲的"不可替代"，究竟是我的护城河，还是我升不上去的那道天花板？</div>
 </div>
 </div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统 · 热备副本与故障转移</b>：数据库主节点旁挂一个持续同步日志的热备，主节点一挂就能顶上。建板凳是同一个结构：候选人要平时就同步上下文，而不是出事再拷数据。不像的是，副本越像主节点越好，接班人却最忌是你的克隆。</li>
+<li><b>生物进化 · 克隆的脆弱</b>：无性繁殖的种群基因整齐划一，一种病原就可能全军覆没。1950 年代香蕉品种大麦克（Gros Michel）几乎被巴拿马病毁掉，因为全世界种的是同一个克隆。「克隆偏好」挑出的同质板凳，面对变化也是这个下场；不同在于人的多样性可以靠刻意挑选补回来，不必等变异。</li>
+<li><b>心理学 · 生成效应（Slamecka &amp; Graf，1978）</b>：自己想出来的答案，比读到的现成答案记得更牢。「接班人是做会的不是看会的」正是这个机制：让他先说倾向和担心，就是把被动接收换成主动生成。不像的是，实验里的生成没有后果，真决定还要他扛结果。</li>
+<li><b>佛学 · 取（upādāna）</b>：十二因缘里的「取」是执取，苦从抓着不放里来。创始人症候群就是对「我建的」的执取：身退心不退。不同处在于，佛学要放下的是「我」这个概念本身，交接只要求放下位子和存在感，「这是谁建的」反而该留痕。</li>
+<li><b>东西方哲学 · 默会知识（Michael Polanyi，1966）</b>：Polanyi 指出人知道的多于能说出的，骑车、诊断都靠说不清的判断。「只文档化操作，不文档化判断」卡的就是默会的那部分；造钟的意思是尽量把判断说出来，说不出的，就靠影子期和并肩期带着做来传。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>继任规划是持续识别、培养一条后备人才板凳，接班人要提前养，不是位子空了才找。</li>
+<li>挑接班人要看潜力而不只看当下绩效：能不能在更大、更模糊的岗位上继续成长。</li>
+<li>9-box 按绩效和潜力分人，右上角的接班候选值得投资，高绩效专家别硬推去带人。</li>
+<li>板凳上只有一个候选人和系统只有一个节点一样，都是单点故障。</li>
+<li>接班人是做会的不是看会的：把真决定交给他，包括让他犯错得起的错。</li>
+<li>下属来问选哪个方案时，给信息不给结论，把决定的所有权留在他手里。</li>
+<li>交接分影子期、并肩期、反转期、退出期，多数人卡在并肩期，那只是共管。</li>
+<li>交出去的系统出了问题，公开把球踢回接班人，私下再补背景，维护他的权威。</li>
+<li>Collins 和 Porras 的造钟而非报时：把判断沉淀成制度、文档和决策原则，让组织没有你也能运转。</li>
+<li>bus factor 为 1 的「离不开我」是天花板不是护城河，只文档化操作不写判断，换人照样断。</li>
+</ol>
 </div>
 <!-- ============ Deep Questions ============ -->
 <div class="deep">

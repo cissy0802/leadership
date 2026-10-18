@@ -74,6 +74,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -505,6 +517,32 @@ So this isn't 'a hair short' — there are two concrete things that didn't fully
 <p>• Avoid <em>"You were close" / "Next time" / "It was competitive"</em> — these three are the throwaway phrases of perf review.</p>
 </div>
 </div>
+</div>
+
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Kahneman's peak-end rule</b>: in the 1993 cold-water study, people chose to repeat a longer ordeal whose last stretch was slightly warmer; memory scores an episode by its peak and its end, not its total. Recency bias has the same shape. The difference: the study measured one's own experience, while a review judges someone else's half-year, and the fix is external memory such as monthly running notes.</li>
+<li><b>Distributed systems · Clock sync (NTP)</b>: every machine's local clock drifts; NTP compares it with reference servers and corrects the offset so timestamps are comparable across machines. Calibration puts every manager's Exceeds on one ruler. Unlike clocks, though, there is no atomic clock behind a level rubric; the ruler itself is argued out in the room.</li>
+<li><b>Psychology · Rosenthal's experimenter-expectancy effect</b>: in 1963, students told their rats were "maze-bright" or "maze-dull" got better maze runs from the "bright" ones; the evaluator's expectation leaked into the measurement. Double-blind design and the name-swap test are the same remedy. The difference: a manager can never truly rate blind, so masking only works at the rereading step.</li>
+<li><b>Buddhism · The Abhaya Sutta</b>: the Buddha says he will speak words that are true and beneficial even when unwelcome, choosing the right time, and will not speak what is untrue or useless however pleasing. "Withholding feedback is not kindness" has the same structure. The difference: the Buddha makes timing a condition, while review dates and rating quotas are set by the company.</li>
+<li><b>Evolution · Zahavi's handicap principle</b>: a peacock's tail is costly, which is why it is believable; cost keeps signals honest. Nominating everyone for Exceeds is a costless signal, and calibration discounts it. The difference: the peacock pays in energy, the manager pays in credibility earned over a repeated game, and once spent, every rating next round is devalued.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>A perf review is a judgment, not a summary: state the above / at / below thesis, back it with evidence, then give direction.</li>
+<li>The OVERALL paragraph is the review's thesis; put it first, and if you cannot say it in one sentence you have not thought it through.</li>
+<li>Every strength and growth area needs a concrete scene; "communication needs improvement" says nothing at all.</li>
+<li>Calibration is negotiation plus collective arbitration: anchor the rating to the level rubric in 90 seconds and withstand other managers' challenges.</li>
+<li>Over-nominating Exceeds burns a manager's credibility, and next calibration every rating you bring gets discounted.</li>
+<li>Fairness is a craft, not a wish: the brain substitutes impressions for evidence, so bias is suppressed by process, not goodwill.</li>
+<li>Snyder's analysis of 248 reviews found women got more subjective personality criticism, men more feedback tied to business outcomes.</li>
+<li>The name-swap test: replace the name and gender and reread; any sentence you want to change was biased to begin with.</li>
+<li>Meets is neither failure nor a consolation prize; answer "why not Exceeds" with the specific bar and the gap, never by blaming quotas.</li>
+<li>Vague encouragement is textbook Ruinous Empathy; Kim Scott's point is that withholding honest feedback robs people of what they need to grow.</li>
+</ol>
 </div>
 
 <!-- ============ Homework ============ -->

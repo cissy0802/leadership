@@ -75,6 +75,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -416,6 +428,32 @@ Women in large companies usually have shallower capital pools (more scrutiny, le
 <div class="section-label">This Week's Action + Reflection</div>
 <div class="ref"><strong>Action:</strong> Pick one important meeting next week. List the 5 likely voices. Schedule a 1:1 or async note with each before the meeting. In the room, count how many "surprise" concerns appeared.<br><strong>Reflection:</strong> Of the times you were "derailed by a surprise objection in a meeting" last year, how many could have been avoided by a 15-minute 1:1 beforehand?</div>
 </div>
+</div>
+
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Gary Klein's premortem</b>: before starting, assume the project has already failed a year from now and have everyone write down why. Like the court calculus, it moves losing into the simulation ahead of time. The difference: a premortem only hunts failure paths, while the court calculus scores both sides and decides whether to fight now at all.</li>
+<li><b>Eastern philosophy · Zhuangzi's Cook Ding</b>: the cook carves an ox by following its natural seams, sliding the blade through the hollows between joints, so after nineteen years the edge is still fresh. Striking the void looks for the same seams in an org. Unlike an ox, an org's gaps move, and some are minefields left by someone who tried and failed.</li>
+<li><b>Evolution · empty niches and adaptive radiation</b>: after the non-avian dinosaurs died out about 66 million years ago, mammals rapidly filled the vacated niches; planting a flag in space nobody truly owns has the same shape. The difference: evolution needs no one's consent, while an org's gap has a nominal owner, and framing must make that owner a beneficiary.</li>
+<li><b>Psychology · the false consensus effect (Lee Ross et al., 1977)</b>: people overestimate how many others share their views; assuming Sara also cares about long-term tech debt is exactly this bias. Psychology describes it as a general tendency; the essay supplies the correction: read the other side from first-hand data and restate the proposal in their OKR language.</li>
+<li><b>Distributed systems · two-phase commit (2PC)</b>: a coordinator first asks each participant "can you commit?" and only sends commit if every vote is yes; pre-wiring from T-7 to T-2 is the prepare phase, and the Day 0 meeting is just the commit. Unlike 2PC, which must roll back on a single no, people can revise the plan around an objection and turn the objector into a co-author.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>The real core of The Art of War is not scheming but cold accounting of resources, timing, information and minds.</li>
+<li>The Five Factors and Seven Calculations are a pre-battle court calculus: four or more disadvantages mean this fight should not happen now.</li>
+<li>The court calculus exists to fix the plan, not to create anxiety: when it shows disadvantage, shrink the scope or change the timing.</li>
+<li>Run the court calculus on the other side too; a crack in their consensus or a change in their leadership is often the real window.</li>
+<li>Strike the void: don't ram entrenched power; plant a flag in space nobody truly owns, but first find out why it is empty.</li>
+<li>Ride the momentum: hang your proposal on what the CEO or CFO is already pushing, and let the nominal owner chair it and benefit.</li>
+<li>The hard half of "know the other, know yourself" is knowing yourself, because the mirror often shows a projection, not the real you.</li>
+<li>A stakeholder pre-read takes three rounds: their public OKRs, back-channel talks with past collaborators, and asking whether your pitch serves them or just you.</li>
+<li>Sun Tzu's "subdue without fighting" means a meeting only ratifies consensus built beforehand; if debate starts in the room, you are half lost.</li>
+<li>Pre-wiring means hearing concerns and revising the plan, not lobbying; like two-phase commit, it collects every yes before the meeting commits.</li>
+</ol>
 </div>
 
 <!-- ============ Deep Reflection ============ -->

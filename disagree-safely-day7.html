@@ -80,6 +80,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -373,6 +385,33 @@ header h1{font-size:1.55rem}
 </div>
 </div>
 </div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>生物进化 · 马鹿的吼叫较量（Clutton-Brock 与 Albon，1979）</b>：发情期的雄鹿先比吼叫、再并排走，掂量出对方更强多半就撤，真正动角的只是少数，和「开口前先筛」同构。不像在于：鹿一场只赌一次，职场是重复博弈，还得算着异议额度。</li>
+<li><b>心理学 · 自我肯定理论（Claude Steele，1988）</b>：人先在别处确认了自己的价值，面对威胁性信息时防御会降低，更听得进去。安全句式替对方保住体面，起的是同一个作用。不像的是，实验里的肯定和争议无关，这里的台阶得搭在同一场对话里。</li>
+<li><b>佛学 · 正语（《无畏王子经》）</b>：经中说佛陀只说真实、有益的话，哪怕对方不爱听，也要等合适的时机才开口。真话加时机，和安全句式、升级阶梯讲的分寸相通。不像在于：佛陀为的是听者的解脱，我们还在算自己的政治资本。</li>
+<li><b>免疫学 · 分级响应与细胞因子风暴</b>：免疫先在局部发炎，不够才发烧、动员全身；反应过猛的细胞因子风暴会连宿主一起伤。升级阶梯逐级加码、越级是核选项，是同一种成本递增。不像的是，病原体不会记仇，被越过的老板会。</li>
+<li><b>分布式系统 · Raft 共识协议</b>：选举里没把票投给新 leader 的节点，选举一结束照样当它的 follower、执行它复制来的日志，否则集群会分裂成各说各话的「脑裂」。Disagree and commit 就是人的共识协议：可以投反对票，定了就跟着执行。不像在于：节点不留保留意见，人还要把顾虑写成退出条件，触发时按约定回到桌上重审。</li>
+</ul>
+</div>
+
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>异议前先过筛：看决策可不可逆、你的反对有没有真实信息优势，只在不可逆且确信时全力开火。</li>
+<li>异议额度有限，在可逆决策上血战，会让你在真正的单向门前失去发言权。</li>
+<li>按斯多葛的分界，你能控制论证的质量，控制不了别人的决定，没被采纳不等于没被尊重。</li>
+<li>把冲突锁在任务冲突，别滑向关系冲突：前者改进决策，后者摧毁关系。</li>
+<li>用「我看到」「我担心」替换「你没」「你漏」，带着选项来，并给出可证伪的退出条件。</li>
+<li>Adam Grant 说的自信的谦逊两头都要：谦逊地听，自信地说，安全不等于含糊。</li>
+<li>异议升级阶梯从私下口头提开始，逐级到书面、小会、正式留痕，越级是烧桥的核选项。</li>
+<li>韩非说进言之难在知所说之心：先摸清对方真正在保护什么，别当众碰掌权者的逆鳞。</li>
+<li>Disagree and commit 是表达保留后全力执行，被动攻击式执行和反复翻旧账最伤信任。</li>
+<li>退出条件用来及时纠偏，不是「我早说过」的弹药；决定触及伦理或法律红线时就不该 commit。</li>
+</ol>
+</div>
+
 <!-- ============ Resources ============ -->
 <div class="resources">
 <h3>深入资源 · Further Reading</h3>

@@ -72,6 +72,18 @@ header h1{font-size:1.55rem}
 .card h2{font-size:1.2rem}
 .container{padding:16px 14px 60px}
 }
+.crossx{margin-top:50px;padding:24px 26px;background:#0c1825;border-radius:8px;border-top:3px solid #84b4bd}
+.crossx h3{font-size:1.15rem;color:#9bc1c8;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c3bfb9;border-bottom:1px dashed #2f3a3a}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#9bc1c8}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#d5c6b4;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #473d29;border-radius:8px;background:#080f18}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #393120;font-size:0.95rem;line-height:1.75;color:#c3bfb9}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d49a5e}
 </style>
 </head>
 <body>
@@ -445,6 +457,32 @@ Women owning a failure publicly face a double bind: own it too cleanly and you'r
 </div>
 </div>
 
+<!-- ============ Crossovers ============ -->
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Buddhism · The Two Arrows (Sallatha Sutta, SN 36.6)</b>: The first arrow is the bodily pain; the untrained mind then shoots itself with a second, grief and resistance. The outage is the first arrow; "I am just no good" is the self-inflicted second, and that one is shame. The difference: the Buddha would see through the judged "I" altogether, while guilt still needs an "I" who steps up and owns it.</li>
+<li><b>Eastern philosophy · Mencius on shame as the sprout of righteousness</b>: Mencius treats the sense of shame as the seed of rightness, which seems to contradict "shame only drives hiding." But his shame is aimed at a wrong one has done, structurally closer to what Brown calls guilt; the disagreement is mostly about words, not mechanism.</li>
+<li><b>Neuroscience · Social-evaluative threat (Dickerson &amp; Kemeny, 2004)</b>: Pooling 200-plus lab studies, they found the largest cortisol responses came from stressors that were both socially evaluated and uncontrollable; a public failure is both. Unlike the hormone, which settles within about an hour, the pain is stretched out by rumination that a narrative vacuum invites.</li>
+<li><b>Distributed systems · Blameless postmortems</b>: Google's <i>Site Reliability Engineering</i> book (2016) asks postmortems to target the system, not the person, the same move as prying failure loose from identity. The difference: blameless postmortems deliberately name no one, while the ownership narrative here asks you to write, in the first person, where your decision went wrong.</li>
+<li><b>Ecology · Resilience vs. stability (Holling, 1973)</b>: Holling separated stability, how fast a system returns to its old equilibrium after a shock, from resilience, its capacity to absorb the shock and persist, even in a new state. "Recovery means arriving somewhere new with the lesson, not going back" is resilience; unlike an ecosystem, though, you also have a self-story to repair.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Brené Brown separates guilt from shame: guilt targets a behavior and drives repair, while shame targets the self and drives hiding.</li>
+<li>The first move after a failure is to identify whether you are in guilt or shame, because shame makes you hide and hiding lets the failure recur.</li>
+<li>If you can name one concrete repair action, you are still on the guilt track; if you cannot name any, you have slid into shame.</li>
+<li>Women more often attribute failure to ability rather than circumstance, so writing down external factors and changeable behaviors helps block the slide into shame.</li>
+<li>After a public failure, reputation is set less by the size of the failure than by your narrative in the next 72 hours; silence and blame get filled in with the worst version.</li>
+<li>An ownership-style postmortem puts "my lapse" and "my improvement plan" side by side, taking responsibility without self-flagellation.</li>
+<li>Other people's résumés list only successes, and reading only those breeds survivorship bias: the belief that you alone are failing.</li>
+<li>A failure résumé pairs each failure with the specific capability it taught, turning a scar into a usable asset; when the leader shares first, the team dares to follow.</li>
+<li>Seligman's three P's, personalization, pervasiveness and permanence, turn a temporary low point into what feels like a permanent verdict.</li>
+<li>Recovery is not returning to where you were before the failure but reaching a new position with the lesson, just as ecological resilience differs from bouncing back to equilibrium.</li>
+</ol>
+</div>
 <!-- ============ Homework ============ -->
 <div class="homework">
 <h3>This Week's Exercise · Reflection</h3>
