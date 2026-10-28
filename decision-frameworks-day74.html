@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 74：职场常用的判断框架</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+.map{display:flex;flex-direction:column;gap:6px}
+.map .row{display:grid;grid-template-columns:170px 1fr 1.3fr;gap:6px;font-size:0.84rem;line-height:1.55}
+.map .row div{padding:8px 10px;border-radius:3px}
+.map .row .q{font-weight:700;color:#fffaf0;background:#8a5e2a}
+.map .row .c{background:#f4ecdb;color:#3a3630}
+.map .row.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.matrix{display:grid;grid-template-columns:118px 1fr 1fr;gap:6px;font-size:0.86rem;line-height:1.55;margin-top:6px}
+.matrix div{padding:10px 12px;border-radius:3px}
+.matrix .mx-h,.matrix .mx-v{color:#7a6440;font-weight:700;font-size:0.76rem;letter-spacing:1px;background:none;display:flex;align-items:center}
+.matrix .mx-h{justify-content:center}
+.matrix .mx-c{color:#3a3630}
+.matrix .mx-c b{display:block;color:#3d2e1c;margin-bottom:2px}
+.matrix .q1{background:#eef4e6}
+.matrix .q2{background:#f8efdc}
+.matrix .q3{background:#f1eee8}
+.matrix .q4{background:#fbece4}
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
+@media(max-width:600px){
+.map .row{grid-template-columns:1fr}
+.map .row.head{display:none}
+.matrix{grid-template-columns:1fr 1fr}
+.matrix .mx-corner,.matrix .mx-v{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 74 · 2026.10.28</div>
+<h1>职场常用的判断框架</h1>
+<div class="meta"><span>主题：Decision Frameworks at Work</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">"There is surely nothing quite so useless as doing with great efficiency what should not be done at all." — Peter F. Drucker, 1963</div>
+</header>
+<div class="intro">
+<p>管理里的很多难题，其实是同一类问题在反复出现：<strong>这件事值不值得做、做到什么程度？这个决定该多快做？该谁来做、谁说了算？意见不一致时怎么谈？</strong>每一类都有现成的框架可以借，不必每次从头想。</p>
+<p>本期四个原则对应这四个问题。框架的价值，在于逼你问出原本会跳过的那个问题；答案仍然要靠判断。</p>
+<p>贯穿全篇的一条用法：<strong>用框架整理自己的思路，用对方能接受的语言说出结论。</strong>把一张矩阵直接摆到别人面前，有时会被听成你在给 TA 上课，或者在拿一套「客观」的东西压 TA 的判断。</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">四个问题 · 可借的框架 · 一句话</div>
+<div class="map">
+<div class="row head"><div>问题</div><div>可借的框架</div><div>一句话</div></div>
+<div class="row"><div class="q">值不值得做、做到什么程度</div><div class="c">回报—代价矩阵 · 机会成本</div><div class="c">只在少数事上追求出色，其余刻意做到够用</div></div>
+<div class="row"><div class="q">这个决定该多快做</div><div class="c">单向门 / 双向门 · 事前验尸</div><div class="c">可逆的快做，不可逆的慢做</div></div>
+<div class="row"><div class="q">该谁来做、谁说了算</div><div class="c">杠杆 · 委托四档 · DRI</div><div class="c">先问哪件事由你做杠杆最高，每件事只有一个负责人</div></div>
+<div class="row"><div class="q">意见不一致时怎么谈</div><div class="c">立场 vs 利益 · 不同意但执行</div><div class="c">先问「为什么要」，再谈「要什么」</div></div>
+</div>
+<div class="dgm-note">框架用来想清楚，不用来赢辩论。</div>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · 做到什么程度</div>
+<h2>只在少数事上追求出色
+<span class="en">Choose Where to Be Excellent — and Where Good Enough Is the Goal</span></h2>
+<span class="tag">回报—代价矩阵</span><span class="tag">机会成本</span><span class="tag">刻意的够用</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">每件事看两个问题：<strong>做得出色能带来多少回报，做砸了代价有多大。</strong>回报高的事值得投入；回报有限、但做砸了代价很大的事，目标是<strong>刚好达标，但必须稳</strong>；两头都低的，做到最低限度或者砍掉。真正资深的人，不是每件事都做到最好，而是清楚哪一两件事值得做到最好。</div>
+<div class="quote">
+<span class="en">"There is surely nothing quite so useless as doing with great efficiency what should not be done at all."</span>
+<span class="zh">「世上大概没有什么比高效地去做根本不该做的事更无用的了。」</span>
+<span class="source">— Peter F. Drucker，〈Managing for Business Effectiveness〉，HBR，1963</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">回报—代价矩阵</div>
+<div class="matrix">
+<div class="mx-corner"></div><div class="mx-h">做砸的代价低</div><div class="mx-h">做砸的代价高</div>
+<div class="mx-v">做出色的回报高</div><div class="mx-c q1"><b>大胆投入</b>争取做出色，可以多试几次</div><div class="mx-c q2"><b>重点投入</b>既要出色，又要可靠</div>
+<div class="mx-v">做出色的回报低</div><div class="mx-c q3"><b>最低限度</b>或者干脆砍掉</div><div class="mx-c q4"><b>刚好达标，但必须稳</b>有 owner、有自动化、有预警</div>
+</div>
+<div class="dgm-note">配套一个问题：每说一次「好」，挤掉的是哪一件？这就是机会成本。</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：新季度开始，团队手上有一张维护清单：季度权限审计、内部 wiki 的重新排版、一个答应过客户的性能优化，还有一份每周自动生成、很久没人点开的报表。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 两种反应都在浪费团队</div>
+<p>「这些都重要，每件都做好。」——结果每件都只做到七成。<br/>「审计这种事，应付一下就行。」——平时没事，出一次问题就是大事。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：先分格，再分人</div>
+<p>「性能优化是这个季度要做出色的，人先给它。<strong>审计的目标是刚好达标但必须稳</strong>：定一个 owner，能自动化的检查全部自动化，到期前两周有提醒。报表先停一个月，看有没有人来问。wiki 这季度不动。我把这张表发给大家，有不同意见这周提。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>这件事做出色，能带来什么具体的回报？我说得出来吗？</li>
+<li>这件事做砸了，最坏的后果是什么？能挽回吗？</li>
+<li>对「刚好达标」的事，有 owner、自动化和预警吗？</li>
+<li>我刚说「好」的这件事，挤掉了哪一件？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>把「够用」当成「不管」</strong>：右下角的事目标是不出事，不是不投入。被动应付的事，往往在最糟的时候出意外。</li>
+<li><strong>「够用」没有说出口</strong>：你有意识地少投入，别人看到的可能是你掉了球。把取舍写下来，请相关的人确认。</li>
+<li><strong>女性视角</strong>：Babcock、Recalde、Vesterlund 和 Weingart 在 2017 年的研究（AER）发现，<strong>晋升价值低的任务更常被请求交给女性，女性也更常答应</strong>。用这张矩阵给手上的事分格时，留意左下角那一格是不是越堆越多。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>把你手上在做的事全部列出来，每件放进四格中的一格。<strong>数一数：真正需要做到出色的有几件？</strong></p>
+<p><strong>思考：</strong>你最近一次把一件「刚好达标」的事做到了出色，花掉的是谁的时间？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · 多快决定</div>
+<h2>可逆的快做，不可逆的慢做
+<span class="en">Two-Way Doors Fast, One-Way Doors Slow</span></h2>
+<span class="tag">单向门 / 双向门</span><span class="tag">事前验尸</span><span class="tag">说出口的话</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">先问一句：<strong>这个决定做错了，能不能撤回来？</strong>能撤回的是双向门，快速决定，在执行中修正；撤不回的是单向门，慢下来，多找几个人看，先想清楚它会怎么失败。多数决定其实是双向门，但组织常常拿对待单向门的流程去对待它们，于是什么都慢。</div>
+<div class="quote">
+<span class="en">"But most decisions aren't like that – they are changeable, reversible – they're two-way doors."</span>
+<span class="zh">「但大多数决定不是那样的：它们可以改变、可以撤回，是双向门。」</span>
+<span class="source">— Jeff Bezos，2015 年致股东信</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：团队花了两周还在争内部看板用哪个图表库；同一周里，一个对外 API 的字段命名在十分钟的会上就定了，第二天就发给了三个合作方。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 门的类型弄反了</div>
+<p>图表库随时可以换，却被当成单向门来争；对外 API 一旦有人接入就很难改，却被当成双向门随手定了。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：先给决定标上门</div>
+<p>「图表库是双向门，我们选一个，两周后不好用就换，不再开会。<strong>API 字段是单向门</strong>：先做一次事前验尸——假设一年后这个设计让我们很痛苦，最可能是哪里出了问题？然后请两个接过这类接口的人看一遍，下周再定。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>这个决定做错了，撤回来要付出什么？</li>
+<li>我是不是在一扇双向门前开了第三次会？</li>
+<li>对单向门，我做过事前验尸吗？</li>
+<li>决定之后，我有没有定一个回头检查的时间点？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把所有决定都当单向门</strong>：每件事都要对齐、要评审，组织会慢到错过窗口。</li>
+<li><strong>把双向门当成不用回头</strong>：可逆不等于不用复盘。双向门的前提，是你真的会回来看。</li>
+<li><strong>忽略说出口的话</strong>：会上脱口而出的承诺、对别人的评价和判断，往往是单向门，说出去就收不回。越是临时被问到，越要先想一想门的类型。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>接下来两周，每做一个决定，在旁边标一个「单」或「双」。<strong>看看你的时间都花在了哪一种门上。</strong></p>
+<p><strong>思考：</strong>你团队里拖得最久的那个决定，真的是单向门吗？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · 谁来拍板</div>
+<h2>把决定放到合适的那一档
+<span class="en">Put Each Decision at the Right Level</span></h2>
+<span class="tag">杠杆</span><span class="tag">委托四档</span><span class="tag">DRI</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">管理者的产出，是 TA 所带组织的产出。所以最该问的不是「我怎么把这件事做好」，而是<strong>「哪件事由我来做，杠杆最高」</strong>。把团队里常见的决定分成四档：<strong>我决定；我决定，但先听你的；你决定，但告诉我；你自己决定</strong>。每件事只有一个直接负责人（DRI）。</div>
+<div class="quote">
+<span class="en">"A manager's output = The output of his organization + The output of the neighboring organizations under his influence."</span>
+<span class="zh">「管理者的产出 = 他所带组织的产出 + 受他影响的相邻组织的产出。」</span>
+<span class="source">— Andrew S. Grove，《High Output Management》，1983</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一位刚升任的 manager，团队里几乎每个技术选择都要等 TA 点头。TA 每天看几十个代码评审，团队却经常在等 TA。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 每句「我来看一下」都在加队</div>
+<p>每说一次，就多一件等你的事。你成了团队里最贵的瓶颈，团队也学不会自己判断。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：给常见的决定定档</div>
+<p>「我列了团队最常见的十类决定，逐条定档：<strong>接口变更，你决定，但告诉我；新增外部依赖，我决定，但先听你的；内部实现和代码风格，你自己决定，我不再看。</strong>每一类写上 DRI。一个月后我们再看哪几类可以往下放一档。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我今天做的事里，哪一件换成团队里别人做，产出不会变差？</li>
+<li>团队最常见的决定，每一类都定了档吗？</li>
+<li>每件事只有一个 DRI 吗？有没有「两个人都管」的事？</li>
+<li>下属做了一个我不同意的决定，我推翻了吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只交任务，不交决策权</strong>：嘴上说「你负责」，却在每个节点要汇报、要审批，等于没交。</li>
+<li><strong>推翻一次，前功尽弃</strong>：交出去的决定被你推翻一次，之前攒下的信任就倒退一大截。不同意时，先问 TA 的理由。</li>
+<li><strong>共同负责</strong>：两个人都「负责」，常常意味着没人负责。两人搭档领导一件事时，尤其要把每一项落到一个人头上。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>翻开这周的日历，把每个会、每件事标上「只有我能做」或「别人也能做」。<strong>后一类里，挑一件下周交出去。</strong></p>
+<p><strong>思考：</strong>如果你下个月休假，哪些决定会卡住？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · 分歧怎么谈</div>
+<h2>先问为什么要，再谈要什么
+<span class="en">Interests Before Positions</span></h2>
+<span class="tag">立场 vs 利益</span><span class="tag">讲需要</span><span class="tag">不同意但执行</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">立场是「我要什么」，利益是「我为什么要」。两个人的立场常常对立，利益却经常可以同时满足。所以争论的第一步，是<strong>把双方的立场翻译成利益</strong>。表达自己时也一样：讲你的需要和理由，别只抛出一个方案。决定做出之后，就算你不同意，也全力执行。</div>
+<div class="quote">
+<span class="en">"Your position is something you have decided upon. Your interests are what caused you to so decide."</span>
+<span class="zh">「立场是你已经决定的东西；利益是让你做出这个决定的原因。」</span>
+<span class="source">— Roger Fisher &amp; William Ury，《Getting to Yes》，1981</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：版本发布前两周，工程师坚持要先重写一个老模块，PM 坚持不能延期。两人在会上各说各的，谁也说服不了谁。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 在立场上比谁坚持得久</div>
+<p>「必须重写」对「绝不延期」。最后要么一方输了心里不服，要么拖到更晚才定。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：先问各自为什么</div>
+<p>工程师要的是不再每周被这个模块的故障叫醒，PM 要的是守住对一个大客户的承诺。「那我们按期发布，<strong>把出故障最多的两个接口先放到开关后面，发布后第一个迭代就重写它们</strong>。这两周的值班我来兜底。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我能用一句话说出对方「为什么要」吗？</li>
+<li>我表达的是需要，还是一个只有一种答案的方案？</li>
+<li>有没有一种做法能同时满足双方的利益？</li>
+<li>决定做出之后，我有没有在执行上打折扣？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>把方案当需要</strong>：「我要 X」只给了对方一个选项。换成「我需要的是……，所以我倾向 X，有更好的办法我也接受」，对方才有空间。</li>
+<li><strong>嘴上同意，执行打折</strong>：不同意可以在决定前说清楚；决定之后打折执行，比当面反对更伤信任。</li>
+<li><strong>女性视角</strong>：Bowles、Babcock 和 Lai（2007）的实验发现，<strong>主动为自己争取更高薪酬的女性，比做同样事情的男性更容易在评价上受罚</strong>；Bowles 和 Babcock（2013）进一步发现，把请求放进团队与组织关系的语境里来说明，能减轻这种代价。讲利益，在这里既是谈判技巧，也是一层保护。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>下次和人意见不一致时，先别说你的方案，问一句：<strong>「你最担心的是什么？」</strong></p>
+<p><strong>思考：</strong>你最近一次坚持的立场，背后真正的利益是什么？</p>
+</div>
+</div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · Simon 的「满意解」（1956）</b>：Herbert Simon 指出人的理性有限，现实中的决策多半是找到一个「够好」的方案就停下，他称之为 satisficing。「刻意的够用」就是有意识地满意化。不像在于，Simon 描述的是受限之下的结果，这里是主动挑出哪几件事不追求最优。</li>
+<li><b>投资 · 塔勒布的可选性与杠铃（《Antifragile》，2012）</b>：塔勒布主张优先做下行有限、上行很大的事，配置上用「杠铃」：一头极度稳健，一头是小额高赔率的押注，避开中间。回报—代价矩阵是同一副杠铃：做砸代价高的守稳，回报高、做砸也不致命的大胆下注，两头都低的砍掉。不像在于，塔勒布谈的是收益的形状，矩阵谈的是有限的精力怎么分。</li>
+<li><b>分布式系统 · Saga 与补偿事务（Garcia-Molina 与 Salem，1987）</b>：长事务不靠全局锁，而是拆成一串能用补偿操作撤回的小步骤，换来速度。双向门是同一个思路：先确保能撤回，就不必慢。不像的是，系统里的撤回可以事先设计，说出口的话往往没有补偿操作。</li>
+<li><b>分布式系统 · Raft 的单一 leader（Ongaro 与 Ousterhout，2014）</b>：Raft 让每个任期只有一个 leader 接受写入，避免两个节点各写各的「脑裂」。DRI 是同一个道理：两个人都能拍板，组织就会脑裂。不像在于，Raft 的 leader 失效后会自动重选，组织里负责人缺位，常常没人发现。</li>
+<li><b>佛学 · 见取见</b>：阿毗达磨列出的「五见」里有一种叫见取见，指把自己的见解执取为最正确的。死守立场就是这种执取。不像在于，佛学要放下的是对见解本身的执着；谈判只要求你看见立场背后的需要，需要本身不必放下。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>管理里反复出现四类问题：值不值得做、多快决定、谁来拍板、分歧怎么谈，每类都有框架可借。</li>
+<li>框架用来整理自己的判断，结论要用对方能接受的语言说出来，别拿框架压人。</li>
+<li>回报—代价矩阵看两件事：做出色能带来多少回报，做砸了代价有多大。</li>
+<li>回报有限但做砸代价高的事，目标是刚好达标但必须稳：有 owner、有自动化、有预警。</li>
+<li>有意识的「够用」要说出来、写下来，否则别人看到的可能是你掉了球。</li>
+<li>可逆的决定是双向门，快做、边做边改；不可逆的是单向门，慢下来先做事前验尸。</li>
+<li>很多组织的慢，来自拿对待单向门的流程去对待双向门；说出口的话却常常是单向门。</li>
+<li>按 Grove 的说法，管理者的产出是团队的产出，所以先问哪件事由自己做杠杆最高。</li>
+<li>把常见决定分成四档委托，每件事只设一个直接负责人（DRI），避免两个人都管。</li>
+<li>立场是「我要什么」，利益是「我为什么要」；先把立场翻成利益，常能找到双方都接受的方案。</li>
+</ol>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>这些框架有出处吗？</summary><div>单向门与双向门出自 Jeff Bezos 的 2015 年致股东信；事前验尸（premortem）来自心理学家 Gary Klein（HBR，2007）；产出公式与杠杆来自 Andy Grove《High Output Management》(1983)；立场与利益出自 Fisher 和 Ury 的《Getting to Yes》(1981)；DRI 这个说法常被归于 Apple 的内部文化。<strong>回报—代价矩阵没有特定的出处</strong>，它是风险矩阵（可能性 × 影响）和艾森豪威尔矩阵（重要 × 紧急）的近亲。</div></details>
+<details><summary>什么时候框架会误导你？</summary><div>三种情况：为了把事情塞进格子而扭曲事实；分类本身成了争论焦点（「这到底算单向门还是双向门？」），这说明你缺的是信息，不是框架；<strong>拿框架去赢一场讨论，而不是去想清楚一件事</strong>。框架只负责逼你问出该问的问题，答案仍然要靠判断。</div></details>
+<details><summary>怎么把它们变成习惯？</summary><div>一个月的练法：第一周，给手上所有事过一遍回报—代价矩阵；第二周，每个决定标上单向门或双向门；第三周，给团队最常见的十类决定定档、写上 DRI；第四周，每次有分歧，先问一句「你最担心的是什么」。<strong>一次只练一个</strong>，比四个一起用更容易留下来。</div></details>
+<details><summary>AI 会怎样改变这些判断？</summary><div>原型、分析、初稿都在变便宜，<strong>很多原本的单向门会变成双向门</strong>，能「快做」的范围会变大。但真正的单向门——对外承诺、人事决定、说出口的话——不会因此变少，反而更显眼。另一面，执行变便宜之后，「哪件事值得做到出色」的判断会更值钱。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 74 · 2026.10.28</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>

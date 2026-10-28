@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 74: Decision Frameworks for Everyday Work</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+.map{display:flex;flex-direction:column;gap:6px}
+.map .row{display:grid;grid-template-columns:170px 1fr 1.3fr;gap:6px;font-size:0.84rem;line-height:1.55}
+.map .row div{padding:8px 10px;border-radius:3px}
+.map .row .q{font-weight:700;color:#fffaf0;background:#8a5e2a}
+.map .row .c{background:#f4ecdb;color:#3a3630}
+.map .row.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.matrix{display:grid;grid-template-columns:118px 1fr 1fr;gap:6px;font-size:0.86rem;line-height:1.55;margin-top:6px}
+.matrix div{padding:10px 12px;border-radius:3px}
+.matrix .mx-h,.matrix .mx-v{color:#7a6440;font-weight:700;font-size:0.76rem;letter-spacing:1px;background:none;display:flex;align-items:center}
+.matrix .mx-h{justify-content:center}
+.matrix .mx-c{color:#3a3630}
+.matrix .mx-c b{display:block;color:#3d2e1c;margin-bottom:2px}
+.matrix .q1{background:#eef4e6}
+.matrix .q2{background:#f8efdc}
+.matrix .q3{background:#f1eee8}
+.matrix .q4{background:#fbece4}
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
+@media(max-width:600px){
+.map .row{grid-template-columns:1fr}
+.map .row.head{display:none}
+.matrix{grid-template-columns:1fr 1fr}
+.matrix .mx-corner,.matrix .mx-v{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 74 · 2026.10.28</div>
+<h1>Decision Frameworks for Everyday Work</h1>
+<div class="meta"><span>Topic: Decision Frameworks at Work</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"There is surely nothing quite so useless as doing with great efficiency what should not be done at all." — Peter F. Drucker, 1963</div>
+</header>
+<div class="intro">
+<p>Many of the hard problems in management are the same few questions coming back again and again: <strong>Is this worth doing, and how well? How fast should we decide? Who should do it, and who gets the final say? How do we talk when we disagree?</strong> Each question has a ready-made framework you can borrow, so you don't have to think it through from scratch every time.</p>
+<p>The four principles in this issue map to those four questions. A framework earns its keep by forcing you to ask the question you would otherwise skip; the answer still takes judgment.</p>
+<p>One rule of use runs through all of them: <strong>use the framework to organise your own thinking, and state the conclusion in language the other person can accept.</strong> Put a matrix straight in front of someone and it can land as a lecture, or as an "objective" tool you're using to overrule their judgment.</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Four questions · frameworks to borrow · the rule in one line</div>
+<div class="map">
+<div class="row head"><div>Question</div><div>Frameworks to borrow</div><div>In one line</div></div>
+<div class="row"><div class="q">Is it worth doing, and how well?</div><div class="c">reward–cost matrix · opportunity cost</div><div class="c">be excellent at a few things; aim for good enough on purpose everywhere else</div></div>
+<div class="row"><div class="q">How fast should we decide?</div><div class="c">one-way / two-way doors · premortem</div><div class="c">reversible decisions fast, irreversible ones slow</div></div>
+<div class="row"><div class="q">Who does it, who decides?</div><div class="c">leverage · four levels of delegation · DRI</div><div class="c">ask where your time has the most leverage; one owner per decision</div></div>
+<div class="row"><div class="q">How do we talk when we disagree?</div><div class="c">positions vs interests · disagree and commit</div><div class="c">ask "why do you want it" before "what do you want"</div></div>
+</div>
+<div class="dgm-note">Frameworks are for thinking clearly, not for winning arguments.</div>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · HOW GOOD IS GOOD ENOUGH</div>
+<h2>Be Excellent at a Few Things
+<span class="en">Choose where to excel — and where good enough is the goal</span></h2>
+<span class="tag">reward–cost matrix</span><span class="tag">opportunity cost</span><span class="tag">deliberate good enough</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Ask two questions about everything on your plate: <strong>how much does doing it excellently pay off, and how much does getting it wrong cost?</strong> High-payoff work deserves investment. Work with limited payoff but a high cost of failure should be <strong>just good enough — and rock solid</strong>. Where both are low, do the minimum or cut it. Seniority isn't doing everything perfectly; it's knowing which one or two things deserve it.</div>
+<div class="quote">
+<span class="en">"There is surely nothing quite so useless as doing with great efficiency what should not be done at all."</span>
+<span class="source">— Peter F. Drucker, "Managing for Business Effectiveness," <em>HBR</em>, 1963</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">The reward–cost matrix</div>
+<div class="matrix">
+<div class="mx-corner"></div><div class="mx-h">low cost of failure</div><div class="mx-h">high cost of failure</div>
+<div class="mx-v">high payoff from excellence</div><div class="mx-c q1"><b>Invest boldly</b>aim to excel; try several times</div><div class="mx-c q2"><b>Invest heavily</b>it must be excellent and reliable</div>
+<div class="mx-v">low payoff from excellence</div><div class="mx-c q3"><b>Bare minimum</b>or cut it entirely</div><div class="mx-c q4"><b>Just good enough, but solid</b>an owner, automation, early warning</div>
+</div>
+<div class="dgm-note">The companion question: every time you say yes, what gets pushed out? That's opportunity cost.</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: a new quarter starts, and the team's maintenance list holds a quarterly access audit, a redesign of the internal wiki, a performance fix promised to a customer, and a weekly auto-generated report nobody has opened in months.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Both reactions waste the team</div>
+<p>"These all matter, let's do every one well." — Every one ends up done to about 70%.<br/>"Audits? Just get through it." — Nothing happens for a while, then one failure becomes a big deal.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: sort into boxes first, then assign people</div>
+<p>"The performance fix is the one we excel at this quarter, so it gets people first. <strong>For the audit, the goal is just good enough but solid</strong>: one owner, every check that can be automated is automated, and a reminder two weeks before it's due. The report pauses for a month — let's see if anyone asks. The wiki waits this quarter. I'll share this table; raise any disagreement this week."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>What specific payoff does doing this excellently bring? Can I name it?</li>
+<li>If this goes wrong, what's the worst outcome? Can it be undone?</li>
+<li>For the "just good enough" work, is there an owner, automation and early warning?</li>
+<li>The thing I just said yes to — what did it push out?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating "good enough" as "ignore it"</strong>: the goal in the bottom-right box is no incidents, not no investment. Work you handle reactively tends to fail at the worst possible moment.</li>
+<li><strong>Not saying "good enough" out loud</strong>: you are deliberately investing less, but others may see a dropped ball. Write the tradeoff down and have the people affected confirm it.</li>
+<li><strong>The women's angle</strong>: Babcock, Recalde, Vesterlund and Weingart (2017, <em>AER</em>) found that <strong>tasks with low promotability are more often asked of women, and women more often say yes</strong>. When you sort your own work into the matrix, watch whether the bottom-left box keeps growing.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> list everything you're working on and place each item in one of the four boxes. <strong>Count how many truly need to be excellent.</strong></p>
+<p><strong>Reflect:</strong> the last time you made a "just good enough" task excellent, whose time did it cost?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · HOW FAST TO DECIDE</div>
+<h2>Two-Way Doors Fast, One-Way Doors Slow
+<span class="en">Reversibility sets the speed</span></h2>
+<span class="tag">one-way / two-way doors</span><span class="tag">premortem</span><span class="tag">words you can't take back</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">First ask: <strong>if this decision is wrong, can we walk it back?</strong> If yes, it's a two-way door — decide quickly and correct as you go. If not, it's a one-way door — slow down, get more eyes on it, and work out how it could fail before you commit. Most decisions are two-way doors, yet organisations often run them through one-way-door processes, and everything slows down.</div>
+<div class="quote">
+<span class="en">"But most decisions aren't like that – they are changeable, reversible – they're two-way doors."</span>
+<span class="source">— Jeff Bezos, 2015 Letter to Shareholders</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: the team has spent two weeks arguing over which charting library to use for an internal dashboard. The same week, the field names for an external API were settled in a ten-minute meeting and sent to three partners the next day.</div>
+<div class="dialog bad">
+<div class="speaker">✗ The doors are swapped</div>
+<p>The charting library can be swapped any time, yet it's being debated like a one-way door. The external API is hard to change once anyone integrates with it, yet it was decided like a two-way door.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: label the door before deciding</div>
+<p>"The charting library is a two-way door: we pick one, and if it doesn't work in two weeks we switch — no more meetings. <strong>The API fields are a one-way door</strong>: let's run a premortem first. Imagine that a year from now this design is causing us real pain — what most likely went wrong? Then two people who've built interfaces like this review it, and we decide next week."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>If this decision is wrong, what does walking it back cost?</li>
+<li>Am I holding a third meeting in front of a two-way door?</li>
+<li>For one-way doors, have I run a premortem?</li>
+<li>After deciding, did I set a date to come back and check?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Treating every decision as a one-way door</strong>: when everything needs alignment and review, the organisation gets too slow and misses the window.</li>
+<li><strong>Treating two-way doors as never needing a second look</strong>: reversible doesn't mean no review. A two-way door only works if you actually come back.</li>
+<li><strong>Forgetting the words you say</strong>: commitments, judgments and comments about other people blurted out in a meeting are often one-way doors — once said, they can't be unsaid. The more off-the-cuff the question, the more it pays to check which door you're at.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> for the next two weeks, mark each decision you make with "one-way" or "two-way". <strong>See which kind of door your time actually goes to.</strong></p>
+<p><strong>Reflect:</strong> is the decision your team has dragged out longest really a one-way door?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · WHO DECIDES</div>
+<h2>Put Each Decision at the Right Level
+<span class="en">Leverage, four levels of delegation, one owner</span></h2>
+<span class="tag">leverage</span><span class="tag">four levels of delegation</span><span class="tag">DRI</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">A manager's output is the output of the organisation they lead. So the key question isn't "how do I do this well?" but <strong>"which work, done by me, has the most leverage?"</strong> Sort the team's recurring decisions into four levels: <strong>I decide; I decide after hearing you; you decide and tell me; you decide.</strong> Every decision has exactly one directly responsible individual (DRI).</div>
+<div class="quote">
+<span class="en">"A manager's output = The output of his organization + The output of the neighboring organizations under his influence."</span>
+<span class="source">— Andrew S. Grove, <em>High Output Management</em>, 1983</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: a newly promoted manager has to approve almost every technical choice the team makes. They review dozens of code changes a day, and the team is constantly waiting on them.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Every "let me take a look" adds to the queue</div>
+<p>Each time you say it, one more thing waits on you. You become the team's most expensive bottleneck, and the team never learns to judge for itself.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: assign levels to recurring decisions</div>
+<p>"I've listed the ten kinds of decisions we make most often and given each a level: <strong>interface changes — you decide and tell me; new external dependencies — I decide after hearing you; internal implementation and code style — you decide, and I stop reviewing.</strong> Each kind gets a DRI. In a month we'll see which ones can move down a level."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Of what I did today, what could someone on the team have done without the result getting worse?</li>
+<li>Has every kind of recurring decision been given a level?</li>
+<li>Does every piece of work have exactly one DRI? Is anything "owned by two people"?</li>
+<li>When someone made a decision I disagreed with, did I overturn it?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Handing over the task but not the decision</strong>: saying "you own it" while demanding updates and approvals at every step means you handed over nothing.</li>
+<li><strong>One reversal undoes it all</strong>: overturn a decision you delegated even once, and much of the trust you built goes with it. When you disagree, ask for their reasoning first.</li>
+<li><strong>Joint ownership</strong>: when two people both "own" something, often nobody does. When two people co-lead, every item still needs to land on one name.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> go through this week's calendar and mark every meeting and task "only I can do this" or "someone else could". <strong>Pick one from the second group and hand it over next week.</strong></p>
+<p><strong>Reflect:</strong> if you took next month off, which decisions would stall?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · WHEN YOU DISAGREE</div>
+<h2>Interests Before Positions
+<span class="en">Ask why before arguing about what</span></h2>
+<span class="tag">positions vs interests</span><span class="tag">state your needs</span><span class="tag">disagree and commit</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">A position is "what I want"; an interest is "why I want it". Two people's positions are often opposed while their interests can both be met. So the first step in any dispute is <strong>translating both positions into interests</strong>. The same goes for speaking up yourself: state your needs and reasons rather than offering a single solution. Once the decision is made, commit to it fully, even if you disagreed.</div>
+<div class="quote">
+<span class="en">"Your position is something you have decided upon. Your interests are what caused you to so decide."</span>
+<span class="source">— Roger Fisher &amp; William Ury, <em>Getting to Yes</em>, 1981</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: two weeks before a release, an engineer insists on rewriting an old module first, and the PM insists the date can't slip. In the meeting each repeats their own case, and neither persuades the other.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Competing on who holds out longer</div>
+<p>"It has to be rewritten" versus "no delays, period." Either one side loses and resents it, or the decision drags on even longer.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: ask each of them why</div>
+<p>The engineer wants to stop being woken up every week by this module's failures; the PM wants to keep a commitment to a major customer. "Then we ship on time, <strong>put the two most failure-prone endpoints behind a flag, and rewrite them in the first iteration after release</strong>. I'll cover on-call for these two weeks."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Can I say in one sentence why the other person wants what they want?</li>
+<li>Am I stating a need, or a solution that allows only one answer?</li>
+<li>Is there an option that meets both sides' interests?</li>
+<li>After the decision, am I holding back on executing it?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Presenting a solution as a need</strong>: "I want X" gives the other side one option. "What I need is…, so I lean toward X, and I'm open to a better way" leaves them room.</li>
+<li><strong>Agreeing out loud, executing half-heartedly</strong>: disagree clearly before the decision; executing half-heartedly afterwards damages trust more than open disagreement.</li>
+<li><strong>The women's angle</strong>: Bowles, Babcock and Lai (2007) found experimentally that <strong>women who negotiated for higher pay were penalised in evaluations more than men who did the same</strong>; Bowles and Babcock (2013) then found that explaining the request in terms of team and organisational relationships reduced that cost. Leading with interests is a negotiation technique here, and also a layer of protection.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> the next time you disagree with someone, hold back your solution and ask first: <strong>"What worries you most?"</strong></p>
+<p><strong>Reflect:</strong> behind the last position you held firm on, what was the real interest?</p>
+</div>
+</div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Simon's satisficing (1956)</b>: Herbert Simon argued that rationality is bounded, and most real decisions stop at the first option that is good enough — he called it satisficing. "Deliberate good enough" is satisficing on purpose. The difference: Simon described what happens under constraint, while here you actively choose which things not to optimise.</li>
+<li><b>Investing · Taleb's optionality and the barbell (<em>Antifragile</em>, 2012)</b>: Taleb argues for favouring bets with limited downside and large upside, arranged as a barbell — one end extremely safe, the other small high-payoff bets, nothing in the middle. The reward–cost matrix is the same barbell: keep high-failure-cost work solid, bet boldly where the payoff is high and failure isn't fatal, and cut what's low on both. The difference: Taleb is describing the shape of payoffs; the matrix is about allocating limited attention.</li>
+<li><b>Distributed systems · sagas and compensating transactions (Garcia-Molina and Salem, 1987)</b>: instead of holding a global lock, a long transaction is split into small steps that can each be undone by a compensating action, buying speed. A two-way door is the same idea: make sure you can undo, and you don't have to be slow. The difference: in a system, undo can be designed in advance; words once spoken rarely have a compensating action.</li>
+<li><b>Distributed systems · Raft's single leader (Ongaro and Ousterhout, 2014)</b>: Raft allows only one leader to accept writes per term, so two nodes never write conflicting data in a "split brain". A DRI works the same way: if two people can both make the call, the organisation splits its brain. The difference: when a Raft leader fails, a new one is elected automatically; when an owner goes missing in an organisation, often nobody notices.</li>
+<li><b>Buddhism · attachment to views</b>: among the five wrong views listed in the Abhidharma is dṛṣṭi-parāmarśa — clinging to one's own views as the best. Holding a position no matter what is exactly that clinging. The difference: Buddhism asks you to let go of attachment to views themselves; negotiation only asks you to see the needs beneath a position, and the needs themselves can stay.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Four questions keep recurring in management — is it worth doing, how fast to decide, who decides, how to handle disagreement — and each has frameworks to borrow.</li>
+<li>Use a framework to organise your own judgment, then state the conclusion in language the other person can accept; don't use it to overrule people.</li>
+<li>The reward–cost matrix asks two things: how much doing something excellently pays off, and how much getting it wrong costs.</li>
+<li>Work with limited payoff but a high cost of failure should be just good enough and solid: an owner, automation and early warning.</li>
+<li>A deliberate "good enough" must be said out loud and written down, or others may see a dropped ball.</li>
+<li>Reversible decisions are two-way doors to take fast and fix as you go; irreversible ones are one-way doors that need a slower pace and a premortem.</li>
+<li>Much organisational slowness comes from running two-way doors through one-way-door processes, while spoken words are often one-way doors.</li>
+<li>In Grove's terms a manager's output is the team's output, so first ask which work, done by you, has the most leverage.</li>
+<li>Delegate recurring decisions across four levels and give every decision exactly one directly responsible individual (DRI), so nothing is owned by two people.</li>
+<li>A position is what someone wants and an interest is why they want it; translating positions into interests often reveals an option both sides can accept.</li>
+</ol>
+</div>
+<div class="deep">
+<h3>Going deeper</h3>
+<details><summary>Where do these frameworks come from?</summary><div>One-way and two-way doors come from Jeff Bezos's 2015 letter to shareholders; the premortem from psychologist Gary Klein (<em>HBR</em>, 2007); the output equation and leverage from Andy Grove's <em>High Output Management</em> (1983); positions versus interests from Fisher and Ury's <em>Getting to Yes</em> (1981); the term DRI is usually credited to Apple's internal culture. <strong>The reward–cost matrix has no single source</strong> — it's a close relative of the risk matrix (likelihood × impact) and the Eisenhower matrix (important × urgent).</div></details>
+<details><summary>When do frameworks mislead you?</summary><div>Three cases: you bend the facts to fit the boxes; the classification itself becomes the argument ("is this really a one-way door?"), which means you're short on information, not frameworks; and <strong>you use the framework to win a discussion rather than to think something through</strong>. A framework only forces the right question; the answer still takes judgment.</div></details>
+<details><summary>How do I turn them into habits?</summary><div>A one-month plan. Week one: run everything on your plate through the reward–cost matrix. Week two: label each decision as a one-way or two-way door. Week three: assign levels and DRIs to the team's ten most common decisions. Week four: at every disagreement, first ask "what worries you most?" <strong>Practising one at a time</strong> sticks far better than using all four at once.</div></details>
+<details><summary>How will AI change these judgments?</summary><div>Prototypes, analyses and first drafts are all getting cheaper, so <strong>many former one-way doors become two-way doors</strong> and the range of things you can do fast grows. But the real one-way doors — external commitments, people decisions, the things you say — don't shrink; they stand out more. And as execution gets cheaper, the judgment of which work deserves excellence becomes more valuable.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 74 · 2026.10.28</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>
