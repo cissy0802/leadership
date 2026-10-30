@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 75: How Reorgs Actually Work</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+.deep ul{margin:6px 0 0 18px}
+.deep li{margin:4px 0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+.map{display:flex;flex-direction:column;gap:6px}
+.map .row{display:grid;grid-template-columns:150px 1.2fr 1.2fr;gap:6px;font-size:0.84rem;line-height:1.55}
+.map .row div{padding:8px 10px;border-radius:3px}
+.map .row .q{font-weight:700;color:#fffaf0;background:#8a5e2a}
+.map .row .c{background:#f4ecdb;color:#3a3630}
+.map .row.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
+@media(max-width:600px){
+.map .row{grid-template-columns:1fr}
+.map .row.head{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 75 · 2026.10.30</div>
+<h1>How Reorgs Actually Work</h1>
+<div class="meta"><span>Topic: How Reorgs Actually Work</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"When a thing reaches its limit, it changes; by changing, it gets through; by getting through, it endures." — <em>I Ching</em>, Great Commentary</div>
+</header>
+<div class="intro">
+<p>From the outside, a reorg often looks like a shuffle nobody can follow: who got moved, who has a new manager, whose team grew. People inside it tend to read every change as a verdict on themselves.</p>
+<p>But the logic behind most reorgs is fairly consistent: <strong>there's a problem to solve; teams get cut along the boundaries of the system and the work; a small group settles the design and announces it in a deliberate order.</strong> Once you see that logic, you can tell what you can influence and what belongs to the people making the call.</p>
+<p>The first three principles cover how decision-makers think. The fourth covers what you can do when you're inside one.</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Four stages of a reorg · what decision-makers are weighing · what you can do</div>
+<div class="map">
+<div class="row head"><div>Stage</div><div>What decision-makers are weighing</div><div>What you can do</div></div>
+<div class="row"><div class="q">Why change</div><div class="c">A strategy shift, a new leader, growth past the current span of control, too much friction at a boundary</div><div class="c">Find out what problem it's solving; don't read it as a verdict on you</div></div>
+<div class="row"><div class="q">Where to draw boundaries</div><div class="c">Conway's law: cut teams along architecture and delivery dependencies</div><div class="c">Make your case in the language of architecture and dependencies</div></div>
+<div class="row"><div class="q">How it's decided and announced</div><div class="c">Designed by a small group; communication ordered by who's most affected</div><div class="c">Don't dig, don't leak, don't announce other people's news</div></div>
+<div class="row"><div class="q">Before and after it lands</div><div class="c">Handoffs, rebuilding working rhythms, a look back</div><div class="c">State your needs once, then put your energy back into what you control</div></div>
+</div>
+<div class="dgm-note">Structure is a tool for solving problems, not a report card.</div>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · WHY CHANGE</div>
+<h2>Structure Follows Strategy
+<span class="en">Every reorg starts with a problem to solve</span></h2>
+<span class="tag">four triggers</span><span class="tag">scope, not headcount</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">An org structure is a tool for carrying out a strategy. Reorgs usually have one of four triggers: <strong>the strategy has shifted; a new leader has arrived; the team has grown past what the current span of control can handle; or the friction at a team boundary has become too costly.</strong> Every reorg has a price — handoffs, re-learning how to work together, lost momentum — so good leaders don't restructure lightly, and when they do, they try to get it right in one pass.</div>
+<div class="quote">
+<span class="en">"Structure follows strategy."</span>
+<span class="source">— Alfred D. Chandler Jr., <em>Strategy and Structure</em>, 1962</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: two months after a new director arrives, talk of a reorg starts going around. You hear that part of the work you own may move to another team.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Reading the structure as a verdict</div>
+<p>"They're moving my people — do they think I'm not good enough?" Then the headcount math starts: how many people before, how many after.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: ask what problem it's solving</div>
+<p>"What is the new director focused on? Which capability needs to be consolidated? <strong>In the new structure, is what I own core or peripheral?</strong> Who will have decision rights over my work?" Headcount comes after those questions.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Can I say in one sentence what problem this reorg is meant to solve?</li>
+<li>Is what I own core or peripheral to the new strategy?</li>
+<li>Am I analysing the structure, or guessing what people think of me?</li>
+<li>In the new structure, who has decision rights over my work?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Measuring the outcome in headcount</strong>: fewer people can come with more scope and ownership. People remember what you own, not how many people you manage.</li>
+<li><strong>Assuming no change means safe</strong>: if the structure stays put but your work becomes peripheral to the new strategy, you're in a worse position than if you'd moved.</li>
+<li><strong>Seeing only losses</strong>: measured against the best outcome you imagined, any arrangement feels like a loss. Compare it with where you actually stood a month ago.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> write down the problem your organisation's most recent reorg was meant to solve. <strong>If you can't, ask your manager.</strong></p>
+<p><strong>Reflect:</strong> if you were the new leader, how would you cut the organisation you're in today?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · WHERE TO DRAW BOUNDARIES</div>
+<h2>Where You Draw the Boundary Is Where the Friction Lives
+<span class="en">Conway's law and the inverse Conway maneuver</span></h2>
+<span class="tag">Conway's law</span><span class="tag">inverse Conway maneuver</span><span class="tag">V-teams</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">A system's structure ends up copying the communication structure of the organisation that builds it. So experienced leaders work backwards: <strong>decide what architecture you want, then draw teams to match it</strong> — the inverse Conway maneuver. Look at two layers when you draw: can the code be split, and can the delivery be split? Every team boundary on the critical path adds a handoff.</div>
+<div class="quote">
+<span class="en">"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."</span>
+<span class="source">— Melvin Conway, "How Do Committees Invent?", 1968</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: a large rollout is split down the middle between two teams. Every weekly sync is spent chasing the other side's status, and a slip on one team blocks the other team's launch.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Asking for people</div>
+<p>"Move that team under me and the problem goes away." It sounds like empire-building. And even if it happens, the trust has to be rebuilt from scratch.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: draw the dependencies</div>
+<p>"I've drawn two layers: components and interfaces, and milestone dependencies. <strong>There are four cross-team handoffs on the critical path, marked in red.</strong> Here are three ways to cut it, with the handoff count for each." Let the decision-maker see the answer. If the picture shows the two teams split cleanly, accept that and agree on the interface instead.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>How many cross-team handoffs sit on the critical path?</li>
+<li>Is it only the code that splits cleanly, or the delivery too?</li>
+<li>If a V-team spans the boundary, does it have a named DRI, shared milestones and written capacity commitments?</li>
+<li>Did I draw the picture honestly, or start from the conclusion?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Looking at components, not delivery</strong>: however clean the interface, if the launch sequence ties the teams together, they're one unit in execution.</li>
+<li><strong>Thinking a reporting-line change removes friction</strong>: the same people are still there. Trust has to be rebuilt, and whoever was moved may resent it.</li>
+<li><strong>A V-team in name only</strong>: when a member's line manager and the V-team want different things, the V-team usually loses. A V-team with no way to settle conflicts is just a group chat.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> draw the critical path of your most important project and <strong>count how many team boundaries it crosses.</strong></p>
+<p><strong>Reflect:</strong> the two teams in your organisation that clash most often — does their boundary cut through the middle of a delivery?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · HOW IT'S DECIDED AND ANNOUNCED</div>
+<h2>Design in a Small Room, Announce in the Right Order
+<span class="en">Confidential until settled, then sequenced by impact</span></h2>
+<span class="tag">small-group design</span><span class="tag">communication order</span><span class="tag">who gets to announce</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Most reorgs are designed by a small group — the leader, their directs and HR. They draft a few options, size them against headcount a year out, then work down to individuals: who leads what, spans of control, levels. <strong>It stays confidential until it's settled because half-information does the most damage.</strong> The announcement goes in order: affected managers first, then affected people, then everyone — ideally all on the same day.</div>
+<div class="quote">
+<span class="en">"There is nothing more difficult to take in hand, more perilous to conduct, or more uncertain in its success, than to take the lead in the introduction of a new order of things."</span>
+<span class="source">— Niccolò Machiavelli, <em>The Prince</em>, ch. 6, 1532 (trans. W. K. Marriott)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: you're a manager helping design the new structure. One of your reports asks you privately: "I hear there's a reorg — where am I going?"</div>
+<div class="dialog bad">
+<div class="speaker">✗ Trying to reassure, ending up leaking</div>
+<p>"Don't worry, you'll be fine," or "You might be changing teams." If the plan shifts, your words become an empty promise or an early leak.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: say nothing unsettled, but take in their needs</div>
+<p>"The structure is still being worked out, and I can't talk about things that aren't decided. <strong>Tell me what matters most to you, and I'll bring it into the discussion.</strong> Once it's settled, you'll be among the first to know."</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Is every person's scope, reporting line and level written down in the plan?</li>
+<li>Do the most affected people hear first?</li>
+<li>Is anyone likely to hear it through the grapevine first?</li>
+<li>Is it written down who owns what during the transition?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Announcing the structure and filling in people later</strong>: weeks of limbo, and rumour fills the gap.</li>
+<li><strong>Releasing news in batches</strong>: tell half the people today and the rest next week, and the second half will conclude they were left out.</li>
+<li><strong>Announcing on someone else's behalf</strong>: news belongs to the person who made the decision. Even if you know where someone is going, it isn't yours to tell.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> think back to a reorg you lived through. <strong>Who did you hear it from, and in what order?</strong> How did that order make you feel?</p>
+<p><strong>Reflect:</strong> if you were announcing it, who would you tell first?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · INSIDE A REORG</div>
+<h2>Own the Half You Control
+<span class="en">State your needs once, keep delivering, hold the information line</span></h2>
+<span class="tag">dichotomy of control</span><span class="tag">say it once</span><span class="tag">information boundaries</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Someone else decides the structure, but three things are yours: <strong>whether your needs have been heard, whether your work is still excellent, and whether you hold the line on information.</strong> State your needs once, as criteria rather than an org chart. Don't dig for news, don't spread guesses, don't announce on anyone's behalf. Leave the rest to the people making the call.</div>
+<div class="quote">
+<span class="en">"Some things are in our control and others not."</span>
+<span class="source">— Epictetus, <em>Enchiridion</em>, ch. 1 (trans. T. W. Higginson)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: word is your team will be split up. You're sleeping badly and can't stop asking around during the day.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Anxiety leaking out</div>
+<p>Sharing your guesses with your manager, trading rumours with peers, asking for the same reassurance again and again. Each one tells people you're rattled.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: say it once, then go deliver</div>
+<p>One conversation with the person deciding: "I know the structure is still being worked out. <strong>The three things that matter most to me are … How to arrange it is your call.</strong>" Then put your attention back on this week's most important delivery.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Have I stated my needs once? Were they criteria, or a solution?</li>
+<li>Am I spreading guesses?</li>
+<li>What's the most important thing I can deliver this week?</li>
+<li>In the worst case, what's my Plan B?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + a note on the women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Asking for the same commitment twice</strong>: the second time, the other person hears "I don't trust you."</li>
+<li><strong>Fighting over headcount</strong>: winning a few people and losing a relationship is rarely worth it.</li>
+<li><strong>The women's angle</strong>: analysing FTSE 100 companies, Ryan and Haslam (2005) found that <strong>companies appointing women to their boards had often been through a sustained run of poor performance beforehand</strong>. They called it the "glass cliff": women are more likely to be placed in high-risk positions. If a reorg hands you a turnaround role, ask first about resources, support and what success looks like. That isn't declining; it's setting the work up to succeed.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> sort what's worrying you into three columns: <strong>control, influence, neither.</strong> Write a next step only for the first two.</p>
+<p><strong>Reflect:</strong> did the last piece of news you went digging for change anything you actually did?</p>
+</div>
+</div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Evolutionary biology · Punctuated equilibrium (Eldredge and Gould, 1972)</b>: species stay nearly unchanged for long stretches, then diverge quickly in short bursts. Gersick (1991) carried the model over to organisations: long stability broken by brief upheaval — a reorg is that upheaval. Unlike evolution, a reorg has a designer.</li>
+<li><b>Distributed systems · Consistent hashing (Karger et al., 1997)</b>: adding or removing a node moves only about 1/n of the data instead of reshuffling everything. A good reorg aims for the same thing: the new structure with the fewest people moved. The difference is that moving data costs bandwidth; moving people costs trust.</li>
+<li><b>Neuroscience · Uncertainty hurts more than bad news (de Berker et al., 2016)</b>: in the experiment, people who didn't know whether a shock was coming showed bigger stress responses (sweating, pupil changes) than people who knew it was. The hardest part of a reorg is often the weeks of not knowing, not the outcome itself.</li>
+<li><b>Buddhism · Impermanence (anicca)</b>: everything that arises from conditions changes. Reporting lines, teams and positions all arise from conditions. The difference: Buddhism asks you to let go of clinging to them; at work, you still have to say what you need.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>A reorg is a tool: when strategy shifts, a new leader arrives, the team grows or a boundary causes too much friction, the structure follows.</li>
+<li>Don't read a reorg as a verdict on you; first work out what problem it is meant to solve.</li>
+<li>Judge what you gained or lost by scope and ownership, not by headcount.</li>
+<li>Conway's law says a system copies its organisation's communication structure, so wherever you draw a boundary is where the friction lives.</li>
+<li>When drawing teams, check two layers: whether the code can be split, and whether the delivery can be split.</li>
+<li>A V-team can bridge a boundary, but only with a named DRI, shared milestones and written capacity commitments.</li>
+<li>Reorgs are usually designed by a small group and kept confidential until settled, because half-information does the most damage.</li>
+<li>A good announcement order is affected managers, then affected people, then everyone, all on the same day with no limbo.</li>
+<li>Inside a reorg, state your needs once as criteria rather than an org chart; don't dig, don't leak, don't announce for others.</li>
+<li>The weeks of not knowing are often harder than the outcome, so put your energy into what you control and leave the structure to the deciders.</li>
+</ol>
+</div>
+<div class="deep">
+<h3>Going deeper</h3>
+<details><summary>What should I read to go deeper?</summary><div>In order of relevance to engineering organisations:
+<ul>
+<li>Will Larson, <em>An Elegant Puzzle</em> (2019): sizing engineering orgs, drawing teams and running reorgs; the reorg material started as his blog post "Running an engineering reorg."</li>
+<li>Matthew Skelton and Manuel Pais, <em>Team Topologies</em> (2019): the systematic treatment of Conway's law and the inverse Conway maneuver.</li>
+<li>Michael Watkins, <em>The First 90 Days</em>: how new leaders read their situation, which helps explain why they restructure.</li>
+<li>Stephen Heidari-Robinson and Suzanne Heywood, <em>ReOrg: How to Get It Right</em> (2016): the full reorg process from the top; the same authors published a condensed version, "Getting Reorgs Right," in <em>HBR</em> that year.</li>
+<li>Camille Fournier, <em>The Manager's Path</em> (2017): the later chapters cover managing managers and being a director.</li>
+<li>Jeffrey Pfeffer, <em>Power</em> (2010): how power works in organisations — unsentimental, and useful for understanding what others are doing.</li>
+</ul></div></details>
+<details><summary>Why do new leaders so often restructure soon after arriving?</summary><div>Watkins sorts the situations a new leader inherits into five: start-up, turnaround, accelerated growth, realignment and sustaining success, each calling for very different moves. Also, <strong>changing structure early meets the least resistance</strong> — people attribute it to the transition — so many leaders use that window to do it once and properly. Plenty of others watch for a few months first. Neither choice says much on its own.</div></details>
+<details><summary>When does this way of seeing reorgs mislead you?</summary><div>Some reorgs really are about people — performance or politics — and not just strategy and architecture, and Conway's law can be used as a talking point. So <strong>look at both the structure and the people</strong>: use the structural logic to understand the decision, and the human logic to understand its timing and wording. Don't read every change as a plot, but don't assume there are no people considerations in it either.</div></details>
+<details><summary>How will AI change reorgs?</summary><div>If agents take over more and more execution work, teams may get smaller, managers may cover more ground, and team boundaries may follow workflows rather than components. "How many people I manage" will matter less, and <strong>"what outcome I own" will matter more</strong> — which is the first principle, said another way.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 75 · 2026.10.30</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>

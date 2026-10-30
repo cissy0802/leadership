@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 75：Reorg 是怎么运作的</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+.deep ul{margin:6px 0 0 18px}
+.deep li{margin:4px 0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+.map{display:flex;flex-direction:column;gap:6px}
+.map .row{display:grid;grid-template-columns:150px 1.2fr 1.2fr;gap:6px;font-size:0.84rem;line-height:1.55}
+.map .row div{padding:8px 10px;border-radius:3px}
+.map .row .q{font-weight:700;color:#fffaf0;background:#8a5e2a}
+.map .row .c{background:#f4ecdb;color:#3a3630}
+.map .row.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
+@media(max-width:600px){
+.map .row{grid-template-columns:1fr}
+.map .row.head{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 75 · 2026.10.30</div>
+<h1>Reorg 是怎么运作的</h1>
+<div class="meta"><span>主题：How Reorgs Actually Work</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">「穷则变，变则通，通则久。」——《周易·系辞下》</div>
+</header>
+<div class="intro">
+<p>从外面看，reorg（组织重组）常常像一场看不懂的洗牌：谁被划走了，谁换了老板，谁的团队变大了。身在其中的人很容易把每一个变化都读成对自己的评价。</p>
+<p>但多数 reorg 背后的逻辑其实相当固定：<strong>先有一个要解决的问题，再按系统和协作的边界去切团队，然后由一个小圈子定方案、按顺序宣布。</strong>看懂这套逻辑，你就能分清哪些事是你能影响的，哪些事该交给做决定的人。</p>
+<p>本期前三个原则讲决策者怎么想，第四个讲身在其中的人能做什么。</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Reorg 的四个环节 · 决策者在想什么 · 你能做什么</div>
+<div class="map">
+<div class="row head"><div>环节</div><div>决策者在想什么</div><div>身在其中的你</div></div>
+<div class="row"><div class="q">为什么要动</div><div class="c">战略变了、新 leader 到任、规模变了、边界摩擦太大</div><div class="c">先弄清它要解决什么问题，别读成对你的评价</div></div>
+<div class="row"><div class="q">边界怎么切</div><div class="c">Conway 定律：按架构和交付依赖划团队</div><div class="c">用架构和依赖的语言讲你的需要</div></div>
+<div class="row"><div class="q">怎么拍板、怎么宣布</div><div class="c">小圈子闭门设计，按受影响程度排沟通顺序</div><div class="c">不打听、不外传、不替别人宣布</div></div>
+<div class="row"><div class="q">落定之前和之后</div><div class="c">过渡期的交接、重新磨合、复盘</div><div class="c">需要说一次，然后把精力放回能控制的事</div></div>
+</div>
+<div class="dgm-note">结构是解决问题的工具，不是给人打分的成绩单。</div>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · 为什么要动</div>
+<h2>结构跟着战略走
+<span class="en">Structure Follows Strategy</span></h2>
+<span class="tag">reorg 的四种起因</span><span class="tag">scope 不是人头</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">组织结构是实现战略的工具。reorg 最常见的起因有四种：<strong>战略重心变了；新 leader 到任；团队规模变了，原来的管理跨度撑不住；团队之间的边界摩擦太大。</strong>每次 reorg 都有代价：交接、重新磨合、丢失的节奏。所以好的 leader 不轻易动结构，动的时候尽量一次改到位。</div>
+<div class="quote">
+<span class="en">"Structure follows strategy."</span>
+<span class="zh">「结构跟随战略。」</span>
+<span class="source">— Alfred D. Chandler Jr.，《Strategy and Structure》，1962</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：新 director 到任两个月，部门开始传要重组。你听说自己负责的一块工作，可能会并到另一个团队。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 把结构读成评价</div>
+<p>「他们把我的人划走，是不是觉得我不行？」接着开始数人头：之前带几个人，之后带几个人。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：先问它要解决什么问题</div>
+<p>「新 director 的重点是什么？哪一块能力需要集中？<strong>在新结构里，我负责的是核心问题还是边缘问题？</strong>谁对我的工作有决定权？」人数多少，排在这几个问题之后。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>这次 reorg 要解决的问题，我能用一句话说出来吗？</li>
+<li>我负责的事，在新的战略里是核心还是边缘？</li>
+<li>我是在分析结构，还是在猜测别人对我的看法？</li>
+<li>新结构里，谁对我的工作有决定权？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>用人头衡量得失</strong>：带的人少了，scope 和 ownership 可能反而更重。外界记住的是你负责什么，而不是你带几个人。</li>
+<li><strong>以为不动就安全</strong>：结构没变，但你做的事在新战略里变成了边缘，这比换组更危险。</li>
+<li><strong>只看到损失</strong>：拿想象中最好的结果做参照，任何安排都像吃亏。换成「一个月前的真实状态」再比一次。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>写下你所在组织最近一次 reorg 要解决的问题。<strong>如果写不出来，去问你的老板。</strong></p>
+<p><strong>思考：</strong>如果你是新来的 leader，你会怎么切现在这个组织？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · 边界怎么切</div>
+<h2>边界切在哪里，摩擦就在哪里
+<span class="en">Where You Draw the Boundary Is Where the Friction Lives</span></h2>
+<span class="tag">Conway 定律</span><span class="tag">逆 Conway 操作</span><span class="tag">V-team</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">系统的结构会复刻组织的沟通结构。所以懂行的 leader 会反过来做：<strong>先想清楚要什么样的架构，再按架构去划团队</strong>，这叫逆 Conway 操作（inverse Conway maneuver）。划的时候要看两层：代码能不能拆，交付能不能拆。关键路径上每多一条团队边界，就多一次交接。</div>
+<div class="quote">
+<span class="en">"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."</span>
+<span class="zh">「任何设计系统（广义的系统）的组织，产出的设计都会复刻这个组织的沟通结构。」</span>
+<span class="source">— Melvin Conway，〈How Do Committees Invent?〉，1968</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一次大规模的上线，两个团队各管一半。每周同步会都在追问对方的进度，一个团队的延期就会卡住另一个团队的发布。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 直接要人</div>
+<p>「把那个团队划给我，问题就解决了。」听起来像在扩张地盘。就算真划过来了，信任也得从头建。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：把依赖画出来</div>
+<p>「我画了两层图：组件和接口一层，里程碑依赖一层。<strong>关键路径上有四次跨团队交接，都标红了。</strong>下面是三种划法，每种各有几次交接。」结论让做决定的人自己看出来。如果图显示两个团队可以干净地拆开，就接受这个结论，改为约定接口。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>关键路径上有几次跨团队交接？</li>
+<li>能拆开的是代码，还是交付本身也能拆开？</li>
+<li>如果用 V-team 跨越边界，有指定的 DRI、共享的里程碑、写下来的 capacity 吗？</li>
+<li>我的图是照实画的，还是先有结论再画的？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>只看组件，不看交付</strong>：接口再干净，上线顺序互相卡着，执行上还是一体的。</li>
+<li><strong>以为改汇报线就能消除摩擦</strong>：汇报线改了，人还是那些人。信任要重建，被改动的人可能还会心存不满。</li>
+<li><strong>V-team 只给名头</strong>：成员的直属老板和 V-team 的优先级一冲突，V-team 通常会输。没有仲裁机制的 V-team 只是一个微信群。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>在你最重要的项目上，把关键路径画出来，<strong>数一数它跨了几条团队边界。</strong></p>
+<p><strong>思考：</strong>你们组织里最常吵架的两个团队，边界是不是切在了交付的中间？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · 怎么拍板、怎么宣布</div>
+<h2>定下来之前保密，宣布时按顺序
+<span class="en">Design in a Small Room, Announce in the Right Order</span></h2>
+<span class="tag">小圈子设计</span><span class="tag">沟通顺序</span><span class="tag">宣布权</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">多数 reorg 由 leader、TA 的直属和 HR 组成的小圈子设计：先出几个方案，对照未来一年的人员规模估算，再落到每个人身上，包括谁带什么、管理跨度、级别。<strong>定下来之前保密，是因为半截信息最伤人。</strong>宣布要按顺序：先是受影响的 manager，再是受影响的人，最后是全员，最好在同一天完成。</div>
+<div class="quote">
+<span class="en">"There is nothing more difficult to take in hand, more perilous to conduct, or more uncertain in its success, than to take the lead in the introduction of a new order of things."</span>
+<span class="zh">「没有什么比主导建立一种新秩序更难着手、更危险、成败更难料的了。」</span>
+<span class="source">— Niccolò Machiavelli，《君主论》第六章，1532（W. K. Marriott 英译）</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你是参与设计方案的 manager。一位下属私下问你：「听说要重组，我会去哪儿？」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 想安慰，结果走漏了</div>
+<p>「放心，你肯定没事」或者「你可能要换组」。方案一变，你的话就成了空头承诺，或者成了提前泄露的消息。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：不说没定的事，但收下 TA 的需要</div>
+<p>「结构还在讨论，没定的事我不能说。<strong>你最在乎什么，现在告诉我，我会带进讨论里。</strong>定下来之后，你会是第一批知道的人。」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>方案里每个人的 scope、汇报线、级别都写清楚了吗？</li>
+<li>受影响最大的人，是不是最早知道的？</li>
+<li>有没有人会先从小道消息听到？</li>
+<li>过渡期谁负责什么，写下来了吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>先宣布结构，人员以后再说</strong>：留给大家几周的悬空期，谣言会把这段空白填满。</li>
+<li><strong>分批放消息</strong>：今天告诉一半人，下周再告诉另一半，后知道的人会认定自己被排除在外。</li>
+<li><strong>替别人宣布</strong>：消息该由做决定的人来发布。别人的去向，哪怕你知道，也不该由你去说。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>回想你经历过的一次 reorg：<strong>你是从谁那里、以什么顺序听到的？</strong>那个顺序让你有什么感受？</p>
+<p><strong>思考：</strong>如果由你来宣布，你会先告诉谁？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · 身在其中</div>
+<h2>管好你能控制的那一半
+<span class="en">Inside a Reorg, Own What You Control</span></h2>
+<span class="tag">控制二分</span><span class="tag">讲一次需要</span><span class="tag">信息边界</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">结构由别人决定，但有三件事由你决定：<strong>你的需要有没有被听到，你的工作是否仍然出色，你有没有守住信息的边界。</strong>需要只说一次，讲标准，不画 org chart。不打听，不传播猜测，不替别人宣布。剩下的，交给做决定的人。</div>
+<div class="quote">
+<span class="en">"Some things are in our control and others not."</span>
+<span class="zh">「有些事在我们的掌控之中，有些不在。」</span>
+<span class="source">— Epictetus，《Enchiridion》第一章（T. W. Higginson 英译）</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：传言你的团队会被拆开，你夜里睡不好，白天忍不住到处打听。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 焦虑外溢</div>
+<p>向老板说出自己的猜测，跟同事交换小道消息，一遍又一遍地要承诺。每一样都在告诉别人：你很不安。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：讲一次，然后回去交付</div>
+<p>找做决定的人谈一次：「我知道结构还在定。<strong>对我最重要的是三件事：……具体怎么安排，你来定。</strong>」然后把注意力放回这周最重要的交付上。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我的需要说过一次了吗？讲的是标准，还是方案？</li>
+<li>我是不是在传播猜测？</li>
+<li>这周我能交付的最重要的东西是什么？</li>
+<li>最坏情况下，我的 Plan B 是什么？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>反复要承诺</strong>：同一个承诺要第二次，对方听到的是「我不信你」。</li>
+<li><strong>为人头去打仗</strong>：赢了几个人，输了一段关系，往往不值。</li>
+<li><strong>女性视角</strong>：Ryan 和 Haslam（2005）分析英国富时 100 指数公司后发现，<strong>任命女性进入董事会的公司，在任命前往往经历了一段持续的业绩下滑</strong>。他们把这叫作「玻璃悬崖」（glass cliff）：女性更容易被放到风险高的位置上。reorg 里如果有人给你一个「力挽狂澜」的角色，先问清楚资源、支持和成功标准。这不是推辞，是在为这件事的成功做准备。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>把让你担心的事分成三栏：<strong>能控制、能影响、控制不了。</strong>只给前两栏写下一步行动。</p>
+<p><strong>思考：</strong>你最近一次打听来的消息，改变了你的任何行动吗？</p>
+</div>
+</div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>进化生物学 · 间断平衡（Eldredge 与 Gould，1972）</b>：物种长期几乎不变，再在短时期内快速分化。Gersick（1991）把这个模型搬到组织上：长期稳定被短促的剧变打断，reorg 就是那段剧变。不像在于，演化没有设计者。</li>
+<li><b>分布式系统 · 一致性哈希（Karger 等，1997）</b>：集群增删一个节点，只需迁移约 1/n 的数据，不必全部重分。好的 reorg 也一样：用最少的人员移动换来新结构。不像在于，数据迁移花的是带宽，人员迁移花的是信任。</li>
+<li><b>神经科学 · 不确定比坏消息更折磨人（de Berker 等，2016）</b>：实验里，不知道会不会被电击的人，比确定会被电击的人压力反应更大（出汗、瞳孔变化）。reorg 最难熬的往往是悬而未决那几周，而不是结果本身。</li>
+<li><b>佛学 · 无常</b>：一切依条件而生的事物都会变化。汇报线、团队、位置都是依条件而生的。不像在于，佛学讲的是放下对它们的执着；职场里，你仍然需要把自己的需要说出来。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>reorg 是工具：战略变了、新 leader 到任、规模变了、边界摩擦太大，结构就会跟着变。</li>
+<li>别把 reorg 读成对你个人的评价，先弄清楚它要解决什么问题。</li>
+<li>衡量得失，看 scope 和 ownership，不看人头。</li>
+<li>Conway 定律：系统会复刻组织的沟通结构，所以边界切在哪里，摩擦就在哪里。</li>
+<li>划团队要看两层：代码能不能拆，交付能不能拆。</li>
+<li>V-team 能弥补边界，但要有指定的 DRI、共享的里程碑和写下来的 capacity。</li>
+<li>reorg 通常由小圈子闭门设计，定下来之前保密，是为了避免半截信息伤人。</li>
+<li>好的宣布顺序是先受影响的 manager，再受影响的人，最后全员，同一天完成，不留空白期。</li>
+<li>身在其中，需要只说一次，讲标准，不画 org chart；不打听，不外传，不替别人宣布。</li>
+<li>悬而未决的阶段往往比结果更难熬，把精力放回能控制的事上，结构交给做决定的人。</li>
+</ol>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>想深入读，读什么？</summary><div>按和工程组织的相关度排：
+<ul>
+<li>Will Larson《An Elegant Puzzle》(2019)：工程组织的规模、团队怎么划、reorg 怎么做，最初来自他的博客文章 "Running an engineering reorg"。</li>
+<li>Matthew Skelton 与 Manuel Pais《Team Topologies》(2019)：Conway 定律和逆 Conway 操作的系统讲法。</li>
+<li>Michael Watkins《The First 90 Days》：新 leader 上任后怎么判断局面，读懂 TA 为什么动结构。</li>
+<li>Stephen Heidari-Robinson 与 Suzanne Heywood《ReOrg: How to Get It Right》(2016)：从高层视角讲 reorg 的完整流程，两人同年在 HBR 发表过浓缩版 "Getting Reorgs Right"。</li>
+<li>Camille Fournier《The Manager's Path》(2017)：后几章讲带 manager 和当 director。</li>
+<li>Jeffrey Pfeffer《Power》(2010)：组织里的权力怎么运作，观点很现实，适合用来看懂别人在做什么。</li>
+</ul></div></details>
+<details><summary>新 leader 为什么常常上任不久就动结构？</summary><div>Watkins 把新 leader 接手的局面分成五种：新创（start-up）、扭转（turnaround）、加速增长（accelerated growth）、重新对齐（realignment）、保持成功（sustaining success）。不同局面适合的动作完全不同。另外，<strong>刚上任时改结构，阻力最小</strong>，大家会把变化归到交接期，所以不少人会抓住这个窗口一次改到位。也有不少人会先观察几个月。动与不动，本身都不说明什么。</div></details>
+<details><summary>什么时候这套理解会误导你？</summary><div>有些 reorg 确实是在处理人的问题，是绩效或者政治，而不只是战略和架构。Conway 定律也可能只被拿来当说辞。所以<strong>结构和人都要看</strong>：用结构的逻辑理解决定，用人的逻辑理解时机和措辞。别把每次变动都读成阴谋，也别天真到以为里面完全没有人的考量。</div></details>
+<details><summary>AI 会怎样改变 reorg？</summary><div>如果 agent 接走了越来越多的执行工作，团队可能会变小，一个 manager 能带的范围可能会变大，团队边界也可能会按工作流而不是按组件来划。到那时，「我带多少人」会更不重要，<strong>「我负责什么结果」会更重要</strong>。这也是第一个原则的另一种说法。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 75 · 2026.10.30</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>
