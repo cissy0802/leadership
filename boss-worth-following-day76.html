@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 76：值不值得跟：怎么评估一位老板</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+.deep ul{margin:6px 0 0 18px}
+.deep li{margin:4px 0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+.map{display:flex;flex-direction:column;gap:6px}
+.map .row{display:grid;grid-template-columns:150px 1.2fr 1.2fr;gap:6px;font-size:0.84rem;line-height:1.55}
+.map .row div{padding:8px 10px;border-radius:3px}
+.map .row .q{font-weight:700;color:#fffaf0;background:#8a5e2a}
+.map .row .c{background:#f4ecdb;color:#3a3630}
+.map .row.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
+@media(max-width:600px){
+.map .row{grid-template-columns:1fr}
+.map .row.head{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 76 · 2026.11.03</div>
+<h1>值不值得跟：怎么评估一位老板</h1>
+<div class="meta"><span>主题：Is This Boss Worth Following?</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">「鸟则择木，木岂能择鸟？」——《左传·哀公十一年》</div>
+</header>
+<div class="intro">
+<p>选老板可能是职业生涯里被低估最严重的决定。我们花几周比较两份 offer 的薪资，却常常凭一两次谈话、一点好感，就把接下来两年押在一个人身上。</p>
+<p>「值得跟」和「人好」「我喜欢他」都不是一回事。它问的是：<strong>在接下来 18–24 个月里，把职业押在这个人身上，划不划算？</strong>回答它需要证据，不需要印象。本期把这个问题拆成四个：他在往上走吗，他带出来的人去了哪里，他的成功需不需要你的成功，压力来了他怎么做。</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">评估一位老板的四个问题 · 看什么证据 · 容易看错的地方</div>
+<div class="map">
+<div class="row head"><div>问题</div><div>看什么证据</div><div>容易看错的地方</div></div>
+<div class="row"><div class="q">看轨迹</div><div class="c">scope 在长还是在缩；离组织的头号问题有多近</div><div class="c">把稳定当成安全，把头衔当成 scope</div></div>
+<div class="row"><div class="q">看校友</div><div class="c">以前的下属后来去了哪里；离开的人怎么说</div><div class="c">只问还留在他身边的人</div></div>
+<div class="row"><div class="q">看激励</div><div class="c">你的工作在他的考核里排第几</div><div class="c">把激励错位读成人品或眼界</div></div>
+<div class="row"><div class="q">看压力下</div><div class="c">出事时说「我们」还是「他们」；小承诺兑没兑现</div><div class="c">只在顺风时观察，被蜜月期迷惑</div></div>
+</div>
+<div class="dgm-note">四个问题都要用证据回答，别用第一印象回答。</div>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · 看轨迹</div>
+<h2>他在往上走吗
+<span class="en">Is Their Trajectory Rising?</span></h2>
+<span class="tag">scope 的方向</span><span class="tag">离头号问题多近</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">跟随一位老板，是在押注 TA 接下来的轨迹。看三件事：<strong>TA 的 scope 在扩张还是收缩，TA 的上级是否在把新问题交给 TA，TA 的 charter 离组织最关键的问题有多近。</strong>往上走的老板，多出来的 scope 会自然溢出给你；停滞的老板，你得从 TA 手里抢。</div>
+<div class="quote">
+<span class="en">"If you're offered a seat on a rocket ship, don't ask what seat. Just get on."</span>
+<span class="zh">「如果有人给你火箭上的一个座位，别问是哪个座位，先上去。」</span>
+<span class="source">— Eric Schmidt 对 Sheryl Sandberg 说的话，见 Sandberg《Lean In》，2013</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：两个机会摆在面前。一位资深 manager 口碑好，团队稳定多年；另一位到任不久，手里的问题正是公司今年最头疼的那件。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 只比较人</div>
+<p>「前一位人更好，相处起来更舒服。」舒服是真的，但它回答的不是这个问题。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：比较轨迹</div>
+<p>「一年后，哪边的 scope 更可能变大？哪边离 VP 的头号问题更近？<strong>我在哪边会被需要，而不是被安排？</strong>」人好不好很重要，放到第四个问题里看。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>TA 的 org 这两年是在长大还是在缩小？</li>
+<li>TA 的上级最近交给 TA 什么新问题？</li>
+<li>重要的决定做出来时，TA 在不在场？</li>
+<li>TA 的 charter 和公司今年的头号问题隔着几层？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把稳定当成安全</strong>：稳定的团队可能正在变成边缘，只是还没人说出来。</li>
+<li><strong>只看头衔</strong>：头衔大但 scope 在收缩的老板，不如头衔小但 scope 在长的。</li>
+<li><strong>忘了火箭也会爆炸</strong>：上升期的业务风险更高，上去之前问清楚资源和成功标准。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>画出你老板过去两年的 scope 变化：<strong>多了什么，少了什么。</strong></p>
+<p><strong>思考：</strong>如果 TA 明天升一级，你会怎样？如果 TA 明天被边缘化呢？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · 看校友</div>
+<h2>他带出来的人去了哪里
+<span class="en">Where Did Their People Go?</span></h2>
+<span class="tag">校友测试</span><span class="tag">乘数型领导</span><span class="tag">替你开口</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">升职记录可以包装，校友的去向很难包装。看 TA 以前的下属：<strong>有没有升上去，有没有去更好的位置，离开之后还愿不愿意替 TA 说话。</strong>好老板会放人去更大的舞台，哪怕自己的团队因此变小。Liz Wiseman 把这类人叫作「乘数型」领导（Multipliers）：在 TA 手下，人会比原来更能干。</div>
+<div class="quote">
+<span class="en">「桃李不言，下自成蹊。」</span>
+<span class="source">— 司马迁《史记·李将军列传》太史公曰所引谚语</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你在考虑转去一位 director 手下。面谈时 TA 讲了很多培养人的理念。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 只听 TA 讲</div>
+<p>「TA 很重视成长，应该不错。」每个人在面谈里都重视成长。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：去问校友</div>
+<p>找两位 TA 以前的下属，一位还在，一位已经离开，只问一个问题：<strong>「跟 TA 共事那几年，你得到了什么？」</strong>只问感受，不透露你的打算。离开的那位怎么说，往往更有参考价值。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>TA 以前的直属里，过去三年有几个人升职？</li>
+<li>有没有人从 TA 手下去了更大的位置，而且是 TA 帮忙促成的？</li>
+<li>离开 TA 的人，还愿意替 TA 说话吗？</li>
+<li>TA 是在替人开口，还是只给建议？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>只问留下的人</strong>：还在 TA 身边的人，本身就是筛选过的样本。</li>
+<li><strong>把「对我好」当成「带得出人」</strong>：两件事常常不一致。</li>
+<li><strong>女性视角</strong>：Ibarra、Carter 与 Silva（2010，《哈佛商业评论》）分析 Catalyst 对四千多名高潜力员工的调查后发现，<strong>女性得到的 mentoring 并不少，但她们的 mentor 级别普遍更低；同样被 mentor，男性更常因此获得晋升。</strong>所以要分清一位老板是在给你建议，还是在关键会议上替你开口。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>列出你老板过去五年的五位直属，<strong>写下他们现在在哪里。</strong></p>
+<p><strong>思考：</strong>五年后，你希望自己出现在谁的「校友名单」上？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · 看激励</div>
+<h2>他的成功需不需要你的成功
+<span class="en">Does Their Win Need Your Win?</span></h2>
+<span class="tag">激励对齐</span><span class="tag">结构 vs 人品</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">再好的人，关键时刻也会先顾自己被考核的那件事。所以别只问「TA 是不是好人」，要问<strong>「我的成功会不会算进 TA 的成功」</strong>。你的项目排在 TA 考核的前几项，TA 会主动替你争资源；你的项目和 TA 的头号承诺抢人，摩擦迟早会来。这时的摩擦是结构造成的，不是人品造成的。</div>
+<div class="quote">
+<span class="en">"It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest."</span>
+<span class="zh">「我们能吃上晚饭，不是出于屠夫、酿酒师或面包师的仁慈，而是出于他们对自身利益的关切。」</span>
+<span class="source">— Adam Smith，《国富论》第一卷第二章，1776</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你看到一个新方向值得早投入，你的老板却一再要求你先保住 TA 那条线的承诺，两人争执不下。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 归因到人</div>
+<p>「TA 看不清局势，眼界不够。」这个结论让你很难再和 TA 合作，也不一定对。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：先看激励</div>
+<p>「TA 要为那条线的交付负责，我的新方向不在 TA 的考核里。<strong>拦我，是 TA 在做 TA 被考核的事。</strong>」然后去找能同时对两边负责的人，把优先级定下来。之后看 TA 转得多快：拍板后很快转向的人，问题在激励，不在眼界。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>我的工作在 TA 今年的考核里排第几？</li>
+<li>我成功了，TA 的业绩会更好看吗？</li>
+<li>还有谁在和我抢 TA 的注意力？</li>
+<li>TA 的上级在考核 TA 什么？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>把激励错位读成人品</strong>：换一个人坐在同样的位置上，多半会做同样的事。</li>
+<li><strong>以为换个好老板就能解决</strong>：激励不对齐，到哪里都会再来一次。</li>
+<li><strong>下注先于对齐</strong>：方向判断对了，也要先让评价你的人认同，再动资源。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>写下你老板今年的前三项考核，<strong>看你的工作在不在里面。</strong></p>
+<p><strong>思考：</strong>如果你的项目失败了，TA 会损失什么？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · 看压力下</div>
+<h2>坏消息来了，他怎么做
+<span class="en">Watch Them When the News Is Bad</span></h2>
+<span class="tag">性格即命运</span><span class="tag">小承诺</span><span class="tag">不行 vs 不想</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">顺风时人人都像好老板，真实的样子在压力下：<strong>项目延期时替人挡着还是把人推出去，功劳归给团队还是自己领，小承诺有没有兑现，发现自己错了多快转过来。</strong>还要分清「不行」和「不想」：有的老板满足于把一件事做好，不追求更大的舞台。TA 可以是很好的老板，只是未必是你下一程的载体。</div>
+<div class="quote">
+<span class="en">「岁寒，然后知松柏之后凋也。」</span>
+<span class="source">— 《论语·子罕》</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你想知道一位潜在老板在压力下是什么样子，但你还没在 TA 手下干过。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 听 TA 讲的故事</div>
+<p>「TA 说自己最看重团队。」压力下的样子，不会出现在自我介绍里。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：问具体的那一次</div>
+<p>「上次项目出大问题时，你是怎么跟上面汇报的？<strong>当时负责的那个人，后来怎么样了？</strong>」再向 TA 的下属核对同一件事。两个版本对得上，比任何理念都可信。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>出事时，TA 在上级面前说「我们」还是「他们」？</li>
+<li>功劳在汇报里归给了谁？</li>
+<li>TA 上次答应的小事，兑现了吗？</li>
+<li>被证明错了之后，TA 多久转过来？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>被蜜月期迷惑</strong>：你刚来，或者带着资源来，TA 当然热情。第一次利益冲突时，才看得到真实的取舍。</li>
+<li><strong>把「不想」读成「不行」</strong>：不追求更大舞台的老板可以是很好的老板。要走就体面地走，关系还会在很多年的评审会上用到。</li>
+<li><strong>关系刚出裂缝时下结论</strong>：吵完架后对一个人的判断，常常是在替自己的决定找理由。等一等再下。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>回想你现在的老板最难的一次压力时刻：<strong>TA 当时做了什么？</strong></p>
+<p><strong>思考：</strong>你自己在压力下的样子，是你的下属愿意跟随的样子吗？</p>
+</div>
+</div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · Kahneman 的结构化面试（1955）</b>：21 岁的 Kahneman 为以色列国防军改面试：先就六项特质逐项打分，最后才闭眼给一个直觉总分。结果比原来的自由面谈准得多，而排在结构之后的直觉也有用。像在判断人要先拆成问题；不像在于，选老板时你同时是评估方和被评估方。</li>
+<li><b>演化生物学 · 清洁鱼的「围观评分」（Bshary 与 Grutter，2006）</b>：裂唇鱼替大鱼清理寄生虫，有时会偷咬一口黏液。等候的鱼会观察它怎么对待前一位客人，更愿意游向刚才老实干活的那条。不像在于，鱼只看一次，人可以看五年的校友。</li>
+<li><b>分布式系统 · Chaos Monkey（Netflix，2011）</b>：Netflix 故意在生产环境里随机关掉服务器，因为系统的真实韧性只在故障时才看得见。不像在于，你不能给老板制造故障，只能去找 TA 已经经历过的那几次。</li>
+<li><b>佛学 · 《卡拉摩经》</b>：佛陀对卡拉摩人说，不要因为传闻、传统或「这是我们的老师」就相信，要自己验证。像在别凭名声判断一个人；不像在于，佛陀讲的是修行，你验证的是一段职业押注。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>选老板是在押注一段 18–24 个月的轨迹，「值得跟」不等于「人好」，也不等于「我喜欢 TA」。</li>
+<li>看轨迹：老板的 scope 在扩张，机会会溢出给你；scope 在收缩，你得从 TA 手里抢。</li>
+<li>离组织头号问题越近的老板，同样的努力会被放大得越多。</li>
+<li>看校友：升职记录可以包装，一位老板以前下属的去向很难包装。</li>
+<li>打听一位老板时，离开 TA 的人往往比留在身边的人更有参考价值。</li>
+<li>要分清老板是在给你建议，还是在关键会议上替你开口，后者才决定晋升。</li>
+<li>看激励：要问的不是 TA 是不是好人，而是你的成功会不会算进 TA 的成功。</li>
+<li>激励错位造成的摩擦是结构问题，换一个人坐在同样的位置上多半也会这样做。</li>
+<li>看压力下：出事时替人挡着还是推人出去，比顺风时说什么更能说明一位老板。</li>
+<li>不追求更大舞台的老板可以是好老板，只是未必是你下一程的载体，离开时要把关系留住。</li>
+</ol>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>想深入读，读什么？</summary><div>
+<ul>
+<li>Liz Wiseman《Multipliers》(2010)：乘数型和削减型领导的区别，可以直接拿来对照一位老板。</li>
+<li>Herminia Ibarra、Nancy Carter 与 Christine Silva，"Why Men Still Get More Promotions Than Women"（《哈佛商业评论》，2010）：mentor 和 sponsor 的差别。</li>
+<li>Sylvia Ann Hewlett《Forget a Mentor, Find a Sponsor》(2013)：怎么找一位愿意替你开口的人。本站 Day 44 也讲过 sponsor。</li>
+<li>Jeffrey Pfeffer《Power》(2010)：为什么要靠近处理组织核心问题的部门。</li>
+<li>Daniel Kahneman《Thinking, Fast and Slow》(2011) 第 21 章：结构化判断为什么胜过直觉。</li>
+</ul></div></details>
+<details><summary>跟随是有期限的</summary><div>跟一位老板，最好是为了一个说得出口的目的：学会一种能力，拿下一种 scope，或者完成一次晋升。<strong>每半年用这四个问题复盘一次。</strong>目的达到了，或者条件变了，就重新评估。离开一位好老板不是背叛，跟错了还不肯走，才是对自己不负责。</div></details>
+<details><summary>什么时候这套看法会误导你？</summary><div>最大的偏差是信息不对称：现在这位老板的缺点你攒了好几年，新的那位你一条都还不知道，这样比下去，熟悉的人一定更差。所以<strong>要用同一把尺子量两个人</strong>。另一个偏差是把「和我意见一致」当成「有眼界」：真正要看的，是 TA 在你们俩都没有利益的问题上判断准不准。</div></details>
+<details><summary>AI 会怎样改变这个问题？</summary><div>如果 agent 接走了越来越多的执行工作，老板给你分配任务的价值会变小，<strong>替你争取 scope、在评审会上替你开口的价值会变大</strong>。到那时，「看校友」会比「看 TA 本人多能干」更重要。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 76 · 2026.11.03</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>

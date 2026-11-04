@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leadership Day 76: Is This Boss Worth Following?</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+.deep ul{margin:6px 0 0 18px}
+.deep li{margin:4px 0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+.map{display:flex;flex-direction:column;gap:6px}
+.map .row{display:grid;grid-template-columns:150px 1.2fr 1.2fr;gap:6px;font-size:0.84rem;line-height:1.55}
+.map .row div{padding:8px 10px;border-radius:3px}
+.map .row .q{font-weight:700;color:#fffaf0;background:#8a5e2a}
+.map .row .c{background:#f4ecdb;color:#3a3630}
+.map .row.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
+@media(max-width:600px){
+.map .row{grid-template-columns:1fr}
+.map .row.head{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 76 · 2026.11.03</div>
+<h1>Is This Boss Worth Following?</h1>
+<div class="meta"><span>Topic: How to Evaluate a Boss</span><span>·</span><span>4 principles</span></div>
+<div class="subtitle">"The bird chooses its tree; can the tree choose the bird?" — Zuo Zhuan, Duke Ai, Year 11</div>
+</header>
+<div class="intro">
+<p>Choosing a boss may be the most underrated decision in a career. We spend weeks comparing the pay on two offers, yet often bet the next two years on one person after a conversation or two and a good feeling.</p>
+<p>"Worth following" is not the same as "a good person" or "someone I like". The question is: <strong>over the next 18–24 months, is it a good bet to tie your career to this person?</strong> Answering it takes evidence, not impressions. This issue breaks it into four questions: is their trajectory rising, where did their people go, does their win need your win, and what do they do under pressure.</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">Four questions for evaluating a boss · the evidence · the usual misreading</div>
+<div class="map">
+<div class="row head"><div>Question</div><div>Evidence to look at</div><div>Easy to misread</div></div>
+<div class="row"><div class="q">Trajectory</div><div class="c">Is their scope growing or shrinking; how close are they to the organisation's top problem</div><div class="c">Mistaking stability for safety, a title for scope</div></div>
+<div class="row"><div class="q">Alumni</div><div class="c">Where their former reports ended up; what the ones who left say</div><div class="c">Only asking people still on their team</div></div>
+<div class="row"><div class="q">Incentives</div><div class="c">Where your work ranks among the things they are measured on</div><div class="c">Reading misaligned incentives as character or vision</div></div>
+<div class="row"><div class="q">Under pressure</div><div class="c">Do they say "we" or "they" when things break; do they keep small promises</div><div class="c">Only watching in good times; the honeymoon effect</div></div>
+</div>
+<div class="dgm-note">Answer all four with evidence, not with a first impression.</div>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · TRAJECTORY</div>
+<h2>Is Their Trajectory Rising?
+<span class="en">Bet on Where They Are Going</span></h2>
+<span class="tag">direction of scope</span><span class="tag">distance to the top problem</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Following a boss is a bet on where they go next. Look at three things: <strong>whether their scope is expanding or shrinking, whether their own boss keeps handing them new problems, and how close their charter sits to the organisation's most important problem.</strong> When a boss is rising, the extra scope spills over to you; when a boss has stalled, you have to wrestle it away from them.</div>
+<div class="quote">
+<span class="en">"If you're offered a seat on a rocket ship, don't ask what seat. Just get on."</span>
+<span class="source">— Eric Schmidt to Sheryl Sandberg, as told in Sandberg, <em>Lean In</em>, 2013</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: you have two options. One is a senior manager with a great reputation and a team that has been stable for years. The other arrived recently, and the problem in their hands is the one the company is most worried about this year.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Compare only the people</div>
+<p>"The first one is nicer and easier to work with." That may be true, but it answers a different question.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: compare trajectories</div>
+<p>"A year from now, which side is more likely to have grown? Which is closer to the VP's top problem? <strong>Where would I be needed rather than placed?</strong>" Whether they are a good person matters a lot; that is the fourth question.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Has their org grown or shrunk over the past two years?</li>
+<li>What new problem has their boss handed them recently?</li>
+<li>Are they in the room when the important decisions get made?</li>
+<li>How many layers separate their charter from the company's top problem this year?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Mistaking stability for safety</strong>: a stable team may be drifting to the edge; nobody has said so yet.</li>
+<li><strong>Looking only at titles</strong>: a big title with shrinking scope is worth less than a smaller title with growing scope.</li>
+<li><strong>Forgetting that rockets explode</strong>: rising businesses carry more risk. Ask about resources and success criteria before you board.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> sketch how your boss's scope changed over the past two years: <strong>what was added, what was taken away.</strong></p>
+<p><strong>Reflect:</strong> if they were promoted tomorrow, what would happen to you? And if they were sidelined?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · ALUMNI</div>
+<h2>Where Did Their People Go?
+<span class="en">The Alumni Test</span></h2>
+<span class="tag">alumni test</span><span class="tag">multipliers</span><span class="tag">speaking up for you</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">A promotion record can be dressed up; where someone's people ended up is much harder to fake. Look at their former reports: <strong>did they get promoted, did they move on to better roles, and do they still speak well of this boss after leaving?</strong> Good bosses let people go to bigger stages, even when it shrinks their own team. Liz Wiseman calls them "Multipliers": under them, people become more capable than they were.</div>
+<div class="quote">
+<span class="en">"Peach and plum trees do not speak, yet a path forms beneath them."</span>
+<span class="zh">「桃李不言，下自成蹊。」</span>
+<span class="source">— A proverb quoted by Sima Qian, <em>Records of the Grand Historian</em>, Biography of General Li</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: you are considering moving under a director. In the conversation, they talked at length about their philosophy of growing people.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Take their word for it</div>
+<p>"They care a lot about growth; it should be fine." Everyone cares about growth in an interview.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: ask the alumni</div>
+<p>Find two of their former reports, one still there and one who has left, and ask a single question: <strong>"What did you get out of those years working with them?"</strong> Ask about their experience; don't reveal your plans. What the one who left says is often the more useful answer.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>How many of their former directs were promoted in the past three years?</li>
+<li>Has anyone moved from their team to a bigger role, with their help?</li>
+<li>Do the people who left still speak up for them?</li>
+<li>Do they speak up for people, or only give advice?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes + women's angle</div>
+<div class="pitfall">
+<ul>
+<li><strong>Asking only those who stayed</strong>: the people still around them are already a filtered sample.</li>
+<li><strong>Confusing "good to me" with "grows people"</strong>: the two often diverge.</li>
+<li><strong>Women's angle</strong>: Ibarra, Carter and Silva (2010, <em>Harvard Business Review</em>) analysed a Catalyst survey of more than 4,000 high-potential employees and found that <strong>women received no less mentoring, but their mentors were typically more junior, and men were more likely to be promoted as a result of being mentored.</strong> So tell apart a boss who advises you from one who speaks up for you in the meetings that matter.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> list five people who reported to your boss over the past five years, <strong>and write down where they are now.</strong></p>
+<p><strong>Reflect:</strong> five years from now, whose alumni list do you want to be on?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · INCENTIVES</div>
+<h2>Does Their Win Need Your Win?
+<span class="en">Alignment Beats Goodwill</span></h2>
+<span class="tag">incentive alignment</span><span class="tag">structure vs character</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">Even good people put what they are measured on first when it counts. So don't only ask "is this a good person?"; ask <strong>"does my success count toward theirs?"</strong> If your project sits near the top of what they are measured on, they will fight for resources on your behalf. If your project competes for people with their top commitment, friction will come sooner or later, and it will be friction caused by structure, not by character.</div>
+<div class="quote">
+<span class="en">"It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest."</span>
+<span class="source">— Adam Smith, <em>The Wealth of Nations</em>, Book I, Chapter II, 1776</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: you see a new direction worth investing in early, but your boss keeps insisting that you protect their own commitments first. Neither of you gives way.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Blame the person</div>
+<p>"They can't see the bigger picture; they lack vision." That conclusion makes it hard to keep working together, and it may not be right.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: look at the incentives first</div>
+<p>"They are accountable for delivering that line of work, and my new direction isn't in what they are measured on. <strong>Blocking me is them doing what they are measured on.</strong>" Then go to someone accountable for both sides and get the priority settled. Afterwards, watch how quickly they turn: if they turn fast once the call is made, the problem was incentives, not vision.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>Where does my work rank among what they are measured on this year?</li>
+<li>If I succeed, do their results look better?</li>
+<li>Who else is competing with me for their attention?</li>
+<li>What is their own boss measuring them on?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Reading misaligned incentives as character</strong>: put someone else in the same seat and they would probably do the same.</li>
+<li><strong>Thinking a better boss will fix it</strong>: if the incentives don't line up, the same conflict comes back wherever you go.</li>
+<li><strong>Betting before aligning</strong>: even when you are right about the direction, get the person who evaluates you on board before you move resources.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> write down the top three things your boss is measured on this year, <strong>and check whether your work is among them.</strong></p>
+<p><strong>Reflect:</strong> if your project failed, what would they lose?</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · UNDER PRESSURE</div>
+<h2>Watch Them When the News Is Bad
+<span class="en">Character Shows in Hard Winters</span></h2>
+<span class="tag">character is destiny</span><span class="tag">small promises</span><span class="tag">can't vs won't</span>
+</div>
+<div class="section">
+<div class="section-label">Principle + source quote</div>
+<div class="principle">In good times everyone looks like a good boss; the real person shows under pressure: <strong>when a project slips, do they shield people or push them forward; do they credit the team or take it themselves; do they keep small promises; how quickly do they turn around when proven wrong?</strong> Also tell "can't" apart from "won't": some bosses are content to do one thing well and don't want a bigger stage. They can be excellent bosses, just not necessarily the vehicle for your next chapter.</div>
+<div class="quote">
+<span class="en">"Only when the year grows cold do we see that the pine and cypress are the last to fade."</span>
+<span class="zh">「岁寒，然后知松柏之后凋也。」</span>
+<span class="source">— <em>The Analects</em>, Book IX (Zi Han)</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Scripts</div>
+<div class="scene">
+<div class="setup">Situation: you want to know what a prospective boss is like under pressure, but you have never worked for them.</div>
+<div class="dialog bad">
+<div class="speaker">✗ Listen to their stories</div>
+<p>"They say the team matters most to them." How someone behaves under pressure never appears in their self-introduction.</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ Try: ask about one specific time</div>
+<p>"The last time a project went badly wrong, how did you report it upward? <strong>What happened to the person who was responsible?</strong>" Then check the same event with their reports. Two versions that match are more credible than any philosophy.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">Checklist</div>
+<ul class="checklist">
+<li>When things break, do they say "we" or "they" to their own boss?</li>
+<li>Who got the credit in the report upward?</li>
+<li>Did they deliver the small thing they promised last time?</li>
+<li>How long did it take them to turn around after being proven wrong?</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">Common mistakes</div>
+<div class="pitfall">
+<ul>
+<li><strong>Falling for the honeymoon</strong>: when you are new, or arrive bringing resources, of course they are warm. You see their real trade-offs at the first conflict of interest.</li>
+<li><strong>Reading "won't" as "can't"</strong>: a boss who doesn't want a bigger stage can still be a very good boss. If you leave, leave well; the relationship will matter in review meetings for years.</li>
+<li><strong>Judging right after a rupture</strong>: what you conclude about someone right after a fight is often a justification for a decision you have already made. Wait before you decide.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">This week's exercise + reflection</div>
+<div class="mini">
+<p><strong>Do:</strong> recall the hardest moment of pressure your current boss has faced: <strong>what did they do?</strong></p>
+<p><strong>Reflect:</strong> is the way you behave under pressure the way your own reports would want to follow?</p>
+</div>
+</div>
+</div>
+<div class="crossx">
+<h3>Crossovers</h3>
+<ul>
+<li><b>Psychology · Kahneman's structured interview (1955)</b>: at 21, Kahneman redesigned the Israeli army's interviews: rate six traits one by one first, and only at the end close your eyes and give an intuitive overall score. It predicted far better than the old free-form interview, and intuition that came after the structure was useful too. Alike: judging a person starts by breaking the question apart. Unlike: when choosing a boss, you are evaluating and being evaluated at once.</li>
+<li><b>Evolutionary biology · Image scoring in cleaner fish (Bshary &amp; Grutter, 2006)</b>: cleaner wrasse pick parasites off larger fish but sometimes cheat by biting off mucus. Waiting fish watch how a cleaner treats the client before them and prefer the one that just behaved honestly. Unlike: a fish watches once; you can look at five years of alumni.</li>
+<li><b>Distributed systems · Chaos Monkey (Netflix, 2011)</b>: Netflix deliberately kills servers at random in production, because a system's real resilience only shows during failure. Unlike: you can't inject failures into a boss; you can only find the ones they have already been through.</li>
+<li><b>Buddhism · the Kalama Sutta</b>: the Buddha told the Kalamas not to believe something because of hearsay, tradition, or "this is our teacher", but to verify it for themselves. Alike: don't judge a person by reputation. Unlike: the Buddha was talking about practice; you are verifying a career bet.</li>
+</ul>
+</div>
+<div class="tk">
+<h3>Ten takeaways</h3>
+<ol class="takeaways">
+<li>Choosing a boss is a bet on an 18–24 month trajectory; "worth following" is not the same as "a good person" or "someone I like".</li>
+<li>Trajectory: when a boss's scope is expanding, opportunities spill over to you; when it is shrinking, you have to wrestle them away.</li>
+<li>The closer a boss is to the organisation's top problem, the more the same effort gets amplified.</li>
+<li>Alumni: a promotion record can be dressed up, but where a boss's former reports ended up is hard to fake.</li>
+<li>When checking on a boss, the people who left them are often more informative than the ones who stayed.</li>
+<li>Tell apart a boss who gives you advice from one who speaks up for you in the meetings that decide promotions.</li>
+<li>Incentives: the question is not whether they are a good person, but whether your success counts toward theirs.</li>
+<li>Friction from misaligned incentives is a structural problem; someone else in the same seat would probably act the same way.</li>
+<li>Under pressure: whether a boss shields people or pushes them forward when things break says more than anything said in good times.</li>
+<li>A boss who doesn't want a bigger stage can be a good boss, just not necessarily the vehicle for your next chapter; when you leave, keep the relationship.</li>
+</ol>
+</div>
+<div class="deep">
+<h3>Going deeper</h3>
+<details><summary>What should I read to go deeper?</summary><div>
+<ul>
+<li>Liz Wiseman, <em>Multipliers</em> (2010): the difference between leaders who multiply and leaders who diminish, usable as a checklist against a real boss.</li>
+<li>Herminia Ibarra, Nancy Carter and Christine Silva, "Why Men Still Get More Promotions Than Women" (<em>Harvard Business Review</em>, 2010): the difference between a mentor and a sponsor.</li>
+<li>Sylvia Ann Hewlett, <em>Forget a Mentor, Find a Sponsor</em> (2013): how to find someone willing to speak up for you. Day 44 on this site also covers sponsorship.</li>
+<li>Jeffrey Pfeffer, <em>Power</em> (2010): why it pays to be close to the parts of an organisation that handle its core problems.</li>
+<li>Daniel Kahneman, <em>Thinking, Fast and Slow</em> (2011), chapter 21: why structured judgment beats intuition.</li>
+</ul></div></details>
+<details><summary>Following has a time limit</summary><div>It works best to follow a boss for a purpose you can name: learning a capability, taking on a kind of scope, or getting through a promotion. <strong>Review the four questions every six months.</strong> When the purpose is met, or conditions change, re-evaluate. Leaving a good boss is not betrayal; staying with the wrong one is a failure to look after yourself.</div></details>
+<details><summary>When does this way of seeing mislead you?</summary><div>The biggest bias is information asymmetry: you have collected years of your current boss's flaws and none of the new one's, so the familiar person always loses the comparison. <strong>Measure both with the same ruler.</strong> Another bias is mistaking "agrees with me" for "has vision": what matters is whether their judgment is sound on questions where neither of you has a stake.</div></details>
+<details><summary>How will AI change this question?</summary><div>If agents take over more and more execution work, a boss's value in handing out tasks shrinks, and <strong>their value in winning you scope and speaking up for you in reviews grows</strong>. At that point the alumni test will matter more than how capable the boss is personally.</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.en.html">← Back to index</a>
+</nav>
+<footer>BigCat · Leadership · Day 76 · 2026.11.03</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>
