@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>领导力 Day 77：scope 变大之后：放大自己，带资深的人，带 manager</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#f6f3ec;color:#2b2a27;line-height:1.75}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 80px}
+header{text-align:center;padding:56px 0 38px;border-bottom:2px solid #8a6d3b;position:relative}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a0662a;margin-bottom:10px;text-transform:uppercase;font-weight:700}
+header h1{font-size:2.05rem;font-weight:800;color:#3d2e1c;letter-spacing:2px;line-height:1.3}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a6440}
+header .meta span{margin:0 8px}
+header .subtitle{margin-top:18px;font-size:1rem;color:#a0662a;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
+.intro{margin:36px 0 12px;padding:22px 26px;background:#fffdf8;border-left:4px solid #a0662a;border-radius:4px;font-size:0.97rem;color:#3a3630}
+.intro strong{color:#3d2e1c}
+.intro p{margin-top:12px}
+.intro p:first-child{margin-top:0}
+.card{margin-top:42px;background:#fffdf8;border-radius:8px;padding:34px 32px;box-shadow:0 2px 14px rgba(0,0,0,0.09);border-top:3px solid #a0662a}
+.card-header{border-bottom:1px solid #e6dcc8;padding-bottom:18px;margin-bottom:22px}
+.card-num{display:inline-block;font-size:0.76rem;color:#a0662a;letter-spacing:3px;font-weight:700;margin-bottom:6px}
+.card h2{font-size:1.42rem;color:#3d2e1c;font-weight:700;line-height:1.35}
+.card h2 .en{display:block;font-size:0.92rem;color:#7a6440;font-weight:400;font-style:italic;margin-top:4px}
+.tag{display:inline-block;font-size:0.74rem;background:#f1e6cf;color:#6e5328;padding:3px 10px;border-radius:12px;margin-top:10px;margin-right:6px;letter-spacing:1px}
+.section{margin-top:20px}
+.section-label{font-size:0.78rem;letter-spacing:2.5px;color:#a0662a;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.principle{font-size:1.08rem;color:#3a3630;font-weight:600;background:#f8efdc;padding:14px 18px;border-radius:4px;border-left:3px solid #3d2e1c}
+.quote{background:#faf3e3;padding:16px 20px;border-radius:4px;font-style:italic;color:#4d4436;margin-top:12px}
+.quote .en{display:block;color:#3a3630;margin-bottom:8px}
+.quote .zh{display:block;color:#6e5328;font-style:normal;font-size:0.94rem}
+.quote .source{display:block;margin-top:8px;font-size:0.82rem;color:#7a6440;font-style:normal;text-align:right}
+.scene{background:#fbf8f1;padding:18px 20px;border-radius:4px;border:1px solid #e6dcc8}
+.scene .setup{color:#6e5328;font-size:0.95rem;margin-bottom:10px}
+.dialog{margin:10px 0;padding:10px 14px;border-radius:4px;font-size:0.95rem}
+.dialog.bad{background:#fbece4;border-left:3px solid #c86c4a}
+.dialog.good{background:#eef4e6;border-left:3px solid #6f9a4c}
+.dialog .speaker{font-weight:700;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.dialog.bad .speaker{color:#b05a3a}
+.dialog.good .speaker{color:#4f7a32}
+.dialog p{margin:6px 0;color:#3a3630}
+ul.checklist{list-style:none;padding:0}
+ul.checklist li{padding:8px 0 8px 30px;position:relative;color:#3a3630;font-size:0.96rem;border-bottom:1px dashed #e6dcc8}
+ul.checklist li:last-child{border-bottom:none}
+ul.checklist li::before{content:"☐";position:absolute;left:6px;color:#a0662a;font-size:1.1rem;top:6px}
+.pitfall{background:#fdf3ec;padding:14px 18px;border-radius:4px;border-left:3px solid #c47040;font-size:0.94rem;color:#5a3d2a}
+.pitfall ul{margin-left:20px;margin-top:6px}
+.pitfall li{margin:4px 0}
+.mini{background:#f4f0e6;padding:14px 18px;border-radius:4px;border-left:3px solid #7a6440;font-size:0.94rem;color:#3a3630}
+.mini p{margin:4px 0}
+.mini strong{color:#3d2e1c}
+.frame-diagram{background:#fbf8f1;padding:20px 16px;border-radius:6px;margin:14px 0;border:1px solid #e6dcc8}
+.dgm-title{font-size:0.8rem;letter-spacing:2px;color:#a0662a;font-weight:700;text-align:center;margin-bottom:14px}
+.dgm-note{text-align:center;font-size:0.82rem;color:#7a6440;margin-top:12px;font-style:italic}
+nav.footer-nav{margin-top:60px;text-align:center;padding:30px 0;border-top:1px solid #8a6d3b}
+nav.footer-nav a{color:#a0662a;text-decoration:none;font-size:0.95rem;padding:8px 20px;border:1px solid #8a6d3b;border-radius:20px;transition:all 0.2s}
+nav.footer-nav a:hover{background:#a0662a;color:#fffaf0}
+.deep{margin-top:50px;padding:28px 26px;background:#fffdf8;border-radius:8px;border-top:3px solid #3d2e1c}
+.deep h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:16px}
+.deep details{border-bottom:1px dashed #e6dcc8;padding:12px 0}
+.deep details:last-child{border-bottom:none}
+.deep summary{cursor:pointer;font-weight:600;color:#6e5328;font-size:0.98rem}
+.deep details div{margin-top:10px;font-size:0.93rem;color:#3a3630;padding-left:14px;border-left:2px solid #e6dcc8}
+.deep ul{margin:6px 0 0 18px}
+.deep li{margin:4px 0}
+footer{text-align:center;padding:20px 0 4px;font-size:0.8rem;color:#8a7a5a}
+@media(max-width:600px){
+header h1{font-size:1.55rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.container{padding:16px 14px 60px}
+}
+.map{display:flex;flex-direction:column;gap:6px}
+.map .row{display:grid;grid-template-columns:150px 1.2fr 1.2fr;gap:6px;font-size:0.84rem;line-height:1.55}
+.map .row div{padding:8px 10px;border-radius:3px}
+.map .row .q{font-weight:700;color:#fffaf0;background:#8a5e2a}
+.map .row .c{background:#f4ecdb;color:#3a3630}
+.map .row.head div{background:none;color:#7a6440;font-weight:700;font-size:0.74rem;letter-spacing:1px;padding:2px 10px}
+.crossx{margin-top:50px;padding:24px 26px;background:#f3f6f6;border-radius:8px;border-top:3px solid #3f6f78}
+.crossx h3{font-size:1.15rem;color:#2f555c;letter-spacing:2px;margin-bottom:10px}
+.crossx ul{list-style:none;padding:0}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#3a3630;border-bottom:1px dashed #d5e0e0}
+.crossx li:last-child{border-bottom:none}
+.crossx b{color:#2f555c}
+.tk{margin-top:36px}
+.tk h3{font-size:1.15rem;color:#3d2e1c;letter-spacing:2px;margin-bottom:14px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid #e6dcc8;border-radius:8px;background:#fffdf8}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid #efe7d6;font-size:0.95rem;line-height:1.75;color:#3a3630}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a0662a}
+@media(max-width:600px){
+.map .row{grid-template-columns:1fr}
+.map .row.head{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">Day 77 · 2026.11.12</div>
+<h1>scope 变大之后：放大自己，带资深的人，带 manager</h1>
+<div class="meta"><span>主题：Leading at a Bigger Scope</span><span>·</span><span>4 个原则</span></div>
+<div class="subtitle">「凡治众如治寡，分数是也。」——《孙子兵法·兵势》</div>
+</header>
+<div class="intro">
+<p>当上级考虑给你更大的 scope 时，常会问三类问题：<strong>你怎么放大自己，怎么带和你同级的资深工程师，怎么带 manager。</strong>这三个问题背后是同一次转身：从自己把事做成，变成让别人把事做成。</p>
+<p>本期前三个原则各回答一个问题，第四个讲贯穿三者的底层：人为什么愿意在你手下好好干。最后的「深入思考」里，还有被问到这类问题时怎么答。</p>
+</div>
+<div class="frame-diagram">
+<div class="dgm-title">scope 变大之后的三次转身 · 核心做法 · 最常见的陷阱</div>
+<div class="map">
+<div class="row head"><div>转身</div><div>核心做法</div><div>最常见的陷阱</div></div>
+<div class="row"><div class="q">放大自己</div><div class="c">结果拆成工作流，每条一个 DRI；靠节奏和领先信号掌握全局</div><div class="c">scope 大了，还在审每一份设计</div></div>
+<div class="row"><div class="q">带资深的人</div><div class="c">给最难的问题，分清决定权，当同伴对待</div><div class="c">在他们的领域里抢着拿主意</div></div>
+<div class="row"><div class="q">带 manager</div><div class="c">前 30 天先听；管结果和标准，不管他的团队</div><div class="c">绕过他直接指挥他的人</div></div>
+<div class="row"><div class="q">让人愿意干</div><div class="c">守住公平，满足自主、胜任、关系，让进展看得见</div><div class="c">绩效没问题就以为一切都好</div></div>
+</div>
+<div class="dgm-note">scope 越大，你的产出越取决于别人的产出。</div>
+</div>
+<!-- ============ Card 1 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · 放大自己</div>
+<h2>从自己做事，变成搭一套会自己运转的系统
+<span class="en">Scale Yourself by Building a System</span></h2>
+<span class="tag">DRI</span><span class="tag">写清楚的 capacity</span><span class="tag">领先信号</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">scope 变大后，你不可能在每个环节都在场。要做三件事：<strong>把结果拆成少数几条工作流，每条只有一个 DRI 和一个衡量指标；建立固定的运转节奏，写清楚哪些事由 DRI 决定、哪些由你决定、哪些要上报；把自己的时间留给跨组织对齐、人才和最大的两三个风险。</strong>跨团队的投入要写下来：几个人、占多少时间、哪个季度、对应哪些里程碑、谁批准。只靠口头答应，第一次优先级冲突就会落空。</div>
+<div class="quote">
+<span class="en">"A manager's output = The output of his organization + The output of the neighboring organizations under his influence."</span>
+<span class="zh">「经理的产出＝他所管组织的产出＋受他影响的相邻组织的产出。」</span>
+<span class="source">— Andrew S. Grove，《High Output Management》，1983</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：上级问你：「如果 charter 变大，你不在细节里，怎么及早发现哪条工作流要出事？」</div>
+<div class="dialog bad">
+<div class="speaker">✗ 说原则</div>
+<p>「我会建立 review 机制，看指标。」每个人都会这么说。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：说出领先信号</div>
+<p>「每周请每个 DRI 给下一个里程碑打信心分，我看趋势：从高掉到中就去问，不等它变红。跨团队依赖卡住超过一周，自动升级。状态从绿直接跳到红，我当作报告失真来处理。<strong>最重要的是，有人提前报风险，我当着团队感谢他。</strong>」</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>每条工作流是不是只有一个 DRI？</li>
+<li>跨团队的投入写下来了吗？谁批准的？</li>
+<li>哪些决定归 DRI，哪些归我，哪些要上报，说清楚了吗？</li>
+<li>scope 变大后，我准备停止做哪件事？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>scope 变了，做法没变</strong>：还在审每一份设计，你就成了整个组织的瓶颈。</li>
+<li><strong>只看状态颜色</strong>：真正有用的信号在趋势里，等到变红已经晚了。</li>
+<li><strong>一行写两个 DRI</strong>：两个人都负责，就等于没人负责。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>列出你这周花时间最多的三件事，<strong>标出哪一件其实该由 DRI 来做。</strong></p>
+<p><strong>思考：</strong>如果你休假两周，哪条工作流会最先停下来？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 2 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · 带资深的人</div>
+<h2>权威来自信任，不来自职位
+<span class="en">Lead Senior Engineers Through Trust, Not Title</span></h2>
+<span class="tag">真正的 ownership</span><span class="tag">决定权</span><span class="tag">处理分歧</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">带和你同级的资深工程师，你不可能比每个人都懂技术。权威来自三件事：<strong>给他们最难的问题，只定结果、不定步骤，让成功能算进他们的下一级，并在他们不在的场合替他们说话；分清决定权，技术决定归他们，优先级、取舍和跨团队承诺归你；把他们当同伴，反馈双向。</strong>有分歧时，先复述对方的观点，直到他认可；容易回滚的，让他按他的方式试一个周期，约好检查点；难回滚的，摊开谈，必要时一起去找上级。定下来以后，在团队面前只有一个声音。</div>
+<div class="quote">
+<span class="en">"Use the phrase 'disagree and commit.' This phrase will save a lot of time."</span>
+<span class="zh">「用『保留意见，全力执行』这个说法。它能省下很多时间。」</span>
+<span class="source">— Jeff Bezos，2016 年致股东信</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一位资深工程师不同意你定的优先级，没来找你，直接去找了你的老板。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 当成越级告状</div>
+<p>找他兴师问罪，或者在老板面前急着证明自己没错。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：当成没对齐的信号</div>
+<p>先谢谢老板告诉你，请他让这位工程师回来找你。坐下来先复述他的观点，直到他点头，再讲你的。之后定个规矩：<strong>先来找我；谈不拢，我们一起去找老板。</strong>升级没问题，问题是绕开彼此。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>他们手上问题的难度，配得上他们的级别吗？</li>
+<li>哪些技术决定，我明确交给了他们？</li>
+<li>我上一次请他们给我反馈，是什么时候？</li>
+<li>有分歧时，我先复述了对方的观点吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误 + 女性视角提示</div>
+<div class="pitfall">
+<ul>
+<li><strong>技术越强越容易犯</strong>：在别人的领域里抢着拿主意。先问，再给意见。</li>
+<li><strong>拿职位压人</strong>：对同级的人，这张牌每用一次就弱一分。</li>
+<li><strong>事后说「我早说过」</strong>：说一次，以后就没人跟你说真话了。</li>
+<li><strong>女性视角</strong>：Catalyst 2007 年的报告〈The Double-Bind Dilemma for Women in Leadership〉发现，<strong>女性领导者常被困在「能干但不讨喜」和「讨喜但不够能干」两种评价之间。</strong>事先把决定权讲清楚、用提问开路，能让权威建立在规则上，而不是靠语气，被读成「强势」的风险也小一些。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>和一位资深工程师一起，<strong>写下你们之间的决定权怎么分。</strong></p>
+<p><strong>思考：</strong>上一次你在别人的领域里拿主意，是因为你更对，还是因为你更快？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 3 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · 带 manager</div>
+<h2>通过他来带团队，而不是绕过他
+<span class="en">Lead Through Your Managers, Not Around Them</span></h2>
+<span class="tag">前 30 天</span><span class="tag">skip-level 只为信号</span><span class="tag">培养 manager</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">带 manager 分三步：<strong>前 30 天先听、先对齐，了解他的目标、团队状况和什么已经运转良好，约定结果、决定权和升级方式，这期间什么都不改；之后管结果和标准，不管他的团队，你问责的是结果、团队健康和他怎么对待人，skip-level 只用来收集信号，不用来下指示，在公开场合和他保持一个声音，有分歧私下谈；最后，把他培养成更好的 manager。</strong>TLM 出身的人要特别留意：最容易一头扎进他团队的技术细节。</div>
+<div class="quote">
+<span class="en">「功成事遂，百姓皆谓：我自然。」</span>
+<span class="source">— 《道德经》第十七章</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：你开始带一位 manager。在 skip-level 里，他团队的工程师抱怨某个技术方案。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 当场表态</div>
+<p>「这个方案确实有问题，我去跟他说。」他在团队里的威信，一次就被你打掉了。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：把信号交回给他</div>
+<p>「谢谢你告诉我。这件事你跟他聊过吗？」回头私下把听到的告诉这位 manager，问他怎么看，<strong>由他来处理，你只在他需要时帮忙。</strong></p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>前 30 天，我是在听，还是已经在改？</li>
+<li>除了交付，我也问责团队健康和他怎么对待人吗？</li>
+<li>skip-level 听到的事，都回到他那里了吗？</li>
+<li>我知道他自己想怎么成长吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>绕过他指挥他的人</strong>：短期快，长期是两个老板，团队不知道该听谁的。</li>
+<li><strong>只考核，不培养</strong>：带 manager 和带工程师最大的不同，是你要教他招人、谈绩效、处理冲突。</li>
+<li><strong>接手后急着改</strong>：还没弄清什么在运转，就动手修，常常修坏了本来好好的东西。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>为一位你现在或将来要带的 manager，<strong>写一页「前 30 天先听」的问题清单。</strong></p>
+<p><strong>思考：</strong>如果这位 manager 明天离开，他的团队会说跟着他学到了什么？</p>
+</div>
+</div>
+</div>
+<!-- ============ Card 4 ============ -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · 让人愿意干</div>
+<h2>让人愿意好好干：自主、胜任、关系
+<span class="en">Autonomy, Competence, Relatedness</span></h2>
+<span class="tag">保健因素</span><span class="tag">自我决定理论</span><span class="tag">进步原则</span>
+</div>
+<div class="section">
+<div class="section-label">一句话原则 + 名家原话</div>
+<div class="principle">前三张卡背后是同一个问题：人为什么愿意在你手下好好干。先守住底线，也就是赫茨伯格说的「保健因素」：公平、可持续的工作量、心理安全。这些缺了人会不满，有了也不会自动满意。再满足自我决定理论（Deci 与 Ryan）说的三个基本需要：<strong>自主，对怎么做事有发言权；胜任，做得好而且在成长；关系，被在乎，有并肩作战的人。</strong>最后，让进展看得见。</div>
+<div class="quote">
+<span class="en">"Of all the things that can boost emotions, motivation, and perceptions during a workday, the single most important is making progress in meaningful work."</span>
+<span class="zh">「在所有能提升工作日情绪、动力和感受的因素里，最重要的一个，是在有意义的工作上取得进展。」</span>
+<span class="source">— Teresa Amabile 与 Steven Kramer，〈The Power of Small Wins〉，《哈佛商业评论》，2011</span>
+</div>
+</div>
+<div class="section">
+<div class="section-label">场景示范</div>
+<div class="scene">
+<div class="setup">情境：一位一直很投入的工程师最近明显没劲了。绩效还不错，但不再主动提想法。</div>
+<div class="dialog bad">
+<div class="speaker">✗ 绩效没问题就不管</div>
+<p>或者给他多派点活，「让他忙起来」。</p>
+</div>
+<div class="dialog good">
+<div class="speaker">✓ 试试：对照三个需要找原因</div>
+<p>1:1 先问人再问事：「最近什么让你觉得做得顺，什么让你觉得被卡住？」再对照三个需要：<strong>是没了发言权，挑战太低或太难，还是觉得被孤立？</strong>先帮他清掉一个障碍，让他看到进展。</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-label">检查表</div>
+<ul class="checklist">
+<li>他们对怎么做事有发言权吗？</li>
+<li>手上的挑战，略高于他们现在的能力吗？</li>
+<li>我知道什么事对他们重要吗？</li>
+<li>对他们不利的决定，我解释过原因吗？</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-label">常见错误</div>
+<div class="pitfall">
+<ul>
+<li><strong>想用钱补士气</strong>：保健因素只能消除不满，买不来投入。</li>
+<li><strong>只奖励结果，不认可进展</strong>：长期项目里，看不见进展的人最先泄气。</li>
+<li><strong>推翻别人的工作不解释</strong>：这是最伤人的一种挫败。</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-label">本周习作 + 思考题</div>
+<div class="mini">
+<p><strong>动作：</strong>用这三个需要给你自己现在的处境打分，<strong>找出最低的那一项。</strong></p>
+<p><strong>思考：</strong>你的团队里，谁最近有哪一个需要受到了威胁？</p>
+</div>
+</div>
+</div>
+<div class="crossx">
+<h3>越界 · 跨学科的联想</h3>
+<ul>
+<li><b>控制论 · 必要多样性定律（Ashby，1956）</b>：调节者的多样性至少要匹配被调节系统的多样性，否则就管不住。一个人的注意力赶不上一个大组织的变化，所以判断必须分给各条工作流的 DRI。不像在于，调节器不需要被信任。</li>
+<li><b>分布式系统 · φ 累积故障检测（Hayashibara 等，2004）</b>：不只判断节点「活着」或「死了」，而是根据心跳间隔算出连续的怀疑程度，超过阈值才处理，就像每周的信心分趋势。不像在于，人会因为害怕而谎报心跳，所以还需要心理安全。</li>
+<li><b>神经科学 · 预测编码（Rao 与 Ballard，1999）</b>：大脑高层往下传预测，低层只把「预测误差」往上报。带 manager 也一样：上层定预期，下层只报意外，skip-level 里听到的正是误差信号。不像在于，大脑不用顾及中间层的面子。</li>
+<li><b>生物学 · 痕迹协作（stigmergy，Grassé，1959）</b>：白蚁筑巢没有指挥，每一只都根据前一只留在环境里的痕迹决定下一步。共享的仪表盘和写下来的 capacity，就是组织里的痕迹。不像在于，白蚁之间没有优先级冲突。</li>
+</ul>
+</div>
+<div class="tk">
+<h3>十条要点</h3>
+<ol class="takeaways">
+<li>scope 变大后，你的产出是团队的产出加上你影响的相邻团队的产出，要靠搭系统，而不是自己做。</li>
+<li>每条工作流只有一个 DRI；跨团队投入要写下人数、时间占比、周期和批准人。</li>
+<li>及早发现风险靠领先信号：信心分下滑、依赖卡住超过一周、状态从绿直接跳红。</li>
+<li>让人敢早点报坏消息，比任何仪表盘都重要。</li>
+<li>带同级的资深工程师，权威来自信任和清楚的决定权，而不是职位。</li>
+<li>技术决定归资深工程师，优先级、取舍和跨团队承诺归你；在他们的领域里先问，再给意见。</li>
+<li>有分歧时先复述对方观点；容易回滚的让他试，难回滚的摊开谈，必要时一起上报。</li>
+<li>带 manager 要通过他而不是绕过他：前 30 天先听，skip-level 只为收集信号。</li>
+<li>带 manager 和带工程师最大的不同，是要把他培养成更好的 manager。</li>
+<li>人愿意好好干，靠的是自主、胜任、关系三个需要，加上在有意义的事上看得见的进展。</li>
+</ol>
+</div>
+<div class="deep">
+<h3>深入思考</h3>
+<details><summary>想深入读，读什么？</summary><div>
+<ul>
+<li>Andrew Grove《High Output Management》(1983)：经理的产出和杠杆率。</li>
+<li>Camille Fournier《The Manager's Path》(2017)：后几章讲怎么带 manager。</li>
+<li>David Marquet《Turn the Ship Around!》(2012)：把下指令改成让人说「我打算」。</li>
+<li>Tanya Reilly《The Staff Engineer's Path》(2022)：读懂你要带的资深工程师在想什么。</li>
+<li>Liz Wiseman《Multipliers》(2010)：让人变聪明的领导和让人变笨的领导。</li>
+<li>Teresa Amabile 与 Steven Kramer《The Progress Principle》(2011)：小进展为什么最能点燃一天。</li>
+<li>Amy Edmondson《The Fearless Organization》(2018)：心理安全为什么让坏消息来得早。</li>
+</ul>这七本，本站的「深度阅读」都已经收录或列入清单。</div></details>
+<details><summary>被问到「假设给你更多 scope」时，怎么答？</summary><div>这通常是一次能力评估，不是谈判。<strong>每题讲三点，配一个真实的例子，两分钟以内。</strong>讲你会怎么做，不谈组织怎么设计，也别追问「是不是要给我」。主动说出一个自己的风险，比如「我技术强，容易插手」，会显得更成熟。结尾可以反问：「从你的角度看，前六个月的成功是什么样子？」如果对方问你需要什么，讲需要，不讲方案。</div></details>
+<details><summary>如果要换一位新老板？</summary><div>可以坦白说一句人情，比如和原来的团队并肩多年，会有些不舍，然后转回正面：尽早建立信任，对齐你负责什么、能决定什么、团队目标是什么、进度怎么跟、问题怎么提早报。如果有需要，就在这时讲一次。</div></details>
+<details><summary>AI 会怎样改变这三次转身？</summary><div>如果 agent 接走了越来越多的执行工作，放大自己会更依赖 DRI 和决定权的设计；带人的重心会从分配任务，转向<strong>判断、取舍和替人争取机会</strong>。第四个原则不会变：人还是需要自主、胜任和关系。</div></details>
+</div>
+<nav class="footer-nav">
+<a href="index.html">← 返回目录</a>
+</nav>
+<footer>BigCat · Leadership · Day 77 · 2026.11.12</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>
